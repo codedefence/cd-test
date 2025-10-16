@@ -5,8 +5,8 @@
   <link>https://www.example.com/cybersecurity-news-feed</link>
   <description>Today's Top Cybersecurity News - October 16, 2025</description>
   <language>en-us</language>
-  <pubDate>Thu, 16 Oct 2025 22:10:00 +0300</pubDate>
-  <lastBuildDate>Thu, 16 Oct 2025 22:10:00 +0300</lastBuildDate>
+  <pubDate>Thu, 16 Oct 2025 22:18:00 +0300</pubDate>
+  <lastBuildDate>Thu, 16 Oct 2025 22:18:00 +0300</lastBuildDate>
 
   <item>
     <title>CISA Issues Urgent Alert on Actively Exploited Windows Vulnerability</title>
@@ -27,8 +27,7 @@
       Direct IT and security teams to prioritize the immediate deployment of the October Microsoft Patch Tuesday updates and instruct the SOC to hunt for unusual privilege escalation activity.</p>
       
       <hr/>
-      <p><strong>LinkedIn Hashtags:</strong><br/>
-      #Cybersecurity #InfoSec #CISA #KEV #VulnerabilityManagement #WindowsServer #PatchTuesday #CVE #EndpointSecurity</p>
+      <p>#Cybersecurity #InfoSec #CISA #KEV #VulnerabilityManagement #WindowsServer #PatchTuesday #CVE #EndpointSecurity</p>
     ]]></description>
   </item>
 
@@ -51,8 +50,7 @@
       Invest in AI-powered defensive technologies. Reinforce employee security awareness training with a specific focus on identifying sophisticated, AI-generated phishing and deepfake content.</p>
 
       <hr/>
-      <p><strong>LinkedIn Hashtags:</strong><br/>
-      #AI #Cybersecurity #ArtificialIntelligence #ThreatIntel #Ransomware #Phishing #Deepfake #Microsoft #SecOps</p>
+      <p>#AI #Cybersecurity #ArtificialIntelligence #ThreatIntel #Ransomware #Phishing #Deepfake #Microsoft #SecOps</p>
     ]]></description>
   </item>
 
@@ -63,7 +61,7 @@
     <pubDate>Thu, 16 Oct 2025 21:50:00 +0300</pubDate>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      CISA published two advisories detailing multiple vulnerabilities in industrial control systems (ICS) from Hitachi and Rockwell Automation, which could allow for privilege escalation, man-in-the-middle attacks, and denial of service.</p>
+      CISA published two advisories today detailing multiple vulnerabilities in industrial control systems (ICS) from Hitachi and Rockwell Automation, which could allow for privilege escalation, man-in-the-middle attacks, and denial of service.</p>
       
       <p><strong>Business Impact</strong><br/>
       These vulnerabilities place critical manufacturing, energy, and other industrial sectors at direct risk of operational technology (OT) shutdown, process manipulation, and potential safety incidents.</p>
@@ -75,8 +73,7 @@
       Task OT and security leaders to immediately inventory affected assets and execute a patch management plan that minimizes operational disruption while urgently mitigating these critical risks.</p>
 
       <hr/>
-      <p><strong>LinkedIn Hashtags:</strong><br/>
-      #OTsecurity #ICSsecurity #Cybersecurity #CriticalInfrastructure #SCADA #Manufacturing #ThreatIntel #CISA #Vulnerability</p>
+      <p>#OTsecurity #ICSsecurity #Cybersecurity #CriticalInfrastructure #SCADA #Manufacturing #ThreatIntel #CISA #Vulnerability</p>
     ]]></description>
   </item>
 
@@ -87,7 +84,7 @@
     <pubDate>Thu, 16 Oct 2025 21:45:00 +0300</pubDate>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      A U.S. Senator has formally demanded answers from Cisco regarding a series of recent zero-day vulnerabilities in their firewall products, focusing on software supply chain security and response timeliness.</p>
+      A U.S. Senator has formally demanded answers from Cisco Systems regarding a series of recent zero-day vulnerabilities in their firewall products, focusing on software supply chain security and response timeliness.</p>
       
       <p><strong>Business Impact</strong><br/>
       This congressional scrutiny signals a new level of regulatory focus on network infrastructure providers, potentially leading to new compliance requirements for secure software development and increased vendor liability.</p>
@@ -99,8 +96,7 @@
       Direct the CISO and legal counsel to review vendor risk management programs, focusing on the contractual obligations and security attestations of critical hardware providers.</p>
 
       <hr/>
-      <p><strong>LinkedIn Hashtags:</strong><br/>
-      #Cisco #Cybersecurity #NetworkSecurity #ZeroDay #Firewall #GRC #Compliance #VendorRisk #InfoSec</p>
+      <p>#Cisco #Cybersecurity #NetworkSecurity #ZeroDay #Firewall #GRC #Compliance #VendorRisk #InfoSec</p>
     ]]></description>
   </item>
 
@@ -123,8 +119,7 @@
       Ensure the organization's threat intelligence program is actively monitoring for TTPs associated with new APT groups. Commission a "compromise assessment" to proactively hunt for hidden threats.</p>
 
       <hr/>
-      <p><strong>LinkedIn Hashtags:</strong><br/>
-      #APT #ThreatIntel #Cybersecurity #NationState #CyberEspionage #ThreatHunting #InfoSec #MalwareAnalysis</p>
+      <p>#APT #ThreatIntel #Cybersecurity #NationState #CyberEspionage #ThreatHunting #InfoSec #MalwareAnalysis</p>
     ]]></description>
   </item>
 
