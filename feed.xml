@@ -2,16 +2,16 @@
 <rss version="2.0">
 <channel>
   <title>Daily Cybersecurity Threat Briefing</title>
-  <link>https://cybersecurity.example.com/rss</link>
+  <link>https://codedefence.in/blog/rss</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
   <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
 
   <item>
     <title>Critical Zero-Day in "CommuniCore" Collaboration Suite Allows Data Exfiltration</title>
-    <link>https://cybersecurity.example.com/2025/10/17/communicore-zero-day</link>
+    <link>https://codedefence.in/blog/2025/10/17/communicore-zero-day-data-exfiltration</link>
     <pubDate>Fri, 17 Oct 2025 09:00:00 +0000</pubDate>
-    <guid isPermaLink="true">https://cybersecurity.example.com/2025/10/17/communicore-zero-day</guid>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/communicore-zero-day-data-exfiltration</guid>
     <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #ZeroDay #CyberSecurity #DataBreach #SaaS #InsiderRisk #Vulnerability #InfoSec</p>
@@ -32,9 +32,9 @@
 
   <item>
     <title>UK Passes "Digital Sovereignty Act," Mandating In-Country Data Residency for Critical Sectors</title>
-    <link>https://cybersecurity.example.com/2025/10/17/uk-digital-sovereignty-act</link>
+    <link>https://codedefence.in/blog/2025/10/17/uk-digital-sovereignty-act</link>
     <pubDate>Fri, 17 Oct 2025 08:30:00 +0000</pubDate>
-    <guid isPermaLink="true">https://cybersecurity.example.com/2025/10/17/uk-digital-sovereignty-act</guid>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/uk-digital-sovereignty-act</guid>
     <category>Regulatory Compliance/Industry Impact</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #DataSovereignty #Compliance #CyberLaw #UK #DataPrivacy #CloudSecurity #GRC</p>
@@ -55,9 +55,9 @@
 
   <item>
     <title>Mandiant Uncovers "Tidal Serpent" APT Targeting Global Maritime Logistics</title>
-    <link>https://cybersecurity.example.com/2025/10/17/apt-tidal-serpent</link>
+    <link>https://codedefence.in/blog/2025/10/17/mandiant-uncovers-tidal-serpent-apt</link>
     <pubDate>Fri, 17 Oct 2025 08:00:00 +0000</pubDate>
-    <guid isPermaLink="true">https://cybersecurity.example.com/2025/10/17/apt-tidal-serpent</guid>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/mandiant-uncovers-tidal-serpent-apt</guid>
     <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #APT #ThreatIntel #NationState #CyberEspionage #SupplyChainSecurity #MaritimeSecurity #Mandiant</p>
