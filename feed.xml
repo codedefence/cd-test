@@ -52,7 +52,7 @@
     <link>https://codedefence.in/blog/2025/10/18/dataknot-ransomware-corrupts-backups</link>
     <pubDate>Sat, 18 Oct 2025 00:30:00 +0300</pubDate>
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/dataknot-ransomware-corrupts-backups</guid>
-    <category>Ransomware & Extortion</category>
+    <category>Ransomware amd Extortion</category>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
       Researchers have identified a new ransomware family, "DataKnot," that lies dormant for weeks, subtly corrupting data within databases and financial records. Only after causing widespread data integrity issues does it trigger its encryption payload, making restores unreliable.</p>
