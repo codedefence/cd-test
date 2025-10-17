@@ -2,80 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
   <title>Daily Cybersecurity Threat Briefing</title>
-  <link>https://codedefence.in/blog/rss</link>
+  <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
+  
   <pubDate>Fri, 17 Oct 2025 00:00:00 +0000</pubDate>
   <lastBuildDate>Fri, 17 Oct 2025 00:00:00 +0000</lastBuildDate>
+  
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
     <title>Critical Zero-Day in "CommuniCore" Collaboration Suite Allows Data Exfiltration</title>
+    
     <link>https://codedefence.in/blog/2025/10/17/communicore-zero-day-data-exfiltration</link>
     <pubDate>Fri, 17 Oct 2025 09:00:00 +0000</pubDate>
+    
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/communicore-zero-day-data-exfiltration</guid>
     <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #ZeroDay #CyberSecurity #DataBreach #SaaS #InsiderRisk #Vulnerability #InfoSec</p>
-      
       <p><strong>What Happened?</strong><br/>
-      A critical zero-day vulnerability (CVE-2025-73119) has been discovered in CommuniCore, a widely used enterprise collaboration and messaging platform. The flaw allows an attacker who has been invited into a channel as a guest to bypass access controls and exfiltrate files from other private channels and direct messages within the same corporate workspace.</p>
-      
-      <p><strong>Business Impact</strong><br/>
-      This vulnerability presents a severe insider and third-party risk. Sensitive intellectual property, financial data, and strategic plans discussed in private channels are exposed to any external party (contractor, partner) with guest access. This could lead to massive data breaches, regulatory fines, and loss of competitive advantage.</p>
-      
-      <p><strong>Why It Happened</strong><br/>
-      The vulnerability is due to an improper authorization check in the application's API that fails to validate a user's permissions when they directly request a file using its unique identifier, bypassing the channel-based security model.</p>
-      
-      <p><strong>Recommended Executive Action</strong><br/>
-      Direct IT to immediately apply the emergency patch released by CommuniCore. In the interim, suspend all guest and external user access to the platform. Mandate an audit of all third-party access controls across all SaaS applications.</p>
-    ]]></description>
+      A critical zero-day vulnerability (CVE-2025-73119) has been discovered in CommuniCore...</p>
+      ]]></description>
   </item>
 
   <item>
     <title>UK Passes "Digital Sovereignty Act," Mandating In-Country Data Residency for Critical Sectors</title>
+    
     <link>https://codedefence.in/blog/2025/10/17/uk-digital-sovereignty-act</link>
     <pubDate>Fri, 17 Oct 2025 08:30:00 +0000</pubDate>
+    
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/uk-digital-sovereignty-act</guid>
     <category>Regulatory Compliance/Industry Impact</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #DataSovereignty #Compliance #CyberLaw #UK #DataPrivacy #CloudSecurity #GRC</p>
-      
       <p><strong>What Happened?</strong><br/>
-      The UK Parliament has passed the Digital Sovereignty Act of 2025, which will go into effect in 12 months. The law mandates that all companies operating in critical national infrastructure sectors—including finance, healthcare, energy, and telecommunications—must store and process the personal data of UK citizens exclusively within data centers located on UK soil.</p>
-      
-      <p><strong>Business Impact</strong><br/>
-      This legislation will force a major and costly restructuring of cloud and data architecture for multinational corporations serving UK customers in these sectors. Companies relying on EU or US-based data centers will need to migrate data, establish a UK presence, or risk being barred from the market and facing substantial fines.</p>
-      
-      <p><strong>Why It Happened</strong><br/>
-      The Act is a government response to growing concerns over cross-border data access by foreign governments and aims to strengthen the country's control over its critical data infrastructure in an increasingly tense geopolitical climate.</p>
-      
-      <p><strong>Recommended Executive Action</strong><br/>
-      Engage the CIO, Chief Compliance Officer, and legal counsel to immediately assess the company's data residency posture in the UK. Develop a strategic plan and budget for data migration and infrastructure changes required to achieve compliance within the 12-month deadline.</p>
-    ]]></description>
+      The UK Parliament has passed the Digital Sovereignty Act of 2025...</p>
+      ]]></description>
   </item>
 
   <item>
     <title>Mandiant Uncovers "Tidal Serpent" APT Targeting Global Maritime Logistics</title>
+    
     <link>https://codedefence.in/blog/2025/10/17/mandiant-uncovers-tidal-serpent-apt</link>
     <pubDate>Fri, 17 Oct 2025 08:00:00 +0000</pubDate>
+    
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/17/mandiant-uncovers-tidal-serpent-apt</guid>
     <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       <p><strong>Hashtags:</strong> #APT #ThreatIntel #NationState #CyberEspionage #SupplyChainSecurity #MaritimeSecurity #Mandiant</p>
-      
       <p><strong>What Happened?</strong><br/>
-      Threat intelligence firm Mandiant has published a report on a newly identified nation-state actor, "Tidal Serpent." The group is conducting a widespread espionage campaign targeting port authorities, shipping companies, and customs agencies across key strategic waterways. Their primary goal is to gain visibility into global supply chain movements and potentially disrupt them.</p>
-      
-      <p><strong>Business Impact</strong><br/>
-      This campaign poses a direct threat to the global supply chain. By compromising maritime logistics networks, Tidal Serpent can steal sensitive cargo manifests, track shipments of strategic goods, and potentially manipulate port operations, creating significant economic and national security risks.</p>
-      
-      <p><strong>Why It Happened</strong><br/>
-      The campaign is assessed to be part of a broader geopolitical strategy by the sponsoring nation to gain economic leverage and intelligence. The group uses sophisticated spear-phishing and exploits vulnerabilities in bespoke logistics management software to gain initial access.</p>
-      
-      <p><strong>Recommended Executive Action</strong><br/>
-      If your organization is in the logistics or shipping sector, direct the CISO to review the TTPs outlined in the Mandiant report and ensure defensive systems can detect this activity. Commission a compromise assessment to hunt for signs of Tidal Serpent's presence in your network.</p>
-    ]]></description>
+      Threat intelligence firm Mandiant has published a report on a newly identified nation-state actor, "Tidal Serpent."...</p>
+      ]]></description>
   </item>
 
 </channel>
