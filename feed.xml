@@ -5,104 +5,104 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sat, 18 Oct 2025 22:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 18 Oct 2025 22:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 19 Oct 2025 20:25:00 +0300</pubDate>
+  <lastBuildDate>Sun, 19 Oct 2025 20:25:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Nation-State Hackers Deploy "EtherHiding" Malware via Public Blockchains</title>
-    <link>https://codedefence.in/blog/2025/10/18/nation-state-etherhiding-blockchain-malware</link>
-    <pubDate>Sat, 18 Oct 2025 22:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/nation-state-etherhiding-blockchain-malware</guid>
+    <title>China Accuses US NSA of Hacking National Time Service Center</title>
+    <link>https://codedefence.in/blog/2025/10/19/china-accuses-nsa-hacking-time-service</link>
+    <pubDate>Sun, 19 Oct 2025 20:20:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/19/china-accuses-nsa-hacking-time-service</guid>
     <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      Threat actors, including a North Korean state-sponsored group, are using a novel malware delivery technique called "EtherHiding." This method embeds malicious payloads within smart contracts on public blockchains like Ethereum, using the blockchain itself as a "bulletproof" hosting and delivery mechanism.</p>
+      China's Ministry of State Security has publicly accused the U.S. National Security Agency (NSA) of conducting a multi-year cyberattack campaign against its National Time Service Center. The center is responsible for maintaining the country's official time standard, which is critical for all digital infrastructure.</p>
       <p><strong>Business Impact</strong><br/>
-      This technique is exceptionally difficult to block or take down, as it doesn't rely on traditional web domains or servers. It creates a highly resilient command-and-control (C2) and malware-hosting infrastructure that bypasses most network-based blacklisting and security controls, posing a severe threat.</p>
+      This accusation highlights the extreme vulnerability of critical national infrastructure. A successful attack on a national time source could destabilize an entire economy, desynchronizing financial transactions, power grids, telecommunications, and transportation networks that rely on precise timestamps.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are innovating to evade takedown efforts by law enforcement and security vendors. By leveraging the decentralized and immutable nature of the blockchain, they can host their malicious code in a place that no single entity controls.</p>
+      The alleged attacks (reportedly from 2022-2024) were aimed at espionage and gaining access to core infrastructure. This represents a high-level geopolitical move, demonstrating that nation-states are targeting the foundational protocols upon which modern society operates.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct the CISO to ensure that security monitoring tools are not only inspecting web traffic but are also capable of identifying and blocking anomalous transactions or data retrievals from public blockchains. This may require new, specialized threat intelligence feeds.</p>
-      <p><strong>Hashtags:</strong> #Blockchain #CyberSecurity #NationState #APT #Malware #ThreatIntel #Ethereum</p>
+      Review your organization's reliance on external time protocols (NTP). Ensure that critical systems have a redundant, secure, and authenticated time source and that your network monitoring is configured to detect anomalous time synchronization activity.</p>
+      <p><strong>Hashtags:</strong> #Geopolitics #NationState #APT #CyberWarfare #CriticalInfrastructure #NTP #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Microsoft Report: AI Makes Phishing 4.5x More Effective, Boosts Profitability 50x</title>
-    <link>https://codedefence.in/blog/2025/10/18/microsoft-ai-phishing-effectiveness-report</link>
-    <pubDate>Sat, 18 Oct 2025 22:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/microsoft-ai-phishing-effectiveness-report</guid>
-    <category>AI/ML in Cybersecurity</category>
-    <description><![CDATA[
-      <p><strong>What Happened?</strong><br/>
-      Microsoft's new Digital Defense Report has quantified the impact of AI on cybercrime. According to the report, phishing emails crafted by AI are 4.5 times more likely to be clicked by a victim. The efficiency and scale AI provides could also increase a threat actor's profitability by as much as 50 times.</p>
-      <p><strong>Business Impact</strong><br/>
-      This data confirms that AI-driven social engineering is not a future threat, but a current crisis. The massive increase in effectiveness will lead to a surge in successful business email compromise (BEC), credential theft, and ransomware infections, bypassing traditional employee training and spam filters.</p>
-      <p><strong>Why It Happened</strong><br/>
-      AI tools allow attackers to craft highly personalized, context-aware, and linguistically perfect phishing lures at a massive scale, eliminating the spelling and grammar mistakes that were once easy red flags. This democratizes advanced social engineering for less-skilled attackers.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Invest in AI-powered defensive email security that can detect subtle social engineering and behavioral anomalies, rather than just known signatures. Double down on employee training focused on verifying requests for payment or credentials "out-of-band" (e.g., via a phone call).</p>
-      <p><strong>Hashtags:</strong> #AI #CyberSecurity #Phishing #Microsoft #InfoSec #BEC #CyberRisk #Deepfake</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>Sotheby's Discloses Data Breach, Exposing Client Personal Information</title>
-    <link>https://codedefence.in/blog/2025/10/18/sothebys-data-breach-ssn-exposed</link>
-    <pubDate>Sat, 18 Oct 2025 22:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/sothebys-data-breach-ssn-exposed</guid>
+    <title>Critical Vulnerability Disclosed in Linux PAM Framework (CVE-2025-8941)</title>
+    <link>https://codedefence.in/blog/2025/10/19/linux-pam-vulnerability-cve-2025-8941</link>
+    <pubDate>Sun, 19 Oct 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/19/linux-pam-vulnerability-cve-2025-8941</guid>
     <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      The luxury auction house Sotheby's has begun notifying clients of a data breach. An unauthorized party gained access to company systems, compromising personal information including, in some cases, Social Security numbers (SSNs).</p>
+      A high-severity vulnerability, CVE-2025-8941, has been discovered in the Pluggable Authentication Modules (PAM) framework. PAM is a fundamental component of nearly all Linux operating systems, managing authentication for services like SSH, `login`, and `sudo`.</p>
       <p><strong>Business Impact</strong><br/>
-      This breach poses a significant risk to Sotheby's high-net-worth clientele, who are now exposed to highly targeted spear-phishing, identity theft, and financial fraud. The reputational damage to a brand built on discretion and trust is severe and could impact client relationships and future sales.</p>
+      A flaw in PAM is catastrophic. Depending on the exact flaw, it could allow an attacker to bypass authentication, escalate privileges to "root," or gain unauthorized access to any Linux server or workstation in the corporate environment, from web servers to critical databases.</p>
       <p><strong>Why It Happened</strong><br/>
-      While full details are pending, breaches of this nature typically stem from a compromised credential, an unpatched vulnerability, or a successful phishing attack against an employee, allowing attackers to access and exfiltrate sensitive client databases.</p>
+      The vulnerability is reported to be a logic flaw within the core of the framework, which has been part of the system for an extended period, making a vast number of Linux distributions potentially vulnerable until patched.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Use this incident as a case study to review your own "crown jewel" data. Mandate a review of access controls for databases containing sensitive client PII and ensure that data is encrypted at rest and that all access is strictly logged and monitored for anomalies.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Sothebys #CyberAttack #InfoSec #PII #Privacy #CyberRisk</p>
+      Direct your infrastructure and security teams to monitor for patches from all Linux vendors (Red Hat, Ubuntu, SUSE, etc.) and apply them as an absolute emergency priority. This is a foundational-level risk that must be addressed immediately.</p>
+      <p><strong>Hashtags:</strong> #Linux #Vulnerability #PAM #CVE #CyberSecurity #PatchManagement #InfoSec #Root</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>WatchGuard Fireware OS Vulnerable to Remote Code Execution via VPN</title>
+    <link>https://codedefence.in/blog/2025/10/19/watchguard-fireware-rce-vulnerability</link>
+    <pubDate>Sun, 19 Oct 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/19/watchguard-fireware-rce-vulnerability</guid>
+    <category>Top Incident/Vulnerability</category>
+    <description><![CDATA[
+      <p><strong>What Happened?</strong><br/>
+      WatchGuard has disclosed a critical out-of-bounds write vulnerability in its Fireware OS. The flaw can be exploited by a remote, unauthenticated attacker sending a specially crafted packet to a device with an IKEv2 VPN enabled, allowing them to execute arbitrary code.</p>
+      <p><strong>Business Impact</strong><br/>
+      This is a "perimeter-down" vulnerability. A successful exploit would give an attacker complete control of the corporate firewall, allowing them to bypass all security, monitor all network traffic, steal credentials, and pivot into the internal network undetected.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The vulnerability is in the firewall's IKEv2 VPN service, an internet-facing component, making it a perfect target for attackers who can scan the web for vulnerable devices and attack them without needing any credentials.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Treat this as a critical, time-sensitive threat. Direct network security teams to immediately apply the patches released by WatchGuard or, if patching is not possible, disable the IKEv2 VPN service on all affected firewalls and use an alternative.</p>
+      <p><strong>Hashtags:</strong> #Vulnerability #WatchGuard #Firewall #VPN #RCE #CyberSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Automotive Sector Faces "Historic" Cyber Threats to Supply Chains and Connected Vehicles</title>
-    <link>https://codedefence.in/blog/2025/10/18/automotive-cyber-threats-connected-vehicles</link>
-    <pubDate>Sat, 18 Oct 2025 22:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/automotive-cyber-threats-connected-vehicles</guid>
-    <category>Supply Chain / OT/ICS Security</category>
+    <title>Ransomware Group "8Base" Claims Attack on Volkswagen Group</title>
+    <link>https://codedefence.in/blog/2025/10/19/8base-ransomware-claims-volkswagen-attack</link>
+    <pubDate>Sun, 19 Oct 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/19/8base-ransomware-claims-volkswagen-attack</guid>
+    <category>Ransomware & Extortion</category>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      New reports indicate the automotive sector is facing an unprecedented wave of cyberattacks that threaten business continuity. Attackers are targeting both the "just-in-time" manufacturing supply chain with ransomware and the vulnerabilities in connected vehicle (CV) systems themselves.</p>
+      The prolific ransomware group "8Base" has added Volkswagen Group to its data leak site, claiming to have stolen and leaked sensitive corporate data. Volkswagen has issued a statement acknowledging it is "aware of the claims" and is investigating the incident.</p>
       <p><strong>Business Impact</strong><br/>
-      A successful attack on an automotive supplier can halt entire production lines, costing millions per hour. Furthermore, vulnerabilities in connected cars expose manufacturers to massive liability and recall costs, and pose a direct safety risk to drivers.</p>
+      For a manufacturing giant like Volkswagen, the potential exposure of intellectual property, R&D data, supplier contracts, or employee information is a massive blow. This incident underscores the significant, ongoing threat of "big game hunting" by ransomware gangs against major industrial targets.</p>
       <p><strong>Why It Happened</strong><br/>
-      The industry's heavy reliance on interconnected legacy OT systems for manufacturing and the rapid, often insecure, rollout of complex software in vehicles have created a massive and high-value attack surface for cybercriminals and nation-states.</p>
+      While the exact vector is unconfirmed, 8Base typically exploits unpatched vulnerabilities and compromised credentials to gain access, exfiltrate data, and then encrypt systems. The public claim is designed to pressure the company into paying the ransom.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      For executives in manufacturing or logistics, this is a critical warning. Mandate a full review of supply chain cyber-risk and OT network segmentation. For those with connected products, ensure "security-by-design" is a non-negotiable part of the product development lifecycle.</p>
-      <p><strong>Hashtags:</strong> #Automotive #CyberSecurity #SupplyChain #OTSecurity #ConnectedCar #Manufacturing #Ransomware</p>
+      Use this high-profile attack as a catalyst to review your own organization's extortion defense posture. Ensure you have robust controls to prevent data exfiltration and confirm that your incident response plan includes a clear "do-not-pay" or "pay" decision-making framework, engaging legal and executive stakeholders.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #8Base #Volkswagen #CyberAttack #DataBreach #Manufacturing #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Chinese "Silver Fox" Group Expands Attacks to Japan and Malaysia with New RAT</title>
-    <link>https://codedefence.in/blog/2025/10/18/silver-fox-expands-attacks-holdinghands-rat</link>
-    <pubDate>Sat, 18 Oct 2025 22:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/18/silver-fox-expands-attacks-holdinghands-rat</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
+    <title>New Malware Campaign Uses TikTok Videos to Spread PowerShell Backdoor</title>
+    <link>https://codedefence.in/blog/2025/10/19/tiktok-malware-powershell-campaign</link>
+    <pubDate>Sun, 19 Oct 2025 20:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/19/tiktok-malware-powershell-campaign</guid>
+    <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
       <p><strong>What Happened?</strong><br/>
-      The Chinese-linked cybercrime group known as "Silver Fox" (or ValleyRAT) has expanded its targeting from China and Taiwan to new campaigns in Japan and Malaysia. The group is deploying a new remote access trojan (RAT) named "HoldingHands RAT" via sophisticated phishing emails.</p>
+      A new malware campaign is targeting users on TikTok. Attackers are posting videos with links in the comments or bio, promising adult content or cheat codes for games. The links lead to a self-compiling malware that, once executed, uses PowerShell to establish a persistent backdoor on the victim's machine.</p>
       <p><strong>Business Impact</strong><br/>
-      This expansion signals a new phase of operations for a highly aggressive threat actor. Organizations in Japan and Malaysia, particularly in the e-commerce and automotive sectors, face an elevated risk of corporate espionage, data theft, and financial fraud as the group establishes new beachheads.</p>
+      This campaign easily bypasses corporate email security by targeting employees on their personal devices or through corporate social media accounts. A compromised machine can be used to steal corporate credentials, spy on the user, or as a foothold to pivot into the corporate network.</p>
       <p><strong>Why It Happened</strong><br/>
-      The attackers deliver the malware using phishing emails containing malicious PDF attachments that, when opened, lure the victim to a website to download the malware. This classic TTP remains effective, especially when targeting new regions.</p>
+      Threat actors are continuously adapting their social engineering tactics to platforms where users have a lower security posture. The use of PowerShell makes the attack "fileless" or "living-off-the-land," which helps it evade detection by traditional antivirus products.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Ensure your organization's threat intelligence platform is updated with indicators for "Silver Fox" and "HoldingHands RAT." Remind employees in the APAC region to be on high alert for unsolicited PDF attachments, even if they appear to be from legitimate sources.</p>
-      <p><strong>Hashtags:</strong> #APT #ThreatIntel #China #CyberAttack #Malware #Phishing #InfoSec #APAC</p>
+      Reinforce social media security awareness training with employees, specifically warning them about downloading files from untrusted links on platforms like TikTok. Ensure endpoint security (EDR) is configured to monitor and block malicious PowerShell execution.</p>
+      <p><strong>Hashtags:</strong> #Malware #TikTok #SocialEngineering #Phishing #PowerShell #InfoSec #EndpointSecurity</p>
     ]]></description>
   </item>
-  
+
 </channel>
 </rss>
