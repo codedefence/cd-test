@@ -5,8 +5,8 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 21 Oct 2025 21:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 21 Oct 2025 21:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 21 Oct 2025 21:05:00 +0300</pubDate>
+  <lastBuildDate>Tue, 21 Oct 2025 21:05:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
@@ -16,7 +16,7 @@
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/ai-social-engineering-top-threat-2026</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://storage.googleapis.com/example-cdn-images/ai-social-engineering.jpg" alt="AI-powered social engineering concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <img src="https://images.pexels.com/photos/5380659/pexels-photo-5380659.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="AI-powered social engineering concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
       A new ISACA tech trends report reveals a major shift in the threat landscape. For the first time, IT and cybersecurity professionals (63%) have cited AI-powered social engineering as the leading cybersecurity threat for the upcoming year, ranking it higher than ransomware (54%) and supply chain attacks (35%).</to>
       <p><strong>Business Impact</strong><br/>
@@ -36,7 +36,7 @@
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/cisa-ics-advisories-siemens-schneider</guid>
     <category>Supply Chain / OT/ICS Security</category>
     <description><![CDATA[
-      <img src="https://storage.googleapis.com/example-cdn-images/industrial-control-system.jpg" alt="Industrial Control Systems security" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <img src="https://images.pexels.com/photos/209230/pexels-photo-209230.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Industrial Control Systems security" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
       CISA released 10 new Industrial Control Systems (ICS) advisories today, warning of critical vulnerabilities in equipment from major vendors including Siemens, Schneider Electric, and Oxford Nanopore. The flaws in Siemens SIMATIC S7-1200 CPUs, for example, could allow an unauthenticated attacker to cause a denial-of-service or even bypass authentication.</p>
       <p><strong>Business Impact</strong><br/>
@@ -53,10 +53,10 @@
     <title>Over 75,000 WatchGuard Firewalls Remain Unpatched, Exposing Networks to RCE</title>
     <link>https://codedefence.in/blog/2025/10/21/watchguard-firewall-vulnerability-unpatched</link>
     <pubDate>Tue, 21 Oct 2025 20:35:00 +0300</pubDate>
-    <guid isPermaLink="true">httpshttps://codedefence.in/blog/2025/10/21/watchguard-firewall-vulnerability-unpatched</guid>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/watchguard-firewall-vulnerability-unpatched</guid>
     <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
-      <img src="https://storage.googleapis.com/example-cdn-images/network-firewall.jpg" alt="Network firewall with a vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <img src="https://images.pexels.com/photos/3951381/pexels-photo-3951381.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Network firewall with a vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
       Despite a patch being available for over a month, new reports indicate that more than 75,000 internet-exposed WatchGuard Firebox appliances remain vulnerable to a critical remote code execution (RCE) flaw (CVE-2025-9242). The vulnerability allows an unauthenticated attacker to take full control of the device.</p>
       <p><strong>Business Impact</strong><br/>
@@ -76,7 +76,7 @@
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/russia-coldriver-apt-lostkeys-malware</guid>
     <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://storage.googleapis.com/example-cdn-images/apt-malware-russia.jpg" alt="Russian state-sponsored hacker concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <img src="https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="Russian state-sponsored hacker concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
       The Russian state-sponsored hacking group COLDRIVER (aka Star Blizzard) has been linked to a new malware family dubbed "LOSTKEYS." Following a public disclosure of one of their implants over the summer, the group rapidly adapted and weaponized this new strain for its espionage campaigns.</p>
       <p><strong>Business Impact</strong><br/>
@@ -96,7 +96,7 @@
     <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/m365-copilot-prompt-injection-vulnerability</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://storage.googleapis.com/example-cdn-images/ai-data-leak.jpg" alt="AI assistant data security vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <img src="httpsClick: https://images.pexels.com/photos/4195325/pexels-photo-4195325.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=1" alt="AI assistant data security vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
       A vulnerability has been discovered in Microsoft 365 Copilot that allows an attacker to steal sensitive data. By hiding malicious instructions inside documents, an attacker can trick the AI assistant into fetching and exfiltrating sensitive tenant data and user information when another user interacts with that document.</p>
       <p><strong>Business Impact</strong><br/>
