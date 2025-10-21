@@ -5,104 +5,109 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 20 Oct 2025 23:25:00 +0300</pubDate>
-  <lastBuildDate>Mon, 20 Oct 2025 23:25:00 +0300</lastBuildDate>
+  <pubDate>Tue, 21 Oct 2025 21:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 21 Oct 2025 21:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Massive AWS Outage in US-EAST-1 Disrupts Global Services</title>
-    <link>https://codedefence.in/blog/2025/10/20/aws-us-east-1-outage-global-impact</link>
-    <pubDate>Mon, 20 Oct 2025 23:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/20/aws-us-east-1-outage-global-impact</guid>
-    <category>Cloud Security</category>
-    <description><![CDATA[
-      <p><strong>What Happened?</strong><br/>
-      A major outage in Amazon Web Services' (AWS) US-EAST-1 region caused widespread disruptions for hours, knocking major services like Snapchat, Robinhood, Roblox, and Fortnite offline for millions of users. The outage sparked initial speculation of a state-sponsored cyberattack.</p>
-      <p><strong>Business Impact</strong><br/>
-      This event highlights the systemic, single-point-of-failure risk in the global internet's heavy reliance on a few cloud providers. The financial losses from downtime for the affected companies are estimated to be in the millions, coupled with significant damage to customer trust.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Despite speculation, cybersecurity officials and experts report no signs of external intrusion. The outage appears to be caused by an internal AWS infrastructure fault or misconfiguration within the critical Northern Virginia data center region.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Direct your CIO and technology leaders to review their multi-cloud and multi-region redundancy strategies. Evaluate the business impact of a single-region failure from your primary cloud provider and ensure critical applications have a viable, tested failover plan.</p>
-      <p><strong>Hashtags:</strong> #AWS #CloudOutage #CloudSecurity #BusinessContinuity #RiskManagement #US-EAST-1</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>CISA Adds 5 Actively Exploited Flaws to KEV Catalog, Targeting Oracle &amp; Kentico</title>
-    <link>https://codedefence.in/blog/2025/10/20/cisa-adds-5-kev-oracle-kentico</link>
-    <pubDate>Mon, 20 Oct 2025 23:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/20/cisa-adds-5-kev-oracle-kentico</guid>
-    <category>Regulatory Compliance/Industry Impact</category>
-    <description><![CDATA[
-      <p><strong>What Happened?</strong><br/>
-      CISA has added five new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, confirming they are being actively weaponized. The list includes a critical Oracle E-Business Suite flaw (CVE-2025-61884), two 9.8 CVSS score auth-bypass flaws in Kentico Xperience (CVE-2025-2746, CVE-2025-2747), a Windows SMB flaw (CVE-2025-33073), and an Apple flaw (CVE-2022-48503).</p>
-      <p><strong>Business Impact</strong><br/>
-      Any organization using these products is at immediate risk of compromise. The Oracle EBS and Kentico flaws, in particular, allow for unauthenticated remote access, leading directly to data theft, ransomware, or full system takeover. Federal agencies are mandated to patch by November 10, 2025.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Attackers have successfully reverse-engineered recent patches to develop working exploits for these internet-facing applications, allowing them to hunt for and compromise unpatched systems at scale.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Direct the vulnerability management team to treat these five CVEs as a critical emergency. Prioritize immediate patching of all affected Oracle, Kentico, Microsoft, and Apple assets, starting with internet-facing systems.</p>
-      <p><strong>Hashtags:</strong> #CISA #KEV #VulnerabilityManagement #PatchNow #CVE #Oracle #CyberSecurity</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>China Accuses US NSA of Hacking National Time Service Center</title>
-    <link>https://codedefence.in/blog/2025/10/20/china-accuses-nsa-hacking-time-service</link>
-    <pubDate>Mon, 20 Oct 2025 23:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/20/china-accuses-nsa-hacking-time-service</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
-    <description><![CDATA[
-      <p><strong>What Happened?</strong><br/>
-      China's Ministry of State Security (MSS) publicly accused the U.S. National Security Agency (NSA) of a "premeditated" cyberattack on its National Time Service Center (NTSC). China claims the NSA used 42 specialized cyber tools in an attempt to disrupt "Beijing Time."</p>
-      <p><strong>Business Impact</strong><br/>
-      This accusation highlights a new frontier in geopolitical cyber conflict: targeting foundational infrastructure. A successful attack on a national time source could destabilize an entire economy by desynchronizing financial transactions, power grids, and communication networks.</p>
-      <p><strong>Why It Happened</strong><br/>
-      The attack, which China claims it thwarted, was allegedly aimed at espionage and gaining the ability to conduct sabotage. This signals a strategic move by nation-states to gain leverage by targeting the core protocols that underpin a rival's society.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      While this is a nation-state conflict, leaders should direct their infrastructure teams to review the resilience of their own time-synchronization protocols (NTP). Ensure critical systems have redundant, secure, and authenticated time sources.</p>
-      <p><strong>Hashtags:</strong> #Geopolitics #NationState #APT #CyberWarfare #CriticalInfrastructure #NTP #China #NSA</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Envoy Air Confirms Data Breach from Actively Exploited Oracle Zero-Day</title>
-    <link>https://codedefence.in/blog/2025/10/20/envoy-air-breach-oracle-zero-day</link>
-    <pubDate>Mon, 20 Oct 2025 23:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/20/envoy-air-breach-oracle-zero-day</guid>
-    <category>Top Incident/Vulnerability</category>
-    <description><![CDATA[
-      <p><strong>What Happened?</strong><br/>
-      Envoy Air, a regional carrier for American Airlines, confirmed it was compromised in a recent series of zero-day attacks targeting the Oracle E-Business Suite (EBS). The attack is linked to CVE-2025-61882, an unauthenticated remote code execution flaw exploited by extortion groups.</p>
-      <p><strong>Business Impact</strong><br/>
-      This breach is a real-world example of the CISA alerts. The attackers likely exfiltrated sensitive data, including business and commercial information. This demonstrates the extreme risk of unpatched, internet-facing enterprise software and the "supply chain" impact on parent companies like American Airlines.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Attackers, reportedly linked to the Clop/FIN11 gang, exploited the Oracle zero-day flaw before a patch was available, allowing them to breach dozens of organizations, steal data, and conduct extortion operations.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      This incident validates the urgency of the CISA KEV alert. Direct the CISO to conduct an emergency review of all Oracle E-Business Suite instances and any other critical enterprise resource planning (ERP) software for unpatched vulnerabilities.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #CyberAttack #Oracle #ZeroDay #CVE #EnvoyAir #Ransomware #SupplyChainSecurity</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Warning: Fake LastPass "Hack" Emails Spread Malware</title>
-    <link>https://codedefence.in/blog/2025/10/20/fake-lastpass-hack-email-malware</link>
-    <pubDate>Mon, 20 Oct 2025 23:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/20/fake-lastpass-hack-email-malware</guid>
+    <title>AI-Powered Social Engineering Now the Top Cyber Threat, Surpassing Ransomware</title>
+    <link>https://codedefence.in/blog/2025/10/21/ai-social-engineering-top-threat-2026</link>
+    <pubDate>Tue, 21 Oct 2025 20:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/ai-social-engineering-top-threat-2026</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
+      <img src="https://storage.googleapis.com/example-cdn-images/ai-social-engineering.jpg" alt="AI-powered social engineering concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
       <p><strong>What Happened?</strong><br/>
-      A new, widespread phishing campaign is targeting users with fake security alerts pretending to be from LastPass. The emails falsely claim the user's password vault has been "hacked" or accessed from an unknown location and tricks them into clicking a malicious link to "secure their account," which instead downloads malware.</p>
+      A new ISACA tech trends report reveals a major shift in the threat landscape. For the first time, IT and cybersecurity professionals (63%) have cited AI-powered social engineering as the leading cybersecurity threat for the upcoming year, ranking it higher than ransomware (54%) and supply chain attacks (35%).</to>
       <p><strong>Business Impact</strong><br/>
-      This social engineering attack is highly effective because it creates a strong sense of urgency. A successful attack on an employee, especially one with privileged access, could lead to the theft of their entire corporate credential vault, giving attackers a "keys to the kingdom" scenario.</p>
+      This marks a critical turning point. Attackers are using AI to create highly convincing deepfakes and personalized phishing lures at scale, making traditional employee training and email filters less effective. Only 13% of security leaders feel "very prepared" to handle these generative AI risks, indicating a significant defensive gap.</p>
       <p><strong>Why It Happened</strong><br/>
-      Threat actors are exploiting the brand recognition and past security incidents of LastPass to create a believable lure. The goal is to panic the user into acting without thinking, bypassing standard security awareness training.</p>
+      The low cost and high availability of generative AI tools have democratized sophisticated social engineering, which was previously a time-consuming, manual process. Attackers can now automate the creation of lures that are contextually aware and linguistically perfect, leading to higher success rates.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Immediately issue a security advisory to all employees warning them of this specific attack. Remind them to never click links in security alert emails and to always access their password manager (or any sensitive account) by typing the official URL directly into their browser.</p>
-      <p><strong>Hashtags:</strong> #Phishing #Malware #SocialEngineering #LastPass #CyberSecurity #InfoSec #CredentialTheft</p>
+      Prioritize investment in AI-powered defensive tools that analyze email behavior and context, not just content. The board must also champion a culture of "zero trust verification," where employees are mandated to verify sensitive requests (like wire transfers) through a separate, secure communication channel.</p>
+      <p><strong>Hashtags:</strong> #AI #CyberSecurity #SocialEngineering #Phishing #Deepfake #InfoSec #CyberRisk #ISACA</p>
     ]]></description>
   </item>
 
+  <item>
+    <title>CISA Issues 10 New Advisories for Critical Flaws in ICS Equipment</title>
+    <link>https://codedefence.in/blog/2025/10/21/cisa-ics-advisories-siemens-schneider</link>
+    <pubDate>Tue, 21 Oct 2025 20:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/cisa-ics-advisories-siemens-schneider</guid>
+    <category>Supply Chain / OT/ICS Security</category>
+    <description><![CDATA[
+      <img src="https://storage.googleapis.com/example-cdn-images/industrial-control-system.jpg" alt="Industrial Control Systems security" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>What Happened?</strong><br/>
+      CISA released 10 new Industrial Control Systems (ICS) advisories today, warning of critical vulnerabilities in equipment from major vendors including Siemens, Schneider Electric, and Oxford Nanopore. The flaws in Siemens SIMATIC S7-1200 CPUs, for example, could allow an unauthenticated attacker to cause a denial-of-service or even bypass authentication.</p>
+      <p><strong>Business Impact</strong><br/>
+      These vulnerabilities pose a direct risk to operational technology (OT) in sectors like manufacturing, energy, and healthcare (specifically DNA/RNA sequencing devices). Successful exploitation could halt production, disrupt critical services, or allow an attacker to manipulate physical processes, leading to catastrophic safety and financial consequences.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Many of these flaws, such as improper input validation and missing authentication, are common in legacy ICS equipment that was not designed for the hostility of modern interconnected networks.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct the Head of Operations or Plant Management to work immediately with the CISO to identify if these specific devices are in use. This is a critical risk that requires an urgent patch and segmentation plan to isolate these devices from the business network.</p>
+      <p><strong>Hashtags:</strong> #CISA #ICS #OTSecurity #CriticalInfrastructure #Siemens #SchneiderElectric #Vulnerability</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Over 75,000 WatchGuard Firewalls Remain Unpatched, Exposing Networks to RCE</title>
+    <link>https://codedefence.in/blog/2025/10/21/watchguard-firewall-vulnerability-unpatched</link>
+    <pubDate>Tue, 21 Oct 2025 20:35:00 +0300</pubDate>
+    <guid isPermaLink="true">httpshttps://codedefence.in/blog/2025/10/21/watchguard-firewall-vulnerability-unpatched</guid>
+    <category>Top Incident/Vulnerability</category>
+    <description><![CDATA[
+      <img src="https://storage.googleapis.com/example-cdn-images/network-firewall.jpg" alt="Network firewall with a vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>What Happened?</strong><br/>
+      Despite a patch being available for over a month, new reports indicate that more than 75,000 internet-exposed WatchGuard Firebox appliances remain vulnerable to a critical remote code execution (RCE) flaw (CVE-2025-9242). The vulnerability allows an unauthenticated attacker to take full control of the device.</p>
+      <p><strong>Business Impact</strong><br/>
+      This is a critical failure in basic patch management. Every unpatched device represents a wide-open door for an attacker to breach a corporate network. This negligence exposes organizations to ransomware, total data exfiltration, and persistent, undetected network access.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The flaw affects devices with the IKEv2 VPN service enabled, a common configuration. The slow patch adoption is likely due to a lack of asset visibility or a failure to prioritize this critical, internet-facing vulnerability.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Mandate an immediate, emergency scan of the network perimeter for any vulnerable WatchGuard devices. This is not a routine task; it is an active incident. If patching cannot be done immediately, the IKEv2 VPN service must be disabled.</p>
+      <p><strong>Hashtags:</strong> #Vulnerability #WatchGuard #Firewall #RCE #CyberSecurity #PatchManagement #InfoSec #CVE</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Russian APT "COLDRIVER" Linked to New "LOSTKEYS" Malware</title>
+    <link>https://codedefence.in/blog/2025/10/21/russia-coldriver-apt-lostkeys-malware</link>
+    <pubDate>Tue, 21 Oct 2025 20:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/russia-coldriver-apt-lostkeys-malware</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
+    <description><![CDATA[
+      <img src="https://storage.googleapis.com/example-cdn-images/apt-malware-russia.jpg" alt="Russian state-sponsored hacker concept" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>What Happened?</strong><br/>
+      The Russian state-sponsored hacking group COLDRIVER (aka Star Blizzard) has been linked to a new malware family dubbed "LOSTKEYS." Following a public disclosure of one of their implants over the summer, the group rapidly adapted and weaponized this new strain for its espionage campaigns.</p>
+      <p><strong>Business Impact</strong><br/>
+      COLDRIVER is a highly persistent threat group that targets governments, research institutions, and NGOs. This new malware demonstrates their agility and resilience, posing a heightened threat of espionage and intellectual property theft to any organization in their target sectors.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Nation-state actors continuously evolve their toolsets to evade detection. When one tool is exposed, they immediately pivot to a new or modified variant to continue operations with minimal disruption.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct your threat intelligence team to ensure all security platforms (EDR, SIEM) have the latest indicators of compromise (IoCs) for COLDRIVER and the "LOSTKEYS" malware. This is particularly critical for organizations in government, defense, and research sectors.</p>
+      <p><strong>Hashtags:</strong> #APT #NationState #Russia #COLDRIVER #ThreatIntel #Malware #CyberSecurity #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Microsoft 365 Copilot Vulnerability Allows Data Exfiltration via Prompt Injection</title>
+    <link>https://codedefence.in/blog/2025/10/21/m365-copilot-prompt-injection-vulnerability</link>
+    <pubDate>Tue, 21 Oct 2025 20:25:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/21/m365-copilot-prompt-injection-vulnerability</guid>
+    <category>AI/ML in Cybersecurity</category>
+    <description><![CDATA[
+      <img src="https://storage.googleapis.com/example-cdn-images/ai-data-leak.jpg" alt="AI assistant data security vulnerability" style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>What Happened?</strong><br/>
+      A vulnerability has been discovered in Microsoft 365 Copilot that allows an attacker to steal sensitive data. By hiding malicious instructions inside documents, an attacker can trick the AI assistant into fetching and exfiltrating sensitive tenant data and user information when another user interacts with that document.</p>
+      <p><strong>Business Impact</strong><br/>
+      This attack bypasses traditional security boundaries. It turns the organization's own AI assistant into an insider threat, potentially leaking confidential files, user credentials, or strategic plans simply by having an employee "use" Copilot on a weaponized file.</p>
+      <p><strong>Why It Happened</strong><br/>
+      This is a classic "prompt injection" attack, where the AI cannot distinguish between the user's intended instruction and a malicious instruction embedded in the data it is processing. This is a foundational security flaw in many generative AI systems.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct your Microsoft 365 administrators to review Copilot's data access permissions. This incident proves that Copilot *will* access everything it *can* access. Enforce strict "need-to-know" data permissions and information barriers as a critical compensating control.</p>
+      <p><strong>Hashtags:</strong> #AI #Microsoft365 #Copilot #PromptInjection #DataSecurity #Vulnerability #InfoSec</p>
+    ]]></description>
+  </item>
+  
 </channel>
 </rss>
