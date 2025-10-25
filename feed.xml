@@ -5,109 +5,109 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Fri, 24 Oct 2025 20:50:00 +0300</pubDate>
-  <lastBuildDate>Fri, 24 Oct 2025 20:50:00 +0300</lastBuildDate>
+  <pubDate>Sat, 25 Oct 2025 20:52:00 +0300</pubDate>
+  <lastBuildDate>Sat, 25 Oct 2025 20:52:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical "LogFusion" Vulnerability Allows Unauthenticated Remote Code Execution</title>
-    <link>https://codedefence.in/blog/2025/10/24/logfusion-critical-rce-vulnerability</link>
-    <pubDate>Fri, 24 Oct 2025 20:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/24/logfusion-critical-rce-vulnerability</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>Critical Jenkins Vulnerability (CVE-2025-8842) Allows RCE via Build Artifacts</title>
+    <link>https://codedefence.in/blog/2025/10/25/jenkins-critical-rce-vulnerability-cve-2025-8842</link>
+    <pubDate>Sat, 25 Oct 2025 20:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/25/jenkins-critical-rce-vulnerability-cve-2025-8842</guid>
+    <category>Cloud Security &amp; DevOps</category>
     <description><![CDATA[
       
       <p><strong>What Happened?</strong><br/>
-      A critical remote code execution (RCE) vulnerability (CVE-2025-7734, CVSS 10.0) has been discovered in "LogFusion," a widely used enterprise log aggregation and analysis platform. The flaw allows unauthenticated attackers to execute arbitrary code with root privileges by sending a specially crafted log message.</p>
+      A critical remote code execution (RCE) vulnerability (CVE-2025-8842) has been disclosed in Jenkins, the widely used open-source automation server. The flaw allows an attacker with permission to configure jobs to execute arbitrary code on the Jenkins controller by manipulating build artifacts.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic vulnerability. Log aggregation servers often receive data from nearly every server and application in an organization. Compromising LogFusion grants attackers a central point to launch further attacks, deploy ransomware, exfiltrate sensitive data from logs, and disable security monitoring across the entire infrastructure.</p>
+      Jenkins controllers often have high levels of privilege and access to source code repositories, build secrets, and deployment environments. Compromising Jenkins can lead to catastrophic supply chain attacks, theft of intellectual property, and disruption of critical development and deployment pipelines.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability stems from improper input sanitization when processing incoming log data. Attackers can embed malicious code within a log entry that gets executed by the LogFusion server's processing engine.</p>
+      The vulnerability arises from insufficient validation when processing serialized data related to build artifacts. An attacker can craft a malicious build job that, when run, triggers code execution on the main Jenkins server.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your Security Operations Center (SOC) and infrastructure teams to immediately patch all LogFusion instances. If patching is delayed, implement strict firewall rules to limit which systems can send logs to the LogFusion server and closely monitor for any unusual outbound connections from the server.</p>
-      <p><strong>Hashtags:</strong> #RCE #Vulnerability #LogManagement #SIEM #CyberSecurity #PatchNow #CVE #InfoSec</p>
+      Direct DevOps and security teams to immediately apply the latest Jenkins security patches. Audit Jenkins job configurations to ensure only trusted users have permission to create or modify build jobs. Implement stricter agent-controller isolation if possible.</p>
+      <p><strong>Hashtags:</strong> #Jenkins #Vulnerability #RCE #DevOps #CI/CD #SupplyChainSecurity #CyberSecurity #CVE</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA Warns: Healthcare Sector Increasingly Targeted by "Black Basta" Ransomware</title>
-    <link>https://codedefence.in/blog/2025/10/24/cisa-warns-black-basta-ransomware-healthcare</link>
-    <pubDate>Fri, 24 Oct 2025 20:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/24/cisa-warns-black-basta-ransomware-healthcare</guid>
-    <category>Ransomware &amp; Extortion</category>
+    <title>"FIN8" Cybercrime Group Targets Hospitality Sector with New PoS Malware</title>
+    <link>https://codedefence.in/blog/2025/10/25/fin8-targets-hospitality-pos-malware</link>
+    <pubDate>Sat, 25 Oct 2025 20:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/25/fin8-targets-hospitality-pos-malware</guid>
+    <category>Cybercrime &amp; Financial Threats</category>
     <description><![CDATA[
       
       <p><strong>What Happened?</strong><br/>
-      CISA, FBI, and HHS issued a joint advisory warning of a significant increase in Black Basta ransomware attacks targeting the healthcare and public health (HPH) sector. The group is known for exploiting known vulnerabilities and using double extortion tactics (encrypting and stealing data).</p>
+      The financially motivated threat group FIN8 has launched a new campaign targeting the hospitality sector (hotels, restaurants) with updated Point-of-Sale (PoS) malware designed to scrape credit card data from payment terminals.</p>
       <p><strong>Business Impact</strong><br/>
-      Ransomware attacks on healthcare providers can disrupt patient care, delay critical procedures, compromise sensitive patient data (PHI), and lead to significant financial losses and regulatory fines (e.g., HIPAA). The impact can be life-threatening.</p>
+      A PoS malware infection can lead to the theft of thousands or millions of customer credit card details, resulting in massive financial losses from fraud, hefty PCI DSS non-compliance fines, mandatory breach notifications, and severe reputational damage.</p>
       <p><strong>Why It Happened</strong><br/>
-      The healthcare sector is an attractive target due to the critical nature of its operations (increasing pressure to pay) and often lagging cybersecurity investments. Black Basta specifically exploits vulnerabilities in VPNs, remote desktop protocols (RDP), and unpatched software.</p>
+      FIN8 specializes in targeting PoS systems. They typically gain initial access through phishing emails aimed at employees or by exploiting vulnerabilities in remote access software used by the hospitality businesses or their third-party IT providers.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      For healthcare leaders: Ensure all critical vulnerabilities identified in the CISA advisory are patched immediately. Mandate MFA for all remote access. Review and test incident response and business continuity plans specifically for ransomware scenarios, including backup integrity.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #BlackBasta #Healthcare #CISA #CyberAttack #HIPAA #InfoSec #PatientSafety</p>
+      For leaders in retail/hospitality: Ensure all PoS systems are segmented from the main corporate network and that remote access is strictly controlled with MFA. Verify PCI DSS compliance, including regular vulnerability scanning and security awareness training focusing on phishing.</p>
+      <p><strong>Hashtags:</strong> #FIN8 #PoSMalware #Cybercrime #Hospitality #Retail #CreditCardFraud #PCIDSS #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>AI Chatbots Used in Sophisticated Scams Impersonating Government Agencies</title>
-    <link>https://codedefence.in/blog/2025/10/24/ai-chatbot-government-impersonation-scams</link>
-    <pubDate>Fri, 24 Oct 2025 20:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/24/ai-chatbot-government-impersonation-scams</guid>
+    <title>AI Voice Cloning Used to Authorize Fraudulent Emergency Supplier Payment</title>
+    <link>https://codedefence.in/blog/2025/10/25/ai-voice-clone-supplier-payment-fraud</link>
+    <pubDate>Sat, 25 Oct 2025 20:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/25/ai-voice-clone-supplier-payment-fraud</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
       
       <p><strong>What Happened?</strong><br/>
-      Scammers are deploying AI-powered chatbots on fake websites designed to perfectly mimic official government agency portals (e.g., tax authorities, social security). These chatbots engage victims, convincingly answer questions, and ultimately trick them into revealing personal information or making fraudulent payments.</p>
+      A mid-sized manufacturing company reported falling victim to a sophisticated fraud scheme. Attackers used an AI-generated deepfake voice clone of the CEO to call the accounts payable department, urgently requesting an immediate wire transfer to a "new supplier" to resolve a fake emergency.</p>
       <p><strong>Business Impact</strong><br/>
-      While primarily targeting individuals, this tactic erodes public trust in legitimate government digital services. It also demonstrates how AI can automate highly convincing, interactive scams, potentially adaptable to corporate targets (e.g., fake supplier portals with AI support).</p>
+      The company lost a significant sum (estimated $500K+) due to this Business Email Compromise (BEC) style attack, enhanced by AI. This highlights the increasing inadequacy of voice-only verification for large or unusual financial transactions.</p>
       <p><strong>Why It Happened</strong><br/>
-      Generative AI allows scammers to easily create realistic website content and train chatbots to handle common queries, making the fake portals appear legitimate and trustworthy, overcoming skepticism more easily than static fake pages.</p>
+      Attackers likely gathered voice samples of the CEO from public sources (interviews, earnings calls) to train the AI model. The urgency and apparent authority conveyed by the deepfake voice bypassed the company's standard payment verification procedures.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Educate employees, especially in finance and HR departments who interact with government portals, about this threat. Reinforce procedures to always verify the authenticity of a government website URL before entering credentials or sensitive information. Use official bookmarks rather than search engine links.</p>
-      <p><strong>Hashtags:</strong> #AI #Scam #Chatbot #Phishing #SocialEngineering #CyberSecurity #InfoSec #Government</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>Major Financial Services Firm Discloses Breach Exposing Investment Data</title>
-    <link>https://codedefence.in/blog/2025/10/24/financial-firm-breach-investment-data</link>
-    <pubDate>Fri, 24 Oct 2025 20:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/24/financial-firm-breach-investment-data</guid>
-    <category>Top Incident/Vulnerability</category>
-    <description><![CDATA[
-      
-      <p><strong>What Happened?</strong><br/>
-      A prominent (unnamed) global financial services firm has started notifying clients about a data breach. An unauthorized third party gained access to systems containing client names, account numbers, and potentially sensitive investment portfolio details.</p>
-      <p><strong>Business Impact</strong><br/>
-      This type of breach is highly damaging for financial institutions. It exposes clients to sophisticated spear-phishing attacks tailored to their specific investments, risks identity theft, and severely damages the firm's reputation for security and confidentiality, potentially leading to client loss and regulatory action.</p>
-      <p><strong>Why It Happened</strong><br/>
-      While specifics are undisclosed pending investigation, breaches in the financial sector often involve exploiting web application vulnerabilities, compromised employee credentials (phishing), or insecure third-party integrations accessing client data.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review and reinforce access controls for all systems holding sensitive client financial data. Ensure robust logging and anomaly detection are in place to quickly identify unauthorized access. Mandate regular security awareness training emphasizing the identification of phishing attacks targeting financial credentials.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Finance #CyberAttack #Investment #Privacy #InfoSec #CyberRisk #Compliance</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>APT Group "SandWorm" Deploys New Wiper Malware Against Energy Sector</title>
-    <link>https://codedefence.in/blog/2025/10/24/apt-sandworm-wiper-malware-energy-sector</link>
-    <pubDate>Fri, 24 Oct 2025 20:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/24/apt-sandworm-wiper-malware-energy-sector</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
-    <description><![CDATA[
-      
-      <p><strong>What Happened?</strong><br/>
-      The notorious Russian state-sponsored APT group "SandWorm" (linked to GRU) has been observed deploying a new variant of wiper malware specifically targeting organizations in the energy sector in Eastern Europe. The wiper is designed to irreversibly destroy data on infected systems.</p>
-      <p><strong>Business Impact</strong><br/>
-      Wiper malware represents a destructive threat intended to cause maximum disruption, not financial gain. An attack on the energy sector could cripple critical infrastructure, leading to power outages, operational chaos, and significant geopolitical instability.</p>
-      <p><strong>Why It Happened</strong><br/>
-      SandWorm has a history of disruptive attacks against critical infrastructure, often aligning with Russian geopolitical objectives. Wiper malware is a tool of digital warfare used to sabotage and destabilize adversaries.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      For organizations in critical infrastructure: Ensure robust, tested, and *offline* backups are maintained for all critical systems. Implement strict network segmentation between IT and OT environments. Ensure threat intelligence feeds are updated with the latest SandWorm TTPs and IoCs for proactive hunting.</p>
-      <p><strong>Hashtags:</strong> #APT #SandWorm #WiperMalware #NationState #Russia #CriticalInfrastructure #EnergySector #CyberWarfare #InfoSec</p>
+      Update financial policies to require multi-channel verification for any urgent or unusual payment requests, especially changes to supplier bank details. Implement a pre-agreed secondary confirmation method (e.g., video call with a specific codeword, SMS confirmation) that cannot be easily spoofed by AI alone.</p>
+      <p><strong>Hashtags:</strong> #AI #Deepfake #VoiceCloning #BEC #Fraud #CyberSecurity #SocialEngineering #InfoSec</p>
     ]]></description>
   </item>
   
+  <item>
+    <title>CISA Adds Ivanti Sentry RCE Flaw (CVE-2025-22057) to KEV Catalog</title>
+    <link>https://codedefence.in/blog/2025/10/25/cisa-adds-ivanti-sentry-rce-kev-catalog</link>
+    <pubDate>Sat, 25 Oct 2025 20:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/25/cisa-adds-ivanti-sentry-rce-kev-catalog</guid>
+    <category>Regulatory Compliance &amp; Vulnerability Management</category>
+    <description><![CDATA[
+      
+      <p><strong>What Happened?</strong><br/>
+      CISA has added a critical remote code execution vulnerability (CVE-2025-22057) affecting Ivanti Sentry (formerly MobileIron Sentry) to its Known Exploited Vulnerabilities (KEV) catalog, confirming active exploitation in the wild.</p>
+      <p><strong>Business Impact</strong><br/>
+      Ivanti Sentry acts as a gateway for mobile device management and security. A compromise allows attackers to potentially gain access to sensitive mobile device data, intercept communications, or use the Sentry appliance as a pivot point into the broader corporate network.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Specific details of the exploitation are often withheld, but vulnerabilities in gateway appliances like Sentry are frequently targeted by nation-state actors and sophisticated cybercriminals seeking persistent network access.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct IT security teams to treat this as an urgent patching requirement. Identify all Ivanti Sentry instances and apply the necessary updates immediately per Ivanti's security advisory. Monitor for any signs of compromise as detailed in CISA's alert.</p>
+      <p><strong>Hashtags:</strong> #CISA #KEV #Ivanti #Vulnerability #RCE #MobileSecurity #MDM #PatchNow #InfoSec</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>Report: Misconfigured Cloud Storage Buckets Expose Billions of Records Weekly</title>
+    <link>https://codedefence.in/blog/2025/10/25/misconfigured-cloud-storage-exposes-billions</link>
+    <pubDate>Sat, 25 Oct 2025 20:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/25/misconfigured-cloud-storage-exposes-billions</guid>
+    <category>Cloud Security</category>
+    <description><![CDATA[
+      
+      <p><strong>What Happened?</strong><br/>
+      A new cybersecurity research report highlights the ongoing epidemic of misconfigured cloud storage (like AWS S3 buckets, Azure Blobs). Researchers estimate that billions of sensitive records (PII, corporate data, credentials) are inadvertently exposed each week due to simple configuration errors leaving buckets publicly accessible.</p>
+      <p><strong>Business Impact</strong><br/>
+      These accidental exposures are a leading cause of major data breaches. They provide attackers with easy access to vast amounts of sensitive information without needing to overcome complex security controls, leading to significant regulatory fines, reputational damage, and follow-on attacks.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Common causes include human error during setup, complex permission models, lack of automated security checks, and insufficient security awareness among developers and cloud engineers deploying storage resources.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Mandate the use of Cloud Security Posture Management (CSPM) tools to continuously scan for and automatically remediate misconfigured cloud storage. Implement strict policies and automated checks within CI/CD pipelines to prevent insecure configurations from being deployed.</p>
+      <p><strong>Hashtags:</strong> #CloudSecurity #Misconfiguration #DataBreach #AWS #Azure #GCP #CSPM #InfoSec #DataLeak</p>
+    ]]></description>
+  </item>
+
 </channel>
 </rss>
