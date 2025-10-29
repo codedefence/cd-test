@@ -5,107 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 28 Oct 2025 20:01:00 +0300</pubDate>
-  <lastBuildDate>Tue, 28 Oct 2025 20:01:00 +0300</lastBuildDate>
+  <pubDate>Wed, 29 Oct 2025 17:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 29 Oct 2025 17:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical Zero-Day in Microsoft Exchange Exploited for Data Theft (CVE-2025-4421)</title>
-    <link>https://codedefence.in/blog/2025/10/28/microsoft-exchange-zero-day-cve-2025-4421</link>
-    <pubDate>Tue, 28 Oct 2025 20:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/28/microsoft-exchange-zero-day-cve-2025-4421</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>Critical Atlassian Confluence RCE Flaw (CVE-2025-9115) Under Active Exploit</title>
+    <link>https://codedefence.in/blog/2025/10/29/atlassian-confluence-rce-cve-2025-9115</link>
+    <pubDate>Wed, 29 Oct 2025 16:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/29/atlassian-confluence-rce-cve-2025-9115</guid>
+    <category>Top Incident/Vulnerability &amp; Collaboration Tools</category>
     <description><![CDATA[
       
-      <p><strong>What Happened?</strong><br/>
-      Microsoft released out-of-band patches for a critical zero-day vulnerability (CVE-2025-4421) in Exchange Server. The flaw, a server-side request forgery (SSRF) issue, allows unauthenticated attackers to bypass authentication and access user mailboxes. It is confirmed to be actively exploited in targeted attacks.</p>
+      <p>Atlassian released emergency patches for a critical remote code execution (RCE) vulnerability (CVE-2025-9115, CVSS 9.8) affecting Confluence Data Center and Server. The flaw allows unauthenticated attackers to execute arbitrary code. CISA has added it to the KEV catalog, confirming active exploitation in the wild.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a severe threat for organizations running on-premises Exchange. Exploitation allows attackers to steal sensitive emails, calendar information, and contact lists without needing credentials. This can lead to major data breaches, espionage, and further network compromise.</p>
+      Confluence often stores sensitive project plans, internal documentation, and knowledge bases. A successful RCE attack allows attackers complete control over the Confluence server, enabling data theft, deployment of ransomware, or lateral movement into other corporate systems.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability exists in how Exchange processes certain web requests, allowing attackers to trick the server into making unauthorized internal requests, thereby accessing restricted resources like mailboxes.</p>
+      The vulnerability exists in how Confluence handles certain web requests, allowing attackers to bypass authentication and achieve code execution. Such flaws in widely deployed collaboration tools are high-value targets for attackers.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an absolute emergency. Direct IT teams to apply the Microsoft patches immediately to all Exchange servers. Instruct the SOC to actively hunt for indicators of compromise (IoCs) provided by Microsoft, as exploitation may have already occurred.</p>
-      <p><strong>Hashtags:</strong> #MicrosoftExchange #ZeroDay #Vulnerability #DataBreach #CyberSecurity #PatchNow #CVE #InfoSec</p>
+      Treat this as a critical emergency. Direct IT teams to apply the Atlassian patches immediately to all affected Confluence instances. Prioritize internet-facing servers. Hunt for IoCs provided by Atlassian and CISA, as systems may already be compromised.</p>
+      <p><strong>Hashtags:</strong> #Atlassian #Confluence #Vulnerability #RCE #ZeroDay #CISA #KEV #PatchNow #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>AI-Powered Spear Phishing Campaign Uses Deepfake Video Messages</title>
-    <link>https://codedefence.in/blog/2025/10/28/ai-spear-phishing-deepfake-video</link>
-    <pubDate>Tue, 28 Oct 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/28/ai-spear-phishing-deepfake-video</guid>
-    <category>AI/ML in Cybersecurity</category>
+    <title>AI-Powered Vishing Attacks Bypass Traditional Call Center Security</title>
+    <link>https://codedefence.in/blog/2025/10/29/ai-vishing-attacks-bypass-call-center-security</link>
+    <pubDate>Wed, 29 Oct 2025 16:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/29/ai-vishing-attacks-bypass-call-center-security</guid>
+    <category>AI/ML in Cybersecurity &amp; Social Engineering</category>
     <description><![CDATA[
       
-      <p><strong>What Happened?</strong><br/>
-      Security researchers have uncovered a sophisticated spear-phishing campaign where attackers are sending highly personalized emails containing short, embedded deepfake video messages. These videos convincingly impersonate colleagues or executives, requesting urgent actions like credential resets or file transfers.</p>
+      <p>Threat actors are using real-time AI voice modification and deepfake audio to bypass voice biometric authentication and trick human agents in call centers (vishing - voice phishing). They can convincingly impersonate customers to perform account takeovers or authorize fraudulent transactions.</p>
       <p><strong>Business Impact</strong><br/>
-      This represents a significant evolution in phishing tactics. Video adds a layer of perceived authenticity that bypasses traditional email filters and training focused on text-based lures. Successful attacks can lead directly to credential theft, malware installation, or fraudulent transactions.</p>
+      This significantly increases the risk of fraud and account takeover (ATO) originating through customer support channels. It undermines trust in voice-based security measures and can lead to substantial financial losses and reputational damage for banks, telcos, and other service providers.</p>
       <p><strong>Why It Happened</strong><br/>
-      Advances in AI deepfake technology make it easier and cheaper to create realistic video impersonations using publicly available images and audio. Attackers leverage social media and corporate websites for source material and personalization details.</p>
+      AI voice technology has advanced to the point where it can convincingly mimic specific individuals in real-time or generate realistic voices that fool both automated systems and human listeners, especially in the context of a brief call center interaction.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update security awareness training to specifically address the threat of deepfake video and audio in phishing attacks. Emphasize the importance of verifying unexpected or urgent requests through a separate, secure communication channel, even if the request appears to come via video or voice message.</p>
-      <p><strong>Hashtags:</strong> #AI #Deepfake #SpearPhishing #CyberSecurity #SocialEngineering #InfoSec #CyberThreat</p>
+      Review call center authentication procedures. Implement multi-factor authentication beyond simple voice recognition or knowledge-based questions (KBAs). Train agents to recognize potential signs of AI-generated audio and escalate suspicious calls for further verification.</p>
+      <p><strong>Hashtags:</strong> #AI #Vishing #Deepfake #VoiceCloning #CallCenter #Fraud #ATO #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>LockBit Ransomware Variant Incorporates Network Worm Capabilities</title>
-    <link>https://codedefence.in/blog/2025/10/28/lockbit-ransomware-worm-capabilities</link>
-    <pubDate>Tue, 28 Oct 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/28/lockbit-ransomware-worm-capabilities</guid>
-    <category>Ransomware &amp; Extortion</category>
+    <title>New "DataViper" Ransomware Targets Misconfigured Databases</title>
+    <link>https://codedefence.in/blog/2025/10/29/dataviper-ransomware-targets-databases</link>
+    <pubDate>Wed, 29 Oct 2025 16:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/29/dataviper-ransomware-targets-databases</guid>
+    <category>Ransomware &amp; Data Security</category>
     <description><![CDATA[
       
-      <p><strong>What Happened?</strong><br/>
-      A new variant of the prolific LockBit ransomware has been observed incorporating self-propagating "worm" capabilities. Once it compromises a machine, this variant attempts to automatically spread to other vulnerable systems on the same network using stolen credentials or exploiting unpatched flaws like Log4Shell or ProxyLogon.</p>
+      <p>A new ransomware variant named "DataViper" has emerged, specifically scanning the internet for and targeting publicly exposed, misconfigured databases (like MongoDB, Elasticsearch, Redis). Instead of encrypting entire systems, it encrypts the database contents directly and leaves a ransom note.</p>
       <p><strong>Business Impact</strong><br/>
-      This significantly increases the speed and scale of a LockBit attack. A single compromised endpoint can rapidly lead to the encryption of hundreds or thousands of servers and workstations across the network, dramatically increasing the potential damage and recovery time.</p>
+      This automated attack rapidly compromises critical data stores that may power customer applications or internal operations. Loss of access to key databases can halt business functions, and data exfiltration before encryption adds significant breach notification and regulatory risks.</p>
       <p><strong>Why It Happened</strong><br/>
-      Ransomware groups are continuously refining their tactics to maximize impact. Adding worm capabilities automates the lateral movement phase of an attack, reducing the need for manual C2 interaction and accelerating the encryption process before defenders can react.</p>
+      Attackers exploit the common misconfiguration of databases left exposed to the internet without proper authentication or firewall rules. DataViper automates the discovery and exploitation of these low-hanging fruit.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Ensure robust network segmentation is in place to limit the blast radius of a potential infection. Prioritize patching of known, commonly exploited vulnerabilities used for lateral movement. Implement strong EDR/XDR solutions capable of detecting and isolating anomalous network propagation behavior.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #LockBit #Worm #CyberAttack #Malware #LateralMovement #InfoSec #CyberSecurity</p>
+      Mandate an immediate audit of all database instances (cloud and on-prem) to ensure they are not publicly exposed and have strong authentication enabled. Implement automated configuration scanning (like CSPM for cloud) to detect and alert on such misconfigurations proactively.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #DatabaseSecurity #Misconfiguration #MongoDB #Elasticsearch #DataBreach #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>CISA Adds GitLab Runner Flaw (CVE-2025-7034) to KEV Catalog</title>
-    <link>https://codedefence.in/blog/2025/10/28/cisa-adds-gitlab-runner-flaw-kev</link>
-    <pubDate>Tue, 28 Oct 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/28/cisa-adds-gitlab-runner-flaw-kev</guid>
-    <category>Cloud Security &amp; DevOps</category>
+    <title>Iranian APT "Charming Kitten" Uses New Backdoor in Espionage Campaigns</title>
+    <link>https://codedefence.in/blog/2025/10/29/iranian-apt-charming-kitten-new-backdoor</link>
+    <pubDate>Wed, 29 Oct 2025 16:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/29/iranian-apt-charming-kitten-new-backdoor</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       
-      <p><strong>What Happened?</strong><br/>
-      CISA has added a high-severity vulnerability (CVE-2025-7034) affecting GitLab Runner to its Known Exploited Vulnerabilities (KEV) catalog. The flaw allows attackers who can run pipelines on a shared GitLab Runner instance to potentially execute commands on the underlying host system.</p>
+      <p>The Iranian state-sponsored group Charming Kitten (aka APT35, Phosphorus) has been observed deploying a previously unseen backdoor named "GhostEcho." The group uses sophisticated spear-phishing campaigns targeting academics, journalists, and human rights organizations, particularly those focused on Middle Eastern affairs.</p>
       <p><strong>Business Impact</strong><br/>
-      GitLab Runners are critical components of CI/CD pipelines, often having access to build environments, secrets, and deployment targets. Exploiting this vulnerability could allow an attacker to inject malicious code into software builds (supply chain attack), steal sensitive credentials, or compromise the infrastructure hosting the runner.</p>
+      Charming Kitten focuses on espionage and credential theft. A successful compromise can lead to the exfiltration of sensitive research, communications, contact lists, and long-term surveillance of targeted individuals and organizations, potentially undermining diplomatic efforts or compromising activists.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability involves improper handling of build variables or artifacts in certain configurations, allowing crafted pipeline jobs to break out of their intended isolation and execute commands on the host machine running the GitLab Runner agent.</p>
+      Nation-state groups continuously develop new malware and refine their TTPs to evade detection by security tools and maintain persistence within target networks for intelligence gathering.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct DevOps and platform engineering teams to immediately identify and update all GitLab Runner instances to the patched versions specified by GitLab. Review Runner configurations to ensure proper isolation and limit the permissions granted to runner processes.</p>
-      <p><strong>Hashtags:</strong> #CISA #KEV #GitLab #DevOps #CI/CD #Vulnerability #SupplyChainSecurity #CyberSecurity #InfoSec</p>
+      Ensure threat intelligence platforms are updated with IoCs for Charming Kitten and the "GhostEcho" backdoor. Remind high-risk employees (executives, researchers in relevant fields) to be extremely cautious of spear-phishing attempts and enable robust MFA on all accounts.</p>
+      <p><strong>Hashtags:</strong> #APT #NationState #Iran #CharmingKitten #Espionage #SpearPhishing #ThreatIntel #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Major Telecom Provider Investigating Massive Customer Data Leak Claim</title>
-    <link>https://codedefence.in/blog/2025/10/28/telecom-provider-investigating-data-leak-claim</link>
-    <pubDate>Tue, 28 Oct 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/28/telecom-provider-investigating-data-leak-claim</guid>
-    <category>Top Incident/Vulnerability &amp; Data Breach</category>
+    <title>Critical Vulnerability in Popular WordPress Plugin "FormCraft Pro" Allows Site Takeover</title>
+    <link>https://codedefence.in/blog/2025/10/29/wordpress-plugin-formcraft-pro-vulnerability</link>
+    <pubDate>Wed, 29 Oct 2025 16:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/10/29/wordpress-plugin-formcraft-pro-vulnerability</guid>
+    <category>Top Incident/Vulnerability &amp; Web Security</category>
     <description><![CDATA[
       
-      <p><strong>What Happened?</strong><br/>
-      A major international telecommunications provider is actively investigating claims made on a dark web forum alleging a massive data breach. Threat actors claim to have exfiltrated a database containing personal information (names, addresses, phone numbers, potentially account details) of millions of customers.</p>
+      <p>A critical unauthenticated arbitrary file upload vulnerability (CVE-2025-5678, CVSS 9.8) has been found in the FormCraft Pro WordPress plugin, installed on thousands of websites. The flaw allows attackers to upload malicious files (like web shells) and gain complete control over the affected website.</p>
       <p><strong>Business Impact</strong><br/>
-      If confirmed, this would be a catastrophic breach. Telecom customer data is highly valuable for SIM swapping attacks, identity theft, and targeted phishing. The provider faces enormous potential fines, loss of customer trust, and significant incident response costs.</p>
+      Website takeover can lead to defacement, hosting of malicious content, redirection of visitors to phishing sites, theft of customer data submitted through forms, and significant reputational damage. Compromised sites can also be used to launch attacks against visitors or other systems.</p>
       <p><strong>Why It Happened</strong><br/>
-      Large telecom databases are frequent targets due to the wealth of PII they contain. Breaches often occur via exploitation of web application vulnerabilities, compromised internal credentials, insecure APIs, or attacks on third-party vendors with access to customer data.</p>
+      The vulnerability likely stems from insufficient validation of file types or paths during the file upload process handled by the plugin, allowing attackers to bypass security checks and place executable code on the web server.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      While the investigation is ongoing, this serves as a critical reminder for all organizations holding large PII datasets. Ensure robust access controls, encryption (at rest and in transit), regular vulnerability assessments, and strict third-party risk management practices are in place and consistently audited.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Telecom #CyberAttack #DarkWeb #PII #Privacy #InfoSec #CyberSecurity</p>
+      Direct web administrators to immediately update the FormCraft Pro plugin to the latest patched version or disable and remove it if an update is not possible. Implement a web application firewall (WAF) to help block malicious file uploads.</p>
+      <p><strong>Hashtags:</strong> #WordPress #Plugin #Vulnerability #RCE #WebSecurity #CyberSecurity #PatchNow #CVE #InfoSec</p>
     ]]></description>
   </item>
 
