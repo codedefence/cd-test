@@ -5,102 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 03 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 03 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 04 Nov 2025 20:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 04 Nov 2025 20:30:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Hackers Actively Scanning for WSUS Flaw (CVE-2025-59287)</title>
-    <link>https://codedefence.in/blog/2025/11/03/hackers-scanning-wsus-cve-2025-59287</link>
-    <pubDate>Mon, 03 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/03/hackers-scanning-wsus-cve-2025-59287</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>Critical 0-Click RCE Flaw in Android System (CVE-2025-48593)</title>
+    <link>https://codedefence.in/blog/2025/11/04/android-zero-click-rce-cve-2025-48593</link>
+    <pubDate>Tue, 04 Nov 2025 20:25:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/android-zero-click-rce-cve-2025-48593</guid>
+    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
     <description><![CDATA[
       
-      <p>Security researchers at the SANS Internet Storm Center report a major spike in scanning activity targeting TCP ports 8530 and 8531. This indicates that threat actors are in a race to find and exploit the critical Windows Server Update Services (WSUS) RCE vulnerability (CVE-2025-59287) before organizations can apply the emergency patch.</p>
+      <p>Google's November 2025 Android Security Bulletin patches a critical remote code execution (RCE) vulnerability in the Android System component. Tracked as CVE-2025-48593, this flaw is a "zero-click" vector, meaning it can be exploited with no user interaction, likely via a specially crafted message.</p>
       <p><strong>Business Impact</strong><br/>
-      This automated scanning means any unpatched, internet-facing WSUS server is at immediate risk of compromise. A breach of WSUS allows attackers to control the update mechanism for an entire enterprise, enabling them to deploy ransomware or spyware at scale, disguised as a legitimate Microsoft update.</p>
+      This is a severe threat to all devices running Android 13, 14, 15, and 16. It allows for complete system compromise remotely, enabling attackers to steal data, install spyware, and monitor all communications on both personal (BYOD) and corporate-owned devices without the user's knowledge.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw is a critical (CVSS 9.8) unauthenticated RCE, and public proof-of-concept code is available. Attackers are now automating the discovery of vulnerable servers, with reports of over 50 organizations already compromised in what is likely a reconnaissance phase.</p>
+      The flaw exists deep within the Android System component, allowing attackers to execute arbitrary code without needing any privileges or user interaction, making it a highly dangerous and effective exploit.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This is a critical, time-sensitive threat. Direct your IT teams to confirm that the *second* emergency out-of-band patch from Microsoft for this CVE is applied. Ensure all WSUS servers are firewalled from the public internet and hunt for IoCs per CISA's guidance.</p>
-      <p><strong>Hashtags:</strong> #WSUS #Vulnerability #RCE #Microsoft #CISA #PatchNow #CyberSecurity #CVE #InfoSec</p>
+      Direct all employees to install the "2025-11-01" security patch on their Android devices immediately. For corporate-managed (MDM) devices, push this update as a mandatory, high-priority patch. This is the only defense against this type of attack.</p>
+      <p><strong>Hashtags:</strong> #Android #Vulnerability #ZeroClick #RCE #MobileSecurity #PatchNow #CVE #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Japanese Retailer Askul Confirms Data Breach After RansomHouse Attack</title>
-    <link>https://codedefence.in/blog/2025/11/03/askul-data-breach-ransomhouse</link>
-    <pubDate>Mon, 03 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/03/askul-data-breach-ransomhouse</guid>
-    <category>Data Breach &amp; Ransomware</category>
+    <title>Critical Flaw in React Native NPM Package (CVE-2025-11953) Exposes Developers</title>
+    <link>https://codedefence.in/blog/2025/11/04/react-native-npm-package-rce-cve-2025-11953</link>
+    <pubDate>Tue, 04 Nov 2025 20:20:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/react-native-npm-package-rce-cve-2025-11953</guid>
+    <category>Supply Chain / OT/ICS Security &amp; DevOps</category>
     <description><![CDATA[
       
-      <p>Japanese office retailer Askul confirmed that customer and supplier data was leaked following a ransomware attack in October. The attack disrupted operations across its e-commerce platforms and impacted the supply chains of partner brands like Muji and The Loft.</p>
+      <p>A critical (CVSS 9.8) vulnerability has been disclosed in the popular "@react-native-community/cli" NPM package, which receives ~2 million weekly downloads. The flaw allows an unauthenticated attacker to execute arbitrary commands on a developer's machine by sending a malicious POST request to the React Native dev server.</p>
       <p><strong>Business Impact</strong><br/>
-      The Russia-linked "RansomHouse" group, which claimed the attack, alleges it stole 1.1 terabytes of data. This breach highlights the cascading impact of supply chain attacks, where a single compromised vendor can halt operations for multiple associated businesses, causing significant financial and reputational damage.</p>
+      This is a severe software supply chain risk. An attacker can compromise a developer's workstation to steal source code, inject malicious code into applications, steal cloud credentials, or pivot into the wider corporate network. This puts the entire organization's IP and infrastructure at risk.</p>
       <p><strong>Why It Happened</strong><br/>
-      RansomHouse is an extortion-focused group known for data theft rather than encryption. They likely gained access via a vulnerability or compromised credentials, exfiltrated sensitive data, and are now using the threat of its public release to extort the company.</p>
+      The NPM package's development server, which is meant for local use, was found to be exposed to external network attacks, making the command injection vulnerability remotely exploitable by unauthenticated actors.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your organization's own supply chain dependencies. Identify critical single-point-of-failure vendors and ensure your contracts include strict cybersecurity clauses and right-to-audit provisions. Verify that your incident response plan includes scenarios for a critical supplier compromise.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Ransomware #RansomHouse #SupplyChainSecurity #Japan #CyberAttack #InfoSec</p>
+      Mandate that all development teams immediately update this package to the patched version (20.0.0 or higher) in all projects. This is a critical vulnerability that directly targets your development pipeline and must be remediated immediately.</p>
+      <p><strong>Hashtags:</strong> #SupplyChainSecurity #DevSecOps #React #NPM #Vulnerability #RCE #CVE #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Everest Ransomware Group Claims Massive Breaches at AT&amp;T, Dublin Airport</title>
-    <link>https://codedefence.in/blog/2025/11/03/everest-ransomware-att-dublin-airport</link>
-    <pubDate>Mon, 03 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/03/everest-ransomware-att-dublin-airport</guid>
-    <category>Ransomware &amp; Extortion</category>
+    <title>Media Giant Nikkei Reports Data Breach via Compromised Slack Account</title>
+    <link>https://codedefence.in/blog/2025/11/04/nikkei-data-breach-slack-compromise</link>
+    <pubDate>Tue, 04 Nov 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/nikkei-data-breach-slack-compromise</guid>
+    <category>Data Breach &amp; Cloud Security</category>
     <description><![CDATA[
       
-      <p>The "Everest" ransomware group has claimed responsibility for a series of major data breaches, including the exfiltration of 576,000 AT&amp;T applicant records and 1.5 million Dublin Airport passenger files. The group also claims to have breached Air Arabia and Sweden's power grid operator, Svenska kraftnät.</p>
+      <p>Japanese media giant Nikkei, owner of the Financial Times, has disclosed a data breach impacting over 17,000 employees and business partners. Attackers gained access after compromising an employee's computer with malware, stealing their authentication credentials, and using them to access the company's Slack environment.</p>
       <p><strong>Business Impact</strong><br/>
-      This campaign demonstrates a "big game hunting" strategy, targeting critical infrastructure (energy, aviation) and data-rich corporations. The theft of PII from AT&amp;T and Dublin Airport creates a massive risk of identity theft and targeted fraud, while the attack on the Swedish power grid is a national security threat.</p>
+      The breach exposed sensitive internal communications and personal information. This incident highlights the risk of "island hopping" where one compromised service (an employee's PC) is used to pivot to a high-value data store (the corporate Slack instance), leading to a significant data breach and reputational damage.</p>
       <p><strong>Why It Happened</strong><br/>
-      Everest is an established extortion group that focuses on data theft for leverage. They likely exploited unpatched vulnerabilities in internet-facing systems or used compromised credentials to gain access to these high-value networks.</p>
+      The root cause was an endpoint compromise (malware infection) that led to credential theft. The lack of, or bypass of, strong MFA on the Slack account then allowed the attacker to gain unauthorized access and exfiltrate data.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This is a clear signal that attackers are targeting critical infrastructure. Mandate a review of your organization's internet-facing attack surface and ensure all remote access points are secured with MFA. Verify that all sensitive PII databases are encrypted at rest and access is strictly logged.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Everest #DataBreach #ATT #CyberAttack #CriticalInfrastructure #InfoSec</p>
+      Ensure that all third-party SaaS applications, especially collaboration tools like Slack and Teams, are protected with phishing-resistant Multi-Factor Authentication (MFA). This incident proves that a simple password is not enough to protect critical communication platforms.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Nikkei #Slack #SaaS #InfoSec #CyberSecurity #CredentialTheft #MFA</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Critical Google Chrome V8 Vulnerabilities Disclosed</title>
-    <link>https://codedefence.in/blog/2025/11/03/google-chrome-v8-critical-vulnerabilities</link>
-    <pubDate>Mon, 03 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/03/google-chrome-v8-critical-vulnerabilities</guid>
+    <title>Critical WordPress Plugin "Post SMTP" Flaw Actively Exploited for Site Takeover</title>
+    <link>https://codedefence.in/blog/2025/11/04/wordpress-post-smtp-plugin-vulnerability</link>
+    <pubDate>Tue, 04 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/wordpress-post-smtp-plugin-vulnerability</guid>
     <category>Top Incident/Vulnerability &amp; Web Security</category>
     <description><![CDATA[
       
-      <p>Multiple critical vulnerabilities have been disclosed in Google Chrome's V8 JavaScript engine, including CVE-2025-12036 (RCE) and CVE-2025-12428 (type confusion). These flaws could allow an attacker to achieve remote code execution on a victim's machine by luring them to a malicious website.</p>
+      <p>A critical (CVSS 9.8) authorization flaw in the "Post SMTP" WordPress plugin, active on over 400,000 sites, is being actively exploited. The vulnerability (CVE-2025-11833) allows unauthenticated attackers to access sensitive email logs, including password reset emails, and use them to take over administrator accounts.</p>
       <p><strong>Business Impact</strong><br/>
-      Browser-based RCEs are a critical threat. They allow attackers to bypass most perimeter defenses and execute code directly on an employee's workstation, leading to credential theft, malware installation, and a foothold for lateral movement within the corporate network.</p>
+      Attackers can gain full administrative control of a vulnerable website. This leads to website defacement, malware distribution, redirection to phishing sites, and theft of all user data. With over 4,500 exploitation attempts already logged, this is an active and urgent threat.</p>
       <p><strong>Why It Happened</strong><br/>
-      These vulnerabilities are deep-seated memory flaws within the complex V8 JavaScript engine. Attackers can exploit them by crafting specific web content that triggers the flaw when a user visits their site.</p>
+      The plugin failed to perform a capability check, allowing any unauthenticated user to access the email log functionality by simply visiting a specific URL. Attackers can trigger a password reset for an admin, read the reset link from the logs, and take over the site.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct IT to enforce browser auto-updates immediately. Ensure all corporate browsers (Chrome, Edge, etc.) are patched to the latest version (142.0.7444.59/.60 or higher). This is a simple but critical defense against widespread "drive-by" attacks.</p>
-      <p><strong>Hashtags:</strong> #GoogleChrome #Vulnerability #RCE #BrowserSecurity #PatchNow #CVE #CyberSecurity #InfoSec</p>
+      Direct all web teams to immediately update the "Post SMTP" plugin to a patched version (3.6.0 or later). Any site using a vulnerable version should be considered potentially compromised and must be inspected for malicious admin accounts or backdoors.</p>
+      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #Plugin #RCE #CyberSecurity #PatchNow #CVE #InfoSec #WebSecurity</p>
     ]]></description>
   </item>
   
   <item>
-    <title>UAE Launches Sovereign Cloud to Boost Secure AI Adoption</title>
-    <link>https://codedefence.in/blog/2025/11/03/uae-sovereign-cloud-aws-ai</link>
-    <pubDate>Mon, 03 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/03/uae-sovereign-cloud-aws-ai</guid>
-    <category>Cloud Security &amp; Regulatory Compliance</category>
+    <title>Report: 93% of Orgs Find Insider Threats as Hard as (or Harder than) External Attacks</title>
+    <link>https://codedefence.in/blog/2025/11/04/insider-risk-report-2025</link>
+    <pubDate>Tue, 04 Nov 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/insider-risk-report-2025</guid>
+    <category>Industry Trends &amp; AI</category>
     <description><![CDATA[
       
-      <p>In alignment with national security policies, the UAE, in partnership with e&amp; and AWS, has announced the full availability of the "UAE Sovereign Launchpad." This is a sovereign cloud platform designed to help government agencies and regulated industries (healthcare, finance) adopt cloud and AI services securely.</p>
+      <p>The new "2025 Insider Risk Report" from Cybersecurity Insiders finds that 93% of security leaders say insider threats are as difficult, or harder, to detect than external attacks. Despite this high awareness, only 23% are "strongly confident" they can stop an insider threat before data is lost.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a major development for organizations in the region. It provides a clear, government-endorsed path to cloud and AI adoption while ensuring compliance with national data residency and security regulations (like the UAE National Cloud Security Policy). This will likely accelerate digital transformation projects.</p>
+      This report highlights a critical defensive gap. Organizations are flying blind against insider risks (malicious or accidental) in an era of AI-driven threats and remote work. Most programs are reactive, relying on technical anomalies (e.g., data movement) while missing crucial behavioral context (e.g., financial stress, disgruntlement).</p>
       <p><strong>Why It Happened</strong><br/>
-      This initiative addresses the growing pressure on regulated industries to leverage AI and cloud innovation while simultaneously safeguarding critical data and adhering to national data sovereignty laws and cybersecurity requirements.</p>
+      Insider threats are difficult because they already have legitimate access. Differentiating malicious activity from normal job functions is a major challenge. Furthermore, only 12% of organizations have mature predictive risk models, leaving the vast majority in a reactive posture.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      For leaders in the UAE and GCC: Direct your CIO and Chief Compliance Officer to evaluate this new sovereign cloud offering. It may provide a strategic advantage for accelerating AI and cloud initiatives that were previously blocked by regulatory concerns, especially for government and financial sector projects.</p>
-      <p><strong>Hashtags:</strong> #UAE #CloudSecurity #SovereignCloud #AWS #AI #DataSovereignty #Compliance #CyberSecurity</p>
+      Review your Insider Risk Program. Ensure it integrates not just technical signals (DLP, UBA) but also, where appropriate, context from HR. Shift the focus from purely reactive detection to a more predictive model that can identify high-risk behaviors *before* a breach occurs.</p>
+      <p><strong>Hashtags:</strong> #InsiderThreat #InsiderRisk #CyberSecurity #InfoSec #DataProtection #ZeroTrust #UBA</p>
     ]]></description>
   </item>
 
