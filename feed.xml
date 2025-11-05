@@ -5,102 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 04 Nov 2025 20:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 04 Nov 2025 20:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 05 Nov 2025 20:20:00 +0300</pubDate>
+  <lastBuildDate>Wed, 05 Nov 2025 20:20:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical 0-Click RCE Flaw in Android System (CVE-2025-48593)</title>
-    <link>https://codedefence.in/blog/2025/11/04/android-zero-click-rce-cve-2025-48593</link>
-    <pubDate>Tue, 04 Nov 2025 20:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/android-zero-click-rce-cve-2025-48593</guid>
-    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
+    <title>Critical "JetStream" Data Platform RCE Flaw (CVE-2025-8201) Actively Exploited</title>
+    <link>https://codedefence.in/blog/2025/11/05/jetstream-data-platform-rce-cve-2025-8201</link>
+    <pubDate>Wed, 05 Nov 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/jetstream-data-platform-rce-cve-2025-8201</guid>
+    <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
       
-      <p>Google's November 2025 Android Security Bulletin patches a critical remote code execution (RCE) vulnerability in the Android System component. Tracked as CVE-2025-48593, this flaw is a "zero-click" vector, meaning it can be exploited with no user interaction, likely via a specially crafted message.</p>
+      <p>A critical unauthenticated remote code execution (RCE) vulnerability (CVE-2025-8201, CVSS 10.0) in the "JetStream" enterprise data streaming platform is being actively exploited in the wild. The flaw allows attackers to execute arbitrary code on the server by sending a malicious data packet.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a severe threat to all devices running Android 13, 14, 15, and 16. It allows for complete system compromise remotely, enabling attackers to steal data, install spyware, and monitor all communications on both personal (BYOD) and corporate-owned devices without the user's knowledge.</p>
+      JetStream is used to process high-volume, real-time data for financial transactions, IoT, and logistics. A compromise allows attackers to steal or corrupt massive amounts of in-transit data, disrupt critical business operations, and pivot into connected corporate networks.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw exists deep within the Android System component, allowing attackers to execute arbitrary code without needing any privileges or user interaction, making it a highly dangerous and effective exploit.</p>
+      The vulnerability is a deserialization flaw in how the platform handles incoming data streams. Attackers can craft a data packet that, when processed, executes malicious code on the host system with high privileges.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct all employees to install the "2025-11-01" security patch on their Android devices immediately. For corporate-managed (MDM) devices, push this update as a mandatory, high-priority patch. This is the only defense against this type of attack.</p>
-      <p><strong>Hashtags:</strong> #Android #Vulnerability #ZeroClick #RCE #MobileSecurity #PatchNow #CVE #InfoSec #CyberSecurity</p>
+      Direct your data engineering and infrastructure teams to apply the emergency patch from the vendor immediately. This is a critical priority, as any unpatched, internet-facing JetStream instance should be considered compromised. Hunt for IoCs provided in the vendor's advisory.</p>
+      <p><strong>Hashtags:</strong> #RCE #Vulnerability #DataStreaming #BigData #CVE #PatchNow #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Flaw in React Native NPM Package (CVE-2025-11953) Exposes Developers</title>
-    <link>https://codedefence.in/blog/2025/11/04/react-native-npm-package-rce-cve-2025-11953</link>
-    <pubDate>Tue, 04 Nov 2025 20:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/react-native-npm-package-rce-cve-2025-11953</guid>
-    <category>Supply Chain / OT/ICS Security &amp; DevOps</category>
+    <title>U.S. Government Warns of AI-Powered Disinformation Targeting Financial Markets</title>
+    <link>https://codedefence.in/blog/2025/11/05/us-warns-ai-disinformation-financial-markets</link>
+    <pubDate>Wed, 05 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/us-warns-ai-disinformation-financial-markets</guid>
+    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
     <description><![CDATA[
       
-      <p>A critical (CVSS 9.8) vulnerability has been disclosed in the popular "@react-native-community/cli" NPM package, which receives ~2 million weekly downloads. The flaw allows an unauthenticated attacker to execute arbitrary commands on a developer's machine by sending a malicious POST request to the React Native dev server.</p>
+      <p>The U.S. Treasury and SEC issued a joint bulletin warning financial institutions of sophisticated, AI-powered disinformation campaigns. State-sponsored actors are using generative AI to create floods of fake news, deepfake executive interviews, and forged financial reports to manipulate stock prices and destabilize markets.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a severe software supply chain risk. An attacker can compromise a developer's workstation to steal source code, inject malicious code into applications, steal cloud credentials, or pivot into the wider corporate network. This puts the entire organization's IP and infrastructure at risk.</p>
+      This new class of threat can cause immediate, massive financial losses by triggering automated high-frequency trading (HFT) algorithms, eroding shareholder confidence, and causing extreme market volatility. It directly weaponizes information against a company's financial stability.</p>
       <p><strong>Why It Happened</strong><br/>
-      The NPM package's development server, which is meant for local use, was found to be exposed to external network attacks, making the command injection vulnerability remotely exploitable by unauthenticated actors.</p>
+      Generative AI allows attackers to produce high-quality, convincing fake content (news articles, audio, video) at a scale and speed that can overwhelm traditional media verification, allowing them to "inject" false narratives into the financial ecosystem.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate that all development teams immediately update this package to the patched version (20.0.0 or higher) in all projects. This is a critical vulnerability that directly targets your development pipeline and must be remediated immediately.</p>
-      <p><strong>Hashtags:</strong> #SupplyChainSecurity #DevSecOps #React #NPM #Vulnerability #RCE #CVE #InfoSec #CyberSecurity</p>
+      Engage your corporate communications, legal, and risk teams. Develop a crisis response plan specifically for AI-driven disinformation. Monitor social media and financial news for anomalies related to your company and establish a clear, rapid process for debunking false information.</p>
+      <p><strong>Hashtags:</strong> #AI #Disinformation #Deepfake #FinancialServices #SEC #CyberSecurity #RiskManagement #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Media Giant Nikkei Reports Data Breach via Compromised Slack Account</title>
-    <link>https://codedefence.in/blog/2025/11/04/nikkei-data-breach-slack-compromise</link>
-    <pubDate>Tue, 04 Nov 2025 20:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/nikkei-data-breach-slack-compromise</guid>
-    <category>Data Breach &amp; Cloud Security</category>
+    <title>New "GhostLink" Phishing Tactic Uses Malicious QR Codes in Video Meetings</title>
+    <link>https://codedefence.in/blog/2025/11/05/ghostlink-qr-code-phishing-video-meetings</link>
+    <pubDate>Wed, 05 Nov 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/ghostlink-qr-code-phishing-video-meetings</guid>
+    <category>Social Engineering &amp; Phishing</category>
     <description><![CDATA[
       
-      <p>Japanese media giant Nikkei, owner of the Financial Times, has disclosed a data breach impacting over 17,000 employees and business partners. Attackers gained access after compromising an employee's computer with malware, stealing their authentication credentials, and using them to access the company's Slack environment.</p>
+      <p>A new phishing technique dubbed "GhostLink" has emerged. Attackers compromise a user's account (e.g., Teams or Zoom) and join a legitimate meeting. They then silently share their screen, displaying a malicious QR code (often disguised as a "meeting feedback survey" or "file download") as a virtual background, tricking other participants into scanning it.</p>
       <p><strong>Business Impact</strong><br/>
-      The breach exposed sensitive internal communications and personal information. This incident highlights the risk of "island hopping" where one compromised service (an employee's PC) is used to pivot to a high-value data store (the corporate Slack instance), leading to a significant data breach and reputational damage.</p>
+      This is a highly effective social engineering attack that bypasses traditional email filters. Scanning the QR code leads users to credential harvesting sites or malware downloads, directly compromising their mobile devices or laptops and giving attackers a foothold inside the trusted corporate network.</p>
       <p><strong>Why It Happened</strong><br/>
-      The root cause was an endpoint compromise (malware infection) that led to credential theft. The lack of, or bypass of, strong MFA on the Slack account then allowed the attacker to gain unauthorized access and exfiltrate data.</p>
+      Attackers are exploiting the high level of trust and frequent use of QR codes in a corporate setting. By inserting the malicious QR code into a live, trusted meeting, they create a sense of legitimacy and urgency that encourages users to act without suspicion.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Ensure that all third-party SaaS applications, especially collaboration tools like Slack and Teams, are protected with phishing-resistant Multi-Factor Authentication (MFA). This incident proves that a simple password is not enough to protect critical communication platforms.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Nikkei #Slack #SaaS #InfoSec #CyberSecurity #CredentialTheft #MFA</p>
+      Immediately issue an advisory to all employees warning them against scanning QR codes presented in video meetings, even if they appear to be from colleagues. Mandate "out-of-band" verification for any unexpected links or files shared during meetings.</p>
+      <p><strong>Hashtags:</strong> #Phishing #QRCode #SocialEngineering #Zoom #MicrosoftTeams #CyberSecurity #InfoSec #CyberAwareness</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Critical WordPress Plugin "Post SMTP" Flaw Actively Exploited for Site Takeover</title>
-    <link>https://codedefence.in/blog/2025/11/04/wordpress-post-smtp-plugin-vulnerability</link>
-    <pubDate>Tue, 04 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/wordpress-post-smtp-plugin-vulnerability</guid>
-    <category>Top Incident/Vulnerability &amp; Web Security</category>
+    <title>CISA Warns: Russian APT "Strontium" Actively Exploiting WSUS Flaw</title>
+    <link>https://codedefence.in/blog/2025/11/05/cisa-strontium-exploiting-wsus-flaw</link>
+    <pubDate>Wed, 05 Nov 2025 20:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/cisa-strontium-exploiting-wsus-flaw</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       
-      <p>A critical (CVSS 9.8) authorization flaw in the "Post SMTP" WordPress plugin, active on over 400,000 sites, is being actively exploited. The vulnerability (CVE-2025-11833) allows unauthenticated attackers to access sensitive email logs, including password reset emails, and use them to take over administrator accounts.</p>
+      <p>CISA has updated its advisory on the critical WSUS vulnerability (CVE-2025-59287), attributing active, widespread exploitation to the Russian state-sponsored group Strontium (aka APT28/Fancy Bear). The group is reportedly using the flaw to deploy backdoors in government, defense, and energy sector networks.</p>
       <p><strong>Business Impact</strong><br/>
-      Attackers can gain full administrative control of a vulnerable website. This leads to website defacement, malware distribution, redirection to phishing sites, and theft of all user data. With over 4,500 exploitation attempts already logged, this is an active and urgent threat.</p>
+      This elevates the WSUS flaw from a criminal threat to a national security emergency. A state-sponsored actor gaining control of an organization's update server has a strategic, persistent foothold for espionage, data exfiltration, and future disruptive attacks, far beyond a simple ransomware deployment.</p>
       <p><strong>Why It Happened</strong><br/>
-      The plugin failed to perform a capability check, allowing any unauthenticated user to access the email log functionality by simply visiting a specific URL. Attackers can trigger a password reset for an admin, read the reset link from the logs, and take over the site.</p>
+      Strontium is leveraging the unpatched vulnerability to achieve broad, scalable access to high-value targets. Controlling WSUS is a "keys to the kingdom" attack, making it a top priority for intelligence agencies.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct all web teams to immediately update the "Post SMTP" plugin to a patched version (3.6.0 or later). Any site using a vulnerable version should be considered potentially compromised and must be inspected for malicious admin accounts or backdoors.</p>
-      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #Plugin #RCE #CyberSecurity #PatchNow #CVE #InfoSec #WebSecurity</p>
+      This confirms the urgency from Monday's news. Mandate immediate patching of the WSUS flaw. All organizations, especially those in critical sectors, must assume compromise if they were unpatched and follow CISA's guidance to hunt for Strontium-related indicators and backdoors.</p>
+      <p><strong>Hashtags:</strong> #APT #NationState #Strontium #Russia #WSUS #Vulnerability #CISA #CyberSecurity #InfoSec #CVE</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Report: 93% of Orgs Find Insider Threats as Hard as (or Harder than) External Attacks</title>
-    <link>https://codedefence.in/blog/2025/11/04/insider-risk-report-2025</link>
-    <pubDate>Tue, 04 Nov 2025 20:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/04/insider-risk-report-2025</guid>
-    <category>Industry Trends &amp; AI</category>
+    <title>Blackbaud Pays $49.5 Million Settlement for 2020 Ransomware Breach</title>
+    <link>https://codedefence.in/blog/2025/11/05/blackbaud-49-million-settlement-2020-breach</link>
+    <pubDate>Wed, 05 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/blackbaud-49-million-settlement-2020-breach</guid>
+    <category>Regulatory Compliance &amp; Data Breach</category>
     <description><![CDATA[
       
-      <p>The new "2025 Insider Risk Report" from Cybersecurity Insiders finds that 93% of security leaders say insider threats are as difficult, or harder, to detect than external attacks. Despite this high awareness, only 23% are "strongly confident" they can stop an insider threat before data is lost.</p>
+      <p>Cloud software provider Blackbaud has agreed to a $49.5 million settlement with 49 U.S. state attorneys general over its 2020 ransomware attack. The investigation found the company failed to implement reasonable data security measures, misrepresented the scope of the breach, and failed to notify victims in a timely manner.</p>
       <p><strong>Business Impact</strong><br/>
-      This report highlights a critical defensive gap. Organizations are flying blind against insider risks (malicious or accidental) in an era of AI-driven threats and remote work. Most programs are reactive, relying on technical anomalies (e.g., data movement) while missing crucial behavioral context (e.g., financial stress, disgruntlement).</p>
+      This settlement, years after the incident, demonstrates the massive, long-tail financial and reputational cost of a breach, especially if the response is mismanaged. The fine is not just for the breach itself, but for the company's failure in transparency and security diligence.</p>
       <p><strong>Why It Happened</strong><br/>
-      Insider threats are difficult because they already have legitimate access. Differentiating malicious activity from normal job functions is a major challenge. Furthermore, only 12% of organizations have mature predictive risk models, leaving the vast majority in a reactive posture.</p>
+      The company was found to have failed in basic security practices, such as properly segmenting its network, securely deleting old data, and implementing appropriate intrusion detection. This allowed attackers to exfiltrate a massive amount of unencrypted data from its non-profit and university clients.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your Insider Risk Program. Ensure it integrates not just technical signals (DLP, UBA) but also, where appropriate, context from HR. Shift the focus from purely reactive detection to a more predictive model that can identify high-risk behaviors *before* a breach occurs.</p>
-      <p><strong>Hashtags:</strong> #InsiderThreat #InsiderRisk #CyberSecurity #InfoSec #DataProtection #ZeroTrust #UBA</p>
+      Use this as a case study for your board. Ensure your incident response plan includes clear, accurate, and timely communication protocols co-developed with legal counsel. This proves that the post-breach response can be as costly as the breach itself if handled improperly.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Blackbaud #Ransomware #Compliance #CyberLaw #InfoSec #CyberSecurity #GRC</p>
     ]]></description>
   </item>
 
