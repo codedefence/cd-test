@@ -5,102 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 05 Nov 2025 20:20:00 +0300</pubDate>
-  <lastBuildDate>Wed, 05 Nov 2025 20:20:00 +0300</lastBuildDate>
+  <pubDate>Thu, 06 Nov 2025 20:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 06 Nov 2025 20:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical "JetStream" Data Platform RCE Flaw (CVE-2025-8201) Actively Exploited</title>
-    <link>https://codedefence.in/blog/2025/11/05/jetstream-data-platform-rce-cve-2025-8201</link>
-    <pubDate>Wed, 05 Nov 2025 20:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/jetstream-data-platform-rce-cve-2025-8201</guid>
+    <title>Critical RCE Flaws in Cisco Contact Center (CVSS 9.8) Allow Root Access</title>
+    <link>https://codedefence.in/blog/2025/11/06/cisco-contact-center-rce-cve-2025-20354</link>
+    <pubDate>Thu, 06 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/06/cisco-contact-center-rce-cve-2025-20354</guid>
     <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
       
-      <p>A critical unauthenticated remote code execution (RCE) vulnerability (CVE-2025-8201, CVSS 10.0) in the "JetStream" enterprise data streaming platform is being actively exploited in the wild. The flaw allows attackers to execute arbitrary code on the server by sending a malicious data packet.</p>
+      <p>Cisco has released patches for two critical vulnerabilities in its Unified Contact Center Express (UCCX) appliance. The most severe, CVE-2025-20354 (CVSS 9.8), is an unauthenticated RCE flaw in the Java RMI process that allows an attacker to upload files and execute commands with root privileges.</p>
       <p><strong>Business Impact</strong><br/>
-      JetStream is used to process high-volume, real-time data for financial transactions, IoT, and logistics. A compromise allows attackers to steal or corrupt massive amounts of in-transit data, disrupt critical business operations, and pivot into connected corporate networks.</p>
+      This is a perimeter-down threat. A successful exploit gives an attacker full administrative (root) control of the contact center appliance, allowing them to intercept sensitive customer communications, steal data, disrupt call center operations, and pivot into the internal corporate network.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability is a deserialization flaw in how the platform handles incoming data streams. Attackers can craft a data packet that, when processed, executes malicious code on the host system with high privileges.</p>
+      The vulnerability stems from improper authentication mechanisms in the Java RMI process, which an unauthenticated, remote attacker can abuse to gain unauthorized access and execute commands on the underlying operating system.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your data engineering and infrastructure teams to apply the emergency patch from the vendor immediately. This is a critical priority, as any unpatched, internet-facing JetStream instance should be considered compromised. Hunt for IoCs provided in the vendor's advisory.</p>
-      <p><strong>Hashtags:</strong> #RCE #Vulnerability #DataStreaming #BigData #CVE #PatchNow #CyberSecurity #InfoSec</p>
+      Direct your network and voice operations teams to treat this as an emergency. These critical vulnerabilities must be patched immediately, starting with any internet-facing UCCX appliances. No workarounds exist for these flaws.</p>
+      <p><strong>Hashtags:</strong> #Cisco #Vulnerability #RCE #CVE #PatchNow #CyberSecurity #InfoSec #ContactCenter</p>
     ]]></description>
   </item>
 
   <item>
-    <title>U.S. Government Warns of AI-Powered Disinformation Targeting Financial Markets</title>
-    <link>https://codedefence.in/blog/2025/11/05/us-warns-ai-disinformation-financial-markets</link>
-    <pubDate>Wed, 05 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/us-warns-ai-disinformation-financial-markets</guid>
-    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
+    <title>Critical (CVSS 9.8) Flaw in React Native NPM Package Exposes Developers to RCE</title>
+    <link>https://codedefence.in/blog/2025/11/06/react-native-npm-rce-cve-2025-11953</link>
+    <pubDate>Thu, 06 Nov 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/06/react-native-npm-rce-cve-2025-11953</guid>
+    <category>Supply Chain / OT/ICS Security &amp; DevOps</category>
     <description><![CDATA[
       
-      <p>The U.S. Treasury and SEC issued a joint bulletin warning financial institutions of sophisticated, AI-powered disinformation campaigns. State-sponsored actors are using generative AI to create floods of fake news, deepfake executive interviews, and forged financial reports to manipulate stock prices and destabilize markets.</p>
+      <p>A critical (CVSS 9.8) vulnerability, CVE-2025-11953, has been disclosed in the popular "@react-native-community/cli" NPM package, which has ~2 million weekly downloads. The flaw allows unauthenticated attackers to execute arbitrary commands on a developer's machine via a malicious POST request to the React Native dev server.</p>
       <p><strong>Business Impact</strong><br/>
-      This new class of threat can cause immediate, massive financial losses by triggering automated high-frequency trading (HFT) algorithms, eroding shareholder confidence, and causing extreme market volatility. It directly weaponizes information against a company's financial stability.</p>
+      This is a severe software supply chain risk. Compromising a single developer's workstation can lead to the theft of source code, injection of malicious code into applications, and theft of cloud/platform credentials, creating a launchpad for a much larger breach.</p>
       <p><strong>Why It Happened</strong><br/>
-      Generative AI allows attackers to produce high-quality, convincing fake content (news articles, audio, video) at a scale and speed that can overwhelm traditional media verification, allowing them to "inject" false narratives into the financial ecosystem.</p>
+      A flaw in the core codebase exposes the developer server to external network attacks, not just the local machine. This allows remote attackers to exploit the command injection vulnerability, which they normally could not reach.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Engage your corporate communications, legal, and risk teams. Develop a crisis response plan specifically for AI-driven disinformation. Monitor social media and financial news for anomalies related to your company and establish a clear, rapid process for debunking false information.</p>
-      <p><strong>Hashtags:</strong> #AI #Disinformation #Deepfake #FinancialServices #SEC #CyberSecurity #RiskManagement #InfoSec</p>
+      Direct all development and application security teams to immediately update this package to the patched version (20.0.0 or higher) in all projects. This is a critical risk to your entire development pipeline.</p>
+      <p><strong>Hashtags:</strong> #SupplyChainSecurity #DevSecOps #React #NPM #Vulnerability #RCE #CVE #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "GhostLink" Phishing Tactic Uses Malicious QR Codes in Video Meetings</title>
-    <link>https://codedefence.in/blog/2025/11/05/ghostlink-qr-code-phishing-video-meetings</link>
-    <pubDate>Wed, 05 Nov 2025 20:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/ghostlink-qr-code-phishing-video-meetings</guid>
-    <category>Social Engineering &amp; Phishing</category>
+    <title>Hyundai AutoEver (IT Firm for Hyundai &amp; Kia) Discloses Data Breach, SSNs Stolen</title>
+    <link>https://codedefence.in/blog/2025/11/06/hyundai-autoever-data-breach-ssns-stolen</link>
+    <pubDate>Thu, 06 Nov 2025 20:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/06/hyundai-autoever-data-breach-ssns-stolen</guid>
+    <category>Data Breach &amp; Automotive</category>
     <description><![CDATA[
       
-      <p>A new phishing technique dubbed "GhostLink" has emerged. Attackers compromise a user's account (e.g., Teams or Zoom) and join a legitimate meeting. They then silently share their screen, displaying a malicious QR code (often disguised as a "meeting feedback survey" or "file download") as a virtual background, tricking other participants into scanning it.</p>
+      <p>Hyundai AutoEver America, the in-house IT and software company for Hyundai and Kia, has disclosed a data breach. Attackers had access to its systems for approximately one week in February 2025, and though the total number of victims is unconfirmed, the breach exposed names, Social Security numbers (SSNs), and driver's license numbers.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a highly effective social engineering attack that bypasses traditional email filters. Scanning the QR code leads users to credential harvesting sites or malware downloads, directly compromising their mobile devices or laptops and giving attackers a foothold inside the trusted corporate network.</p>
+      This breach exposes highly sensitive employee and potentially partner PII to identity theft and fraud. As the central IT provider for Hyundai Motor Group, this compromise raises serious concerns about potential broader access to sensitive corporate R&D, manufacturing, or vehicle data.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are exploiting the high level of trust and frequent use of QR codes in a corporate setting. By inserting the malicious QR code into a live, trusted meeting, they create a sense of legitimacy and urgency that encourages users to act without suspicion.</p>
+      The initial access vector is not disclosed, but attackers gained access on Feb 22 and were not detected or ejected until March 2. This dwell time allowed them to locate and exfiltrate sensitive personal information from the company's systems.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Immediately issue an advisory to all employees warning them against scanning QR codes presented in video meetings, even if they appear to be from colleagues. Mandate "out-of-band" verification for any unexpected links or files shared during meetings.</p>
-      <p><strong>Hashtags:</strong> #Phishing #QRCode #SocialEngineering #Zoom #MicrosoftTeams #CyberSecurity #InfoSec #CyberAwareness</p>
+      This is a critical supply chain and insider threat reminder. Review access controls for all internal systems storing employee PII. Ensure that detection capabilities (EDR/NDR) are in place to quickly spot and alert on unauthorized access to sensitive data repositories.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Hyundai #Kia #Automotive #CyberSecurity #PII #SSN #InfoSec #SupplyChainSecurity</p>
     ]]></description>
   </item>
   
   <item>
-    <title>CISA Warns: Russian APT "Strontium" Actively Exploiting WSUS Flaw</title>
-    <link>https://codedefence.in/blog/2025/11/05/cisa-strontium-exploiting-wsus-flaw</link>
-    <pubDate>Wed, 05 Nov 2025 20:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/cisa-strontium-exploiting-wsus-flaw</guid>
+    <title>ENISA Report: DDoS Attacks Surge Against EU Public Administration</title>
+    <link>https://codedefence.in/blog/2025/11/06/enisa-report-ddos-public-administration</link>
+    <pubDate>Thu, 06 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/06/enisa-report-ddos-public-administration</guid>
     <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
       
-      <p>CISA has updated its advisory on the critical WSUS vulnerability (CVE-2025-59287), attributing active, widespread exploitation to the Russian state-sponsored group Strontium (aka APT28/Fancy Bear). The group is reportedly using the flaw to deploy backdoors in government, defense, and energy sector networks.</p>
+      <p>A new report from ENISA, the EU's cybersecurity agency, highlights that public administration bodies are being increasingly targeted by hacktivists. Distributed Denial-of-Service (DDoS) attacks were the primary weapon, accounting for 60% of all incidents, with central governments (parliaments, ministries) being the most common target (69% of incidents).</p>
       <p><strong>Business Impact</strong><br/>
-      This elevates the WSUS flaw from a criminal threat to a national security emergency. A state-sponsored actor gaining control of an organization's update server has a strategic, persistent foothold for espionage, data exfiltration, and future disruptive attacks, far beyond a simple ransomware deployment.</p>
+      These attacks, while often simple, are highly effective at disrupting critical government services, blocking citizen access to essential portals, and creating a sense of chaos and instability, which is the hacktivists' main goal.</p>
       <p><strong>Why It Happened</strong><br/>
-      Strontium is leveraging the unpatched vulnerability to achieve broad, scalable access to high-value targets. Controlling WSUS is a "keys to the kingdom" attack, making it a top priority for intelligence agencies.</p>
+      Pro-Russian and other hacktivist groups are using DDoS as a low-cost, high-visibility tool to protest geopolitical events and target perceived adversaries, with EU government bodies being a prime target.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This confirms the urgency from Monday's news. Mandate immediate patching of the WSUS flaw. All organizations, especially those in critical sectors, must assume compromise if they were unpatched and follow CISA's guidance to hunt for Strontium-related indicators and backdoors.</p>
-      <p><strong>Hashtags:</strong> #APT #NationState #Strontium #Russia #WSUS #Vulnerability #CISA #CyberSecurity #InfoSec #CVE</p>
+      Public sector leaders must ensure their digital services are resilient. This includes enrolling critical websites and portals behind a robust Content Delivery Network (CDN) or Web Application Firewall (WAF) with "always-on" DDoS protection, as recommended by ENISA.</p>
+      <p><strong>Hashtags:</strong> #DDoS #Hacktivism #ENISA #EU #CyberSecurity #CriticalInfrastructure #InfoSec #Geopolitics</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Blackbaud Pays $49.5 Million Settlement for 2020 Ransomware Breach</title>
-    <link>https://codedefence.in/blog/2025/11/05/blackbaud-49-million-settlement-2020-breach</link>
-    <pubDate>Wed, 05 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/05/blackbaud-49-million-settlement-2020-breach</guid>
-    <category>Regulatory Compliance &amp; Data Breach</category>
+    <title>Financial Sector Vendors Have Weaker Security Than Banks, Creating Risk</title>
+    <link>https://codedefence.in/blog/2025/11/06/financial-vendor-supply-chain-risk-bitsight</link>
+    <pubDate>Thu, 06 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/06/financial-vendor-supply-chain-risk-bitsight</guid>
+    <category>Supply Chain / OT/ICS Security &amp; Finance</category>
     <description><![CDATA[
       
-      <p>Cloud software provider Blackbaud has agreed to a $49.5 million settlement with 49 U.S. state attorneys general over its 2020 ransomware attack. The investigation found the company failed to implement reasonable data security measures, misrepresented the scope of the breach, and failed to notify victims in a timely manner.</p>
+      <p>A new report from BitSight reveals a significant security gap between financial firms and their third-party vendors. While the financial sector itself generally has a strong security posture, its suppliers perform worse on 16 out of 22 key risk factors, including web application security, patching cadence, and endpoint security.</p>
       <p><strong>Business Impact</strong><br/>
-      This settlement, years after the incident, demonstrates the massive, long-tail financial and reputational cost of a breach, especially if the response is mismanaged. The fine is not just for the breach itself, but for the company's failure in transparency and security diligence.</p>
+      This creates a massive supply chain risk. Attackers, unable to breach the "hard target" of a bank, can simply target its less secure vendors (e.g., law firms, tech providers) to steal sensitive data, compromise integrations, or launch attacks, completely bypassing the bank's direct defenses.</p>
       <p><strong>Why It Happened</strong><br/>
-      The company was found to have failed in basic security practices, such as properly segmenting its network, securely deleting old data, and implementing appropriate intrusion detection. This allowed attackers to exfiltrate a massive amount of unencrypted data from its non-profit and university clients.</p>
+      Vendors, especially smaller or non-tech-focused firms, often lack the resources, budget, or regulatory pressure to maintain a security posture as mature as their financial-sector clients, making them the "soft underbelly" of the supply chain.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Use this as a case study for your board. Ensure your incident response plan includes clear, accurate, and timely communication protocols co-developed with legal counsel. This proves that the post-breach response can be as costly as the breach itself if handled improperly.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Blackbaud #Ransomware #Compliance #CyberLaw #InfoSec #CyberSecurity #GRC</p>
+      Strengthen your Third-Party Risk Management (TPRM) program. Mandate rigorous security diligence and continuous monitoring (e.g., security ratings) for all critical vendors. Enforce strong security clauses and right-to-audit in vendor contracts.</p>
+      <p><strong>Hashtags:</strong> #SupplyChainSecurity #ThirdPartyRisk #Finance #CyberRisk #InfoSec #CyberSecurity #TPRM #BitSight</p>
     ]]></description>
   </item>
 
