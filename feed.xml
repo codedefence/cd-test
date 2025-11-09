@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sun, 09 Nov 2025 20:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 09 Nov 2025 20:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 10 Nov 2025 20:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 10 Nov 2025 20:30:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>New "Whisper Leak" Toolkit Decrypts Real-Time AI Chat Traffic</title>
-    <link>https://codedefence.in/blog/2025/11/09/whisper-leak-toolkit-decrypts-ai-traffic</link>
-    <pubDate>Sun, 09 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/whisper-leak-toolkit-decrypts-ai-traffic</guid>
-    <category>AI/ML in Cybersecurity &amp; Data Privacy</category>
+    <title>Critical Authentication Bypass in Okta Identity Platform (CVE-2025-10099)</title>
+    <link>https://codedefence.in/blog/2025/11/10/okta-auth-bypass-cve-2025-10099</link>
+    <pubDate>Mon, 10 Nov 2025 20:25:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/okta-auth-bypass-cve-2025-10099</guid>
+    <category>Top Incident/Vulnerability &amp; IAM</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/whisperleak/800/400" alt="Abstract visualization of encrypted data streams being analyzed to reveal hidden text." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have released "Whisper Leak," a toolkit demonstrating a side-channel attack that can infer the topics of encrypted AI chatbot conversations in real-time. By analyzing the unique packet sizes and timing of streamed AI tokens, attackers can "fingerprint" and identify sensitive queries even over TLS.</p>
+      <img src="https://picsum.photos/seed/oktabreach/800/400" alt="Digital padlock unlocked with a glowing red warning symbol, representing an authentication bypass." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Okta has released emergency patches for a critical vulnerability (CVE-2025-10099) affecting its standard authentication API. The flaw allows an attacker with a valid username to bypass password and MFA requirements under specific high-load conditions due to a race condition in the validation logic.</p>
       <p><strong>Business Impact</strong><br/>
-      This erodes the privacy guarantee of encryption for AI interactions. ISPs, nation-states, or eavesdroppers on public Wi-Fi could potentially identify when employees are consulting AI about sensitive topics like M&amp;A, legal issues, or proprietary R&amp;D.</p>
+      This is a catastrophic risk for organizations relying on Okta for Single Sign-On (SSO). It potentially allows attackers to gain full access to all integrated corporate applications (email, cloud storage, CRM, HR systems) as any user, without needing credentials.</p>
       <p><strong>Why It Happened</strong><br/>
-      AI models typically "stream" responses token-by-token for speed. This creates distinct traffic patterns that act as a unique signature for different types of content, which can be recognized by machine learning models even without decrypting the data.</p>
+      A complex race condition in the session token generation process could be triggered deliberately by attackers flooding the authentication service, causing it to fail open and issue a valid token without completing all security checks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Advise employees to use corporate VPNs when accessing AI tools from untrusted networks to add noise to traffic patterns. Press AI vendors for native mitigations like traffic padding to obscure these side-channel leaks.</p>
-      <p><strong>Hashtags:</strong> #AI #Privacy #Encryption #SideChannel #WhisperLeak #CyberSecurity #InfoSec #DataProtection</p>
+      Treat this as an immediate emergency. Direct IT to verify with Okta that your tenant is patched (for cloud customers) or apply patches immediately (for on-prem Access Gateway). Mandate an immediate review of all admin logins from the past 24 hours for anomalies.</p>
+      <p><strong>Hashtags:</strong> #Okta #Vulnerability #IAM #SSO #MFA #AuthenticationBypass #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Zero-Click Samsung Galaxy Exploit via WhatsApp Image (CVE-2025-xxxx)</title>
-    <link>https://codedefence.in/blog/2025/11/09/samsung-galaxy-zero-click-whatsapp-exploit</link>
-    <pubDate>Sun, 09 Nov 2025 20:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/samsung-galaxy-zero-click-whatsapp-exploit</guid>
-    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
+    <title>Volt Typhoon Hackers Found Lurking in US Power Grids for 6 Months</title>
+    <link>https://codedefence.in/blog/2025/11/10/volt-typhoon-us-power-grid-infiltration</link>
+    <pubDate>Mon, 10 Nov 2025 20:20:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/volt-typhoon-us-power-grid-infiltration</guid>
+    <category>Geopolitics &amp; Critical Infrastructure</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/samsungzeroclick/800/400" alt="A smartphone displaying a generic chat app with a corrupted image file." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical zero-day vulnerability affecting Samsung Galaxy devices is being exploited in the wild. Attackers are using a specially crafted image file sent via WhatsApp to achieve remote code execution (RCE) without any user interaction (zero-click) as soon as the device processes the image preview.</p>
+      <img src="https://picsum.photos/seed/powergridhack/800/400" alt="High-voltage power lines silhouetted against a dark, stormy digital sky." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A joint advisory from CISA, NSA, and FBI confirms that the China-state-sponsored group "Volt Typhoon" has successfully infiltrated multiple US power grid operators and maintained undetected access for at least six months. They used "living off the land" techniques, leveraging legitimate admin tools to blend in.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a highest-severity threat to mobile fleets. It allows for silent, complete device compromise, enabling attackers to steal corporate data, track location, and activate microphones/cameras on executive or employee devices without their knowledge.</p>
+      This is a pre-positioning attack for potential future sabotage. The actors didn't steal data but entrenched themselves deep within critical OT networks, giving them the capability to disrupt power supply during a future geopolitical crisis.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw lies in a proprietary Samsung image processing library used to render previews. It fails to properly validate image headers, allowing a heap overflow that can be triggered automatically by messaging apps.</p>
+      The group exploited old, forgotten SOHO routers and VPN concentrators at the network edge to gain initial entry, then used stolen valid credentials to move laterally, avoiding malware that would trigger traditional EDR alerts.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Issue an immediate emergency directive to all employees with Samsung devices to disable "auto-download media" in WhatsApp and other messaging apps until a patch is released by Samsung and carriers. Monitor for official patch availability closely.</p>
-      <p><strong>Hashtags:</strong> #Samsung #ZeroDay #ZeroClick #MobileSecurity #WhatsApp #RCE #CyberSecurity #InfoSec</p>
+      Critical infrastructure leaders must mandate a "hunting forward" exercise. Assume standard detection has failed. Manually review account activity for legitimate tools (PowerShell, WMI) being used in unusual ways. Reset all privileged account credentials immediately.</p>
+      <p><strong>Hashtags:</strong> #VoltTyphoon #CriticalInfrastructure #China #APT #CISA #EnergySector #CyberWarfare #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Seven Critical QNAP Zero-Days Patched After Pwn2Own Exploitation</title>
-    <link>https://codedefence.in/blog/2025/11/09/qnap-seven-zero-days-patched-pwn2own</link>
-    <pubDate>Sun, 09 Nov 2025 20:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/qnap-seven-zero-days-patched-pwn2own</guid>
-    <category>Supply Chain / OT/ICS Security &amp; IoT</category>
+    <title>AI Botnet "HiveMind" Discovered Using IoT Devices for Password Cracking</title>
+    <link>https://codedefence.in/blog/2025/11/10/hivemind-ai-botnet-iot-password-cracking</link>
+    <pubDate>Mon, 10 Nov 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/hivemind-ai-botnet-iot-password-cracking</guid>
+    <category>AI/ML in Cybersecurity &amp; IoT</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/qnapnas/800/400" alt="A rack of network-attached storage (NAS) drives with glowing status lights." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>QNAP has urgently released firmware updates to fix seven critical zero-day vulnerabilities in its NAS operating systems. These flaws were discovered and exploited by security researchers at the recent Pwn2Own 2025 hacking contest, allowing for complete unauthenticated device takeover.</p>
+      <img src="https://picsum.photos/seed/aibotnet/800/400" alt="Network of connected smart home devices forming a glowing, malicious hive mind structure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have identified "HiveMind," a novel botnet comprised of millions of compromised IoT devices (cameras, routers). Unlike traditional DDoS botnets, HiveMind uses a distributed, AI-driven engine to intelligently coordinate brute-force and credential stuffing attacks against high-value corporate targets.</p>
       <p><strong>Business Impact</strong><br/>
-      QNAP devices are widely used for small business backups and departmental file storage. Unpatched, internet-exposed devices are prime targets for ransomware groups looking to steal sensitive data and encrypt backups, causing irreversible data loss.</p>
+      This represents a massive escalation in credential attacks. The AI coordinator allows the botnet to adapt its attack patterns in real-time to bypass rate-limiting and standard Web Application Firewall (WAF) rules, making account takeovers highly efficient and difficult to stop.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities include multiple command injection and authentication bypass flaws in core NAS services. While discovered ethically at a contest, details often leak, leading to rapid weaponization by cybercriminals.</p>
+      Attackers are leveraging the collective processing power of unsecure IoT devices to run lightweight AI inference models, allowing the botnet to make autonomous targeting decisions without constant command-and-control communication.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate an immediate audit of all NAS devices on the corporate network. Ensure they are *never* exposed directly to the internet. Apply the latest QNAP firmware updates immediately to mitigate these now-public critical risks.</p>
-      <p><strong>Hashtags:</strong> #QNAP #ZeroDay #NAS #Vulnerability #Ransomware #IoT #PatchNow #CyberSecurity #Pwn2Own</p>
+      Direct your security team to review WAF and identity protection configurations. Static rate-limiting is no longer enough. Implement AI-driven behavioral analysis for login attempts to detect these "low-and-slow," distributed AI-coordinated attacks.</p>
+      <p><strong>Hashtags:</strong> #AI #Botnet #IoT #CredentialStuffing #CyberSecurity #HiveMind #InfoSec #ATO</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Google Maps Launches Tool to Combat "Review Bombing" Extortion</title>
-    <link>https://codedefence.in/blog/2025/11/09/google-maps-anti-extortion-tool-review-bombing</link>
-    <pubDate>Sun, 09 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/google-maps-anti-extortion-tool-review-bombing</guid>
-    <category>Cybercrime &amp; Brand Reputation</category>
+    <title>New "Clop" Ransomware Zero-Day Hits Secure File Transfer Tool "SafeMove"</title>
+    <link>https://codedefence.in/blog/2025/11/10/clop-ransomware-safemove-zero-day</link>
+    <pubDate>Mon, 10 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/clop-ransomware-safemove-zero-day</guid>
+    <category>Ransomware &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/googlemapsreviews/800/400" alt="A smartphone showing a map application with review stars turning red, symbolizing an attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Google Maps has introduced a new dedicated reporting feature for businesses facing "review bombing" extortion. Scammers are increasingly flooding businesses with 1-star negative reviews and then demanding a ransom (often in crypto gift cards) to remove them.</p>
+      <img src="https://picsum.photos/seed/filetransferhack/800/400" alt="A secure file folder icon being broken open by a red digital crowbar." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Clop ransomware gang has returned with a new mass-exploitation campaign, this time targeting a zero-day vulnerability (CVE-2025-7788) in "SafeMove," a popular managed file transfer (MFT) solution used by enterprises to share sensitive data.</p>
       <p><strong>Business Impact</strong><br/>
-      For retail, hospitality, and local services, online reputation is critical revenue driver. This low-tech, high-impact extortion can severely damage brand value and customer trust overnight, forcing businesses into a difficult position of paying criminals or losing revenue.</p>
+      Similar to the MOVEit attacks of 2023, this is a mass data theft event. Organizations using SafeMove likely have highly sensitive data (PII, financial records, intellectual property) currently being exfiltrated by the terabyte, leading to massive regulatory and extortion risks.</p>
       <p><strong>Why It Happened</strong><br/>
-      Cybercriminals are automating the creation of fake accounts to carry out these attacks at scale. It requires minimal technical skill but exploits the high value businesses place on their public ratings.</p>
+      Clop specializes in finding SQL injection vulnerabilities in internet-facing MFT appliances. This allows them to bypass authentication and directly query the database to download all stored files.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct marketing and brand teams to monitor online reviews closely for sudden spikes in negative activity. Establish a clear policy of *never* paying ransoms for reviews. Utilize the new Google reporting tools immediately if targeted.</p>
-      <p><strong>Hashtags:</strong> #Extortion #Cybercrime #GoogleMaps #BrandReputation #ReviewBombing #Fraud #InfoSec #BusinessRisk</p>
+      If your organization uses SafeMove, take it offline immediately. Do not wait for a patch. Assume all data on the appliance has been stolen. Activate your incident response plan and begin legal counsel regarding breach notification requirements.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Clop #ZeroDay #FileTransfer #DataBreach #SupplyChain #SafeMove #InfoSec</p>
     ]]></description>
   </item>
 
