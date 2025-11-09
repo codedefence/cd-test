@@ -5,15 +5,15 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 10 Nov 2025 20:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 10 Nov 2025 20:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 09 Nov 2025 22:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 09 Nov 2025 22:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
     <title>Critical Authentication Bypass in Okta Identity Platform (CVE-2025-10099)</title>
-    <link>https://codedefence.in/blog/2025/11/10/okta-auth-bypass-cve-2025-10099</link>
-    <pubDate>Mon, 10 Nov 2025 20:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/okta-auth-bypass-cve-2025-10099</guid>
+    <link>https://codedefence.in/blog/2025/11/09/okta-auth-bypass-cve-2025-10099</link>
+    <pubDate>Sun, 09 Nov 2025 22:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/okta-auth-bypass-cve-2025-10099</guid>
     <category>Top Incident/Vulnerability &amp; IAM</category>
     <description><![CDATA[
       <img src="https://picsum.photos/seed/oktabreach/800/400" alt="Digital padlock unlocked with a glowing red warning symbol, representing an authentication bypass." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
@@ -30,9 +30,9 @@
 
   <item>
     <title>Volt Typhoon Hackers Found Lurking in US Power Grids for 6 Months</title>
-    <link>https://codedefence.in/blog/2025/11/10/volt-typhoon-us-power-grid-infiltration</link>
-    <pubDate>Mon, 10 Nov 2025 20:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/volt-typhoon-us-power-grid-infiltration</guid>
+    <link>https://codedefence.in/blog/2025/11/09/volt-typhoon-us-power-grid-infiltration</link>
+    <pubDate>Sun, 09 Nov 2025 22:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/volt-typhoon-us-power-grid-infiltration</guid>
     <category>Geopolitics &amp; Critical Infrastructure</category>
     <description><![CDATA[
       <img src="https://picsum.photos/seed/powergridhack/800/400" alt="High-voltage power lines silhouetted against a dark, stormy digital sky." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
@@ -49,9 +49,9 @@
 
   <item>
     <title>AI Botnet "HiveMind" Discovered Using IoT Devices for Password Cracking</title>
-    <link>https://codedefence.in/blog/2025/11/10/hivemind-ai-botnet-iot-password-cracking</link>
-    <pubDate>Mon, 10 Nov 2025 20:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/hivemind-ai-botnet-iot-password-cracking</guid>
+    <link>https://codedefence.in/blog/2025/11/09/hivemind-ai-botnet-iot-password-cracking</link>
+    <pubDate>Sun, 09 Nov 2025 22:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/hivemind-ai-botnet-iot-password-cracking</guid>
     <category>AI/ML in Cybersecurity &amp; IoT</category>
     <description><![CDATA[
       <img src="https://picsum.photos/seed/aibotnet/800/400" alt="Network of connected smart home devices forming a glowing, malicious hive mind structure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
@@ -59,7 +59,7 @@
       <p><strong>Business Impact</strong><br/>
       This represents a massive escalation in credential attacks. The AI coordinator allows the botnet to adapt its attack patterns in real-time to bypass rate-limiting and standard Web Application Firewall (WAF) rules, making account takeovers highly efficient and difficult to stop.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are leveraging the collective processing power of unsecure IoT devices to run lightweight AI inference models, allowing the botnet to make autonomous targeting decisions without constant command-and-control communication.</p>
+      Attackers are leveraging the collective processing power of unsecure IoT devices to run lightweight AI inference models, allowing the botnet to make autonomous targeting decisions without the need for constant command-and-control communication.</p>
       <p><strong>Recommended Executive Action</strong><br/>
       Direct your security team to review WAF and identity protection configurations. Static rate-limiting is no longer enough. Implement AI-driven behavioral analysis for login attempts to detect these "low-and-slow," distributed AI-coordinated attacks.</p>
       <p><strong>Hashtags:</strong> #AI #Botnet #IoT #CredentialStuffing #CyberSecurity #HiveMind #InfoSec #ATO</p>
@@ -68,9 +68,9 @@
   
   <item>
     <title>New "Clop" Ransomware Zero-Day Hits Secure File Transfer Tool "SafeMove"</title>
-    <link>https://codedefence.in/blog/2025/11/10/clop-ransomware-safemove-zero-day</link>
-    <pubDate>Mon, 10 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/clop-ransomware-safemove-zero-day</guid>
+    <link>https://codedefence.in/blog/2025/11/09/clop-ransomware-safemove-zero-day</link>
+    <pubDate>Sun, 09 Nov 2025 21:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/clop-ransomware-safemove-zero-day</guid>
     <category>Ransomware &amp; Supply Chain</category>
     <description><![CDATA[
       <img src="https://picsum.photos/seed/filetransferhack/800/400" alt="A secure file folder icon being broken open by a red digital crowbar." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
