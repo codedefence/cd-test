@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sun, 09 Nov 2025 22:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 09 Nov 2025 22:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 10 Nov 2025 20:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 10 Nov 2025 20:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical Authentication Bypass in Okta Identity Platform (CVE-2025-10099)</title>
-    <link>https://codedefence.in/blog/2025/11/09/okta-auth-bypass-cve-2025-10099</link>
-    <pubDate>Sun, 09 Nov 2025 22:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/okta-auth-bypass-cve-2025-10099</guid>
-    <category>Top Incident/Vulnerability &amp; IAM</category>
+    <title>Massive Leak at Chinese Cyber Firm "Knownsec" Exposes State Hacking Tools</title>
+    <link>https://codedefence.in/blog/2025/11/10/knownsec-data-leak-exposes-state-tools</link>
+    <pubDate>Mon, 10 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/knownsec-data-leak-exposes-state-tools</guid>
+    <category>Geopolitics &amp; Threat Intelligence</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/oktabreach/800/400" alt="Digital padlock unlocked with a glowing red warning symbol, representing an authentication bypass." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Okta has released emergency patches for a critical vulnerability (CVE-2025-10099) affecting its standard authentication API. The flaw allows an attacker with a valid username to bypass password and MFA requirements under specific high-load conditions due to a race condition in the validation logic.</p>
+      <img src="https://picsum.photos/seed/knownsec/800/400" alt="Digital map of the world with data streams originating from China, representing a massive intelligence leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A massive data breach at Knownsec, a prominent Chinese cybersecurity firm with government ties, has exposed over 12,000 classified documents. The leak includes technical specifications for state-sponsored cyber weapons, source code for proprietary hacking tools, and extensive global target lists.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic risk for organizations relying on Okta for Single Sign-On (SSO). It potentially allows attackers to gain full access to all integrated corporate applications (email, cloud storage, CRM, HR systems) as any user, without needing credentials.</p>
+      This is a historic intelligence windfall for Western defenders but also poses near-term risks. As these sophisticated tools become public, lower-tier cybercriminals may rapidly weaponize them against commercial targets before defenses can be updated.</p>
       <p><strong>Why It Happened</strong><br/>
-      A complex race condition in the session token generation process could be triggered deliberately by attackers flooding the authentication service, causing it to fail open and issue a valid token without completing all security checks.</p>
+      While the exact vector is unconfirmed, the scale suggests a major insider leak or a highly sophisticated counter-espionage operation targeting a key pillar of China's offensive cyber ecosystem.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an immediate emergency. Direct IT to verify with Okta that your tenant is patched (for cloud customers) or apply patches immediately (for on-prem Access Gateway). Mandate an immediate review of all admin logins from the past 24 hours for anomalies.</p>
-      <p><strong>Hashtags:</strong> #Okta #Vulnerability #IAM #SSO #MFA #AuthenticationBypass #CyberSecurity #InfoSec</p>
+      Direct your threat intelligence teams to actively monitor for new Indicators of Compromise (IoCs) derived from this leak. Expect a short-term spike in novel attacks as these exposed tools are analyzed and repurposed by broader criminal groups.</p>
+      <p><strong>Hashtags:</strong> #Geopolitics #China #DataLeak #ThreatIntel #APT #CyberWarfare #InfoSec #Knownsec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Volt Typhoon Hackers Found Lurking in US Power Grids for 6 Months</title>
-    <link>https://codedefence.in/blog/2025/11/09/volt-typhoon-us-power-grid-infiltration</link>
-    <pubDate>Sun, 09 Nov 2025 22:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/volt-typhoon-us-power-grid-infiltration</guid>
-    <category>Geopolitics &amp; Critical Infrastructure</category>
+    <title>Critical Container Escape Flaws in 'runc' Threaten Docker &amp; Kubernetes</title>
+    <link>https://codedefence.in/blog/2025/11/10/runc-container-escape-vulnerabilities</link>
+    <pubDate>Mon, 10 Nov 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/runc-container-escape-vulnerabilities</guid>
+    <category>Cloud Security &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/powergridhack/800/400" alt="High-voltage power lines silhouetted against a dark, stormy digital sky." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A joint advisory from CISA, NSA, and FBI confirms that the China-state-sponsored group "Volt Typhoon" has successfully infiltrated multiple US power grid operators and maintained undetected access for at least six months. They used "living off the land" techniques, leveraging legitimate admin tools to blend in.</p>
+      <img src="https://picsum.photos/seed/containerescape/800/400" alt="A shipping container breaking open with digital code spilling out, symbolizing a container escape vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Three severe vulnerabilities (including CVE-2025-31133) have been disclosed in `runc`, the low-level container runtime underpinning Docker and Kubernetes. These flaws allow attackers to break container isolation and achieve root access on the host system by manipulating mount operations.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a pre-positioning attack for potential future sabotage. The actors didn't steal data but entrenched themselves deep within critical OT networks, giving them the capability to disrupt power supply during a future geopolitical crisis.</p>
+      This is a catastrophic risk for any organization using containerized infrastructure. A successful exploit allows an attacker to escape a single compromised container and take over the entire underlying node, potentially compromising hundreds of other applications running on the same cluster.</p>
       <p><strong>Why It Happened</strong><br/>
-      The group exploited old, forgotten SOHO routers and VPN concentrators at the network edge to gain initial entry, then used stolen valid credentials to move laterally, avoiding malware that would trigger traditional EDR alerts.</p>
+      The vulnerabilities exploit race conditions and insufficient validation during container creation, specifically how `runc` handles file mounts and symbolic links, allowing attackers to trick the runtime into mounting sensitive host paths.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Critical infrastructure leaders must mandate a "hunting forward" exercise. Assume standard detection has failed. Manually review account activity for legitimate tools (PowerShell, WMI) being used in unusual ways. Reset all privileged account credentials immediately.</p>
-      <p><strong>Hashtags:</strong> #VoltTyphoon #CriticalInfrastructure #China #APT #CISA #EnergySector #CyberWarfare #InfoSec</p>
+      Mandate an emergency patch cycle for all container hosts. Update to `runc` version 1.2.8 or later immediately. If immediate patching is impossible, ensure strict admission control policies (like preventing privileged containers) are enforced to reduce the attack surface.</p>
+      <p><strong>Hashtags:</strong> #Kubernetes #Docker #ContainerSecurity #CloudNative #Vulnerability #RCE #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>AI Botnet "HiveMind" Discovered Using IoT Devices for Password Cracking</title>
-    <link>https://codedefence.in/blog/2025/11/09/hivemind-ai-botnet-iot-password-cracking</link>
-    <pubDate>Sun, 09 Nov 2025 22:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/hivemind-ai-botnet-iot-password-cracking</guid>
-    <category>AI/ML in Cybersecurity &amp; IoT</category>
+    <title>Report: GenAI is Now the Top Channel for Corporate Data Exfiltration</title>
+    <link>https://codedefence.in/blog/2025/11/10/genai-top-data-exfiltration-channel-report</link>
+    <pubDate>Mon, 10 Nov 2025 20:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/genai-top-data-exfiltration-channel-report</guid>
+    <category>AI/ML in Cybersecurity &amp; Insider Risk</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aibotnet/800/400" alt="Network of connected smart home devices forming a glowing, malicious hive mind structure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have identified "HiveMind," a novel botnet comprised of millions of compromised IoT devices (cameras, routers). Unlike traditional DDoS botnets, HiveMind uses a distributed, AI-driven engine to intelligently coordinate brute-force and credential stuffing attacks against high-value corporate targets.</p>
+      <img src="https://picsum.photos/seed/genai-leak/800/400" alt="An employee pasting confidential documents into a glowing AI chatbot prompt window." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new 2025 Browser Security Report reveals that Generative AI has overtaken all other channels for data exfiltration. 77% of employees admit to pasting corporate data into GenAI prompts, with 82% of this activity occurring via personal, unmanaged accounts that bypass traditional DLP controls.</p>
       <p><strong>Business Impact</strong><br/>
-      This represents a massive escalation in credential attacks. The AI coordinator allows the botnet to adapt its attack patterns in real-time to bypass rate-limiting and standard Web Application Firewall (WAF) rules, making account takeovers highly efficient and difficult to stop.</p>
+      Organizations are experiencing massive, invisible data leakage. Sensitive IP, PII, and financial data are being fed into public AI models, potentially exposing them to competitors or becoming part of the model's future training data, creating irreversible confidentiality breaches.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are leveraging the collective processing power of unsecure IoT devices to run lightweight AI inference models, allowing the botnet to make autonomous targeting decisions without the need for constant command-and-control communication.</p>
+      Traditional Data Loss Prevention (DLP) tools often fail to monitor browser-based paste actions into specific AI websites, especially when employees use personal devices or accounts. The productivity benefits of AI are outpacing security governance.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your security team to review WAF and identity protection configurations. Static rate-limiting is no longer enough. Implement AI-driven behavioral analysis for login attempts to detect these "low-and-slow," distributed AI-coordinated attacks.</p>
-      <p><strong>Hashtags:</strong> #AI #Botnet #IoT #CredentialStuffing #CyberSecurity #HiveMind #InfoSec #ATO</p>
+      Deploy browser-level security controls that can specifically monitor and block pasting of sensitive data types (PII, code, financial terms) into unauthorized GenAI applications. Officially sanction secure, enterprise-grade AI alternatives to reduce reliance on shadow IT.</p>
+      <p><strong>Hashtags:</strong> #GenAI #DataLeakage #DLP #InsiderRisk #ShadowIT #BrowserSecurity #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>New "Clop" Ransomware Zero-Day Hits Secure File Transfer Tool "SafeMove"</title>
-    <link>https://codedefence.in/blog/2025/11/09/clop-ransomware-safemove-zero-day</link>
-    <pubDate>Sun, 09 Nov 2025 21:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/09/clop-ransomware-safemove-zero-day</guid>
-    <category>Ransomware &amp; Supply Chain</category>
+    <title>Critical RCE in 'expr-eval' NPM Library Threatens AI &amp; NLP Applications</title>
+    <link>https://codedefence.in/blog/2025/11/10/expr-eval-npm-library-critical-rce</link>
+    <pubDate>Mon, 10 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/expr-eval-npm-library-critical-rce</guid>
+    <category>Supply Chain &amp; AppSec</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/filetransferhack/800/400" alt="A secure file folder icon being broken open by a red digital crowbar." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Clop ransomware gang has returned with a new mass-exploitation campaign, this time targeting a zero-day vulnerability (CVE-2025-7788) in "SafeMove," a popular managed file transfer (MFT) solution used by enterprises to share sensitive data.</p>
+      <img src="https://picsum.photos/seed/npmvulnerability/800/400" alt="A complex mathematical formula on a screen glitching into malicious code." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical remote code execution vulnerability (CVE-2025-12735) has been discovered in `expr-eval`, a widely used JavaScript library for mathematical expression evaluation. This library is heavily used in AI and Natural Language Processing (NLP) applications to process user input.</p>
       <p><strong>Business Impact</strong><br/>
-      Similar to the MOVEit attacks of 2023, this is a mass data theft event. Organizations using SafeMove likely have highly sensitive data (PII, financial records, intellectual property) currently being exfiltrated by the terabyte, leading to massive regulatory and extortion risks.</p>
+      Any application using this library to process untrusted user input is vulnerable to complete server takeover. Because it's a deep dependency in many AI/ML pipelines, organizations may be unaware they are even using it, posing a significant stealthy risk.</p>
       <p><strong>Why It Happened</strong><br/>
-      Clop specializes in finding SQL injection vulnerabilities in internet-facing MFT appliances. This allows them to bypass authentication and directly query the database to download all stored files.</p>
+      The library's `evaluate()` method contains a design flaw that allows attackers to define arbitrary functions within the parser's context. By crafting malicious mathematical input, they can escape the sandbox and execute system-level commands.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      If your organization uses SafeMove, take it offline immediately. Do not wait for a patch. Assume all data on the appliance has been stolen. Activate your incident response plan and begin legal counsel regarding breach notification requirements.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Clop #ZeroDay #FileTransfer #DataBreach #SupplyChain #SafeMove #InfoSec</p>
+      Direct your application security and development teams to immediately scan all codebases (especially those involving AI/NLP) for the `expr-eval` dependency. Upgrade to the latest patched version or migrate to a secure fork immediately.</p>
+      <p><strong>Hashtags:</strong> #SupplyChainSecurity #NPM #JavaScript #Vulnerability #RCE #AppSec #AI #DevSecOps</p>
     ]]></description>
   </item>
 
