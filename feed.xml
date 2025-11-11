@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 10 Nov 2025 20:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 10 Nov 2025 20:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 11 Nov 2025 20:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 11 Nov 2025 20:30:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Massive Leak at Chinese Cyber Firm "Knownsec" Exposes State Hacking Tools</title>
-    <link>https://codedefence.in/blog/2025/11/10/knownsec-data-leak-exposes-state-tools</link>
-    <pubDate>Mon, 10 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/knownsec-data-leak-exposes-state-tools</guid>
-    <category>Geopolitics &amp; Threat Intelligence</category>
+    <title>CISA KEV Alert: Samsung Zero-Day (CVE-2025-21042) Exploited to Deploy Spyware</title>
+    <link>https://codedefence.in/blog/2025/11/11/cisa-samsung-zero-day-cve-2025-21042-landfall</link>
+    <pubDate>Tue, 11 Nov 2025 20:25:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/11/cisa-samsung-zero-day-cve-2025-21042-landfall</guid>
+    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/knownsec/800/400" alt="Digital map of the world with data streams originating from China, representing a massive intelligence leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A massive data breach at Knownsec, a prominent Chinese cybersecurity firm with government ties, has exposed over 12,000 classified documents. The leak includes technical specifications for state-sponsored cyber weapons, source code for proprietary hacking tools, and extensive global target lists.</p>
+      <img src="https://picsum.photos/seed/samsungzeroday/800/400" alt="A smartphone displaying a chat message with a malicious image, indicating a zero-click exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a critical Samsung Mobile vulnerability (CVE-2025-21042) to its Known Exploited Vulnerabilities (KEV) catalog, mandating patching for federal agencies. The flaw was used as a zero-day to deploy the "LANDFALL" spyware, possibly through a zero-click attack vector using malicious DNG images sent via apps like WhatsApp.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a historic intelligence windfall for Western defenders but also poses near-term risks. As these sophisticated tools become public, lower-tier cybercriminals may rapidly weaponize them against commercial targets before defenses can be updated.</p>
+      This is a severe threat to mobile security. A zero-click exploit allows attackers to compromise a device and install spyware without any user interaction, enabling total surveillance of high-value targets like executives and government officials, and compromising all corporate data on that device.</p>
       <p><strong>Why It Happened</strong><br/>
-      While the exact vector is unconfirmed, the scale suggests a major insider leak or a highly sophisticated counter-espionage operation targeting a key pillar of China's offensive cyber ecosystem.</p>
+      The vulnerability is an out-of-bounds write flaw in Samsung's proprietary image processing library. An attacker can send a malformed image that, when processed by the device (even for a preview), triggers the flaw and allows arbitrary code execution.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your threat intelligence teams to actively monitor for new Indicators of Compromise (IoCs) derived from this leak. Expect a short-term spike in novel attacks as these exposed tools are analyzed and repurposed by broader criminal groups.</p>
-      <p><strong>Hashtags:</strong> #Geopolitics #China #DataLeak #ThreatIntel #APT #CyberWarfare #InfoSec #Knownsec</p>
+      Direct your IT/MDM teams to push the Samsung April 2025 (or later) security update to all corporate and BYOD Samsung devices immediately. Remind high-risk personnel to disable all media auto-download features in messaging applications as a precaution.</p>
+      <p><strong>Hashtags:</strong> #CISA #KEV #Samsung #ZeroDay #ZeroClick #Spyware #MobileSecurity #CVE #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Container Escape Flaws in 'runc' Threaten Docker &amp; Kubernetes</title>
-    <link>https://codedefence.in/blog/2025/11/10/runc-container-escape-vulnerabilities</link>
-    <pubDate>Mon, 10 Nov 2025 20:05:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/runc-container-escape-vulnerabilities</guid>
-    <category>Cloud Security &amp; DevOps</category>
+    <title>SAP November Patch Day: Multiple CVSS 10.0 and 9.9 Vulnerabilities</title>
+    <link>https://codedefence.in/blog/2025/11/11/sap-november-2025-patch-day-cvss-10</link>
+    <pubDate>Tue, 11 Nov 2025 20:20:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/11/sap-november-2025-patch-day-cvss-10</guid>
+    <category>Top Incident/Vulnerability &amp; Enterprise Software</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/containerescape/800/400" alt="A shipping container breaking open with digital code spilling out, symbolizing a container escape vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Three severe vulnerabilities (including CVE-2025-31133) have been disclosed in `runc`, the low-level container runtime underpinning Docker and Kubernetes. These flaws allow attackers to break container isolation and achieve root access on the host system by manipulating mount operations.</p>
+      <img src="https://picsum.photos/seed/saperp/800/400" alt="A secure data center server rack with a specific SAP server flashing a critical red alert." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>SAP has released its November 2025 Security Patch Day, addressing 18 new vulnerabilities, including several critical flaws. The most severe is a CVSS 10.0 flaw (CVE-2025-42890) in SQL Anywhere Monitor that allows for a complete system takeover. An update to another 10.0 flaw (CVE-2025-42944) for insecure deserialization in NetWeaver AS Java was also released.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic risk for any organization using containerized infrastructure. A successful exploit allows an attacker to escape a single compromised container and take over the entire underlying node, potentially compromising hundreds of other applications running on the same cluster.</p>
+      These vulnerabilities in core SAP systems (ERP, NetWeaver, Solution Manager) are catastrophic. Attackers can gain unauthenticated remote access, execute arbitrary code, and completely compromise the company's "crown jewels," including financial, HR, and supply chain data.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities exploit race conditions and insufficient validation during container creation, specifically how `runc` handles file mounts and symbolic links, allowing attackers to trick the runtime into mounting sensitive host paths.</p>
+      The flaws range from insecure key management and insecure deserialization to code injection, all of which are high-severity issues in complex, internet-facing enterprise applications that grant deep access if exploited.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate an emergency patch cycle for all container hosts. Update to `runc` version 1.2.8 or later immediately. If immediate patching is impossible, ensure strict admission control policies (like preventing privileged containers) are enforced to reduce the attack surface.</p>
-      <p><strong>Hashtags:</strong> #Kubernetes #Docker #ContainerSecurity #CloudNative #Vulnerability #RCE #PatchNow #InfoSec</p>
+      This is an urgent patching priority. Direct your SAP administrators and security teams to apply these critical patches immediately, focusing first on internet-facing systems like NetWeaver Java portals and SAP Solution Manager.</p>
+      <p><strong>Hashtags:</strong> #SAP #ERP #Vulnerability #RCE #CVSS10 #PatchNow #CyberSecurity #InfoSec #CVE</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Report: GenAI is Now the Top Channel for Corporate Data Exfiltration</title>
-    <link>https://codedefence.in/blog/2025/11/10/genai-top-data-exfiltration-channel-report</link>
-    <pubDate>Mon, 10 Nov 2025 20:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/genai-top-data-exfiltration-channel-report</guid>
-    <category>AI/ML in Cybersecurity &amp; Insider Risk</category>
+    <title>Zscaler Report: IoT/OT Attacks on Energy Sector Skyrocket 387%</title>
+    <link>https://codedefence.in/blog/2025/11/11/zscaler-report-iot-ot-energy-attacks-surge</link>
+    <pubDate>Tue, 11 Nov 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/11/zscaler-report-iot-ot-energy-attacks-surge</guid>
+    <category>Supply Chain / OT/ICS Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/genai-leak/800/400" alt="An employee pasting confidential documents into a glowing AI chatbot prompt window." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new 2025 Browser Security Report reveals that Generative AI has overtaken all other channels for data exfiltration. 77% of employees admit to pasting corporate data into GenAI prompts, with 82% of this activity occurring via personal, unmanaged accounts that bypass traditional DLP controls.</p>
+      <img src="https://picsum.photos/seed/otsecurity/800/400" alt="An oil and gas refinery with digital warning icons overlaid, signifying a cyberattack on its operational technology." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The new Zscaler ThreatLabz 2025 report reveals a massive surge in cyberattacks targeting critical infrastructure. Attacks on the energy sector's IoT and Operational Technology (OT) systems increased by 387% over the previous year, with manufacturing and healthcare also seeing significant spikes.</p>
       <p><strong>Business Impact</strong><br/>
-      Organizations are experiencing massive, invisible data leakage. Sensitive IP, PII, and financial data are being fed into public AI models, potentially exposing them to competitors or becoming part of the model's future training data, creating irreversible confidentiality breaches.</p>
+      This trend confirms that attackers (including nation-states like Volt Typhoon) have shifted their focus to OT and IoT as the new, high-value frontier. A successful attack can disrupt physical operations, causing power outages, halting production lines, and posing a direct threat to public safety.</p>
       <p><strong>Why It Happened</strong><br/>
-      Traditional Data Loss Prevention (DLP) tools often fail to monitor browser-based paste actions into specific AI websites, especially when employees use personal devices or accounts. The productivity benefits of AI are outpacing security governance.</p>
+      The convergence of IT and OT networks, combined with the proliferation of unpatched or misconfigured IoT/OT devices, has created a massive, vulnerable attack surface that attackers are now systematically exploiting.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Deploy browser-level security controls that can specifically monitor and block pasting of sensitive data types (PII, code, financial terms) into unauthorized GenAI applications. Officially sanction secure, enterprise-grade AI alternatives to reduce reliance on shadow IT.</p>
-      <p><strong>Hashtags:</strong> #GenAI #DataLeakage #DLP #InsiderRisk #ShadowIT #BrowserSecurity #CyberSecurity #InfoSec</p>
+      Mandate a full asset inventory of all IoT and OT devices on your network. Enforce strict network segmentation to isolate critical OT systems from the IT network. Prioritize a zero-trust approach for any device connecting to critical operational environments.</p>
+      <p><strong>Hashtags:</strong> #OTSecurity #ICSSecurity #IoT #CriticalInfrastructure #EnergySector #Zscaler #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Critical RCE in 'expr-eval' NPM Library Threatens AI &amp; NLP Applications</title>
-    <link>https://codedefence.in/blog/2025/11/10/expr-eval-npm-library-critical-rce</link>
-    <pubDate>Mon, 10 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/10/expr-eval-npm-library-critical-rce</guid>
-    <category>Supply Chain &amp; AppSec</category>
+    <title>Hyundai/Kia IT Provider Breach Impacts 2.7 Million Vehicle Owners</title>
+    <link>https://codedefence.in/blog/2025/11/11/hyundai-autoever-data-breach-2-7-million</link>
+    <pubDate>Tue, 11 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/11/hyundai-autoever-data-breach-2-7-million</guid>
+    <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/npmvulnerability/800/400" alt="A complex mathematical formula on a screen glitching into malicious code." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical remote code execution vulnerability (CVE-2025-12735) has been discovered in `expr-eval`, a widely used JavaScript library for mathematical expression evaluation. This library is heavily used in AI and Natural Language Processing (NLP) applications to process user input.</p>
+      <img src="https://picsum.photos/seed/hyundaibreach/800/400" alt="The logos of Hyundai and Kia on a glass building with a digital data breach warning overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Hyundai AutoEver America (HAEA), the IT services provider for Hyundai, Kia, and Genesis, has confirmed a massive data breach affecting 2.7 million vehicle owners. The stolen data includes highly sensitive PII, such as names, addresses, and Social Security numbers (SSNs).</p>
       <p><strong>Business Impact</strong><br/>
-      Any application using this library to process untrusted user input is vulnerable to complete server takeover. Because it's a deep dependency in many AI/ML pipelines, organizations may be unaware they are even using it, posing a significant stealthy risk.</p>
+      This is a severe supply chain breach. It exposes millions of customers to high risk of identity theft and targeted fraud. It also severely damages trust in the Hyundai/Kia brands and their connected vehicle ecosystems, likely leading to class-action lawsuits and regulatory fines.</p>
       <p><strong>Why It Happened</strong><br/>
-      The library's `evaluate()` method contains a design flaw that allows attackers to define arbitrary functions within the parser's context. By crafting malicious mathematical input, they can escape the sandbox and execute system-level commands.</p>
+      Attackers breached HAEA, a third-party IT provider, to steal data from its parent companies. This classic supply chain attack targets a (presumably) less-secure affiliate to bypass the main corporate defenses and access "crown jewel" customer data.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your application security and development teams to immediately scan all codebases (especially those involving AI/NLP) for the `expr-eval` dependency. Upgrade to the latest patched version or migrate to a secure fork immediately.</p>
-      <p><strong>Hashtags:</strong> #SupplyChainSecurity #NPM #JavaScript #Vulnerability #RCE #AppSec #AI #DevSecOps</p>
+      Review your Third-Party Risk Management (TPRM) program immediately. Identify all vendors that have access to or store your customers' PII. Ensure contractual obligations for security are in place and that you have visibility into your vendors' security posture.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Hyundai #Kia #SupplyChainSecurity #Automotive #PII #SSN #CyberSecurity #InfoSec</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>The New Frontier: Hijacking AI Agents for Malicious Tasks</title>
+    <link>https://codedefence.in/blog/2025/11/11/ai-agents-hijacking-hacking-threat</link>
+    <pubDate>Tue, 11 Nov 2025 20:05:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/11/ai-agents-hijacking-hacking-threat</guid>
+    <category>AI/ML in Cybersecurity</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/aiagent/800/400" alt="A helpful robot icon being manipulated by a shadowy hacker figure, with strings attached like a puppet." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new and growing threat vector is emerging: the hijacking of autonomous "AI agents." Security experts warn that these agents, designed to perform tasks on a user's behalf (like booking travel or managing calendars), can be commandeered by attackers using prompt injection to perform malicious actions like exfiltrating data or accessing bank accounts.</p>
+      <p><strong>Business Impact</strong><br/>
+      As organizations integrate AI agents, a hijacked agent becomes the ultimate insider threat—one with legitimate credentials and access. This attack vector bypasses traditional security, as the agent is *authorized* to perform tasks, but is doing so with malicious intent provided by an attacker.</p>
+      <p><strong>Why It Happened</strong><br/>
+      This is an evolution of prompt injection. Attackers can "slip in" malicious instructions (e.g., hidden in a webpage or email the agent is processing) that the AI interprets as a new, valid command, turning it against its user.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Treat the adoption of autonomous AI agents with extreme caution. Direct your AI governance team to establish strict security policies, such as requiring explicit user approval for any sensitive actions (e.g., data export, financial transactions) performed by an agent.</p>
+      <p><strong>Hashtags:</strong> #AI #AIAgents #PromptInjection #CyberSecurity #InsiderRisk #InfoSec #FutureThreats</p>
     ]]></description>
   </item>
 
