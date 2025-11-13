@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 12 Nov 2025 19:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 12 Nov 2025 19:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 13 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 13 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Microsoft Patch Tuesday: Zero-Day in Windows Kernel (CVE-2025-62215) Actively Exploited</title>
-    <link>https://codedefence.in/blog/2025/11/12/microsoft-patch-tuesday-nov-2025-zero-day</link>
-    <pubDate>Wed, 12 Nov 2025 19:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/12/microsoft-patch-tuesday-nov-2025-zero-day</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>U.S. Hospitals Warn of "Black Basta" Ransomware After Wave of Attacks</title>
+    <link>https://codedefence.in/blog/2025/11/13/black-basta-ransomware-attacks-us-hospitals</link>
+    <pubDate>Thu, 13 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/13/black-basta-ransomware-attacks-us-hospitals</guid>
+    <category>Ransomware &amp; Healthcare</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/patchtuesday/800/400" alt="The Windows logo on a dark, fractured background with a red 'Zero-Day Exploited' warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Microsoft has released its November 2025 Patch Tuesday, addressing 63 new vulnerabilities. The most critical is CVE-2025-62215, a Windows Kernel privilege escalation flaw that is confirmed to be actively exploited in the wild. The update also includes critical RCE flaws in Windows GDI+ and Microsoft Office.</p>
+      <img src="https://picsum.photos/seed/hospitalhack/800/400" alt="A hospital exterior at night with a large, glowing red digital padlock over the front entrance." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Following last week's CISA advisory, multiple U.S. hospital systems are now confirmed to be actively battling intrusions from the "Black Basta" ransomware group. At least two major healthcare providers are diverting ambulances and have shut down EHR systems, indicating a widespread, ongoing campaign.</p>
       <p><strong>Business Impact</strong><br/>
-      An actively exploited privilege escalation flaw is a critical component of attack chains. Attackers who gain initial low-level access (e.g., via phishing) can use this zero-day to immediately gain full SYSTEM-level control of a machine, bypassing all security and deploying ransomware or spyware.</p>
+      This is a direct threat to patient safety and life. The operational shutdown of hospital networks creates chaos, delays critical care, and exposes massive amounts of sensitive patient data (PHI) to exfiltration, leading to severe regulatory (HIPAA) fines and potential loss of life.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability is a race condition in the Windows Kernel. An attacker who can run code on a target machine can win this race to elevate their privileges, turning a minor intrusion into a full system compromise.</p>
+      Black Basta is known to exploit unpatched Microsoft Exchange servers (like ProxyLogon) and the recent critical Windows Kernel zero-day (CVE-2025-62215) to gain access and escalate privileges rapidly within healthcare networks, which often lag in emergency patching.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This is the top patching priority for the month. Direct IT operations to deploy the November Microsoft security updates immediately, focusing on workstations and servers to mitigate this actively exploited zero-day.</p>
-      <p><strong>Hashtags:</strong> #PatchTuesday #Microsoft #ZeroDay #Vulnerability #CVE #Windows #CyberSecurity #InfoSec #PatchNow</p>
+      For all healthcare leaders: This is an active, critical threat. Mandate the immediate patching of all Windows and Exchange servers per this week's Patch Tuesday and CISA KEV alerts. Verify that offline, immutable backups are in place and have been recently tested for recovery.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #BlackBasta #Healthcare #CyberAttack #PatientSafety #HIPAA #InfoSec #CISA</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Cisco ISE Zero-Day (CVE-2025-20337) Exploited by Advanced Hackers</title>
-    <link>https://codedefence.in/blog/2025/11/12/cisco-ise-zero-day-cve-2025-20337-exploited</link>
-    <pubDate>Wed, 12 Nov 2025 19:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/12/cisco-ise-zero-day-cve-2025-20337-exploited</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
+    <title>Critical Zero-Day in Cisco ISE (CVE-2025-20337) Actively Exploited</title>
+    <link>https://codedefence.in/blog/2025/11/13/cisco-ise-zero-day-cve-2025-20337-exploited</link>
+    <pubDate>Thu, 13 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/13/cisco-ise-zero-day-cve-2025-20337-exploited</guid>
+    <category>Top Incident/Vulnerability &amp; IAM</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ciscoise/800/400" alt="A secure network identity server with a glowing red vulnerability icon, indicating a breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Amazon researchers revealed that a sophisticated threat actor has been exploiting a zero-day vulnerability (CVE-2025-20337) in the Cisco Identity Service Engine (ISE). This pre-authentication RCE flaw allows attackers to gain full administrator-level access to the compromised ISE system.</p>
+      <img src="https://picsum.photos/seed/ciscoisehack/800/400" alt="A network access control server with a broken digital chain, symbolizing a security bypass." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Cisco has confirmed active exploitation of a zero-day vulnerability (CVE-2025-20337) in its Identity Service Engine (ISE), the central network access control (NAC) solution for many enterprises. The flaw allows an unauthenticated, remote attacker to gain full administrator access to the device.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic breach. Cisco ISE is the central "gatekeeper" for many corporate networks, controlling which users and devices can access which resources (NAC). Compromising it allows attackers to control the entire network, bypass segmentation, and impersonate any user or device.</p>
+      This is a "keys to the kingdom" vulnerability. An attacker who controls ISE can control the entire network. They can bypass security segmentation, impersonate any user or device, grant themselves access to all resources, and become virtually undetectable.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw is a vulnerable deserialization logic in a previously undocumented endpoint on the ISE. Attackers deployed a custom-built web shell designed specifically to look like a legitimate Cisco component to maintain stealthy, persistent access.</p>
+      The vulnerability is a pre-authentication remote code execution (RCE) flaw in an undocumented API endpoint of the ISE. Sophisticated attackers (implying nation-state) discovered and weaponized this flaw to deploy persistent web shells.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your network security team to immediately apply the patches released by Cisco for ISE. This is a critical risk, and given the targeted nature of the attack, you must assume compromise and hunt for the described web shell and other IoCs.</p>
+      Direct your network security team to apply the patches for Cisco ISE immediately. This is a critical priority. Given the active exploitation, you must follow Cisco's guidance to hunt for the Indicators of Compromise (IoCs) of the web shell, as patching alone does not remove an existing attacker.</p>
       <p><strong>Hashtags:</strong> #Cisco #ZeroDay #Vulnerability #RCE #CiscoISE #NAC #CyberSecurity #InfoSec #APT</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA Adds 3 Flaws to KEV Catalog (WatchGuard, Gladinet, Microsoft)</title>
-    <link>https://codedefence.in/blog/2025/11/12/cisa-kev-catalog-watchguard-gladinet-microsoft</link>
-    <pubDate>Wed, 12 Nov 2025 19:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/12/cisa-kev-catalog-watchguard-gladinet-microsoft</guid>
-    <category>Regulatory Compliance &amp; Vulnerability Management</category>
+    <title>AI-Powered "Deepfake Phishing" Now Used in 40% of Credential Theft Attacks</title>
+    <link>https://codedefence.in/blog/2025/11/13/ai-deepfake-phishing-40-percent-credential-theft</link>
+    <pubDate>Thu, 13 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/13/ai-deepfake-phishing-40-percent-credential-theft</guid>
+    <category>AI/ML in Cybersecurity &amp; Social Engineering</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cisakev/800/400" alt="The CISA logo on a screen with a list of vulnerabilities marked 'Actively Exploited'." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) catalog, confirming active exploitation. These include the Windows Kernel zero-day (CVE-2025-62215) from today's Patch Tuesday, a Gladinet Triofox access control flaw (CVE-2025-12480), and a WatchGuard Firebox RCE flaw (CVE-2025-9242).</p>
+      <img src="https://picsum.photos/seed/deepfakephish/800/400" alt="A person's face on a video call glitching and revealing a robotic skull underneath, representing a deepfake." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new threat report from Proofpoint highlights a massive shift in attack tactics. Nearly 40% of all credential theft attempts now involve some form of AI, including deepfake audio (vishing) or realistic video snippets used in spear-phishing emails to build trust and urgency.</p>
       <p><strong>Business Impact</strong><br/>
-      These flaws represent immediate, proven risks. The Gladinet flaw allows attackers to access files on cloud storage platforms. The WatchGuard flaw allows for complete firewall takeover. All three are being actively used by attackers to breach networks.</p>
+      AI is successfully bypassing the #1 human defense: employee awareness. Your employees are trained to spot bad grammar, but they are not trained to spot a perfect AI-generated voice or video of their CEO or IT director, leading to a much higher success rate for credential harvesting and fraud.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers prioritize and weaponize vulnerabilities that are internet-facing (like WatchGuard and Gladinet) or provide high-level access (like the Windows Kernel flaw) to maximize their impact and success rate.</p>
+      The barrier to creating convincing deepfakes has collapsed. Attackers can now use readily available AI tools to generate realistic audio and video impersonations, automating what was once a highly manual social engineering attack.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your vulnerability management team to prioritize patching these three CVEs immediately. The KEV catalog is not a suggestion; it is a list of active threats. Federal agencies must patch by December 3, 2025, and all organizations should follow suit.</p>
-      <p><strong>Hashtags:</strong> #CISA #KEV #Vulnerability #PatchNow #WatchGuard #Microsoft #CyberSecurity #InfoSec #CVE</p>
+      Update your security awareness training *immediately* to include examples of AI-driven vishing and video phishing. More importantly, implement hard-to-spoof verification policies (e.g., an out-of-band "safe word" or callback to a known-good number) for all sensitive requests.</p>
+      <p><strong>Hashtags:</strong> #AI #Deepfake #Phishing #Vishing #SocialEngineering #CyberSecurity #InfoSec #CyberAwareness</p>
     ]]></description>
   </item>
   
   <item>
-    <title>RansomHouse Claims Attack on H&amp;M, Adidas Yarn Supplier "Fulgar"</title>
-    <link>https://codedefence.in/blog/2025/11/12/ransomhouse-fulgar-breach-hm-adidas-supplier</link>
-    <pubDate>Wed, 12 Nov 2025 19:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/12/ransomhouse-fulgar-breach-hm-adidas-supplier</guid>
-    <category>Ransomware &amp; Supply Chain</category>
+    <title>U.S. Government Sanctions North Korean "Pyongyang Cyber Group" for Crypto Heists</title>
+    <link>https://codedefence.in/blog/2025/11/13/us-sanctions-north-korea-pyongyang-cyber-group</link>
+    <pubDate>Thu, 13 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/13/us-sanctions-north-korea-pyongyang-cyber-group</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/supplychainhack/800/400" alt="A textile factory with a digital padlock, representing a supply chain ransomware attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The RansomHouse cybercrime group has claimed a successful ransomware attack on Fulgar, a major Italian textile supplier for global brands like H&amp;M and Adidas. The company confirmed an attack on Nov 3rd, shutting down its IT systems. RansomHouse is now threatening to leak stolen confidential data.</p>
+      <img src="https://picsum.photos/seed/nkoreasanction/800/400" alt="The North Korean flag dissolving into a stream of cryptocurrency coins being blocked by a U.S. Treasury seal." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The U.S. Department of the Treasury has sanctioned the "Pyongyang Cyber Group" (PCG), a newly designated North Korean state-sponsored APT. The group is allegedly responsible for stealing over $500 million in 2025 from DeFi protocols and cryptocurrency exchanges to fund state programs.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a critical supply chain attack. The breach at Fulgar not only halts its own operations but also threatens to disrupt the production and supply chains of major global fashion brands that rely on its specialized materials.</p>
+      This sanction blocks all U.S. persons and entities from transacting with the group or their associated crypto wallets. For financial institutions and crypto exchanges, it increases the compliance burden to identify and block these illicit funds, which are often laundered through complex mixing services.</p>
       <p><strong>Why It Happened</strong><br/>
-      Ransomware groups are increasingly targeting critical "choke points" in supply chains. By hitting a key supplier, they inflict maximum financial pressure and create urgency, as the primary target (Fulgar) is also being pressured by its massive clients (H&amp;M, Adidas) to resolve the issue.</p>
+      North Korea (DPRK) uses its sophisticated cyber units as a primary revenue-generating tool for the state, targeting the high-value, decentralized, and often poorly secured DeFi ecosystem to bypass international economic sanctions.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your organization's critical supplier list. Conduct a risk assessment to understand the impact of your top suppliers going offline. Ensure your supply chain contracts include cybersecurity diligence requirements and incident notification clauses.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #SupplyChainSecurity #RansomHouse #CyberAttack #Manufacturing #InfoSec #CyberRisk</p>
+      For leaders in finance or cryptocurrency: Ensure your compliance and AML (Anti-Money Laundering) teams have immediately updated their screening lists with the wallets and aliases associated with PCG. This is a critical step to avoid regulatory penalties for processing illicit funds.</p>
+      <p><strong>Hashtags:</strong> #APT #NationState #NorthKorea #Crypto #DeFi #Sanctions #OFAC #CyberSecurity #InfoSec</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>Critical "FormFusion" WordPress Plugin Flaw Allows Admin Takeover</title>
+    <link>https://codedefence.in/blog/2025/11/13/wordpress-plugin-formfusion-takeover</link>
+    <pubDate>Thu, 13 Nov 2025 19:35:00 +0300</p>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/13/wordpress-plugin-formfusion-takeover</guid>
+    <category>Top Incident/Vulnerability &amp; Web Security</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/wordpresshack/800/400" alt="The WordPress logo on a web server with a red, broken link icon, indicating a plugin vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical (CVSS 9.8) vulnerability has been found in "FormFusion," a WordPress plugin with over 200,000 active installations. The flaw allows any unauthenticated user to update user metadata, including changing the email address and password of an administrator account, leading to a full site takeover.</p>
+      <p><strong>Business Impact</strong><br/>
+      This is an extremely easy-to-exploit vulnerability that leads to a complete compromise of a company's website. Attackers can deface the site, steal customer data, install malware, or use the site's reputation to launch phishing campaigns, causing severe brand damage.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The plugin's developers failed to implement proper authorization checks (a missing capability check) on a function designed to update user profiles, allowing it to be accessed and used by any visitor to the website.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct your web or marketing teams to immediately update the "FormFusion" plugin to the latest patched version. Assume any site running a vulnerable version is already compromised and conduct an audit for new or modified administrator accounts and suspicious files.</p>
+      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #Plugin #RCE #WebSecurity #CyberSecurity #PatchNow #CVE #InfoSec</p>
     ]]></description>
   </item>
 
