@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sat, 15 Nov 2025 20:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 15 Nov 2025 20:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 16 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sun, 16 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Warns: Palo Alto GlobalProtect Zero-Day (CVE-2025-9901) Under Mass Exploit</title>
-    <link>https://codedefence.in/blog/2025/11/15/cisa-palo-alto-globalprotect-mass-exploit</link>
-    <pubDate>Sat, 15 Nov 2025 20:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/15/cisa-palo-alto-globalprotect-mass-exploit</guid>
+    <title>Suspected Fortinet FortiWeb Zero-Day Actively Exploited to Create Rogue Admins</title>
+    <link>https://codedefence.in/blog/2025/11/16/fortinet-fortiweb-zero-day-exploit</link>
+    <pubDate>Sun, 16 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/fortinet-fortiweb-zero-day-exploit</guid>
     <category>Top Incident/Vulnerability &amp; Network Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/paloglobalprotect/800/400" alt="A network firewall appliance with a red, glowing, fractured shield icon, symbolizing a zero-day exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has added the critical Palo Alto GlobalProtect VPN vulnerability (CVE-2025-9901) to its Known Exploited Vulnerabilities (KEV) catalog, confirming it is under widespread, active exploitation. The CVSS 10.0 flaw allows unauthenticated remote code execution and full firewall takeover.</p>
+      <img src="https://picsum.photos/seed/fortiweb/800/400" alt="A web application firewall (WAF) appliance with a red alert, indicating a zero-day exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Security researchers are warning of active exploitation of a suspected zero-day vulnerability in Fortinet's FortiWeb Web Application Firewall (WAF). Unauthenticated, remote attackers are exploiting the flaw to create unauthorized administrator accounts on vulnerable, internet-facing devices.</p>
       <p><strong>Business Impact</strong><br/>
-      This is the highest possible alert. Attackers are actively compromising unpatched corporate firewalls to gain full network access. A compromised VPN gateway allows for total data exfiltration, ransomware deployment, and persistent, stealthy access to the internal network.</p>
+      This is a critical breach. A WAF is a key security control that inspects all traffic to your web applications. An attacker who controls the WAF can bypass all its protections, steal sensitive data (like credit cards or PII), modify web traffic, and gain a foothold to attack backend servers.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability is a command injection flaw in the GlobalProtect portal's web interface, which is internet-facing by design. Attackers are now scanning the internet and automatically compromising any unpatched devices.</p>
+      The flaw (which is not yet assigned a CVE) appears to be an authentication bypass in the WAF's management interface, allowing attackers to use the REST API to create new admin users with full privileges without needing to log in.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This is an "all-hands-on-deck" emergency. If your organization has not applied the hotfixes from Palo Alto Networks, you must assume you are compromised. Patching is not enough; you must immediately activate your incident response plan and hunt for IoCs.</p>
-      <p><strong>Hashtags:</strong> #PaloAlto #ZeroDay #CISA #KEV #Vulnerability #RCE #CyberSecurity #InfoSec #PatchNow</p>
+      Direct your network security team to immediately restrict all access to the FortiWeb management interface to a secure, internal-only network. Mandate an immediate audit of all FortiWeb devices for any new or unrecognized administrator accounts, and prepare to apply patches as soon as Fortinet releases them.</p>
+      <p><strong>Hashtags:</strong> #Fortinet #FortiWeb #ZeroDay #Vulnerability #RCE #CyberSecurity #PatchNow #InfoSec #WAF</p>
     ]]></description>
   </item>
 
   <item>
-    <title>North Korean Hackers "Lazarus Group" Deploy New AI-Powered Phishing Lures</title>
-    <link>https://codedefence.in/blog/2025/11/15/lazarus-group-ai-phishing-lures</link>
-    <pubDate>Sat, 15 Nov 2025 20:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/15/lazarus-group-ai-phishing-lures</guid>
-    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
+    <title>CISA &amp; FBI Issue Urgent Update on "Akira" Ransomware, Citing Imminent Threat</title>
+    <link>https://codedefence.in/blog/2025/11/16/cisa-fbi-akira-ransomware-imminent-threat</link>
+    <pubDate>Sun, 16 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/cisa-fbi-akira-ransomware-imminent-threat</guid>
+    <category>Ransomware &amp; Extortion</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiphishinglure/800/400" alt="A sophisticated, professional-looking email with a subtle AI-generated glitch, indicating a phishing attempt." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The North Korean state-sponsored Lazarus Group is now using generative AI to enhance its spear-phishing campaigns. Researchers report the group is using AI to create linguistically perfect, context-aware emails and fake professional profiles on LinkedIn to target employees in the cryptocurrency and defense sectors.</p>
+      <img src="https://picsum.photos/seed/akira/800/400" alt="The CISA and FBI logos side-by-side with a bold 'IMMINENT THREAT' warning text." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA and the FBI have re-issued a joint Cybersecurity Advisory (#StopRansomware) on the "Akira" ransomware group, warning of an imminent threat to critical infrastructure. The update includes new Tactics, Techniques, and Procedures (TTPs) and Indicators of Compromise (IoCs) observed in recent, successful attacks.</p>
       <p><strong>Business Impact</strong><br/>
-      AI removes the classic red flags (e.g., poor grammar, awkward phrasing) that employees are trained to spot. This makes the Lazarus Group's phishing attempts significantly more convincing, increasing their success rate in stealing credentials, compromising networks, and stealing millions in cryptocurrency.</p>
+      This high-level alert signals that Akira is actively deploying new attack methods that are bypassing existing defenses. Organizations in education, finance, and healthcare are primary targets. An attack can lead to full operational shutdown, data exfiltration, and massive recovery costs.</p>
       <p><strong>Why It Happened</strong><br/>
-      Generative AI allows non-native English-speaking APT groups to craft flawless social engineering lures at scale, effectively bypassing human vigilance and traditional email filters that look for spam-like characteristics.</p>
+      Akira has evolved, now heavily exploiting unpatched Cisco VPNs (without MFA) and the "Citrix Bleed" vulnerability (CVE-2023-4966) for initial access. They have also been seen using tools like "SilentButDeadly" to neutralize EDR security controls.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update security awareness training immediately. Emphasize that "perfect" grammar is no longer a sign of a safe email. Mandate the use of phishing-resistant MFA (like FIDO2/passkeys) to render stolen credentials useless.</p>
-      <p><strong>Hashtags:</strong> #AI #Phishing #SocialEngineering #LazarusGroup #NorthKorea #APT #CyberSecurity #InfoSec</p>
+      Direct your SOC and IT teams to immediately ingest the new IoCs and TTPs from this advisory into all security tools (EDR, SIEM). Mandate an immediate patch audit for all Cisco and Citrix edge devices. Enforce phishing-resistant MFA across the entire organization.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Akira #CISA #FBI #StopRansomware #CyberAttack #CriticalInfrastructure #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Flaw in "OpenFlow" SDN Controller (CVE-2025-11290) Allows Network Takeover</title>
-    <link>https://codedefence.in/blog/2025/11/15/openflow-sdn-controller-vulnerability</link>
-    <pubDate>Sat, 15 Nov 2025 20:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/15/openflow-sdn-controller-vulnerability</guid>
-    <category>Top Incident/Vulnerability &amp; Network Security</category>
+    <title>New "SilentButDeadly" Tool Neutralizes EDR/AV Security Software</title>
+    <link>https://codedefence.in/blog/2025/11/16/silentbutdeadly-edr-av-blocker-tool</link>
+    <pubDate>Sun, 16 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/silentbutdeadly-edr-av-blocker-tool</guid>
+    <category>Defensive Evasion &amp; Offensive Security</category>
     <description><![CDATA[
-      <img src="httpss://picsum.photos/seed/sdnhack/800/400" alt="A digital visualization of a software-defined network (SDN) with a red, broken link in the central controller." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical (CVSS 9.8) vulnerability has been disclosed in the "OpenFlow" Software-Defined Networking (SDN) controller, a popular open-source component used in many enterprise and datacenter network fabrics. The flaw allows an unauthenticated, remote attacker to bypass authentication and gain full administrative control of the SDN controller.</p>
+      <img src="https://picsum.photos/seed/edrblind/800/400" alt="A computer endpoint security icon (a shield) being blinded by a network disconnection symbol." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new open-source offensive security tool named "SilentButDeadly" has been released, designed to neutralize Endpoint Detection and Response (EDR) and Antivirus (AV) software. The tool works by severing the network connections of EDR/AV processes, effectively blinding them from communicating with their cloud management consoles.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic network infrastructure vulnerability. The SDN controller is the "brain" of the entire network. An attacker who controls it can silently intercept, redirect, or monitor all network traffic, bypass all firewalls and segmentation, and gain access to every connected system.</p>
+      This tool is a significant threat to modern security stacks. An attacker who successfully runs it can operate undetected on a compromised endpoint, as the EDR will be unable to send alerts or receive investigation commands, giving the attacker free rein to conduct lateral movement and data exfiltration.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability is an authentication bypass in the controller's REST API, allowing attackers to send malicious, unauthenticated requests that are processed as if they came from an administrator.</p>
+      The tool exploits a design element where EDR agents, once disconnected from their cloud, may fail "open" or be unable to report malicious activity. Ransomware groups like Akira are already reportedly incorporating this technique into their attacks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your network engineering team to patch all OpenFlow-based SDN controllers immediately. Ensure that the management interfaces for all network infrastructure (controllers, switches, firewalls) are on a segregated, secure management network, never exposed to the internet or internal user networks.</p>
-      <p><strong>Hashtags:</strong> #SDN #NetworkSecurity #Vulnerability #RCE #OpenFlow #CyberSecurity #PatchNow #InfoSec #CVE</p>
+      Direct your endpoint security team to verify with your EDR vendor that they have protections against this type of network isolation attack (e.g., self-protection, fail-closed mechanisms). Ensure detection rules are in place to monitor for processes that attempt to tamper with EDR network connections.</p>
+      <p><strong>Hashtags:</strong> #EDR #EndpointSecurity #AV #CyberSecurity #RedTeam #BlueTeam #InfoSec #Ransomware</p>
     ]]></description>
   </item>
   
   <item>
-    <title>BlackCat Ransomware Gang Leaks 10TB of Alleged U.S. State Dept. Data</title>
-    <link>https://codedefence.in/blog/2025/11/15/blackcat-leaks-us-state-dept-data</link>
-    <pubDate>Sat, 15 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/15/blackcat-leaks-us-state-dept-data</guid>
-    <category>Ransomware &amp; Geopolitics</category>
+    <title>CISA Releases 18 New ICS Advisories for Siemens, Rockwell &amp; Mitsubishi</title>
+    <link>https://codedefence.in/blog/2025/11/16/cisa-18-new-ics-advisories-siemens-rockwell</link>
+    <pubDate>Sun, 16 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/cisa-18-new-ics-advisories-siemens-rockwell</guid>
+    <category>Supply Chain / OT/ICS Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/blackcatleak/800/400" alt="A computer screen showing a 'Data Leak in Progress' bar with the BlackCat ransomware logo." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Following through on their threat from last week, the BlackCat/ALPHV ransomware gang has begun leaking the 10TB of data they claim to have stolen from the U.S. State Department. The initial leak includes internal documents, personnel lists, and what appear to be diplomatic communications.</p>
+      <img src="https://picsum.photos/seed/icsalert/800/400" alt="A factory control panel screen (HMI) with a critical vulnerability warning, showing industrial pipes in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has published 18 new advisories for Industrial Control Systems (ICS), detailing vulnerabilities in products from major vendors including Siemens, Rockwell Automation, and Mitsubishi Electric. The flaws include issues like improper authentication, command injection, and denial of service.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a major national security incident. The public release of this sensitive data endangers U.S. personnel, compromises diplomatic negotiations, and provides a trove of intelligence to foreign adversaries. The State Department has not confirmed the authenticity but is "aware of the claims."</p>
+      These vulnerabilities pose a direct risk to critical manufacturing, energy, and water sectors. Exploitation could allow an attacker to disrupt physical processes, halt production lines, or cause unsafe operating conditions, leading to significant financial losses and public safety risks.</p>
       <p><strong>Why It Happened</strong><br/>
-      This is a classic double-extortion tactic. The leak is designed to inflict maximum reputational damage and pressure the U.S. government (which has a strict no-pay policy) after negotiations failed. The initial access vector remains unknown but was likely a known, unpatched vulnerability.</p>
+      The vulnerabilities were discovered and reported by security researchers, highlighting the ongoing security weaknesses in legacy and modern OT equipment that was not designed to be connected to hostile networks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      While a government breach, this reinforces the need for rapid detection and response. Mandate a review of your organization's data exfiltration controls. Ensure that detection for large, anomalous outbound data transfers is in place and that the SOC is empowered to block such transfers immediately.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #BlackCat #ALPHV #DataLeak #CyberAttack #StateDepartment #Geopolitics #InfoSec</g'</p>
+      Direct your Head of Operations and OT security teams to immediately review this list of 18 advisories. They must identify which assets are in use and prioritize a patch management and mitigation plan, starting with the most critical and exposed systems.</p>
+      <p><strong>Hashtags:</strong> #CISA #ICS #OTSecurity #CriticalInfrastructure #Siemens #RockwellAutomation #Vulnerability #InfoSec</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>Healthcare Council Previews 2026 AI Cybersecurity Guidance</title>
+    <link>https://codedefence.in/blog/2025/11/16/healthcare-ai-cybersecurity-guidance-2026</link>
+    <pubDate>Sun, 16 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/healthcare-ai-cybersecurity-guidance-2026</guid>
+    <category>AI/ML in Cybersecurity &amp; Regulatory Compliance</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/aihealthcare/800/400" alt="A doctor reviewing a patient's X-ray on a tablet, with an AI interface and a secure shield icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Healthcare Sector Coordinating Council (HSCC) is previewing its 2026 AI cybersecurity guidance, which outlines best practices for healthcare organizations. The guidance focuses on securing AI-powered diagnostic tools, protecting patient data used in AI models, and managing AI supply chain risks.</p>
+      <p><strong>Business Impact</strong><br/>
+      This new guidance will establish a much-needed security baseline for the rapid adoption of AI in healthcare. It provides a framework for healthcare providers to innovate responsibly, manage new AI-specific risks, and ensure compliance with regulations like HIPAA in the age of AI.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Healthcare organizations are rapidly adopting AI for everything from radiology to patient management. This has created a new, poorly understood attack surface and significant data privacy risks that existing regulations do not fully address.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      For healthcare leaders: Direct your CISO and Chief Compliance Officer to review this draft guidance immediately. Use it as a benchmark to perform a gap analysis of your current AI security and governance policies to get ahead of future regulatory requirements.</p>
+      <p><strong>Hashtags:</strong> #AI #Healthcare #CyberSecurity #HIPAA #Compliance #AIGovernance #InfoSec #HSCC</p>
     ]]></description>
   </item>
 
