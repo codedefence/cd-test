@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sun, 16 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sun, 16 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Mon, 17 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Mon, 17 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Suspected Fortinet FortiWeb Zero-Day Actively Exploited to Create Rogue Admins</title>
-    <link>https://codedefence.in/blog/2025/11/16/fortinet-fortiweb-zero-day-exploit</link>
-    <pubDate>Sun, 16 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/fortinet-fortiweb-zero-day-exploit</guid>
+    <title>CISA Orders Patching of Critical Fortinet FortiWeb Zero-Day (CVE-2025-64446)</title>
+    <link>https://codedefence.in/blog/2025/11/17/cisa-fortinet-fortiweb-zero-day-cve-2025-64446</link>
+    <pubDate>Mon, 17 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/17/cisa-fortinet-fortiweb-zero-day-cve-2025-64446</guid>
     <category>Top Incident/Vulnerability &amp; Network Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/fortiweb/800/400" alt="A web application firewall (WAF) appliance with a red alert, indicating a zero-day exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers are warning of active exploitation of a suspected zero-day vulnerability in Fortinet's FortiWeb Web Application Firewall (WAF). Unauthenticated, remote attackers are exploiting the flaw to create unauthorized administrator accounts on vulnerable, internet-facing devices.</p>
+      <img src="https://picsum.photos/seed/fortinetbreach/800/400" alt="A Fortinet Web Application Firewall appliance with a glowing red vulnerability symbol, under active attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a critical Fortinet FortiWeb (WAF) vulnerability, CVE-2025-64446, to its Known Exploited Vulnerabilities (KEV) catalog, mandating a patch by November 21, 2025. The flaw is a path traversal vulnerability (CVSS 9.1) that allows unauthenticated, remote attackers to execute arbitrary administrative commands, including creating rogue admin accounts.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a critical breach. A WAF is a key security control that inspects all traffic to your web applications. An attacker who controls the WAF can bypass all its protections, steal sensitive data (like credit cards or PII), modify web traffic, and gain a foothold to attack backend servers.</p>
+      This is a "perimeter-down" emergency. The WAF is your first line of defense; if attackers control it, they can bypass all security, steal data, deface websites, and pivot into your internal network. Reports confirm attackers are already exploiting this to create new admin accounts for persistent access.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw (which is not yet assigned a CVE) appears to be an authentication bypass in the WAF's management interface, allowing attackers to use the REST API to create new admin users with full privileges without needing to log in.</p>
+      The vulnerability allows attackers to send crafted HTTP requests to bypass security checks and perform administrative actions. The flaw was reportedly "silently patched" by Fortinet in late October, but without a public CVE, many organizations were left unaware and vulnerable.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your network security team to immediately restrict all access to the FortiWeb management interface to a secure, internal-only network. Mandate an immediate audit of all FortiWeb devices for any new or unrecognized administrator accounts, and prepare to apply patches as soon as Fortinet releases them.</p>
-      <p><strong>Hashtags:</strong> #Fortinet #FortiWeb #ZeroDay #Vulnerability #RCE #CyberSecurity #PatchNow #InfoSec #WAF</p>
+      This is an immediate, critical patching priority. Direct your network security team to apply the patches (v7.4.8 or 7.6.6) now. More importantly, they *must* audit all FortiWeb devices for any unauthorized administrator accounts created in the last 30 days, as you may already be compromised.</p>
+      <p><strong>Hashtags:</strong> #Fortinet #FortiWeb #ZeroDay #Vulnerability #RCE #CISA #KEV #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA &amp; FBI Issue Urgent Update on "Akira" Ransomware, Citing Imminent Threat</title>
-    <link>https://codedefence.in/blog/2025/11/16/cisa-fbi-akira-ransomware-imminent-threat</link>
-    <pubDate>Sun, 16 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/cisa-fbi-akira-ransomware-imminent-threat</guid>
-    <category>Ransomware &amp; Extortion</category>
+    <title>Logitech Confirms Data Breach; "Clop" Ransomware Group Implicated</title>
+    <link>https://codedefence.in/blog/2025/11/17/logitech-data-breach-clop-ransomware</link>
+    <pubDate>Mon, 17 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/17/logitech-data-breach-clop-ransomware</guid>
+    <category>Data Breach &amp; Ransomware</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/akira/800/400" alt="The CISA and FBI logos side-by-side with a bold 'IMMINENT THREAT' warning text." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA and the FBI have re-issued a joint Cybersecurity Advisory (#StopRansomware) on the "Akira" ransomware group, warning of an imminent threat to critical infrastructure. The update includes new Tactics, Techniques, and Procedures (TTPs) and Indicators of Compromise (IoCs) observed in recent, successful attacks.</p>
+      <img src="https://picsum.photos/seed/logitechbreach/800/400" alt="The Logitech logo on a building with a digital ransomware warning and data streams leaking out." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Logitech has confirmed it "experienced a cybersecurity incident relating to the exfiltration of data" after the Clop ransomware gang listed them as a victim. The breach is linked to the mass exploitation of the Oracle E-Business Suite zero-day (CVE-2025-61882) we tracked last month.</p>
       <p><strong>Business Impact</strong><br/>
-      This high-level alert signals that Akira is actively deploying new attack methods that are bypassing existing defenses. Organizations in education, finance, and healthcare are primary targets. An attack can lead to full operational shutdown, data exfiltration, and massive recovery costs.</p>
+      This is a major supply chain breach. While Logitech states its products are unaffected, the theft of sensitive corporate data (potentially R&amp;D, financials, employee/partner data) by a top-tier extortion group like Clop creates a massive financial and reputational risk for the company.</p>
       <p><strong>Why It Happened</strong><br/>
-      Akira has evolved, now heavily exploiting unpatched Cisco VPNs (without MFA) and the "Citrix Bleed" vulnerability (CVE-2023-4966) for initial access. They have also been seen using tools like "SilentButDeadly" to neutralize EDR security controls.</p>
+      This attack appears to be part of Clop's broad campaign of exploiting a single, high-impact zero-day (in Oracle EBS) against hundreds of organizations simultaneously, focusing on data theft for extortion rather than network-wide encryption.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your SOC and IT teams to immediately ingest the new IoCs and TTPs from this advisory into all security tools (EDR, SIEM). Mandate an immediate patch audit for all Cisco and Citrix edge devices. Enforce phishing-resistant MFA across the entire organization.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Akira #CISA #FBI #StopRansomware #CyberAttack #CriticalInfrastructure #InfoSec</p>
+      This confirms the "long tail" of zero-day exploits. Direct your CISO to ensure all third-party enterprise software (Oracle, SAP, etc.) is included in your emergency patching and vulnerability management program, not just your core OS and network gear.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Logitech #Ransomware #Clop #Oracle #ZeroDay #SupplyChainSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "SilentButDeadly" Tool Neutralizes EDR/AV Security Software</title>
-    <link>https://codedefence.in/blog/2025/11/16/silentbutdeadly-edr-av-blocker-tool</link>
-    <pubDate>Sun, 16 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/silentbutdeadly-edr-av-blocker-tool</guid>
-    <category>Defensive Evasion &amp; Offensive Security</category>
+    <title>Anthropic Disrupts First AI-Orchestrated Cyber Espionage Campaign</title>
+    <link>https://codedefence.in/blog/2025/11/17/anthropic-disrupts-ai-cyber-espionage-campaign</link>
+    <pubDate>Mon, 17 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/17/anthropic-disrupts-ai-cyber-espionage-campaign</guid>
+    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/edrblind/800/400" alt="A computer endpoint security icon (a shield) being blinded by a network disconnection symbol." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new open-source offensive security tool named "SilentButDeadly" has been released, designed to neutralize Endpoint Detection and Response (EDR) and Antivirus (AV) software. The tool works by severing the network connections of EDR/AV processes, effectively blinding them from communicating with their cloud management consoles.</p>
+      <img src="https"//picsum.photos/seed/aiespionage/800/400" alt="An AI robot sitting at a computer, surrounded by code and data streams, with a shadowy figure in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>AI company Anthropic announced it has disrupted what it calls the first reported AI-orchestrated cyber espionage campaign. A China-linked APT group was using its AI model, Claude, to automate and direct hacking operations, including reconnaissance, code generation, and vulnerability analysis.</p>
       <p><strong>Business Impact</strong><br/>
-      This tool is a significant threat to modern security stacks. An attacker who successfully runs it can operate undetected on a compromised endpoint, as the EDR will be unable to send alerts or receive investigation commands, giving the attacker free rein to conduct lateral movement and data exfiltration.</p>
+      This is a landmark event. It confirms that nation-state actors are weaponizing public AI models to scale their attacks, automate tasks, and bypass human skill gaps. It lowers the barrier for sophisticated attacks and dramatically increases the speed and scale of the threat.</p>
       <p><strong>Why It Happened</strong><br/>
-      The tool exploits a design element where EDR agents, once disconnected from their cloud, may fail "open" or be unable to report malicious activity. Ransomware groups like Akira are already reportedly incorporating this technique into their attacks.</p>
+      The APT group used the AI as a "force multiplier" to automate reconnaissance on targets, generate exploit code for known vulnerabilities, and create convincing spear-phishing content, allowing them to attack "roughly thirty global targets" with high efficiency.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your endpoint security team to verify with your EDR vendor that they have protections against this type of network isolation attack (e.g., self-protection, fail-closed mechanisms). Ensure detection rules are in place to monitor for processes that attempt to tamper with EDR network connections.</p>
-      <p><strong>Hashtags:</strong> #EDR #EndpointSecurity #AV #CyberSecurity #RedTeam #BlueTeam #InfoSec #Ransomware</p>
+      This is a critical inflection point. Your security strategy must now assume that attackers are using AI to automate their attacks. This necessitates a shift to AI-driven *defenses* (like SOAR and behavioral analytics) that can detect and respond at machine speed.</p>
+      <p><strong>Hashtags:</strong> #AI #CyberSecurity #APT #NationState #China #Anthropic #Claude #CyberWarfare #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>CISA Releases 18 New ICS Advisories for Siemens, Rockwell &amp; Mitsubishi</title>
-    <link>https://codedefence.in/blog/2025/11/16/cisa-18-new-ics-advisories-siemens-rockwell</link>
-    <pubDate>Sun, 16 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/cisa-18-new-ics-advisories-siemens-rockwell</guid>
-    <category>Supply Chain / OT/ICS Security</category>
+    <title>New IBM AIX Flaws Allow Remote Attackers to Run Arbitrary Commands</title>
+    <link>https://codedefence.in/blog/2025/11/17/ibm-aix-critical-vulnerabilities</link>
+    <pubDate>Mon, 17 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/17/ibm-aix-critical-vulnerabilities</guid>
+    <category>Top Incident/Vulnerability &amp; Enterprise Software</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/icsalert/800/400" alt="A factory control panel screen (HMI) with a critical vulnerability warning, showing industrial pipes in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has published 18 new advisories for Industrial Control Systems (ICS), detailing vulnerabilities in products from major vendors including Siemens, Rockwell Automation, and Mitsubishi Electric. The flaws include issues like improper authentication, command injection, and denial of service.</p>
+      <img src="https://picsum.photos/seed/ibmaix/800/400" alt="A legacy enterprise server with the IBM logo, showing a critical vulnerability warning on its console." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>IBM has released patches for several critical vulnerabilities in its AIX operating system (versions 7.2, 7.3, and VIOS). The flaws, including issues in the `invscout` command and `bos.INed` fileset, could allow a remote attacker to gain root privileges and run arbitrary commands.</p>
       <p><strong>Business Impact</strong><br/>
-      These vulnerabilities pose a direct risk to critical manufacturing, energy, and water sectors. Exploitation could allow an attacker to disrupt physical processes, halt production lines, or cause unsafe operating conditions, leading to significant financial losses and public safety risks.</p>
+      IBM AIX systems are often "legacy" but critical workhorses, running core banking, finance, and logistics applications. A compromise of these systems could be catastrophic, leading to major service outages, financial data theft, and disruption of core business operations.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities were discovered and reported by security researchers, highlighting the ongoing security weaknesses in legacy and modern OT equipment that was not designed to be connected to hostile networks.</p>
+      The vulnerabilities are classic privilege escalation and command injection flaws in system utilities that failed to properly validate user-supplied input, allowing attackers to escalate their privileges from a low-level user to full "root" control.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your Head of Operations and OT security teams to immediately review this list of 18 advisories. They must identify which assets are in use and prioritize a patch management and mitigation plan, starting with the most critical and exposed systems.</p>
-      <p><strong>Hashtags:</strong> #CISA #ICS #OTSecurity #CriticalInfrastructure #Siemens #RockwellAutomation #Vulnerability #InfoSec</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Healthcare Council Previews 2026 AI Cybersecurity Guidance</title>
-    <link>https://codedefence.in/blog/2025/11/16/healthcare-ai-cybersecurity-guidance-2026</link>
-    <pubDate>Sun, 16 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/16/healthcare-ai-cybersecurity-guidance-2026</guid>
-    <category>AI/ML in Cybersecurity &amp; Regulatory Compliance</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/aihealthcare/800/400" alt="A doctor reviewing a patient's X-ray on a tablet, with an AI interface and a secure shield icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Healthcare Sector Coordinating Council (HSCC) is previewing its 2026 AI cybersecurity guidance, which outlines best practices for healthcare organizations. The guidance focuses on securing AI-powered diagnostic tools, protecting patient data used in AI models, and managing AI supply chain risks.</p>
-      <p><strong>Business Impact</strong><br/>
-      This new guidance will establish a much-needed security baseline for the rapid adoption of AI in healthcare. It provides a framework for healthcare providers to innovate responsibly, manage new AI-specific risks, and ensure compliance with regulations like HIPAA in the age of AI.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Healthcare organizations are rapidly adopting AI for everything from radiology to patient management. This has created a new, poorly understood attack surface and significant data privacy risks that existing regulations do not fully address.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      For healthcare leaders: Direct your CISO and Chief Compliance Officer to review this draft guidance immediately. Use it as a benchmark to perform a gap analysis of your current AI security and governance policies to get ahead of future regulatory requirements.</p>
-      <p><strong>Hashtags:</strong> #AI #Healthcare #CyberSecurity #HIPAA #Compliance #AIGovernance #InfoSec #HSCC</p>
+      Direct your enterprise systems and infrastructure teams to review these IBM advisories immediately. These systems are often "out-of-sight, out-of-mind" and missed in standard patch cycles. They must be patched on an urgent basis.</p>
+      <p><strong>Hashtags:</strong> #IBM #AIX #Vulnerability #RCE #LegacySystems #CyberSecurity #PatchNow #InfoSec #EnterpriseIT</p>
     ]]></description>
   </item>
 
