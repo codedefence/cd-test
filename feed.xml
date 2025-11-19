@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 18 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 18 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 19 Nov 2025 20:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 19 Nov 2025 20:30:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Microsoft Mitigates Record-Breaking 15.7 Tbps DDoS Attack</title>
-    <link>https://codedefence.in/blog/2025/11/18/microsoft-mitigates-record-15tbps-ddos-aisuru</link>
-    <pubDate>Tue, 18 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/18/microsoft-mitigates-record-15tbps-ddos-aisuru</guid>
-    <category>Cloud Security &amp; Infrastructure</category>
+    <title>Microsoft Launches "Agent 365" to Combat Rise of "Shadow AI Agents"</title>
+    <link>https://codedefence.in/blog/2025/11/19/microsoft-agent-365-launch-shadow-ai</link>
+    <pubDate>Wed, 19 Nov 2025 20:25:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/microsoft-agent-365-launch-shadow-ai</guid>
+    <category>AI/ML in Cybersecurity &amp; Governance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ddosrecord/800/400" alt="A digital globe overwhelmed by a massive, glowing red wave of network traffic, symbolizing a record DDoS attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Microsoft has disclosed the mitigation of the largest Distributed Denial-of-Service (DDoS) attack in history, peaking at an unprecedented 15.72 Terabits per second (Tbps). The attack targeted a single customer in Australia and was launched by a new, highly aggressive IoT botnet named "AISURU."</p>
+      <img src="https://picsum.photos/seed/microsoftagent365/800/400" alt="A dashboard screen showing multiple AI bots being monitored and quarantined by a central security system." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>At Ignite 2025 today, Microsoft unveiled "Agent 365," a new governance platform designed to manage the explosion of autonomous AI agents in the enterprise. The tool allows IT admins to track, audit, and quarantine unsanctioned "shadow agents" created by employees using third-party frameworks.</p>
       <p><strong>Business Impact</strong><br/>
-      This event redefines the upper limit of volumetric attacks. The sheer scale (nearly 16 Tbps) is capable of overwhelming not just individual corporate networks, but entire regional internet infrastructures. It highlights the immense, growing power of compromised IoT botnets.</p>
+      "Shadow AI Agents" have become a critical risk, with employees deploying unmonitored bots that have access to corporate data and perform automated tasks. This platform provides the visibility needed to prevent data leakage and unauthorized actions by rogue AI agents.</p>
       <p><strong>Why It Happened</strong><br/>
-      The AISURU botnet leverages hundreds of thousands of compromised IoT devices (cameras, routers) to generate massive UDP floods. Attackers are continuously scaling their capabilities as consumer fiber speeds increase and IoT devices become more powerful.</p>
+      The rapid adoption of agentic AI (agents that *do* things, not just chat) has outpaced governance. Employees are connecting unauthorized agents to internal APIs to automate workflows, creating massive blind spots for security teams.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Verify that your organization's DDoS mitigation provider (e.g., Cloudflare, Akamai, Azure) has the capacity to handle terabit-scale attacks. Standard on-premise appliances are no longer sufficient against threats of this magnitude.</p>
-      <p><strong>Hashtags:</strong> #DDoS #Microsoft #CloudSecurity #Botnet #IoT #CyberAttack #Infrastructure #InfoSec</p>
+      Direct your CIO and CISO to evaluate Agent 365 immediately. Establishing a "control plane" for AI agents is now as critical as managing human identity. You must gain visibility into what agents are running in your environment before they cause a breach.</p>
+      <p><strong>Hashtags:</strong> #MicrosoftIgnite #AI #Agent365 #ShadowAI #AIGovernance #CyberSecurity #InfoSec #TechNews</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Command Injection in W3 Total Cache Plugin Exposes 1 Million Sites</title>
-    <link>https://codedefence.in/blog/2025/11/18/w3-total-cache-critical-vulnerability</link>
-    <pubDate>Tue, 18 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/18/w3-total-cache-critical-vulnerability</guid>
-    <category>Top Incident/Vulnerability &amp; Web Security</category>
+    <title>Darktrace Warning: North Korean Hackers Using "ClickFix" to Bypass EDR</title>
+    <link>https://codedefence.in/blog/2025/11/19/darktrace-north-korea-clickfix-tactic</link>
+    <pubDate>Wed, 19 Nov 2025 20:20:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/darktrace-north-korea-clickfix-tactic</guid>
+    <category>Geopolitics &amp; Social Engineering</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/w3cachehack/800/400" alt="The WordPress logo with a fractured shield and a red warning light, indicating a critical plugin flaw." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical command injection vulnerability has been discovered in W3 Total Cache, one of the most popular WordPress performance plugins with over 1 million active installations. The flaw allows unauthenticated attackers to execute arbitrary commands on the underlying server.</p>
+      <img src="https://picsum.photos/seed/clickfixhack/800/400" alt="A fake error popup window asking a user to copy-paste a PowerShell script to 'fix' an issue." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new threat report released today by Darktrace highlights a surge in "ClickFix" social engineering attacks, particularly by North Korean groups (Lazarus). This tactic involves tricking users (often IT staff or devs) into copying and pasting malicious PowerShell scripts to "fix" a fake error on a website or video conference.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a mass-compromise event waiting to happen. Successful exploitation gives attackers full control over the web server, allowing them to steal customer data, host malware, deface the site, or use it as a launchpad for further attacks on the corporate network.</p>
+      This technique is highly effective because it bypasses standard malware detection. The user is manually executing the malicious command, which EDR tools often interpret as legitimate administrative activity. It grants attackers immediate, stealthy access to endpoints.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability lies in the plugin's handling of certain caching parameters, which failed to properly sanitize user input before passing it to system commands. This classic injection flaw was missed during standard code reviews.</p>
+      Attackers are adapting to improved email defenses by moving attacks to the browser and exploiting the "human gap." The technique leverages the clipboard, which is difficult for security tools to inspect in real-time.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your web and marketing teams to update the W3 Total Cache plugin to version 2.8.13 or later *immediately*. If you cannot update right away, disable the plugin. Review web server logs for any suspicious command execution attempts.</p>
-      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #RCE #WebSecurity #Plugin #CyberSecurity #PatchNow #InfoSec</p>
+      Update security awareness training to specifically cover "ClickFix" and "clipboard injection" attacks. Restrict the ability for standard users to execute PowerShell scripts and consider browser extensions that block pasting of code into the terminal.</p>
+      <p><strong>Hashtags:</strong> #SocialEngineering #ClickFix #Lazarus #NorthKorea #APT #CyberSecurity #InfoSec #PowerShell</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Everest Ransomware Gang Claims Breach of Under Armour, Steals 343GB Data</title>
-    <link>https://codedefence.in/blog/2025/11/18/under-armour-everest-ransomware-breach</link>
-    <pubDate>Tue, 18 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/18/under-armour-everest-ransomware-breach</guid>
-    <category>Ransomware &amp; Data Breach</category>
+    <title>Warlock Ransomware Exploits Security Tool "Velociraptor" (CVE-2025-6264)</title>
+    <link>https://codedefence.in/blog/2025/11/19/warlock-ransomware-velociraptor-exploit</link>
+    <pubDate>Wed, 19 Nov 2025 20:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/warlock-ransomware-velociraptor-exploit</guid>
+    <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/underarmourbreach/800/400" alt="A sportswear retail store with digital data streams leaking out into a dark web portal." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Everest ransomware group has claimed responsibility for a major breach of global sportswear giant Under Armour. The group alleges it exfiltrated 343 GB of sensitive internal data, including employee PII, customer information, and product designs, and is threatening to leak it.</p>
+      <img src="https://picsum.photos/seed/velociraptorhacked/800/400" alt="A digital dinosaur icon (Velociraptor logo) appearing corrupted and malicious on a security dashboard." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The "Warlock" ransomware group has been observed exploiting a vulnerability (CVE-2025-6264) in Velociraptor, a popular digital forensics and incident response (DFIR) tool. The flaw involves incorrect default permissions, allowing attackers to leverage the tool itself to deploy ransomware across the network.</p>
       <p><strong>Business Impact</strong><br/>
-      This breach poses significant reputational and financial risks. The theft of product designs could impact competitive advantage, while the loss of employee and customer PII will likely trigger regulatory investigations (GDPR, CCPA) and class-action lawsuits.</p>
+      This is a cruel irony: attackers are weaponizing the very tool used to hunt them. Velociraptor has high-level privileges on all endpoints for monitoring purposes. Compromising it gives attackers a "god mode" channel to distribute malware instantly to every managed device.</p>
       <p><strong>Why It Happened</strong><br/>
-      Everest is known for exploiting compromised remote access credentials and unpatched vulnerabilities to gain initial entry. They focus on data exfiltration for extortion, often skipping encryption if they believe the data alone is valuable enough leverage.</p>
+      A misconfiguration in the default deployment of the Velociraptor server allowed unauthorized API access. Warlock operators identified internet-facing instances and used them as a command-and-control (C2) mechanism.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This reinforces the need for defense-in-depth. Review your organization's data loss prevention (DLP) capabilities. Ensure you can detect large, anomalous outbound data transfers, which are the hallmark of this type of extortion attack.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Ransomware #UnderArmour #Everest #CyberAttack #Retail #Privacy #InfoSec</p>
+      If your security team uses Velociraptor, mandate an immediate audit of its configuration. Ensure it is updated, not exposed to the public internet, and that API access requires strong authentication. Treat security infrastructure as your highest-value target.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Warlock #Velociraptor #DFIR #Vulnerability #SupplyChain #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Palo Alto Networks Predicts "Autonomous AI Defense" as the Standard by 2026</title>
-    <link>https://codedefence.in/blog/2025/11/18/palo-alto-networks-ai-defense-2026-prediction</link>
-    <pubDate>Tue, 18 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/18/palo-alto-networks-ai-defense-2026-prediction</guid>
-    <category>AI/ML in Cybersecurity &amp; Industry Trends</category>
+    <title>Qilin Ransomware Becomes Top Threat, Recruiting from Defunct Groups</title>
+    <link>https://codedefence.in/blog/2025/11/19/qilin-ransomware-top-threat-q3-2025</link>
+    <pubDate>Wed, 19 Nov 2025 20:10:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/qilin-ransomware-top-threat-q3-2025</guid>
+    <category>Ransomware &amp; Industry Trends</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aidefense/800/400" alt="A futuristic security operations center run by AI holograms, defending against incoming cyber threats." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>In its new "2026 Predictions" report, Palo Alto Networks forecasts that the industry is entering the "Year of the Defender." The report argues that autonomous AI agents will become the primary method for detecting and blocking attacks, shifting the advantage back to defenders by operating at machine speed.</p>
+      <img src="https://picsum.photos/seed/qilinransomware/800/400" alt="A graph showing the sharp rise of the Qilin ransomware group, overtaking others." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>New data from Check Point Research and Cyble confirms that "Qilin" has emerged as the most active ransomware group in Q3 2025, averaging 75 victims per month. The group has aggressively recruited affiliates from defunct gangs like RansomHub and is heavily targeting the financial sector.</p>
       <p><strong>Business Impact</strong><br/>
-      This signals a strategic shift in security investment. The manual SOC model is becoming obsolete. Organizations that fail to adopt autonomous AI defenses will be unable to keep pace with AI-driven attacks, leading to longer dwell times and higher breach costs.</p>
+      The ransomware landscape is consolidating around Qilin, making them a "super-predator." Their highly sophisticated Rust-based ransomware and aggressive double-extortion tactics (specifically targeting high-value financial data) pose the single largest criminal threat to enterprises right now.</p>
       <p><strong>Why It Happened</strong><br/>
-      The volume and speed of modern attacks, now often AI-assisted themselves, have surpassed human capacity to triage. Autonomous agents can process vast datasets and execute containment actions in milliseconds, closing the window of opportunity for attackers.</p>
+      Following law enforcement actions against LockBit and the exit of RansomHub, Qilin capitalized on the power vacuum. They offer better profit shares and more stable infrastructure to criminal affiliates, allowing them to scale operations rapidly.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Start planning your transition to an AI-driven SOC. Evaluate current security tools for their autonomous capabilities. The goal should be to automate Tier 1 and Tier 2 analyst tasks entirely by 2026 to focus human talent on strategic threat hunting.</p>
-      <p><strong>Hashtags:</strong> #AI #CyberSecurity #Automation #SOC #FutureTech #PaloAltoNetworks #CISO #Strategy</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Global Cloudflare Outage Disrupts Services for Millions</title>
-    <link>https://codedefence.in/blog/2025/11/18/cloudflare-global-outage-disrupts-services</link>
-    <pubDate>Tue, 18 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/18/cloudflare-global-outage-disrupts-services</guid>
-    <category>Industry Impact &amp; Cloud Security</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/cloudflareoutage/800/400" alt="A computer screen displaying multiple '500 Internal Server Error' messages on popular websites." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A significant outage in Cloudflare's global network today caused widespread disruption, knocking major platforms like X (formerly Twitter), ChatGPT, and Discord offline for users worldwide. Cloudflare cited a "latent bug" triggered by a routine configuration change, not a cyberattack.</p>
-      <p><strong>Business Impact</strong><br/>
-      This highlights the fragility of the centralized internet. Reliance on a single CDN/security provider creates a single point of failure. For businesses, this meant downtime, lost revenue, and inability to access critical SaaS tools, even though their own systems were healthy.</p>
-      <p><strong>Why It Happened</strong><br/>
-      A software bug in a core service underpinning Cloudflare's bot mitigation capabilities was triggered by an internal update, causing a cascading failure across their network infrastructure.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review your business continuity plans for a major CDN or cloud provider outage. While difficult to fully mitigate, consider multi-CDN strategies for critical customer-facing applications to ensure resilience against single-vendor failures.</p>
-      <p><strong>Hashtags:</strong> #Cloudflare #Outage #InternetDown #BusinessContinuity #CloudRisk #Infrastructure #TechNews</p>
+      Update your threat models to focus on Qilin's TTPs (Tactics, Techniques, and Procedures). They are known for targeting Linux/ESXi environments and stealing data before encryption. Ensure your backup strategy explicitly covers these virtualized environments.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Qilin #CyberCrime #ThreatIntel #Finance #CyberRisk #InfoSec #CheckPoint</p>
     ]]></description>
   </item>
 
