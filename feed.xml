@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 19 Nov 2025 20:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 19 Nov 2025 20:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 20 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 20 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Microsoft Launches "Agent 365" to Combat Rise of "Shadow AI Agents"</title>
-    <link>https://codedefence.in/blog/2025/11/19/microsoft-agent-365-launch-shadow-ai</link>
-    <pubDate>Wed, 19 Nov 2025 20:25:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/microsoft-agent-365-launch-shadow-ai</guid>
-    <category>AI/ML in Cybersecurity &amp; Governance</category>
+    <title>Critical FortiWeb Zero-Day (CVE-2025-58034) Actively Exploited</title>
+    <link>https://codedefence.in/blog/2025/11/20/fortiweb-zero-day-cve-2025-58034-exploited</link>
+    <pubDate>Thu, 20 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/fortiweb-zero-day-cve-2025-58034-exploited</guid>
+    <category>Top Incident/Vulnerability &amp; Network Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/microsoftagent365/800/400" alt="A dashboard screen showing multiple AI bots being monitored and quarantined by a central security system." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>At Ignite 2025 today, Microsoft unveiled "Agent 365," a new governance platform designed to manage the explosion of autonomous AI agents in the enterprise. The tool allows IT admins to track, audit, and quarantine unsanctioned "shadow agents" created by employees using third-party frameworks.</p>
+      <img src="https://picsum.photos/seed/fortiwebexploit/800/400" alt="A network firewall appliance with a critical red alert warning, symbolizing an active zero-day exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA and FortiGuard Labs have issued urgent alerts regarding a new command injection vulnerability (CVE-2025-58034) in Fortinet's FortiWeb Web Application Firewall. The flaw is being actively exploited in the wild, allowing authenticated attackers to execute arbitrary commands via the CLI or HTTP requests.</p>
       <p><strong>Business Impact</strong><br/>
-      "Shadow AI Agents" have become a critical risk, with employees deploying unmonitored bots that have access to corporate data and perform automated tasks. This platform provides the visibility needed to prevent data leakage and unauthorized actions by rogue AI agents.</p>
+      This is a critical risk to perimeter security. Compromising the WAF allows attackers to intercept sensitive traffic, manipulate web applications, and potentially pivot into the internal network. Since it is actively exploited, unpatched devices are likely already being targeted.</p>
       <p><strong>Why It Happened</strong><br/>
-      The rapid adoption of agentic AI (agents that *do* things, not just chat) has outpaced governance. Employees are connecting unauthorized agents to internal APIs to automate workflows, creating massive blind spots for security teams.</p>
+      The vulnerability stems from improper input sanitization in the management interface, allowing attackers to inject malicious commands that the system executes with high privileges.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your CIO and CISO to evaluate Agent 365 immediately. Establishing a "control plane" for AI agents is now as critical as managing human identity. You must gain visibility into what agents are running in your environment before they cause a breach.</p>
-      <p><strong>Hashtags:</strong> #MicrosoftIgnite #AI #Agent365 #ShadowAI #AIGovernance #CyberSecurity #InfoSec #TechNews</p>
+      Direct network security teams to apply the Fortinet patches immediately. Ensure management interfaces are not exposed to the public internet. Review logs for any suspicious administrative activity or unexpected command execution.</p>
+      <p><strong>Hashtags:</strong> #Fortinet #FortiWeb #ZeroDay #Vulnerability #RCE #CISA #CyberSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Darktrace Warning: North Korean Hackers Using "ClickFix" to Bypass EDR</title>
-    <link>https://codedefence.in/blog/2025/11/19/darktrace-north-korea-clickfix-tactic</link>
-    <pubDate>Wed, 19 Nov 2025 20:20:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/darktrace-north-korea-clickfix-tactic</guid>
-    <category>Geopolitics &amp; Social Engineering</category>
+    <title>Dubai's NAFFCO Hit by Ransomware; 1TB of Data Stolen</title>
+    <link>https://codedefence.in/blog/2025/11/20/naffco-ransomware-attack-data-leak</link>
+    <pubDate>Thu, 20 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/naffco-ransomware-attack-data-leak</guid>
+    <category>Ransomware &amp; Critical Infrastructure</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/clickfixhack/800/400" alt="A fake error popup window asking a user to copy-paste a PowerShell script to 'fix' an issue." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new threat report released today by Darktrace highlights a surge in "ClickFix" social engineering attacks, particularly by North Korean groups (Lazarus). This tactic involves tricking users (often IT staff or devs) into copying and pasting malicious PowerShell scripts to "fix" a fake error on a website or video conference.</p>
+      <img src="https://picsum.photos/seed/naffcobreach/800/400" alt="A fire safety system control panel glitching with a digital ransomware lock overlaid on the screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The INC Ransomware gang has claimed responsibility for an attack on NAFFCO, one of the world's leading producers of fire safety equipment (protecting landmarks like the Burj Khalifa). The group claims to have exfiltrated 1TB of sensitive internal data and has listed the company on its leak site.</p>
       <p><strong>Business Impact</strong><br/>
-      This technique is highly effective because it bypasses standard malware detection. The user is manually executing the malicious command, which EDR tools often interpret as legitimate administrative activity. It grants attackers immediate, stealthy access to endpoints.</p>
+      This breach poses significant risks to critical infrastructure safety and supply chains in the Middle East. The stolen data could include detailed building safety plans, client lists, and proprietary engineering designs, potentially exposing high-profile clients to physical and cyber risks.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are adapting to improved email defenses by moving attacks to the browser and exploiting the "human gap." The technique leverages the clipboard, which is difficult for security tools to inspect in real-time.</p>
+      INC Ransomware typically targets organizations with high-value data for double extortion. They likely gained access via compromised credentials or unpatched external-facing services, focusing on data theft to force a payout.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update security awareness training to specifically cover "ClickFix" and "clipboard injection" attacks. Restrict the ability for standard users to execute PowerShell scripts and consider browser extensions that block pasting of code into the terminal.</p>
-      <p><strong>Hashtags:</strong> #SocialEngineering #ClickFix #Lazarus #NorthKorea #APT #CyberSecurity #InfoSec #PowerShell</p>
+      Organizations in the region relying on NAFFCO for safety systems should monitor for potential vendor-related phishing or supply chain risks. Review physical security system integrations to ensure they are segmented from corporate IT networks.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #NAFFCO #Dubai #CyberAttack #CriticalInfrastructure #DataBreach #INCRansomware #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Warlock Ransomware Exploits Security Tool "Velociraptor" (CVE-2025-6264)</title>
-    <link>https://codedefence.in/blog/2025/11/19/warlock-ransomware-velociraptor-exploit</link>
-    <pubDate>Wed, 19 Nov 2025 20:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/warlock-ransomware-velociraptor-exploit</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>New "Sturnus" Android Trojan Enables Full Device Takeover</title>
+    <link>https://codedefence.in/blog/2025/11/20/sturnus-android-trojan-banking-fraud</link>
+    <pubDate>Thu, 20 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/sturnus-android-trojan-banking-fraud</guid>
+    <category>Mobile Security &amp; Financial Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/velociraptorhacked/800/400" alt="A digital dinosaur icon (Velociraptor logo) appearing corrupted and malicious on a security dashboard." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The "Warlock" ransomware group has been observed exploiting a vulnerability (CVE-2025-6264) in Velociraptor, a popular digital forensics and incident response (DFIR) tool. The flaw involves incorrect default permissions, allowing attackers to leverage the tool itself to deploy ransomware across the network.</p>
+      <img src="https://picsum.photos/seed/androidmalware/800/400" alt="An Android smartphone displaying a banking app login screen that is being overlaid by malicious code." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have identified "Sturnus," a new, sophisticated Android banking trojan. This malware is capable of stealing credentials, bypassing encrypted messaging apps to capture communications, and granting attackers full remote control over the infected device to conduct financial fraud.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a cruel irony: attackers are weaponizing the very tool used to hunt them. Velociraptor has high-level privileges on all endpoints for monitoring purposes. Compromising it gives attackers a "god mode" channel to distribute malware instantly to every managed device.</p>
+      Sturnus represents a severe threat to mobile banking and corporate BYOD environments. Its ability to bypass encryption and control devices remotely makes it highly effective at stealing MFA codes and authorizing fraudulent transactions without the user's knowledge.</p>
       <p><strong>Why It Happened</strong><br/>
-      A misconfiguration in the default deployment of the Velociraptor server allowed unauthorized API access. Warlock operators identified internet-facing instances and used them as a command-and-control (C2) mechanism.</p>
+      The malware abuses Android's Accessibility Services to read screen content and perform clicks on behalf of the attacker. It is likely distributed via malicious apps sideloaded or disguised as legitimate utilities.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      If your security team uses Velociraptor, mandate an immediate audit of its configuration. Ensure it is updated, not exposed to the public internet, and that API access requires strong authentication. Treat security infrastructure as your highest-value target.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Warlock #Velociraptor #DFIR #Vulnerability #SupplyChain #CyberSecurity #InfoSec</p>
+      Reinforce mobile security policies. Prohibit the installation of apps from unknown sources (sideloading) on corporate devices. Deploy Mobile Threat Defense (MTD) solutions capable of detecting abuse of Accessibility Services.</p>
+      <p><strong>Hashtags:</strong> #Android #Malware #Sturnus #BankingTrojan #MobileSecurity #Fraud #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Qilin Ransomware Becomes Top Threat, Recruiting from Defunct Groups</title>
-    <link>https://codedefence.in/blog/2025/11/19/qilin-ransomware-top-threat-q3-2025</link>
-    <pubDate>Wed, 19 Nov 2025 20:10:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/19/qilin-ransomware-top-threat-q3-2025</guid>
-    <category>Ransomware &amp; Industry Trends</category>
+    <title>Ransomware Shift: Attacks on Healthcare Now Prioritize Data Extortion Over Encryption</title>
+    <link>https://codedefence.in/blog/2025/11/20/healthcare-ransomware-shift-data-extortion</link>
+    <pubDate>Thu, 20 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/healthcare-ransomware-shift-data-extortion</guid>
+    <category>Ransomware &amp; Healthcare</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/qilinransomware/800/400" alt="A graph showing the sharp rise of the Qilin ransomware group, overtaking others." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>New data from Check Point Research and Cyble confirms that "Qilin" has emerged as the most active ransomware group in Q3 2025, averaging 75 victims per month. The group has aggressively recruited affiliates from defunct gangs like RansomHub and is heavily targeting the financial sector.</p>
+      <img src="https://picsum.photos/seed/healthcareransom/800/400" alt="A digital medical record on a tablet with a 'Data Stolen' warning, symbolizing the shift to extortion." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new report from Sophos reveals a strategic shift in attacks against healthcare: extortion without encryption has tripled since 2023. Attackers are increasingly stealing sensitive patient data to demand ransoms, rather than encrypting systems which triggers immediate alarms and recovery protocols.</p>
       <p><strong>Business Impact</strong><br/>
-      The ransomware landscape is consolidating around Qilin, making them a "super-predator." Their highly sophisticated Rust-based ransomware and aggressive double-extortion tactics (specifically targeting high-value financial data) pose the single largest criminal threat to enterprises right now.</p>
+      This tactic allows attackers to stay undetected longer (higher dwell time) and avoids the complexity of decrypting systems. For healthcare providers, the regulatory fines (HIPAA/GDPR) and reputational damage from a massive data leak can be as costly as operational downtime.</p>
       <p><strong>Why It Happened</strong><br/>
-      Following law enforcement actions against LockBit and the exit of RansomHub, Qilin capitalized on the power vacuum. They offer better profit shares and more stable infrastructure to criminal affiliates, allowing them to scale operations rapidly.</p>
+      Improved backup strategies in healthcare have made encryption less effective as a bargaining chip. Attackers have pivoted to weaponizing the privacy of patient data, knowing that the threat of a leak is a powerful extortion tool.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update your threat models to focus on Qilin's TTPs (Tactics, Techniques, and Procedures). They are known for targeting Linux/ESXi environments and stealing data before encryption. Ensure your backup strategy explicitly covers these virtualized environments.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Qilin #CyberCrime #ThreatIntel #Finance #CyberRisk #InfoSec #CheckPoint</p>
+      Shift focus from purely "anti-ransomware" (anti-encryption) tools to Data Loss Prevention (DLP) and outlier detection. Monitor for large, unauthorized data exfiltration events. Ensure patient data is encrypted at rest to mitigate the impact of theft.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Healthcare #DataExtortion #Sophos #CyberSecurity #HIPAA #PatientPrivacy #InfoSec</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>ENISA Designated as CVE Root Authority for Europe</title>
+    <link>https://codedefence.in/blog/2025/11/20/enisa-becomes-cve-root-authority</link>
+    <pubDate>Thu, 20 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/enisa-becomes-cve-root-authority</guid>
+    <category>Regulatory Compliance &amp; Industry Impact</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/enisacve/800/400" alt="The ENISA logo displayed on a European Union flag background, symbolizing cybersecurity leadership." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The European Union Agency for Cybersecurity (ENISA) has been officially designated as a CVE Root Numbering Authority (CNA). This grants ENISA the authority to assign CVE IDs and manage vulnerability disclosures for the EU region, strengthening Europe's role in global vulnerability management.</p>
+      <p><strong>Business Impact</strong><br/>
+      This decentralizes the vulnerability reporting process, previously dominated by US-based MITRE. It promises faster, more coordinated disclosure handling for European technology vendors and ensures that EU-specific threats and products are prioritized in the global vulnerability ecosystem.</p>
+      <p><strong>Why It Happened</strong><br/>
+      This is part of the EU's broader strategy to achieve digital sovereignty and strengthen its cybersecurity resilience under frameworks like the Cyber Resilience Act (CRA). It ensures Europe has direct control over critical vulnerability intelligence.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      For EU-based organizations and vendors: Update your vulnerability disclosure policies to align with ENISA's new role. Expect stricter and more streamlined reporting requirements for vulnerabilities discovered in EU products.</p>
+      <p><strong>Hashtags:</strong> #ENISA #CVE #VulnerabilityManagement #EU #CyberSecurity #Regulation #DigitalSovereignty #InfoSec</p>
     ]]></description>
   </item>
 
