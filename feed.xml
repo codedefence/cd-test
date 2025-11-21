@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Thu, 20 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Thu, 20 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Fri, 21 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Fri, 21 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical FortiWeb Zero-Day (CVE-2025-58034) Actively Exploited</title>
-    <link>https://codedefence.in/blog/2025/11/20/fortiweb-zero-day-cve-2025-58034-exploited</link>
-    <pubDate>Thu, 20 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/fortiweb-zero-day-cve-2025-58034-exploited</guid>
-    <category>Top Incident/Vulnerability &amp; Network Security</category>
+    <title>Critical Azure Bastion Flaw (CVE-2025-49752) Allows Admin Takeover</title>
+    <link>https://codedefence.in/blog/2025/11/21/azure-bastion-auth-bypass-cve-2025-49752</link>
+    <pubDate>Fri, 21 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/azure-bastion-auth-bypass-cve-2025-49752</guid>
+    <category>Top Incident/Vulnerability &amp; Cloud Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/fortiwebexploit/800/400" alt="A network firewall appliance with a critical red alert warning, symbolizing an active zero-day exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA and FortiGuard Labs have issued urgent alerts regarding a new command injection vulnerability (CVE-2025-58034) in Fortinet's FortiWeb Web Application Firewall. The flaw is being actively exploited in the wild, allowing authenticated attackers to execute arbitrary commands via the CLI or HTTP requests.</p>
+      <img src="https://picsum.photos/seed/azurebastion/800/400" alt="A cloud server infrastructure with a red warning light, symbolizing a critical Azure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical authentication bypass vulnerability (CVE-2025-49752, CVSS 10.0) has been disclosed in Microsoft Azure Bastion. The flaw allows unauthenticated attackers to intercept and replay valid tokens, gaining unauthorized administrative access to all virtual machines (VMs) connected through the Bastion host without user interaction.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a critical risk to perimeter security. Compromising the WAF allows attackers to intercept sensitive traffic, manipulate web applications, and potentially pivot into the internal network. Since it is actively exploited, unpatched devices are likely already being targeted.</p>
+      This is a catastrophic cloud infrastructure risk. Azure Bastion is designed to be the secure gateway for RDP/SSH access. Compromising it gives attackers a "skeleton key" to the entire cloud backend, allowing them to control VMs, steal data, and deploy ransomware across the environment.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability stems from improper input sanitization in the management interface, allowing attackers to inject malicious commands that the system executes with high privileges.</p>
+      The vulnerability is a "Capture-replay" flaw in the authentication mechanism. It allows attackers to reuse intercepted session tokens to bypass security checks. This is the third critical privilege escalation flaw in Azure services discovered in 2025.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct network security teams to apply the Fortinet patches immediately. Ensure management interfaces are not exposed to the public internet. Review logs for any suspicious administrative activity or unexpected command execution.</p>
-      <p><strong>Hashtags:</strong> #Fortinet #FortiWeb #ZeroDay #Vulnerability #RCE #CISA #CyberSecurity #PatchNow #InfoSec</p>
+      Treat this as an immediate emergency. Direct cloud security teams to verify that Microsoft's automatic updates have been applied to all Azure Bastion instances. Rotate all SSH keys and RDP credentials for VMs accessed via Bastion as a precaution.</p>
+      <p><strong>Hashtags:</strong> #Azure #CloudSecurity #Vulnerability #Microsoft #Bastion #CVE #PatchNow #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Dubai's NAFFCO Hit by Ransomware; 1TB of Data Stolen</title>
-    <link>https://codedefence.in/blog/2025/11/20/naffco-ransomware-attack-data-leak</link>
-    <pubDate>Thu, 20 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/naffco-ransomware-attack-data-leak</guid>
-    <category>Ransomware &amp; Critical Infrastructure</category>
+    <title>Massive 2.3 TB Data Leak Hits Italian Railway After Supply Chain Hack</title>
+    <link>https://codedefence.in/blog/2025/11/21/italian-railway-data-leak-almaviva-hack</link>
+    <pubDate>Fri, 21 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/italian-railway-data-leak-almaviva-hack</guid>
+    <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/naffcobreach/800/400" alt="A fire safety system control panel glitching with a digital ransomware lock overlaid on the screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The INC Ransomware gang has claimed responsibility for an attack on NAFFCO, one of the world's leading producers of fire safety equipment (protecting landmarks like the Burj Khalifa). The group claims to have exfiltrated 1TB of sensitive internal data and has listed the company on its leak site.</p>
+      <img src="https://picsum.photos/seed/railwayhack/800/400" alt="A high-speed train with digital data streams leaking from the tracks, representing a massive data breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Italy's national railway operator, Ferrovie dello Stato (FS), has suffered a massive data breach involving 2.3 TB of sensitive information. The data was stolen not from FS directly, but via a breach of its IT service provider, Almaviva. Threat actors are now threatening to release the data publicly.</p>
       <p><strong>Business Impact</strong><br/>
-      This breach poses significant risks to critical infrastructure safety and supply chains in the Middle East. The stolen data could include detailed building safety plans, client lists, and proprietary engineering designs, potentially exposing high-profile clients to physical and cyber risks.</p>
+      This breach exposes critical infrastructure details, employee data, and potentially passenger information. It highlights the critical risk of third-party vendors. A compromise at a key IT provider can have cascading effects, leading to operational disruption and massive reputational damage for the client organization.</p>
       <p><strong>Why It Happened</strong><br/>
-      INC Ransomware typically targets organizations with high-value data for double extortion. They likely gained access via compromised credentials or unpatched external-facing services, focusing on data theft to force a payout.</p>
+      This was a classic supply chain attack. Attackers targeted the Managed Service Provider (MSP), Almaviva, likely exploiting weaker defenses there to gain aggregated access to its high-value clients, including the national railway.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Organizations in the region relying on NAFFCO for safety systems should monitor for potential vendor-related phishing or supply chain risks. Review physical security system integrations to ensure they are segmented from corporate IT networks.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #NAFFCO #Dubai #CyberAttack #CriticalInfrastructure #DataBreach #INCRansomware #InfoSec</p>
+      Review your Third-Party Risk Management (TPRM) strategy. Ensure you have visibility into the security posture of your critical IT providers (MSPs). Mandate strict data segregation and access controls to limit the blast radius if a vendor is compromised.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #SupplyChain #Railways #Italy #CyberAttack #Almaviva #ThirdPartyRisk #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "Sturnus" Android Trojan Enables Full Device Takeover</title>
-    <link>https://codedefence.in/blog/2025/11/20/sturnus-android-trojan-banking-fraud</link>
-    <pubDate>Thu, 20 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/sturnus-android-trojan-banking-fraud</guid>
-    <category>Mobile Security &amp; Financial Fraud</category>
+    <title>Report: Deepfakes Now Drive 20% of All Biometric Fraud Attempts</title>
+    <link>https://codedefence.in/blog/2025/11/21/deepfakes-drive-20-percent-biometric-fraud</link>
+    <pubDate>Fri, 21 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/deepfakes-drive-20-percent-biometric-fraud</guid>
+    <category>AI/ML in Cybersecurity &amp; Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/androidmalware/800/400" alt="An Android smartphone displaying a banking app login screen that is being overlaid by malicious code." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have identified "Sturnus," a new, sophisticated Android banking trojan. This malware is capable of stealing credentials, bypassing encrypted messaging apps to capture communications, and granting attackers full remote control over the infected device to conduct financial fraud.</p>
+      <img src="https://picsum.photos/seed/deepfakefraud/800/400" alt="A facial recognition scan failing due to a digital mask, symbolizing deepfake biometric fraud." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new 2026 Identity Fraud Report by Entrust reveals that AI-driven deepfakes are now responsible for one in five (20%) biometric fraud attempts globally. The report also notes a spike in coordinated cybercrime attacks occurring specifically between 2:00 AM and 4:00 AM UTC to exploit timezone gaps in defense.</p>
       <p><strong>Business Impact</strong><br/>
-      Sturnus represents a severe threat to mobile banking and corporate BYOD environments. Its ability to bypass encryption and control devices remotely makes it highly effective at stealing MFA codes and authorizing fraudulent transactions without the user's knowledge.</p>
+      Trust in standard biometric verification (like selfie checks for onboarding) is eroding. Financial institutions and enterprises relying solely on facial recognition for identity verification face a surging risk of account takeovers and synthetic identity fraud driven by cheap, accessible AI tools.</p>
       <p><strong>Why It Happened</strong><br/>
-      The malware abuses Android's Accessibility Services to read screen content and perform clicks on behalf of the attacker. It is likely distributed via malicious apps sideloaded or disguised as legitimate utilities.</p>
+      Generative AI has lowered the barrier to entry for creating realistic "injection attacks," where attackers feed a deepfake video stream directly into an authentication system, bypassing the physical camera to fool liveness checks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Reinforce mobile security policies. Prohibit the installation of apps from unknown sources (sideloading) on corporate devices. Deploy Mobile Threat Defense (MTD) solutions capable of detecting abuse of Accessibility Services.</p>
-      <p><strong>Hashtags:</strong> #Android #Malware #Sturnus #BankingTrojan #MobileSecurity #Fraud #CyberSecurity #InfoSec</p>
+      Upgrade identity verification systems to include "active liveness" detection (asking the user to perform random actions) and consider multimodal biometrics (voice + face). Ensure security teams have 24/7 coverage or automated response capabilities to handle off-hour attack spikes.</p>
+      <p><strong>Hashtags:</strong> #AI #Deepfake #Biometrics #Fraud #IdentityTheft #CyberSecurity #Fintech #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Ransomware Shift: Attacks on Healthcare Now Prioritize Data Extortion Over Encryption</title>
-    <link>https://codedefence.in/blog/2025/11/20/healthcare-ransomware-shift-data-extortion</link>
-    <pubDate>Thu, 20 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/healthcare-ransomware-shift-data-extortion</guid>
-    <category>Ransomware &amp; Healthcare</category>
+    <title>Active Exploitation of Microsoft Office Zero-Day RCE</title>
+    <link>https://codedefence.in/blog/2025/11/21/microsoft-office-zero-day-rce-exploited</link>
+    <pubDate>Fri, 21 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/microsoft-office-zero-day-rce-exploited</guid>
+    <category>Top Incident/Vulnerability</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/healthcareransom/800/400" alt="A digital medical record on a tablet with a 'Data Stolen' warning, symbolizing the shift to extortion." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new report from Sophos reveals a strategic shift in attacks against healthcare: extortion without encryption has tripled since 2023. Attackers are increasingly stealing sensitive patient data to demand ransoms, rather than encrypting systems which triggers immediate alarms and recovery protocols.</p>
+      <img src="https://picsum.photos/seed/officeexploit/800/400" alt="A Microsoft Word document icon opening to reveal malicious code execution." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Security researchers have identified a critical Remote Code Execution (RCE) zero-day vulnerability in Microsoft Office that is being actively exploited in the wild. The flaw allows attackers to execute malicious payloads simply by tricking a user into opening a specially crafted document.</p>
       <p><strong>Business Impact</strong><br/>
-      This tactic allows attackers to stay undetected longer (higher dwell time) and avoids the complexity of decrypting systems. For healthcare providers, the regulatory fines (HIPAA/GDPR) and reputational damage from a massive data leak can be as costly as operational downtime.</p>
+      This is a high-risk vulnerability for every organization using Office. It bypasses standard email hygiene if a user opens an attachment. Successful exploitation grants the attacker the same rights as the current user, often leading to initial access for ransomware or data theft.</p>
       <p><strong>Why It Happened</strong><br/>
-      Improved backup strategies in healthcare have made encryption less effective as a bargaining chip. Attackers have pivoted to weaponizing the privacy of patient data, knowing that the threat of a leak is a powerful extortion tool.</p>
+      The vulnerability exists in how Office handles certain file formats or embedded objects. Attackers are using this to weaponize documents, likely delivered via phishing campaigns targeting corporate employees.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Shift focus from purely "anti-ransomware" (anti-encryption) tools to Data Loss Prevention (DLP) and outlier detection. Monitor for large, unauthorized data exfiltration events. Ensure patient data is encrypted at rest to mitigate the impact of theft.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Healthcare #DataExtortion #Sophos #CyberSecurity #HIPAA #PatientPrivacy #InfoSec</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>ENISA Designated as CVE Root Authority for Europe</title>
-    <link>https://codedefence.in/blog/2025/11/20/enisa-becomes-cve-root-authority</link>
-    <pubDate>Thu, 20 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/20/enisa-becomes-cve-root-authority</guid>
-    <category>Regulatory Compliance &amp; Industry Impact</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/enisacve/800/400" alt="The ENISA logo displayed on a European Union flag background, symbolizing cybersecurity leadership." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The European Union Agency for Cybersecurity (ENISA) has been officially designated as a CVE Root Numbering Authority (CNA). This grants ENISA the authority to assign CVE IDs and manage vulnerability disclosures for the EU region, strengthening Europe's role in global vulnerability management.</p>
-      <p><strong>Business Impact</strong><br/>
-      This decentralizes the vulnerability reporting process, previously dominated by US-based MITRE. It promises faster, more coordinated disclosure handling for European technology vendors and ensures that EU-specific threats and products are prioritized in the global vulnerability ecosystem.</p>
-      <p><strong>Why It Happened</strong><br/>
-      This is part of the EU's broader strategy to achieve digital sovereignty and strengthen its cybersecurity resilience under frameworks like the Cyber Resilience Act (CRA). It ensures Europe has direct control over critical vulnerability intelligence.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      For EU-based organizations and vendors: Update your vulnerability disclosure policies to align with ENISA's new role. Expect stricter and more streamlined reporting requirements for vulnerabilities discovered in EU products.</p>
-      <p><strong>Hashtags:</strong> #ENISA #CVE #VulnerabilityManagement #EU #CyberSecurity #Regulation #DigitalSovereignty #InfoSec</p>
+      Direct IT to verify that the latest Microsoft Office updates (from this week's Patch Tuesday) are successfully deployed to 100% of endpoints. Reinforce user training on not opening unexpected attachments, even from known contacts, until patching is confirmed.</p>
+      <p><strong>Hashtags:</strong> #Microsoft #Office #ZeroDay #RCE #Vulnerability #Phishing #CyberSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
