@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Fri, 21 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Fri, 21 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sat, 22 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sat, 22 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical Azure Bastion Flaw (CVE-2025-49752) Allows Admin Takeover</title>
-    <link>https://codedefence.in/blog/2025/11/21/azure-bastion-auth-bypass-cve-2025-49752</link>
-    <pubDate>Fri, 21 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/azure-bastion-auth-bypass-cve-2025-49752</guid>
-    <category>Top Incident/Vulnerability &amp; Cloud Security</category>
+    <title>CISA Adds Critical Oracle Identity Manager Flaw (CVE-2025-61757) to KEV</title>
+    <link>https://codedefence.in/blog/2025/11/22/cisa-oracle-identity-manager-cve-2025-61757</link>
+    <pubDate>Sat, 22 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/cisa-oracle-identity-manager-cve-2025-61757</guid>
+    <category>Top Incident/Vulnerability &amp; IAM</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/azurebastion/800/400" alt="A cloud server infrastructure with a red warning light, symbolizing a critical Azure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical authentication bypass vulnerability (CVE-2025-49752, CVSS 10.0) has been disclosed in Microsoft Azure Bastion. The flaw allows unauthenticated attackers to intercept and replay valid tokens, gaining unauthorized administrative access to all virtual machines (VMs) connected through the Bastion host without user interaction.</p>
+      <img src="https://picsum.photos/seed/oracleidentity/800/400" alt="A digital identity management dashboard with a critical red alert warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a critical vulnerability (CVE-2025-61757, CVSS 9.8) in Oracle Identity Manager to its Known Exploited Vulnerabilities (KEV) catalog. The flaw allows unauthenticated remote attackers to bypass authentication and take full control of the identity management system.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic cloud infrastructure risk. Azure Bastion is designed to be the secure gateway for RDP/SSH access. Compromising it gives attackers a "skeleton key" to the entire cloud backend, allowing them to control VMs, steal data, and deploy ransomware across the environment.</p>
+      This is a maximum-severity risk. Oracle Identity Manager often holds the "keys to the kingdom," managing user access across the entire enterprise. Compromise allows attackers to create privileged accounts, reset passwords, and move laterally into any connected system.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability is a "Capture-replay" flaw in the authentication mechanism. It allows attackers to reuse intercepted session tokens to bypass security checks. This is the third critical privilege escalation flaw in Azure services discovered in 2025.</p>
+      The vulnerability involves a missing authentication check for a critical function within the Oracle Fusion Middleware component. Attackers are actively exploiting this to hijack identity infrastructure without needing credentials.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an immediate emergency. Direct cloud security teams to verify that Microsoft's automatic updates have been applied to all Azure Bastion instances. Rotate all SSH keys and RDP credentials for VMs accessed via Bastion as a precaution.</p>
-      <p><strong>Hashtags:</strong> #Azure #CloudSecurity #Vulnerability #Microsoft #Bastion #CVE #PatchNow #InfoSec #CyberSecurity</p>
+      This is an emergency. Direct IT to apply the Oracle patches immediately (deadline for federal agencies is Dec 12). If patching is not instant, restrict network access to the Identity Manager console to a secure, isolated management VLAN.</p>
+      <p><strong>Hashtags:</strong> #Oracle #IdentityManagement #CISA #KEV #Vulnerability #RCE #IAM #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Massive 2.3 TB Data Leak Hits Italian Railway After Supply Chain Hack</title>
-    <link>https://codedefence.in/blog/2025/11/21/italian-railway-data-leak-almaviva-hack</link>
-    <pubDate>Fri, 21 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/italian-railway-data-leak-almaviva-hack</guid>
-    <category>Data Breach &amp; Supply Chain</category>
+    <title>ShinyHunters Claims Breach of 200+ Companies via Salesforce Gainsight Integration</title>
+    <link>https://codedefence.in/blog/2025/11/22/shinyhunters-salesforce-gainsight-supply-chain</link>
+    <pubDate>Sat, 22 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/shinyhunters-salesforce-gainsight-supply-chain</guid>
+    <category>Supply Chain &amp; Data Breach</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/railwayhack/800/400" alt="A high-speed train with digital data streams leaking from the tracks, representing a massive data breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Italy's national railway operator, Ferrovie dello Stato (FS), has suffered a massive data breach involving 2.3 TB of sensitive information. The data was stolen not from FS directly, but via a breach of its IT service provider, Almaviva. Threat actors are now threatening to release the data publicly.</p>
+      <img src="https://picsum.photos/seed/salesforcebreach/800/400" alt="A cloud network diagram showing a broken link between Salesforce and a third-party app." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The ShinyHunters hacking group claims to have compromised over 200 companies by exploiting a supply chain vulnerability in the "Gainsight" customer success platform's integration with Salesforce. The group alleges they have stolen massive amounts of customer data.</p>
       <p><strong>Business Impact</strong><br/>
-      This breach exposes critical infrastructure details, employee data, and potentially passenger information. It highlights the critical risk of third-party vendors. A compromise at a key IT provider can have cascading effects, leading to operational disruption and massive reputational damage for the client organization.</p>
+      This highlights the critical risk of SaaS-to-SaaS integrations. A single compromised integration app can provide a backdoor into the central CRM (Salesforce), exposing customer lists, financial data, and sales pipelines across hundreds of organizations simultaneously.</p>
       <p><strong>Why It Happened</strong><br/>
-      This was a classic supply chain attack. Attackers targeted the Managed Service Provider (MSP), Almaviva, likely exploiting weaker defenses there to gain aggregated access to its high-value clients, including the national railway.</p>
+      Attackers reportedly compromised the API connection between Gainsight and Salesforce, leveraging the high-level permissions often granted to integration apps to exfiltrate data from client instances.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your Third-Party Risk Management (TPRM) strategy. Ensure you have visibility into the security posture of your critical IT providers (MSPs). Mandate strict data segregation and access controls to limit the blast radius if a vendor is compromised.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #SupplyChain #Railways #Italy #CyberAttack #Almaviva #ThirdPartyRisk #InfoSec</p>
+      Direct your SaaS security team to audit all Salesforce connected apps immediately. Revoke access for any unused integrations and review the permissions granted to Gainsight. Monitor Salesforce access logs for unusual data export activity.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #Salesforce #ShinyHunters #DataBreach #SaaS #Gainsight #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Report: Deepfakes Now Drive 20% of All Biometric Fraud Attempts</title>
-    <link>https://codedefence.in/blog/2025/11/21/deepfakes-drive-20-percent-biometric-fraud</link>
-    <pubDate>Fri, 21 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/deepfakes-drive-20-percent-biometric-fraud</guid>
-    <category>AI/ML in Cybersecurity &amp; Fraud</category>
+    <title>CrowdStrike Terminates Insider for Leaking Internal Data to Hackers</title>
+    <link>https://codedefence.in/blog/2025/11/22/crowdstrike-insider-threat-termination</link>
+    <pubDate>Sat, 22 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/crowdstrike-insider-threat-termination</guid>
+    <category>Insider Threat &amp; Industry News</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/deepfakefraud/800/400" alt="A facial recognition scan failing due to a digital mask, symbolizing deepfake biometric fraud." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new 2026 Identity Fraud Report by Entrust reveals that AI-driven deepfakes are now responsible for one in five (20%) biometric fraud attempts globally. The report also notes a spike in coordinated cybercrime attacks occurring specifically between 2:00 AM and 4:00 AM UTC to exploit timezone gaps in defense.</p>
+      <img src="https://picsum.photos/seed/insiderthreatcrowd/800/400" alt="A silhouette of a person in a server room handing digital data to a shadowy figure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Cybersecurity giant CrowdStrike has confirmed the termination of an employee who allegedly shared sensitive internal system details with a hacking collective (reportedly linked to the "Scattered Spider" ecosystem). Leaked screenshots appeared on a public Telegram channel.</p>
       <p><strong>Business Impact</strong><br/>
-      Trust in standard biometric verification (like selfie checks for onboarding) is eroding. Financial institutions and enterprises relying solely on facial recognition for identity verification face a surging risk of account takeovers and synthetic identity fraud driven by cheap, accessible AI tools.</p>
+      This incident serves as a stark reminder that even top-tier security firms are vulnerable to insider threats. It reinforces that technical controls alone cannot stop a trusted insider with legitimate access from leaking sensitive information.</p>
       <p><strong>Why It Happened</strong><br/>
-      Generative AI has lowered the barrier to entry for creating realistic "injection attacks," where attackers feed a deepfake video stream directly into an authentication system, bypassing the physical camera to fool liveness checks.</p>
+      The insider reportedly collaborated with external threat actors, bypassing data loss prevention (DLP) controls to share internal schematics or screenshots. Motives are currently under investigation.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Upgrade identity verification systems to include "active liveness" detection (asking the user to perform random actions) and consider multimodal biometrics (voice + face). Ensure security teams have 24/7 coverage or automated response capabilities to handle off-hour attack spikes.</p>
-      <p><strong>Hashtags:</strong> #AI #Deepfake #Biometrics #Fraud #IdentityTheft #CyberSecurity #Fintech #InfoSec</p>
+      Review your Insider Risk Management program. Ensure that privileged access monitoring is in place and that cultural/behavioral indicators of insider risk are being assessed alongside technical logs. Remind staff of the severe legal consequences of data theft.</p>
+      <p><strong>Hashtags:</strong> #InsiderThreat #CrowdStrike #CyberSecurity #DataLeak #ScatteredSpider #InfoSec #RiskManagement</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Active Exploitation of Microsoft Office Zero-Day RCE</title>
-    <link>https://codedefence.in/blog/2025/11/21/microsoft-office-zero-day-rce-exploited</link>
-    <pubDate>Fri, 21 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/21/microsoft-office-zero-day-rce-exploited</guid>
-    <category>Top Incident/Vulnerability</category>
+    <title>New "Matrix Push" C2 Uses Browser Notifications for Fileless Attacks</title>
+    <link>https://codedefence.in/blog/2025/11/22/matrix-push-c2-browser-notifications</link>
+    <pubDate>Sat, 22 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/matrix-push-c2-browser-notifications</guid>
+    <category>Malware &amp; Endpoint Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/officeexploit/800/400" alt="A Microsoft Word document icon opening to reveal malicious code execution." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers have identified a critical Remote Code Execution (RCE) zero-day vulnerability in Microsoft Office that is being actively exploited in the wild. The flaw allows attackers to execute malicious payloads simply by tricking a user into opening a specially crafted document.</p>
+      <img src="https://picsum.photos/seed/browsernotification/800/400" alt="A web browser displaying a malicious push notification popup on a desktop screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have identified "Matrix Push," a new Command and Control (C2) framework that abuses legitimate browser push notifications to execute attacks. It creates a fileless persistence mechanism that is invisible to many traditional antivirus tools.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a high-risk vulnerability for every organization using Office. It bypasses standard email hygiene if a user opens an attachment. Successful exploitation grants the attacker the same rights as the current user, often leading to initial access for ransomware or data theft.</p>
+      This technique allows attackers to bypass firewalls and maintain communication with compromised endpoints using standard web traffic (HTTPS). It can be used to deliver phishing links, malvertising, or commands to infected machines without dropping files on the disk.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability exists in how Office handles certain file formats or embedded objects. Attackers are using this to weaponize documents, likely delivered via phishing campaigns targeting corporate employees.</p>
+      Attackers are exploiting the native "Push API" in modern browsers. Once a user is tricked into clicking "Allow" on a notification prompt, the browser maintains a persistent connection to the attacker's server, even when the malicious website is closed.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct IT to verify that the latest Microsoft Office updates (from this week's Patch Tuesday) are successfully deployed to 100% of endpoints. Reinforce user training on not opening unexpected attachments, even from known contacts, until patching is confirmed.</p>
-      <p><strong>Hashtags:</strong> #Microsoft #Office #ZeroDay #RCE #Vulnerability #Phishing #CyberSecurity #PatchNow #InfoSec</p>
+      Update browser security policies (Group Policy/MDM) to block push notification requests from all websites by default, or whitelist only approved domains. This eliminates the primary vector for this growing class of "browser-native" attacks.</p>
+      <p><strong>Hashtags:</strong> #Malware #C2 #BrowserSecurity #Phishing #MatrixPush #CyberSecurity #EndpointProtection #InfoSec</p>
     ]]></description>
   </item>
 
