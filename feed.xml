@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sat, 22 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sat, 22 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sun, 23 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sun, 23 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Adds Critical Oracle Identity Manager Flaw (CVE-2025-61757) to KEV</title>
-    <link>https://codedefence.in/blog/2025/11/22/cisa-oracle-identity-manager-cve-2025-61757</link>
-    <pubDate>Sat, 22 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/cisa-oracle-identity-manager-cve-2025-61757</guid>
-    <category>Top Incident/Vulnerability &amp; IAM</category>
+    <title>Critical Azure Bastion Flaw (CVE-2025-49752) Allows Admin Privilege Escalation</title>
+    <link>https://codedefence.in/blog/2025/11/23/azure-bastion-auth-bypass-cve-2025-49752</link>
+    <pubDate>Sun, 23 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/azure-bastion-auth-bypass-cve-2025-49752</guid>
+    <category>Top Incident/Vulnerability &amp; Cloud Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/oracleidentity/800/400" alt="A digital identity management dashboard with a critical red alert warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has added a critical vulnerability (CVE-2025-61757, CVSS 9.8) in Oracle Identity Manager to its Known Exploited Vulnerabilities (KEV) catalog. The flaw allows unauthenticated remote attackers to bypass authentication and take full control of the identity management system.</p>
+      <img src="https://picsum.photos/seed/azurebastion/800/400" alt="A cloud server infrastructure with a red warning light, symbolizing a critical Azure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical authentication bypass vulnerability (CVE-2025-49752) has been disclosed in Microsoft Azure Bastion. The flaw allows remote attackers to bypass authentication mechanisms and escalate privileges to administrative levels, potentially granting full control over connected virtual machines.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a maximum-severity risk. Oracle Identity Manager often holds the "keys to the kingdom," managing user access across the entire enterprise. Compromise allows attackers to create privileged accounts, reset passwords, and move laterally into any connected system.</p>
+      This is a severe cloud infrastructure risk. Azure Bastion is a hardened gateway for secure RDP/SSH access. Compromising it effectively gives attackers the "keys to the castle," allowing them to pivot laterally across the cloud environment, deploy ransomware, or exfiltrate sensitive data from backend servers.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability involves a missing authentication check for a critical function within the Oracle Fusion Middleware component. Attackers are actively exploiting this to hijack identity infrastructure without needing credentials.</p>
+      The vulnerability stems from a flaw in how Azure Bastion validates session tokens, allowing an attacker to replay or forge credentials to bypass security checks. Microsoft has released emergency guidance and patches.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This is an emergency. Direct IT to apply the Oracle patches immediately (deadline for federal agencies is Dec 12). If patching is not instant, restrict network access to the Identity Manager console to a secure, isolated management VLAN.</p>
-      <p><strong>Hashtags:</strong> #Oracle #IdentityManagement #CISA #KEV #Vulnerability #RCE #IAM #CyberSecurity #InfoSec</p>
+      Treat this as an immediate emergency. Direct cloud security teams to verify that Microsoft's automatic updates have applied to your Azure Bastion instances. Rotate all SSH keys and administrative credentials for VMs accessed via Bastion as a precaution.</p>
+      <p><strong>Hashtags:</strong> #Azure #CloudSecurity #Vulnerability #Microsoft #Bastion #CVE #PatchNow #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>ShinyHunters Claims Breach of 200+ Companies via Salesforce Gainsight Integration</title>
-    <link>https://codedefence.in/blog/2025/11/22/shinyhunters-salesforce-gainsight-supply-chain</link>
-    <pubDate>Sat, 22 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/shinyhunters-salesforce-gainsight-supply-chain</guid>
-    <category>Supply Chain &amp; Data Breach</category>
+    <title>Major US Banks Exposed in SitusAMC Vendor Breach</title>
+    <link>https://codedefence.in/blog/2025/11/23/us-banks-vendor-breach-situsamc</link>
+    <pubDate>Sun, 23 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/us-banks-vendor-breach-situsamc</guid>
+    <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/salesforcebreach/800/400" alt="A cloud network diagram showing a broken link between Salesforce and a third-party app." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The ShinyHunters hacking group claims to have compromised over 200 companies by exploiting a supply chain vulnerability in the "Gainsight" customer success platform's integration with Salesforce. The group alleges they have stolen massive amounts of customer data.</p>
+      <img src="https://picsum.photos/seed/bankbreach/800/400" alt="A bank vault door slightly ajar with digital binary code spilling out, representing a data leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Client data from major US financial institutions, including JPMorgan Chase, Citi, and Morgan Stanley, may have been exposed following a cyberattack on technology vendor SitusAMC. The compromised data includes corporate documents, accounting records, and legal contracts.</p>
       <p><strong>Business Impact</strong><br/>
-      This highlights the critical risk of SaaS-to-SaaS integrations. A single compromised integration app can provide a backdoor into the central CRM (Salesforce), exposing customer lists, financial data, and sales pipelines across hundreds of organizations simultaneously.</p>
+      This supply chain breach highlights the concentrated risk in the financial services vendor ecosystem. While banking operations remain unaffected, the exposure of sensitive client contracts and financial records creates significant legal and reputational risks for the affected banks.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers reportedly compromised the API connection between Gainsight and Salesforce, leveraging the high-level permissions often granted to integration apps to exfiltrate data from client instances.</p>
+      SitusAMC, a key provider of technology and services to the mortgage and finance industry, was targeted by cybercriminals. The attack did not involve encryption but focused on data exfiltration, a common tactic for extortion.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your SaaS security team to audit all Salesforce connected apps immediately. Revoke access for any unused integrations and review the permissions granted to Gainsight. Monitor Salesforce access logs for unusual data export activity.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #Salesforce #ShinyHunters #DataBreach #SaaS #Gainsight #CyberSecurity #InfoSec</p>
+      Review your Third-Party Risk Management (TPRM) posture for all critical vendors. Ensure legal and compliance teams are prepared for potential regulatory notifications. Verify that vendors holding sensitive financial data adhere to strict security standards.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #SupplyChain #Finance #JPMorgan #Citi #MorganStanley #CyberSecurity #InfoSec #TPRM</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CrowdStrike Terminates Insider for Leaking Internal Data to Hackers</title>
-    <link>https://codedefence.in/blog/2025/11/22/crowdstrike-insider-threat-termination</link>
-    <pubDate>Sat, 22 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/crowdstrike-insider-threat-termination</guid>
-    <category>Insider Threat &amp; Industry News</category>
+    <title>Iberia Airlines Confirms Customer Data Breach via Third-Party Vendor</title>
+    <link>https://codedefence.in/blog/2025/11/23/iberia-airlines-data-breach-vendor-hack</link>
+    <pubDate>Sun, 23 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/iberia-airlines-data-breach-vendor-hack</guid>
+    <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/insiderthreatcrowd/800/400" alt="A silhouette of a person in a server room handing digital data to a shadowy figure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Cybersecurity giant CrowdStrike has confirmed the termination of an employee who allegedly shared sensitive internal system details with a hacking collective (reportedly linked to the "Scattered Spider" ecosystem). Leaked screenshots appeared on a public Telegram channel.</p>
+      <img src="https://picsum.photos/seed/airlinehack/800/400" alt="An airplane taking off with a digital glitch effect over the fuselage, symbolizing a cyber incident." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Spanish flag carrier Iberia has notified customers of a data breach stemming from a compromise at a third-party supplier. The breach exposed customer names, email addresses, and frequent flyer numbers. This incident follows similar breaches at other airlines linked to a Salesforce-hosted database.</p>
       <p><strong>Business Impact</strong><br/>
-      This incident serves as a stark reminder that even top-tier security firms are vulnerable to insider threats. It reinforces that technical controls alone cannot stop a trusted insider with legitimate access from leaking sensitive information.</p>
+      While sensitive financial data was reportedly not stolen, the exposure of customer contact details and frequent flyer numbers opens the door for highly targeted phishing campaigns. Attackers can use this data to craft convincing lures to steal airline miles or further compromise user accounts.</p>
       <p><strong>Why It Happened</strong><br/>
-      The insider reportedly collaborated with external threat actors, bypassing data loss prevention (DLP) controls to share internal schematics or screenshots. Motives are currently under investigation.</p>
+      The breach originated from a vulnerability in a third-party vendor's system, likely a customer support platform. This pattern of "island hopping" from vendors to major targets continues to be a primary attack vector for large enterprises.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your Insider Risk Management program. Ensure that privileged access monitoring is in place and that cultural/behavioral indicators of insider risk are being assessed alongside technical logs. Remind staff of the severe legal consequences of data theft.</p>
-      <p><strong>Hashtags:</strong> #InsiderThreat #CrowdStrike #CyberSecurity #DataLeak #ScatteredSpider #InfoSec #RiskManagement</p>
+      Warn customers and employees to be vigilant against phishing emails purporting to be from the airline. Re-assess the security controls of all vendors with access to customer loyalty and CRM databases.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Iberia #Airlines #SupplyChain #Phishing #Privacy #GDPR #CyberSecurity</p>
     ]]></description>
   </item>
   
   <item>
-    <title>New "Matrix Push" C2 Uses Browser Notifications for Fileless Attacks</title>
-    <link>https://codedefence.in/blog/2025/11/22/matrix-push-c2-browser-notifications</link>
-    <pubDate>Sat, 22 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/22/matrix-push-c2-browser-notifications</guid>
-    <category>Malware &amp; Endpoint Security</category>
+    <title>Chinese Spy Campaign Hijacks Home Routers for Covert Operations</title>
+    <link>https://codedefence.in/blog/2025/11/23/china-spy-campaign-hijacks-home-routers</link>
+    <pubDate>Sun, 23 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/china-spy-campaign-hijacks-home-routers</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/browsernotification/800/400" alt="A web browser displaying a malicious push notification popup on a desktop screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have identified "Matrix Push," a new Command and Control (C2) framework that abuses legitimate browser push notifications to execute attacks. It creates a fileless persistence mechanism that is invisible to many traditional antivirus tools.</p>
+      <img src="https://picsum.photos/seed/routerhack/800/400" alt="A home wifi router with a red eye lens glowing in the center, representing surveillance." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have uncovered a sophisticated campaign where a Chinese state-backed group is hijacking thousands of home and small office routers (SOHO). They are using proxy malware to turn these devices into a massive, covert network for espionage and attacks against government and telecom targets.</p>
       <p><strong>Business Impact</strong><br/>
-      This technique allows attackers to bypass firewalls and maintain communication with compromised endpoints using standard web traffic (HTTPS). It can be used to deliver phishing links, malvertising, or commands to infected machines without dropping files on the disk.</p>
+      This botnet allows state actors to obfuscate their origin, making attacks appear to come from legitimate residential IP addresses. This complicates attribution and defense, as blocking these IPs could disrupt legitimate users. It poses a direct threat to telecommunications and critical infrastructure security.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are exploiting the native "Push API" in modern browsers. Once a user is tricked into clicking "Allow" on a notification prompt, the browser maintains a persistent connection to the attacker's server, even when the malicious website is closed.</p>
+      The campaign exploits known vulnerabilities in older or unpatched router firmware. Attackers compromise these "soft targets" to build a resilient infrastructure that is difficult for defenders to take down.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update browser security policies (Group Policy/MDM) to block push notification requests from all websites by default, or whitelist only approved domains. This eliminates the primary vector for this growing class of "browser-native" attacks.</p>
-      <p><strong>Hashtags:</strong> #Malware #C2 #BrowserSecurity #Phishing #MatrixPush #CyberSecurity #EndpointProtection #InfoSec</p>
+      While primarily a consumer issue, organizations should ensure remote employees are using secure, corporate-managed VPNs and not relying solely on personal router security. Update corporate firewall rules to scrutinize traffic from residential ISP ranges accessing critical internal resources.</p>
+      <p><strong>Hashtags:</strong> #APT #China #Espionage #Botnet #RouterSecurity #CyberWarfare #InfoSec #Geopolitics</p>
     ]]></description>
   </item>
 
