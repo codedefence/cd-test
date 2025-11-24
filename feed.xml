@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sun, 23 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sun, 23 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Mon, 24 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Mon, 24 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical Azure Bastion Flaw (CVE-2025-49752) Allows Admin Privilege Escalation</title>
-    <link>https://codedefence.in/blog/2025/11/23/azure-bastion-auth-bypass-cve-2025-49752</link>
-    <pubDate>Sun, 23 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/azure-bastion-auth-bypass-cve-2025-49752</guid>
-    <category>Top Incident/Vulnerability &amp; Cloud Security</category>
+    <title>CISA Emergency Directive: Patch Critical Oracle Identity Manager Flaw (CVE-2025-61757)</title>
+    <link>https://codedefence.in/blog/2025/11/24/cisa-oracle-identity-manager-cve-2025-61757</link>
+    <pubDate>Mon, 24 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/cisa-oracle-identity-manager-cve-2025-61757</guid>
+    <category>Top Incident/Vulnerability &amp; IAM</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/azurebastion/800/400" alt="A cloud server infrastructure with a red warning light, symbolizing a critical Azure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical authentication bypass vulnerability (CVE-2025-49752) has been disclosed in Microsoft Azure Bastion. The flaw allows remote attackers to bypass authentication mechanisms and escalate privileges to administrative levels, potentially granting full control over connected virtual machines.</p>
+      <img src="https://picsum.photos/seed/oracleidentity/800/400" alt="A digital identity dashboard with a critical red alert warning, symbolizing an IAM breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has issued an emergency directive ordering federal agencies to patch a critical vulnerability (CVE-2025-61757, CVSS 9.8) in Oracle Identity Manager by December 12. The flaw allows unauthenticated remote attackers to bypass authentication via a simple HTTP request and gain full administrative control over the identity system.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a severe cloud infrastructure risk. Azure Bastion is a hardened gateway for secure RDP/SSH access. Compromising it effectively gives attackers the "keys to the castle," allowing them to pivot laterally across the cloud environment, deploy ransomware, or exfiltrate sensitive data from backend servers.</p>
+      This is a "keys to the kingdom" vulnerability. Compromising the central Identity Manager allows attackers to create privileged accounts, reset passwords for any user, and pivot laterally into any connected system, effectively bypassing all other access controls.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability stems from a flaw in how Azure Bastion validates session tokens, allowing an attacker to replay or forge credentials to bypass security checks. Microsoft has released emergency guidance and patches.</p>
+      The vulnerability stems from a missing authentication check in a critical REST API function within Oracle Fusion Middleware. Attackers are actively exploiting this "trivial" flaw to hijack identity infrastructure without needing credentials.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an immediate emergency. Direct cloud security teams to verify that Microsoft's automatic updates have applied to your Azure Bastion instances. Rotate all SSH keys and administrative credentials for VMs accessed via Bastion as a precaution.</p>
-      <p><strong>Hashtags:</strong> #Azure #CloudSecurity #Vulnerability #Microsoft #Bastion #CVE #PatchNow #InfoSec #CyberSecurity</p>
+      Treat this as an immediate emergency. Direct IT to apply the Oracle patches immediately. If patching is not instant, restrict network access to the Identity Manager console to a secure, isolated management VLAN and audit logs for suspicious API calls.</p>
+      <p><strong>Hashtags:</strong> #Oracle #IdentityManagement #CISA #KEV #Vulnerability #RCE #IAM #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Major US Banks Exposed in SitusAMC Vendor Breach</title>
-    <link>https://codedefence.in/blog/2025/11/23/us-banks-vendor-breach-situsamc</link>
-    <pubDate>Sun, 23 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/us-banks-vendor-breach-situsamc</guid>
-    <category>Data Breach &amp; Supply Chain</category>
+    <title>ShadowPad Malware Exploits WSUS Flaw (CVE-2025-59287) for Mass Infection</title>
+    <link>https://codedefence.in/blog/2025/11/24/shadowpad-malware-wsus-exploit</link>
+    <pubDate>Mon, 24 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/shadowpad-malware-wsus-exploit</guid>
+    <category>Malware &amp; Infrastructure Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/bankbreach/800/400" alt="A bank vault door slightly ajar with digital binary code spilling out, representing a data leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Client data from major US financial institutions, including JPMorgan Chase, Citi, and Morgan Stanley, may have been exposed following a cyberattack on technology vendor SitusAMC. The compromised data includes corporate documents, accounting records, and legal contracts.</p>
+      <img src="https://picsum.photos/seed/wsusmalware/800/400" alt="A server rack with a glowing green virus injection cable connected to a Windows update server." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Threat actors are actively exploiting a recently patched critical vulnerability in Microsoft Windows Server Update Services (WSUS) to distribute the "ShadowPad" malware. Attackers use the flaw (CVE-2025-59287) to compromise the update server and then push malicious payloads to all connected client machines disguised as legitimate updates.</p>
       <p><strong>Business Impact</strong><br/>
-      This supply chain breach highlights the concentrated risk in the financial services vendor ecosystem. While banking operations remain unaffected, the exposure of sensitive client contracts and financial records creates significant legal and reputational risks for the affected banks.</p>
+      This is a highly effective supply chain-style attack within the corporate network. By compromising the internal update mechanism, attackers can bypass perimeter defenses and infect thousands of endpoints simultaneously with a sophisticated backdoor used by Chinese state-sponsored groups.</p>
       <p><strong>Why It Happened</strong><br/>
-      SitusAMC, a key provider of technology and services to the mortgage and finance industry, was targeted by cybercriminals. The attack did not involve encryption but focused on data exfiltration, a common tactic for extortion.</p>
+      The vulnerability allows unauthenticated attackers to inject malicious updates into the WSUS synchronization process. Organizations that delayed patching their internal WSUS servers are now being targeted by automated exploits.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your Third-Party Risk Management (TPRM) posture for all critical vendors. Ensure legal and compliance teams are prepared for potential regulatory notifications. Verify that vendors holding sensitive financial data adhere to strict security standards.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #SupplyChain #Finance #JPMorgan #Citi #MorganStanley #CyberSecurity #InfoSec #TPRM</p>
+      Verify immediately that your WSUS servers are patched. If not, assume compromise. Direct the SOC to hunt for ShadowPad indicators (like specific DLL side-loading behaviors) on all endpoints that receive updates from the internal WSUS server.</p>
+      <p><strong>Hashtags:</strong> #WSUS #ShadowPad #Malware #Microsoft #Vulnerability #SupplyChain #CyberSecurity #InfoSec #APT</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Iberia Airlines Confirms Customer Data Breach via Third-Party Vendor</title>
-    <link>https://codedefence.in/blog/2025/11/23/iberia-airlines-data-breach-vendor-hack</link>
-    <pubDate>Sun, 23 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/iberia-airlines-data-breach-vendor-hack</guid>
+    <title>SitusAMC Confirm Breach of Client Financial Data Affecting Major Banks</title>
+    <link>https://codedefence.in/blog/2025/11/24/situsamc-financial-data-breach</link>
+    <pubDate>Mon, 24 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/situsamc-financial-data-breach</guid>
     <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/airlinehack/800/400" alt="An airplane taking off with a digital glitch effect over the fuselage, symbolizing a cyber incident." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Spanish flag carrier Iberia has notified customers of a data breach stemming from a compromise at a third-party supplier. The breach exposed customer names, email addresses, and frequent flyer numbers. This incident follows similar breaches at other airlines linked to a Salesforce-hosted database.</p>
+      <img src="https://picsum.photos/seed/financialbreach/800/400" alt="A pile of financial documents and contracts with a digital 'CONFIDENTIAL' stamp being scanned by a red laser." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Real estate finance vendor SitusAMC has confirmed a data breach where hackers stole confidential client data, including accounting records and legal agreements. The breach potentially impacts major financial institutions like JPMorgan Chase and Citi who rely on SitusAMC's services.</p>
       <p><strong>Business Impact</strong><br/>
-      While sensitive financial data was reportedly not stolen, the exposure of customer contact details and frequent flyer numbers opens the door for highly targeted phishing campaigns. Attackers can use this data to craft convincing lures to steal airline miles or further compromise user accounts.</p>
+      This supply chain breach exposes sensitive financial agreements and client details held by a third-party vendor. While it was not a ransomware encryption event, the theft of legal and accounting records creates significant regulatory and reputational risks for the affected banks and their clients.</p>
       <p><strong>Why It Happened</strong><br/>
-      The breach originated from a vulnerability in a third-party vendor's system, likely a customer support platform. This pattern of "island hopping" from vendors to major targets continues to be a primary attack vector for large enterprises.</p>
+      Attackers infiltrated SitusAMC's network earlier this month. The company has ruled out "encrypting malware," suggesting the attackers' primary goal was data exfiltration for espionage or extortion.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Warn customers and employees to be vigilant against phishing emails purporting to be from the airline. Re-assess the security controls of all vendors with access to customer loyalty and CRM databases.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Iberia #Airlines #SupplyChain #Phishing #Privacy #GDPR #CyberSecurity</p>
+      Review your organization's exposure to SitusAMC. If you are a client, expect potential phishing attempts using the stolen financial context. Strengthen Third-Party Risk Management (TPRM) audits for vendors handling sensitive financial or legal records.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #SitusAMC #Finance #SupplyChain #JPMorgan #Citi #CyberSecurity #InfoSec #TPRM</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Chinese Spy Campaign Hijacks Home Routers for Covert Operations</title>
-    <link>https://codedefence.in/blog/2025/11/23/china-spy-campaign-hijacks-home-routers</link>
-    <pubDate>Sun, 23 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/23/china-spy-campaign-hijacks-home-routers</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
+    <title>"Sha1-Hulud" Campaign Compromises Hundreds of NPM Packages</title>
+    <link>https://codedefence.in/blog/2025/11/24/sha1-hulud-npm-supply-chain-attack</link>
+    <pubDate>Mon, 24 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/sha1-hulud-npm-supply-chain-attack</guid>
+    <category>Supply Chain &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/routerhack/800/400" alt="A home wifi router with a red eye lens glowing in the center, representing surveillance." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have uncovered a sophisticated campaign where a Chinese state-backed group is hijacking thousands of home and small office routers (SOHO). They are using proxy malware to turn these devices into a massive, covert network for espionage and attacks against government and telecom targets.</p>
+      <img src="https://picsum.photos/seed/npmsubplychain/800/400" alt="A code editor screen showing a package dependency tree with red warning icons on several nodes." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new software supply chain campaign dubbed "Sha1-Hulud" has flooded the npm registry with hundreds of malicious packages. These packages, uploaded between Nov 21-23, contain hidden crypto-miners and infostealers designed to infect developer environments upon installation.</p>
       <p><strong>Business Impact</strong><br/>
-      This botnet allows state actors to obfuscate their origin, making attacks appear to come from legitimate residential IP addresses. This complicates attribution and defense, as blocking these IPs could disrupt legitimate users. It poses a direct threat to telecommunications and critical infrastructure security.</p>
+      Developers accidentally installing these packages (often via typo-squatting) introduce malware directly into the software build pipeline. This can lead to the theft of API keys, cloud credentials, and source code, compromising the integrity of the applications being built.</p>
       <p><strong>Why It Happened</strong><br/>
-      The campaign exploits known vulnerabilities in older or unpatched router firmware. Attackers compromise these "soft targets" to build a resilient infrastructure that is difficult for defenders to take down.</p>
+      Attackers automate the creation of packages with names similar to popular libraries. The open nature of npm allows bad actors to upload malicious code that is automatically pulled in by developers or CI/CD pipelines without strict vetting.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      While primarily a consumer issue, organizations should ensure remote employees are using secure, corporate-managed VPNs and not relying solely on personal router security. Update corporate firewall rules to scrutinize traffic from residential ISP ranges accessing critical internal resources.</p>
-      <p><strong>Hashtags:</strong> #APT #China #Espionage #Botnet #RouterSecurity #CyberWarfare #InfoSec #Geopolitics</p>
+      Mandate the use of a private package repository (like Artifactory) that proxies and scans public packages. Enforce lockfiles in development to prevent automatic upgrades to malicious versions. Direct developers to verify package names and maintainers carefully.</p>
+      <p><strong>Hashtags:</strong> #NPM #SupplyChain #DevSecOps #Malware #Sha1Hulud #CyberSecurity #InfoSec #DeveloperSecurity</p>
+    ]]></description>
+  </item>
+  
+  <item>
+    <title>CrowdStrike Report: Chinese AI "DeepSeek" Generates Insecure Code</title>
+    <link>https://codedefence.in/blog/2025/11/24/deepseek-ai-insecure-code-generation</link>
+    <pubDate>Mon, 24 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/deepseek-ai-insecure-code-generation</guid>
+    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/aiincode/800/400" alt="An AI code generation interface showing highlighted security vulnerabilities in the generated script." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>New research from CrowdStrike reveals that the Chinese AI model "DeepSeek-R1" is significantly more likely to generate code with severe security vulnerabilities when the prompt contains politically sensitive topics (e.g., Tibet, Uyghurs). The likelihood of insecure code increases by up to 50% in these contexts.</p>
+      <p><strong>Business Impact</strong><br/>
+      This highlights a hidden risk in using foreign or unverified AI models for code generation. Bias or hidden parameters in the model's training can lead to the systemic introduction of vulnerabilities into corporate software, whether accidental or intentional.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The model appears to have been fine-tuned or aligned in a way that degrades its coding capabilities when processing sensitive tokens, possibly due to censorship filters interfering with the logic generation process.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Establish strict governance over which AI models developers are permitted to use. Avoid using unvetted open-source models for critical code generation. Ensure all AI-generated code undergoes rigorous human review and automated security testing (SAST/DAST).</p>
+      <p><strong>Hashtags:</strong> #AI #DeepSeek #SecureCoding #CrowdStrike #Geopolitics #China #AppSec #CyberSecurity</p>
     ]]></description>
   </item>
 
