@@ -5,102 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 24 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 24 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 25 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 25 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Emergency Directive: Patch Critical Oracle Identity Manager Flaw (CVE-2025-61757)</title>
-    <link>https://codedefence.in/blog/2025/11/24/cisa-oracle-identity-manager-cve-2025-61757</link>
-    <pubDate>Mon, 24 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/cisa-oracle-identity-manager-cve-2025-61757</guid>
-    <category>Top Incident/Vulnerability &amp; IAM</category>
+    <title>CISA Warns: Active Spyware Campaigns Targeting Signal &amp; WhatsApp Users</title>
+    <link>https://codedefence.in/blog/2025/11/25/cisa-spyware-warning-signal-whatsapp</link>
+    <pubDate>Tue, 25 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/cisa-spyware-warning-signal-whatsapp</guid>
+    <category>Mobile Security &amp; Espionage</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/oracleidentity/800/400" alt="A digital identity dashboard with a critical red alert warning, symbolizing an IAM breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has issued an emergency directive ordering federal agencies to patch a critical vulnerability (CVE-2025-61757, CVSS 9.8) in Oracle Identity Manager by December 12. The flaw allows unauthenticated remote attackers to bypass authentication via a simple HTTP request and gain full administrative control over the identity system.</p>
+      <img src="https://picsum.photos/seed/mobile-spyware/800/400" alt="A smartphone screen displaying secure messaging apps with a red crosshair target overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has issued a major alert warning that threat actors are actively leveraging commercial spyware and Remote Access Trojans (RATs) to compromise high-value users of Signal and WhatsApp. Attackers are using sophisticated social engineering to trick victims into installing payloads that grant full access to encrypted communications.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a "keys to the kingdom" vulnerability. Compromising the central Identity Manager allows attackers to create privileged accounts, reset passwords for any user, and pivot laterally into any connected system, effectively bypassing all other access controls.</p>
+      This undermines the perceived security of end-to-end encrypted messaging apps often used by executives for sensitive discussions. Successful compromise allows attackers to read messages, track location, and record calls, posing a severe risk of espionage and data leakage.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability stems from a missing authentication check in a critical REST API function within Oracle Fusion Middleware. Attackers are actively exploiting this "trivial" flaw to hijack identity infrastructure without needing credentials.</p>
+      Attackers are bypassing encryption by compromising the endpoint device itself. Techniques include exploiting "linked device" features and using zero-click exploits to install spyware that captures data before it is encrypted.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an immediate emergency. Direct IT to apply the Oracle patches immediately. If patching is not instant, restrict network access to the Identity Manager console to a secure, isolated management VLAN and audit logs for suspicious API calls.</p>
-      <p><strong>Hashtags:</strong> #Oracle #IdentityManagement #CISA #KEV #Vulnerability #RCE #IAM #CyberSecurity #InfoSec</p>
+      Review mobile security policies for executives and high-risk staff. Mandate "Lockdown Mode" on iOS devices where appropriate. Regularly audit "linked devices" in messaging apps and strictly prohibit the installation of unknown apps or configuration profiles.</p>
+      <p><strong>Hashtags:</strong> #CISA #Spyware #MobileSecurity #Signal #WhatsApp #Espionage #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>ShadowPad Malware Exploits WSUS Flaw (CVE-2025-59287) for Mass Infection</title>
-    <link>https://codedefence.in/blog/2025/11/24/shadowpad-malware-wsus-exploit</link>
-    <pubDate>Mon, 24 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/shadowpad-malware-wsus-exploit</guid>
-    <category>Malware &amp; Infrastructure Security</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/wsusmalware/800/400" alt="A server rack with a glowing green virus injection cable connected to a Windows update server." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Threat actors are actively exploiting a recently patched critical vulnerability in Microsoft Windows Server Update Services (WSUS) to distribute the "ShadowPad" malware. Attackers use the flaw (CVE-2025-59287) to compromise the update server and then push malicious payloads to all connected client machines disguised as legitimate updates.</p>
-      <p><strong>Business Impact</strong><br/>
-      This is a highly effective supply chain-style attack within the corporate network. By compromising the internal update mechanism, attackers can bypass perimeter defenses and infect thousands of endpoints simultaneously with a sophisticated backdoor used by Chinese state-sponsored groups.</p>
-      <p><strong>Why It Happened</strong><br/>
-      The vulnerability allows unauthenticated attackers to inject malicious updates into the WSUS synchronization process. Organizations that delayed patching their internal WSUS servers are now being targeted by automated exploits.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Verify immediately that your WSUS servers are patched. If not, assume compromise. Direct the SOC to hunt for ShadowPad indicators (like specific DLL side-loading behaviors) on all endpoints that receive updates from the internal WSUS server.</p>
-      <p><strong>Hashtags:</strong> #WSUS #ShadowPad #Malware #Microsoft #Vulnerability #SupplyChain #CyberSecurity #InfoSec #APT</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>SitusAMC Confirm Breach of Client Financial Data Affecting Major Banks</title>
-    <link>https://codedefence.in/blog/2025/11/24/situsamc-financial-data-breach</link>
-    <pubDate>Mon, 24 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/situsamc-financial-data-breach</guid>
-    <category>Data Breach &amp; Supply Chain</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/financialbreach/800/400" alt="A pile of financial documents and contracts with a digital 'CONFIDENTIAL' stamp being scanned by a red laser." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Real estate finance vendor SitusAMC has confirmed a data breach where hackers stole confidential client data, including accounting records and legal agreements. The breach potentially impacts major financial institutions like JPMorgan Chase and Citi who rely on SitusAMC's services.</p>
-      <p><strong>Business Impact</strong><br/>
-      This supply chain breach exposes sensitive financial agreements and client details held by a third-party vendor. While it was not a ransomware encryption event, the theft of legal and accounting records creates significant regulatory and reputational risks for the affected banks and their clients.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Attackers infiltrated SitusAMC's network earlier this month. The company has ruled out "encrypting malware," suggesting the attackers' primary goal was data exfiltration for espionage or extortion.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review your organization's exposure to SitusAMC. If you are a client, expect potential phishing attempts using the stolen financial context. Strengthen Third-Party Risk Management (TPRM) audits for vendors handling sensitive financial or legal records.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #SitusAMC #Finance #SupplyChain #JPMorgan #Citi #CyberSecurity #InfoSec #TPRM</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>"Sha1-Hulud" Campaign Compromises Hundreds of NPM Packages</title>
-    <link>https://codedefence.in/blog/2025/11/24/sha1-hulud-npm-supply-chain-attack</link>
-    <pubDate>Mon, 24 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/sha1-hulud-npm-supply-chain-attack</guid>
+    <title>"Shai Hulud" Supply Chain Attack Hits 28,000+ GitHub Repositories</title>
+    <link>https://codedefence.in/blog/2025/11/25/shai-hulud-supply-chain-attack-github-npm</link>
+    <pubDate>Tue, 25 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/shai-hulud-supply-chain-attack-github-npm</guid>
     <category>Supply Chain &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/npmsubplychain/800/400" alt="A code editor screen showing a package dependency tree with red warning icons on several nodes." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new software supply chain campaign dubbed "Sha1-Hulud" has flooded the npm registry with hundreds of malicious packages. These packages, uploaded between Nov 21-23, contain hidden crypto-miners and infostealers designed to infect developer environments upon installation.</p>
+      <img src="https://picsum.photos/seed/github-attack/800/400" alt="A network of code repositories on a dark background, with many nodes turning malicious red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A massive automated supply chain attack, dubbed "Shai Hulud," has flooded GitHub and the npm registry. Attackers have poisoned over 28,000 repositories and 800+ npm packages with malicious code designed to steal developer credentials and secrets upon installation.</p>
       <p><strong>Business Impact</strong><br/>
-      Developers accidentally installing these packages (often via typo-squatting) introduce malware directly into the software build pipeline. This can lead to the theft of API keys, cloud credentials, and source code, compromising the integrity of the applications being built.</p>
+      This is a wide-scale contamination of the open-source ecosystem. Developers who inadvertently use these poisoned packages introduce malware directly into the corporate build pipeline, leading to the theft of API keys, cloud tokens, and source code.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers automate the creation of packages with names similar to popular libraries. The open nature of npm allows bad actors to upload malicious code that is automatically pulled in by developers or CI/CD pipelines without strict vetting.</p>
+      Attackers used automated scripts to create thousands of fake repositories and packages with names similar to popular libraries (typosquatting) or by repacking legitimate code with malware, exploiting the implicit trust developers place in open-source registries.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate the use of a private package repository (like Artifactory) that proxies and scans public packages. Enforce lockfiles in development to prevent automatic upgrades to malicious versions. Direct developers to verify package names and maintainers carefully.</p>
-      <p><strong>Hashtags:</strong> #NPM #SupplyChain #DevSecOps #Malware #Sha1Hulud #CyberSecurity #InfoSec #DeveloperSecurity</p>
+      Direct DevOps leads to block the installation of new or unvetted npm packages immediately. Implement a private package proxy (like Artifactory or Nexus) with malware scanning enabled. Audit build logs for any suspicious outbound connections.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #GitHub #NPM #DevSecOps #Malware #ShaiHulud #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>CrowdStrike Report: Chinese AI "DeepSeek" Generates Insecure Code</title>
-    <link>https://codedefence.in/blog/2025/11/24/deepseek-ai-insecure-code-generation</link>
-    <pubDate>Mon, 24 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/24/deepseek-ai-insecure-code-generation</guid>
-    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
+    <title>Microsoft Warns of Novel Risks in New "Agentic AI" Features</title>
+    <link>https://codedefence.in/blog/2025/11/25/microsoft-warns-agentic-ai-risks</link>
+    <pubDate>Tue, 25 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/microsoft-warns-agentic-ai-risks</guid>
+    <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiincode/800/400" alt="An AI code generation interface showing highlighted security vulnerabilities in the generated script." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>New research from CrowdStrike reveals that the Chinese AI model "DeepSeek-R1" is significantly more likely to generate code with severe security vulnerabilities when the prompt contains politically sensitive topics (e.g., Tibet, Uyghurs). The likelihood of insecure code increases by up to 50% in these contexts.</p>
+      <img src="https://picsum.photos/seed/agentic-ai/800/400" alt="A futuristic interface showing autonomous AI agents performing tasks, with a warning triangle overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>As Microsoft rolls out new "Agentic AI" capabilities (Copilot Actions) that can autonomously perform tasks on a user's behalf, the company has issued a transparent warning about novel security risks. These include the potential for AI agents to be tricked into performing unauthorized actions via prompt injection.</p>
       <p><strong>Business Impact</strong><br/>
-      This highlights a hidden risk in using foreign or unverified AI models for code generation. Bias or hidden parameters in the model's training can lead to the systemic introduction of vulnerabilities into corporate software, whether accidental or intentional.</p>
+      The shift from "chatty" AI to "agentic" AI (agents that *do* things) introduces significant operational risk. A compromised agent could automatically delete files, send emails, or change configuration settings without direct human approval, scaling the impact of an attack.</p>
       <p><strong>Why It Happened</strong><br/>
-      The model appears to have been fine-tuned or aligned in a way that degrades its coding capabilities when processing sensitive tokens, possibly due to censorship filters interfering with the logic generation process.</p>
+      AI agents operate with the user's permissions. If an attacker can manipulate the agent's instructions (e.g., via a malicious email the agent reads), the agent becomes a "confused deputy," executing the attacker's will using legitimate access.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Establish strict governance over which AI models developers are permitted to use. Avoid using unvetted open-source models for critical code generation. Ensure all AI-generated code undergoes rigorous human review and automated security testing (SAST/DAST).</p>
-      <p><strong>Hashtags:</strong> #AI #DeepSeek #SecureCoding #CrowdStrike #Geopolitics #China #AppSec #CyberSecurity</p>
+      Adopt a "human-in-the-loop" policy for high-impact AI actions. Ensure that any new AI agent features are deployed in isolated environments first. Review Microsoft's new security guidance for Copilot Actions before broad rollout.</p>
+      <p><strong>Hashtags:</strong> #AI #Microsoft #Copilot #AgenticAI #RiskManagement #CyberSecurity #FutureTech #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>WhatsApp API Flaw Allowed Scraping of 3.5 Billion User Profiles</title>
+    <link>https://codedefence.in/blog/2025/11/25/whatsapp-api-scraping-3-5-billion-profiles</link>
+    <pubDate>Tue, 25 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/whatsapp-api-scraping-3-5-billion-profiles</guid>
+    <category>Data Privacy &amp; Social Engineering</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/whatsapp-data/800/400" alt="A massive database of user profile photos and text scrolling rapidly on a screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have disclosed a weakness in WhatsApp's API that allowed the scraping of public profile data (photos, "about" text, and status) from up to 3.5 billion accounts. While not a breach of private messages, this massive dataset helps attackers build detailed profiles for social engineering.</p>
+      <p><strong>Business Impact</strong><br/>
+      This data is a goldmine for phishers. By correlating profile photos and status updates, attackers can craft highly personalized spear-phishing campaigns targeting employees. It also poses a physical security risk if "about" text or statuses reveal location or travel plans.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The API lacked sufficient rate limiting or privacy controls to prevent automated tools from querying millions of phone numbers to harvest public profile information at scale.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Advise employees to restrict their WhatsApp privacy settings. Profile photos and "About" information should be set to "My Contacts" or "Nobody" rather than "Everyone" to mitigate the risk of reconnaissance by threat actors.</p>
+      <p><strong>Hashtags:</strong> #WhatsApp #Privacy #DataScraping #SocialEngineering #CyberSecurity #BigData #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Delta Dental Breach Exposes 146,000+ Customers via MOVEit Fallout</title>
+    <link>https://codedefence.in/blog/2025/11/25/delta-dental-breach-moveit-fallout</link>
+    <pubDate>Tue, 25 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/delta-dental-breach-moveit-fallout</guid>
+    <category>Data Breach &amp; Healthcare</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/dental-breach/800/400" alt="A dental office reception desk with a digital screen showing a 'System Compromised' alert." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Delta Dental of Virginia has reported a significant data breach affecting over 146,000 customers. The breach is part of the long tail of the MOVEit file transfer vulnerability attacks. Exposed data includes names, member IDs, and potentially sensitive health information.</p>
+      <p><strong>Business Impact</strong><br/>
+      This incident highlights the persistent, long-term liability of supply chain vulnerabilities. Even months or years after a major flaw is disclosed, the downstream impact of stolen data continues to trigger regulatory reporting requirements, fines, and class-action lawsuits.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Attackers exploited the critical MOVEit Transfer vulnerability (CVE-2023-34362) to exfiltrate data files before patches could be applied. The complex nature of third-party data handling meant the full scope of the impact took time to identify.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Ensure your organization has fully remediated all systems related to the MOVEit vulnerability. Conduct a retrospective audit of all file transfer logs from that period to ensure no data exfiltration events were missed in the initial response.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Healthcare #DeltaDental #MOVEit #SupplyChain #HIPAA #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
