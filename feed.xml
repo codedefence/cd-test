@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 25 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 25 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 26 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 26 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Warns: Active Spyware Campaigns Targeting Signal &amp; WhatsApp Users</title>
-    <link>https://codedefence.in/blog/2025/11/25/cisa-spyware-warning-signal-whatsapp</link>
-    <pubDate>Tue, 25 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/cisa-spyware-warning-signal-whatsapp</guid>
-    <category>Mobile Security &amp; Espionage</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/mobile-spyware/800/400" alt="A smartphone screen displaying secure messaging apps with a red crosshair target overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has issued a major alert warning that threat actors are actively leveraging commercial spyware and Remote Access Trojans (RATs) to compromise high-value users of Signal and WhatsApp. Attackers are using sophisticated social engineering to trick victims into installing payloads that grant full access to encrypted communications.</p>
-      <p><strong>Business Impact</strong><br/>
-      This undermines the perceived security of end-to-end encrypted messaging apps often used by executives for sensitive discussions. Successful compromise allows attackers to read messages, track location, and record calls, posing a severe risk of espionage and data leakage.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Attackers are bypassing encryption by compromising the endpoint device itself. Techniques include exploiting "linked device" features and using zero-click exploits to install spyware that captures data before it is encrypted.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review mobile security policies for executives and high-risk staff. Mandate "Lockdown Mode" on iOS devices where appropriate. Regularly audit "linked devices" in messaging apps and strictly prohibit the installation of unknown apps or configuration profiles.</p>
-      <p><strong>Hashtags:</strong> #CISA #Spyware #MobileSecurity #Signal #WhatsApp #Espionage #CyberSecurity #InfoSec</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>"Shai Hulud" Supply Chain Attack Hits 28,000+ GitHub Repositories</title>
-    <link>https://codedefence.in/blog/2025/11/25/shai-hulud-supply-chain-attack-github-npm</link>
-    <pubDate>Tue, 25 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/shai-hulud-supply-chain-attack-github-npm</guid>
+    <title>Malicious VS Code Extension "Prettier" Infects Thousands of Developers</title>
+    <link>https://codedefence.in/blog/2025/11/26/malicious-vscode-extension-prettier-anivia-stealer</link>
+    <pubDate>Wed, 26 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/malicious-vscode-extension-prettier-anivia-stealer</guid>
     <category>Supply Chain &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/github-attack/800/400" alt="A network of code repositories on a dark background, with many nodes turning malicious red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A massive automated supply chain attack, dubbed "Shai Hulud," has flooded GitHub and the npm registry. Attackers have poisoned over 28,000 repositories and 800+ npm packages with malicious code designed to steal developer credentials and secrets upon installation.</p>
+      <img src="https://picsum.photos/seed/vscodehack/800/400" alt="A code editor interface with a malicious extension installing a red skull icon in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A massive supply chain attack has targeted the Visual Studio Code Marketplace. Attackers uploaded a fake version of the popular "Prettier" code formatter, which was downloaded by thousands of developers. The extension delivers the "Anivia Stealer" malware to exfiltrate login credentials, API keys, and crypto wallets.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a wide-scale contamination of the open-source ecosystem. Developers who inadvertently use these poisoned packages introduce malware directly into the corporate build pipeline, leading to the theft of API keys, cloud tokens, and source code.</p>
+      This is a direct hit on the software supply chain. Compromised developer workstations allow attackers to steal cloud credentials (AWS/Azure keys), inject malicious code into corporate products, and bypass perimeter defenses. The impact can extend to customers if the malware reaches production builds.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers used automated scripts to create thousands of fake repositories and packages with names similar to popular libraries (typosquatting) or by repacking legitimate code with malware, exploiting the implicit trust developers place in open-source registries.</p>
+      Attackers used "typosquatting" and manipulated search rankings to trick developers into installing the fake extension instead of the legitimate one. The VS Code Marketplace lacks the strict vetting processes found in mobile app stores.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct DevOps leads to block the installation of new or unvetted npm packages immediately. Implement a private package proxy (like Artifactory or Nexus) with malware scanning enabled. Audit build logs for any suspicious outbound connections.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #GitHub #NPM #DevSecOps #Malware #ShaiHulud #CyberSecurity #InfoSec</p>
+      Direct your DevOps/Engineering leads to audit all installed VS Code extensions immediately. Block the installation of unapproved extensions and consider using a private extension marketplace or strict allow-lists for development environments.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #VSCode #DevOps #Malware #AniviaStealer #CyberSecurity #InfoSec #DeveloperSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Microsoft Warns of Novel Risks in New "Agentic AI" Features</title>
-    <link>https://codedefence.in/blog/2025/11/25/microsoft-warns-agentic-ai-risks</link>
-    <pubDate>Tue, 25 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/microsoft-warns-agentic-ai-risks</guid>
+    <title>Akira Ransomware Weaponizes SonicWall VPNs to Target M&amp;A Deals</title>
+    <link>https://codedefence.in/blog/2025/11/26/akira-ransomware-sonicwall-vpn-mergers</link>
+    <pubDate>Wed, 26 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/akira-ransomware-sonicwall-vpn-mergers</guid>
+    <category>Ransomware &amp; Network Security</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/akiramna/800/400" alt="A corporate handshake puzzle piece being broken by a glowing red ransomware lock." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Akira ransomware group is actively exploiting vulnerabilities in SonicWall SSL VPN devices to target companies involved in Mergers and Acquisitions (M&amp;A). They are stealing sensitive financial data to extort victims, threatening to leak deal details to derail negotiations.</p>
+      <p><strong>Business Impact</strong><br/>
+      M&amp;A transactions are highly sensitive and time-critical. A data leak during this process can devalue the deal, trigger regulatory investigations, or cause the transaction to collapse entirely. Akira is leveraging this pressure to demand higher ransom payments.</p>
+      <p><strong>Why It Happened</strong><br/>
+      Akira exploits known, often unpatched vulnerabilities in legacy VPN appliances to gain initial access. They target M&amp;A firms specifically because IT integration periods during mergers often result in temporary security gaps and reduced visibility.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      If your organization is undergoing M&amp;A, prioritize a security audit of the target company's perimeter, specifically VPNs. Mandate MFA on all external access points immediately and monitor for large data exfiltration events during the due diligence phase.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #Akira #SonicWall #MergersAndAcquisitions #VPN #CyberAttack #DataBreach #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Google's New "Antigravity" AI Tool Hacked 24 Hours After Launch</title>
+    <link>https://codedefence.in/blog/2025/11/26/google-antigravity-ai-tool-hacked</link>
+    <pubDate>Wed, 26 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/google-antigravity-ai-tool-hacked</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/agentic-ai/800/400" alt="A futuristic interface showing autonomous AI agents performing tasks, with a warning triangle overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>As Microsoft rolls out new "Agentic AI" capabilities (Copilot Actions) that can autonomously perform tasks on a user's behalf, the company has issued a transparent warning about novel security risks. These include the potential for AI agents to be tricked into performing unauthorized actions via prompt injection.</p>
+      <img src="https://picsum.photos/seed/googleaihack/800/400" alt="A futuristic AI interface with a cracked screen and a 'Backdoor Installed' warning message." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Just one day after its release, security researchers discovered a severe flaw in Google's new "Antigravity" AI coding assistant. The vulnerability allows attackers to inject a persistent backdoor into the user's system, enabling the installation of malware or data theft.</p>
       <p><strong>Business Impact</strong><br/>
-      The shift from "chatty" AI to "agentic" AI (agents that *do* things) introduces significant operational risk. A compromised agent could automatically delete files, send emails, or change configuration settings without direct human approval, scaling the impact of an attack.</p>
+      This highlights the immaturity of security controls in rapidly released AI tools. Organizations rushing to adopt the latest AI assistants risk introducing critical vulnerabilities into their environment. A compromised AI coding tool can silently inject backdoors into every piece of software a developer writes.</p>
       <p><strong>Why It Happened</strong><br/>
-      AI agents operate with the user's permissions. If an attacker can manipulate the agent's instructions (e.g., via a malicious email the agent reads), the agent becomes a "confused deputy," executing the attacker's will using legitimate access.</p>
+      The tool failed to properly sandbox the code execution environment, allowing the AI model to execute arbitrary system commands on the host machine when processing malicious prompts or code snippets.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Adopt a "human-in-the-loop" policy for high-impact AI actions. Ensure that any new AI agent features are deployed in isolated environments first. Review Microsoft's new security guidance for Copilot Actions before broad rollout.</p>
-      <p><strong>Hashtags:</strong> #AI #Microsoft #Copilot #AgenticAI #RiskManagement #CyberSecurity #FutureTech #InfoSec</p>
+      Restrict the use of "Antigravity" and similar bleeding-edge AI coding tools until they have passed a rigorous internal security review. Ensure developers run AI tools in isolated environments (containers/VMs) that cannot access production networks.</p>
+      <p><strong>Hashtags:</strong> #AI #Google #Antigravity #Vulnerability #AppSec #ZeroDay #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
-
+  
   <item>
-    <title>WhatsApp API Flaw Allowed Scraping of 3.5 Billion User Profiles</title>
-    <link>https://codedefence.in/blog/2025/11/25/whatsapp-api-scraping-3-5-billion-profiles</link>
-    <pubDate>Tue, 25 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/whatsapp-api-scraping-3-5-billion-profiles</guid>
-    <category>Data Privacy &amp; Social Engineering</category>
+    <title>FBI Alert: Cybercriminals Spoofing IC3.gov to Phish Victims</title>
+    <link>https://codedefence.in/blog/2025/11/26/fbi-warns-fake-ic3-website-phishing</link>
+    <pubDate>Wed, 26 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/fbi-warns-fake-ic3-website-phishing</guid>
+    <category>Social Engineering &amp; Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/whatsapp-data/800/400" alt="A massive database of user profile photos and text scrolling rapidly on a screen." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have disclosed a weakness in WhatsApp's API that allowed the scraping of public profile data (photos, "about" text, and status) from up to 3.5 billion accounts. While not a breach of private messages, this massive dataset helps attackers build detailed profiles for social engineering.</p>
+      <img src="https://picsum.photos/seed/fbiic3fake/800/400" alt="A laptop screen showing a fake FBI website with a 'Submit Personal Info' form, representing a phishing scam." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The FBI has issued an urgent warning about fake websites spoofing the official Internet Crime Complaint Center (IC3.gov). Scammers are using SEO poisoning and look-alike domains (e.g., ichelpindex.com) to trick victims of cybercrime into submitting sensitive personal data and banking details under the guise of filing a report.</p>
       <p><strong>Business Impact</strong><br/>
-      This data is a goldmine for phishers. By correlating profile photos and status updates, attackers can craft highly personalized spear-phishing campaigns targeting employees. It also poses a physical security risk if "about" text or statuses reveal location or travel plans.</p>
+      This preys on employees or individuals who have already been victimized, leading to "revictimization." It complicates incident response, as employees attempting to report a breach may inadvertently hand over more data to criminals, worsening the situation.</p>
       <p><strong>Why It Happened</strong><br/>
-      The API lacked sufficient rate limiting or privacy controls to prevent automated tools from querying millions of phone numbers to harvest public profile information at scale.</p>
+      Attackers are exploiting the trust in government institutions. They use sponsored search ads to ensure their fake sites appear at the top of search results when victims look for "how to report cybercrime."</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Advise employees to restrict their WhatsApp privacy settings. Profile photos and "About" information should be set to "My Contacts" or "Nobody" rather than "Everyone" to mitigate the risk of reconnaissance by threat actors.</p>
-      <p><strong>Hashtags:</strong> #WhatsApp #Privacy #DataScraping #SocialEngineering #CyberSecurity #BigData #InfoSec</p>
-    ]]></description>
-  </item>
-
-  <item>
-    <title>Delta Dental Breach Exposes 146,000+ Customers via MOVEit Fallout</title>
-    <link>https://codedefence.in/blog/2025/11/25/delta-dental-breach-moveit-fallout</link>
-    <pubDate>Tue, 25 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/25/delta-dental-breach-moveit-fallout</guid>
-    <category>Data Breach &amp; Healthcare</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/dental-breach/800/400" alt="A dental office reception desk with a digital screen showing a 'System Compromised' alert." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Delta Dental of Virginia has reported a significant data breach affecting over 146,000 customers. The breach is part of the long tail of the MOVEit file transfer vulnerability attacks. Exposed data includes names, member IDs, and potentially sensitive health information.</p>
-      <p><strong>Business Impact</strong><br/>
-      This incident highlights the persistent, long-term liability of supply chain vulnerabilities. Even months or years after a major flaw is disclosed, the downstream impact of stolen data continues to trigger regulatory reporting requirements, fines, and class-action lawsuits.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Attackers exploited the critical MOVEit Transfer vulnerability (CVE-2023-34362) to exfiltrate data files before patches could be applied. The complex nature of third-party data handling meant the full scope of the impact took time to identify.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Ensure your organization has fully remediated all systems related to the MOVEit vulnerability. Conduct a retrospective audit of all file transfer logs from that period to ensure no data exfiltration events were missed in the initial response.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Healthcare #DeltaDental #MOVEit #SupplyChain #HIPAA #CyberSecurity #InfoSec</p>
+      Update your incident response plan to include the correct, verified URLs for reporting cybercrime (www.ic3.gov). Educate employees that the FBI will never ask for sensitive banking passwords or fees to investigate a crime via a web form.</p>
+      <p><strong>Hashtags:</strong> #FBI #Phishing #IC3 #Fraud #SocialEngineering #CyberCrime #ScamAlert #InfoSec</p>
     ]]></description>
   </item>
 
