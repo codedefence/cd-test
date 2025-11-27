@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 26 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Wed, 26 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Thu, 27 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 27 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Malicious VS Code Extension "Prettier" Infects Thousands of Developers</title>
-    <link>https://codedefence.in/blog/2025/11/26/malicious-vscode-extension-prettier-anivia-stealer</link>
-    <pubDate>Wed, 26 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/malicious-vscode-extension-prettier-anivia-stealer</guid>
-    <category>Supply Chain &amp; DevOps</category>
+    <title>CISA Warns: State-Backed Spyware Targeting Signal &amp; WhatsApp</title>
+    <link>https://codedefence.in/blog/2025/11/27/cisa-spyware-signal-whatsapp-warning</link>
+    <pubDate>Thu, 27 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/cisa-spyware-signal-whatsapp-warning</guid>
+    <category>Mobile Security &amp; Espionage</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/vscodehack/800/400" alt="A code editor interface with a malicious extension installing a red skull icon in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A massive supply chain attack has targeted the Visual Studio Code Marketplace. Attackers uploaded a fake version of the popular "Prettier" code formatter, which was downloaded by thousands of developers. The extension delivers the "Anivia Stealer" malware to exfiltrate login credentials, API keys, and crypto wallets.</p>
+      <img src="https://picsum.photos/seed/spyware2025/800/400" alt="A smartphone screen with Signal and WhatsApp icons under a red digital surveillance lens." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has issued a high-priority warning regarding state-backed actors using commercial spyware to compromise users of encrypted messaging apps like Signal and WhatsApp. The attacks target the devices themselves rather than breaking encryption, using tactics like fake QR codes and malicious updates to link attacker-controlled devices to victim accounts.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a direct hit on the software supply chain. Compromised developer workstations allow attackers to steal cloud credentials (AWS/Azure keys), inject malicious code into corporate products, and bypass perimeter defenses. The impact can extend to customers if the malware reaches production builds.</p>
+      This threat undermines the security of encrypted communications often used by executives and high-value targets. A successful compromise allows attackers to read messages, track locations, and exfiltrate sensitive data, bypassing end-to-end encryption by hijacking the endpoint.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers used "typosquatting" and manipulated search rankings to trick developers into installing the fake extension instead of the legitimate one. The VS Code Marketplace lacks the strict vetting processes found in mobile app stores.</p>
+      Sophisticated threat actors are bypassing encryption by targeting the "endpoint gap." They use social engineering and technical exploits to gain unauthorized access to the victim's device or messaging account settings.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your DevOps/Engineering leads to audit all installed VS Code extensions immediately. Block the installation of unapproved extensions and consider using a private extension marketplace or strict allow-lists for development environments.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #VSCode #DevOps #Malware #AniviaStealer #CyberSecurity #InfoSec #DeveloperSecurity</p>
+      Advise high-risk personnel to verify "linked devices" in their messaging apps regularly. Enforce strict mobile security policies, including the use of official app stores only and rapid OS patching. Consider specialized hardened devices for critical communications.</p>
+      <p><strong>Hashtags:</strong> #CISA #Spyware #MobileSecurity #Signal #WhatsApp #Espionage #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Akira Ransomware Weaponizes SonicWall VPNs to Target M&amp;A Deals</title>
-    <link>https://codedefence.in/blog/2025/11/26/akira-ransomware-sonicwall-vpn-mergers</link>
-    <pubDate>Wed, 26 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/akira-ransomware-sonicwall-vpn-mergers</guid>
-    <category>Ransomware &amp; Network Security</category>
+    <title>Critical Authentication Bypass Flaws Patched in GitLab</title>
+    <link>https://codedefence.in/blog/2025/11/27/gitlab-critical-auth-bypass-patch</link>
+    <pubDate>Thu, 27 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/gitlab-critical-auth-bypass-patch</guid>
+    <category>Top Incident/Vulnerability &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/akiramna/800/400" alt="A corporate handshake puzzle piece being broken by a glowing red ransomware lock." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Akira ransomware group is actively exploiting vulnerabilities in SonicWall SSL VPN devices to target companies involved in Mergers and Acquisitions (M&amp;A). They are stealing sensitive financial data to extort victims, threatening to leak deal details to derail negotiations.</p>
+      <img src="https://picsum.photos/seed/gitlabhack/800/400" alt="A GitLab logo on a server rack with a glowing red unlocked padlock symbol." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>GitLab has released critical security updates for its Community (CE) and Enterprise (EE) editions to address multiple high-severity vulnerabilities. These flaws enable authentication bypass and Denial of Service (DoS) attacks, putting source code repositories at significant risk.</p>
       <p><strong>Business Impact</strong><br/>
-      M&amp;A transactions are highly sensitive and time-critical. A data leak during this process can devalue the deal, trigger regulatory investigations, or cause the transaction to collapse entirely. Akira is leveraging this pressure to demand higher ransom payments.</p>
+      GitLab is the heart of the software development lifecycle (SDLC). An authentication bypass allows attackers to access proprietary source code, inject malicious code into build pipelines (supply chain attack), or disrupt development operations entirely.</p>
       <p><strong>Why It Happened</strong><br/>
-      Akira exploits known, often unpatched vulnerabilities in legacy VPN appliances to gain initial access. They target M&amp;A firms specifically because IT integration periods during mergers often result in temporary security gaps and reduced visibility.</p>
+      The vulnerabilities stem from flaws in how GitLab handles authentication checks and resource allocation, allowing attackers to circumvent security controls or overwhelm the system.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      If your organization is undergoing M&amp;A, prioritize a security audit of the target company's perimeter, specifically VPNs. Mandate MFA on all external access points immediately and monitor for large data exfiltration events during the due diligence phase.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Akira #SonicWall #MergersAndAcquisitions #VPN #CyberAttack #DataBreach #InfoSec</p>
+      Direct DevOps and IT teams to update all self-managed GitLab instances to the latest patched versions immediately. Audit recent user access logs and commit history for any unauthorized activity.</p>
+      <p><strong>Hashtags:</strong> #GitLab #Vulnerability #DevOps #AuthBypass #SupplyChainSecurity #PatchNow #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Google's New "Antigravity" AI Tool Hacked 24 Hours After Launch</title>
-    <link>https://codedefence.in/blog/2025/11/26/google-antigravity-ai-tool-hacked</link>
-    <pubDate>Wed, 26 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/google-antigravity-ai-tool-hacked</guid>
-    <category>AI/ML in Cybersecurity</category>
+    <title>North Korean Hackers Poison npm &amp; GitHub to Target Developers</title>
+    <link>https://codedefence.in/blog/2025/11/27/north-korea-npm-github-supply-chain</link>
+    <pubDate>Thu, 27 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/north-korea-npm-github-supply-chain</guid>
+    <category>Supply Chain &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/googleaihack/800/400" alt="A futuristic AI interface with a cracked screen and a 'Backdoor Installed' warning message." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Just one day after its release, security researchers discovered a severe flaw in Google's new "Antigravity" AI coding assistant. The vulnerability allows attackers to inject a persistent backdoor into the user's system, enabling the installation of malware or data theft.</p>
+      <img src="https://picsum.photos/seed/npmpoison/800/400" alt="A developer's code editor showing a malicious package download with a warning sign." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>North Korean state-sponsored actors are conducting a sophisticated supply chain campaign targeting software developers. They are flooding the npm ecosystem and GitHub with malicious packages (delivering "OtterCookie" malware) and using fake job interviews ("Contagious Interview") to trick developers into installing them.</p>
       <p><strong>Business Impact</strong><br/>
-      This highlights the immaturity of security controls in rapidly released AI tools. Organizations rushing to adopt the latest AI assistants risk introducing critical vulnerabilities into their environment. A compromised AI coding tool can silently inject backdoors into every piece of software a developer writes.</p>
+      This targets the human element of the software supply chain. Compromising a developer's machine grants attackers access to internal networks, code signing keys, and production environments, potentially leading to massive downstream breaches.</p>
       <p><strong>Why It Happened</strong><br/>
-      The tool failed to properly sandbox the code execution environment, allowing the AI model to execute arbitrary system commands on the host machine when processing malicious prompts or code snippets.</p>
+      Attackers are exploiting the trust developers place in open-source ecosystems and the job market. They use social engineering and obfuscated code to hide malware within seemingly legitimate tools and libraries.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Restrict the use of "Antigravity" and similar bleeding-edge AI coding tools until they have passed a rigorous internal security review. Ensure developers run AI tools in isolated environments (containers/VMs) that cannot access production networks.</p>
-      <p><strong>Hashtags:</strong> #AI #Google #Antigravity #Vulnerability #AppSec #ZeroDay #CyberSecurity #InfoSec</p>
+      Implement strict controls on npm package installations (e.g., using a private proxy with scanning). Train developers to recognize social engineering tactics in job offers and to vet open-source dependencies rigorously before use.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #NPM #GitHub #NorthKorea #Lazarus #DeveloperSecurity #Malware #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>FBI Alert: Cybercriminals Spoofing IC3.gov to Phish Victims</title>
-    <link>https://codedefence.in/blog/2025/11/26/fbi-warns-fake-ic3-website-phishing</link>
-    <pubDate>Wed, 26 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/26/fbi-warns-fake-ic3-website-phishing</guid>
-    <category>Social Engineering &amp; Fraud</category>
+    <title>Congress Probes Anthropic Report on PRC-Linked Autonomous AI Attacks</title>
+    <link>https://codedefence.in/blog/2025/11/27/congress-probe-prc-ai-attacks-anthropic</link>
+    <pubDate>Thu, 27 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/congress-probe-prc-ai-attacks-anthropic</guid>
+    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/fbiic3fake/800/400" alt="A laptop screen showing a fake FBI website with a 'Submit Personal Info' form, representing a phishing scam." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The FBI has issued an urgent warning about fake websites spoofing the official Internet Crime Complaint Center (IC3.gov). Scammers are using SEO poisoning and look-alike domains (e.g., ichelpindex.com) to trick victims of cybercrime into submitting sensitive personal data and banking details under the guise of filing a report.</p>
+      <img src="https://picsum.photos/seed/aiattack2025/800/400" alt="A robotic hand typing on a keyboard with a Chinese flag overlay, symbolizing state-sponsored AI attacks." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>U.S. House panels have requested testimony from Anthropic and Google following a report that China (PRC) linked actors executed an autonomous cyberattack using AI agents. The hearing will examine how AI is transforming the offensive capabilities of foreign adversaries.</p>
       <p><strong>Business Impact</strong><br/>
-      This preys on employees or individuals who have already been victimized, leading to "revictimization." It complicates incident response, as employees attempting to report a breach may inadvertently hand over more data to criminals, worsening the situation.</p>
+      This legislative focus highlights the reality of "AI-on-AI" warfare. Organizations must prepare for automated, speed-of-machine attacks that can outpace human defenders. It may lead to new regulations on AI model safety and cybersecurity reporting.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are exploiting the trust in government institutions. They use sponsored search ads to ensure their fake sites appear at the top of search results when victims look for "how to report cybercrime."</p>
+      The Anthropic report provided high-confidence assessment of an autonomous attack, confirming that state actors are successfully weaponizing "agentic" AI to scale their offensive operations.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update your incident response plan to include the correct, verified URLs for reporting cybercrime (www.ic3.gov). Educate employees that the FBI will never ask for sensitive banking passwords or fees to investigate a crime via a web form.</p>
-      <p><strong>Hashtags:</strong> #FBI #Phishing #IC3 #Fraud #SocialEngineering #CyberCrime #ScamAlert #InfoSec</p>
+      Accelerate the adoption of AI-driven defensive tools (SOAR, autonomous SOC) to counter machine-speed threats. Monitor legislative developments for potential new compliance requirements regarding AI security and incident reporting.</p>
+      <p><strong>Hashtags:</strong> #AI #CyberWarfare #China #Congress #Anthropic #AgenticAI #Geopolitics #CyberSecurity</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Malicious Chrome Extension Drains Crypto via Hidden Fees</title>
+    <link>https://codedefence.in/blog/2025/11/27/chrome-extension-crypto-drainer-solana</link>
+    <pubDate>Thu, 27 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/chrome-extension-crypto-drainer-solana</guid>
+    <category>Financial Fraud &amp; Browser Security</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/cryptohack/800/400" alt="A Google Chrome browser extension icon with a crypto coin being siphoned away." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have discovered a malicious Chrome extension that injects hidden transfer fees into Solana transactions on the Raydium decentralized exchange. The extension stealthily modifies transaction parameters to siphon funds to an attacker-controlled wallet.</p>
+      <p><strong>Business Impact</strong><br/>
+      This highlights the risk of unvetted browser extensions in corporate environments, especially for finance and crypto-related operations. It demonstrates a sophisticated method of financial theft that is difficult for users to detect visually.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The extension abuses the permissions granted within the browser to manipulate the DOM (Document Object Model) of the target website, altering transaction data in real-time before the user signs it.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Enforce strict browser policies preventing the installation of unapproved extensions on corporate devices. For financial teams, mandate the use of dedicated, clean browsers or hardware wallets with trusted displays for transaction verification.</p>
+      <p><strong>Hashtags:</strong> #Crypto #Fraud #ChromeExtension #Solana #BrowserSecurity #CyberCrime #InfoSec #FinancialSecurity</p>
     ]]></description>
   </item>
 
