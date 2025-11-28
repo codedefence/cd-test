@@ -5,102 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Thu, 27 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Thu, 27 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Fri, 28 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Fri, 28 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Warns: State-Backed Spyware Targeting Signal &amp; WhatsApp</title>
-    <link>https://codedefence.in/blog/2025/11/27/cisa-spyware-signal-whatsapp-warning</link>
-    <pubDate>Thu, 27 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/cisa-spyware-signal-whatsapp-warning</guid>
-    <category>Mobile Security &amp; Espionage</category>
+    <title>Cyberattack Cripples London Councils, Disrupting Critical Services</title>
+    <link>https://codedefence.in/blog/2025/11/28/london-councils-cyberattack-services-disrupted</link>
+    <pubDate>Fri, 28 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/london-councils-cyberattack-services-disrupted</guid>
+    <category>Top Incident/Vulnerability &amp; Public Sector</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/spyware2025/800/400" alt="A smartphone screen with Signal and WhatsApp icons under a red digital surveillance lens." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has issued a high-priority warning regarding state-backed actors using commercial spyware to compromise users of encrypted messaging apps like Signal and WhatsApp. The attacks target the devices themselves rather than breaking encryption, using tactics like fake QR codes and malicious updates to link attacker-controlled devices to victim accounts.</p>
+      <img src="https://picsum.photos/seed/londonhack/800/400" alt="A digital map of London with red glitch effects over specific boroughs, representing a cyberattack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Three major London councils—Kensington and Chelsea, Westminster, and Hammersmith and Fulham—have confirmed they are victims of a coordinated cyberattack. The incident has taken critical IT systems and phone lines offline, disrupting public services for thousands of residents.</p>
       <p><strong>Business Impact</strong><br/>
-      This threat undermines the security of encrypted communications often used by executives and high-value targets. A successful compromise allows attackers to read messages, track locations, and exfiltrate sensitive data, bypassing end-to-end encryption by hijacking the endpoint.</p>
+      This attack highlights the vulnerability of local government infrastructure. The disruption of essential services (social care, housing, payments) erodes public trust and creates immediate operational chaos. Recovery is expected to take weeks, with significant costs for remediation and potential data loss.</p>
       <p><strong>Why It Happened</strong><br/>
-      Sophisticated threat actors are bypassing encryption by targeting the "endpoint gap." They use social engineering and technical exploits to gain unauthorized access to the victim's device or messaging account settings.</p>
+      While the specific vector is under investigation, coordinated attacks on shared services often exploit vulnerabilities in managed service providers (MSPs) or shared software platforms used by multiple local authorities.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Advise high-risk personnel to verify "linked devices" in their messaging apps regularly. Enforce strict mobile security policies, including the use of official app stores only and rapid OS patching. Consider specialized hardened devices for critical communications.</p>
-      <p><strong>Hashtags:</strong> #CISA #Spyware #MobileSecurity #Signal #WhatsApp #Espionage #CyberSecurity #InfoSec</p>
+      Public sector leaders must review their business continuity plans for a "total loss of IT" scenario. Ensure that shared service agreements include strict cybersecurity SLAs and that offline backups are available to restore critical citizen services quickly.</p>
+      <p><strong>Hashtags:</strong> #CyberAttack #London #PublicSector #CriticalInfrastructure #Ransomware #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Authentication Bypass Flaws Patched in GitLab</title>
-    <link>https://codedefence.in/blog/2025/11/27/gitlab-critical-auth-bypass-patch</link>
-    <pubDate>Thu, 27 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/gitlab-critical-auth-bypass-patch</guid>
-    <category>Top Incident/Vulnerability &amp; DevOps</category>
+    <title>Microsoft to Block External Scripts in Entra ID to Stop Phishing</title>
+    <link>https://codedefence.in/blog/2025/11/28/microsoft-entra-id-blocks-external-scripts</link>
+    <pubDate>Fri, 28 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/microsoft-entra-id-blocks-external-scripts</guid>
+    <category>Identity Security &amp; Regulatory Compliance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/gitlabhack/800/400" alt="A GitLab logo on a server rack with a glowing red unlocked padlock symbol." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>GitLab has released critical security updates for its Community (CE) and Enterprise (EE) editions to address multiple high-severity vulnerabilities. These flaws enable authentication bypass and Denial of Service (DoS) attacks, putting source code repositories at significant risk.</p>
+      <img src="https://picsum.photos/seed/entraid/800/400" alt="A secure login screen with a shield blocking a malicious code script from executing." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Microsoft has announced a major security update for Entra ID (formerly Azure AD). The platform will now block the execution of external scripts during the sign-in process. This change aims to neutralize "Adversary-in-the-Middle" (AiTM) phishing kits that inject malicious scripts to steal session tokens.</p>
       <p><strong>Business Impact</strong><br/>
-      GitLab is the heart of the software development lifecycle (SDLC). An authentication bypass allows attackers to access proprietary source code, inject malicious code into build pipelines (supply chain attack), or disrupt development operations entirely.</p>
+      This is a significant hardening of the identity perimeter. It will break many sophisticated phishing tools used to bypass MFA. However, it may also impact legitimate custom branding or customizations organizations have applied to their login pages that rely on external scripts.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities stem from flaws in how GitLab handles authentication checks and resource allocation, allowing attackers to circumvent security controls or overwhelm the system.</p>
+      AiTM attacks have become the primary method for bypassing MFA. By preventing the browser from loading unauthorized scripts during authentication, Microsoft is closing a major loophole used by phishing-as-a-service platforms like EvilProxy.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct DevOps and IT teams to update all self-managed GitLab instances to the latest patched versions immediately. Audit recent user access logs and commit history for any unauthorized activity.</p>
-      <p><strong>Hashtags:</strong> #GitLab #Vulnerability #DevOps #AuthBypass #SupplyChainSecurity #PatchNow #CyberSecurity #InfoSec</p>
+      Direct your IAM team to review your Entra ID branding configurations immediately. Test authentication flows to ensure no legitimate business processes rely on external scripts that will be blocked by this update. Prepare helpdesk staff for potential user tickets.</p>
+      <p><strong>Hashtags:</strong> #Microsoft #EntraID #IAM #MFA #Phishing #CyberSecurity #IdentitySecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>North Korean Hackers Poison npm &amp; GitHub to Target Developers</title>
-    <link>https://codedefence.in/blog/2025/11/27/north-korea-npm-github-supply-chain</link>
-    <pubDate>Thu, 27 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/north-korea-npm-github-supply-chain</guid>
-    <category>Supply Chain &amp; Nation-State Threats</category>
+    <title>Critical Flaw in ASUS AiCloud Routers (CVE-2025-59366) Exposed</title>
+    <link>https://codedefence.in/blog/2025/11/28/asus-aicloud-router-critical-vulnerability</link>
+    <pubDate>Fri, 28 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/asus-aicloud-router-critical-vulnerability</guid>
+    <category>IoT &amp; Remote Work Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/npmpoison/800/400" alt="A developer's code editor showing a malicious package download with a warning sign." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>North Korean state-sponsored actors are conducting a sophisticated supply chain campaign targeting software developers. They are flooding the npm ecosystem and GitHub with malicious packages (delivering "OtterCookie" malware) and using fake job interviews ("Contagious Interview") to trick developers into installing them.</p>
+      <img src="https://picsum.photos/seed/asusrouter/800/400" alt="A home wifi router with a red warning light and an unlocked padlock icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical authentication bypass vulnerability (CVE-2025-59366, CVSS 9.2) has been disclosed in ASUS AiCloud routers. The flaw allows unauthenticated attackers to bypass security checks and execute privileged functions, effectively taking full control of the device.</p>
       <p><strong>Business Impact</strong><br/>
-      This targets the human element of the software supply chain. Compromising a developer's machine grants attackers access to internal networks, code signing keys, and production environments, potentially leading to massive downstream breaches.</p>
+      With many employees working from home, compromised SOHO routers are a direct gateway into corporate networks. Attackers can use these devices to intercept traffic, launch man-in-the-middle attacks, or pivot into the enterprise VPN connected to the device.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are exploiting the trust developers place in open-source ecosystems and the job market. They use social engineering and obfuscated code to hide malware within seemingly legitimate tools and libraries.</p>
+      The vulnerability lies in the AiCloud remote access feature, which fails to properly validate user sessions. This allows attackers to send malicious requests that the router processes as if they came from an administrator.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Implement strict controls on npm package installations (e.g., using a private proxy with scanning). Train developers to recognize social engineering tactics in job offers and to vet open-source dependencies rigorously before use.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #NPM #GitHub #NorthKorea #Lazarus #DeveloperSecurity #Malware #InfoSec</p>
+      Issue an advisory to remote employees using ASUS routers to update their firmware immediately. Recommend disabling the "AiCloud" and "Remote Access" features on personal routers unless strictly necessary, as these are frequent targets for exploitation.</p>
+      <p><strong>Hashtags:</strong> #ASUS #Vulnerability #IoT #RemoteWork #RouterSecurity #CyberSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
-
+  
   <item>
-    <title>Congress Probes Anthropic Report on PRC-Linked Autonomous AI Attacks</title>
-    <link>https://codedefence.in/blog/2025/11/27/congress-probe-prc-ai-attacks-anthropic</link>
-    <pubDate>Thu, 27 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/congress-probe-prc-ai-attacks-anthropic</guid>
-    <category>AI/ML in Cybersecurity &amp; Geopolitics</category>
+    <title>"Shai Hulud 2.0" Supply Chain Worm Compromises 1,200+ Organizations</title>
+    <link>https://codedefence.in/blog/2025/11/28/shai-hulud-2-0-worm-supply-chain</link>
+    <pubDate>Fri, 28 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/shai-hulud-2-0-worm-supply-chain</guid>
+    <category>Supply Chain &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiattack2025/800/400" alt="A robotic hand typing on a keyboard with a Chinese flag overlay, symbolizing state-sponsored AI attacks." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>U.S. House panels have requested testimony from Anthropic and Google following a report that China (PRC) linked actors executed an autonomous cyberattack using AI agents. The hearing will examine how AI is transforming the offensive capabilities of foreign adversaries.</p>
+      <img src="https://picsum.photos/seed/wormattack/800/400" alt="A digital worm tunneling through a network of server icons, turning them red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The "Shai Hulud" supply chain attack has escalated. A new variant, version 2.0, has been detected spreading automatically through CI/CD pipelines, compromising over 1,200 organizations including major banks and Fortune 500 companies. The worm exposes critical runtime secrets and API keys.</p>
       <p><strong>Business Impact</strong><br/>
-      This legislative focus highlights the reality of "AI-on-AI" warfare. Organizations must prepare for automated, speed-of-machine attacks that can outpace human defenders. It may lead to new regulations on AI model safety and cybersecurity reporting.</p>
+      This is a self-propagating supply chain disaster. The worm leverages compromised credentials from one victim to commit malicious code to the repositories of their partners and vendors, creating a cascading effect. Stolen secrets allow immediate access to cloud infrastructure and customer data.</p>
       <p><strong>Why It Happened</strong><br/>
-      The Anthropic report provided high-confidence assessment of an autonomous attack, confirming that state actors are successfully weaponizing "agentic" AI to scale their offensive operations.</p>
+      The worm targets unmonitored "non-human" identities (service accounts) in DevOps environments. Once inside a build pipeline, it injects itself into the codebase and pushes the infected update to downstream consumers.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Accelerate the adoption of AI-driven defensive tools (SOAR, autonomous SOC) to counter machine-speed threats. Monitor legislative developments for potential new compliance requirements regarding AI security and incident reporting.</p>
-      <p><strong>Hashtags:</strong> #AI #CyberWarfare #China #Congress #Anthropic #AgenticAI #Geopolitics #CyberSecurity</p>
+      Activate your incident response plan for a major supply chain event. Scan all CI/CD logs for unauthorized commits or unexpected external connections. Rotate all secrets (API keys, cloud tokens) used in your build pipelines immediately as a precaution.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #DevOps #ShaiHulud #Malware #CyberSecurity #CI_CD #DataBreach #InfoSec</p>
     ]]></description>
   </item>
-
+  
   <item>
-    <title>Malicious Chrome Extension Drains Crypto via Hidden Fees</title>
-    <link>https://codedefence.in/blog/2025/11/27/chrome-extension-crypto-drainer-solana</link>
-    <pubDate>Thu, 27 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/27/chrome-extension-crypto-drainer-solana</guid>
-    <category>Financial Fraud &amp; Browser Security</category>
+    <title>Comcast Fined $1.5M by FCC for Vendor Data Breach</title>
+    <link>https://codedefence.in/blog/2025/11/28/comcast-fcc-fine-vendor-breach</link>
+    <pubDate>Fri, 28 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/comcast-fcc-fine-vendor-breach</guid>
+    <category>Regulatory Compliance &amp; Third-Party Risk</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cryptohack/800/400" alt="A Google Chrome browser extension icon with a crypto coin being siphoned away." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have discovered a malicious Chrome extension that injects hidden transfer fees into Solana transactions on the Raydium decentralized exchange. The extension stealthily modifies transaction parameters to siphon funds to an attacker-controlled wallet.</p>
+      <img src="https://picsum.photos/seed/comcastfine/800/400" alt="A gavel striking a stack of documents stamped 'Data Breach', with a $1.5M fine notice." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Comcast has agreed to pay a $1.5 million civil penalty to settle an FCC investigation into a 2023 data breach. The breach occurred at a third-party vendor, exposing the sensitive data of over 35 million customers. The FCC cited a failure to properly oversee vendor security practices.</p>
       <p><strong>Business Impact</strong><br/>
-      This highlights the risk of unvetted browser extensions in corporate environments, especially for finance and crypto-related operations. It demonstrates a sophisticated method of financial theft that is difficult for users to detect visually.</p>
+      This enforcement action sets a precedent: organizations are financially and legally liable for the security failures of their vendors. It underscores that outsourcing operations does not outsource risk. The fine serves as a warning to all regulated industries regarding third-party oversight.</p>
       <p><strong>Why It Happened</strong><br/>
-      The extension abuses the permissions granted within the browser to manipulate the DOM (Document Object Model) of the target website, altering transaction data in real-time before the user signs it.</p>
+      The breach occurred because a vendor failed to implement basic security controls (like MFA) on a legacy system. Comcast was penalized for failing to audit and enforce security requirements outlined in its vendor contracts.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Enforce strict browser policies preventing the installation of unapproved extensions on corporate devices. For financial teams, mandate the use of dedicated, clean browsers or hardware wallets with trusted displays for transaction verification.</p>
-      <p><strong>Hashtags:</strong> #Crypto #Fraud #ChromeExtension #Solana #BrowserSecurity #CyberCrime #InfoSec #FinancialSecurity</p>
+      Review your Third-Party Risk Management (TPRM) contracts. Ensure you have the "right to audit" and are actually exercising it for high-risk vendors. Verify that your vendors are meeting the same security standards you apply internally.</p>
+      <p><strong>Hashtags:</strong> #Comcast #FCC #DataBreach #Compliance #TPRM #ThirdPartyRisk #CyberLaw #InfoSec</p>
     ]]></description>
   </item>
 
