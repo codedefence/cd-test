@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Fri, 28 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Fri, 28 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sat, 29 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sat, 29 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Cyberattack Cripples London Councils, Disrupting Critical Services</title>
-    <link>https://codedefence.in/blog/2025/11/28/london-councils-cyberattack-services-disrupted</link>
-    <pubDate>Fri, 28 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/london-councils-cyberattack-services-disrupted</guid>
-    <category>Top Incident/Vulnerability &amp; Public Sector</category>
+    <title>Tomiris APT Upgrades Toolkit: Uses Telegram &amp; Discord for Stealth C2</title>
+    <link>https://codedefence.in/blog/2025/11/29/tomiris-apt-telegram-discord-c2</link>
+    <pubDate>Sat, 29 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/tomiris-apt-telegram-discord-c2</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/londonhack/800/400" alt="A digital map of London with red glitch effects over specific boroughs, representing a cyberattack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Three major London councils—Kensington and Chelsea, Westminster, and Hammersmith and Fulham—have confirmed they are victims of a coordinated cyberattack. The incident has taken critical IT systems and phone lines offline, disrupting public services for thousands of residents.</p>
+      <img src="https://picsum.photos/seed/tomirisapt/800/400" alt="A diplomatic briefcase connected to digital cables featuring Telegram and Discord logos, symbolizing stealthy espionage." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new intelligence report reveals that the "Tomiris" cyber-espionage group (linked to Russian-speaking actors) has significantly upgraded its tactics targeting government and diplomatic entities in Central Asia. The group is now routing command-and-control (C2) traffic through legitimate services like Telegram and Discord to blend in with normal network noise.</p>
       <p><strong>Business Impact</strong><br/>
-      This attack highlights the vulnerability of local government infrastructure. The disruption of essential services (social care, housing, payments) erodes public trust and creates immediate operational chaos. Recovery is expected to take weeks, with significant costs for remediation and potential data loss.</p>
+      This "living-off-the-land" network strategy makes detection extremely difficult for traditional firewalls, which typically allow traffic to these popular collaboration apps. Successful espionage campaigns can lead to the theft of highly sensitive diplomatic cables, negotiation strategies, and personnel data.</p>
       <p><strong>Why It Happened</strong><br/>
-      While the specific vector is under investigation, coordinated attacks on shared services often exploit vulnerabilities in managed service providers (MSPs) or shared software platforms used by multiple local authorities.</p>
+      APT groups are adapting to improved perimeter defenses. By using trusted, high-reputation domains (like Discord) for malware communication, they bypass blocklists and anomaly detection systems that would normally flag connections to unknown servers.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Public sector leaders must review their business continuity plans for a "total loss of IT" scenario. Ensure that shared service agreements include strict cybersecurity SLAs and that offline backups are available to restore critical citizen services quickly.</p>
-      <p><strong>Hashtags:</strong> #CyberAttack #London #PublicSector #CriticalInfrastructure #Ransomware #InfoSec #CyberSecurity</p>
+      Direct your SOC to review network logs for anomalous traffic patterns to legitimate collaboration tools, especially from critical server subnets. Consider restricting access to Discord/Telegram on sensitive government or executive networks unless strictly necessary.</p>
+      <p><strong>Hashtags:</strong> #Tomiris #APT #Espionage #Russia #C2 #Discord #Telegram #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Microsoft to Block External Scripts in Entra ID to Stop Phishing</title>
-    <link>https://codedefence.in/blog/2025/11/28/microsoft-entra-id-blocks-external-scripts</link>
-    <pubDate>Fri, 28 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/microsoft-entra-id-blocks-external-scripts</guid>
-    <category>Identity Security &amp; Regulatory Compliance</category>
+    <title>New "Albiriox" Android Malware Offers Complete Device Takeover as a Service</title>
+    <link>https://codedefence.in/blog/2025/11/29/albiriox-android-malware-maas</link>
+    <pubDate>Sat, 29 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/albiriox-android-malware-maas</guid>
+    <category>Mobile Security &amp; Cybercrime</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/entraid/800/400" alt="A secure login screen with a shield blocking a malicious code script from executing." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Microsoft has announced a major security update for Entra ID (formerly Azure AD). The platform will now block the execution of external scripts during the sign-in process. This change aims to neutralize "Adversary-in-the-Middle" (AiTM) phishing kits that inject malicious scripts to steal session tokens.</p>
+      <img src="https://picsum.photos/seed/albirioxmalware/800/400" alt="An Android robot puppet being controlled by digital strings, representing complete device takeover." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Security researchers have identified "Albiriox," a sophisticated new Android malware family being sold as Malware-as-a-Service (MaaS). The malware grants attackers full remote control over infected devices, including screen recording, keylogging, and bypassing banking 2FA mechanisms.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a significant hardening of the identity perimeter. It will break many sophisticated phishing tools used to bypass MFA. However, it may also impact legitimate custom branding or customizations organizations have applied to their login pages that rely on external scripts.</p>
+      The MaaS model lowers the barrier to entry, meaning sophisticated mobile attacks are becoming cheaper and more widespread. Corporate BYOD fleets are at high risk; an infected employee device can be used to steal MFA tokens, access corporate email, and authorize fraudulent financial transactions.</p>
       <p><strong>Why It Happened</strong><br/>
-      AiTM attacks have become the primary method for bypassing MFA. By preventing the browser from loading unauthorized scripts during authentication, Microsoft is closing a major loophole used by phishing-as-a-service platforms like EvilProxy.</p>
+      Albiriox exploits Android Accessibility Services (a common but dangerous permission) to automate interactions on the screen. It is typically distributed via malicious apps sideloaded from third-party stores or disguised as legitimate utilities.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your IAM team to review your Entra ID branding configurations immediately. Test authentication flows to ensure no legitimate business processes rely on external scripts that will be blocked by this update. Prepare helpdesk staff for potential user tickets.</p>
-      <p><strong>Hashtags:</strong> #Microsoft #EntraID #IAM #MFA #Phishing #CyberSecurity #IdentitySecurity #InfoSec</p>
+      Enforce strict Mobile Application Management (MAM) policies that block the installation of apps from unknown sources. deploying mobile threat defense (MTD) agents that can detect abuse of Accessibility Services on managed devices.</p>
+      <p><strong>Hashtags:</strong> #Android #Malware #Albiriox #MobileSecurity #MaaS #BankingTrojan #CyberCrime #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Flaw in ASUS AiCloud Routers (CVE-2025-59366) Exposed</title>
-    <link>https://codedefence.in/blog/2025/11/28/asus-aicloud-router-critical-vulnerability</link>
-    <pubDate>Fri, 28 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/asus-aicloud-router-critical-vulnerability</guid>
-    <category>IoT &amp; Remote Work Security</category>
+    <title>Japan Announces New Cyber Strategy to Counter Foreign AI Disinformation</title>
+    <link>https://codedefence.in/blog/2025/11/29/japan-cyber-strategy-foreign-threats</link>
+    <pubDate>Sat, 29 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/japan-cyber-strategy-foreign-threats</guid>
+    <category>Geopolitics &amp; AI</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/asusrouter/800/400" alt="A home wifi router with a red warning light and an unlocked padlock icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical authentication bypass vulnerability (CVE-2025-59366, CVSS 9.2) has been disclosed in ASUS AiCloud routers. The flaw allows unauthenticated attackers to bypass security checks and execute privileged functions, effectively taking full control of the device.</p>
+      <img src="https://picsum.photos/seed/japanstrategy/800/400" alt="The Japanese flag shielding a digital infrastructure map from red disinformation arrows." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Japanese government has drafted a new national cybersecurity strategy specifically addressing the rise of state-supported cyber threats from China, Russia, and North Korea. A key focus is "active cyber defense" and countering AI-generated disinformation intended to destabilize democracy and critical infrastructure.</p>
       <p><strong>Business Impact</strong><br/>
-      With many employees working from home, compromised SOHO routers are a direct gateway into corporate networks. Attackers can use these devices to intercept traffic, launch man-in-the-middle attacks, or pivot into the enterprise VPN connected to the device.</p>
+      Multinational companies operating in Japan should expect stricter compliance requirements regarding critical infrastructure protection and data handling. The strategy signals a more aggressive government stance on attributing and countering cyber threats, potentially impacting the geopolitical risk landscape for businesses in the region.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability lies in the AiCloud remote access feature, which fails to properly validate user sessions. This allows attackers to send malicious requests that the router processes as if they came from an administrator.</p>
+      The proliferation of Generative AI has made it easier for foreign adversaries to launch massive, convincing disinformation campaigns. Japan views this as a direct threat to national stability and election integrity, requiring a coordinated state-led response.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Issue an advisory to remote employees using ASUS routers to update their firmware immediately. Recommend disabling the "AiCloud" and "Remote Access" features on personal routers unless strictly necessary, as these are frequent targets for exploitation.</p>
-      <p><strong>Hashtags:</strong> #ASUS #Vulnerability #IoT #RemoteWork #RouterSecurity #CyberSecurity #PatchNow #InfoSec</p>
+      Review your crisis communication plans for Japan-based operations. Ensure you have protocols to rapidly detect and debunk AI-driven disinformation targeting your brand or executives in the region. Align local security policies with upcoming Japanese compliance mandates.</p>
+      <p><strong>Hashtags:</strong> #Japan #CyberStrategy #Geopolitics #AI #Disinformation #China #Russia #ActiveDefense</p>
     ]]></description>
   </item>
   
   <item>
-    <title>"Shai Hulud 2.0" Supply Chain Worm Compromises 1,200+ Organizations</title>
-    <link>https://codedefence.in/blog/2025/11/28/shai-hulud-2-0-worm-supply-chain</link>
-    <pubDate>Fri, 28 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/shai-hulud-2-0-worm-supply-chain</guid>
-    <category>Supply Chain &amp; DevOps</category>
+    <title>AI-Powered Phishing Attacks Spike 620%, Mimicking Major Brands</title>
+    <link>https://codedefence.in/blog/2025/11/29/ai-phishing-spike-620-percent</link>
+    <pubDate>Sat, 29 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/ai-phishing-spike-620-percent</guid>
+    <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/wormattack/800/400" alt="A digital worm tunneling through a network of server icons, turning them red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The "Shai Hulud" supply chain attack has escalated. A new variant, version 2.0, has been detected spreading automatically through CI/CD pipelines, compromising over 1,200 organizations including major banks and Fortune 500 companies. The worm exposes critical runtime secrets and API keys.</p>
+      <img src="https://picsum.photos/seed/aiphishing620/800/400" alt="A graph showing a vertical spike in phishing attacks, with an AI robot typing a perfect email." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new report highlights a staggering 620% surge in phishing attacks that utilize AI to generate flawless lures. These attacks predominantly mimic trusted brands like Amazon and FedEx, using perfect grammar and personalization to bypass traditional "red flag" awareness training.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a self-propagating supply chain disaster. The worm leverages compromised credentials from one victim to commit malicious code to the repositories of their partners and vendors, creating a cascading effect. Stolen secrets allow immediate access to cloud infrastructure and customer data.</p>
+      The era of spotting phishing via "typos and bad English" is over. AI tools allow attackers to scale highly convincing social engineering campaigns with near-zero effort. This dramatically increases the click rate on malicious links, leading to more frequent credential theft and ransomware entry.</p>
       <p><strong>Why It Happened</strong><br/>
-      The worm targets unmonitored "non-human" identities (service accounts) in DevOps environments. Once inside a build pipeline, it injects itself into the codebase and pushes the infected update to downstream consumers.</p>
+      Cybercriminal gangs have adopted Large Language Models (LLMs) to automate the creation of phishing kits. These tools can scrape victim data to personalize messages instantly, making mass-phishing campaigns feel like targeted spear-phishing.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Activate your incident response plan for a major supply chain event. Scan all CI/CD logs for unauthorized commits or unexpected external connections. Rotate all secrets (API keys, cloud tokens) used in your build pipelines immediately as a precaution.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #DevOps #ShaiHulud #Malware #CyberSecurity #CI_CD #DataBreach #InfoSec</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Comcast Fined $1.5M by FCC for Vendor Data Breach</title>
-    <link>https://codedefence.in/blog/2025/11/28/comcast-fcc-fine-vendor-breach</link>
-    <pubDate>Fri, 28 Nov 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/28/comcast-fcc-fine-vendor-breach</guid>
-    <category>Regulatory Compliance &amp; Third-Party Risk</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/comcastfine/800/400" alt="A gavel striking a stack of documents stamped 'Data Breach', with a $1.5M fine notice." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Comcast has agreed to pay a $1.5 million civil penalty to settle an FCC investigation into a 2023 data breach. The breach occurred at a third-party vendor, exposing the sensitive data of over 35 million customers. The FCC cited a failure to properly oversee vendor security practices.</p>
-      <p><strong>Business Impact</strong><br/>
-      This enforcement action sets a precedent: organizations are financially and legally liable for the security failures of their vendors. It underscores that outsourcing operations does not outsource risk. The fine serves as a warning to all regulated industries regarding third-party oversight.</p>
-      <p><strong>Why It Happened</strong><br/>
-      The breach occurred because a vendor failed to implement basic security controls (like MFA) on a legacy system. Comcast was penalized for failing to audit and enforce security requirements outlined in its vendor contracts.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review your Third-Party Risk Management (TPRM) contracts. Ensure you have the "right to audit" and are actually exercising it for high-risk vendors. Verify that your vendors are meeting the same security standards you apply internally.</p>
-      <p><strong>Hashtags:</strong> #Comcast #FCC #DataBreach #Compliance #TPRM #ThirdPartyRisk #CyberLaw #InfoSec</p>
+      Shift your email security strategy from "content inspection" (looking for bad words) to "behavioral analysis" and identity verification (DMARC/SPF/DKIM). Invest in AI-driven email defense tools that can fight fire with fire by detecting AI-generated text patterns.</p>
+      <p><strong>Hashtags:</strong> #AI #Phishing #SocialEngineering #CyberSecurity #Fraud #EmailSecurity #InfoSec #Forbes</p>
     ]]></description>
   </item>
 
