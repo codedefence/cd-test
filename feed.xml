@@ -5,83 +5,102 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sat, 29 Nov 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sat, 29 Nov 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sun, 30 Nov 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sun, 30 Nov 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Tomiris APT Upgrades Toolkit: Uses Telegram &amp; Discord for Stealth C2</title>
-    <link>https://codedefence.in/blog/2025/11/29/tomiris-apt-telegram-discord-c2</link>
-    <pubDate>Sat, 29 Nov 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/tomiris-apt-telegram-discord-c2</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
+    <title>Coordinated Cyberattack Cripples London Councils</title>
+    <link>https://codedefence.in/blog/2025/11/30/london-councils-cyberattack-services-down</link>
+    <pubDate>Sun, 30 Nov 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/30/london-councils-cyberattack-services-down</guid>
+    <category>Top Incident/Vulnerability &amp; Public Sector</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/tomirisapt/800/400" alt="A diplomatic briefcase connected to digital cables featuring Telegram and Discord logos, symbolizing stealthy espionage." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new intelligence report reveals that the "Tomiris" cyber-espionage group (linked to Russian-speaking actors) has significantly upgraded its tactics targeting government and diplomatic entities in Central Asia. The group is now routing command-and-control (C2) traffic through legitimate services like Telegram and Discord to blend in with normal network noise.</p>
+      <img src="https://picsum.photos/seed/londonhack2025/800/400" alt="A map of London with digital glitch effects over key boroughs, representing a cyberattack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A coordinated cyberattack has hit multiple London councils, significantly disrupting public services and potentially compromising resident data. While the full extent is being investigated, early reports suggest a ransomware incident targeting shared IT infrastructure.</p>
       <p><strong>Business Impact</strong><br/>
-      This "living-off-the-land" network strategy makes detection extremely difficult for traditional firewalls, which typically allow traffic to these popular collaboration apps. Successful espionage campaigns can lead to the theft of highly sensitive diplomatic cables, negotiation strategies, and personnel data.</p>
+      This incident underscores the fragility of public sector IT and the cascading risks of shared service models. Disruption to essential services (housing, benefits) erodes public trust and incurs high recovery costs.</p>
       <p><strong>Why It Happened</strong><br/>
-      APT groups are adapting to improved perimeter defenses. By using trusted, high-reputation domains (like Discord) for malware communication, they bypass blocklists and anomaly detection systems that would normally flag connections to unknown servers.</p>
+      Attackers likely exploited vulnerabilities in a managed service provider (MSP) or shared software platform used by the councils, allowing them to hit multiple targets simultaneously.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your SOC to review network logs for anomalous traffic patterns to legitimate collaboration tools, especially from critical server subnets. Consider restricting access to Discord/Telegram on sensitive government or executive networks unless strictly necessary.</p>
-      <p><strong>Hashtags:</strong> #Tomiris #APT #Espionage #Russia #C2 #Discord #Telegram #CyberSecurity #InfoSec</p>
+      Review business continuity plans for critical service disruptions. Ensure that third-party vendors and shared service providers adhere to strict security standards and have isolated backup systems.</p>
+      <p><strong>Hashtags:</strong> #CyberAttack #London #PublicSector #Ransomware #CriticalInfrastructure #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "Albiriox" Android Malware Offers Complete Device Takeover as a Service</title>
-    <link>https://codedefence.in/blog/2025/11/29/albiriox-android-malware-maas</link>
-    <pubDate>Sat, 29 Nov 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/albiriox-android-malware-maas</guid>
-    <category>Mobile Security &amp; Cybercrime</category>
+    <title>Asahi Group Ransomware Breach Exposes 2 Million People</title>
+    <link>https://codedefence.in/blog/2025/11/30/asahi-group-ransomware-data-breach</link>
+    <pubDate>Sun, 30 Nov 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/30/asahi-group-ransomware-data-breach</guid>
+    <category>Data Breach &amp; Ransomware</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/albirioxmalware/800/400" alt="An Android robot puppet being controlled by digital strings, representing complete device takeover." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers have identified "Albiriox," a sophisticated new Android malware family being sold as Malware-as-a-Service (MaaS). The malware grants attackers full remote control over infected devices, including screen recording, keylogging, and bypassing banking 2FA mechanisms.</p>
+      <img src="https://picsum.photos/seed/asahibreach/800/400" alt="A beverage production line halted by a red digital padlock, symbolizing a ransomware attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Asahi Group Holdings has confirmed that a ransomware attack earlier this year resulted in the leakage of personal data belonging to approximately 2 million customers and employees. The Qilin ransomware group has claimed responsibility for the attack.</p>
       <p><strong>Business Impact</strong><br/>
-      The MaaS model lowers the barrier to entry, meaning sophisticated mobile attacks are becoming cheaper and more widespread. Corporate BYOD fleets are at high risk; an infected employee device can be used to steal MFA tokens, access corporate email, and authorize fraudulent financial transactions.</p>
+      This massive breach highlights the "long tail" of ransomware incidents. Beyond operational downtime, the exfiltration of employee and customer PII leads to long-term reputational damage, regulatory fines, and potential class-action lawsuits.</p>
       <p><strong>Why It Happened</strong><br/>
-      Albiriox exploits Android Accessibility Services (a common but dangerous permission) to automate interactions on the screen. It is typically distributed via malicious apps sideloaded from third-party stores or disguised as legitimate utilities.</p>
+      Qilin ransomware affiliates target large enterprises using double-extortion tactics. They likely gained initial access via compromised credentials or unpatched VPNs, exfiltrating data before encrypting systems.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Enforce strict Mobile Application Management (MAM) policies that block the installation of apps from unknown sources. deploying mobile threat defense (MTD) agents that can detect abuse of Accessibility Services on managed devices.</p>
-      <p><strong>Hashtags:</strong> #Android #Malware #Albiriox #MobileSecurity #MaaS #BankingTrojan #CyberCrime #InfoSec</p>
+      Assume that "encrypt-only" attacks are rare; data theft is the norm. focus heavily on Data Loss Prevention (DLP) and egress filtering to detect large data transfers before encryption occurs.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Ransomware #Asahi #Qilin #CyberAttack #Privacy #InfoSec #GDPR</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Japan Announces New Cyber Strategy to Counter Foreign AI Disinformation</title>
-    <link>https://codedefence.in/blog/2025/11/29/japan-cyber-strategy-foreign-threats</link>
-    <pubDate>Sat, 29 Nov 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/japan-cyber-strategy-foreign-threats</guid>
-    <category>Geopolitics &amp; AI</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/japanstrategy/800/400" alt="The Japanese flag shielding a digital infrastructure map from red disinformation arrows." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Japanese government has drafted a new national cybersecurity strategy specifically addressing the rise of state-supported cyber threats from China, Russia, and North Korea. A key focus is "active cyber defense" and countering AI-generated disinformation intended to destabilize democracy and critical infrastructure.</p>
-      <p><strong>Business Impact</strong><br/>
-      Multinational companies operating in Japan should expect stricter compliance requirements regarding critical infrastructure protection and data handling. The strategy signals a more aggressive government stance on attributing and countering cyber threats, potentially impacting the geopolitical risk landscape for businesses in the region.</p>
-      <p><strong>Why It Happened</strong><br/>
-      The proliferation of Generative AI has made it easier for foreign adversaries to launch massive, convincing disinformation campaigns. Japan views this as a direct threat to national stability and election integrity, requiring a coordinated state-led response.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Review your crisis communication plans for Japan-based operations. Ensure you have protocols to rapidly detect and debunk AI-driven disinformation targeting your brand or executives in the region. Align local security policies with upcoming Japanese compliance mandates.</p>
-      <p><strong>Hashtags:</strong> #Japan #CyberStrategy #Geopolitics #AI #Disinformation #China #Russia #ActiveDefense</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>AI-Powered Phishing Attacks Spike 620%, Mimicking Major Brands</title>
-    <link>https://codedefence.in/blog/2025/11/29/ai-phishing-spike-620-percent</link>
-    <pubDate>Sat, 29 Nov 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/29/ai-phishing-spike-620-percent</guid>
+    <title>CrowdStrike: "DeepSeek" AI Generates Insecure Code on Sensitive Prompts</title>
+    <link>https://codedefence.in/blog/2025/11/30/crowdstrike-deepseek-ai-insecure-code</link>
+    <pubDate>Sun, 30 Nov 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/30/crowdstrike-deepseek-ai-insecure-code</guid>
     <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiphishing620/800/400" alt="A graph showing a vertical spike in phishing attacks, with an AI robot typing a perfect email." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new report highlights a staggering 620% surge in phishing attacks that utilize AI to generate flawless lures. These attacks predominantly mimic trusted brands like Amazon and FedEx, using perfect grammar and personalization to bypass traditional "red flag" awareness training.</p>
+      <img src="https://picsum.photos/seed/ai-code-flaw/800/400" alt="An AI interface generating computer code with highlighted security vulnerabilities in red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>New research from CrowdStrike indicates that the "DeepSeek" AI model is prone to generating code with security flaws when prompts involve politically sensitive topics. This suggests that alignment filters may inadvertently degrade the model's coding capabilities in specific contexts.</p>
       <p><strong>Business Impact</strong><br/>
-      The era of spotting phishing via "typos and bad English" is over. AI tools allow attackers to scale highly convincing social engineering campaigns with near-zero effort. This dramatically increases the click rate on malicious links, leading to more frequent credential theft and ransomware entry.</p>
+      This reveals a hidden risk in AI-assisted development. Relying on unvetted or specific foreign AI models for code generation can introduce systemic vulnerabilities into software products, creating a new form of supply chain risk.</p>
       <p><strong>Why It Happened</strong><br/>
-      Cybercriminal gangs have adopted Large Language Models (LLMs) to automate the creation of phishing kits. These tools can scrape victim data to personalize messages instantly, making mass-phishing campaigns feel like targeted spear-phishing.</p>
+      The model's training or fine-tuning process appears to prioritize content filtering over code correctness in certain scenarios, leading to the generation of insecure or buggy code structures.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Shift your email security strategy from "content inspection" (looking for bad words) to "behavioral analysis" and identity verification (DMARC/SPF/DKIM). Invest in AI-driven email defense tools that can fight fire with fire by detecting AI-generated text patterns.</p>
-      <p><strong>Hashtags:</strong> #AI #Phishing #SocialEngineering #CyberSecurity #Fraud #EmailSecurity #InfoSec #Forbes</p>
+      Establish strict governance on which AI coding assistants are permitted. Mandate that all AI-generated code must undergo rigorous human review and automated security scanning (SAST) before deployment.</p>
+      <p><strong>Hashtags:</strong> #AI #SecureCoding #DeepSeek #CrowdStrike #AppSec #DevSecOps #CyberSecurity #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>CISA Adds OpenPLC ScadaBR Flaw (CVE-2021-26829) to KEV Catalog</title>
+    <link>https://codedefence.in/blog/2025/11/30/cisa-kev-openplc-scadabr-vulnerability</link>
+    <pubDate>Sun, 30 Nov 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/30/cisa-kev-openplc-scadabr-vulnerability</guid>
+    <category>Supply Chain / OT/ICS Security</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/icsvulnerability/800/400" alt="An industrial control panel screen showing a critical alert and a broken circuit connection." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a critical vulnerability in OpenPLC ScadaBR (CVE-2021-26829) to its Known Exploited Vulnerabilities (KEV) catalog. Though an older CVE, its addition confirms recent active weaponization against industrial control environments.</p>
+      <p><strong>Business Impact</strong><br/>
+      This flaw affects OT networks using OpenPLC. Exploitation allows attackers to inject malicious scripts or manipulate system settings, potentially disrupting physical industrial processes or using the compromised system as a pivot point into the wider OT network.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The vulnerability is a Cross-Site Scripting (XSS) flaw in the system settings component. Attackers are revisiting older, unpatched OT vulnerabilities because many industrial environments operate on "legacy" cycles and remain unpatched for years.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Direct OT security teams to audit for OpenPLC usage immediately. Apply patches or isolate affected systems behind strict firewalls. Ensure that no ICS/SCADA interfaces are exposed to the public internet.</p>
+      <p><strong>Hashtags:</strong> #CISA #KEV #OTSecurity #ICS #OpenPLC #SCADA #Vulnerability #CriticalInfrastructure #InfoSec</p>
+    ]]></description>
+  </item>
+
+  <item>
+    <title>Tenable CEO Warns of "Machine-Speed" Attacks, Pushes Exposure Management</title>
+    <link>https://codedefence.in/blog/2025/11/30/tenable-ceo-exposure-management-warning</link>
+    <pubDate>Sun, 30 Nov 2025 19:35:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/11/30/tenable-ceo-exposure-management-warning</guid>
+    <category>Industry Trends &amp; Strategy</category>
+    <description><![CDATA[
+      <img src="https://picsum.photos/seed/cyberstrategy/800/400" alt="A strategic chessboard with digital pieces moving at high speed, representing machine-speed cyber defense." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Ahead of Black Hat MEA, Tenable CEO Mark Thurmond has issued a warning that traditional security models are failing against "machine-speed" attacks. He advocates for a shift to "Exposure Management," using AI to prioritize the 1-3% of vulnerabilities that actually pose a risk.</p>
+      <p><strong>Business Impact</strong><br/>
+      This reflects a strategic pivot for CISOs. The volume of vulnerabilities is unmanageable manually. Adopting exposure management allows organizations to move from "patching everything" (impossible) to "patching what matters" (effective), reducing real-world risk more efficiently.</p>
+      <p><strong>Why It Happened</strong><br/>
+      The attack surface has expanded exponentially (Cloud, OT, Identity). Attackers use automation to exploit flaws faster than defenders can patch. Defensive strategies must evolve to be predictive and risk-based rather than reactive.</p>
+      <p><strong>Recommended Executive Action</strong><br/>
+      Evaluate your vulnerability management program. Is it just counting bugs, or is it measuring risk? Consider adopting Exposure Management platforms that correlate vulnerabilities with threat intelligence and asset criticality to prioritize remediation.</p>
+      <p><strong>Hashtags:</strong> #ExposureManagement #Tenable #CyberStrategy #CISO #RiskManagement #AI #FutureOfSecurity #InfoSec</p>
     ]]></description>
   </item>
 
