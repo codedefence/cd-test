@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 01 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 01 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 02 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 02 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>OpenAI Data Breach Exposed via Third-Party Vendor Mixpanel</title>
-    <link>https://codedefence.in/blog/2025/12/01/openai-data-breach-mixpanel-vendor</link>
-    <pubDate>Mon, 01 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/01/openai-data-breach-mixpanel-vendor</guid>
-    <category>Top Incident/Vulnerability &amp; Supply Chain</category>
+    <title>Google Patches Two Android Zero-Days Exploited in the Wild (CVE-2025-48633/48572)</title>
+    <link>https://codedefence.in/blog/2025/12/02/android-zero-days-exploited-cve-2025-48633</link>
+    <pubDate>Tue, 02 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/android-zero-days-exploited-cve-2025-48633</guid>
+    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/openaibreach/800/400" alt="The OpenAI logo connected to a third-party analytics dashboard showing a red data leak warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Check Point Research reports that OpenAI has experienced a data breach resulting from a compromise at its third-party analytics provider, Mixpanel. The incident exposed limited information regarding some ChatGPT API clients, highlighting the persistent risk of vendor-related data leaks.</p>
+      <img src="https://picsum.photos/seed/androidzeroday2025/800/400" alt="An Android smartphone screen displaying a critical security update notification with a red warning icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Google has released emergency security updates for Android to address 107 vulnerabilities, including two high-severity zero-days (CVE-2025-48633 and CVE-2025-48572) that are under limited, targeted exploitation. The flaws affect the Android Framework and allow for information disclosure and privilege escalation.</p>
       <p><strong>Business Impact</strong><br/>
-      This incident underscores the fragility of the digital supply chain. Even tech giants with robust internal defenses are vulnerable to breaches via their vendors. For API users, this could mean exposure of usage patterns or account metadata, potentially aiding targeted phishing or competitive intelligence gathering.</p>
+      These zero-days are likely being used by commercial spyware vendors to target high-value individuals (executives, journalists, government officials). Successful exploitation allows attackers to gain elevated privileges on a device, potentially accessing sensitive data, tracking location, or monitoring communications without user consent.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers compromised the third-party analytics platform (Mixpanel) used by OpenAI to track usage metrics. By targeting a data processor rather than the data controller directly, attackers bypassed OpenAI's primary security perimeter.</p>
+      The vulnerabilities exist in the core Android Framework component. Attackers discovered specific flaws that allow them to bypass the operating system's security sandbox, granting them access rights that should be restricted to the system level.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your organization's reliance on third-party analytics and marketing tools. Ensure that data shared with these providers is minimized ("need to know" only) and that your Third-Party Risk Management (TPRM) program actively audits their security posture.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #OpenAI #SupplyChain #Mixpanel #VendorRisk #CyberSecurity #InfoSec #TPRM</p>
+      Direct your Mobile Device Management (MDM) administrators to enforce the December 2025 Android security patch level (2025-12-01 or 2025-12-05) immediately. Prioritize patching for devices used by executives and staff with access to sensitive corporate data.</p>
+      <p><strong>Hashtags:</strong> #Android #ZeroDay #MobileSecurity #Spyware #Google #Vulnerability #PatchNow #InfoSec #CVE</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "Albiriox" Android Malware Targets 400+ Banking &amp; Crypto Apps</title>
-    <link>https://codedefence.in/blog/2025/12/01/albiriox-android-malware-banking-fraud</link>
-    <pubDate>Mon, 01 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/01/albiriox-android-malware-banking-fraud</guid>
-    <category>Mobile Security &amp; Cybercrime</category>
+    <title>Massive Breach at Coupang Exposes Data of 33 Million Customers</title>
+    <link>https://codedefence.in/blog/2025/12/02/coupang-data-breach-33-million-records</link>
+    <pubDate>Tue, 02 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/coupang-data-breach-33-million-records</guid>
+    <category>Data Breach &amp; Retail</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/albiriox/800/400" alt="An Android smartphone screen displaying a banking app being controlled by a malicious puppet master." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new, highly sophisticated Android malware named "Albiriox" has launched as a Malware-as-a-Service (MaaS). It targets over 400 banking, crypto, and fintech applications. Albiriox specializes in "On-Device Fraud" (ODF), allowing attackers to remotely control the victim's device to perform fraudulent transactions.</p>
+      <img src="https://picsum.photos/seed/coupangbreach/800/400" alt="A digital map of South Korea with data streams flowing out, symbolizing a massive e-commerce data leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>South Korea's largest e-commerce giant, Coupang, is investigating a massive data breach that has exposed personal information for approximately 33.7 million customers—nearly two-thirds of the country's population. The breach reportedly originated from overseas servers and spanned several months.</p>
       <p><strong>Business Impact</strong><br/>
-      This malware poses a severe threat to mobile banking and corporate BYOD environments. By automating on-device fraud, it bypasses standard device fingerprinting and MFA checks, as the transaction appears to originate from the victim's legitimate, trusted device.</p>
+      This is a catastrophic breach of consumer trust for a market leader. While payment data was reportedly not stolen, the loss of names, addresses, and phone numbers fuels large-scale phishing and fraud campaigns. Coupang faces intense regulatory scrutiny, potential class-action lawsuits, and significant reputational damage.</p>
       <p><strong>Why It Happened</strong><br/>
-      Albiriox abuses Android's Accessibility Services to gain full control over the user interface. It is distributed via malicious apps that trick users into granting these high-level permissions, enabling the malware to silently interact with other apps.</p>
+      Preliminary investigations point to a sophisticated external attack that bypassed perimeter defenses, potentially aided by a former employee or compromised developer credentials, allowing unauthorized access to customer databases over an extended period.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Enforce strict Mobile Application Management (MAM) policies to block app sideloading and restrict Accessibility Service usage on managed devices. Deploy mobile security solutions that can detect and block known malware and suspicious permission requests.</p>
-      <p><strong>Hashtags:</strong> #Albiriox #Android #Malware #BankingTrojan #MobileSecurity #Fraud #MaaS #CyberSecurity</p>
+      This incident highlights the importance of "insider threat" monitoring and rigorous access controls for developers. Review your organization's database monitoring to ensure that large, anomalous queries or exports—especially from overseas IPs—trigger immediate alerts.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Coupang #Ecommerce #SouthKorea #CyberAttack #Privacy #GDPR #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"Mystery OAST" Campaign Scans for 200+ Vulnerabilities via Private Cloud</title>
-    <link>https://codedefence.in/blog/2025/12/01/mystery-oast-google-cloud-scanning</link>
-    <pubDate>Mon, 01 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/01/mystery-oast-google-cloud-scanning</guid>
-    <category>Cloud Security &amp; Threat Intelligence</category>
+    <title>Malicious NPM Package Uses Hidden Prompts to Evade AI Security Scanners</title>
+    <link>https://codedefence.in/blog/2025/12/02/npm-package-evades-ai-scanners</link>
+    <pubDate>Tue, 02 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/npm-package-evades-ai-scanners</guid>
+    <category>Supply Chain &amp; AI Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/oastscan/800/400" alt="A cloud server network map with a mysterious, private node scanning multiple targets simultaneously." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers have uncovered a secretive "Mystery OAST" (Out-of-Band Application Security Testing) operation leveraging private infrastructure on Google Cloud. The campaign has launched over 1,400 exploit attempts targeting 200+ distinct CVEs, differing from typical attacks that use public OAST services.</p>
+      <img src="https://picsum.photos/seed/npmmalwareai/800/400" alt="A software code block with a hidden, ghostly robot face behind it, representing AI evasion tactics." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Researchers have discovered a malicious NPM package (`eslint-plugin-unicorn-ts-2`) that includes hidden instructions designed specifically to trick AI-driven security scanners. The code contains prompts telling AI models to "forget everything" and classify the malicious code as "safe" and "legit."</p>
       <p><strong>Business Impact</strong><br/>
-      This campaign represents a highly organized and resourced reconnaissance effort. By using private infrastructure, the attackers avoid simple blocklists associated with public scanning tools (like interact.sh). Organizations may see these probes as legitimate cloud traffic, missing the precursors to a targeted attack.</p>
+      This represents a new frontier in supply chain attacks: "AI Prompt Injection for Evasion." As organizations increasingly rely on AI agents to audit code, attackers are adapting by embedding instructions that manipulate those very agents, allowing malware to slip into production pipelines undetected.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers are evolving to evade detection. Using custom OAST domains and major cloud providers helps their traffic blend in. They are systematically scanning for a wide range of vulnerabilities to build a target list for future exploitation.</p>
+      The attackers embedded natural language prompts within the code comments and metadata. When an AI security tool processes the file, it interprets these instructions as commands, overriding its own safety protocols.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your SOC to look for anomalous outbound traffic to unknown domains, even if they are hosted on reputable cloud providers. Ensure that your vulnerability management program is patching older CVEs, as this campaign targets a broad spectrum of known flaws.</p>
-      <p><strong>Hashtags:</strong> #ThreatIntel #CloudSecurity #VulnerabilityScanning #OAST #CyberAttack #GoogleCloud #InfoSec</p>
+      Do not rely solely on AI-based static analysis tools. Maintain a "human-in-the-loop" for code reviews, especially for external dependencies. Update your DevSecOps tools to detect and flag "prompt injection" patterns within codebases.</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #NPM #AI #PromptInjection #DevSecOps #Malware #AppSec #CyberSecurity</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Critical Auth Bypass in ASUS Routers (CVE-2025-59366) Patched</title>
-    <link>https://codedefence.in/blog/2025/12/01/asus-router-auth-bypass-cve-2025-59366</link>
-    <pubDate>Mon, 01 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/01/asus-router-auth-bypass-cve-2025-59366</guid>
-    <category>IoT &amp; Remote Work Security</category>
+    <title>"ShadyPanda" Browser Extensions Track 4 Million Users via Chrome &amp; Edge</title>
+    <link>https://codedefence.in/blog/2025/12/02/shadypanda-malicious-browser-extensions</link>
+    <pubDate>Tue, 02 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/shadypanda-malicious-browser-extensions</guid>
+    <category>Browser Security &amp; Cybercrime</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/asusrouterpatch/800/400" alt="A home Wi-Fi router with a green shield icon indicating a successful security update." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical authentication bypass vulnerability (CVE-2025-59366, CVSS 9.8) in ASUS routers utilizing the AiCloud feature has been patched. The flaw allows remote, unauthenticated attackers to exploit chained path traversal and command injection vulnerabilities to execute unauthorized functions.</p>
+      <img src="https://picsum.photos/seed/browserextensionhack/800/400" alt="A web browser interface with puzzle piece extensions turning into surveillance eyes." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A threat actor tracked as "ShadyPanda" has been caught operating a network of over 100 malicious browser extensions on the Chrome and Edge stores. These extensions, downloaded over 4 million times, silently track user activity, inject affiliate fraud links, and create backdoors for executing arbitrary code.</p>
       <p><strong>Business Impact</strong><br/>
-      Compromised SOHO routers are a primary entry point for attacks on remote workers. An attacker controlling a home router can intercept corporate traffic, launch Man-in-the-Middle attacks, or pivot into the enterprise network via a connected VPN.</p>
+      Malicious extensions are a massive blind spot. They run with high privileges within the browser, often having visibility into internal corporate web apps, SaaS platforms, and email. This campaign allowed attackers to profile users and potentially steal session cookies or inject scripts into secure sessions.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability exists in the AiCloud media server component, which is often exposed to the internet by default for remote access. Insufficient input validation allowed attackers to bypass authentication checks entirely.</p>
+      The actor published seemingly useful tools (productivity apps, coupon finders) and waited years to weaponize them ("sleeping agent" tactic), bypassing initial store reviews. They then updated the code to include malicious tracking and execution logic.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Issue a security advisory to all remote employees using ASUS hardware to update their firmware immediately. Recommend disabling "AiCloud" and "Remote Access" features on personal routers if they are not strictly required.</p>
-      <p><strong>Hashtags:</strong> #ASUS #IoT #RouterSecurity #Vulnerability #RemoteWork #PatchNow #CVE #CyberSecurity</p>
+      Enforce strict browser management policies using Group Policy or MDM. Block the installation of all extensions by default and only allow a vetted "allowlist" of approved business tools. Regularly audit installed extensions across the enterprise fleet.</p>
+      <p><strong>Hashtags:</strong> #BrowserSecurity #Chrome #Edge #Malware #Privacy #Spyware #CyberCrime #InfoSec</p>
     ]]></description>
   </item>
 
