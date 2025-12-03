@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 02 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 02 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 03 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 03 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Google Patches Two Android Zero-Days Exploited in the Wild (CVE-2025-48633/48572)</title>
-    <link>https://codedefence.in/blog/2025/12/02/android-zero-days-exploited-cve-2025-48633</link>
-    <pubDate>Tue, 02 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/android-zero-days-exploited-cve-2025-48633</guid>
-    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
+    <title>CISA Alert: Critical Iskra iHUB Flaw (CVE-2025-13510) Risks Energy Grid Control</title>
+    <link>https://codedefence.in/blog/2025/12/03/cisa-alert-iskra-ihub-smart-meter-flaw</link>
+    <pubDate>Wed, 03 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/cisa-alert-iskra-ihub-smart-meter-flaw</guid>
+    <category>Supply Chain / OT/ICS Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/androidzeroday2025/800/400" alt="An Android smartphone screen displaying a critical security update notification with a red warning icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Google has released emergency security updates for Android to address 107 vulnerabilities, including two high-severity zero-days (CVE-2025-48633 and CVE-2025-48572) that are under limited, targeted exploitation. The flaws affect the Android Framework and allow for information disclosure and privilege escalation.</p>
+      <img src="https://picsum.photos/seed/smartmeterhack/800/400" alt="A smart electrical meter with a glowing red digital interface, symbolizing a critical infrastructure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has issued a critical advisory regarding the Iskra iHUB and iHUB Lite smart metering gateways. A severe vulnerability (CVE-2025-13510, CVSS 9.3) allows unauthenticated remote attackers to access the web management interface, reconfigure devices, and manipulate connected energy systems without credentials.</p>
       <p><strong>Business Impact</strong><br/>
-      These zero-days are likely being used by commercial spyware vendors to target high-value individuals (executives, journalists, government officials). Successful exploitation allows attackers to gain elevated privileges on a device, potentially accessing sensitive data, tracking location, or monitoring communications without user consent.</p>
+      This vulnerability poses a direct threat to the energy sector and critical infrastructure. Compromised gateways could allow attackers to disrupt power distribution, manipulate metering data, or use the devices as a pivot point to attack broader OT networks, leading to potential blackouts or safety incidents.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities exist in the core Android Framework component. Attackers discovered specific flaws that allow them to bypass the operating system's security sandbox, granting them access rights that should be restricted to the system level.</p>
+      The device exposes its critical management interface to the network without requiring any authentication by default, a fundamental security oversight in hardware designed for critical infrastructure.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your Mobile Device Management (MDM) administrators to enforce the December 2025 Android security patch level (2025-12-01 or 2025-12-05) immediately. Prioritize patching for devices used by executives and staff with access to sensitive corporate data.</p>
-      <p><strong>Hashtags:</strong> #Android #ZeroDay #MobileSecurity #Spyware #Google #Vulnerability #PatchNow #InfoSec #CVE</p>
+      Direct OT security teams to isolate Iskra iHUB devices immediately. Ensure they are not accessible from the public internet or corporate IT networks. Apply the latest firmware updates and place these devices behind strict firewalls or VPNs.</p>
+      <p><strong>Hashtags:</strong> #CISA #ICS #OTSecurity #SmartGrid #EnergySector #Vulnerability #CriticalInfrastructure #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Massive Breach at Coupang Exposes Data of 33 Million Customers</title>
-    <link>https://codedefence.in/blog/2025/12/02/coupang-data-breach-33-million-records</link>
-    <pubDate>Tue, 02 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/coupang-data-breach-33-million-records</guid>
-    <category>Data Breach &amp; Retail</category>
+    <title>Salesforce-Gainsight Supply Chain Breach Impacts 200+ Organizations</title>
+    <link>https://codedefence.in/blog/2025/12/03/salesforce-gainsight-supply-chain-breach</link>
+    <pubDate>Wed, 03 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/salesforce-gainsight-supply-chain-breach</guid>
+    <category>Supply Chain &amp; Data Breach</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/coupangbreach/800/400" alt="A digital map of South Korea with data streams flowing out, symbolizing a massive e-commerce data leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>South Korea's largest e-commerce giant, Coupang, is investigating a massive data breach that has exposed personal information for approximately 33.7 million customers—nearly two-thirds of the country's population. The breach reportedly originated from overseas servers and spanned several months.</p>
+      <img src="https://picsum.photos/seed/salesforcegainsight/800/400" alt="A cloud network diagram showing a broken link between Salesforce and a third-party integration icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Google has confirmed a major supply chain breach affecting over 200 companies. Attackers exploited a vulnerability in the integration between Salesforce and Gainsight (a customer success platform) to steal sensitive customer data. The attack has been attributed to a coalition of threat actors dubbed "Scattered Lapsus$ Hunters."</p>
       <p><strong>Business Impact</strong><br/>
-      This is a catastrophic breach of consumer trust for a market leader. While payment data was reportedly not stolen, the loss of names, addresses, and phone numbers fuels large-scale phishing and fraud campaigns. Coupang faces intense regulatory scrutiny, potential class-action lawsuits, and significant reputational damage.</p>
+      This incident demonstrates the high risk of SaaS-to-SaaS connectivity. Organizations relying on this integration may have had their entire Salesforce customer database exposed, including financial details and sales pipelines, bypassing their own direct security controls.</p>
       <p><strong>Why It Happened</strong><br/>
-      Preliminary investigations point to a sophisticated external attack that bypassed perimeter defenses, potentially aided by a former employee or compromised developer credentials, allowing unauthorized access to customer databases over an extended period.</p>
+      Attackers compromised the API connection tokens used by Gainsight to talk to Salesforce. This allowed them to impersonate the integration and exfiltrate data without triggering standard intrusion alarms on the Salesforce tenant itself.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      This incident highlights the importance of "insider threat" monitoring and rigorous access controls for developers. Review your organization's database monitoring to ensure that large, anomalous queries or exports—especially from overseas IPs—trigger immediate alerts.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Coupang #Ecommerce #SouthKorea #CyberAttack #Privacy #GDPR #InfoSec</p>
+      Review all third-party apps connected to your Salesforce environment. Revoke access tokens for Gainsight apps immediately if you are a customer, until re-authentication is confirmed safe. Audit SaaS integration permissions to ensure "least privilege."</p>
+      <p><strong>Hashtags:</strong> #SupplyChain #Salesforce #Gainsight #DataBreach #SaaS #CyberAttack #InfoSec #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Malicious NPM Package Uses Hidden Prompts to Evade AI Security Scanners</title>
-    <link>https://codedefence.in/blog/2025/12/02/npm-package-evades-ai-scanners</link>
-    <pubDate>Tue, 02 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/npm-package-evades-ai-scanners</guid>
-    <category>Supply Chain &amp; AI Security</category>
+    <title>CISA &amp; International Partners Release "Secure AI in OT" Guidance</title>
+    <link>https://codedefence.in/blog/2025/12/03/cisa-secure-ai-in-ot-guidance</link>
+    <pubDate>Wed, 03 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/cisa-secure-ai-in-ot-guidance</guid>
+    <category>Regulatory Compliance &amp; AI</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/npmmalwareai/800/400" alt="A software code block with a hidden, ghostly robot face behind it, representing AI evasion tactics." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Researchers have discovered a malicious NPM package (`eslint-plugin-unicorn-ts-2`) that includes hidden instructions designed specifically to trick AI-driven security scanners. The code contains prompts telling AI models to "forget everything" and classify the malicious code as "safe" and "legit."</p>
+      <img src="https://picsum.photos/seed/aiotguidance/800/400" alt="A factory floor with robotic arms being managed by an AI brain, overlaid with a security shield." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA, in collaboration with Australian and international cyber agencies, has released new guidance on "Principles for the Secure Integration of Artificial Intelligence in Operational Technology." The document outlines how critical infrastructure owners should safely deploy AI/ML in industrial environments.</p>
       <p><strong>Business Impact</strong><br/>
-      This represents a new frontier in supply chain attacks: "AI Prompt Injection for Evasion." As organizations increasingly rely on AI agents to audit code, attackers are adapting by embedding instructions that manipulate those very agents, allowing malware to slip into production pipelines undetected.</p>
+      As industrial sectors rush to adopt AI for efficiency, this guidance creates a new de facto standard for liability and due diligence. Failing to adhere to these principles could lead to regulatory negligence claims if an AI-driven failure causes physical damage or safety incidents.</p>
       <p><strong>Why It Happened</strong><br/>
-      The attackers embedded natural language prompts within the code comments and metadata. When an AI security tool processes the file, it interprets these instructions as commands, overriding its own safety protocols.</p>
+      The convergence of AI and OT introduces novel risks, such as unpredictable machine behavior and expanded attack surfaces, which traditional industrial safety protocols (like SIS) were not designed to handle.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Do not rely solely on AI-based static analysis tools. Maintain a "human-in-the-loop" for code reviews, especially for external dependencies. Update your DevSecOps tools to detect and flag "prompt injection" patterns within codebases.</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #NPM #AI #PromptInjection #DevSecOps #Malware #AppSec #CyberSecurity</p>
+      Direct your Chief Operations Officer (COO) and CISO to jointly review this guidance. Establish a governance framework that requires a safety impact assessment before any AI model is deployed into a production OT environment.</p>
+      <p><strong>Hashtags:</strong> #AI #OTSecurity #CISA #IndustrialAI #CriticalInfrastructure #Compliance #Safety #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>"ShadyPanda" Browser Extensions Track 4 Million Users via Chrome &amp; Edge</title>
-    <link>https://codedefence.in/blog/2025/12/02/shadypanda-malicious-browser-extensions</link>
-    <pubDate>Tue, 02 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/02/shadypanda-malicious-browser-extensions</guid>
-    <category>Browser Security &amp; Cybercrime</category>
+    <title>Mass Exploitation of "King Addons" WordPress Vulnerability (CVE-2025-8489)</title>
+    <link>https://codedefence.in/blog/2025/12/03/king-addons-wordpress-mass-exploit</link>
+    <pubDate>Wed, 03 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/king-addons-wordpress-mass-exploit</guid>
+    <category>Top Incident/Vulnerability &amp; Web Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/browserextensionhack/800/400" alt="A web browser interface with puzzle piece extensions turning into surveillance eyes." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A threat actor tracked as "ShadyPanda" has been caught operating a network of over 100 malicious browser extensions on the Chrome and Edge stores. These extensions, downloaded over 4 million times, silently track user activity, inject affiliate fraud links, and create backdoors for executing arbitrary code.</p>
+      <img src="https://picsum.photos/seed/wordpresspluginhack/800/400" alt="The WordPress logo surrounded by shield icons that are cracking under a cyber attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Threat actors are actively launching mass exploitation attacks against a critical vulnerability (CVE-2025-8489, CVSS 9.8) in the "King Addons for Elementor" WordPress plugin. Security firms report over 50,000 exploit attempts aimed at taking over vulnerable websites.</p>
       <p><strong>Business Impact</strong><br/>
-      Malicious extensions are a massive blind spot. They run with high privileges within the browser, often having visibility into internal corporate web apps, SaaS platforms, and email. This campaign allowed attackers to profile users and potentially steal session cookies or inject scripts into secure sessions.</p>
+      A successful exploit grants the attacker full administrative control over the website. This allows them to deface the site, inject SEO spam, host malware, or redirect customers to phishing pages, causing severe brand damage and loss of customer trust.</p>
       <p><strong>Why It Happened</strong><br/>
-      The actor published seemingly useful tools (productivity apps, coupon finders) and waited years to weaponize them ("sleeping agent" tactic), bypassing initial store reviews. They then updated the code to include malicious tracking and execution logic.</p>
+      The plugin contained an insecure registration function that allowed unauthenticated users to register as administrators without any verification. Attackers are using automated scripts to scan for and exploit this flaw at scale.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Enforce strict browser management policies using Group Policy or MDM. Block the installation of all extensions by default and only allow a vetted "allowlist" of approved business tools. Regularly audit installed extensions across the enterprise fleet.</p>
-      <p><strong>Hashtags:</strong> #BrowserSecurity #Chrome #Edge #Malware #Privacy #Spyware #CyberCrime #InfoSec</p>
+      Direct your web team to update the King Addons plugin to version 51.1.35 or later immediately. If patching is not possible, disable the plugin. Scan your website for unauthorized administrator accounts created since mid-October.</p>
+      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #Elementor #WebSecurity #RCE #CyberAttack #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
