@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 03 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Wed, 03 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Thu, 04 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 04 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Alert: Critical Iskra iHUB Flaw (CVE-2025-13510) Risks Energy Grid Control</title>
-    <link>https://codedefence.in/blog/2025/12/03/cisa-alert-iskra-ihub-smart-meter-flaw</link>
-    <pubDate>Wed, 03 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/cisa-alert-iskra-ihub-smart-meter-flaw</guid>
-    <category>Supply Chain / OT/ICS Security</category>
+    <title>Critical "React2Shell" Vulnerability (CVE-2025-55182) Hits React & Next.js</title>
+    <link>https://codedefence.in/blog/2025/12/04/react2shell-critical-rce-vulnerability</link>
+    <pubDate>Thu, 04 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/04/react2shell-critical-rce-vulnerability</guid>
+    <category>Top Incident/Vulnerability &amp; AppSec</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/smartmeterhack/800/400" alt="A smart electrical meter with a glowing red digital interface, symbolizing a critical infrastructure vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has issued a critical advisory regarding the Iskra iHUB and iHUB Lite smart metering gateways. A severe vulnerability (CVE-2025-13510, CVSS 9.3) allows unauthenticated remote attackers to access the web management interface, reconfigure devices, and manipulate connected energy systems without credentials.</p>
+      <img src="https://picsum.photos/seed/reactbug/800/400" alt="A web application code interface with a critical red error line, representing a software vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical remote code execution (RCE) vulnerability (CVE-2025-55182, CVSS 10.0), dubbed "React2Shell," has been disclosed in the React and Next.js web frameworks. The flaw allows unauthenticated remote attackers to execute arbitrary code on servers by sending specially crafted HTTP requests to endpoints using React Server Components (RSC).</p>
       <p><strong>Business Impact</strong><br/>
-      This vulnerability poses a direct threat to the energy sector and critical infrastructure. Compromised gateways could allow attackers to disrupt power distribution, manipulate metering data, or use the devices as a pivot point to attack broader OT networks, leading to potential blackouts or safety incidents.</p>
+      This is a "code red" for web application security. React is the backbone of the modern web. This vulnerability exposes millions of websites and enterprise applications to immediate server takeover. Attackers can steal data, install crypto-miners, or pivot into backend cloud environments with ease.</p>
       <p><strong>Why It Happened</strong><br/>
-      The device exposes its critical management interface to the network without requiring any authentication by default, a fundamental security oversight in hardware designed for critical infrastructure.</p>
+      The vulnerability involves improper decoding of payloads sent to React Server Function endpoints. Even applications that don't explicitly use these functions may be vulnerable if RSC support is enabled in the framework's default configuration.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct OT security teams to isolate Iskra iHUB devices immediately. Ensure they are not accessible from the public internet or corporate IT networks. Apply the latest firmware updates and place these devices behind strict firewalls or VPNs.</p>
-      <p><strong>Hashtags:</strong> #CISA #ICS #OTSecurity #SmartGrid #EnergySector #Vulnerability #CriticalInfrastructure #InfoSec</p>
+      Direct your engineering/DevOps leads to update React (to v19.0.1+) and Next.js immediately. If patching is delayed, implement WAF rules (released by Cloudflare/AWS) to block the specific malicious HTTP patterns associated with this exploit.</p>
+      <p><strong>Hashtags:</strong> #ReactJS #NextJS #Vulnerability #RCE #WebSecurity #ZeroDay #AppSec #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Salesforce-Gainsight Supply Chain Breach Impacts 200+ Organizations</title>
-    <link>https://codedefence.in/blog/2025/12/03/salesforce-gainsight-supply-chain-breach</link>
-    <pubDate>Wed, 03 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/salesforce-gainsight-supply-chain-breach</guid>
-    <category>Supply Chain &amp; Data Breach</category>
+    <title>CISA Warns of "BRICKSTORM" Malware Targeting Critical Infrastructure</title>
+    <link>https://codedefence.in/blog/2025/12/04/cisa-warns-brickstorm-malware-prc</link>
+    <pubDate>Thu, 04 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/04/cisa-warns-brickstorm-malware-prc</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/salesforcegainsight/800/400" alt="A cloud network diagram showing a broken link between Salesforce and a third-party integration icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Google has confirmed a major supply chain breach affecting over 200 companies. Attackers exploited a vulnerability in the integration between Salesforce and Gainsight (a customer success platform) to steal sensitive customer data. The attack has been attributed to a coalition of threat actors dubbed "Scattered Lapsus$ Hunters."</p>
+      <img src="https://picsum.photos/seed/brickstorm/800/400" alt="A digital storm cloud over a power grid, symbolizing a state-sponsored cyber threat to infrastructure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA, the NSA, and the Canadian Cyber Centre have issued a joint advisory on "BRICKSTORM," a sophisticated backdoor malware used by PRC (China) state-sponsored actors. The malware specifically targets VMware vCenter servers and Windows environments within critical infrastructure sectors to maintain persistent, long-term access.</p>
       <p><strong>Business Impact</strong><br/>
-      This incident demonstrates the high risk of SaaS-to-SaaS connectivity. Organizations relying on this integration may have had their entire Salesforce customer database exposed, including financial details and sales pipelines, bypassing their own direct security controls.</p>
+      This malware is a tool for pre-positioning. It doesn't just steal data; it digs in deep to allow for potential future disruption or sabotage of critical services (energy, water, transport). Its ability to move laterally and reinstall itself makes remediation extremely difficult.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers compromised the API connection tokens used by Gainsight to talk to Salesforce. This allowed them to impersonate the integration and exfiltrate data without triggering standard intrusion alarms on the Salesforce tenant itself.</p>
+      State actors are targeting the virtualization layer (VMware) because it is a "single point of failure" for modern data centers. Compromising vCenter grants administrative control over all virtual machines running on the infrastructure.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review all third-party apps connected to your Salesforce environment. Revoke access tokens for Gainsight apps immediately if you are a customer, until re-authentication is confirmed safe. Audit SaaS integration permissions to ensure "least privilege."</p>
-      <p><strong>Hashtags:</strong> #SupplyChain #Salesforce #Gainsight #DataBreach #SaaS #CyberAttack #InfoSec #CyberSecurity</p>
+      Mandate a threat hunt for the specific IoCs provided in the CISA advisory, focusing on your virtualization infrastructure. Ensure vCenter servers are not internet-facing and are segmented from the general corporate network.</p>
+      <p><strong>Hashtags:</strong> #CISA #BRICKSTORM #China #APT #CriticalInfrastructure #VMware #Malware #CyberSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA &amp; International Partners Release "Secure AI in OT" Guidance</title>
-    <link>https://codedefence.in/blog/2025/12/03/cisa-secure-ai-in-ot-guidance</link>
-    <pubDate>Wed, 03 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/cisa-secure-ai-in-ot-guidance</guid>
-    <category>Regulatory Compliance &amp; AI</category>
+    <title>Record-Breaking 29.7 Tbps DDoS Attack Launched by "Aisuru" Botnet</title>
+    <link>https://codedefence.in/blog/2025/12/04/record-29tbps-ddos-aisuru-botnet</link>
+    <pubDate>Thu, 04 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/04/record-29tbps-ddos-aisuru-botnet</guid>
+    <category>Infrastructure &amp; IoT Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiotguidance/800/400" alt="A factory floor with robotic arms being managed by an AI brain, overlaid with a security shield." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA, in collaboration with Australian and international cyber agencies, has released new guidance on "Principles for the Secure Integration of Artificial Intelligence in Operational Technology." The document outlines how critical infrastructure owners should safely deploy AI/ML in industrial environments.</p>
+      <img src="https://picsum.photos/seed/ddosattack/800/400" alt="A massive wave of digital red traffic overwhelming a server globe, representing a record DDoS attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Cloudflare has reported mitigating the largest DDoS attack in history, peaking at a staggering 29.7 Terabits per second (Tbps). The attack was launched by a new botnet named "Aisuru," comprised of millions of compromised IoT devices, and targeted financial services and telecom providers.</p>
       <p><strong>Business Impact</strong><br/>
-      As industrial sectors rush to adopt AI for efficiency, this guidance creates a new de facto standard for liability and due diligence. Failing to adhere to these principles could lead to regulatory negligence claims if an AI-driven failure causes physical damage or safety incidents.</p>
+      The scale of this attack (nearly double previous records) is an existential threat to online availability. An attack of this magnitude can overwhelm not just a target's servers, but their upstream ISP links, causing collateral internet outages for entire regions.</p>
       <p><strong>Why It Happened</strong><br/>
-      The convergence of AI and OT introduces novel risks, such as unpredictable machine behavior and expanded attack surfaces, which traditional industrial safety protocols (like SIS) were not designed to handle.</p>
+      The "Aisuru" botnet has rapidly grown by exploiting unpatched vulnerabilities in consumer routers and smart devices. It is reportedly being rented out as a "booter" service, democratizing military-grade censorship capabilities for cybercriminals.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your Chief Operations Officer (COO) and CISO to jointly review this guidance. Establish a governance framework that requires a safety impact assessment before any AI model is deployed into a production OT environment.</p>
-      <p><strong>Hashtags:</strong> #AI #OTSecurity #CISA #IndustrialAI #CriticalInfrastructure #Compliance #Safety #InfoSec</p>
+      Verify your DDoS mitigation SLAs. Ensure your provider can handle terabit-scale volumetric attacks. If you self-host critical services, consider a hybrid or cloud-based mitigation strategy to absorb this level of traffic.</p>
+      <p><strong>Hashtags:</strong> #DDoS #Aisuru #Botnet #IoT #Cloudflare #Infrastructure #CyberAttack #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>Mass Exploitation of "King Addons" WordPress Vulnerability (CVE-2025-8489)</title>
-    <link>https://codedefence.in/blog/2025/12/03/king-addons-wordpress-mass-exploit</link>
-    <pubDate>Wed, 03 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/03/king-addons-wordpress-mass-exploit</guid>
-    <category>Top Incident/Vulnerability &amp; Web Security</category>
+    <title>Marquis Software Breach Exposes Data for Dozens of U.S. Banks</title>
+    <link>https://codedefence.in/blog/2025/12/04/marquis-software-breach-us-banks</link>
+    <pubDate>Thu, 04 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/04/marquis-software-breach-us-banks</guid>
+    <category>Data Breach &amp; Supply Chain</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/wordpresspluginhack/800/400" alt="The WordPress logo surrounded by shield icons that are cracking under a cyber attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Threat actors are actively launching mass exploitation attacks against a critical vulnerability (CVE-2025-8489, CVSS 9.8) in the "King Addons for Elementor" WordPress plugin. Security firms report over 50,000 exploit attempts aimed at taking over vulnerable websites.</p>
+      <img src="https://picsum.photos/seed/bankdata/800/400" alt="A bank vault door slightly ajar with digital binary code leaking out, symbolizing a financial data breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Marquis Software Solutions, a vendor for the financial industry, has disclosed a data breach impacting dozens of U.S. banks and credit unions. Attackers accessed files containing sensitive customer PII, including SSNs and financial account numbers, affecting over 42,000 individuals in Maine alone.</p>
       <p><strong>Business Impact</strong><br/>
-      A successful exploit grants the attacker full administrative control over the website. This allows them to deface the site, inject SEO spam, host malware, or redirect customers to phishing pages, causing severe brand damage and loss of customer trust.</p>
+      This is a classic supply chain failure. Financial institutions that securely managed their own networks were compromised via a third-party marketing vendor. This triggers mandatory breach notifications, potential fines, and a loss of customer trust for the affected banks.</p>
       <p><strong>Why It Happened</strong><br/>
-      The plugin contained an insecure registration function that allowed unauthenticated users to register as administrators without any verification. Attackers are using automated scripts to scan for and exploit this flaw at scale.</p>
+      Unauthorized actors gained access to the vendor's network in August 2025. The delay in detection and notification (nearly 4 months) highlights gaps in vendor incident response capabilities and monitoring.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your web team to update the King Addons plugin to version 51.1.35 or later immediately. If patching is not possible, disable the plugin. Scan your website for unauthorized administrator accounts created since mid-October.</p>
-      <p><strong>Hashtags:</strong> #WordPress #Vulnerability #Elementor #WebSecurity #RCE #CyberAttack #PatchNow #InfoSec</p>
+      Review your vendor portfolio for "data aggregators" like marketing firms. Ensure they are held to the same rigorous security and breach notification standards as your core financial processors. Enforce the right to audit their security posture.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #SupplyChain #Finance #Banking #MarquisSoftware #PII #TPRM #InfoSec</p>
     ]]></description>
   </item>
 
