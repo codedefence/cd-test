@@ -5,102 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Fri, 05 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Fri, 05 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sat, 06 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sat, 06 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>China-Linked Hackers Weaponize Critical "React2Shell" Flaw (CVE-2025-55182)</title>
-    <link>https://codedefence.in/blog/2025/12/05/react2shell-china-exploitation-cve-2025-55182</link>
-    <pubDate>Fri, 05 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/05/react2shell-china-exploitation-cve-2025-55182</guid>
-    <category>Top Incident/Vulnerability &amp; Nation-State Threats</category>
+    <title>CISA Adds Critical "React2Shell" (CVSS 10.0) to KEV Catalog</title>
+    <link>https://codedefence.in/blog/2025/12/06/cisa-adds-react2shell-kev-active-exploit</link>
+    <pubDate>Sat, 06 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/cisa-adds-react2shell-kev-active-exploit</guid>
+    <category>Top Incident/Vulnerability &amp; AppSec</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/reacthack/800/400" alt="A React code interface being dismantled by red digital code streams representing state-sponsored exploitation." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Within hours of its disclosure, Chinese state-linked threat actors (tracked as "Earth Lamia" and "Jackpot Panda") have been observed actively weaponizing the critical "React2Shell" vulnerability (CVE-2025-55182, CVSS 10.0). The flaw allows unauthenticated remote code execution in React Server Components.</p>
+      <img src="https://picsum.photos/seed/reactkev/800/400" alt="React code on a screen with a CISA warning overlay, indicating active exploitation." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has officially added the "React2Shell" vulnerability (CVE-2025-55182) to its Known Exploited Vulnerabilities (KEV) catalog. This critical RCE flaw in React Server Components is being actively exploited by Chinese state-sponsored groups (Earth Lamia, Jackpot Panda) and botnets. Over 2.15 million internet-facing services are potentially exposed.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a rapid escalation. Nation-state actors are using this "maximum severity" flaw to establish persistent footholds in corporate web infrastructure. Any unpatched React or Next.js application facing the internet is at immediate risk of full server compromise and data exfiltration.</p>
+      This is a widespread emergency for any organization using modern web frameworks (Next.js, React). Unauthenticated attackers can execute arbitrary code on servers without any user interaction. The sheer scale of exposed services makes this a prime target for automated ransomware and crypto-mining campaigns.</p>
       <p><strong>Why It Happened</strong><br/>
-      Sophisticated APT groups monitor vulnerability disclosures closely. The React2Shell flaw provides a rare, unauthenticated entry point into modern web stacks, making it a high-value target for espionage and pre-positioning.</p>
+      The flaw involves insecure deserialization in the React Flight protocol. Attackers can send specially crafted payloads to Server Function endpoints to bypass security controls and execute commands.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your engineering teams to verify that React is updated to version 19.0.1+ immediately. If patching is not instant, deploy WAF rules to block malicious HTTP payloads targeting React Server Functions. Assume compromise if patching was delayed.</p>
-      <p><strong>Hashtags:</strong> #React2Shell #China #APT #Vulnerability #RCE #WebSecurity #PatchNow #InfoSec #CVE</p>
+      Direct development teams to update React packages to version 19.0.1 or later immediately. Federal agencies have a strict deadline to patch (Dec 26), but private sector leaders should treat this as a 24-hour remediation window.</p>
+      <p><strong>Hashtags:</strong> #React2Shell #CISA #KEV #Vulnerability #RCE #China #APT #AppSec #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Cloudflare Outage Disrupts Global Management Dashboards &amp; APIs</title>
-    <link>https://codedefence.in/blog/2025/12/05/cloudflare-global-outage-500-errors</link>
-    <pubDate>Fri, 05 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/05/cloudflare-global-outage-500-errors</guid>
-    <category>Infrastructure &amp; Cloud Security</category>
+    <title>Avast Antivirus Kernel Flaws Allow Sandbox Escape to SYSTEM</title>
+    <link>https://codedefence.in/blog/2025/12/06/avast-antivirus-kernel-sandbox-escape</link>
+    <pubDate>Sat, 06 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/avast-antivirus-kernel-sandbox-escape</guid>
+    <category>Top Incident/Vulnerability &amp; Endpoint Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cloudflare500/800/400" alt="A network status dashboard showing widespread red '500 Internal Server Error' alerts across a global map." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A significant outage hit Cloudflare today, causing widespread "500 Internal Server Errors" across its dashboard and APIs. The disruption impacted developers and IT teams globally, preventing them from managing DNS records, WAF rules, and other critical infrastructure settings for several hours.</p>
+      <img src="https://picsum.photos/seed/avastkernel/800/400" alt="An antivirus shield icon cracking open, revealing kernel code underneath." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Security researchers have disclosed four critical kernel heap overflow vulnerabilities (collectively CVE-2025-13032) in the Avast Antivirus `aswSnx` kernel driver. These flaws allow a local attacker to escape the antivirus sandbox and escalate privileges to SYSTEM level on Windows 11.</p>
       <p><strong>Business Impact</strong><br/>
-      While edge traffic delivery remained mostly functional, the inability to manage security configurations (like updating WAF rules during an attack) created a dangerous window of vulnerability. It highlights the operational risk of reliance on a single control plane for critical infrastructure.</p>
+      Vulnerabilities in security software are particularly dangerous as they run with the highest privileges. An attacker who has already gained a foothold (e.g., via phishing) can use this flaw to disable defenses, gain total control of the endpoint, and persist deeply within the OS.</p>
       <p><strong>Why It Happened</strong><br/>
-      The outage coincided with scheduled maintenance in key U.S. data centers (Detroit and Chicago), which likely triggered a cascading failure in the backend management services.</p>
+      The vulnerabilities stem from "double fetch" race conditions in how the kernel driver handles user data, allowing attackers to manipulate memory allocations and trigger a buffer overflow.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your operational dependence on Cloudflare (or your primary CDN). Ensure your team has "break-glass" procedures or alternative access methods for critical DNS/routing changes if the primary management plane becomes unavailable.</p>
-      <p><strong>Hashtags:</strong> #Cloudflare #Outage #Infrastructure #CloudSecurity #DevOps #BusinessContinuity #InfoSec</p>
+      Ensure all endpoints running Avast (or Gen Digital products sharing the same driver) are updated to version 25.2.9898.0 or later. Verify that your endpoint management systems are successfully pushing these updates to all remote workers.</p>
+      <p><strong>Hashtags:</strong> #Avast #Vulnerability #Kernel #PrivilegeEscalation #SandboxEscape #EndpointSecurity #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA &amp; NSA Alert: "BRICKSTORM" Malware Targeting Critical Infrastructure</title>
-    <link>https://codedefence.in/blog/2025/12/05/cisa-nsa-brickstorm-malware-alert</link>
-    <pubDate>Fri, 05 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/05/cisa-nsa-brickstorm-malware-alert</guid>
-    <category>Geopolitics &amp; Nation-State Threats</category>
+    <title>Barts Health NHS Trust Confirms Data Breach via Cl0p Ransomware</title>
+    <link>https://codedefence.in/blog/2025/12/06/barts-health-nhs-clop-ransomware-breach</link>
+    <pubDate>Sat, 06 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/barts-health-nhs-clop-ransomware-breach</guid>
+    <category>Data Breach &amp; Healthcare</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/brickstormmalware/800/400" alt="A digital representation of a heavy storm cloud over a power grid, symbolizing the BRICKSTORM malware threat." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA, the NSA, and international partners have issued a joint alert regarding "BRICKSTORM," a sophisticated backdoor malware used by PRC state-sponsored actors. The malware specifically targets VMware ESXi and Windows environments to maintain stealthy, long-term persistence in critical infrastructure networks.</p>
+      <img src="https://picsum.photos/seed/nhshack/800/400" alt="A hospital building with a digital data leak warning overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Barts Health NHS Trust, one of the largest healthcare trusts in the UK, has confirmed that the Cl0p ransomware group stole sensitive files from its invoice databases. This breach is a direct result of the mass exploitation of the Oracle E-Business Suite vulnerability tracked last month.</p>
       <p><strong>Business Impact</strong><br/>
-      BRICKSTORM is a tool for deep entrenchment. Its discovery in critical sectors suggests a pre-positioning strategy for future disruption. The malware's ability to hide within virtualization layers makes detection and remediation extremely difficult.</p>
+      The stolen data includes names and addresses of patients and staff payment details. While clinical systems were not encrypted, the exposure of patient data creates significant regulatory liability (GDPR) and distress for patients. It highlights the long-tail impact of supply chain software vulnerabilities.</p>
       <p><strong>Why It Happened</strong><br/>
-      State actors are increasingly targeting the virtualization layer (ESXi) because it lacks the same level of EDR monitoring as standard operating systems, allowing them to evade detection while controlling all hosted servers.</p>
+      Cl0p targets organizations running unpatched enterprise software (like Oracle EBS) to steal data at scale for extortion, often bypassing encryption to focus purely on data theft.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate a threat hunt for BRICKSTORM IoCs, specifically focusing on your virtualization infrastructure. Ensure VMware management interfaces are isolated from the general network and strictly monitored for anomalous access.</p>
-      <p><strong>Hashtags:</strong> #CISA #BRICKSTORM #China #APT #CriticalInfrastructure #VMware #Malware #CyberSecurity</p>
+      Review your organization's exposure to Oracle E-Business Suite. If you use it, ensure it is fully patched and behind a VPN. Implement strict egress filtering to detect large data transfers from administrative servers.</p>
+      <p><strong>Hashtags:</strong> #NHS #DataBreach #Cl0p #Ransomware #Healthcare #Oracle #CyberAttack #Privacy #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Global Agencies Release First "Secure AI in OT" Principles</title>
-    <link>https://codedefence.in/blog/2025/12/05/global-secure-ai-ot-principles</link>
-    <pubDate>Fri, 05 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/05/global-secure-ai-ot-principles</guid>
-    <category>Regulatory Compliance &amp; AI</category>
+    <title>Microsoft &amp; Google Launch "Agent 365" to Govern AI Agent Sprawl</title>
+    <link>https://codedefence.in/blog/2025/12/06/microsoft-google-agent-365-launch</link>
+    <pubDate>Sat, 06 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/microsoft-google-agent-365-launch</guid>
+    <category>AI/ML in Cybersecurity &amp; Governance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aiotsecurity/800/400" alt="A robotic arm in a factory controlled by a glowing AI brain, protected by a digital shield." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Cybersecurity agencies from the US (CISA), Australia, UK, and others have jointly published the first "Principles for the Secure Integration of AI in Operational Technology (OT)." The guidance sets the standard for deploying AI safely in high-stakes industrial environments like energy, water, and manufacturing.</p>
+      <img src="https://picsum.photos/seed/agent365/800/400" alt="A futuristic dashboard monitoring multiple AI agents, symbolizing governance and control." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Responding to the rapid rise of "Shadow AI," major tech players including Microsoft and Google have rolled out new governance platforms (like "Agent 365") designed to discover, monitor, and secure autonomous AI agents within the enterprise. This move aims to prevent data leakage from unauthorized bots.</p>
       <p><strong>Business Impact</strong><br/>
-      This establishes a global baseline for liability. Organizations deploying AI in physical operations must now demonstrate they have implemented "failsafe" mechanisms and human oversight. Failing to follow these principles could lead to negligence claims in the event of an AI-driven safety incident.</p>
+      "Agent sprawl" is the new shadow IT. Employees are deploying autonomous agents to automate tasks without security oversight. These platforms provide the necessary visibility to prevent these agents from accidentally exposing sensitive data or being hijacked by attackers.</p>
       <p><strong>Why It Happened</strong><br/>
-      The rapid adoption of AI in industrial control systems introduces unpredictable risks. Traditional OT safety protocols (SIS) were not designed for non-deterministic AI models, creating a safety gap that this guidance aims to close.</p>
+      The adoption of agentic AI has outpaced traditional security controls. Security teams currently lack visibility into what AI agents are running on their networks and what data they are accessing.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your Chief Operations Officer (COO) and CISO to review these principles. Establish a governance gate that requires a specific "AI Safety Impact Assessment" before any AI model is connected to production OT systems.</p>
-      <p><strong>Hashtags:</strong> #AI #OTSecurity #IndustrialAI #CISA #Compliance #Safety #CriticalInfrastructure #InfoSec</p>
-    ]]></description>
-  </item>
-  
-  <item>
-    <title>Pharma Firm Inotiv Confirms Breach After Qilin Ransomware Attack</title>
-    <link>https://codedefence.in/blog/2025/12/05/inotiv-pharma-data-breach-qilin</link>
-    <pubDate>Fri, 05 Dec 2025 19:35:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/05/inotiv-pharma-data-breach-qilin</guid>
-    <category>Data Breach &amp; Ransomware</category>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/pharmabreach/800/400" alt="A pharmaceutical laboratory with a digital screen showing a 'Data Stolen' ransomware warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Pharmaceutical research firm Inotiv has begun notifying thousands of individuals that their personal data was stolen during a ransomware attack in August 2025. The attack, claimed by the Qilin group, resulted in the exfiltration of 176 GB of sensitive data.</p>
-      <p><strong>Business Impact</strong><br/>
-      This breach highlights the severe "long tail" of ransomware. Months after the initial attack, the company is still grappling with regulatory notifications and reputational damage. The loss of sensitive employee and partner data creates long-term legal liability.</p>
-      <p><strong>Why It Happened</strong><br/>
-      Qilin targets organizations with high-value intellectual property and sensitive data. They likely exploited a vulnerability to gain access and spent time exfiltrating data for double extortion before being detected.</p>
-      <p><strong>Recommended Executive Action</strong><br/>
-      Ensure your incident response plan includes specific protocols for "post-breach" activities, including rapid forensic analysis to determine the scope of data loss. Delays in notification (as seen here) often lead to increased regulatory fines.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Pharma #Ransomware #Qilin #Inotiv #CyberAttack #Privacy #InfoSec</p>
+      Direct your CIO/CISO to evaluate these new governance tools immediately. You cannot secure what you cannot see. Establishing a policy and control plane for AI agents is now a critical requirement for 2026 planning.</p>
+      <p><strong>Hashtags:</strong> #AI #AIGovernance #ShadowAI #Microsoft #Google #AgenticAI #CyberSecurity #InfoSec #FutureTech</p>
     ]]></description>
   </item>
 
