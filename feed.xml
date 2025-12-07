@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Sat, 06 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sat, 06 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Sun, 07 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Sun, 07 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Adds Critical "React2Shell" (CVSS 10.0) to KEV Catalog</title>
-    <link>https://codedefence.in/blog/2025/12/06/cisa-adds-react2shell-kev-active-exploit</link>
-    <pubDate>Sat, 06 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/cisa-adds-react2shell-kev-active-exploit</guid>
-    <category>Top Incident/Vulnerability &amp; AppSec</category>
+    <title>China-Linked Actors Scale "React2Shell" Exploits (CVE-2025-55182)</title>
+    <link>https://codedefence.in/blog/2025/12/07/china-actors-scale-react2shell-exploits</link>
+    <pubDate>Sun, 07 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/07/china-actors-scale-react2shell-exploits</guid>
+    <category>Top Incident/Vulnerability &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/reactkev/800/400" alt="React code on a screen with a CISA warning overlay, indicating active exploitation." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has officially added the "React2Shell" vulnerability (CVE-2025-55182) to its Known Exploited Vulnerabilities (KEV) catalog. This critical RCE flaw in React Server Components is being actively exploited by Chinese state-sponsored groups (Earth Lamia, Jackpot Panda) and botnets. Over 2.15 million internet-facing services are potentially exposed.</p>
+      <img src="https://picsum.photos/seed/react2shell-china/800/400" alt="A server rack glowing red with digital code streams, symbolizing active state-sponsored exploitation." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Amazon and Wiz threat intelligence teams report that China-nexus threat groups (tracked as "Earth Lamia" and "Jackpot Panda") have rapidly scaled their exploitation of the critical "React2Shell" vulnerability (CVE-2025-55182). Attackers are actively scanning for and compromising unpatched Next.js and React applications to establish persistent footholds.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a widespread emergency for any organization using modern web frameworks (Next.js, React). Unauthenticated attackers can execute arbitrary code on servers without any user interaction. The sheer scale of exposed services makes this a prime target for automated ransomware and crypto-mining campaigns.</p>
+      The speed of weaponization—within hours of disclosure—demonstrates the high value of this vulnerability to espionage groups. Unpatched web servers are being converted into operational nodes for further attacks, data exfiltration, or lateral movement within cloud environments.</p>
       <p><strong>Why It Happened</strong><br/>
-      The flaw involves insecure deserialization in the React Flight protocol. Attackers can send specially crafted payloads to Server Function endpoints to bypass security controls and execute commands.</p>
+      The vulnerability allows for unauthenticated remote code execution via the React Flight protocol. State actors are prioritizing it because it bypasses standard authentication layers on widely used, public-facing web infrastructure.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct development teams to update React packages to version 19.0.1 or later immediately. Federal agencies have a strict deadline to patch (Dec 26), but private sector leaders should treat this as a 24-hour remediation window.</p>
-      <p><strong>Hashtags:</strong> #React2Shell #CISA #KEV #Vulnerability #RCE #China #APT #AppSec #PatchNow #InfoSec</p>
+      This remains the top priority. Ensure your engineering teams have updated React to version 19.0.1+ and Next.js to the latest safe versions. If patching is delayed, deploy specific WAF rules to block malicious "React Flight" payloads immediately.</p>
+      <p><strong>Hashtags:</strong> #React2Shell #China #APT #Vulnerability #RCE #CloudSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Avast Antivirus Kernel Flaws Allow Sandbox Escape to SYSTEM</title>
-    <link>https://codedefence.in/blog/2025/12/06/avast-antivirus-kernel-sandbox-escape</link>
-    <pubDate>Sat, 06 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/avast-antivirus-kernel-sandbox-escape</guid>
-    <category>Top Incident/Vulnerability &amp; Endpoint Security</category>
+    <title>Coupang Data Breach Exposes 33.7 Million Customers</title>
+    <link>https://codedefence.in/blog/2025/12/07/coupang-data-breach-33-million-customers</link>
+    <pubDate>Sun, 07 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/07/coupang-data-breach-33-million-customers</guid>
+    <category>Data Breach &amp; Retail</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/avastkernel/800/400" alt="An antivirus shield icon cracking open, revealing kernel code underneath." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers have disclosed four critical kernel heap overflow vulnerabilities (collectively CVE-2025-13032) in the Avast Antivirus `aswSnx` kernel driver. These flaws allow a local attacker to escape the antivirus sandbox and escalate privileges to SYSTEM level on Windows 11.</p>
+      <img src="https://picsum.photos/seed/coupang-breach/800/400" alt="A digital map of South Korea with data streams leaking out, representing a massive e-commerce breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>South Korean e-commerce giant Coupang has issued a revised notice confirming a massive data leak affecting 33.7 million customers—nearly two-thirds of the country's population. While payment data was reportedly not stolen, exposed information includes names, addresses, and contact details.</p>
       <p><strong>Business Impact</strong><br/>
-      Vulnerabilities in security software are particularly dangerous as they run with the highest privileges. An attacker who has already gained a foothold (e.g., via phishing) can use this flaw to disable defenses, gain total control of the endpoint, and persist deeply within the OS.</p>
+      This is a catastrophic privacy incident for a market leader. The massive volume of exposed PII creates a long-term risk of targeted phishing and fraud for millions of users. It will likely trigger intense regulatory scrutiny and significant fines under local data protection laws.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities stem from "double fetch" race conditions in how the kernel driver handles user data, allowing attackers to manipulate memory allocations and trigger a buffer overflow.</p>
+      The breach reportedly originated from unauthorized access via overseas servers. Attackers managed to bypass perimeter defenses to access customer databases, highlighting potential gaps in geo-blocking or access monitoring strategies.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Ensure all endpoints running Avast (or Gen Digital products sharing the same driver) are updated to version 25.2.9898.0 or later. Verify that your endpoint management systems are successfully pushing these updates to all remote workers.</p>
-      <p><strong>Hashtags:</strong> #Avast #Vulnerability #Kernel #PrivilegeEscalation #SandboxEscape #EndpointSecurity #CyberSecurity #InfoSec</p>
+      For organizations operating in APAC, review your data residency and cross-border access controls. Ensure that "crown jewel" customer databases have strict anomaly detection alerts for bulk exports, especially to unexpected geographic locations.</p>
+      <p><strong>Hashtags:</strong> #DataBreach #Coupang #Ecommerce #Privacy #SouthKorea #CyberAttack #InfoSec #GDPR</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Barts Health NHS Trust Confirms Data Breach via Cl0p Ransomware</title>
-    <link>https://codedefence.in/blog/2025/12/06/barts-health-nhs-clop-ransomware-breach</link>
-    <pubDate>Sat, 06 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/barts-health-nhs-clop-ransomware-breach</guid>
-    <category>Data Breach &amp; Healthcare</category>
+    <title>Record-Breaking 29.7 Tbps DDoS Attack Hits Financial Sector</title>
+    <link>https://codedefence.in/blog/2025/12/07/record-29tbps-ddos-financial-sector</link>
+    <pubDate>Sun, 07 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/07/record-29tbps-ddos-financial-sector</guid>
+    <category>Infrastructure &amp; Financial Services</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/nhshack/800/400" alt="A hospital building with a digital data leak warning overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Barts Health NHS Trust, one of the largest healthcare trusts in the UK, has confirmed that the Cl0p ransomware group stole sensitive files from its invoice databases. This breach is a direct result of the mass exploitation of the Oracle E-Business Suite vulnerability tracked last month.</p>
+      <img src="https://picsum.photos/seed/ddos-record-2025/800/400" alt="A digital bank vault being overwhelmed by a massive red wave of network traffic." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Cloudflare and Akamai have reported mitigating the largest DDoS attack in history, peaking at 29.7 Terabits per second (Tbps). The attack, launched by the "Aisuru" IoT botnet, specifically targeted European financial institutions using massive UDP floods.</p>
       <p><strong>Business Impact</strong><br/>
-      The stolen data includes names and addresses of patients and staff payment details. While clinical systems were not encrypted, the exposure of patient data creates significant regulatory liability (GDPR) and distress for patients. It highlights the long-tail impact of supply chain software vulnerabilities.</p>
+      This attack volume redefines the "worst-case scenario" for availability. Traditional on-premise DDoS appliances would be instantly overwhelmed. An attack of this magnitude can take down not just individual banks, but regional internet exchanges if not mitigated at the edge.</p>
       <p><strong>Why It Happened</strong><br/>
-      Cl0p targets organizations running unpatched enterprise software (like Oracle EBS) to steal data at scale for extortion, often bypassing encryption to focus purely on data theft.</p>
+      The "Aisuru" botnet leverages millions of compromised consumer IoT devices (cameras, routers) connected to high-speed 5G and fiber networks, allowing it to generate unprecedented volumetric traffic.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your organization's exposure to Oracle E-Business Suite. If you use it, ensure it is fully patched and behind a VPN. Implement strict egress filtering to detect large data transfers from administrative servers.</p>
-      <p><strong>Hashtags:</strong> #NHS #DataBreach #Cl0p #Ransomware #Healthcare #Oracle #CyberAttack #Privacy #InfoSec</p>
+      Verify your organization's DDoS resilience. Ensure critical customer-facing services are protected by a cloud-based scrubbing provider capable of absorbing multi-terabit attacks. Test your "failover" plans for a scenario where primary internet links are saturated.</p>
+      <p><strong>Hashtags:</strong> #DDoS #Finance #Botnet #Aisuru #Infrastructure #Cloudflare #CyberAttack #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>Microsoft &amp; Google Launch "Agent 365" to Govern AI Agent Sprawl</title>
-    <link>https://codedefence.in/blog/2025/12/06/microsoft-google-agent-365-launch</link>
-    <pubDate>Sat, 06 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/06/microsoft-google-agent-365-launch</guid>
-    <category>AI/ML in Cybersecurity &amp; Governance</category>
+    <title>New "GoldPickaxe" Malware Variants Target iOS &amp; Android Banking</title>
+    <link>https://codedefence.in/blog/2025/12/07/goldpickaxe-malware-ios-android-banking</link>
+    <pubDate>Sun, 07 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/07/goldpickaxe-malware-ios-android-banking</guid>
+    <category>Mobile Security &amp; Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/agent365/800/400" alt="A futuristic dashboard monitoring multiple AI agents, symbolizing governance and control." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Responding to the rapid rise of "Shadow AI," major tech players including Microsoft and Google have rolled out new governance platforms (like "Agent 365") designed to discover, monitor, and secure autonomous AI agents within the enterprise. This move aims to prevent data leakage from unauthorized bots.</p>
+      <img src="https://picsum.photos/seed/goldpickaxe-malware/800/400" alt="A smartphone screen scanning a user's face, with a malicious data theft icon in the background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The "GoldFactory" group has released new variants of its "GoldPickaxe" malware, targeting banking users in Southeast Asia. This advanced trojan steals facial recognition data to create deepfakes for bypassing biometric security and is now being distributed via fake government service apps on both Android and iOS.</p>
       <p><strong>Business Impact</strong><br/>
-      "Agent sprawl" is the new shadow IT. Employees are deploying autonomous agents to automate tasks without security oversight. These platforms provide the necessary visibility to prevent these agents from accidentally exposing sensitive data or being hijacked by attackers.</p>
+      This malware represents a direct threat to biometric identity verification. By stealing raw facial data, attackers can bypass "liveness" checks used by banking apps and corporate MFA systems, enabling high-value fraud and account takeovers.</p>
       <p><strong>Why It Happened</strong><br/>
-      The adoption of agentic AI has outpaced traditional security controls. Security teams currently lack visibility into what AI agents are running on their networks and what data they are accessing.</p>
+      Attackers are using social engineering (fake pension/government apps) to trick users into installing the malware. On iOS, they abuse the TestFlight platform or MDM profiles to bypass App Store security checks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your CIO/CISO to evaluate these new governance tools immediately. You cannot secure what you cannot see. Establishing a policy and control plane for AI agents is now a critical requirement for 2026 planning.</p>
-      <p><strong>Hashtags:</strong> #AI #AIGovernance #ShadowAI #Microsoft #Google #AgenticAI #CyberSecurity #InfoSec #FutureTech</p>
+      Update fraud detection models to look for anomalies in biometric authentication attempts. Educate employees and customers about the risks of installing apps from outside official stores ("sideloading"), especially those claiming to be government tools.</p>
+      <p><strong>Hashtags:</strong> #MobileSecurity #GoldPickaxe #Biometrics #Deepfake #Fraud #Banking #Malware #InfoSec</p>
     ]]></description>
   </item>
 
