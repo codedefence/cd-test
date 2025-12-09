@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 08 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 08 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 09 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 09 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>React2Shell (CVE-2025-55182) Weaponized in "Zero-Hour" Attacks by China-Nexus Actors</title>
-    <link>https://codedefence.in/blog/2025/12/08/react2shell-zero-hour-exploitation-china</link>
-    <pubDate>Mon, 08 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/08/react2shell-zero-hour-exploitation-china</guid>
-    <category>Top Incident/Vulnerability &amp; Nation-State Threats</category>
+    <title>Apple Patches "Triangulation 2.0" Kernel Zero-Day (CVE-2025-4432)</title>
+    <link>https://codedefence.in/blog/2025/12/09/apple-ios-kernel-zero-day-triangulation-2</link>
+    <pubDate>Tue, 09 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/apple-ios-kernel-zero-day-triangulation-2</guid>
+    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/react2shell-china-exploit/800/400" alt="A digital clock ticking down to zero on a server screen, symbolizing zero-hour exploitation of a vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Security researchers confirm that the critical "React2Shell" vulnerability (CVE-2025-55182, CVSS 10.0) is seeing one of the fastest weaponization cycles in history. China-nexus threat actors began exploiting this React Server Components flaw within *minutes* of its disclosure, launching high-volume scans to compromise unpatched servers globally.</p>
+      <img src="https://picsum.photos/seed/applezeroday2025/800/400" alt="An iPhone displaying a critical iOS update screen with a red spyware warning overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Apple has released emergency updates for iOS (19.1.2) and macOS to patch a critical kernel vulnerability (CVE-2025-4432). The flaw is a "zero-click" exploit used by commercial spyware vendors to deploy payloads simply by sending an invisible iMessage, requiring no user interaction.</p>
       <p><strong>Business Impact</strong><br/>
-      The "gap" between disclosure and exploitation has effectively vanished. Organizations relying on manual patching cycles are already too late. This flaw allows unauthenticated remote code execution, granting attackers immediate, full control over web infrastructure, data, and backend connections.</p>
+      This is a top-tier threat for executive mobile security. Devices belonging to board members, journalists, and high-value targets are at immediate risk of total compromise (microphone/camera recording, location tracking) if not updated. The "zero-click" nature means user training is ineffective as a defense.</p>
       <p><strong>Why It Happened</strong><br/>
-      Attackers prioritized speed over precision, using automated scripts to fire public (and sometimes flawed) Proof-of-Concept exploits at massive swaths of the internet. The vulnerability lies in unsafe deserialization within the React Flight protocol.</p>
+      The vulnerability leverages a complex memory corruption bug in the kernel's handling of specific image formats, allowing attackers to gain root privileges instantly upon message receipt.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat this as an active breach scenario if you run React 19.x or Next.js 15.x/16.x. Immediate patching is the only defense. If patching is impossible today, implement strict WAF rules to block malicious `RSC` payloads and isolate affected servers.</p>
-      <p><strong>Hashtags:</strong> #React2Shell #ZeroDay #China #APT #Vulnerability #RCE #PatchNow #InfoSec #CyberSecurity</p>
+      Mandate an immediate "force update" for all corporate Apple devices via your MDM (Mobile Device Management) platform. Advise executives to enable "Lockdown Mode" if they believe they are specifically targeted by state-sponsored threats.</p>
+      <p><strong>Hashtags:</strong> #Apple #ZeroDay #iOS #Spyware #MobileSecurity #Vulnerability #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>US Treasury: Ransomware Payments Surpass Record $4.5 Billion</title>
-    <link>https://codedefence.in/blog/2025/12/08/ransomware-payments-hit-4-5-billion-fincen</link>
-    <pubDate>Mon, 08 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/08/ransomware-payments-hit-4-5-billion-fincen</guid>
-    <category>Ransomware &amp; Strategic Risk</category>
+    <title>Critical Jenkins CLI Vulnerability (CVE-2025-9943) Exposes CI/CD Pipelines</title>
+    <link>https://codedefence.in/blog/2025/12/09/jenkins-cli-critical-rce-cve-2025-9943</link>
+    <pubDate>Tue, 09 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/jenkins-cli-critical-rce-cve-2025-9943</guid>
+    <category>Supply Chain &amp; DevOps</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ransomware-money-2025/800/400" alt="A stack of digital currency coins forming a graph trending sharply upward, representing ransomware payments." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The U.S. Treasury's Financial Crimes Enforcement Network (FinCEN) released a report today revealing that total ransomware-related payments exceeded a staggering $4.5 billion by the end of 2024. This marks a massive surge from previous years, driven by higher ransom demands and "big game hunting."</p>
+      <img src="https://picsum.photos/seed/jenkinshack/800/400" alt="The Jenkins logo on a build pipeline dashboard that is fracturing and turning red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A critical Remote Code Execution (RCE) vulnerability (CVE-2025-9943, CVSS 9.9) has been discovered in the built-in Command Line Interface (CLI) of Jenkins, the world's most popular automation server. The flaw allows unauthenticated attackers to read arbitrary files and execute commands on the master controller.</p>
       <p><strong>Business Impact</strong><br/>
-      Ransomware is no longer just a nuisance; it is a multi-billion dollar illicit economy. The sheer scale of payments funds more sophisticated R&D for cybercriminals, meaning attacks will continue to become more advanced, automated, and difficult to defend against.</p>
+      Compromising Jenkins is a "game over" scenario for software supply chains. Attackers can inject malicious code into your software products, steal proprietary source code, and exfiltrate production secrets (API keys, cloud credentials) stored within the build environment.</p>
       <p><strong>Why It Happened</strong><br/>
-      The rise is fueled by the "Ransomware-as-a-Service" model and the pivot to double-extortion (stealing data *and* encrypting it), which pressures even companies with good backups to pay up to prevent data leaks.</p>
+      The vulnerability involves an unsafe argument parsing feature in the Jenkins CLI library (args4j) that is enabled by default. Attackers can manipulate CLI commands to bypass security restrictions.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Re-evaluate your cyber insurance coverage limits in light of rising ransom demands. Invest heavily in anti-exfiltration controls (DLP) and "immutable backups" to reduce the leverage attackers have during a negotiation.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #FinCEN #CyberCrime #FinancialRisk #CISO #CyberEconomy #InfoSec</p>
+      Direct DevOps leads to disable the Jenkins CLI immediately if it is not strictly required. Apply the patch released today (Jenkins 2.490+). If patching is delayed, block access to the CLI port at the network firewall level.</p>
+      <p><strong>Hashtags:</strong> #Jenkins #DevOps #SupplyChain #RCE #Vulnerability #CI_CD #CyberSecurity #PatchNow</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Pharma Firm Inotiv Confirms Breach After "Qilin" Ransomware Attack</title>
-    <link>https://codedefence.in/blog/2025/12/08/inotiv-pharma-data-breach-qilin</link>
-    <pubDate>Mon, 08 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/08/inotiv-pharma-data-breach-qilin</guid>
-    <category>Data Breach &amp; Healthcare</category>
+    <title>Black Basta Claims Responsibility for London Councils Cyberattack</title>
+    <link>https://codedefence.in/blog/2025/12/09/black-basta-london-councils-ransomware</link>
+    <pubDate>Tue, 09 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/black-basta-london-councils-ransomware</guid>
+    <category>Ransomware &amp; Public Sector</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/pharma-hack-inotiv/800/400" alt="A pharmaceutical laboratory with a digital biohazard warning symbol overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Pharmaceutical contract research organization Inotiv has confirmed a significant data breach following a ransomware attack by the "Qilin" group. The breach, initially detected in August, resulted in the exfiltration of sensitive personal data belonging to over 9,500 employees and their families.</p>
+      <img src="https://picsum.photos/seed/londonransom/800/400" alt="A view of London with a digital ransomware ransom note superimposed over the city skyline." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Black Basta ransomware gang has formally claimed responsibility for the cyberattack crippling multiple London boroughs. The group has posted samples of stolen data—including resident passport scans and council tax records—giving the councils 48 hours to pay before a full leak.</p>
       <p><strong>Business Impact</strong><br/>
-      The theft of sensitive employee data creates long-term legal and HR liabilities. For a pharma company, any breach also raises concerns about the integrity of intellectual property and research data, potentially impacting client trust and future contracts.</p>
+      This confirms a massive data breach affecting potentially millions of citizens. The operational disruption has already halted housing transactions and social care payments. The leak of sensitive PII will lead to long-term identity theft risks for residents and severe regulatory fines for the councils.</p>
       <p><strong>Why It Happened</strong><br/>
-      The Qilin group is known for targeting healthcare and critical sectors with aggressive data theft tactics. They infiltrated the network and maintained access for days to identify and steal high-value data before being detected.</p>
+      Black Basta likely exploited a shared service provider vulnerability (possibly the Oracle or Citrix flaws tracked recently) to laterally move across the interconnected networks of the different councils.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Ensure your Incident Response Plan includes specific playbooks for "data theft" scenarios, not just system recovery. Legal and HR teams must be ready to deploy identity protection services for employees immediately upon confirmation of a leak.</p>
-      <p><strong>Hashtags:</strong> #DataBreach #Pharma #Inotiv #Qilin #Ransomware #HealthcareSecurity #Privacy #InfoSec</p>
+      For public sector leaders: Review shared-service agreements for single points of failure. Ensure that "offline" backups are truly isolated from the network to prevent encryption during such cascading attacks.</p>
+      <p><strong>Hashtags:</strong> #BlackBasta #Ransomware #London #DataBreach #PublicSector #Privacy #GDPR #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>Critical "Apache Tika" Flaw (CVE-2025-66516) Allows XXE Attacks</title>
-    <link>https://codedefence.in/blog/2025/12/08/apache-tika-critical-xxe-cve-2025-66516</link>
-    <pubDate>Mon, 08 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/08/apache-tika-critical-xxe-cve-2025-66516</guid>
-    <category>Top Incident/Vulnerability &amp; Supply Chain</category>
+    <title>New "Data Poisoning-as-a-Service" Market Emerges on Dark Web</title>
+    <link>https://codedefence.in/blog/2025/12/09/data-poisoning-as-a-service-dark-web</link>
+    <pubDate>Tue, 09 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/data-poisoning-as-a-service-dark-web</guid>
+    <category>AI/ML in Cybersecurity &amp; Cybercrime</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/apache-tika-bug/800/400" alt="A magnifying glass analyzing a document file, revealing hidden malicious XML code." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new maximum-severity vulnerability (CVE-2025-66516) has been disclosed in Apache Tika, a widely used toolkit for detecting and extracting metadata from files. The flaw allows for XML External Entity (XXE) injection, enabling attackers to read arbitrary files on the server or cause a Denial of Service (DoS).</p>
+      <img src="https://picsum.photos/seed/aipoison/800/400" alt="A neural network brain being injected with a green toxic liquid, symbolizing AI data poisoning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Intel 471 researchers have identified a new underground market offering "Data Poisoning-as-a-Service." Attackers are selling curated, malicious datasets designed to be ingested by corporate AI models, subtly corrupting their logic, introducing bias, or creating hidden "backdoors" that trigger only on specific keywords.</p>
       <p><strong>Business Impact</strong><br/>
-      Apache Tika is embedded in thousands of enterprise applications (CMS, search engines, DLP tools) to process file uploads. This supply chain vulnerability means any application that parses user-uploaded documents could be tricked into revealing sensitive server files (like password hashes or config files).</p>
+      This threatens the integrity of enterprise AI investments. If a competitor or bad actor poisons the data used to train your customer service bot or fraud detection model, they can sabotage your operations or create loopholes to bypass security, all without hacking your network directly.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability stems from improper configuration of the XML parser within Tika, which failed to disable external entity resolution by default, allowing malicious XML payloads to be processed.</p>
+      As companies aggressively scrape the web to train internal models, they often lack the ability to verify the provenance of every data point. Criminals are planting poisoned data on public repositories and forums known to be scraped by AI bots.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct development teams to scan their codebases for Apache Tika dependencies immediately. Upgrade to the patched version. If immediate upgrading is not possible, verify that XML external entity processing is explicitly disabled in the parser configuration.</p>
-      <p><strong>Hashtags:</strong> #ApacheTika #Vulnerability #XXE #SupplyChain #AppSec #CyberSecurity #PatchNow #CVE</p>
+      Establish "Data Provenance" protocols. Do not train critical models on unverified public data. Implement "adversarial training" to test your AI models against poisoning attempts before deploying them to production.</p>
+      <p><strong>Hashtags:</strong> #AI #DataPoisoning #MachineLearning #CyberCrime #DarkWeb #ThreatIntel #FutureTech #InfoSec</p>
     ]]></description>
   </item>
 
