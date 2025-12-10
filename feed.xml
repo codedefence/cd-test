@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 09 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 09 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 10 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 10 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Apple Patches "Triangulation 2.0" Kernel Zero-Day (CVE-2025-4432)</title>
-    <link>https://codedefence.in/blog/2025/12/09/apple-ios-kernel-zero-day-triangulation-2</link>
-    <pubDate>Tue, 09 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/apple-ios-kernel-zero-day-triangulation-2</guid>
-    <category>Top Incident/Vulnerability &amp; Mobile Security</category>
+    <title>Critical VMware vCenter RCE (CVE-2025-7722) Exploited in Wild</title>
+    <link>https://codedefence.in/blog/2025/12/10/vmware-vcenter-rce-cve-2025-7722</link>
+    <pubDate>Wed, 10 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/10/vmware-vcenter-rce-cve-2025-7722</guid>
+    <category>Top Incident/Vulnerability &amp; Infrastructure</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/applezeroday2025/800/400" alt="An iPhone displaying a critical iOS update screen with a red spyware warning overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Apple has released emergency updates for iOS (19.1.2) and macOS to patch a critical kernel vulnerability (CVE-2025-4432). The flaw is a "zero-click" exploit used by commercial spyware vendors to deploy payloads simply by sending an invisible iMessage, requiring no user interaction.</p>
+      <img src="https://picsum.photos/seed/vmware-hack-2025/800/400" alt="A server room with a VMware vCenter dashboard showing a critical 'System Compromised' alert." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Broadcom (VMware) has released an emergency patch for a critical Remote Code Execution (RCE) vulnerability (CVE-2025-7722, CVSS 9.8) in vCenter Server. The flaw, located in the DCE/RPC protocol implementation, allows unauthenticated attackers to send a specially crafted network packet to execute arbitrary code and take full control of the virtualized environment.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a top-tier threat for executive mobile security. Devices belonging to board members, journalists, and high-value targets are at immediate risk of total compromise (microphone/camera recording, location tracking) if not updated. The "zero-click" nature means user training is ineffective as a defense.</p>
+      vCenter is the "crown jewel" of the data center. Compromise here gives attackers unrestricted command over all virtual machines, storage, and networking. Attackers are actively scanning for exposed vCenter servers to deploy ransomware encryptors directly to the hypervisor level.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability leverages a complex memory corruption bug in the kernel's handling of specific image formats, allowing attackers to gain root privileges instantly upon message receipt.</p>
+      The vulnerability is a heap overflow in the way vCenter handles certain RPC requests. Despite previous warnings to isolate management interfaces, thousands of vCenter servers remain exposed to the public internet, making them easy targets.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Mandate an immediate "force update" for all corporate Apple devices via your MDM (Mobile Device Management) platform. Advise executives to enable "Lockdown Mode" if they believe they are specifically targeted by state-sponsored threats.</p>
-      <p><strong>Hashtags:</strong> #Apple #ZeroDay #iOS #Spyware #MobileSecurity #Vulnerability #PatchNow #InfoSec</p>
+      This is a "drop everything" priority. Patch vCenter immediately. If patching is not possible within the hour, verify that the vCenter management interface is completely blocked from the internet and restricted to a secure management VPN.</p>
+      <p><strong>Hashtags:</strong> #VMware #vCenter #ZeroDay #RCE #Virtualization #Ransomware #PatchNow #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical Jenkins CLI Vulnerability (CVE-2025-9943) Exposes CI/CD Pipelines</title>
-    <link>https://codedefence.in/blog/2025/12/09/jenkins-cli-critical-rce-cve-2025-9943</link>
-    <pubDate>Tue, 09 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/jenkins-cli-critical-rce-cve-2025-9943</guid>
-    <category>Supply Chain &amp; DevOps</category>
+    <title>"Play" Ransomware Gang Adopts React2Shell Exploit for Mass Attacks</title>
+    <link>https://codedefence.in/blog/2025/12/10/play-ransomware-react2shell-campaign</link>
+    <pubDate>Wed, 10 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/10/play-ransomware-react2shell-campaign</guid>
+    <category>Ransomware &amp; AppSec</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/jenkinshack/800/400" alt="The Jenkins logo on a build pipeline dashboard that is fracturing and turning red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A critical Remote Code Execution (RCE) vulnerability (CVE-2025-9943, CVSS 9.9) has been discovered in the built-in Command Line Interface (CLI) of Jenkins, the world's most popular automation server. The flaw allows unauthenticated attackers to read arbitrary files and execute commands on the master controller.</p>
+      <img src="https://picsum.photos/seed/play-ransomware-react/800/400" alt="A web application interface glitching into the 'Play' ransomware logo." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The "Play" ransomware group has integrated the critical "React2Shell" vulnerability (CVE-2025-55182) into its automated attack toolkit. Security firms report a spike in Play ransomware infections targeting organizations running unpatched Next.js and React applications, moving from initial access to full encryption in under 4 hours.</p>
       <p><strong>Business Impact</strong><br/>
-      Compromising Jenkins is a "game over" scenario for software supply chains. Attackers can inject malicious code into your software products, steal proprietary source code, and exfiltrate production secrets (API keys, cloud credentials) stored within the build environment.</p>
+      This marks the shift of React2Shell from a targeted espionage tool to a mass-crime weapon. Organizations that delayed patching their web frontends are now facing immediate operational shutdown and extortion demands. The speed of the attack leaves little time for manual intervention.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability involves an unsafe argument parsing feature in the Jenkins CLI library (args4j) that is enabled by default. Attackers can manipulate CLI commands to bypass security restrictions.</p>
+      Criminal groups adopt effective exploits rapidly. The public availability of Proof-of-Concept (PoC) code for React2Shell allowed Play's developers to weaponize it quickly, targeting the widespread attack surface of modern web apps.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct DevOps leads to disable the Jenkins CLI immediately if it is not strictly required. Apply the patch released today (Jenkins 2.490+). If patching is delayed, block access to the CLI port at the network firewall level.</p>
-      <p><strong>Hashtags:</strong> #Jenkins #DevOps #SupplyChain #RCE #Vulnerability #CI_CD #CyberSecurity #PatchNow</p>
+      If you haven't patched React/Next.js yet, assume your web servers are compromised. Isolate them from the core network immediately and initiate incident response procedures to check for web shells or lateral movement.</p>
+      <p><strong>Hashtags:</strong> #Ransomware #PlayRansomware #React2Shell #WebSecurity #CyberAttack #AppSec #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Black Basta Claims Responsibility for London Councils Cyberattack</title>
-    <link>https://codedefence.in/blog/2025/12/09/black-basta-london-councils-ransomware</link>
-    <pubDate>Tue, 09 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/black-basta-london-councils-ransomware</guid>
-    <category>Ransomware &amp; Public Sector</category>
+    <title>Black Basta Leaks Sensitive Data from London Councils</title>
+    <link>https://codedefence.in/blog/2025/12/10/london-councils-data-leak-black-basta</link>
+    <pubDate>Wed, 10 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/10/london-councils-data-leak-black-basta</guid>
+    <category>Data Breach &amp; Public Sector</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/londonransom/800/400" alt="A view of London with a digital ransomware ransom note superimposed over the city skyline." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Black Basta ransomware gang has formally claimed responsibility for the cyberattack crippling multiple London boroughs. The group has posted samples of stolen data—including resident passport scans and council tax records—giving the councils 48 hours to pay before a full leak.</p>
+      <img src="https://picsum.photos/seed/london-data-leak/800/400" alt="A view of the London skyline with sensitive documents floating in the air, symbolizing a data leak." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Following the refusal of London councils to pay the ransom, the Black Basta gang has published 500GB of sensitive data on the dark web. The leak includes scanned passports, council tax records, and social care case files for thousands of residents in Kensington, Chelsea, and Westminster.</p>
       <p><strong>Business Impact</strong><br/>
-      This confirms a massive data breach affecting potentially millions of citizens. The operational disruption has already halted housing transactions and social care payments. The leak of sensitive PII will lead to long-term identity theft risks for residents and severe regulatory fines for the councils.</p>
+      This is the "worst-case scenario" realized. The exposure of highly sensitive vulnerable resident data creates severe safeguarding risks and opens the councils to massive GDPR fines and class-action lawsuits. Trust in local government digital services has been severely damaged.</p>
       <p><strong>Why It Happened</strong><br/>
-      Black Basta likely exploited a shared service provider vulnerability (possibly the Oracle or Citrix flaws tracked recently) to laterally move across the interconnected networks of the different councils.</p>
+      The UK government maintains a strict policy against paying ransoms. While this discourages future attacks, the immediate consequence is the weaponization of stolen data. Black Basta followed through on their threat to punish the victim for non-payment.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      For public sector leaders: Review shared-service agreements for single points of failure. Ensure that "offline" backups are truly isolated from the network to prevent encryption during such cascading attacks.</p>
-      <p><strong>Hashtags:</strong> #BlackBasta #Ransomware #London #DataBreach #PublicSector #Privacy #GDPR #InfoSec</p>
+      Public sector leaders must prepare crisis communication strategies for data leaks. Ensure that "identity protection" monitoring services are pre-contracted and ready to deploy to citizens immediately upon a confirmed leak.</p>
+      <p><strong>Hashtags:</strong> #DataLeak #London #BlackBasta #Privacy #GDPR #PublicSector #CyberCrime #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>New "Data Poisoning-as-a-Service" Market Emerges on Dark Web</title>
-    <link>https://codedefence.in/blog/2025/12/09/data-poisoning-as-a-service-dark-web</link>
-    <pubDate>Tue, 09 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/09/data-poisoning-as-a-service-dark-web</guid>
-    <category>AI/ML in Cybersecurity &amp; Cybercrime</category>
+    <title>New "Model Denial of Service" Attacks Costing Companies Millions</title>
+    <link>https://codedefence.in/blog/2025/12/10/model-denial-of-service-attacks-cost</link>
+    <pubDate>Wed, 10 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/10/model-denial-of-service-attacks-cost</guid>
+    <category>AI/ML in Cybersecurity</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/aipoison/800/400" alt="A neural network brain being injected with a green toxic liquid, symbolizing AI data poisoning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Intel 471 researchers have identified a new underground market offering "Data Poisoning-as-a-Service." Attackers are selling curated, malicious datasets designed to be ingested by corporate AI models, subtly corrupting their logic, introducing bias, or creating hidden "backdoors" that trigger only on specific keywords.</p>
+      <img src="https://picsum.photos/seed/ai-dos-attack/800/400" alt="An AI server overheating and smoking due to a massive influx of complex queries." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A new trend of "Model Denial of Service" (MDoS) attacks is targeting companies with public-facing LLM APIs. Attackers are sending specially crafted, computationally expensive prompts (like complex recursive logic puzzles) that force the AI model to consume massive amounts of GPU resources, driving up cloud bills and causing service outages.</p>
       <p><strong>Business Impact</strong><br/>
-      This threatens the integrity of enterprise AI investments. If a competitor or bad actor poisons the data used to train your customer service bot or fraud detection model, they can sabotage your operations or create loopholes to bypass security, all without hacking your network directly.</p>
+      This is "financial DDoS." Instead of crashing a server with traffic volume, attackers are exhausting the *budget* and *compute capacity* of the target. One startup reported a $200,000 cloud bill spike in 24 hours due to a sustained MDoS attack.</p>
       <p><strong>Why It Happened</strong><br/>
-      As companies aggressively scrape the web to train internal models, they often lack the ability to verify the provenance of every data point. Criminals are planting poisoned data on public repositories and forums known to be scraped by AI bots.</p>
+      Standard rate limiting (requests per minute) fails to stop MDoS because a single complex prompt counts as one request but can tie up a GPU for minutes. Attackers are exploiting the gap between API metering and actual compute cost.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Establish "Data Provenance" protocols. Do not train critical models on unverified public data. Implement "adversarial training" to test your AI models against poisoning attempts before deploying them to production.</p>
-      <p><strong>Hashtags:</strong> #AI #DataPoisoning #MachineLearning #CyberCrime #DarkWeb #ThreatIntel #FutureTech #InfoSec</p>
+      Update your AI API rate limits to measure "token complexity" or compute time, not just request count. Implement "early exit" mechanisms to terminate processing for prompts that exceed a certain computational threshold.</p>
+      <p><strong>Hashtags:</strong> #AI #LLM #DDoS #CloudSecurity #FinOps #CyberAttack #MachineLearning #InfoSec</p>
     ]]></description>
   </item>
 
