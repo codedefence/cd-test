@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 16 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 16 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 17 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 17 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>CISA Alert: Iranian APTs Exploiting Unpatched Cisco ASA Flaw at Scale</title>
-    <link>https://codedefence.in/blog/2025/12/16/cisa-iran-apt-cisco-asa-scale-exploit</link>
-    <pubDate>Tue, 16 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/16/cisa-iran-apt-cisco-asa-scale-exploit</guid>
-    <category>Top Incident/Vulnerability &amp; Geopolitics</category>
+    <title>Critical Outlook "Preview Pane" Zero-Day (CVE-2025-9921) Under Attack</title>
+    <link>https://codedefence.in/blog/2025/12/17/outlook-preview-pane-zero-day-cve-2025-9921</link>
+    <pubDate>Wed, 17 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/outlook-preview-pane-zero-day-cve-2025-9921</guid>
+    <category>Top Incident/Vulnerability &amp; Enterprise Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cisco-asa-iran-scale/800/400" alt="A network firewall with Iranian script overlaid on its digital surface, symbolizing wide-scale compromise." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has escalated its warning regarding the unpatched vulnerability in Cisco Adaptive Security Appliance (ASA) firewalls, confirming mass exploitation by multiple Iranian state-sponsored groups (including APT42 and Mint Sandstorm). The threat actors are using automated tools to scan and compromise VPN endpoints worldwide, focusing on critical infrastructure and defense sectors.</p>
+      <img src="https://picsum.photos/seed/outlook-zero-day-2025/800/400" alt="An Outlook email interface with the preview pane glitching into malicious code, representing a zero-click exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Microsoft has confirmed a critical zero-day vulnerability (CVE-2025-9921, CVSS 9.8) in Microsoft Outlook is being actively exploited. The flaw allows for "zero-click" Remote Code Execution (RCE) simply by viewing a malicious email in the Preview Pane—no open or click required.</p>
       <p><strong>Business Impact</strong><br/>
-      This represents a major breach of network perimeters. Attackers are gaining validated access to corporate networks, enabling sophisticated lateral movement, credential theft, and data exfiltration. Any delayed patching of external-facing VPNs is equivalent to leaving the front door open for nation-state actors.</p>
+      This is the highest possible severity for enterprise communication tools. Every employee with Outlook open is a potential entry point. Successful exploitation grants the attacker the same privileges as the user, allowing for immediate ransomware deployment or data exfiltration across the corporate network.</p>
       <p><strong>Why It Happened</strong><br/>
-      The attack leverages a previously disclosed information disclosure flaw (CVE-2024-XXXX), which, when chained with another zero-day, allows full remote code execution. The vulnerability is being exploited because organizations have notoriously slow patching cycles for core network devices.</p>
+      The vulnerability exists in the way Outlook parses specially crafted TNEF (Transport Neutral Encapsulation Format) files. The parsing engine fails to validate memory bounds, leading to a heap overflow that attackers can reliably trigger.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Direct your network security team to apply the latest Cisco ASA patches immediately. After patching, conduct a full forensic review of the VPN logs for any connections originating from known IoCs associated with these Iranian APT groups and assume those accounts are compromised.</p>
-      <p><strong>Hashtags:</strong> #CISA #CiscoASA #Iran #APT #Geopolitics #Vulnerability #PatchNow #InfoSec</p>
+      <strong>IMMEDIATE ACTION:</strong> Direct IT to deploy the Microsoft emergency patch released today. If patching cannot be completed within 4 hours, disable the "Preview Pane" in Outlook globally via Group Policy as a temporary mitigation.</p>
+      <p><strong>Hashtags:</strong> #Outlook #ZeroDay #RCE #Microsoft #EnterpriseSecurity #PatchNow #ZeroClick #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New "Wailer" Ransomware Targets MSPs, Demands $20 Million Payday</title>
-    <link>https://codedefence.in/blog/2025/12/16/wailer-ransomware-targets-msps-20million-demand</link>
-    <pubDate>Tue, 16 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/16/wailer-ransomware-targets-msps-20million-demand</guid>
-    <category>Ransomware &amp; Supply Chain</category>
+    <title>"KubeDoom" Ransomware Hits Federal Cloud Environments</title>
+    <link>https://codedefence.in/blog/2025/12/17/kubedoom-ransomware-federal-agencies</link>
+    <pubDate>Wed, 17 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/kubedoom-ransomware-federal-agencies</guid>
+    <category>Cloud Security &amp; Government</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/wailer-ransomware/800/400" alt="A managed services provider (MSP) helpdesk screen displaying multiple client networks simultaneously locked by a ransomware note." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A sophisticated new ransomware group named "Wailer" has emerged, specializing in targeting Managed Service Providers (MSPs). Wailer uses a wormable component to pivot from the compromised MSP infrastructure to all connected client networks, culminating in a record $20 million ransom demand against a large US healthcare group.</p>
+      <img src="https://picsum.photos/seed/kubedoom-federal/800/400" alt="A government building silhouette with a digital red cloud storm overhead, representing the KubeDoom threat." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The "KubeDoom" Kubernetes exploit crisis has escalated, with reports confirming that at least three US federal agencies have had non-classified cloud development environments encrypted by ransomware. The attackers used the CVE-2025-10202 privilege escalation flaw to seize control of the clusters.</p>
       <p><strong>Business Impact</strong><br/>
-      This is the ultimate supply chain threat. A failure at one low-security MSP can cause catastrophic damage to dozens of client organizations, particularly SMEs. Healthcare and finance sectors are especially vulnerable due to their reliance on third-party IT management.</p>
+      The breach of federal environments demonstrates that even highly regulated sectors are struggling to patch this vulnerability fast enough. It signals that "KubeDoom" is not just a nuisance but a systemic threat to national digital infrastructure.</p>
       <p><strong>Why It Happened</strong><br/>
-      Wailer exploits insecure RMM (Remote Monitoring and Management) tools used by the MSP, using legitimate remote access to deploy its payload across the entire client base before detection.</p>
+      The agencies reportedly had "shadow IT" clusters that were not fully integrated into the central patch management system, leaving them exposed to the automated scanning tools used by ransomware gangs.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your contracts and security controls with all MSPs. Mandate that they implement strict network segmentation between your environment and their other clients. Ensure your own network has MFA enabled on all entry points, even those managed by a third party.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #Wailer #MSP #SupplyChain #Healthcare #CyberCrime #RMM #InfoSec</p>
+      Treat "Shadow Cloud" as a critical risk. Order an immediate discovery scan for *all* Kubernetes API endpoints originating from your IP space. Any cluster that cannot be patched immediately must be taken offline.</p>
+      <p><strong>Hashtags:</strong> #KubeDoom #Kubernetes #Government #Ransomware #CloudSecurity #Federal #CISA #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New Phishing Campaign Evades M365 Defenses Using 'Zero-Point' Images</title>
-    <link>https://codedefence.in/blog/2025/12/16/zero-point-image-phishing-m365-evasion</link>
-    <pubDate>Tue, 16 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/16/zero-point-image-phishing-m365-evasion</guid>
-    <category>Email Security &amp; Fraud</category>
+    <title>"FaceSwap" Gang Steals $50M Using Real-Time Deepfakes</title>
+    <link>https://codedefence.in/blog/2025/12/17/faceswap-gang-deepfake-heist-50m</link>
+    <pubDate>Wed, 17 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/faceswap-gang-deepfake-heist-50m</guid>
+    <category>AI/ML in Cybersecurity &amp; Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/zero-point-phishing/800/400" alt="A Microsoft 365 inbox with a seemingly blank image concealing a malicious link behind it." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A new, highly effective phishing technique known as "Zero-Point" has emerged, successfully bypassing Microsoft 365's Advanced Threat Protection (ATP). Attackers embed the entire phishing URL into a nearly-invisible, single-pixel image, which is then layered over a benign image. Human users click the visible image, but the link points to the malicious hidden layer, confusing URL scanners.</p>
+      <img src="https://picsum.photos/seed/deepfake-heist/800/400" alt="A video call screen showing a digitally altered face being used to bypass biometric security." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A sophisticated cybercrime ring dubbed the "FaceSwap Gang" has successfully stolen over $50 million from banks in Asia and Europe. The group utilized advanced, real-time AI video deepfakes to impersonate CEOs and CFOs during live video verification calls, authorizing massive fraudulent transfers.</p>
       <p><strong>Business Impact</strong><br/>
-      This attack defeats the automated URL-scanning mechanisms used by cloud email providers. The high camouflage rate dramatically increases click-through rates, leading to massive credential theft campaigns just before the holiday period.</p>
+      This marks the end of "video verification" as a standalone trust anchor. Deepfakes have graduated from experimental to industrial-scale fraud tools. Financial controls that rely on visual recognition of executives are now fundamentally broken.</p>
       <p><strong>Why It Happened</strong><br/>
-      The technique exploits a discrepancy in how email clients render layered images versus how cloud security gateways scan the HTML code. The scanner sees the benign link first and passes the email.</p>
+      The gang used new low-latency generative AI models to swap faces in real-time with no perceptible lag. They combined this with social engineering, scheduling "emergency" calls to bypass standard multi-person approval protocols.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update email security rules to flag emails containing highly-layered or single-pixel image attachments. Enhance employee training to focus on "trust signals" and external links, emphasizing that **all** unexpected requests for credentials are fraudulent.</p>
-      <p><strong>Hashtags:</strong> #Phishing #M365 #EmailSecurity #ZeroPoint #CyberCrime #CredentialTheft #InfoSec</p>
+      Update financial authorization policies immediately. Require "Out-of-Band" (OOB) authentication (e.g., a separate mobile app approval or hardware token) for all high-value transfers, regardless of who requests them on a video call.</p>
+      <p><strong>Hashtags:</strong> #AI #Deepfake #Fraud #Banking #FaceSwap #CyberCrime #CFO #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>Kubernetes "KubeDoom" Exploits Shift to Ransomware-as-a-Service</title>
-    <link>https://codedefence.in/blog/2025/12/16/kube-doom-ransomware-as-a-service</link>
-    <pubDate>Tue, 16 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/16/kube-doom-ransomware-as-a-service</guid>
-    <category>Cloud Security &amp; Ransomware</category>
+    <title>Volt Typhoon Resurgence: US Water Systems Targeted</title>
+    <link>https://codedefence.in/blog/2025/12/17/volt-typhoon-us-water-systems-targeted</link>
+    <pubDate>Wed, 17 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/volt-typhoon-us-water-systems-targeted</guid>
+    <category>Geopolitics &amp; Critical Infrastructure</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/kubedoom-raas/800/400" alt="A network graphic with a red digital cloud icon transferring malicious software, representing RaaS." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The exploitation of the Kubernetes "KubeDoom" privilege escalation flaw (CVE-2025-10202) has fully integrated into the Ransomware-as-a-Service (RaaS) economy. Affiliates of the LockBit and Black Basta groups are now offering "KubeDoom Kits" on the dark web, specifically designed to compromise and encrypt entire Kubernetes clusters for a fee.</p>
+      <img src="https://picsum.photos/seed/water-system-hack/800/400" alt="A water treatment facility control room with screens flashing red warnings, symbolizing a cyberattack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The FBI and EPA have issued a joint warning regarding a resurgence of "Volt Typhoon," a China-state-sponsored threat group. The actors have been detected inside the IT networks of multiple US water and wastewater utilities, "pre-positioning" for potential disruptive attacks.</p>
       <p><strong>Business Impact</strong><br/>
-      The lowering of the technical bar for this critical cloud exploit means thousands of unpatched clusters are now at immediate risk from amateur cybercriminals. RaaS enables rapid, massive scaling of attacks against cloud-native applications, leading to total data loss and service shutdown.</p>
+      This is a strategic threat to public safety. Unlike ransomware, the goal here is not money but the capability to disrupt critical life-support systems during a geopolitical crisis. Attackers are targeting smaller, under-resourced utilities to gain a foothold.</p>
       <p><strong>Why It Happened</strong><br/>
-      The simplicity of the KubeDoom exploit made it an easy and lucrative addition to the RaaS arsenal. By providing a ready-made exploit kit, the large RaaS groups can monetize the vulnerability instantly.</p>
+      Volt Typhoon is using "Living off the Land" (LotL) techniques—using legitimate system tools to blend in—and exploiting weak passwords on internet-facing remote access systems used by facility contractors.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Reinforce the need for immediate patching (Kubernetes v1.32.1+). Implement a continuous vulnerability monitoring solution that specifically checks the Kubernetes API server configuration for known flaws. Ensure all cloud credentials within the cluster are regularly rotated.</p>
-      <p><strong>Hashtags:</strong> #Kubernetes #KubeDoom #RaaS #CloudSecurity #Ransomware #Vulnerability #DevOps #InfoSec</p>
+      Utilities must enforce strict MFA on all remote access. Conduct "threat hunting" specifically looking for anomalous usage of standard administrative tools (PowerShell, WMI). Isolate OT (Operational Technology) networks from IT networks entirely.</p>
+      <p><strong>Hashtags:</strong> #VoltTyphoon #China #WaterSecurity #CriticalInfrastructure #EPA #FBI #CyberWarfare #InfoSec</p>
     ]]></description>
   </item>
 
