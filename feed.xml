@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 17 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Wed, 17 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Thu, 18 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 18 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Critical Outlook "Preview Pane" Zero-Day (CVE-2025-9921) Under Attack</title>
-    <link>https://codedefence.in/blog/2025/12/17/outlook-preview-pane-zero-day-cve-2025-9921</link>
-    <pubDate>Wed, 17 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/outlook-preview-pane-zero-day-cve-2025-9921</guid>
-    <category>Top Incident/Vulnerability &amp; Enterprise Security</category>
+    <title>Urgent: Unpatched Cisco Zero-Day (CVE-2025-20393) Exploited by Chinese State Actors</title>
+    <link>https://codedefence.in/blog/2025/12/18/cisco-zero-day-uat-9686-exploitation</link>
+    <pubDate>Thu, 18 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/18/cisco-zero-day-uat-9686-exploitation</guid>
+    <category>Top Incident/Vulnerability &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/outlook-zero-day-2025/800/400" alt="An Outlook email interface with the preview pane glitching into malicious code, representing a zero-click exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Microsoft has confirmed a critical zero-day vulnerability (CVE-2025-9921, CVSS 9.8) in Microsoft Outlook is being actively exploited. The flaw allows for "zero-click" Remote Code Execution (RCE) simply by viewing a malicious email in the Preview Pane—no open or click required.</p>
+      <img src="https://picsum.photos/seed/cisco-zero-day-threat/800/400" alt="A Cisco Secure Email Gateway appliance glowing red with digital code rain, representing a critical unpatched vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Cisco has issued an urgent warning regarding a critical zero-day (CVE-2025-20393, CVSS 10.0) in its Secure Email Gateway and Web Manager products. A Chinese-nexus group, UAT-9686, is actively exploiting the flaw to deploy "AquaShell" malware, granting root-level access. Currently, <strong>no patch is available</strong>, and Cisco states rebuilding compromised devices is the only way to ensure remediation.</p>
       <p><strong>Business Impact</strong><br/>
-      This is the highest possible severity for enterprise communication tools. Every employee with Outlook open is a potential entry point. Successful exploitation grants the attacker the same privileges as the user, allowing for immediate ransomware deployment or data exfiltration across the corporate network.</p>
+      This is a catastrophic risk for large enterprises. Since the vulnerability resides in the email gateway—the very tool meant to stop threats—attackers can bypass all perimeter defenses, steal sensitive communications, and pivot into the internal network with full administrative control.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability exists in the way Outlook parses specially crafted TNEF (Transport Neutral Encapsulation Format) files. The parsing engine fails to validate memory bounds, leading to a heap overflow that attackers can reliably trigger.</p>
+      The flaw targets the "Spam Quarantine" feature when exposed to the internet. While not a default setting, organizations using this configuration were targeted starting in late November 2025, allowing attackers to install persistent backdoors before detection began.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      <strong>IMMEDIATE ACTION:</strong> Direct IT to deploy the Microsoft emergency patch released today. If patching cannot be completed within 4 hours, disable the "Preview Pane" in Outlook globally via Group Policy as a temporary mitigation.</p>
-      <p><strong>Hashtags:</strong> #Outlook #ZeroDay #RCE #Microsoft #EnterpriseSecurity #PatchNow #ZeroClick #InfoSec</p>
+      Audit all Cisco Secure Email appliances immediately. If "Spam Quarantine" is internet-facing, assume compromise and follow Cisco's rebuild protocol. Restrict access to trusted hosts only and disable unnecessary services like HTTP/FTP on management interfaces.</p>
+      <p><strong>Hashtags:</strong> #Cisco #ZeroDay #UAT9686 #China #APT #CyberSecurity #CISA #CVE202520393 #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"KubeDoom" Ransomware Hits Federal Cloud Environments</title>
-    <link>https://codedefence.in/blog/2025/12/17/kubedoom-ransomware-federal-agencies</link>
-    <pubDate>Wed, 17 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/kubedoom-ransomware-federal-agencies</guid>
-    <category>Cloud Security &amp; Government</category>
+    <title>Richmond Behavioral Health Authority Breach Impacts 113,000 Individuals</title>
+    <link>https://codedefence.in/blog/2025/12/18/rbha-data-breach-healthcare-ransomware</link>
+    <pubDate>Thu, 18 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/18/rbha-data-breach-healthcare-ransomware</guid>
+    <category>Data Breach &amp; Healthcare Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/kubedoom-federal/800/400" alt="A government building silhouette with a digital red cloud storm overhead, representing the KubeDoom threat." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The "KubeDoom" Kubernetes exploit crisis has escalated, with reports confirming that at least three US federal agencies have had non-classified cloud development environments encrypted by ransomware. The attackers used the CVE-2025-10202 privilege escalation flaw to seize control of the clusters.</p>
+      <img src="https://picsum.photos/seed/healthcare-data-leak/800/400" alt="A medical file folder with a digital padlock breaking, symbolizing the leak of sensitive health information." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The Richmond Behavioral Health Authority (RBHA) has disclosed a massive data breach affecting 113,000 individuals. Threat actors deployed ransomware and exfiltrated sensitive data including names, Social Security numbers, and personal health information (PHI).</p>
       <p><strong>Business Impact</strong><br/>
-      The breach of federal environments demonstrates that even highly regulated sectors are struggling to patch this vulnerability fast enough. It signals that "KubeDoom" is not just a nuisance but a systemic threat to national digital infrastructure.</p>
+      Beyond the immediate operational disruption of mental health services, RBHA faces severe regulatory fines under HIPAA and significant reputational damage. The stolen PHI is high-value on the dark web, leading to long-term identity theft risks for vulnerable populations.</p>
       <p><strong>Why It Happened</strong><br/>
-      The agencies reportedly had "shadow IT" clusters that were not fully integrated into the central patch management system, leaving them exposed to the automated scanning tools used by ransomware gangs.</p>
+      The breach followed a ransomware attack where initial access was likely gained through compromised credentials. The attackers were able to move laterally and access unencrypted databases containing legacy patient records.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Treat "Shadow Cloud" as a critical risk. Order an immediate discovery scan for *all* Kubernetes API endpoints originating from your IP space. Any cluster that cannot be patched immediately must be taken offline.</p>
-      <p><strong>Hashtags:</strong> #KubeDoom #Kubernetes #Government #Ransomware #CloudSecurity #Federal #CISA #InfoSec</p>
+      Healthcare organizations must enforce encryption for data-at-rest across all PHI repositories, including backups. Review incident response plans for "data-first" recovery to prioritize the containment of exfiltration over system restoration.</p>
+      <p><strong>Hashtags:</strong> #HealthcareSecurity #DataBreach #HIPAA #PHI #Richmond #Ransomware #InfoSec #CyberAttack</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"FaceSwap" Gang Steals $50M Using Real-Time Deepfakes</title>
-    <link>https://codedefence.in/blog/2025/12/17/faceswap-gang-deepfake-heist-50m</link>
-    <pubDate>Wed, 17 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/faceswap-gang-deepfake-heist-50m</guid>
-    <category>AI/ML in Cybersecurity &amp; Fraud</category>
+    <title>Amazon &amp; Google Expose Years-Long Russian GRU Campaign Against Edge Devices</title>
+    <link>https://codedefence.in/blog/2025/12/18/russian-gru-edge-device-espionage-campaign</link>
+    <pubDate>Thu, 18 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/18/russian-gru-edge-device-espionage-campaign</guid>
+    <category>Geopolitics &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/deepfake-heist/800/400" alt="A video call screen showing a digitally altered face being used to bypass biometric security." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>A sophisticated cybercrime ring dubbed the "FaceSwap Gang" has successfully stolen over $50 million from banks in Asia and Europe. The group utilized advanced, real-time AI video deepfakes to impersonate CEOs and CFOs during live video verification calls, authorizing massive fraudulent transfers.</p>
+      <img src="https://picsum.photos/seed/russian-espionage-edge/800/400" alt="A digital map showing red data streams flowing from global edge routers toward Eastern Europe." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Amazon and Google's threat intelligence teams have released a joint report detailing a decade-long operation by Russia’s GRU. The campaign exploited misconfigured "parked domains" and edge network devices to intercept traffic and conduct global espionage against Western critical infrastructure.</p>
       <p><strong>Business Impact</strong><br/>
-      This marks the end of "video verification" as a standalone trust anchor. Deepfakes have graduated from experimental to industrial-scale fraud tools. Financial controls that rely on visual recognition of executives are now fundamentally broken.</p>
+      This reveals that the network perimeter is not just being bypassed, but effectively "owned" by nation-state actors. For businesses, this means their outward-facing infrastructure is being used as a platform for state-level surveillance and potential future disruption of utility and defense systems.</p>
       <p><strong>Why It Happened</strong><br/>
-      The gang used new low-latency generative AI models to swap faces in real-time with no perceptible lag. They combined this with social engineering, scheduling "emergency" calls to bypass standard multi-person approval protocols.</p>
+      The GRU capitalized on the "security vacuum" of unmanaged edge devices and parked domains, which are often overlooked in standard audits. Over 90% of these domains were found to be delivering malware or acting as command-and-control (C2) nodes.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update financial authorization policies immediately. Require "Out-of-Band" (OOB) authentication (e.g., a separate mobile app approval or hardware token) for all high-value transfers, regardless of who requests them on a video call.</p>
-      <p><strong>Hashtags:</strong> #AI #Deepfake #Fraud #Banking #FaceSwap #CyberCrime #CFO #InfoSec</p>
+      Review your organization’s domain portfolio and decommission any unused or "parked" domains. Ensure all network edge devices (routers, firewalls) are part of a strict centralized management and patching program.</p>
+      <p><strong>Hashtags:</strong> #GRU #Russia #Espionage #EdgeSecurity #Infrastructure #CyberWarfare #Amazon #Google #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Volt Typhoon Resurgence: US Water Systems Targeted</title>
-    <link>https://codedefence.in/blog/2025/12/17/volt-typhoon-us-water-systems-targeted</link>
-    <pubDate>Wed, 17 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/17/volt-typhoon-us-water-systems-targeted</guid>
-    <category>Geopolitics &amp; Critical Infrastructure</category>
+    <title>CISA Adds ASUS Embedded Vulnerability to KEV Following Active Exploitation</title>
+    <link>https://codedefence.in/blog/2025/12/18/cisa-kev-asus-embedded-malware</link>
+    <pubDate>Thu, 18 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/18/cisa-kev-asus-embedded-malware</guid>
+    <category>Vulnerability Management &amp; IoT Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/water-system-hack/800/400" alt="A water treatment facility control room with screens flashing red warnings, symbolizing a cyberattack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The FBI and EPA have issued a joint warning regarding a resurgence of "Volt Typhoon," a China-state-sponsored threat group. The actors have been detected inside the IT networks of multiple US water and wastewater utilities, "pre-positioning" for potential disruptive attacks.</p>
+      <img src="https://picsum.photos/seed/asus-iot-vulnerability/800/400" alt="An ASUS router with a red digital skeleton key icon floating over it, representing a known exploited flaw." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a critical ASUS embedded device vulnerability to its Known Exploited Vulnerabilities (KEV) catalog. The flaw involves malicious code embedded in firmware that allows unauthenticated remote execution, primarily targeting small office/home office (SOHO) routers used by remote workers.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a strategic threat to public safety. Unlike ransomware, the goal here is not money but the capability to disrupt critical life-support systems during a geopolitical crisis. Attackers are targeting smaller, under-resourced utilities to gain a foothold.</p>
+      With the permanence of hybrid work, compromised home routers are now the "backdoor" into the corporate network. Attackers can use these devices to sniff corporate traffic, capture VPN credentials, and launch attacks against internal corporate assets from a "trusted" home IP.</p>
       <p><strong>Why It Happened</strong><br/>
-      Volt Typhoon is using "Living off the Land" (LotL) techniques—using legitimate system tools to blend in—and exploiting weak passwords on internet-facing remote access systems used by facility contractors.</p>
+      The vulnerability stems from insecure firmware update mechanisms that allowed attackers to inject malicious code into the legitimate update stream, a classic supply chain compromise for hardware.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Utilities must enforce strict MFA on all remote access. Conduct "threat hunting" specifically looking for anomalous usage of standard administrative tools (PowerShell, WMI). Isolate OT (Operational Technology) networks from IT networks entirely.</p>
-      <p><strong>Hashtags:</strong> #VoltTyphoon #China #WaterSecurity #CriticalInfrastructure #EPA #FBI #CyberWarfare #InfoSec</p>
+      Update your remote work policy to mandate corporate-managed hardware for home offices or require a "Zero Trust" architecture that treats the home network as inherently untrusted, regardless of the router's brand.</p>
+      <p><strong>Hashtags:</strong> #CISA #ASUS #IoT #SOHO #Vulnerability #KEV #RemoteWork #SupplyChain #InfoSec</p>
     ]]></description>
   </item>
 
