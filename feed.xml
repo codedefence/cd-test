@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Mon, 22 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 22 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 23 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 23 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>OpenText 2025 Report: "Downloads Directory" is the New Primary Attack Vector</title>
-    <link>https://codedefence.in/blog/2025/12/22/opentext-report-downloads-directory-malware</link>
-    <pubDate>Mon, 22 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/22/opentext-report-downloads-directory-malware</guid>
-    <category>Threat Intelligence &amp; Endpoint Security</category>
+    <title>Global Alert: Critical Google Chrome Flaws Allow Total System Takeover</title>
+    <link>https://codedefence.in/blog/2025/12/23/google-chrome-severe-vulnerabilities-system-takeover</link>
+    <pubDate>Tue, 23 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/google-chrome-severe-vulnerabilities-system-takeover</guid>
+    <category>Top Incident/Vulnerability &amp; Browser Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/opentext-downloads/800/400" alt="A laptop screen showing a 'Downloads' folder overflowing with files marked with red malware skulls." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The OpenText 2025 Cybersecurity Threat Report, released today, reveals a massive shift in attacker tactics. Over 35% of consumer and enterprise malware now originates from the user's "Downloads" folder, disguising itself as legitimate productivity tools, invoices, or installers. Attackers are using AI to SEO-poison search results, ensuring their malicious files appear at the top of Google searches for common business software.</p>
+      <img src="https://picsum.photos/seed/chrome-exploit-2025/800/400" alt="A Google Chrome icon with a red warning badge and digital binary code leaking out, symbolizing a critical vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Government agencies and CERTs worldwide (including India's CERT-In) have issued a high-priority "severe" warning for Google Chrome users. Multiple high-severity vulnerabilities in the V8 engine and WebGPU component allow unauthenticated remote attackers to execute arbitrary code and gain full control of targeted Windows, macOS, and Linux systems.</p>
       <p><strong>Business Impact</strong><br/>
-      This creates a blind spot for traditional perimeter defenses. If a user voluntarily downloads a file they *believe* is legitimate (e.g., a PDF editor or driver update), they bypass email filters. The malware often uses valid digital signatures to evade basic endpoint detection, leading to ransomware deployment or credential theft.</p>
+      As the primary business browser, a Chrome RCE (Remote Code Execution) is a catastrophic risk for corporate data. Attackers can steal session tokens, access saved credentials, and move laterally into internal web-based SaaS tools. Successful exploitation can occur simply by a user visiting a compromised or malicious website.</p>
       <p><strong>Why It Happened</strong><br/>
-      The "Industrialization of Cybercrime" has led to highly professionalized malware distribution networks that mimic legitimate software vendors. Generative AI helps these groups create flawless, localized phishing pages that trick even tech-savvy users.</p>
+      The vulnerabilities stem from out-of-bounds memory access in the V8 JavaScript engine and "use-after-free" errors in WebGPU. These memory corruption flaws are a prime target for initial access brokers and nation-state actors seeking a stealthy foothold on employee workstations.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Update Endpoint Detection and Response (EDR) policies to strictly inspect execution from the `%USERPROFILE%\Downloads` directory. Implement "Application Whitelisting" to prevent the execution of unapproved binaries, even if they are signed.</p>
-      <p><strong>Hashtags:</strong> #OpenText #Malware #EndpointSecurity #AI #CyberCrime #CISO #InfoSec #Report</p>
+      <strong>Immediate Patching:</strong> Mandate all employees to restart Chrome and verify they are on the latest version. Use your MDM/Endpoint management tools to force a browser update and audit for any devices still running outdated versions by the end of today.</p>
+      <p><strong>Hashtags:</strong> #Chrome #Vulnerability #RCE #CERTIn #PatchNow #GoogleChrome #BrowserSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Cisco Crisis Deepens: "AquaWipe" Variant Bricks Appliances to Hide Tracks</title>
-    <link>https://codedefence.in/blog/2025/12/22/cisco-aquawipe-destructive-malware</link>
-    <pubDate>Mon, 22 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/22/cisco-aquawipe-destructive-malware</guid>
-    <category>Top Incident &amp; Critical Infrastructure</category>
+    <title>CISA Adds Digiever NVR Vulnerability to KEV Catalog Amid Active Attacks</title>
+    <link>https://codedefence.in/blog/2025/12/23/cisa-kev-digiever-nvr-exploitation</link>
+    <pubDate>Tue, 23 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/cisa-kev-digiever-nvr-exploitation</guid>
+    <category>IoT Security &amp; Vulnerability Management</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cisco-aquawipe/800/400" alt="A Cisco server rack with screens going black and showing a 'System Halted' error." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The Chinese-nexus group UAT-9686 has escalated its campaign against Cisco Secure Email Gateways. New intelligence confirms the deployment of "AquaWipe," a destructive module that systematically corrupts the appliance's firmware and file system if it detects forensic analysis tools. This effectively "bricks" the device, causing total service outages.</p>
+      <img src="https://picsum.photos/seed/digiever-nvr-hack/800/400" alt="A security camera system monitor showing 'Connection Lost' with a red digital skull, representing a compromised NVR." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has added a missing authorization vulnerability in Digiever DS-2105 Pro Network Video Recorders (CVE-2023-52163) to its Known Exploited Vulnerabilities (KEV) catalog. Attackers are actively using this flaw to inject commands and gain unauthorized access to physical security camera systems.</p>
       <p><strong>Business Impact</strong><br/>
-      This moves the threat from "Espionage" to "Destruction." Organizations attempting to investigate a potential breach may inadvertently trigger the wiper, losing not only the evidence but the critical email infrastructure itself right before the holiday break.</p>
+      Compromised NVRs not only expose physical surveillance feeds to attackers but also serve as an ideal persistence point within a network. These devices are often poorly monitored and can be used as jump hosts to launch internal attacks or participate in botnets like Mirai.</p>
       <p><strong>Why It Happened</strong><br/>
-      State actors are increasingly using "scorched earth" tactics to prevent attribution. The wiper is a counter-forensic measure designed to destroy the logs that would link the attack back to UAT-9686.</p>
+      The device fails to properly authorize certain CGI requests, allowing attackers to bypass authentication. The continued use of legacy or unmanaged IoT/OT devices in enterprise environments provides an easy entry point for threat actors.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      <strong>Do not attempt live forensics</strong> on suspected appliances. Immediately isolate the device from the network and initiate a full disaster recovery capability on clean hardware. Assume the data on the compromised appliance is unrecoverable.</p>
-      <p><strong>Hashtags:</strong> #Cisco #AquaWipe #Wiper #DestructiveMalware #China #APT #IncidentResponse #InfoSec</p>
+      Identify any Digiever NVRs on your network. If they cannot be patched immediately, they must be isolated from the internet and the core corporate network. CISA has set a remediation deadline of January 12, 2026, but the private sector should treat this as urgent.</p>
+      <p><strong>Hashtags:</strong> #CISA #KEV #IoT #Digiever #PhysicalSecurity #Vulnerability #NVR #CyberAttack</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Global Logistics Giant "SwiftHaul" Hit by Pre-Holiday Ransomware Attack</title>
-    <link>https://codedefence.in/blog/2025/12/22/swifthaul-logistics-ransomware-attack</link>
-    <pubDate>Mon, 22 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/22/swifthaul-logistics-ransomware-attack</guid>
-    <category>Ransomware &amp; Supply Chain</category>
+    <title>Report: 35% of Malware Now Originates in the "Downloads" Directory</title>
+    <link>https://codedefence.in/blog/2025/12/23/malware-trends-downloads-directory-attack-vector</link>
+    <pubDate>Tue, 23 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/malware-trends-downloads-directory-attack-vector</guid>
+    <category>Threat Intelligence &amp; Workplace Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/logistics-ransomware/800/400" alt="A shipping container terminal with automated cranes frozen in place, overlaid with a digital padlock." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Major international logistics provider "SwiftHaul" has halted operations across Europe and Asia following a BlackCat (ALPHV) ransomware attack. The disruption comes at the peak of the holiday shipping window, stranding millions of parcels and disrupting just-in-time manufacturing supply chains.</p>
+      <img src="https://picsum.photos/seed/downloads-folder-malware/800/400" alt="A laptop screen with the Downloads folder open, showing icons of 'Invoices' and 'Tools' that are actually malware." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The 2025 OpenText Cybersecurity Threat Report confirms a major tactical shift: over one-third of all business malware is now first detected in the user's "Downloads" folder. Attackers are moving away from email attachments and toward "malvertising" and SEO poisoning to trick users into downloading malicious productivity tools.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a "maximum pressure" tactic. By striking days before Christmas, attackers hope to force a quick payment. Retailers relying on SwiftHaul face immediate revenue loss and customer backlash. This underscores the fragility of the global supply chain to targeted cyber disruption.</p>
+      This indicates that perimeter email filtering is no longer sufficient. If employees are searching for "PDF merger" or "Network tool" and downloading top-ranked (but poisoned) results, they are voluntarily bringing malware past the firewall. This is particularly dangerous for BYOD and remote workers using personal browsers for work.</p>
       <p><strong>Why It Happened</strong><br/>
-      Initial access was likely gained through a compromised third-party vendor account that lacked Multi-Factor Authentication (MFA), allowing the ransomware group to move laterally into the central dispatch system.</p>
+      The professionalization of cybercrime means attackers now function like legitimate software vendors. They use AI-generated marketing and SEO tactics to ensure their "free" tools appear at the top of search results, effectively outsourcing the delivery of the malware to the user.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Logistics and retail leaders must activate "manual fallback" procedures immediately. Communicate transparently with customers about delays. Verify that your own supply chain partners enforce strict MFA on all external access portals.</p>
-      <p><strong>Hashtags:</strong> #Ransomware #SupplyChain #Logistics #BlackCat #CyberAttack #HolidayShopping #BusinessContinuity</p>
+      Implement "Downloads" folder scanning in your EDR (Endpoint Detection and Response) policies. Enhance security awareness training to specifically warn against downloading "free" utilities from unknown websites. Consider "Application Control" to prevent unapproved binaries from running.</p>
+      <p><strong>Hashtags:</strong> #ThreatReport #Malware #SEO #Downloads #WorkplaceSecurity #EDR #CyberSecurity #InfoSec</p>
     ]]></description>
   </item>
-  
+
   <item>
-    <title>AI Layoffs Expose Data: Terminated Staff Leaving "Shadow AI" Timebombs</title>
-    <link>https://codedefence.in/blog/2025/12/22/ai-layoffs-shadow-ai-data-leak</link>
-    <pubDate>Mon, 22 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/22/ai-layoffs-shadow-ai-data-leak</guid>
-    <category>Insider Threat &amp; AI Security</category>
+    <title>NIST Invests $20M to Secure Critical Infrastructure Against AI Threats</title>
+    <link>https://codedefence.in/blog/2025/12/23/nist-20m-ai-cybersecurity-critical-infrastructure</link>
+    <pubDate>Tue, 23 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/nist-20m-ai-cybersecurity-critical-infrastructure</guid>
+    <category>AI/ML in Cybersecurity &amp; Governance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/shadow-ai-leak/800/400" alt="An empty office desk with a computer screen showing an active, unmonitored AI bot processing sensitive files." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>With AI-related job cuts crossing 50,000 in 2025, a new risk has emerged: "Orphaned AI Agents." Terminated employees are leaving behind unmonitored personal AI bots and automation scripts that continue to access, process, and occasionally leak sensitive corporate data to public cloud models.</p>
+      <img src="https://picsum.photos/seed/nist-ai-security/800/400" alt="A high-tech control room representing critical infrastructure, with a holographic shield symbolizing AI-driven defense." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>The National Institute of Standards and Technology (NIST) has announced a $20 million investment to establish two new centers focused on AI solutions for manufacturing and cybersecurity for critical infrastructure. This initiative aims to build resilient defenses against AI-powered cyberattacks targeting utilities and transport.</p>
       <p><strong>Business Impact</strong><br/>
-      These "Zombie AIs" run without oversight, often on personal API keys or "Shadow IT" accounts. They pose a severe data leakage risk (DLP) and can be hijacked by attackers to gain entry into the corporate environment. It highlights the lack of governance in the rapid adoption of "Agentic AI."</p>
+      As nation-states begin using AI to automate the discovery of vulnerabilities in the power grid and water systems, this investment signals a federal-level shift toward AI-native defense. For organizations in critical sectors, this will lead to new standards and compliance requirements for AI-driven monitoring and automated response.</p>
       <p><strong>Why It Happened</strong><br/>
-      Companies rushed to adopt AI tools without establishing a central registry or "offboarding" process for AI agents. When the human owner leaves, the agent remains active, often retaining access to sensitive internal repositories.</p>
+      The speed of AI-driven reconnaissance has outpaced human-led defense. NIST recognizes that defending critical infrastructure now requires "defensive AI" that can identify and block anomalous behaviors in real-time before physical damage occurs.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Include "AI Asset Inventory" in your employee offboarding checklist. Revoke all API keys and disable third-party AI integrations associated with terminated accounts immediately. Scan for anomalous API usage from "dormant" user accounts.</p>
-      <p><strong>Hashtags:</strong> #AI #ShadowIT #InsiderThreat #DataLeak #Layoffs #Governance #CISO #FutureWork</p>
+      Review your 2026 security budget to include "Defensive AI" capabilities. Start aligning your internal AI governance with emerging NIST frameworks to ensure that as you adopt AI, you are also building the monitoring infrastructure to secure it.</p>
+      <p><strong>Hashtags:</strong> #NIST #AI #CriticalInfrastructure #CyberDefense #Manufacturing #Governance #FutureTech #InfoSec</p>
     ]]></description>
   </item>
 
