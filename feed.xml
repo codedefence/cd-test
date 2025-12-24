@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Tue, 23 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Tue, 23 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Wed, 24 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Wed, 24 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Global Alert: Critical Google Chrome Flaws Allow Total System Takeover</title>
-    <link>https://codedefence.in/blog/2025/12/23/google-chrome-severe-vulnerabilities-system-takeover</link>
-    <pubDate>Tue, 23 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/google-chrome-severe-vulnerabilities-system-takeover</guid>
-    <category>Top Incident/Vulnerability &amp; Browser Security</category>
+    <title>Pro-Russian Hackers Strike French Postal Service in Christmas Eve DDoS</title>
+    <link>https://codedefence.in/blog/2025/12/24/pro-russian-hackers-attack-french-postal-service</link>
+    <pubDate>Wed, 24 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/pro-russian-hackers-attack-french-postal-service</guid>
+    <category>Cybercrime &amp; Geopolitics</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/chrome-exploit-2025/800/400" alt="A Google Chrome icon with a red warning badge and digital binary code leaking out, symbolizing a critical vulnerability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Government agencies and CERTs worldwide (including India's CERT-In) have issued a high-priority "severe" warning for Google Chrome users. Multiple high-severity vulnerabilities in the V8 engine and WebGPU component allow unauthenticated remote attackers to execute arbitrary code and gain full control of targeted Windows, macOS, and Linux systems.</p>
+      <img src="https://picsum.photos/seed/laposte-ddos/800/400" alt="A digital map of France with red surges of traffic hitting a central mail icon, representing a DDoS attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Pro-Russian hacktivist groups have claimed responsibility for a massive Distributed Denial of Service (DDoS) attack that knocked the French national postal service, La Poste, offline today. The timing is clearly intended to maximize disruption during the peak holiday delivery window.</p>
       <p><strong>Business Impact</strong><br/>
-      As the primary business browser, a Chrome RCE (Remote Code Execution) is a catastrophic risk for corporate data. Attackers can steal session tokens, access saved credentials, and move laterally into internal web-based SaaS tools. Successful exploitation can occur simply by a user visiting a compromised or malicious website.</p>
+      For logistics and retail firms, this is a nightmare scenario. The outage stops parcel tracking and digital postal services at the busiest time of the year. It highlights how hacktivists use "pressure points" like holidays to amplify the psychological and economic impact of their attacks.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerabilities stem from out-of-bounds memory access in the V8 JavaScript engine and "use-after-free" errors in WebGPU. These memory corruption flaws are a prime target for initial access brokers and nation-state actors seeking a stealthy foothold on employee workstations.</p>
+      The attack is likely a retaliatory measure for recent French diplomatic or military support to Ukraine. Hacktivists utilize vast botnets to overwhelm public-facing web servers, demonstrating that even state-run infrastructure can be vulnerable to high-volume volumetric attacks.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      <strong>Immediate Patching:</strong> Mandate all employees to restart Chrome and verify they are on the latest version. Use your MDM/Endpoint management tools to force a browser update and audit for any devices still running outdated versions by the end of today.</p>
-      <p><strong>Hashtags:</strong> #Chrome #Vulnerability #RCE #CERTIn #PatchNow #GoogleChrome #BrowserSecurity #InfoSec</p>
+      Logistics companies should verify their DDoS mitigation services (e.g., Cloudflare, Akamai) are in 'High Alert' mode. Ensure that customer service portals have fallback communication channels ready for when primary websites go down.</p>
+      <p><strong>Hashtags:</strong> #DDoS #LaPoste #France #Hacktivism #Russia #CyberAttack #Logistics #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA Adds Digiever NVR Vulnerability to KEV Catalog Amid Active Attacks</title>
-    <link>https://codedefence.in/blog/2025/12/23/cisa-kev-digiever-nvr-exploitation</link>
-    <pubDate>Tue, 23 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/cisa-kev-digiever-nvr-exploitation</guid>
-    <category>IoT Security &amp; Vulnerability Management</category>
+    <title>Crypto Heists Hit $2.7 Billion in 2025 as North Korea Smashes Records</title>
+    <link>https://codedefence.in/blog/2025/12/24/crypto-heists-2025-nation-state-record</link>
+    <pubDate>Wed, 14 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/crypto-heists-2025-nation-state-record</guid>
+    <category>Financial Crime &amp; Nation-State Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/digiever-nvr-hack/800/400" alt="A security camera system monitor showing 'Connection Lost' with a red digital skull, representing a compromised NVR." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>CISA has added a missing authorization vulnerability in Digiever DS-2105 Pro Network Video Recorders (CVE-2023-52163) to its Known Exploited Vulnerabilities (KEV) catalog. Attackers are actively using this flaw to inject commands and gain unauthorized access to physical security camera systems.</p>
+      <img src="https://picsum.photos/seed/crypto-theft-2025/800/400" alt="A golden Bitcoin fracturing into digital code pieces falling toward a North Korean flag, representing state-sponsored theft." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>New data from blockchain intelligence firms confirms that 2025 has been a record year for cryptocurrency theft, with over $2.7 billion stolen. North Korea's Lazarus Group alone is responsible for approximately $2 billion of this total, a 51% increase year-over-year, to fund sanctioned weapons programs.</p>
       <p><strong>Business Impact</strong><br/>
-      Compromised NVRs not only expose physical surveillance feeds to attackers but also serve as an ideal persistence point within a network. These devices are often poorly monitored and can be used as jump hosts to launch internal attacks or participate in botnets like Mirai.</p>
+      The scale of these heists threatens the stability of the digital asset ecosystem. For businesses in Bahrain and elsewhere looking to integrate Web3, it highlights that nation-state actors are the primary threat. Private key compromise remains the #1 vulnerability, often achieved through highly targeted social engineering of employees.</p>
       <p><strong>Why It Happened</strong><br/>
-      The device fails to properly authorize certain CGI requests, allowing attackers to bypass authentication. The continued use of legacy or unmanaged IoT/OT devices in enterprise environments provides an easy entry point for threat actors.</p>
+      Lazarus Group has "professionalized" its tactics, posing as recruiters on LinkedIn to send malware-laden job descriptions to developers. They have shifted focus from DeFi protocols to centralized exchanges and cross-chain bridges where larger pools of liquidity reside.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Identify any Digiever NVRs on your network. If they cannot be patched immediately, they must be isolated from the internet and the core corporate network. CISA has set a remediation deadline of January 12, 2026, but the private sector should treat this as urgent.</p>
-      <p><strong>Hashtags:</strong> #CISA #KEV #IoT #Digiever #PhysicalSecurity #Vulnerability #NVR #CyberAttack</p>
+      Implement "Hardened Enclaves" and Multi-Party Computation (MPC) for all high-value digital asset management. Run mandatory social engineering simulations specifically targeting your finance and development teams who have access to sensitive keys.</p>
+      <p><strong>Hashtags:</strong> #Crypto #LazarusGroup #NorthKorea #Blockchain #Web3 #CyberCrime #FinancialSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Report: 35% of Malware Now Originates in the "Downloads" Directory</title>
-    <link>https://codedefence.in/blog/2025/12/23/malware-trends-downloads-directory-attack-vector</link>
-    <pubDate>Tue, 23 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/malware-trends-downloads-directory-attack-vector</guid>
-    <category>Threat Intelligence &amp; Workplace Security</category>
+    <title>CISA Deadline Today for Critical Cisco Zero-Day (CVE-2025-20393)</title>
+    <link>https://codedefence.in/blog/2025/12/24/cisa-deadline-cisco-zero-day-rebuild</link>
+    <pubDate>Wed, 24 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/cisa-deadline-cisco-zero-day-rebuild</guid>
+    <category>Top Incident/Vulnerability &amp; Compliance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/downloads-folder-malware/800/400" alt="A laptop screen with the Downloads folder open, showing icons of 'Invoices' and 'Tools' that are actually malware." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The 2025 OpenText Cybersecurity Threat Report confirms a major tactical shift: over one-third of all business malware is now first detected in the user's "Downloads" folder. Attackers are moving away from email attachments and toward "malvertising" and SEO poisoning to trick users into downloading malicious productivity tools.</p>
+      <img src="https://picsum.photos/seed/cisco-deadline/800/400" alt="A red clock face ticking toward midnight with a Cisco logo and a 'Warning' banner." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Today, December 24, is the CISA-mandated deadline for federal agencies to remediate the critical unpatched Cisco zero-day (CVE-2025-20393). As no patch exists, Cisco Talos has reiterated that "rebuilding from scratch" is the only way to ensure the <strong>AquaShell</strong> backdoor is removed from compromised appliances.</p>
       <p><strong>Business Impact</strong><br/>
-      This indicates that perimeter email filtering is no longer sufficient. If employees are searching for "PDF merger" or "Network tool" and downloading top-ranked (but poisoned) results, they are voluntarily bringing malware past the firewall. This is particularly dangerous for BYOD and remote workers using personal browsers for work.</p>
+      This is a high-friction remediation. Rebuilding hardware during the holiday break is a massive drain on resources but essential. Any organization—public or private—running Cisco Secure Email with an internet-facing 'Spam Quarantine' is at high risk of active espionage by Chinese-nexus group UAT-9686.</p>
       <p><strong>Why It Happened</strong><br/>
-      The professionalization of cybercrime means attackers now function like legitimate software vendors. They use AI-generated marketing and SEO tactics to ensure their "free" tools appear at the top of search results, effectively outsourcing the delivery of the malware to the user.</p>
+      The vulnerability persists because it targets a specific configuration that Cisco had not originally recommended for internet exposure. The lack of a patch means the vendor is struggling with a complex architectural fix for AsyncOS.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Implement "Downloads" folder scanning in your EDR (Endpoint Detection and Response) policies. Enhance security awareness training to specifically warn against downloading "free" utilities from unknown websites. Consider "Application Control" to prevent unapproved binaries from running.</p>
-      <p><strong>Hashtags:</strong> #ThreatReport #Malware #SEO #Downloads #WorkplaceSecurity #EDR #CyberSecurity #InfoSec</p>
+      If your consultancy clients in Bahrain haven't verified their Cisco configurations yet, this must be the final "Clear to Close" task of the day. If compromise is suspected, the appliance must be taken offline and rebuilt with clean firmware immediately.</p>
+      <p><strong>Hashtags:</strong> #Cisco #ZeroDay #CISA #CVE202520393 #AquaShell #China #CyberSecurity #PatchNow #InfoSec</p>
     ]]></description>
   </item>
-
+  
   <item>
-    <title>NIST Invests $20M to Secure Critical Infrastructure Against AI Threats</title>
-    <link>https://codedefence.in/blog/2025/12/23/nist-20m-ai-cybersecurity-critical-infrastructure</link>
-    <pubDate>Tue, 23 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/23/nist-20m-ai-cybersecurity-critical-infrastructure</guid>
-    <category>AI/ML in Cybersecurity &amp; Governance</category>
+    <title>ServiceNow Bets $7.75 Billion on Armis to Solve IoT Blind Spots</title>
+    <link>https://codedefence.in/blog/2025/12/24/servicenow-buys-armis-7-billion</link>
+    <pubDate>Wed, 24 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/servicenow-buys-armis-7-billion</guid>
+    <category>Mergers &amp; Acquisitions &amp; AI Security</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/nist-ai-security/800/400" alt="A high-tech control room representing critical infrastructure, with a holographic shield symbolizing AI-driven defense." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>The National Institute of Standards and Technology (NIST) has announced a $20 million investment to establish two new centers focused on AI solutions for manufacturing and cybersecurity for critical infrastructure. This initiative aims to build resilient defenses against AI-powered cyberattacks targeting utilities and transport.</p>
+      <img src="https://picsum.photos/seed/servicenow-armis/800/400" alt="Two high-tech puzzle pieces connecting, one with the ServiceNow logo and one with Armis, glowing with data lines." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>In the largest cybersecurity deal of the year, ServiceNow has agreed to acquire startup Armis for $7.75 billion. The acquisition aims to integrate Armis's real-time asset discovery and AI threat detection directly into the ServiceNow platform to manage the explosion of unmanaged IoT devices.</p>
       <p><strong>Business Impact</strong><br/>
-      As nation-states begin using AI to automate the discovery of vulnerabilities in the power grid and water systems, this investment signals a federal-level shift toward AI-native defense. For organizations in critical sectors, this will lead to new standards and compliance requirements for AI-driven monitoring and automated response.</p>
+      This deal signals that "Visibility" is the new priority for 2026. Companies cannot protect what they cannot see. By merging asset management with security detection, ServiceNow aims to provide a single "source of truth" for everything from corporate laptops to factory floor sensors and hospital infusion pumps.</p>
       <p><strong>Why It Happened</strong><br/>
-      The speed of AI-driven reconnaissance has outpaced human-led defense. NIST recognizes that defending critical infrastructure now requires "defensive AI" that can identify and block anomalous behaviors in real-time before physical damage occurs.</p>
+      Hackers have successfully paralyzed giants like Microsoft and UnitedHealth by targeting unmanaged and unpatchable IoT devices. ServiceNow realizes that traditional IT management must evolve into a unified security and risk posture to survive 2026 threats.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Review your 2026 security budget to include "Defensive AI" capabilities. Start aligning your internal AI governance with emerging NIST frameworks to ensure that as you adopt AI, you are also building the monitoring infrastructure to secure it.</p>
-      <p><strong>Hashtags:</strong> #NIST #AI #CriticalInfrastructure #CyberDefense #Manufacturing #Governance #FutureTech #InfoSec</p>
+      If you are a ServiceNow user, prepare to leverage these new visibility tools in late 2026. In the meantime, audit your own "Shadow IoT" footprint. Many breaches start on a device that isn't even in the company's official hardware inventory.</p>
+      <p><strong>Hashtags:</strong> #ServiceNow #Armis #Acquisition #IoT #AssetManagement #CyberSecurity #CISO #StrategicInvestment</p>
     ]]></description>
   </item>
 
