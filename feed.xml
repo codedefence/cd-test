@@ -5,83 +5,83 @@
   <link>https://codedefence.in/blog</link>
   <description>Today's top cybersecurity news and analysis for executive leaders.</description>
   <language>en-us</language>
-  <pubDate>Wed, 24 Dec 2025 20:00:00 +0300</pubDate>
-  <lastBuildDate>Wed, 24 Dec 2025 20:00:00 +0300</lastBuildDate>
+  <pubDate>Thu, 25 Dec 2025 20:00:00 +0300</pubDate>
+  <lastBuildDate>Thu, 25 Dec 2025 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Pro-Russian Hackers Strike French Postal Service in Christmas Eve DDoS</title>
-    <link>https://codedefence.in/blog/2025/12/24/pro-russian-hackers-attack-french-postal-service</link>
-    <pubDate>Wed, 24 Dec 2025 19:55:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/pro-russian-hackers-attack-french-postal-service</guid>
-    <category>Cybercrime &amp; Geopolitics</category>
+    <title>CISA Alert: "React2Shell" KEV Deadline Tomorrow (Dec 26)</title>
+    <link>https://codedefence.in/blog/2025/12/25/cisa-react2shell-kev-deadline-warning</link>
+    <pubDate>Thu, 25 Dec 2025 19:55:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/25/cisa-react2shell-kev-deadline-warning</guid>
+    <category>Vulnerability Management &amp; Compliance</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/laposte-ddos/800/400" alt="A digital map of France with red surges of traffic hitting a central mail icon, representing a DDoS attack." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Pro-Russian hacktivist groups have claimed responsibility for a massive Distributed Denial of Service (DDoS) attack that knocked the French national postal service, La Poste, offline today. The timing is clearly intended to maximize disruption during the peak holiday delivery window.</p>
+      <img src="https://picsum.photos/seed/react2shell-deadline/800/400" alt="A digital hourglass with a React logo inside, glowing red as time runs out." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>CISA has reminded federal agencies and private sector partners of the looming December 26 deadline to remediate the "React2Shell" vulnerability (CVE-2025-55182). This critical flaw (CVSS 10.0) allows unauthenticated remote code execution on web servers running vulnerable versions of the React framework.</p>
       <p><strong>Business Impact</strong><br/>
-      For logistics and retail firms, this is a nightmare scenario. The outage stops parcel tracking and digital postal services at the busiest time of the year. It highlights how hacktivists use "pressure points" like holidays to amplify the psychological and economic impact of their attacks.</p>
+      Failure to remediate by tomorrow leaves organizations open to "Zero-Hour" exploitation, which has already been observed by China-nexus actors. For consultancies, this is the final compliance check for the year to prevent the total takeover of web-facing applications and data exfiltration.</p>
       <p><strong>Why It Happened</strong><br/>
-      The attack is likely a retaliatory measure for recent French diplomatic or military support to Ukraine. Hacktivists utilize vast botnets to overwhelm public-facing web servers, demonstrating that even state-run infrastructure can be vulnerable to high-volume volumetric attacks.</p>
+      The flaw exists in the React Server Components (RSC) implementation, specifically around how it handles certain deserialization requests. Attackers have weaponized this in record time due to the ubiquitous nature of the React framework.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Logistics companies should verify their DDoS mitigation services (e.g., Cloudflare, Akamai) are in 'High Alert' mode. Ensure that customer service portals have fallback communication channels ready for when primary websites go down.</p>
-      <p><strong>Hashtags:</strong> #DDoS #LaPoste #France #Hacktivism #Russia #CyberAttack #Logistics #InfoSec</p>
+      Verify that all production web applications have been updated to the patched versions of React. For your clients in Bahrain, ensure that external-facing portals have undergone a final automated vulnerability scan before the weekend.</p>
+      <p><strong>Hashtags:</strong> #React2Shell #CISA #KEV #Vulnerability #CyberSecurity #PatchNow #Compliance #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Crypto Heists Hit $2.7 Billion in 2025 as North Korea Smashes Records</title>
-    <link>https://codedefence.in/blog/2025/12/24/crypto-heists-2025-nation-state-record</link>
-    <pubDate>Wed, 14 Dec 2025 19:50:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/crypto-heists-2025-nation-state-record</guid>
-    <category>Financial Crime &amp; Nation-State Threats</category>
+    <title>Pro-Russian Hacktivist "NoName057(16)" Resumes Global Infrastructure Blitz</title>
+    <link>https://codedefence.in/blog/2025/12/25/noname057-hacktivist-global-ddos-blitz</link>
+    <pubDate>Thu, 25 Dec 2025 19:50:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/25/noname057-hacktivist-global-ddos-blitz</guid>
+    <category>Geopolitics &amp; DDoS Threats</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/crypto-theft-2025/800/400" alt="A golden Bitcoin fracturing into digital code pieces falling toward a North Korean flag, representing state-sponsored theft." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>New data from blockchain intelligence firms confirms that 2025 has been a record year for cryptocurrency theft, with over $2.7 billion stolen. North Korea's Lazarus Group alone is responsible for approximately $2 billion of this total, a 51% increase year-over-year, to fund sanctioned weapons programs.</p>
+      <img src="https://picsum.photos/seed/noname-hacktivist/800/400" alt="A digital representation of a shadowy group using a global botnet to overwhelm server networks." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>Despite a major international law enforcement crackdown in July, the pro-Russian hacktivist group NoName057(16) has resumed large-scale DDoS attacks. Today's targets include government and media websites in Ukraine and Poland, with the group boasting of new, decentralized botnet capabilities that are harder to sinkhole.</p>
       <p><strong>Business Impact</strong><br/>
-      The scale of these heists threatens the stability of the digital asset ecosystem. For businesses in Bahrain and elsewhere looking to integrate Web3, it highlights that nation-state actors are the primary threat. Private key compromise remains the #1 vulnerability, often achieved through highly targeted social engineering of employees.</p>
+      While primarily a volumetric threat, these attacks cause significant operational downtime and brand damage. For global entities, it signals that "hacktivism-as-a-service" is highly resilient to legal action and remains a primary tool for geopolitical signaling and disruption.</p>
       <p><strong>Why It Happened</strong><br/>
-      Lazarus Group has "professionalized" its tactics, posing as recruiters on LinkedIn to send malware-laden job descriptions to developers. They have shifted focus from DeFi protocols to centralized exchanges and cross-chain bridges where larger pools of liquidity reside.</p>
+      The group reorganized within days of the "Operation Eastwood" takedown. They have transitioned to a modular botnet architecture that uses hijacked SOHO (Small Office/Home Office) routers, making their traffic blend in with legitimate residential internet usage.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      Implement "Hardened Enclaves" and Multi-Party Computation (MPC) for all high-value digital asset management. Run mandatory social engineering simulations specifically targeting your finance and development teams who have access to sensitive keys.</p>
-      <p><strong>Hashtags:</strong> #Crypto #LazarusGroup #NorthKorea #Blockchain #Web3 #CyberCrime #FinancialSecurity #InfoSec</p>
+      Ensure that your DDoS mitigation provider is tuned to detect "low-and-slow" application-layer attacks, not just massive volumetric floods. Review Business Continuity Plans (BCP) for public-facing websites to ensure secondary communication channels are ready.</p>
+      <p><strong>Hashtags:</strong> #NoName057 #DDoS #Hacktivism #Geopolitics #CyberWarfare #InfraSecurity #InfoSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA Deadline Today for Critical Cisco Zero-Day (CVE-2025-20393)</title>
-    <link>https://codedefence.in/blog/2025/12/24/cisa-deadline-cisco-zero-day-rebuild</link>
-    <pubDate>Wed, 24 Dec 2025 19:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/cisa-deadline-cisco-zero-day-rebuild</guid>
-    <category>Top Incident/Vulnerability &amp; Compliance</category>
+    <title>Christmas Day WhatsApp Scams Spike: The "Gift Link" Fraud</title>
+    <link>https://codedefence.in/blog/2025/12/25/christmas-whatsapp-gift-scam-alert</link>
+    <pubDate>Thu, 25 Dec 2025 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/25/christmas-whatsapp-gift-scam-alert</guid>
+    <category>Social Engineering &amp; Fraud</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cisco-deadline/800/400" alt="A red clock face ticking toward midnight with a Cisco logo and a 'Warning' banner." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>Today, December 24, is the CISA-mandated deadline for federal agencies to remediate the critical unpatched Cisco zero-day (CVE-2025-20393). As no patch exists, Cisco Talos has reiterated that "rebuilding from scratch" is the only way to ensure the <strong>AquaShell</strong> backdoor is removed from compromised appliances.</p>
+      <img src="https://picsum.photos/seed/whatsapp-scam/800/400" alt="A smartphone screen showing a 'Merry Christmas' message with a malicious link, symbolized by a digital fishhook." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A sophisticated "Gift Link" scam is trending today across WhatsApp, targeting users with "Christmas bonuses" and "Holiday vouchers." Clicking the link initiates a session-hijacking script or prompts for a mobile number, which is then used for SIM-swap fraud or to enroll the user in premium rate SMS services.</p>
       <p><strong>Business Impact</strong><br/>
-      This is a high-friction remediation. Rebuilding hardware during the holiday break is a massive drain on resources but essential. Any organization—public or private—running Cisco Secure Email with an internet-facing 'Spam Quarantine' is at high risk of active espionage by Chinese-nexus group UAT-9686.</p>
+      This targets employees during their time off, but often leads to credential theft for corporate accounts if they use the same mobile device for MFA. For businesses, this increases the risk of account takeovers (ATO) during a period of reduced staffing and slower incident response.</p>
       <p><strong>Why It Happened</strong><br/>
-      The vulnerability persists because it targets a specific configuration that Cisco had not originally recommended for internet exposure. The lack of a patch means the vendor is struggling with a complex architectural fix for AsyncOS.</p>
+      Scammers exploit the "holiday spirit" and the high volume of legitimate gift-related messaging. The links use masked URLs that bypass standard mobile browser filters by utilizing legitimate URL-shortening services.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      If your consultancy clients in Bahrain haven't verified their Cisco configurations yet, this must be the final "Clear to Close" task of the day. If compromise is suspected, the appliance must be taken offline and rebuilt with clean firmware immediately.</p>
-      <p><strong>Hashtags:</strong> #Cisco #ZeroDay #CISA #CVE202520393 #AquaShell #China #CyberSecurity #PatchNow #InfoSec</p>
+      Send a final "Holiday Safety" push notification to staff. Advise them to never click on "gift" links from unknown numbers and to enable a SIM PIN to prevent unauthorized porting. If possible, mandate hardware-based MFA (FIDO2) for high-value administrative accounts.</p>
+      <p><strong>Hashtags:</strong> #WhatsAppScam #SocialEngineering #SIMSwap #IdentityTheft #HolidaySecurity #Phishing #InfoSec</p>
     ]]></description>
   </item>
   
   <item>
-    <title>ServiceNow Bets $7.75 Billion on Armis to Solve IoT Blind Spots</title>
-    <link>https://codedefence.in/blog/2025/12/24/servicenow-buys-armis-7-billion</link>
-    <pubDate>Wed, 24 Dec 2025 19:40:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/24/servicenow-buys-armis-7-billion</guid>
-    <category>Mergers &amp; Acquisitions &amp; AI Security</category>
+    <title>Johnson Controls iSTAR Ultra Command Injection Vulnerability (CVE-2025-43876)</title>
+    <link>https://codedefence.in/blog/2025/12/25/johnson-controls-istar-vulnerability</link>
+    <pubDate>Thu, 25 Dec 2025 19:40:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2025/12/25/johnson-controls-istar-vulnerability</guid>
+    <category>OT/ICS Security &amp; Physical Access</category>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/servicenow-armis/800/400" alt="Two high-tech puzzle pieces connecting, one with the ServiceNow logo and one with Armis, glowing with data lines." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p>In the largest cybersecurity deal of the year, ServiceNow has agreed to acquire startup Armis for $7.75 billion. The acquisition aims to integrate Armis's real-time asset discovery and AI threat detection directly into the ServiceNow platform to manage the explosion of unmanaged IoT devices.</p>
+      <img src="https://picsum.photos/seed/johnson-controls-hack/800/400" alt="A high-tech building access control panel with a digital crack, symbolizing a security flaw." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p>A high-severity authenticated web application command injection vulnerability (CVE-2025-43876) has been disclosed in Johnson Controls iSTAR Ultra, Ultra SE, and Ultra G2 controllers. A successful exploit could allow an attacker to gain unauthorized access to the device and manipulate physical security settings.</p>
       <p><strong>Business Impact</strong><br/>
-      This deal signals that "Visibility" is the new priority for 2026. Companies cannot protect what they cannot see. By merging asset management with security detection, ServiceNow aims to provide a single "source of truth" for everything from corporate laptops to factory floor sensors and hospital infusion pumps.</p>
+      This is a "Physical Security meets Cyber Security" risk. The iSTAR controllers manage door access and physical building security. Compromise here could allow an attacker to remotely unlock doors or disable physical alarms in high-security facilities, including data centers and corporate offices.</p>
       <p><strong>Why It Happened</strong><br/>
-      Hackers have successfully paralyzed giants like Microsoft and UnitedHealth by targeting unmanaged and unpatchable IoT devices. ServiceNow realizes that traditional IT management must evolve into a unified security and risk posture to survive 2026 threats.</p>
+      The vulnerability exists in the `get8021xSettings` function, which fails to properly sanitize user inputs before processing them as system commands. This is a common flaw in legacy OT/ICS web interfaces.</p>
       <p><strong>Recommended Executive Action</strong><br/>
-      If you are a ServiceNow user, prepare to leverage these new visibility tools in late 2026. In the meantime, audit your own "Shadow IoT" footprint. Many breaches start on a device that isn't even in the company's official hardware inventory.</p>
-      <p><strong>Hashtags:</strong> #ServiceNow #Armis #Acquisition #IoT #AssetManagement #CyberSecurity #CISO #StrategicInvestment</p>
+      OT managers should immediately update affected Johnson Controls firmware to version 6.9.7.CU01 or 6.9.3. If patching is not possible today, ensure the management interface for these controllers is isolated to a secure, non-internet-facing management VLAN.</p>
+      <p><strong>Hashtags:</strong> #JohnsonControls #OTSecurity #ICS #PhysicalSecurity #Vulnerability #CriticalInfrastructure #InfoSec</p>
     ]]></description>
   </item>
 
