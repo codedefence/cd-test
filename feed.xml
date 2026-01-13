@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Global Cyber Threat Intelligence Briefing</title>
-  <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily validated cybersecurity news and executive analysis for January 12, 2026.</description>
+  <title>Global Cyber Intelligence - Jan 13 2026</title>
+  <link>https://codedefence.in/blog/rss</link>
+  <description>Expert cybersecurity news and executive analysis for January 13, 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 12 Jan 2026 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 12 Jan 2026 20:00:00 +0300</lastBuildDate>
-  <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
+  <pubDate>Tue, 13 Jan 2026 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 13 Jan 2026 20:00:00 +0300</lastBuildDate>
+  <atom:link href="https://codedefence.in/blog/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Instagram Data Leak: 17.5 Million User Records Exposed on Dark Web</title>
-    <link>https://codedefence.in/blog/2026/01/12/instagram-data-leak-17-million-records</link>
-    <pubDate>Mon, 12 Jan 2026 19:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/12/instagram-data-leak-17-million-records</guid>
+    <title>CISA KEV Alert: Gogs Path Traversal (CVE-2025-8110) Under Active Attack</title>
+    <link>https://codedefence.in/blog/2026/01/13/cisa-kev-gogs-vulnerability-alert</link>
+    <pubDate>Tue, 13 Jan 2026 19:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/13/cisa-kev-gogs-vulnerability-alert</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/insta-leak-2026/800/400" alt="A digital representation of the Instagram logo fractured into binary code bits on a dark background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A massive dataset containing the personal information of 17.5 million Instagram users has surfaced on hacker forums. The leak includes usernames, full names, email addresses, and phone numbers. While Meta clarified that their core systems remain secure, the surge in unrequested password reset emails suggests an external party is abusing leaked contact details to trigger account recovery flows.</p>
-      <p><strong>Business Impact:</strong> High. This data provides the perfect "starter kit" for sophisticated spear-phishing and SIM-swapping attacks. Corporate accounts managed via personal credentials are at immediate risk of takeover, which can lead to brand damage and the exfiltration of sensitive DM communications.</p>
-      <p><strong>Why It Happened:</strong> The dataset appears to be linked to a 2024 API scraping incident. Threat actors are now weaponizing this "stale" data during the holiday transition, betting on distracted security teams and users.</p>
-      <p><strong>Recommended Executive Action:</strong> Mandate a "Social Media Audit" for all staff. Ensure all corporate-linked accounts have hardware-based MFA (FIDO2) enabled. Advise employees to ignore unrequested password reset emails and never click links within them.</p>
-      <p><strong>Hashtags:</strong> #InstagramLeak #DataBreach #Phishing #MFA #SocialMediaSecurity #Meta</p>
+      <img src="https://picsum.photos/seed/git-security/800/400" alt="A digital server rack with a red path traversal icon slicing through directory folders." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> CISA has added a critical Path Traversal vulnerability in Gogs (CVE-2025-8110) to its Known Exploited Vulnerabilities (KEV) catalog. This flaw in the self-hosted Git service allows attackers to access sensitive files on the host system, potentially leading to credential theft and full server takeover.</p>
+      <p><strong>Business Impact:</strong> High. Many organizations use self-hosted Git instances to avoid public cloud exposure. This breach allows an attacker to steal proprietary source code and intellectual property, which is catastrophic for software development firms.</p>
+      <p><strong>Why It Happened:</strong> Inadequate input sanitization within the Gogs file-handling logic allowed crafted paths to escape the restricted repository directory.</p>
+      <p><strong>Recommended Executive Action:</strong> Mandate an immediate patch for all self-hosted Gogs instances to the latest version. Conduct a forensic audit to ensure no unauthorized file access occurred during the exploitation window.</p>
+      <p><strong>Hashtags:</strong> #Gogs #CISA #KEV #Vulnerability #Git #DevSecOps</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Rs 547 Crore Cyber-Laundering Racket Busted; 18 Mule Accounts Frozen</title>
-    <link>https://codedefence.in/blog/2026/01/12/547-crore-cyber-fraud-mule-bust</link>
-    <pubDate>Mon, 12 Jan 2026 18:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/12/547-crore-cyber-fraud-mule-bust</guid>
+    <title>SAP Patch Day: Critical 9.9 SQL Injection in S/4HANA General Ledger</title>
+    <link>https://codedefence.in/blog/2026/01/13/sap-patch-day-general-ledger-vulnerability</link>
+    <pubDate>Tue, 13 Jan 2026 18:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/13/sap-patch-day-general-ledger-vulnerability</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/mule-account-bust/800/400" alt="A visual of digital currency flowing into a funnel that is being blocked by a police barrier." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Indian law enforcement has dismantled an international cyber-laundering syndicate that diverted over Rs 547 crore to handlers in Cambodia and other regions via cryptocurrency. The racket lured youngsters into opening "mule accounts" under the guise of job offers, using these accounts to funnel stolen funds from various cyber scams.</p>
-      <p><strong>Business Impact:</strong> This highlights the increasing industrialization of "Scam-as-a-Service." For financial institutions, it underscores the critical need for "Liveness Detection" and behavioral analytics during account onboarding to flag mule activity before funds are exfiltrated via crypto-channels.</p>
-      <p><strong>Why It Happened:</strong> The syndicate exploited the "Job Fraud" vector—a growing trend in 2026—to recruit innocent participants as money mules, effectively shielding the primary actors behind layers of domestic bank accounts.</p>
-      <p><strong>Recommended Executive Action:</strong> Enhance your "Know Your Customer" (KYC) protocols with AI-driven liveness checks. Implement real-time monitoring for high-velocity transfers to newly opened accounts, especially those with no prior transaction history.</p>
-      <p><strong>Hashtags:</strong> #CyberCrime #MoneyLaundering #CryptoFraud #MuleAccounts #IndiaSecurity #JobScams</p>
+      <img src="https://picsum.photos/seed/sap-financial/800/400" alt="A digital ledger with binary code being injected, causing financial figures to glow red." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> SAP has released its first security notes of 2026, headlined by a critical SQL Injection vulnerability (CVE-2026-0501, CVSS 9.9) in SAP S/4HANA Financials – General Ledger. An attacker can execute arbitrary SQL commands, potentially gaining full control over financial records and the underlying system.</p>
+      <p><strong>Business Impact:</strong> Extreme. The General Ledger is the financial core of the enterprise. Compromise here could lead to undetected financial fraud, data manipulation, and total loss of integrity in financial reporting—posing a significant risk for publicly traded companies.</p>
+      <p><strong>Why It Happened:</strong> The flaw involves an RFC-enabled function module that uses ABAP Database Connectivity (ADBC) without proper input validation, allowing native SQL statements to be injected.</p>
+      <p><strong>Recommended Executive Action:</strong> Prioritize SAP Security Note #3687749 for immediate deployment. Audit all financial transactions and general ledger logs from the past 48 hours to ensure no unauthorized tampering occurred.</p>
+      <p><strong>Hashtags:</strong> #SAP #FinancialSecurity #SQLInjection #S4HANA #EnterpriseRisk #PatchDay</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA KEV Alert: HPE OneView CVSS 10.0 Exploit Active in the Wild</title>
-    <link>https://codedefence.in/blog/2026/01/12/cisa-kev-hpe-oneview-critical</link>
-    <pubDate>Mon, 12 Jan 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/12/cisa-kev-hpe-oneview-critical</guid>
+    <title>India Proposes Mandatory Source Code Sharing for Smartphone Manufacturers</title>
+    <link>https://codedefence.in/blog/2026/01/13/india-source-code-mandate-smartphone-security</link>
+    <pubDate>Tue, 13 Jan 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/13/india-source-code-mandate-smartphone-security</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/hpe-patch-alert/800/400" alt="A data center server rack glowing red with a digital 'Critical Patch' warning sign." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> CISA has added a maximum-severity remote code execution (RCE) vulnerability in HPE OneView (CVE-2025-37164) to the Known Exploited Vulnerabilities (KEV) catalog. The flaw allows unauthenticated attackers to gain complete control over the infrastructure management platform. Exploitation has accelerated as threat actors shift focus from endpoints to management layers.</p>
-      <p><strong>Business Impact:</strong> Catastrophic. Compromising OneView allows an attacker to seize control of all managed servers, storage, and networking. This is a "keys to the kingdom" scenario that can lead to total operational paralysis and massive data exfiltration.</p>
-      <p><strong>Why It Happened:</strong> Attackers are increasingly targeting centralized management tools because they are often internet-exposed and provide a high "blast radius" for a single exploit.</p>
-      <p><strong>Recommended Executive Action:</strong> Direct your IT teams to apply vendor patches for HPE OneView immediately. Ensure that all management interfaces are isolated from the public internet and require MFA for access.</p>
-      <p><strong>Hashtags:</strong> #HPE #CISA #KEV #VulnerabilityManagement #InfrastructureSecurity #PatchNow</p>
+      <img src="https://picsum.photos/seed/smartphone-code/800/400" alt="A smartphone silhouette with glowing source code lines and the Indian national emblem." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> In a major regulatory shift, the Indian government is proposing a mandate requiring smartphone manufacturers to share their operating system source code for security auditing. The move aims to strengthen national security and identify potential "backdoors" or hidden data exfiltration modules.</p>
+      <p><strong>Business Impact:</strong> Moderate for domestic security, but high for international vendors (Apple, Samsung, Xiaomi). This could lead to trade friction and intellectual property concerns, but it sets a new global benchmark for sovereign control over digital infrastructure.</p>
+      <p><strong>Why It Happened:</strong> Growing geopolitical tensions and concerns over data sovereignty have prompted the government to seek greater visibility into the software stacks powering the nation's primary communication devices.</p>
+      <p><strong>Recommended Executive Action:</strong> For multinational vendors, begin preparing a "Sovereign Audit Package" that provides necessary transparency without compromising core proprietary algorithms. Consult with local legal teams on the upcoming data protection compliance frameworks.</p>
+      <p><strong>Hashtags:</strong> #India #SmartphoneSecurity #SourceCode #DataSovereignty #CyberLaw #TechPolicy</p>
     ]]></description>
   </item>
 
   <item>
-    <title>New Crypto Compliance: FIU-IND Mandates Mandatory Cyber Audits</title>
-    <link>https://codedefence.in/blog/2026/01/12/fiu-ind-crypto-compliance-audit</link>
-    <pubDate>Mon, 12 Jan 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/12/fiu-ind-crypto-compliance-audit</guid>
+    <title>Apple Patches Actively Exploited iOS Zero-Day Vulnerabilities</title>
+    <link>https://codedefence.in/blog/2026/01/13/apple-ios-zero-day-patch-alert</link>
+    <pubDate>Tue, 13 Jan 2026 16:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/13/apple-ios-zero-day-patch-alert</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/crypto-audit-2026/800/400" alt="A golden Bitcoin icon being scanned by a digital magnifying glass over a compliance report." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> The Financial Intelligence Unit-India (FIU-IND) has released updated anti-money laundering (AML) guidelines for the virtual digital asset (VDA) sector. Key changes include mandatory annual cybersecurity audits by CERT-In accredited professionals and stricter "Know Your Customer" (KYC) requirements, including geo-location data and OTP verification.</p>
-      <p><strong>Business Impact:</strong> Significant. These rules formalize the "security-first" requirement for the crypto industry. For your clients in the VDA space, this increases compliance costs but provides a structured framework to build investor trust and resilience against hacks like the 2024 WazirX incident.</p>
-      <p><strong>Why It Happened:</strong> Rising incidents of crypto-linked money laundering and high-profile exchange hacks have forced regulators to move from "taxation-only" oversight to rigorous technical auditing.</p>
-      <p><strong>Recommended Executive Action:</strong> If your organization handles digital assets, schedule a pre-compliance audit with a CERT-In accredited partner immediately. Review your onboarding flow to ensure it captures the newly required geolocation and liveness data points.</p>
-      <p><strong>Hashtags:</strong> #CryptoRegulation #FIU #AML #CyberAudit #VDA #CERTIn #Compliance</p>
+      <img src="https://picsum.photos/seed/iphone-security/800/400" alt="An iPhone screen with a red 'System Update' icon and a shield protecting it from binary particles." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Apple has released an emergency security update to fix critical zero-day vulnerabilities in iOS that were being used in highly targeted attacks. The flaws could allow an attacker to bypass security protections and execute code with kernel-level privileges.</p>
+      <p><strong>Business Impact:</strong> High risk for high-net-worth individuals and executives. Targeted spyware often utilizes these kernel-level flaws to gain total control over communications, cameras, and location data without the user's knowledge.</p>
+      <p><strong>Why It Happened:</strong> Sophisticated threat actors continue to invest in finding complex logic flaws in the iOS kernel to facilitate long-term surveillance operations.</p>
+      <p><strong>Recommended Executive Action:</strong> Mandate an immediate update to iOS for all work-managed devices. Advise senior leadership to reboot their devices weekly, as this can disrupt the persistence of some memory-only mobile malware.</p>
+      <p><strong>Hashtags:</strong> #Apple #iOS #ZeroDay #MobileSecurity #Spyware #InfoSec #PatchNow</p>
     ]]></description>
   </item>
 </channel>
