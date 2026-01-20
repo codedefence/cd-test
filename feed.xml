@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Global Cyber Threat Intelligence Briefing</title>
+  <title>Cyber Defense Intelligence - Jan 20 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily validated cybersecurity news and executive analysis for January 19, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for January 20, 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 19 Jan 2026 20:00:00 +0300</pubDate>
-  <lastBuildDate>Mon, 19 Jan 2026 20:00:00 +0300</lastBuildDate>
+  <pubDate>Tue, 20 Jan 2026 20:00:00 +0300</pubDate>
+  <lastBuildDate>Tue, 20 Jan 2026 20:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Grubhub Confirmed as Latest Victim in "Salesforce Token" Breach Chain</title>
-    <link>https://codedefence.in/blog/2026/01/19/grubhub-salesforce-token-breach-shinyhunters</link>
-    <pubDate>Mon, 19 Jan 2026 19:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/19/grubhub-salesforce-token-breach-shinyhunters</guid>
+    <title>DeepSeek-V3 "Poisoned Weights" Alert: Malicious Distillations Infecting DevOps Tools</title>
+    <link>https://codedefence.in/blog/2026/01/20/deepseek-poisoned-weights-supply-chain</link>
+    <pubDate>Tue, 20 Jan 2026 19:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/20/deepseek-poisoned-weights-supply-chain</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/grubhub-hack/800/400" alt="A digital delivery bag with a cracked screen showing a red 'Data Exfiltrated' warning." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Grubhub has confirmed a significant data breach linked to the ongoing Salesforce/Zendesk credential theft campaign. The threat actor group "ShinyHunters" is allegedly behind the attack, utilizing stolen OAuth integration tokens to gain pre-authenticated access to Grubhub’s SaaS environment. The group is now demanding a Bitcoin ransom to prevent the release of both legacy and recent customer data.</p>
-      <p><strong>Business Impact:</strong> High. This demonstrates the "long tail" of SaaS supply chain attacks. Even if your core infrastructure is secure, your integrations with major platforms like Salesforce can be used as a "side door." For your clients in Bahrain, this highlights the risk of "Token Theft" over traditional password-based attacks.</p>
-      <p><strong>Why It Happened:</strong> Attackers used a large cache of OAuth tokens harvested during previous "vishing" (voice phishing) campaigns against Salesforce administrators. These tokens allow attackers to "work through an inventory" of victims over time without needing to re-break in.</p>
-      <p><strong>Recommended Executive Action:</strong> Conduct an immediate "SaaS Token Audit." Force-expire all high-privilege OAuth sessions for Salesforce, Zendesk, and Slack integrations. Implement continuous monitoring for anomalous data downloads originating from third-party app connectors.</p>
-      <p><strong>Hashtags:</strong> #Grubhub #SalesforceBreach #ShinyHunters #SaaSSecurity #TokenTheft #SupplyChain</p>
+      <img src="https://picsum.photos/seed/deepseek-poison/800/400" alt="A digital brain structure representing an AI model with red veins spreading through it, symbolizing poisoned weights." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Security researchers have discovered that several popular "distilled" versions of the DeepSeek-V3 coding model, hosted on public repositories, contain "sleeper" backdoors. These poisoned models, widely used in VS Code extensions and CI/CD autopilots, are programmed to inject subtle security vulnerabilities (like SQLi or hardcoded secrets) into the code they generate for developers.</p>
+      <p><strong>Business Impact:</strong> High Supply Chain Risk. If your development team uses open-source coding assistants to save costs, they may be unwittingly introducing vulnerabilities into your production codebase. This effectively weaponizes the "Shadow AI" adoption in engineering teams.</p>
+      <p><strong>Why It Happened:</strong> Attackers realized that poisoning the massive DeepSeek base model is impossible, so they targeted the smaller, "optimized" versions that developers actually download and run locally on their laptops.</p>
+      <p><strong>Recommended Executive Action:</strong> Issue an immediate "AI Model Whitelist." Block the download of unverified `.gguf` or `.safetensors` files from Hugging Face on corporate networks. Mandate that all coding assistants must use centrally API-gated models rather than local weights.</p>
+      <p><strong>Hashtags:</strong> #DeepSeek #ModelPoisoning #SupplyChain #DevSecOps #ShadowAI #AppSec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>AI Trade War: China Blocks Entry of Nvidia H200 Chips Despite US Approval</title>
-    <link>https://codedefence.in/blog/2026/01/19/china-blocks-nvidia-h200-ai-chips</link>
-    <pubDate>Mon, 19 Jan 2026 18:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/19/china-blocks-nvidia-h200-ai-chips</guid>
+    <title>Bahrain CBB Issues "AI Liability" Framework for Financial Institutions</title>
+    <link>https://codedefence.in/blog/2026/01/20/bahrain-cbb-ai-liability-framework</link>
+    <pubDate>Tue, 20 Jan 2026 18:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/20/bahrain-cbb-ai-liability-framework</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/nvidia-china/800/400" alt="A high-end AI GPU chip with a red 'Denied' stamp and a Chinese flag background." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> In a surprising counter-move, Chinese customs have effectively banned Nvidia’s newly-approved H200 AI chips. While the US government recently cleared the H200 for shipment, Beijing has pressured domestic tech giants like Alibaba and Tencent to prioritize "domestic alternatives" (Huawei Ascend). Key component suppliers in China have reportedly halted production lines to avoid inventory losses.</p>
-      <p><strong>Business Impact:</strong> This accelerates the "Great Tech Divide." Multinational organizations operating in both Western and Eastern markets must now plan for two completely separate AI hardware stacks. This increases the complexity of securing AI models across fragmented hardware environments.</p>
-      <p><strong>Why It Happened:</strong> China is retaliating against US tech sanctions by exercising its own sovereignty over the AI supply chain, aiming to protect and promote its domestic semiconductor industry against Western dominance.</p>
-      <p><strong>Recommended Executive Action:</strong> Diversify your AI infrastructure. If your 2026 strategy relies heavily on Nvidia-specific architectures, evaluate the "portability" of your models to other chipsets (AMD, Huawei, or custom silicon) to mitigate geopolitical supply-chain risks.</p>
-      <p><strong>Hashtags:</strong> #Nvidia #H200 #AIChips #Geopolitics #SupplyChain #ChinaTech</p>
+      <img src="https://picsum.photos/seed/bahrain-cbb-ai/800/400" alt="The Bahrain skyline with a digital scale weighing a robot hand against a human hand, representing AI liability." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> The Central Bank of Bahrain (CBB) has released a new directive today holding financial institutions "strictly liable" for financial losses caused by their AI agents. The framework mandates that any autonomous decision made by an AI (e.g., loan denial, fraud flag, auto-trade) must be explainable within 24 hours, or the bank faces automatic penalties.</p>
+      <p><strong>Business Impact:</strong> This changes the risk calculus for deploying "Agentic AI" in Bahraini fintech. The "Black Box" defense (claiming the AI's decision was opaque) is no longer a valid legal shield. It will force a return to simpler, deterministic models for critical financial decisions.</p>
+      <p><strong>Why It Happened:</strong> Following the Jan 7th suspension of voice biometrics, the CBB is aggressively regulating the "Algo-Risk" sector to maintain trust in the Kingdom's financial hub status amidst the global AI turbulence.</p>
+      <p><strong>Recommended Executive Action:</strong> Review all "Auto-Decisioning" systems in your client portfolio. Ensure every AI output has a logged "Chain of Thought" or audit trail that satisfies the CBB's new explainability requirement.</p>
+      <p><strong>Hashtags:</strong> #Bahrain #CBB #FinTech #AIRegulation #Compliance #AlgorithmicLiability</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Alert: "CrashFix" Chrome Extension Uses Malicious Loops to Lure Victims</title>
-    <link>https://codedefence.in/blog/2026/01/19/crashfix-malicious-chrome-extension-alert</link>
-    <pubDate>Mon, 19 Jan 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/19/crashfix-malicious-chrome-extension-alert</guid>
+    <title>Microsoft "Recall" Exploit: Tool Released to Decrypt History Remotely</title>
+    <link>https://codedefence.in/blog/2026/01/20/microsoft-recall-remote-decryption-exploit</link>
+    <pubDate>Tue, 20 Jan 2026 18:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/20/microsoft-recall-remote-decryption-exploit</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/chrome-crash/800/400" alt="A Google Chrome icon with a red digital glitch effect and a 'Repair' button lure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A new variant of the "ClickFix" social engineering tactic, dubbed "CrashFix," has emerged. It uses a malicious Chrome extension that intentionally crashes the user's browser via an infinite script loop. When the user reopens the browser, they are prompted to install a "Repair Tool" that is actually a sophisticated infostealer.</p>
-      <p><strong>Business Impact:</strong> High risk of corporate credential theft. Unlike traditional phishing, this attack uses the "panic" of a browser failure to bypass user caution. It effectively targets remote workers who may not have immediate access to IT support.</p>
-      <p><strong>Why It Happened:</strong> Attackers are exploiting the technical complexity of modern browsers. By creating a self-inflicted "technical problem," they establish a false sense of authority for the malicious "fix."</p>
-      <p><strong>Recommended Executive Action:</strong> Enforce an "Extension Allow-list" policy in your enterprise browser management. Educate staff that IT will never prompt for "Repair Tools" via a web browser and to report any repeated browser crashes to the SOC immediately.</p>
-      <p><strong>Hashtags:</strong> #ClickFix #CrashFix #ChromeSecurity #Infostealer #SocialEngineering #EndpointProtection</p>
+      <img src="https://picsum.photos/seed/microsoft-recall-hack/800/400" alt="A Windows screen shattering to reveal a timeline of screenshots, symbolizing the Recall privacy breach." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A hacking group has released "TotalRecall," a tool that exploits a flaw in Microsoft’s "Recall" feature (which takes constant screenshots of user activity). The tool bypasses Windows Hello authentication to remotely decrypt and exfiltrate the local Recall database, effectively turning the feature into native spyware.</p>
+      <p><strong>Business Impact:</strong> Critical Privacy Risk. If compromised, an attacker gains a photographic history of every email, document, and private message viewed by the employee—even those in encrypted apps like Signal. This destroys the confidentiality of "End-to-End Encrypted" communications on the endpoint.</p>
+      <p><strong>Why It Happened:</strong> Despite assurances of local encryption, the decryption keys were found to be loaded into memory in a way that could be dumped by a user-level process with elevated privileges.</p>
+      <p><strong>Recommended Executive Action:</strong> <strong>Immediate Action:</strong> Use Group Policy (GPO) to globally disable Windows Recall on all corporate endpoints. Do not rely on user discretion. Verify that the `WindowsAI` service is stopped across the fleet.</p>
+      <p><strong>Hashtags:</strong> #MicrosoftRecall #Privacy #Windows11 #TotalRecall #Spyware #EndpointSecurity</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Agentic AI Hijacking: "BodySnatcher" Vulnerability Hits Autonomous Agents</title>
-    <link>https://codedefence.in/blog/2026/01/19/bodysnatcher-agentic-ai-hijacking-flaw</link>
-    <pubDate>Mon, 19 Jan 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/19/bodysnatcher-agentic-ai-hijacking-flaw</guid>
+    <title>Jenkins "ArtifactJack" Attack: CI/CD Pipelines Hijacked via Plugin Flaw</title>
+    <link>https://codedefence.in/blog/2026/01/20/jenkins-artifactjack-plugin-vulnerability</link>
+    <pubDate>Tue, 20 Jan 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/01/20/jenkins-artifactjack-plugin-vulnerability</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ai-hijack/800/400" alt="A digital avatar silhouette being pulled apart by red code, symbolizing agent hijacking." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Security researchers have detailed "BodySnatcher," a new vulnerability affecting "Agentic AI" systems (AI that can perform actions autonomously). By using "Context Injection," an attacker can overwrite an agent's core instructions mid-task, essentially "snatching the body" of the AI to perform unauthorized actions like deleting files or emailing sensitive data.</p>
-      <p><strong>Business Impact:</strong> This represents a fundamental shift in AI risk. As enterprises move from "Chatbots" to "Autonomous Agents" that manage schedules or code, a BodySnatcher attack can turn your productivity tool into a malicious insider. For your consultancy, this is a "Day 1" risk for any client deploying autonomous workflows.</p>
-      <p><strong>Why It Happened:</strong> Most current AI agents do not have a separate "Secure Kernel" for their base instructions. When they process external data (like an email or a web page), they cannot distinguish between "data to process" and "new commands to follow."</p>
-      <p><strong>Recommended Executive Action:</strong> Mandate a "Human-in-the-Loop" for all AI-triggered destructive actions (delete, send, purchase). Evaluate your AI agents for "Prompt Firewall" protections and ensure they operate in a heavily sandboxed environment.</p>
-      <p><strong>Hashtags:</strong> #AgenticAI #BodySnatcher #AISecurity #ContextInjection #AutonomousAgents #FutureTech</p>
+      <img src="https://picsum.photos/seed/jenkins-pipeline/800/400" alt="A Jenkins butler logo holding a tray of corrupted files with a red skull icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A critical vulnerability (CVE-2026-1022) in a widely used Jenkins artifact management plugin is being exploited to replace legitimate software builds with malware-laden versions. The attack, dubbed "ArtifactJack," occurs post-build but pre-deployment, making it invisible to source code scanners.</p>
+      <p><strong>Business Impact:</strong> Supply Chain Compromise. This allows attackers to distribute malware to your customers *signed with your own valid digital certificate*. It is the digital equivalent of poisoning food after it leaves the kitchen but before it reaches the table.</p>
+      <p><strong>Why It Happened:</strong> The plugin failed to validate the integrity of artifacts moving between the build agent and the master node, allowing a Man-in-the-Middle (MitM) swap within the internal network.</p>
+      <p><strong>Recommended Executive Action:</strong> Implement "Binary Signing" immediately *at the build stage*, not the release stage. Ensure that your deployment scripts verify the hash of the artifact against the original build hash before pushing to production.</p>
+      <p><strong>Hashtags:</strong> #Jenkins #CICD #SupplyChainAttack #DevSecOps #ArtifactJack #CVE20261022</p>
     ]]></description>
   </item>
 </channel>
