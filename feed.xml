@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Cyber Defense Intelligence - Feb 08 2026</title>
+  <title>Cyber Defense Intelligence Briefing - Feb 09 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 8, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for February 9, 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 08 Feb 2026 20:00:00 +0300</pubDate>
-  <lastBuildDate>Sun, 08 Feb 2026 20:00:00 +0300</lastBuildDate>
+  <pubDate>Mon, 09 Feb 2026 19:45:00 +0300</pubDate>
+  <lastBuildDate>Mon, 09 Feb 2026 19:45:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>SolarWinds Under Siege: "Operation SunBurn 2.0" Confirmed</title>
-    <link>https://codedefence.in/blog/2026/02/08/solarwinds-web-help-desk-active-exploitation-sunburn</link>
-    <pubDate>Sun, 08 Feb 2026 19:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/08/solarwinds-web-help-desk-active-exploitation-sunburn</guid>
+    <title>The Shadow Campaigns: 37 Countries Hit in Massive Espionage Plot</title>
+    <link>https://codedefence.in/blog/2026/02/09/shadow-campaigns-global-government-espionage</link>
+    <pubDate>Mon, 09 Feb 2026 19:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/shadow-campaigns-global-government-espionage</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/solarwinds-attack/800/400" alt="A solar flare engulfing a server rack, symbolizing the intense active exploitation of SolarWinds." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Following the disclosure on Feb 4th, Mandiant has confirmed that the deserialization flaw in SolarWinds Web Help Desk is now being exploited at scale by a new threat cluster tracked as "Void Manticore." The attackers are deploying web shells to gain persistence within 20 minutes of initial access, specifically targeting unpatched government and MSP sectors.</p>
-      <p><strong>Business Impact:</strong> Critical Emergency. This is no longer a theoretical risk. If your Web Help Desk is internet-facing and unpatched, you must assume compromise. Attackers are using this foothold to harvest credentials and pivot to domain controllers.</p>
-      <p><strong>Why It Happened:</strong> The "Patch Gap" window was too wide. Many organizations delayed maintenance over the weekend, providing a 72-hour open window for automated exploitation scripts to scan and infect vulnerable servers.</p>
-      <p><strong>Recommended Executive Action:</strong> <strong>Disconnect Immediately.</strong> Take any unpatched Web Help Desk instance offline. Do not just block ports; sever the connection. Initiate an Incident Response plan to hunt for "Godzilla" web shells in the `\helpdesk` directory.</p>
-      <p><strong>Hashtags:</strong> #SolarWinds #SunBurn2 #VoidManticore #IncidentResponse #ZeroDay #CyberWarfare</p>
+      <img src="https://picsum.photos/seed/global-espionage/800/400" alt="A digital map showing 37 countries highlighted in red with data streams flowing toward a central shadow figure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Palo Alto Networks' Unit 42 has unveiled "The Shadow Campaigns," a coordinated hacking effort by group TGR-STA-1030 that breached government systems in 37 countries. The group focused on ministries of finance, energy, and trade, stealing entire executive inboxes to influence real-world trade negotiations and military operations.</p>
+      <p><strong>Business Impact:</strong> High Geopolitical Risk. This isn't just data theft; it's the weaponization of intelligence to shape global economic outcomes. For multinational firms, this means your government-level communications and trade secrets may already be in the hands of a sophisticated adversary.</p>
+      <p><strong>Why It Happened:</strong> The attackers used "unflashy" older software flaws that were poorly monitored. By targeting unpatched services and using phishing disguised as official government communiqués, they maintained long-term persistence without detection.</p>
+      <p><strong>Recommended Executive Action:</strong> Conduct an immediate "Asset Inventory" to identify every internet-facing system. Prioritize patching older vulnerabilities over chasing zero-days, and implement "Strict Email Isolation" for senior officials handling sensitive trade or policy data.</p>
+      <p><strong>Hashtags:</strong> #GlobalEspionage #Unit42 #TGRSTA1030 #DigitalSovereignty #PatchManagement</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"Help Desk Swarm": AI Voice Bots Overwhelm IT Support Lines</title>
-    <link>https://codedefence.in/blog/2026/02/08/ai-voice-swarm-help-desk-vishing</link>
-    <pubDate>Sun, 08 Feb 2026 18:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/08/ai-voice-swarm-help-desk-vishing</guid>
+    <title>"LookOut": Critical RCE Flaws in Google Looker Threaten Corporate Secrets</title>
+    <link>https://codedefence.in/blog/2026/02/09/google-looker-vulnerabilities-corporate-data-theft</link>
+    <pubDate>Mon, 09 Feb 2026 18:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/google-looker-vulnerabilities-corporate-data-theft</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ai-voice-bot/800/400" alt="A headset with a glowing red waveform, representing an AI voice attack on support staff." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Multiple Fortune 500 companies have reported a coordinated "Vishing" (Voice Phishing) campaign today. Attackers are using AI voice bots that clone employee voices from public videos (YouTube/LinkedIn) to call internal Help Desks. The bots successfully requested password resets and MFA token bypasses by citing "urgent weekend deadlines."</p>
-      <p><strong>Business Impact:</strong> High "Human Layer" Vulnerability. Traditional "voice recognition" verification by support staff is now obsolete. This campaign proves that attackers can automate social engineering at scale, bypassing technical controls by targeting helpful human agents.</p>
-      <p><strong>Why It Happened:</strong> The availability of real-time, low-latency voice AI models allows attackers to conduct hundreds of simultaneous calls, overwhelming support teams and increasing the statistical probability of a successful breach.</p>
-      <p><strong>Recommended Executive Action:</strong> Implement a "No-Voice Auth" policy for resets. Mandate that all password resets must be verified via a secondary channel (e.g., a push notification to a registered manager's device) or require the user to visually identify themselves on a video call with a physical ID.</p>
-      <p><strong>Hashtags:</strong> #Vishing #SocialEngineering #AIFraud #HelpDeskSecurity #DeepVoice #IdentityTheft</p>
+      <img src="https://picsum.photos/seed/looker-vulnerability/800/400" alt="A magnifying glass over a digital brain with a red 'Takeover' alert in a data visualization dashboard." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Researchers at Tenable have disclosed "LookOut," a chain of vulnerabilities in Google's Looker business intelligence platform. The most severe is a Remote Code Execution (RCE) flaw that allows attackers to take full control of a Looker server, accessing sensitive user credentials and the "internal management database" that acts as the central nervous system for corporate data.</p>
+      <p><strong>Business Impact:</strong> Extreme Data Integrity Risk. Looker is used by 60,000+ companies to visualize their most sensitive secrets. A breach here allows an attacker to manipulate corporate data or pivot deep into private internal networks. While Google has patched the cloud version, on-premise users remain exposed.</p>
+      <p><strong>Why It Happened:</strong> The platform was tricked into connecting to its own "private brain" through a specialized data-extraction technique, bypassing traditional security barriers between the application and its underlying configuration storage.</p>
+      <p><strong>Recommended Executive Action:</strong> For self-hosted Looker instances, apply security patches immediately. Security teams should inspect the `.git/hooks/` directory for unauthorized scripts (e.g., `pre-push`) and search application logs for unusual SQL errors targeting `looker__ilooker`.</p>
+      <p><strong>Hashtags:</strong> #Looker #GoogleCloud #RCE #BusinessIntelligence #DataTheft #Tenable</p>
     ]]></description>
   </item>
 
   <item>
-    <title>EV Fleet Paralysis: Ransomware Groups Target Smart Charging Hubs</title>
-    <link>https://codedefence.in/blog/2026/02/08/ev-charging-ransomware-fleet-grounded</link>
-    <pubDate>Sun, 08 Feb 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/08/ev-charging-ransomware-fleet-grounded</guid>
+    <title>Moltbook Disaster: 1.5M AI API Tokens Exposed in "Vibe Coding" Failure</title>
+    <link>https://codedefence.in/blog/2026/02/09/moltbook-ai-agent-data-leak-vibe-coding</link>
+    <pubDate>Mon, 09 Feb 2026 18:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/moltbook-ai-agent-data-leak-vibe-coding</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ev-charging-hack/800/400" alt="Electric vehicle charging stations with screens displaying a red ransomware skull." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A major European logistics firm has grounded its entire electric delivery fleet after a ransomware attack targeted its "Smart Charging" management system. The malware, dubbed "VoltLock," encrypts the charging controllers, preventing the vehicles from receiving power. The attackers are demanding $4M in Monero to release the decryption key.</p>
-      <p><strong>Business Impact:</strong> Operational Stoppage. This highlights a critical dependency in the green transition: "Charger Security" is now "Fleet Security." For logistics companies, a bricked charging network is equivalent to a fuel shortage, but one that cannot be solved by switching suppliers.</p>
-      <p><strong>Why It Happened:</strong> The charging infrastructure relied on legacy OCPP (Open Charge Point Protocol) implementations with weak authentication, which were exposed to the internet for remote monitoring convenience.</p>
-      <p><strong>Recommended Executive Action:</strong> Audit your OT/IoT dependencies. Ensure that EV charging networks are on isolated VLANs and cannot be reached directly from the corporate office network. Prepare manual overrides or "dumb charging" backups that do not require cloud connectivity.</p>
-      <p><strong>Hashtags:</strong> #EVSecurity #Ransomware #Logistics #VoltLock #IoT #GreenTechRisk</p>
+      <img src="https://picsum.photos/seed/moltbook-leak/800/400" alt="An open digital book leaking glowing keys and personal email strings into a dark void." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Following an exposé by Wiz, China’s MIIT has issued an emergency alert regarding Moltbook, a social network for AI agents. A misconfigured database left 1.5 million API tokens and 35,000 private emails public. The incident has put "Vibe Coding"—the trend of using AI to build apps fast without security guardrails—under intense scrutiny.</p>
+      <p><strong>Business Impact:</strong> High Credential Hijacking Risk. If your developers used corporate API keys (OpenAI, Anthropic, AWS) to experiment with "Clawdbots" on Moltbook, those keys are now compromised. Attackers can use these to rack up massive costs or exfiltrate your private AI prompts and training data.</p>
+      <p><strong>Why It Happened:</strong> The platform was built following the "vibe" of rapid development. It neglected fundamental identity verification and security defaults because the AI-generated code wasn't audited for enterprise-grade security standards.</p>
+      <p><strong>Recommended Executive Action:</strong> Audit all developer usage of "experimental" AI social platforms. Rotate all high-value API tokens immediately. Issue a policy prohibiting the use of corporate credentials in any non-vetted agentic AI platforms.</p>
+      <p><strong>Hashtags:</strong> #Moltbook #VibeCoding #AISecurity #APIBreach #ShadowAI #ChinaTech</p>
     ]]></description>
   </item>
 
   <item>
-    <title>GitHub "Ghost Comments": New Technique Hides Malicious Code in Plain Sight</title>
-    <link>https://codedefence.in/blog/2026/02/08/github-ghost-comments-malicious-code-hiding</link>
-    <pubDate>Sun, 08 Feb 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/08/github-ghost-comments-malicious-code-hiding</guid>
+    <title>Clinic Spy Cam: Ahmedabad Doctor Blackmailed via Default CCTV Passwords</title>
+    <link>https://codedefence.in/blog/2026/02/09/cctv-default-password-extortion-ahmedabad</link>
+    <pubDate>Mon, 09 Feb 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/cctv-default-password-extortion-ahmedabad</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/github-ghost/800/400" alt="A GitHub code block with faint, ghostly binary code appearing between the lines." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Security researchers have uncovered a new obfuscation technique called "Ghost Comments." Attackers are using invisible Unicode control characters inside standard code comments to hide executable logic that is interpreted by compilers but remains invisible to human code reviewers and standard diff tools.</p>
-      <p><strong>Business Impact:</strong> High Supply Chain Stealth. This defeats the primary control of "Manual Code Review." A developer could approve a pull request that looks perfectly safe, unaware that the "comments" contain instructions that will be executed during the build process.</p>
-      <p><strong>Why It Happened:</strong> Compilers and interpreters (like Python and GCC) have different handling rules for Unicode bidirectional text than code editors, creating a "visual discrepancy" gap.</p>
-      <p><strong>Recommended Executive Action:</strong> Update your CI/CD pipelines to include a "Unicode Sanitizer" step. Configure your linters (ESLint, Pylint) to flag and reject any non-standard ASCII characters in source code files immediately.</p>
-      <p><strong>Hashtags:</strong> #AppSec #GitHub #SupplyChain #Obfuscation #DevSecOps #GhostComments</p>
+      <img src="https://picsum.photos/seed/cctv-blackmail/800/400" alt="A security camera with a red 'Hacked' overlay and a smartphone screen displaying a QR code for ransom." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A doctor in Ahmedabad is being blackmailed with private footage from inside his clinic after hackers (allegedly the original installers) accessed his CCTV system using default passwords. The case follows a similar trend of "Clinic Spy Cams" where sensitive medical footage is held for ransom using WhatsApp and QR code payments.</p>
+      <p><strong>Business Impact:</strong> Severe Privacy and Legal Liability. For medical and professional firms, a breach of physical privacy is a catastrophic brand failure. In Bahrain and India, this could trigger massive fines under emerging DPDP/Data Protection laws regarding sensitive biometric and personal data.</p>
+      <p><strong>Why It Happened:</strong> A classic failure of "Basic Hygiene." Installers retained default credentials, and the client never performed a handover audit. This allowed remote access to the DVR/NVR via standard mobile apps used for surveillance.</p>
+      <p><strong>Recommended Executive Action:</strong> Conduct a "Physical Security Audit." Every IoT device (cameras, smart locks, printers) must have its default password changed and be placed on a separate, non-routable VLAN. Never allow installers to retain remote access credentials post-setup.</p>
+      <p><strong>Hashtags:</strong> #PhysicalSecurity #IoT #CCTVHack #PrivacyRisk #DPDP #CyberExtortion</p>
     ]]></description>
   </item>
 </channel>
