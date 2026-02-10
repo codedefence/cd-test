@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Cyber Defense Intelligence Briefing - Feb 09 2026</title>
+  <title>Cyber Defense Intelligence - Feb 10 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 9, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for February 10, 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 09 Feb 2026 19:45:00 +0300</pubDate>
-  <lastBuildDate>Mon, 09 Feb 2026 19:45:00 +0300</lastBuildDate>
+  <pubDate>Tue, 10 Feb 2026 19:45:00 +0300</pubDate>
+  <lastBuildDate>Tue, 10 Feb 2026 19:45:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>The Shadow Campaigns: 37 Countries Hit in Massive Espionage Plot</title>
-    <link>https://codedefence.in/blog/2026/02/09/shadow-campaigns-global-government-espionage</link>
-    <pubDate>Mon, 09 Feb 2026 19:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/shadow-campaigns-global-government-espionage</guid>
+    <title>Google Security Alarm: 1 Billion Android Devices Now Unsupported</title>
+    <link>https://codedefence.in/blog/2026/02/10/one-billion-android-phones-security-risk</link>
+    <pubDate>Tue, 10 Feb 2026 19:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/10/one-billion-android-phones-security-risk</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/global-espionage/800/400" alt="A digital map showing 37 countries highlighted in red with data streams flowing toward a central shadow figure." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Palo Alto Networks' Unit 42 has unveiled "The Shadow Campaigns," a coordinated hacking effort by group TGR-STA-1030 that breached government systems in 37 countries. The group focused on ministries of finance, energy, and trade, stealing entire executive inboxes to influence real-world trade negotiations and military operations.</p>
-      <p><strong>Business Impact:</strong> High Geopolitical Risk. This isn't just data theft; it's the weaponization of intelligence to shape global economic outcomes. For multinational firms, this means your government-level communications and trade secrets may already be in the hands of a sophisticated adversary.</p>
-      <p><strong>Why It Happened:</strong> The attackers used "unflashy" older software flaws that were poorly monitored. By targeting unpatched services and using phishing disguised as official government communiqués, they maintained long-term persistence without detection.</p>
-      <p><strong>Recommended Executive Action:</strong> Conduct an immediate "Asset Inventory" to identify every internet-facing system. Prioritize patching older vulnerabilities over chasing zero-days, and implement "Strict Email Isolation" for senior officials handling sensitive trade or policy data.</p>
-      <p><strong>Hashtags:</strong> #GlobalEspionage #Unit42 #TGRSTA1030 #DigitalSovereignty #PatchManagement</p>
+      <img src="https://picsum.photos/seed/android-risk/800/400" alt="A digital representation of a cracked smartphone screen with a red warning exclamation mark." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Google has confirmed that over 40% of all active Android devices—more than one billion phones—are no longer receiving critical security updates. Devices running Android 12 or older are now permanently vulnerable to new malware and spyware strains, as manufacturers end support for legacy hardware.</p>
+      <p><strong>Business Impact:</strong> High "Shadow IT" Risk. Many employees use personal older phones for work (BYOD). These devices are now gateways for credential theft and corporate data exfiltration. In Bahrain, where legacy devices are common in the workforce, this poses a direct threat to enterprise perimeters.</p>
+      <p><strong>Why It Happened:</strong> The natural "end-of-life" cycle for mobile hardware has hit a massive bottleneck. Phones introduced before 2021 lack the hardware security modules required for modern Android versions, leaving a billion-user gap for attackers to exploit.</p>
+      <p><strong>Recommended Executive Action:</strong> Update your BYOD policy to mandate Android 13 or newer for any device accessing corporate email or VPNs. Conduct an audit of "Work Profile" enrollments to identify and phase out unsupported hardware.</p>
+      <p><strong>Hashtags:</strong> #AndroidSecurity #MobileRisk #GoogleAlert #CyberHygiene #BYOD #LegacyTech</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"LookOut": Critical RCE Flaws in Google Looker Threaten Corporate Secrets</title>
-    <link>https://codedefence.in/blog/2026/02/09/google-looker-vulnerabilities-corporate-data-theft</link>
-    <pubDate>Mon, 09 Feb 2026 18:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/google-looker-vulnerabilities-corporate-data-theft</guid>
+    <title>Google Threat Intel: State-Sponsored Hackers "Personalizing" Defense Attacks</title>
+    <link>https://codedefence.in/blog/2026/02/10/state-sponsored-hackers-target-defense-supply-chain</link>
+    <pubDate>Tue, 10 Feb 2026 18:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/10/state-sponsored-hackers-target-defense-supply-chain</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/looker-vulnerability/800/400" alt="A magnifying glass over a digital brain with a red 'Takeover' alert in a data visualization dashboard." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Researchers at Tenable have disclosed "LookOut," a chain of vulnerabilities in Google's Looker business intelligence platform. The most severe is a Remote Code Execution (RCE) flaw that allows attackers to take full control of a Looker server, accessing sensitive user credentials and the "internal management database" that acts as the central nervous system for corporate data.</p>
-      <p><strong>Business Impact:</strong> Extreme Data Integrity Risk. Looker is used by 60,000+ companies to visualize their most sensitive secrets. A breach here allows an attacker to manipulate corporate data or pivot deep into private internal networks. While Google has patched the cloud version, on-premise users remain exposed.</p>
-      <p><strong>Why It Happened:</strong> The platform was tricked into connecting to its own "private brain" through a specialized data-extraction technique, bypassing traditional security barriers between the application and its underlying configuration storage.</p>
-      <p><strong>Recommended Executive Action:</strong> For self-hosted Looker instances, apply security patches immediately. Security teams should inspect the `.git/hooks/` directory for unauthorized scripts (e.g., `pre-push`) and search application logs for unusual SQL errors targeting `looker__ilooker`.</p>
-      <p><strong>Hashtags:</strong> #Looker #GoogleCloud #RCE #BusinessIntelligence #DataTheft #Tenable</p>
+      <img src="https://picsum.photos/seed/defense-espionage/800/400" alt="A digital silhouette of a soldier overlaying a circuit board with a sniper scope focus." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A new Google report reveals a "relentless barrage" of cyber operations against US and EU industrial supply chains. State-sponsored groups from Russia, North Korea, and China are moving away from broad attacks to "personalized" targeting of individual employees via spoofed job portals and AI-enhanced social engineering.</p>
+      <p><strong>Business Impact:</strong> High Intellectual Property Risk. This isn't just about breaking into servers; it's about tricking engineers and consultants into giving up access. For defense contractors in the GCC, this means your "softest" targets are now individual staff members' personal lives and career ambitions.</p>
+      <p><strong>Why It Happened:</strong> Traditional perimeter defenses have become too strong, forcing nation-state actors to weaponize "Human Intelligence" (HUMINT) via digital means. They are profiling targets for weeks before launching highly tailored phishing lures.</p>
+      <p><strong>Recommended Executive Action:</strong> Implement "Executive Protection" monitoring for high-value targets (HVT). Deploy AI-driven anti-phishing tools that can detect the subtle linguistic markers of state-sponsored social engineering.</p>
+      <p><strong>Hashtags:</strong> #ThreatIntel #Espionage #GoogleCloud #DefenseSector #SocialEngineering #APT</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Moltbook Disaster: 1.5M AI API Tokens Exposed in "Vibe Coding" Failure</title>
-    <link>https://codedefence.in/blog/2026/02/09/moltbook-ai-agent-data-leak-vibe-coding</link>
-    <pubDate>Mon, 09 Feb 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/moltbook-ai-agent-data-leak-vibe-coding</guid>
+    <title>CISA Perimeter Alert: Feds Ordered to Disconnect Unsupported Edge Devices</title>
+    <link>https://codedefence.in/blog/2026/02/10/cisa-disconnect-unsupported-network-edge-devices</link>
+    <pubDate>Tue, 10 Feb 2026 18:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/10/cisa-disconnect-unsupported-network-edge-devices</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/moltbook-leak/800/400" alt="An open digital book leaking glowing keys and personal email strings into a dark void." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Following an exposé by Wiz, China’s MIIT has issued an emergency alert regarding Moltbook, a social network for AI agents. A misconfigured database left 1.5 million API tokens and 35,000 private emails public. The incident has put "Vibe Coding"—the trend of using AI to build apps fast without security guardrails—under intense scrutiny.</p>
-      <p><strong>Business Impact:</strong> High Credential Hijacking Risk. If your developers used corporate API keys (OpenAI, Anthropic, AWS) to experiment with "Clawdbots" on Moltbook, those keys are now compromised. Attackers can use these to rack up massive costs or exfiltrate your private AI prompts and training data.</p>
-      <p><strong>Why It Happened:</strong> The platform was built following the "vibe" of rapid development. It neglected fundamental identity verification and security defaults because the AI-generated code wasn't audited for enterprise-grade security standards.</p>
-      <p><strong>Recommended Executive Action:</strong> Audit all developer usage of "experimental" AI social platforms. Rotate all high-value API tokens immediately. Issue a policy prohibiting the use of corporate credentials in any non-vetted agentic AI platforms.</p>
-      <p><strong>Hashtags:</strong> #Moltbook #VibeCoding #AISecurity #APIBreach #ShadowAI #ChinaTech</p>
+      <img src="https://picsum.photos/seed/edge-security/800/400" alt="A network router with a red 'X' and a digital padlock, symbolizing a disconnected edge device." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> CISA has issued a Binding Operational Directive ordering federal agencies to identify and disconnect all "End-of-Life" (EoL) routers, firewalls, and network appliances. The move comes after intelligence showed hackers are increasingly using these unpatchable edge devices as persistent backdoors into secure networks.</p>
+      <p><strong>Business Impact:</strong> Operational Disruption vs. Security. Many firms "sweat" their hardware assets for 10+ years. This directive makes it clear: EoL hardware is a liability that cannot be mitigated with software. For your clients, this is a call to audit "Legacy Debt" that could lead to an unpatchable breach.</p>
+      <p><strong>Why It Happened:</strong> "Living off the Land" (LotL) techniques have evolved. Attackers no longer need malware; they just need a device that doesn't receive security updates to act as a permanent, invisible node on your network.</p>
+      <p><strong>Recommended Executive Action:</strong> Conduct a "Network Edge Audit" this week. Any device that no longer receives manufacturer security patches must be scheduled for immediate decommissioning or moved to a fully isolated "Management-only" network.</p>
+      <p><strong>Hashtags:</strong> #CISA #EdgeSecurity #NetworkDefense #LegacyIT #PatchManagement #Infosec</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Clinic Spy Cam: Ahmedabad Doctor Blackmailed via Default CCTV Passwords</title>
-    <link>https://codedefence.in/blog/2026/02/09/cctv-default-password-extortion-ahmedabad</link>
-    <pubDate>Mon, 09 Feb 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/09/cctv-default-password-extortion-ahmedabad</guid>
+    <title>Picus Labs Red Report 2026: Shift from Encryption to "Identity Hijacking"</title>
+    <link>https://codedefence.in/blog/2026/02/10/picus-labs-red-report-2026-identity-theft-shift</link>
+    <pubDate>Tue, 10 Feb 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/10/picus-labs-red-report-2026-identity-theft-shift</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cctv-blackmail/800/400" alt="A security camera with a red 'Hacked' overlay and a smartphone screen displaying a QR code for ransom." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A doctor in Ahmedabad is being blackmailed with private footage from inside his clinic after hackers (allegedly the original installers) accessed his CCTV system using default passwords. The case follows a similar trend of "Clinic Spy Cams" where sensitive medical footage is held for ransom using WhatsApp and QR code payments.</p>
-      <p><strong>Business Impact:</strong> Severe Privacy and Legal Liability. For medical and professional firms, a breach of physical privacy is a catastrophic brand failure. In Bahrain and India, this could trigger massive fines under emerging DPDP/Data Protection laws regarding sensitive biometric and personal data.</p>
-      <p><strong>Why It Happened:</strong> A classic failure of "Basic Hygiene." Installers retained default credentials, and the client never performed a handover audit. This allowed remote access to the DVR/NVR via standard mobile apps used for surveillance.</p>
-      <p><strong>Recommended Executive Action:</strong> Conduct a "Physical Security Audit." Every IoT device (cameras, smart locks, printers) must have its default password changed and be placed on a separate, non-routable VLAN. Never allow installers to retain remote access credentials post-setup.</p>
-      <p><strong>Hashtags:</strong> #PhysicalSecurity #IoT #CCTVHack #PrivacyRisk #DPDP #CyberExtortion</p>
+      <img src="https://picsum.photos/seed/identity-hijack/800/400" alt="A digital keycard being duplicated by a shadow figure in a high-tech office hallway." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> The Picus Labs Red Report 2026 highlights a definitive shift in the threat landscape. Ransomware and file encryption are being deprioritized by top-tier attackers in favor of "Identity Hijacking." Attackers are now focused on stealing session tokens and bypassing MFA to remain silent and persistent within cloud environments.</p>
+      <p><strong>Business Impact:</strong> High. Traditional "Ransomware Protection" (backups) won't help if an attacker is silently using an executive's identity to sign off on fraudulent wires or steal trade secrets over months. This requires a shift from "File Security" to "Behavioral Identity Analytics."</p>
+      <p><strong>Why It Happened:</strong> Enterprises have become better at recovering from encryption (backups), making it less profitable for attackers. However, "Identity" remains the weakest link in the cloud-first, hybrid-work era.</p>
+      <p><strong>Recommended Executive Action:</strong> Prioritize the deployment of "Identity Threat Detection and Response" (ITDR) tools. Move beyond simple MFA to "Phishing-Resistant" hardware keys (FIDO2) for all privileged accounts.</p>
+      <p><strong>Hashtags:</strong> #IdentitySecurity #RedReport2026 #MFA #CyberThreats #CloudSecurity #IAM</p>
     ]]></description>
   </item>
 </channel>
