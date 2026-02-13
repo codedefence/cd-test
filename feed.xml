@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Cyber Defense Intelligence - Feb 12 2026</title>
+  <title>Cyber Defense Intelligence - Feb 13 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 12, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for February 13, 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 12 Feb 2026 19:45:00 +0300</pubDate>
-  <lastBuildDate>Thu, 12 Feb 2026 19:45:00 +0300</lastBuildDate>
+  <pubDate>Fri, 13 Feb 2026 19:45:00 +0300</pubDate>
+  <lastBuildDate>Fri, 13 Feb 2026 19:45:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Microsoft Fixes "Big" Notepad Flaw: Command Injection via Markdown</title>
-    <link>https://codedefence.in/blog/2026/02/12/microsoft-notepad-markdown-command-injection-fix</link>
-    <pubDate>Thu, 12 Feb 2026 19:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/12/microsoft-notepad-markdown-command-injection-fix</guid>
+    <title>Weekend Alert: Critical Exchange Zero-Day (CVE-2026-2100) Exploited in Wild</title>
+    <link>https://codedefence.in/blog/2026/02/13/microsoft-exchange-zero-day-cve-2026-2100</link>
+    <pubDate>Fri, 13 Feb 2026 19:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/microsoft-exchange-zero-day-cve-2026-2100</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/notepad-security/800/400" alt="The Windows Notepad icon with a red digital lock and a terminal code injection alert." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Microsoft has patched a critical security flaw in the Windows 11 Notepad app (CVE-2026-20841). The vulnerability allowed attackers to execute remote code by tricking users into clicking malicious Markdown links. By leveraging unverified protocols, the app could launch remote files without displaying standard Windows security warnings.</p>
-      <p><strong>Business Impact:</strong> High risk for technical staff. Since Notepad is the default tool for many admins and developers, a single "one-click" exploit in a `.md` file could lead to full workstation compromise. This highlights that even "simple" text editors are now complex attack surfaces.</p>
-      <p><strong>Why It Happened:</strong> The recent addition of Markdown support to Notepad introduced "clickable link" functionality that failed to sanitize non-standard URI schemes (like `ms-appinstaller://`), allowing them to bypass shell security checks.</p>
-      <p><strong>Recommended Executive Action:</strong> Ensure Windows 11 systems are updated via the Microsoft Store to Notepad version 11.2601 or higher. Advise developers to treat `.md` files from external sources with the same caution as `.exe` files.</p>
-      <p><strong>Hashtags:</strong> #Notepad #Microsoft #RCE #CommandInjection #PatchTuesday #AppSec</p>
+      <img src="https://picsum.photos/seed/exchange-zero-day/800/400" alt="A Microsoft Exchange server rack with a red 'Critical' warning light pulsing in a dark server room." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> In a "Friday the 13th" scenario, Microsoft has confirmed a critical, unauthenticated Remote Code Execution (RCE) vulnerability in Exchange Server 2025 and 2022. Dubbed "ProxyVoid," the flaw allows attackers to bypass authentication and execute PowerShell commands as SYSTEM. Active exploitation has been detected against law enforcement and legal firms in the EMEA region.</p>
+      <p><strong>Business Impact:</strong> Critical Emergency. This is a "drop everything" event. If you run on-premise Exchange, your email infrastructure is currently open to full takeover. Attackers are using this to deploy ransomware and exfiltrate entire mailboxes before the weekend begins.</p>
+      <p><strong>Why It Happened:</strong> A deserialization flaw in the Client Access Service (CAS) was discovered by threat actors before Microsoft could release the scheduled Tuesday patch.</p>
+      <p><strong>Recommended Executive Action:</strong> <strong>Immediate Mitigation:</strong> Apply the "One-Click Mitigation Tool" released by Microsoft 2 hours ago. If patching is not possible tonight, block external access to ECP/OWA (port 443) at the firewall level immediately.</p>
+      <p><strong>Hashtags:</strong> #Exchange #ZeroDay #ProxyVoid #RCE #FridayThe13th #EmergencyPatch</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Viral Warning: AI Impact Compared to "Early 2020" COVID-19 Disruption</title>
-    <link>https://codedefence.in/blog/2026/02/12/ai-impact-shumer-warning-jobs-at-risk</link>
-    <pubDate>Thu, 12 Feb 2026 18:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/12/ai-impact-shumer-warning-jobs-at-risk</guid>
+    <title>EU AI Act Strikes: €500M Fine for "Shadow AI" Data Scraping</title>
+    <link>https://codedefence.in/blog/2026/02/13/eu-ai-act-first-major-fine-shadow-ai</link>
+    <pubDate>Fri, 13 Feb 2026 18:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/eu-ai-act-first-major-fine-shadow-ai</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ai-disruption/800/400" alt="A digital hourglass with human silhouettes falling into a glowing AI network." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Hyperwrite CEO Matt Shumer’s essay, "Something Big Is Happening," has gone viral with over 30 million views, comparing the current state of AI to February 2020. He argues that AI is no longer a "future threat" but is already capable of handling full technical workloads, warning that many organizations are underestimating the speed of this shift.</p>
-      <p><strong>Business Impact:</strong> Massive workforce and security realignment. As AI takes over technical tasks, the primary security risk shifts from "External Hackers" to "Agentic Misconfiguration." If one person can do three days of work in an hour using AI, the potential for high-speed, automated data leakage increases exponentially.</p>
-      <p><strong>Why It Happened:</strong> The release of highly specialized coding models (like GPT-5.3 Codex) has reached a tipping point where AI can successfully build, debug, and deploy complex software with minimal human intervention.</p>
-      <p><strong>Recommended Executive Action:</strong> Establish an "AI Velocity" governance board. You must secure the *output* of AI-generated work as much as the *input*. Shift security training from "phishing awareness" to "AI-human partnership accountability."</p>
-      <p><strong>Hashtags:</strong> #AIShock #FutureOfWork #AIgovernance #DigitalTransformation #TechTrends2026</p>
+      <img src="https://picsum.photos/seed/eu-ai-fine/800/400" alt="The European Union flag overlaid with a digital gavel and a 'Data Violation' stamp." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> The European AI Office has levied its first historic fine under the AI Act—€500 million against a major "Shadow AI" provider (unnamed pending appeal) for scraping biometric data without consent to train "Agentic" models. The ruling sets a global precedent: if your AI model cannot prove the lineage of its training data, it is illegal to operate in the EU.</p>
+      <p><strong>Business Impact:</strong> High Compliance Risk. This signals the end of the "Wild West" era of AI training. For your clients, this means any vendor providing "AI Agents" must now provide a "Data Provenance Certificate." Using non-compliant AI tools poses a direct liability risk.</p>
+      <p><strong>Why It Happened:</strong> The provider, popular among developers for "Vibe Coding," failed to maintain documentation on copyright and consent for its training dataset, violating Article 5 of the EU AI Act.</p>
+      <p><strong>Recommended Executive Action:</strong> Request a "Data Lineage Audit" from your top 3 AI vendors by Monday. Ensure your legal team reviews your indemnification clauses for third-party AI tools.</p>
+      <p><strong>Hashtags:</strong> #EUAIAct #AIGovernance #DataPrivacy #ShadowAI #Compliance #TechRegulation</p>
     ]]></description>
   </item>
 
   <item>
-    <title>India's Data Center Boom: Experts Warn of "Digital Skyscrapers on Quicksand"</title>
-    <link>https://codedefence.in/blog/2026/02/12/india-data-center-boom-cyber-risks</link>
-    <pubDate>Thu, 12 Feb 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/12/india-data-center-boom-cyber-risks</guid>
+    <title>"FaceSwap-Live" Tool Defeats Video KYC: Banks on High Alert</title>
+    <link>https://codedefence.in/blog/2026/02/13/faceswap-live-kyc-bypass-banking-fraud</link>
+    <pubDate>Fri, 13 Feb 2026 18:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/faceswap-live-kyc-bypass-banking-fraud</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/india-data-center/800/400" alt="A high-tech data center hallway with an Indian flag and a red digital 'Risk' overlay." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> While India offers 21-year tax holidays to become a global cloud hub, cybersecurity leaders (including Palo Alto Networks) warn that infrastructure is being built faster than it can be defended. Nearly 29% of global cyber incidents now involve cloud systems, with state-backed actors actively scanning India’s "high-value honeypots" for exposed data.</p>
-      <p><strong>Business Impact:</strong> For businesses in Bahrain and the GCC leveraging Indian cloud providers, the risk of "Sovereign Data Exposure" is rising. The speed of growth has led to a 40% breach rate in unmonitored development environments and "shadow data" copies.</p>
-      <p><strong>Why It Happened:</strong> Tax incentives have prioritized "Data Center Capacity" over "Security Maturity." 99% of organizations are using AI-assisted coding to build these environments, but only 18% can fix vulnerabilities at that same speed.</p>
-      <p><strong>Recommended Executive Action:</strong> For cloud-hosted workloads in the region, implement "Zero-Trust Segmentation" immediately. Mandate that vendors provide a "Security Attestation" that includes an audit of their "Shadow Data" management and AI-assisted pipeline security.</p>
-      <p><strong>Hashtags:</strong> #CloudSecurity #IndiaTech #DataCenters #ZeroTrust #ShadowData #Gartner</p>
+      <img src="https://picsum.photos/seed/deepfake-kyc/800/400" alt="A smartphone screen showing a face verification scan being bypassed by a digital mask." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A new open-source tool, "FaceSwap-Live," has appeared on dark web forums, capable of injecting real-time deepfake video into Android and iOS camera feeds. Security researchers confirmed it successfully bypassed "Liveness Checks" for three major global banks by simulating micro-movements (blinking, head turning) indistinguishable from a real human.</p>
+      <p><strong>Business Impact:</strong> High Fraud Risk. "Video KYC" is no longer a silver bullet for identity verification. We expect a surge in "Mule Account" creation this weekend as fraudsters utilize this tool to open accounts using stolen IDs.</p>
+      <p><strong>Why It Happened:</strong> The tool exploits the "Virtual Camera" driver on rooted devices, feeding the banking app a pre-rendered, interactive deepfake stream instead of the raw camera sensor data.</p>
+      <p><strong>Recommended Executive Action:</strong> Update your KYC protocols to include "Passive Liveness" detection that analyzes skin texture and light reflection, not just movement. Consider requiring "Physical Challenges" (e.g., "Hold up your ID next to your ear") during video calls.</p>
+      <p><strong>Hashtags:</strong> #Deepfake #IdentityFraud #KYC #BankingSecurity #FaceSwap #FinTechRisk</p>
     ]]></description>
   </item>
 
   <item>
-    <title>CISA Alert: Windows Shell and MSHTML Bypasses Under Active Attack</title>
-    <link>https://codedefence.in/blog/2026/02/12/cisa-kev-windows-shell-mshtml-bypass</link>
-    <pubDate>Thu, 12 Feb 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/12/cisa-kev-windows-shell-mshtml-bypass</guid>
+    <title>Bahrain Logistics Alert: "RustBucket" Ransomware Targeting Autonomous Cranes</title>
+    <link>https://codedefence.in/blog/2026/02/13/rustbucket-ransomware-port-automation-attack</link>
+    <pubDate>Fri, 13 Feb 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/rustbucket-ransomware-port-automation-attack</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/cisa-kev/800/400" alt="A CISA KEV alert seal over a digital Windows shield being bypassed by a malicious link." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> CISA has added several Windows zero-days to the Known Exploited Vulnerabilities (KEV) catalog, including a critical Windows Shell bypass (CVE-2026-21510) and an MSHTML engine flaw (CVE-2026-21513). Attackers are using these to remotely install malware via "one-click" links, effectively bypassing the SmartScreen security feature.</p>
-      <p><strong>Business Impact:</strong> High endpoint vulnerability. These flaws bypass the built-in "defense-in-depth" layers that users have come to rely on. Because details are now public, the volume of automated attacks is expected to spike over the weekend.</p>
-      <p><strong>Why It Happened:</strong> These vulnerabilities reside in legacy components (MSHTML) and core UI shells that remain for backward compatibility, proving that "Tech Debt" is the primary gateway for modern state-sponsored hacking.</p>
-      <p><strong>Recommended Executive Action:</strong> Follow the CISA mandate to apply patches by March 3, 2026, but aim for a **48-hour internal target**. Audit all browser usage and ensure SmartScreen is supplemented with external endpoint detection and response (EDR) tools.</p>
-      <p><strong>Hashtags:</strong> #CISA #KEV #WindowsShell #ZeroDay #Infosec #SmartScreenBypass</p>
+      <img src="https://picsum.photos/seed/port-crane/800/400" alt="A shipping port at sunset with automated cranes frozen in place, overlaid with a lock icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Threat intelligence indicates a targeted ransomware campaign against automated port terminals in the GCC and Asia. The malware, "RustBucket," specifically targets the PLCs (Programmable Logic Controllers) of autonomous cranes, locking them in a "Safety Stop" mode that requires a physical key to override.</p>
+      <p><strong>Business Impact:</strong> Supply Chain Paralysis. For logistics hubs in Bahrain, this is a physical denial-of-service attack. If cranes are locked, cargo cannot move, leading to millions in demurrage charges per day.</p>
+      <p><strong>Why It Happened:</strong> Attackers gained entry via a compromised third-party maintenance VPN used by the crane manufacturer for remote diagnostics, moving laterally into the OT network.</p>
+      <p><strong>Recommended Executive Action:</strong> <strong>Immediate Action:</strong> Temporarily disable remote maintenance VPNs for all OT equipment this weekend. Verify that your "Manual Override" keys are physically accounted for and accessible to on-site engineers.</p>
+      <p><strong>Hashtags:</strong> #OTSecurity #SupplyChain #Logistics #Ransomware #Bahrain #CriticalInfrastructure</p>
     ]]></description>
   </item>
 </channel>
