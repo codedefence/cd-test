@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Cyber Defense Intelligence - Feb 13 2026</title>
+  <title>Cyber Defense Intelligence Briefing - Feb 14 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 13, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for February 14, 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 13 Feb 2026 19:45:00 +0300</pubDate>
-  <lastBuildDate>Fri, 13 Feb 2026 19:45:00 +0300</lastBuildDate>
+  <pubDate>Sat, 14 Feb 2026 18:00:00 +0300</pubDate>
+  <lastBuildDate>Sat, 14 Feb 2026 18:00:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>Weekend Alert: Critical Exchange Zero-Day (CVE-2026-2100) Exploited in Wild</title>
-    <link>https://codedefence.in/blog/2026/02/13/microsoft-exchange-zero-day-cve-2026-2100</link>
-    <pubDate>Fri, 13 Feb 2026 19:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/microsoft-exchange-zero-day-cve-2026-2100</guid>
+    <title>FTC Launches Sweeping Probe into Microsoft's AI and Security "Bundling"</title>
+    <link>https://codedefence.in/blog/2026/02/14/ftc-probe-microsoft-ai-security-bundling</link>
+    <pubDate>Sat, 14 Feb 2026 17:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/ftc-probe-microsoft-ai-security-bundling</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/exchange-zero-day/800/400" alt="A Microsoft Exchange server rack with a red 'Critical' warning light pulsing in a dark server room." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> In a "Friday the 13th" scenario, Microsoft has confirmed a critical, unauthenticated Remote Code Execution (RCE) vulnerability in Exchange Server 2025 and 2022. Dubbed "ProxyVoid," the flaw allows attackers to bypass authentication and execute PowerShell commands as SYSTEM. Active exploitation has been detected against law enforcement and legal firms in the EMEA region.</p>
-      <p><strong>Business Impact:</strong> Critical Emergency. This is a "drop everything" event. If you run on-premise Exchange, your email infrastructure is currently open to full takeover. Attackers are using this to deploy ransomware and exfiltrate entire mailboxes before the weekend begins.</p>
-      <p><strong>Why It Happened:</strong> A deserialization flaw in the Client Access Service (CAS) was discovered by threat actors before Microsoft could release the scheduled Tuesday patch.</p>
-      <p><strong>Recommended Executive Action:</strong> <strong>Immediate Mitigation:</strong> Apply the "One-Click Mitigation Tool" released by Microsoft 2 hours ago. If patching is not possible tonight, block external access to ECP/OWA (port 443) at the firewall level immediately.</p>
-      <p><strong>Hashtags:</strong> #Exchange #ZeroDay #ProxyVoid #RCE #FridayThe13th #EmergencyPatch</p>
+      <img src="https://picsum.photos/seed/ftc-microsoft/800/400" alt="The FTC seal superimposed over a digital padlock and the Microsoft Copilot logo." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> The US Federal Trade Commission (FTC) has accelerated its antitrust scrutiny of Microsoft, issuing civil investigative demands to rivals and customers. The probe heavily targets Microsoft’s practice of bundling artificial intelligence (Copilot), identity management (Entra), and cybersecurity software directly into its dominant Windows and Office platforms.</p>
+      <p><strong>Business Impact:</strong> High Strategic Market Shift. If the FTC forces an "unbundling," enterprise clients will face a fragmented procurement landscape. However, it also opens the door for independent cybersecurity vendors to compete on a level playing field without being squeezed out by default Microsoft inclusions.</p>
+      <p><strong>Why It Happened:</strong> Regulators are increasingly concerned that integrating security and AI directly into the OS creates a monolithic attack surface—as evidenced by recent high-profile breaches—while stifling fair market competition.</p>
+      <p><strong>Recommended Executive Action:</strong> Review your organization's dependency on the Microsoft "E5" security stack. Begin evaluating independent "Best-of-Breed" alternatives for identity and endpoint protection to ensure resilience against potential future forced unbundling.</p>
+      <p><strong>Hashtags:</strong> #Microsoft #FTC #Antitrust #CloudSecurity #Copilot #CyberRegulation</p>
     ]]></description>
   </item>
 
   <item>
-    <title>EU AI Act Strikes: €500M Fine for "Shadow AI" Data Scraping</title>
-    <link>https://codedefence.in/blog/2026/02/13/eu-ai-act-first-major-fine-shadow-ai</link>
-    <pubDate>Fri, 13 Feb 2026 18:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/eu-ai-act-first-major-fine-shadow-ai</guid>
+    <title>Critical RCE (CVE-2025-64712) in Unstructured.io Threatens Enterprise AI Pipelines</title>
+    <link>https://codedefence.in/blog/2026/02/14/unstructured-io-cve-2025-64712-ai-pipeline-rce</link>
+    <pubDate>Sat, 14 Feb 2026 16:45:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/unstructured-io-cve-2025-64712-ai-pipeline-rce</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/eu-ai-fine/800/400" alt="The European Union flag overlaid with a digital gavel and a 'Data Violation' stamp." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> The European AI Office has levied its first historic fine under the AI Act—€500 million against a major "Shadow AI" provider (unnamed pending appeal) for scraping biometric data without consent to train "Agentic" models. The ruling sets a global precedent: if your AI model cannot prove the lineage of its training data, it is illegal to operate in the EU.</p>
-      <p><strong>Business Impact:</strong> High Compliance Risk. This signals the end of the "Wild West" era of AI training. For your clients, this means any vendor providing "AI Agents" must now provide a "Data Provenance Certificate." Using non-compliant AI tools poses a direct liability risk.</p>
-      <p><strong>Why It Happened:</strong> The provider, popular among developers for "Vibe Coding," failed to maintain documentation on copyright and consent for its training dataset, violating Article 5 of the EU AI Act.</p>
-      <p><strong>Recommended Executive Action:</strong> Request a "Data Lineage Audit" from your top 3 AI vendors by Monday. Ensure your legal team reviews your indemnification clauses for third-party AI tools.</p>
-      <p><strong>Hashtags:</strong> #EUAIAct #AIGovernance #DataPrivacy #ShadowAI #Compliance #TechRegulation</p>
+      <img src="https://picsum.photos/seed/ai-pipeline-flaw/800/400" alt="A glowing data pipeline with a red fracture spilling binary code into an AI processor." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> A critical Remote Code Execution (RCE) vulnerability has been disclosed in Unstructured.io, an open-source ETL (Extract, Transform, Load) library utilized by 87% of Fortune 1000 companies to ingest data for Large Language Models (LLMs). The flaw allows attackers to compromise the underlying servers processing training data.</p>
+      <p><strong>Business Impact:</strong> Severe Supply Chain Risk for AI. This vulnerability sits at the very start of the AI data pipeline. Exploiting it allows attackers to silently poison corporate AI models or establish a backdoor directly into high-compute cloud environments before the data even reaches the LLM.</p>
+      <p><strong>Why It Happened:</strong> Improper parsing and sanitization of complex unstructured file types (like deeply nested PDFs or corrupted Office docs) allowed malicious payloads to execute during the data extraction phase.</p>
+      <p><strong>Recommended Executive Action:</strong> Isolate all AI data-ingestion servers from the broader production network immediately. Force an update of the Unstructured.io library to the patched release and audit your MLOps pipelines for unauthorized file execution.</p>
+      <p><strong>Hashtags:</strong> #AISecurity #UnstructuredIO #RCE #SupplyChain #MLOps #DataPoisoning</p>
     ]]></description>
   </item>
 
   <item>
-    <title>"FaceSwap-Live" Tool Defeats Video KYC: Banks on High Alert</title>
-    <link>https://codedefence.in/blog/2026/02/13/faceswap-live-kyc-bypass-banking-fraud</link>
-    <pubDate>Fri, 13 Feb 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/faceswap-live-kyc-bypass-banking-fraud</guid>
+    <title>AI-Driven "Digital Arrest" Scams Surge 33%, Netting Extortionists Millions</title>
+    <link>https://codedefence.in/blog/2026/02/14/ai-digital-arrest-scams-surge-vishing</link>
+    <pubDate>Sat, 14 Feb 2026 16:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/ai-digital-arrest-scams-surge-vishing</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/deepfake-kyc/800/400" alt="A smartphone screen showing a face verification scan being bypassed by a digital mask." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A new open-source tool, "FaceSwap-Live," has appeared on dark web forums, capable of injecting real-time deepfake video into Android and iOS camera feeds. Security researchers confirmed it successfully bypassed "Liveness Checks" for three major global banks by simulating micro-movements (blinking, head turning) indistinguishable from a real human.</p>
-      <p><strong>Business Impact:</strong> High Fraud Risk. "Video KYC" is no longer a silver bullet for identity verification. We expect a surge in "Mule Account" creation this weekend as fraudsters utilize this tool to open accounts using stolen IDs.</p>
-      <p><strong>Why It Happened:</strong> The tool exploits the "Virtual Camera" driver on rooted devices, feeding the banking app a pre-rendered, interactive deepfake stream instead of the raw camera sensor data.</p>
-      <p><strong>Recommended Executive Action:</strong> Update your KYC protocols to include "Passive Liveness" detection that analyzes skin texture and light reflection, not just movement. Consider requiring "Physical Challenges" (e.g., "Hold up your ID next to your ear") during video calls.</p>
-      <p><strong>Hashtags:</strong> #Deepfake #IdentityFraud #KYC #BankingSecurity #FaceSwap #FinTechRisk</p>
+      <img src="https://picsum.photos/seed/digital-arrest-ai/800/400" alt="A smartphone screen showing a deepfake police officer demanding a ransom payment." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Financial cybercrime units report a massive 33% year-over-year surge in "Digital Arrest" extortion scams. Using plug-and-play Generative AI tools, fraudsters are now launching highly personalized, automated vishing (voice phishing) and video deepfake campaigns. Scammers impersonate law enforcement, convincing victims they are under secret digital arrest until they transfer funds.</p>
+      <p><strong>Business Impact:</strong> High Risk to Executive Safety. The democratization of AI means criminals no longer need large "boiler room" call centers to execute complex social engineering. High-net-worth individuals and corporate executives are prime targets for these deeply convincing, rapid-fire extortion attempts.</p>
+      <p><strong>Why It Happened:</strong> Readily available AI models can now rapidly sift through public OSINT data (social media, employment records) to tailor a highly convincing, personalized script, while real-time voice cloning bypasses human skepticism.</p>
+      <p><strong>Recommended Executive Action:</strong> Integrate "Deepfake and Vishing Awareness" into your executive protection programs. Establish a firm "Challenge Protocol" (a pre-agreed safe word or out-of-band verification method) for any urgent financial or legal requests made over voice or video.</p>
+      <p><strong>Hashtags:</strong> #DigitalArrest #Vishing #Deepfake #Extortion #AIcrime #SocialEngineering</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Bahrain Logistics Alert: "RustBucket" Ransomware Targeting Autonomous Cranes</title>
-    <link>https://codedefence.in/blog/2026/02/13/rustbucket-ransomware-port-automation-attack</link>
-    <pubDate>Fri, 13 Feb 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/13/rustbucket-ransomware-port-automation-attack</guid>
+    <title>Delhi Mandates Sweeping Cyber Rules to Protect Unified "Golden Records"</title>
+    <link>https://codedefence.in/blog/2026/02/14/delhi-golden-records-cyber-security-mandate</link>
+    <pubDate>Sat, 14 Feb 2026 15:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/delhi-golden-records-cyber-security-mandate</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/port-crane/800/400" alt="A shipping port at sunset with automated cranes frozen in place, overlaid with a lock icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Threat intelligence indicates a targeted ransomware campaign against automated port terminals in the GCC and Asia. The malware, "RustBucket," specifically targets the PLCs (Programmable Logic Controllers) of autonomous cranes, locking them in a "Safety Stop" mode that requires a physical key to override.</p>
-      <p><strong>Business Impact:</strong> Supply Chain Paralysis. For logistics hubs in Bahrain, this is a physical denial-of-service attack. If cranes are locked, cargo cannot move, leading to millions in demurrage charges per day.</p>
-      <p><strong>Why It Happened:</strong> Attackers gained entry via a compromised third-party maintenance VPN used by the crane manufacturer for remote diagnostics, moving laterally into the OT network.</p>
-      <p><strong>Recommended Executive Action:</strong> <strong>Immediate Action:</strong> Temporarily disable remote maintenance VPNs for all OT equipment this weekend. Verify that your "Manual Override" keys are physically accounted for and accessible to on-site engineers.</p>
-      <p><strong>Hashtags:</strong> #OTSecurity #SupplyChain #Logistics #Ransomware #Bahrain #CriticalInfrastructure</p>
+      <img src="https://picsum.photos/seed/delhi-cyber/800/400" alt="A digital vault glowing with golden data streams, protected by a heavy cyber shield." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> The Delhi government has issued strict new cybersecurity guidelines to protect its transition toward a unified data hub designed to generate "golden records" of its citizens. The mandates include the immediate appointment of Assistant Chief Information Security Officers (ACISOs), enforced Multi-Factor Authentication (MFA), and a total ban on the use of third-party email platforms for official work.</p>
+      <p><strong>Business Impact:</strong> Evolving Public Sector Standards. As governments centralize massive citizen databases, they become highly attractive targets for nation-state APTs. For IT and security vendors, this creates a rigid new compliance baseline required to win or maintain public sector contracts.</p>
+      <p><strong>Why It Happened:</strong> The consolidation of disparate departmental data (revenue, utilities, health) into a single "golden record" drastically amplifies the blast radius of a potential breach, necessitating a zero-tolerance approach to legacy IT practices.</p>
+      <p><strong>Recommended Executive Action:</strong> If your consultancy handles government contracts, ensure your internal infrastructure maps directly to these new mandates. Audit your teams to guarantee zero use of "Shadow IT" or third-party email when communicating with public sector clients.</p>
+      <p><strong>Hashtags:</strong> #GovTech #DataProtection #GoldenRecords #CyberMandate #PublicSectorSecurity</p>
     ]]></description>
   </item>
 </channel>
