@@ -1,71 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Cyber Defense Intelligence Briefing - Feb 14 2026</title>
+  <title>Cyber Intelligence Briefing - Feb 15 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 14, 2026.</description>
+  <description>Validated cybersecurity news and executive analysis for February 15, 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 14 Feb 2026 18:00:00 +0300</pubDate>
-  <lastBuildDate>Sat, 14 Feb 2026 18:00:00 +0300</lastBuildDate>
+  <pubDate>Sun, 15 Feb 2026 19:45:00 +0300</pubDate>
+  <lastBuildDate>Sun, 15 Feb 2026 19:45:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
 
   <item>
-    <title>FTC Launches Sweeping Probe into Microsoft's AI and Security "Bundling"</title>
-    <link>https://codedefence.in/blog/2026/02/14/ftc-probe-microsoft-ai-security-bundling</link>
-    <pubDate>Sat, 14 Feb 2026 17:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/ftc-probe-microsoft-ai-security-bundling</guid>
+    <title>Dubai Signal Hijacking: Sophisticated "Rogue Network" Scams Exposed</title>
+    <link>https://codedefence.in/blog/2026/02/15/dubai-mobile-signal-hijacking-rogue-network-scam</link>
+    <pubDate>Sun, 15 Feb 2026 19:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/15/dubai-mobile-signal-hijacking-rogue-network-scam</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ftc-microsoft/800/400" alt="The FTC seal superimposed over a digital padlock and the Microsoft Copilot logo." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> The US Federal Trade Commission (FTC) has accelerated its antitrust scrutiny of Microsoft, issuing civil investigative demands to rivals and customers. The probe heavily targets Microsoft’s practice of bundling artificial intelligence (Copilot), identity management (Entra), and cybersecurity software directly into its dominant Windows and Office platforms.</p>
-      <p><strong>Business Impact:</strong> High Strategic Market Shift. If the FTC forces an "unbundling," enterprise clients will face a fragmented procurement landscape. However, it also opens the door for independent cybersecurity vendors to compete on a level playing field without being squeezed out by default Microsoft inclusions.</p>
-      <p><strong>Why It Happened:</strong> Regulators are increasingly concerned that integrating security and AI directly into the OS creates a monolithic attack surface—as evidenced by recent high-profile breaches—while stifling fair market competition.</p>
-      <p><strong>Recommended Executive Action:</strong> Review your organization's dependency on the Microsoft "E5" security stack. Begin evaluating independent "Best-of-Breed" alternatives for identity and endpoint protection to ensure resilience against potential future forced unbundling.</p>
-      <p><strong>Hashtags:</strong> #Microsoft #FTC #Antitrust #CloudSecurity #Copilot #CyberRegulation</p>
+      <img src="https://picsum.photos/seed/dubai-signal/800/400" alt="A digital representation of a mobile phone connecting to a red, malicious radio tower in a futuristic city." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Authorities in Dubai have successfully prosecuted a criminal ring for using high-tech jamming equipment to create "rogue" mobile networks in high-traffic areas like Dubai Marina. The devices forced nearby smartphones to disconnect from legitimate carriers and connect to a parallel fraudulent network, which was then used to push malicious SMS banking phishing links directly to users.</p>
+      <p><strong>Business Impact:</strong> High Risk to Mobile Workforce. This technique bypasses traditional network-level spam filters because the messages originate from a local, hijacked signal. For regional businesses, this represents a dangerous "Physical-to-Digital" threat vector that can compromise executive devices even without a traditional internet-based attack.</p>
+      <p><strong>Why It Happened:</strong> The attackers exploited the automatic "handover" protocol of mobile devices, which naturally seek the strongest local signal. By jamming legitimate frequencies and broadcasting a more powerful rogue signal, they effectively became the "man-in-the-middle."</p>
+      <p><strong>Recommended Executive Action:</strong> Instruct employees to use corporate VPNs even on mobile data when in public areas. Implement mobile threat defense (MTD) solutions that can detect anomalous cell tower behavior or unexpected network signal changes.</p>
+      <p><strong>Hashtags:</strong> #DubaiSecurity #SignalHijacking #MobileFraud #TelecomSecurity #Phishing #UAE</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Critical RCE (CVE-2025-64712) in Unstructured.io Threatens Enterprise AI Pipelines</title>
-    <link>https://codedefence.in/blog/2026/02/14/unstructured-io-cve-2025-64712-ai-pipeline-rce</link>
-    <pubDate>Sat, 14 Feb 2026 16:45:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/unstructured-io-cve-2025-64712-ai-pipeline-rce</guid>
+    <title>AI Under Attack: "Prompt Injection" RCE Patched in GitHub Copilot and IDEs</title>
+    <link>https://codedefence.in/blog/2026/02/15/github-copilot-prompt-injection-rce-vulnerabilities</link>
+    <pubDate>Sun, 15 Feb 2026 18:30:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/15/github-copilot-prompt-injection-rce-vulnerabilities</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/ai-pipeline-flaw/800/400" alt="A glowing data pipeline with a red fracture spilling binary code into an AI processor." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A critical Remote Code Execution (RCE) vulnerability has been disclosed in Unstructured.io, an open-source ETL (Extract, Transform, Load) library utilized by 87% of Fortune 1000 companies to ingest data for Large Language Models (LLMs). The flaw allows attackers to compromise the underlying servers processing training data.</p>
-      <p><strong>Business Impact:</strong> Severe Supply Chain Risk for AI. This vulnerability sits at the very start of the AI data pipeline. Exploiting it allows attackers to silently poison corporate AI models or establish a backdoor directly into high-compute cloud environments before the data even reaches the LLM.</p>
-      <p><strong>Why It Happened:</strong> Improper parsing and sanitization of complex unstructured file types (like deeply nested PDFs or corrupted Office docs) allowed malicious payloads to execute during the data extraction phase.</p>
-      <p><strong>Recommended Executive Action:</strong> Isolate all AI data-ingestion servers from the broader production network immediately. Force an update of the Unstructured.io library to the patched release and audit your MLOps pipelines for unauthorized file execution.</p>
-      <p><strong>Hashtags:</strong> #AISecurity #UnstructuredIO #RCE #SupplyChain #MLOps #DataPoisoning</p>
+      <img src="https://picsum.photos/seed/ai-injection/800/400" alt="A digital brain with a red 'Command Injection' glitch overlaying a source code editor." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> Microsoft has issued critical patches for several Remote Code Execution (RCE) vulnerabilities (CVE-2026-21516, CVE-2026-21523) affecting GitHub Copilot and major Integrated Development Environments (IDEs). These flaws stem from "Prompt Injection," where a malicious comment or code snippet in a repository can trick the AI agent into executing unauthorized system commands on the developer's workstation.</p>
+      <p><strong>Business Impact:</strong> Severe Supply Chain Risk. Developers are high-value targets with access to critical API keys and source code. Compromising a developer's IDE via an AI prompt allows attackers to steal secrets that function as the "keys to the kingdom" for cloud infrastructure.</p>
+      <p><strong>Why It Happened:</strong> The AI agents were granted excessive permissions to execute local commands for "convenience" (like running tests), but lacked sufficient sanitization to distinguish between legitimate user requests and malicious instructions embedded in untrusted code.</p>
+      <p><strong>Recommended Executive Action:</strong> Mandate an immediate update of all developer IDEs and GitHub Copilot extensions. Enforce "Least Privilege" for AI agents and disable any "Auto-Execute" features that allow AI to run shell commands without explicit human approval.</p>
+      <p><strong>Hashtags:</strong> #AISecurity #GitHubCopilot #PromptInjection #DevSecOps #RCE #SupplyChainRisk</p>
     ]]></description>
   </item>
 
   <item>
-    <title>AI-Driven "Digital Arrest" Scams Surge 33%, Netting Extortionists Millions</title>
-    <link>https://codedefence.in/blog/2026/02/14/ai-digital-arrest-scams-surge-vishing</link>
-    <pubDate>Sat, 14 Feb 2026 16:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/ai-digital-arrest-scams-surge-vishing</guid>
+    <title>CISA KEV Addition: BeyondTrust Privileged Access OS Command Injection</title>
+    <link>https://codedefence.in/blog/2026/02/15/cisa-kev-beyondtrust-privilege-access-exploit</link>
+    <pubDate>Sun, 15 Feb 2026 18:00:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/15/cisa-kev-beyondtrust-privilege-access-exploit</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/digital-arrest-ai/800/400" alt="A smartphone screen showing a deepfake police officer demanding a ransom payment." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Financial cybercrime units report a massive 33% year-over-year surge in "Digital Arrest" extortion scams. Using plug-and-play Generative AI tools, fraudsters are now launching highly personalized, automated vishing (voice phishing) and video deepfake campaigns. Scammers impersonate law enforcement, convincing victims they are under secret digital arrest until they transfer funds.</p>
-      <p><strong>Business Impact:</strong> High Risk to Executive Safety. The democratization of AI means criminals no longer need large "boiler room" call centers to execute complex social engineering. High-net-worth individuals and corporate executives are prime targets for these deeply convincing, rapid-fire extortion attempts.</p>
-      <p><strong>Why It Happened:</strong> Readily available AI models can now rapidly sift through public OSINT data (social media, employment records) to tailor a highly convincing, personalized script, while real-time voice cloning bypasses human skepticism.</p>
-      <p><strong>Recommended Executive Action:</strong> Integrate "Deepfake and Vishing Awareness" into your executive protection programs. Establish a firm "Challenge Protocol" (a pre-agreed safe word or out-of-band verification method) for any urgent financial or legal requests made over voice or video.</p>
-      <p><strong>Hashtags:</strong> #DigitalArrest #Vishing #Deepfake #Extortion #AIcrime #SocialEngineering</p>
+      <img src="https://picsum.photos/seed/beyondtrust-exploit/800/400" alt="A golden padlock being shattered by a red digital pulse, representing a privilege escalation exploit." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> CISA has added CVE-2026-1731 to its Known Exploited Vulnerabilities (KEV) catalog. This critical OS command injection vulnerability affects BeyondTrust Remote Support (RS) and Privileged Remote Access (PRA). Attackers are actively exploiting this to gain full system-level control over the very appliances designed to secure administrative access.</p>
+      <p><strong>Business Impact:</strong> Critical Access Risk. A compromise of your Privileged Access Management (PAM) tool is a "worst-case scenario." Attackers can use this to harvest administrative credentials and move laterally throughout the entire corporate network with total invisibility.</p>
+      <p><strong>Why It Happened:</strong> Insecure input handling in the management interface allowed unauthenticated users to inject commands that the operating system executed with root-level privileges.</p>
+      <p><strong>Recommended Executive Action:</strong> <strong>Patch Immediately.</strong> BeyondTrust has released emergency updates. If you cannot patch today, isolate the management interface of the appliance from the public internet and audit logs for any unauthorized "SYSTEM" level executions.</p>
+      <p><strong>Hashtags:</strong> #CISA #KEV #BeyondTrust #PAM #PrivilegeEscalation #Infosec #PatchNow</p>
     ]]></description>
   </item>
 
   <item>
-    <title>Delhi Mandates Sweeping Cyber Rules to Protect Unified "Golden Records"</title>
-    <link>https://codedefence.in/blog/2026/02/14/delhi-golden-records-cyber-security-mandate</link>
-    <pubDate>Sat, 14 Feb 2026 15:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/14/delhi-golden-records-cyber-security-mandate</guid>
+    <title>SaaSpocalypse Defense: AWS CEO Dismisses Market Fears over AI Disruption</title>
+    <link>https://codedefence.in/blog/2026/02/15/aws-ceo-saaspocalypse-ai-market-disruption</link>
+    <pubDate>Sun, 15 Feb 2026 17:15:00 +0300</pubDate>
+    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/15/aws-ceo-saaspocalypse-ai-market-disruption</guid>
     <description><![CDATA[
-      <img src="https://picsum.photos/seed/delhi-cyber/800/400" alt="A digital vault glowing with golden data streams, protected by a heavy cyber shield." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> The Delhi government has issued strict new cybersecurity guidelines to protect its transition toward a unified data hub designed to generate "golden records" of its citizens. The mandates include the immediate appointment of Assistant Chief Information Security Officers (ACISOs), enforced Multi-Factor Authentication (MFA), and a total ban on the use of third-party email platforms for official work.</p>
-      <p><strong>Business Impact:</strong> Evolving Public Sector Standards. As governments centralize massive citizen databases, they become highly attractive targets for nation-state APTs. For IT and security vendors, this creates a rigid new compliance baseline required to win or maintain public sector contracts.</p>
-      <p><strong>Why It Happened:</strong> The consolidation of disparate departmental data (revenue, utilities, health) into a single "golden record" drastically amplifies the blast radius of a potential breach, necessitating a zero-tolerance approach to legacy IT practices.</p>
-      <p><strong>Recommended Executive Action:</strong> If your consultancy handles government contracts, ensure your internal infrastructure maps directly to these new mandates. Audit your teams to guarantee zero use of "Shadow IT" or third-party email when communicating with public sector clients.</p>
-      <p><strong>Hashtags:</strong> #GovTech #DataProtection #GoldenRecords #CyberMandate #PublicSectorSecurity</p>
+      <img src="https://picsum.photos/seed/ai-disruption/800/400" alt="A digital storm cloud over a corporate city, symbolizing the disruption of SaaS by AI." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
+      <p><strong>Summary:</strong> AWS CEO Matt Garman has publicly pushed back against "SaaSpocalypse" fears that have wiped $250 billion from software stocks this month. While acknowledging AI is a "disruptive force," he argues that incumbent SaaS providers have an "inside track" to win if they innovate. The market panic follows the release of Anthropic's agentic tools which automate high-level tasks previously requiring human-led software interfaces.</p>
+      <p><strong>Business Impact:</strong> High Strategic Volatility. The rapid devaluation of traditional SaaS providers (e.g., Salesforce, Infosys) suggests a shift toward "AI-as-a-Platform." For your clients, this means procurement cycles should favor vendors that are "AI-native" or have proven, integrated AI roadmaps to avoid technical obsolescence.</p>
+      <p><strong>Why It Happened:</strong> Investors are concerned that AI agents will bypass the "User Interface" of traditional software, making generic subscription models redundant. This has triggered a massive capital flight from legacy IT services toward infrastructure and specialized AI providers.</p>
+      <p><strong>Recommended Executive Action:</strong> Re-evaluate your 3-year SaaS roadmap. Focus on "Outcome-Based" vendor contracts rather than "Seat-Based" licenses to leverage the efficiency gains of AI while avoiding the risk of stranded software investments.</p>
+      <p><strong>Hashtags:</strong> #AWS #SaaSpocalypse #AIInfrastructure #TechStrategy #MarketDisruption #FutureOfIT</p>
     ]]></description>
   </item>
 </channel>
