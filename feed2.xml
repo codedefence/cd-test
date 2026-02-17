@@ -1,1 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 
+<rss version="2.0" xmlns:atom="[http://www.w3.org/2005/Atom]()"
+xmlns:cd="[https://codedefence.in/rss/extensions]()">
+<channel>
+
+<title>Code Defence Intelligence Brief — Tue, 17 Feb 2026</title>
+<link>[https://codedefence.in/executive-briefing]()</link>
+<description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 17 Feb 2026.</description>
+<language>en-us</language>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
+<atom:link href="[https://codedefence.in/executive-briefing/rss]()" rel="self" type="application/rss+xml" />
+<cd:promptVersion>2.0</cd:promptVersion>
+<cd:storyCount>4</cd:storyCount>
+
+<item>
+<title>Your remote access tool is now an unauthenticated entry point. 🔓</title>
+<link>[https://codedefence.in/blog/2026/02/17/beyondtrust-rce-active-exploitation]()</link>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/beyondtrust-rce-active-exploitation]()</guid>
+<cd:severity>CRITICAL</cd:severity>
+<cd:cve>CVE-2026-1731</cd:cve>
+<cd:mentions>@BeyondTrust, @GreyNoise</cd:mentions>
+<cd:besttime>Tue 08:00–10:00 +0530</cd:besttime>
+<cd:imagebrief><![CDATA[
+Dramatic dark-blue cinematic editorial. A heavy ring of glowing digital keys lying on a wet, dark pavement. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THE KEYS TO YOUR KINGDOM.' Code Defence logo bottom-right corner. 1200×628px.
+]]></cd:imagebrief>
+<description><![CDATA[
+Your remote access tool is now an unauthenticated entry point. 🔓
+
+CVE-2026-1731 · Severity 9.9 · Pre-authentication RCE in Remote Support.
+
+We’re seeing a surge in scanning activity following the release of a public exploit for @BeyondTrust. Attackers are now bypasssing all credentials to execute commands directly on your management servers.
+
+Reports from @GreyNoise confirm that state-linked actors are already probing for this flaw. If you use on-premise Privileged Remote Access, your most sensitive credentials are at immediate risk.
+
+*The uncomfortable truth: The tools we use to secure our perimeter are often the most targeted backdoors into the heart of the network.*
+
+→ Apply the official security patches released by BeyondTrust today.
+→ Audit all management server logs for "site user" command execution.
+→ Restrict management interface access to internal VPN ranges only.
+
+Have you confirmed your on-premise Remote Support version this morning? 👇
+]]></description>
+[cd:hashtags]()#Cybersecurity #NetworkSecurity #VulnerabilityManagement #IncidentResponse #SecurityLeadership #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+</item>
+
+<item>
+<title>A single visit to the wrong website now compromises your laptop. 🛑</title>
+<link>[https://codedefence.in/blog/2026/02/17/chrome-zero-day-css-exploit]()</link>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/chrome-zero-day-css-exploit]()</guid>
+<cd:severity>CRITICAL</cd:severity>
+<cd:cve>CVE-2026-2441</cd:cve>
+<cd:mentions>@Google, @CISA</cd:mentions>
+<cd:besttime>Tue 08:00–10:00 +0530</cd:besttime>
+<cd:imagebrief><![CDATA[
+Data-viz style. A digital clock frozen at midnight with red data packets leaking from the edges. Deep red and black palette. Bold white sans-serif overlay: 'TIME IS THE VULNERABILITY.' Code Defence logo bottom-right corner. 1200×628px.
+]]></cd:imagebrief>
+<description><![CDATA[
+A single visit to the wrong website now compromises your laptop. 🛑
+
+CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026.
+
+We're seeing @Google rush an emergency fix for a memory flaw in the CSS engine. Attackers are currently using this to run malicious code the moment your users load a compromised page.
+
+The team at @CISA is monitoring this as it allows hackers to hijack active sessions. In a world of SaaS, a compromised browser means a compromised enterprise identity.
+
+*The uncomfortable truth: Your sophisticated EDR means nothing if your users are working in a browser with an unpatched memory leak.*
+
+→ Force-push Chrome version 145.0.7632.75 to all enterprise endpoints.
+→ Audit for outdated browser versions still active in your tenant.
+→ Require a browser restart for all staff to apply the memory fix.
+
+Does your IT team force-restart browsers or let users click 'Later'? 👇
+]]></description>
+[cd:hashtags]()#Cybersecurity #CloudSecurity #EndpointSecurity #PatchManagement #CyberRisk #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+</item>
+
+<item>
+<title>Your trusted email accounts are being turned against you. 📧</title>
+<link>[https://codedefence.in/blog/2026/02/17/m365-aitm-phishing-surge]()</link>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/m365-aitm-phishing-surge]()</guid>
+<cd:severity>HIGH</cd:severity>
+<cd:cve>N/A</cd:cve>
+<cd:mentions>@Microsoft, @Mandiant</cd:mentions>
+<cd:besttime>Tue 09:00–11:00 +0530</cd:besttime>
+<cd:imagebrief><![CDATA[
+Graphic design poster. A series of interconnected digital envelopes dissolving into pixels. High-contrast white and deep purple palette. Bold black sans-serif overlay: 'TRUST IS A VULNERABILITY.' Code Defence logo bottom-right corner. 1200×628px.
+]]></cd:imagebrief>
+<description><![CDATA[
+Your trusted email accounts are being turned against you. 📧
+
+$2.9 billion · Total global losses from Business Email Compromise last year.
+
+Our clients are reporting a new wave of Adversary-in-the-Middle (AiTM) attacks. Attackers are stealing session tokens from @Microsoft accounts to bypass MFA and live inside your mailboxes.
+
+We're seeing @Mandiant report that these actors now use your own internal SharePoint links to spread payloads. They don't need to break in; they just steal an active session.
+
+*The uncomfortable truth: Traditional MFA is no longer a silver bullet when attackers can simply clone your active login session.*
+
+→ Revoke all active session cookies for high-risk executive accounts.
+→ Implement FIDO2-compliant hardware keys for your finance department.
+→ Audit your tenant for new or suspicious inbox forwarding rules.
+
+When was the last time you audited your O365 third-party app permissions? 👇
+]]></description>
+[cd:hashtags]()#CloudSecurity #DataPrivacy #ZeroTrust #ThreatIntelligence #CISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+</item>
+
+<item>
+<title>If your firewall management is public, you are the target. 🚪</title>
+<link>[https://codedefence.in/blog/2026/02/17/fortinet-auth-bypass-warning]()</link>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/fortinet-auth-bypass-warning]()</guid>
+<cd:severity>HIGH</cd:severity>
+<cd:cve>CVE-2024-55591</cd:cve>
+<cd:mentions>@Fortinet</cd:mentions>
+<cd:besttime>Tue 08:30–10:30 +0530</cd:besttime>
+<cd:imagebrief><![CDATA[
+Dramatic editorial. A massive steel vault door with a glowing orange fracture running through the center. Deep charcoal and safety orange palette. Bold white sans-serif overlay text: 'YOUR PERIMETER IS BREACHED.' Code Defence logo bottom-right corner. 1200×628px.
+]]></cd:imagebrief>
+<description><![CDATA[
+If your firewall management is public, you are the target. 🚪
+
+CVE-2024-55591 · Severity 9.6 · Authentication bypass in FortiOS.
+
+We’re seeing new ransomware groups like Mora_001 weaponising @Fortinet flaws to gain super-admin rights. They aren't brute-forcing; they're walking through a documented authentication gap.
+
+Attackers are now creating hidden administrative accounts to maintain access even after you think you've cleared the breach. This is a battle for the very foundation of your network.
+
+*The uncomfortable truth: A firewall with an exposed management interface is just a platform for an attacker's next move.*
+
+→ Disable all HTTP/HTTPS administrative access on the public WAN.
+→ Rotate every administrative password on your Fortigate devices today.
+→ Patch to FortiOS 7.0.16 or higher to close the auth bypass.
+
+Have you verified your firewall firmware version in the last 24 hours? 👇
+]]></description>
+[cd:hashtags]()#NetworkSecurity #InfoSec #Ransomware #SecurityOperations #SOC #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+</item>
+
+</channel>
+</rss>
