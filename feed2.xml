@@ -43,8 +43,9 @@ Attackers are now moving laterally within minutes of the initial edge breach. We
 → Rotate administrative credentials for all network gateway devices.
 
 Have you tested your internal lateral movement controls this quarter? 👇
+
+#Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence
 ]]></description>
-<category>#Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence</category>
 </item>
 
 <item>
@@ -75,8 +76,9 @@ The exploit triggers as soon as the preview pane renders the file. You don't eve
 → Disable the preview pane feature in Outlook via Group Policy.
 
 Is your SOC currently hunting for unusual outbound traffic from non-browser apps? 👇
+
+#InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence
 ]]></description>
-<category>#InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence</category>
 </item>
 
 <item>
@@ -107,8 +109,9 @@ Our team recently discovered that legacy scripts often leave permissions wide op
 → Enable "Block Public Access" at the account level for @Microsoft Azure and AWS.
 
 Do you have a real-time inventory of every public-facing API in your company? 👇
+
+#CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence
 ]]></description>
-<category>#CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence</category>
 </item>
 
 <item>
@@ -139,8 +142,9 @@ They aren't just locking files anymore; they are weaponizing your own internal c
 → Do a tabletop exercise specifically covering "triple extortion" scenarios.
 
 Is your incident response plan updated to handle direct shareholder extortion? 👇
+
+#Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence
 ]]></description>
-<category>#Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence</category>
 </item>
 
 </channel>
