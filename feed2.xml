@@ -9,7 +9,7 @@ xmlns:cd="[https://codedefence.in/rss/extensions]()">
 <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 17 Feb 2026.</description>
 <language>en-us</language>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<lastBuildDate>Tue, 17 Feb 2026 12:00:00 +0530</lastBuildDate>
+<lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
 <atom:link href="[https://codedefence.in/executive-briefing/rss]()" rel="self" type="application/rss+xml" />
 <cd:promptVersion>2.0</cd:promptVersion>
 <cd:storyCount>4</cd:storyCount>
@@ -79,6 +79,38 @@ Does your IT team force-restart browsers or let users click 'Later'? 👇
 </item>
 
 <item>
+<title>Attackers are harvesting the souls of your personal AI agents. 🤖</title>
+<link>[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</link>
+<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</guid>
+<cd:severity>HIGH</cd:severity>
+<cd:cve>N/A</cd:cve>
+<cd:mentions>@OpenClaw, @BleepingComputer</cd:mentions>
+<cd:besttime>Tue 09:00–11:00 +0530</cd:besttime>
+<cd:imagebrief><![CDATA[
+Cinematic editorial. A glowing robotic silhouette crumbling into digital code. Deep purple and neon green palette. Bold white sans-serif overlay: 'PROTECT YOUR AI SECRETS.' Code Defence logo bottom-right corner. 1200×628px.
+]]></cd:imagebrief>
+<description><![CDATA[
+Attackers are harvesting the souls of your personal AI agents. 🤖
+
+3,016 · OpenClaw skills analyzed with hundreds exhibiting malicious behaviors.
+
+We're seeing a transition in infostealer behavior: from stealing browser credentials to harvesting environment files of AI agents like @OpenClaw. These files contain the API keys and authentication tokens that define your digital identity.
+
+Reports from @BleepingComputer confirm this is the first time malware has specifically targeted agentic AI secrets. Attackers are now moving horizontally through your automation workflows.
+
+*The uncomfortable truth: As we integrate AI into our workflows, we are creating a new, unmonitored attack surface for identity theft.*
+
+→ Audit all local environment files for hardcoded AI API keys.
+→ Move AI authentication tokens to hardware-backed secure enclaves.
+→ Monitor for unusual outbound API traffic from developer workstations.
+
+Are you monitoring the API keys stored on your developers' local machines? 👇
+]]></description>
+[cd:hashtags]()#Cybersecurity #ThreatIntelligence #DataPrivacy #SecurityOperations #vCISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+</item>
+
+<item>
 <title>If your firewall management is public, you are the target. 🚪</title>
 <link>[https://codedefence.in/blog/2026/02/17/fortinet-auth-bypass-warning]()</link>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
@@ -97,49 +129,17 @@ CVE-2024-55591 · Severity 9.6 · Authentication bypass in FortiOS.
 
 We’re seeing persistent exploitation attempts against @Fortinet management interfaces exposed to the internet. Attackers gain super-admin privileges to modify policies and establish tunnels into your network.
 
-Over 48,000 devices remained exposed weeks after the initial patch. If you haven't hardened your administrative access, you are providing a platform for the next breach.
+Over 1,500,000 targets were identified globally for this specific bypass. If you haven't hardened your administrative access, you are providing a platform for the next breach.
 
 *The uncomfortable truth: A firewall with an exposed management interface is just a platform for an attacker's next move.*
 
 → Disable all HTTP/HTTPS administrative access on the public WAN.
 → Rotate every administrative password on your Fortigate devices today.
-→ Patch to the latest firmware version to close the auth bypass.
+→ Patch to FortiOS 7.0.17 or higher to close the auth bypass.
 
 Have you verified your firewall firmware version in the last 24 hours? 👇
 ]]></description>
 [cd:hashtags]()#NetworkSecurity #InfoSec #Ransomware #SecurityOperations #SOC #CodeDefence</https://www.google.com/search?q=cd:hashtags>
-</item>
-
-<item>
-<title>Attackers are harvesting the souls of your personal AI agents. 🤖</title>
-<link>[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</link>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</guid>
-<cd:severity>MEDIUM</cd:severity>
-<cd:cve>N/A</cd:cve>
-<cd:mentions>@OpenClaw, @BleepingComputer</cd:mentions>
-<cd:besttime>Wed 12:00–13:00 +0530</cd:besttime>
-<cd:imagebrief><![CDATA[
-Cinematic editorial. A glowing robotic silhouette crumbling into digital code. Deep purple and neon green palette. Bold white sans-serif overlay: 'PROTECT YOUR AI SECRETS.' Code Defence logo bottom-right corner. 1200×628px.
-]]></cd:imagebrief>
-<description><![CDATA[
-Attackers are harvesting the souls of your personal AI agents. 🤖
-
-1.5 billion · Records stolen in related high-scale identity campaigns.
-
-We're seeing a transition in infostealer behavior: from stealing browser credentials to harvesting environment files of AI agents like @OpenClaw. These files contain the API keys and gateway tokens that define your digital identity.
-
-Reports from @BleepingComputer confirm this is the first time malware has specifically targeted agentic AI secrets. Attackers are now moving horizontally through your automation workflows.
-
-*The uncomfortable truth: As we integrate AI into our workflows, we are creating a new, unmonitored attack surface for identity theft.*
-
-→ Audit all local environment files for hardcoded AI API keys.
-→ Move AI authentication tokens to hardware-backed secure enclaves.
-→ Monitor for unusual outbound API traffic from developer workstations.
-
-Are you monitoring the API keys stored on your developers' local machines? 👇
-]]></description>
-[cd:hashtags]()#Cybersecurity #ThreatIntelligence #DataPrivacy #SecurityOperations #vCISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 </channel>
