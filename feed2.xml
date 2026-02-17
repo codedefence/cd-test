@@ -21,7 +21,7 @@ xmlns:cd="[https://codedefence.in/rss/extensions]()">
 <guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/beyondtrust-rce-active-exploitation]()</guid>
 <cd:severity>CRITICAL</cd:severity>
 <cd:cve>CVE-2026-1731</cd:cve>
-<cd:mentions>@BeyondTrust, @GreyNoise</cd:mentions>
+<cd:mentions>@BeyondTrust, @GreyNoise, @CISA</cd:mentions>
 <cd:besttime>Tue 08:00–10:00 +0530</cd:besttime>
 <cd:imagebrief><![CDATA[
 Dramatic dark-blue cinematic editorial. A heavy ring of glowing digital keys lying on a wet, dark pavement. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THE KEYS TO YOUR KINGDOM.' Code Defence logo bottom-right corner. 1200×628px.
@@ -31,14 +31,14 @@ Your remote access tool is now an unauthenticated entry point. 🔓
 
 CVE-2026-1731 · Severity 9.9 · Pre-authentication RCE in Remote Support.
 
-We’re seeing a surge in scanning activity following the release of a public exploit for @BeyondTrust. Attackers are now bypasssing all credentials to execute commands directly on your management servers.
+We’re seeing unauthenticated attackers use crafted WebSocket messages to execute commands directly on your management servers. No credentials or user interaction are required for this to succeed.
 
-Reports from @GreyNoise confirm that state-linked actors are already probing for this flaw. If you use on-premise Privileged Remote Access, your most sensitive credentials are at immediate risk.
+Our peers at @GreyNoise and @CISA confirm active exploitation is happening right now. If you use self-hosted @BeyondTrust appliances, you must assume unpatched instances are already compromised.
 
 *The uncomfortable truth: The tools we use to secure our perimeter are often the most targeted backdoors into the heart of the network.*
 
 → Apply the official security patches released by BeyondTrust today.
-→ Audit all management server logs for "site user" command execution.
+→ Audit all management server logs for unauthorized "site user" commands.
 → Restrict management interface access to internal VPN ranges only.
 
 Have you confirmed your on-premise Remote Support version this morning? 👇
@@ -127,15 +127,15 @@ If your firewall management is public, you are the target. 🚪
 
 CVE-2024-55591 · Severity 9.6 · Authentication bypass in FortiOS.
 
-We’re seeing new ransomware groups like Mora_001 weaponising @Fortinet flaws to gain super-admin rights. They aren't brute-forcing; they're walking through a documented authentication gap.
+We’re seeing persistent exploitation attempts against @Fortinet management interfaces exposed to the internet. Attackers gain super-admin privileges to modify policies and establish tunnels into your network.
 
-Attackers are now creating hidden administrative accounts to maintain access even after you think you've cleared the breach. This is a battle for the very foundation of your network.
+Over 48,000 devices remained exposed weeks after the initial patch. If you haven't hardened your administrative access, you are providing a platform for the next breach.
 
 *The uncomfortable truth: A firewall with an exposed management interface is just a platform for an attacker's next move.*
 
 → Disable all HTTP/HTTPS administrative access on the public WAN.
 → Rotate every administrative password on your Fortigate devices today.
-→ Patch to FortiOS 7.0.16 or higher to close the auth bypass.
+→ Patch to the latest firmware version to close the auth bypass.
 
 Have you verified your firewall firmware version in the last 24 hours? 👇
 ]]></description>
