@@ -1,72 +1,149 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+                    xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Cyber Defense Intelligence - Feb 16 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 17 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Validated cybersecurity news and executive analysis for February 16, 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 17 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 16 Feb 2026 19:45:00 +0300</pubDate>
-  <lastBuildDate>Mon, 16 Feb 2026 19:45:00 +0300</lastBuildDate>
-  <atom:link href="https://codedefence.in/executive-briefing/rss" rel="self" type="application/rss+xml" />
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
+  <atom:link href="https://codedefence.in/executive-briefing/rss"
+             rel="self" type="application/rss+xml" />
+  <cd:promptVersion>2.0</cd:promptVersion>
+  <cd:storyCount>4</cd:storyCount>
 
-  <item>
-    <title>Google Patches First Actively Exploited Chrome Zero-Day of 2026</title>
-    <link>https://codedefence.in/blog/2026/02/16/google-chrome-zero-day-css-exploit-cve-2026-2441</link>
-    <pubDate>Mon, 16 Feb 2026 19:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/16/google-chrome-zero-day-css-exploit-cve-2026-2441</guid>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/chrome-zero-day/800/400" alt="The Chrome logo with a red digital 'Critical' stamp and binary data leaking from a browser window icon." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Google has urgently released Chrome version 145 to patch CVE-2026-2441, a high-severity "use-after-free" vulnerability in the CSS engine. This is the first confirmed actively exploited Chrome zero-day of the year. The flaw allows remote attackers to execute arbitrary code within the browser sandbox by convincing a user to visit a specially crafted malicious webpage.</p>
-      <p><strong>Business Impact:</strong> Extreme Endpoint Risk. Chrome is the primary gateway for enterprise SaaS and web activity. Successful exploitation grants attackers a foothold on employee workstations, enabling session hijacking, credential theft, and lateral movement into cloud environments.</p>
-      <p><strong>Why It Happened:</strong> A memory management error in the CSS rendering component allowed malicious HTML/CSS code to reference memory after it had been freed, leading to code execution.</p>
-      <p><strong>Recommended Executive Action:</strong> <strong>Force Update.</strong> Mandate an immediate restart of all Chrome, Edge, and Brave browsers across the organization to ensure version 145 (or equivalent) is active. For managed fleets, use Intune or Jamf to verify the update status within 24 hours.</p>
-      <p><strong>Hashtags:</strong> #ChromeZeroDay #BrowserSecurity #GoogleChrome #Infosec #PatchNow #CVE20262441</p>
-    ]]></description>
-  </item>
+<item>
+  <title>Your remote access tools are now the attackers' favorite front door. 🚪</title>
+  <link>https://codedefence.in/blog/2026/02/17/beyondtrust-critical-rce-alert</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/beyondtrust-critical-rce-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-1731</cd:cve>
+  <cd:mentions>@[BeyondTrust](urn:li:organization:12625), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Tuesday 08:00–10:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Dramatic dark-blue cinematic editorial. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR GATEWAY IS OPEN.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Your remote access tools are now the attackers' favorite front door. 🚪
 
-  <item>
-    <title>Critical BeyondTrust Exploit (CVE-2026-1731) Escalates to Full Domain Control</title>
-    <link>https://codedefence.in/blog/2026/02/16/beyondtrust-exploit-active-exploitation-domain-risk</link>
-    <pubDate>Mon, 16 Feb 2026 18:30:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/16/beyondtrust-exploit-active-exploitation-domain-risk</guid>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/beyondtrust-breach/800/400" alt="A shattered golden shield with a red digital '9.9' alert, symbolizing a critical PAM compromise." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> Threat actors have rapidly weaponized the unauthenticated Remote Code Execution (RCE) flaw in BeyondTrust Remote Support and Privileged Remote Access (CVE-2026-1731). Arctic Wolf reports that attackers are now using the flaw to deploy SimpleHelp RMM tools for persistence and gaining full domain administrative control within hours of initial access.</p>
-      <p><strong>Business Impact:</strong> "Keys to the Kingdom" Event. BeyondTrust is the gatekeeper for privileged accounts. A breach here allows an attacker to impersonate any admin, bypass MFA, and export sensitive company data or deploy ransomware with total authority.</p>
-      <p><strong>Why It Happened:</strong> A proof-of-concept (PoC) was released just 24 hours ago, and scanning operations associated with commercial VPNs in Frankfurt have already localized 86% of the reconnaissance traffic.</p>
-      <p><strong>Recommended Executive Action:</strong> <strong>Emergency Mitigation:</strong> If you use self-hosted BeyondTrust PRA/RS, you must patch to the latest version immediately. Check logs for the installation of unauthorized RMM tools like SimpleHelp and rotate all high-privilege credentials managed by the appliance.</p>
-      <p><strong>Hashtags:</strong> #BeyondTrust #PAM #RCE #CyberAttack #PrivilegedAccess #ActiveExploitation</p>
-    ]]></description>
-  </item>
+CVE-2026-1731 · Severity 9.9 · Critical unauthenticated remote code execution via WebSocket.
 
-  <item>
-    <title>New "ClickFix" Malware Wave Exploits Windows Social Engineering</title>
-    <link>https://codedefence.in/blog/2026/02/16/clickfix-malware-campaign-windows-social-engineering</link>
-    <pubDate>Mon, 16 Feb 2026 18:00:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/16/clickfix-malware-campaign-windows-social-engineering</guid>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/clickfix/800/400" alt="A deceptive Windows update dialog with a green 'Fix' button that reveals a hidden spider silhouette." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A new social engineering campaign dubbed "ClickFix" is targeting Windows users by displaying deceptive error messages on compromised websites. The pop-ups instruct users to copy and run a "fix" command in their PowerShell terminal. In reality, the command downloads and executes the XWorm RAT, granting attackers full remote control of the device.</p>
-      <p><strong>Business Impact:</strong> High Risk of Individual Compromise. This attack bypasses browser-level security because the user is tricked into manually executing the malicious script. For corporate environments, this highlights a failure of "Human Firewall" awareness regarding advanced social engineering.</p>
-      <p><strong>Why It Happened:</strong> Attackers are exploiting "verification fatigue." By mimicking legitimate tech support or browser update prompts, they convince users to perform the "dangerous action" (running code) themselves.</p>
-      <p><strong>Recommended Executive Action:</strong> Update internal security training to specifically warn against "copy-paste terminal commands" from websites. Implement Endpoint Detection and Response (EDR) policies that alert on or block PowerShell executions from unverified sources.</p>
-      <p><strong>Hashtags:</strong> #ClickFix #Malware #XWorm #SocialEngineering #Phishing #WindowsSecurity</p>
-    ]]></description>
-  </item>
+We are seeing attackers exploit @[BeyondTrust](urn:li:organization:12625) Remote Support and PRA instances within hours of exploit code appearing online. These tools are often highly privileged.
 
-  <item>
-    <title>Critical FileZen Flaw Allows Arbitrary Command Execution via Japanese File Transfer Hub</title>
-    <link>https://codedefence.in/blog/2026/02/16/filezen-arbitrary-command-execution-vulnerability</link>
-    <pubDate>Mon, 16 Feb 2026 17:15:00 +0300</pubDate>
-    <guid isPermaLink="true">https://codedefence.in/blog/2026/02/16/filezen-arbitrary-command-execution-vulnerability</guid>
-    <description><![CDATA[
-      <img src="https://picsum.photos/seed/filezen-hack/800/400" alt="A digital file folder with a red exclamation mark and a binary code injection pulse." style="width:100%; height:auto; border-radius:8px; margin-bottom:12px;" />
-      <p><strong>Summary:</strong> A critical vulnerability in FileZen, a widely used file transfer solution from Japan’s Soliton Systems, allows authenticated attackers to run arbitrary operating system commands. This flaw is being targeted in specific regional espionage campaigns aiming to exfiltrate corporate intellectual property.</p>
-      <p><strong>Business Impact:</strong> High Supply Chain Risk for APAC-linked firms. FileZen is often used to share sensitive data with Japanese partners. A compromise allows attackers to use the transfer hub as a pivot point to infect all files being exchanged with external clients.</p>
-      <p><strong>Why It Happened:</strong> Inadequate input sanitization within the application's file processing logic allowed for OS command injection via specially crafted file names or metadata.</p>
-      <p><strong>Recommended Executive Action:</strong> If FileZen is in your environment, apply the security update from Soliton immediately. Audit all recent file transfer logs for anomalous activity and ensure that any shared file storage is isolated from core production systems.</p>
-      <p><strong>Hashtags:</strong> #FileZen #SupplyChain #CommandInjection #APACSecurity #DataTransfer #Infosec</p>
-    ]]></description>
-  </item>
+Attackers are now using this access to pull credentials directly from vaults. The @[CISA](urn:li:organization:13010360) Known Exploited Vulnerabilities catalog update confirms that mass exploitation is currently underway against unpatched on-premise servers.
+
+The uncomfortable truth: The software you use to secure your environment is becoming your highest-risk point of failure.
+
+→ Patch all self-hosted Remote Support and PRA appliances to version BT26-02 immediately.
+→ Restrict appliance web portal access to internal VPN or known IP ranges only.
+→ Audit your credential vaults for any unauthorized password or key exports.
+
+Have you verified that your remote support instances are fully patched this morning? 👇
+
+#Cybersecurity #ZeroTrust #PatchManagement #IncidentResponse #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Your browser update cycle is a race against active exploitation. 🌐</title>
+  <link>https://codedefence.in/blog/2026/02/17/chrome-zero-day-exploit</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/chrome-zero-day-exploit</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Tuesday 08:00–10:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital web browser interface with glitching code elements on a dark background. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS UNDER ATTACK.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Your browser update cycle is a race against active exploitation. 🌐
+
+CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026 targeting CSS components.
+
+We are seeing attackers leverage this use-after-free flaw to execute arbitrary code within the browser sandbox. While @[Google](urn:li:organization:1441) released the patch, manual updates are often too slow for enterprise fleets.
+
+Attackers are now pairing this with social engineering to target high-value corporate users. Compromise happens as soon as a victim visits a malicious or hijacked website.
+
+The uncomfortable truth: Your users are one malicious link away from a system compromise if browser updates aren't automated.
+
+→ Force a global update for all Chrome instances to version 145.0.7632.75 or higher.
+→ Monitor endpoint logs for unauthorized shell executions originating from browser processes.
+→ Enable hardware-enforced stack protection on all supported enterprise workstations.
+
+Have you automated your browser patch deployment to happen within four hours of release? 👇
+
+#Cybersecurity #Infosec #ZeroTrust #PatchManagement #SecurityLeadership #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Attackers found a way to bypass your Windows security prompts. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/17/windows-shell-zero-day-bypass</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/windows-shell-zero-day-bypass</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-21510</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Tuesday 09:00–11:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Graphic design poster style. A pixelated Windows security dialog box disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Attackers found a way to bypass your Windows security prompts. 🔓
+
+CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen mechanisms.
+
+We are seeing malicious shortcut files that bypass SmartScreen warnings to execute code silently. These files often arrive via email or hijacked web downloads on @[Microsoft](urn:li:organization:1035) systems.
+
+Attackers are now delivering ransomware payloads without triggering a single user warning. This vulnerability exploits improper handling in core Windows Shell components.
+
+The uncomfortable truth: User training won't save you when the operating system fails to provide a warning.
+
+→ Apply the February 2026 security updates to all Windows endpoints immediately.
+→ Block the download or execution of .LNK and .URL files from external sources.
+→ Enable Attack Surface Reduction rules to prevent shortcuts from launching untrusted code.
+
+Are you still relying on user intuition to spot malicious shortcut files? 👇
+
+#Cybersecurity #EndpointSecurity #RansomwareProtection #VulnerabilityManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Legacy Office components are still the weakest link in your suite. 🖇️</title>
+  <link>https://codedefence.in/blog/2026/02/17/office-ole-bypass-mitigation</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/office-ole-bypass-mitigation</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-21514</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Tuesday 12:00–13:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Data-viz style. A rusted digital chain with a glowing red link representing legacy OLE code. Matte black and deep gold palette. Bold white sans-serif overlay text: 'LEGACY RISKS ARE REAL.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Legacy Office components are still the weakest link in your suite. 🖇️
+
+CVE-2026-21514 · Severity 7.8 · Active bypass of OLE mitigations in Microsoft 365.
+
+We are seeing attackers use crafted Word documents to bypass standard OLE security prompts. This allows malicious COM controls to execute with minimal user interaction on @[Microsoft](urn:li:organization:1035) Office.
+
+Attackers are now focusing on these older protocols because they are often overlooked by modern defenses. We've seen this used in targeted phishing against executive leadership teams.
+
+The uncomfortable truth: Your modern cloud security stack is only as strong as the legacy protocols it still supports.
+
+→ Patch all Microsoft 365 and Office installations with the February 2026 updates.
+→ Disable OLE object execution in Office via Group Policy for non-essential users.
+→ Audit your email sandbox logs for files that attempt to trigger OLE protocol handlers.
+
+Do you know which departments in your organization still rely on legacy OLE functionality? 👇
+
+#CloudSecurity #DataPrivacy #SecurityOperations #CyberRisk #vCISO #CodeDefence
+  ]]></description>
+</item>
+
 </channel>
 </rss>
