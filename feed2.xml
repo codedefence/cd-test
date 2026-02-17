@@ -44,7 +44,7 @@ Attackers are now moving laterally within minutes of the initial edge breach. We
 
 Have you tested your internal lateral movement controls this quarter? 👇
 ]]></description>
-[cd:hashtags]()#Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+<category>#Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence</category>
 </item>
 
 <item>
@@ -76,7 +76,7 @@ The exploit triggers as soon as the preview pane renders the file. You don't eve
 
 Is your SOC currently hunting for unusual outbound traffic from non-browser apps? 👇
 ]]></description>
-[cd:hashtags]()#InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+<category>#InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence</category>
 </item>
 
 <item>
@@ -108,7 +108,7 @@ Our team recently discovered that legacy scripts often leave permissions wide op
 
 Do you have a real-time inventory of every public-facing API in your company? 👇
 ]]></description>
-[cd:hashtags]()#CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+<category>#CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence</category>
 </item>
 
 <item>
@@ -140,7 +140,7 @@ They aren't just locking files anymore; they are weaponizing your own internal c
 
 Is your incident response plan updated to handle direct shareholder extortion? 👇
 ]]></description>
-[cd:hashtags]()#Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+<category>#Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence</category>
 </item>
 
 </channel>
