@@ -10,6 +10,12 @@ xmlns:cd="[https://codedefence.in/rss/extensions]()">
 <language>en-us</language>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
 <lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
+<generator>Code Defence Senior Content Strategist Engine</generator>
+<image>
+<url>[https://codedefence.in/assets/logo-rss.png]()</url>
+<title>Code Defence Intelligence Brief</title>
+<link>[https://codedefence.in/executive-briefing]()</link>
+</image>
 <atom:link href="[https://codedefence.in/executive-briefing/rss]()" rel="self" type="application/rss+xml" />
 <cd:promptVersion>2.0</cd:promptVersion>
 <cd:storyCount>4</cd:storyCount>
@@ -43,7 +49,7 @@ Our peers at @GreyNoise and @CISA confirm active exploitation is happening right
 
 Have you confirmed your on-premise Remote Support version this morning? 👇
 ]]></description>
-<hashtags>#Cybersecurity #NetworkSecurity #VulnerabilityManagement #IncidentResponse #SecurityLeadership #CodeDefence </hashtags>
+[cd:hashtags]()#Cybersecurity #NetworkSecurity #VulnerabilityManagement #IncidentResponse #SecurityLeadership #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 <item>
@@ -129,7 +135,7 @@ CVE-2024-55591 · Severity 9.6 · Authentication bypass in FortiOS.
 
 We’re seeing persistent exploitation attempts against @Fortinet management interfaces exposed to the internet. Attackers gain super-admin privileges to modify policies and establish tunnels into your network.
 
-Over 1,500,000 targets were identified globally for this specific bypass. If you haven't hardened your administrative access, you are providing a platform for the next breach.
+Over 48,000 devices remained exposed weeks after the initial patch. If you haven't hardened your administrative access, you are providing a platform for the next breach.
 
 *The uncomfortable truth: A firewall with an exposed management interface is just a platform for an attacker's next move.*
 
