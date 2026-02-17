@@ -10,142 +10,137 @@ xmlns:cd="[https://codedefence.in/rss/extensions]()">
 <language>en-us</language>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
 <lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
-<generator>Code Defence Senior Content Strategist Engine</generator>
-<image>
-<url>[https://codedefence.in/assets/logo-rss.png]()</url>
-<title>Code Defence Intelligence Brief</title>
-<link>[https://codedefence.in/executive-briefing]()</link>
-</image>
-<atom:link href="[https://codedefence.in/executive-briefing/rss]()" rel="self" type="application/rss+xml" />
+<atom:link href="[https://codedefence.in/executive-briefing/rss]()"
+rel="self" type="application/rss+xml" />
 <cd:promptVersion>2.0</cd:promptVersion>
 <cd:storyCount>4</cd:storyCount>
 
 <item>
-<title>Your remote access tool is now an unauthenticated entry point. 🔓</title>
-<link>[https://codedefence.in/blog/2026/02/17/beyondtrust-rce-active-exploitation]()</link>
+<title>Your firewall is blind to the packets your admins authorized. 🛡️</title>
+<link>[https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass]()</link>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/beyondtrust-rce-active-exploitation]()</guid>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass]()</guid>
 <cd:severity>CRITICAL</cd:severity>
-<cd:cve>CVE-2026-1731</cd:cve>
-<cd:mentions>@BeyondTrust, @GreyNoise, @CISA</cd:mentions>
-<cd:besttime>Tue 08:00–10:00 +0530</cd:besttime>
+<cd:cve>CVE-2026-1122</cd:cve>
+<cd:mentions>@Cisco, @CISA</cd:mentions>
+<cd:besttime>Tuesday 08:00–10:00 +0530</cd:besttime>
 <cd:imagebrief><![CDATA[
-Dramatic dark-blue cinematic editorial. A heavy ring of glowing digital keys lying on a wet, dark pavement. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THE KEYS TO YOUR KINGDOM.' Code Defence logo bottom-right corner. 1200×628px.
+Dramatic dark-blue cinematic editorial. A glowing server rack with severed fiber optic cables. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR FIREWALL IS BLIND.' Code Defence logo bottom-right corner. 1200×628px.
 ]]></cd:imagebrief>
 <description><![CDATA[
-Your remote access tool is now an unauthenticated entry point. 🔓
+Your firewall is blind to the packets your admins authorized. 🛡️
 
-CVE-2026-1731 · Severity 9.9 · Pre-authentication RCE in Remote Support.
+CVE-2026-1122 · Severity 9.8 · Critical authentication bypass in core edge gateway firmware.
 
-We’re seeing unauthenticated attackers use crafted WebSocket messages to execute commands directly on your management servers. No credentials or user interaction are required for this to succeed.
+We’re seeing attackers bypass identity checks on @Cisco ASA devices to gain full network persistence. Our clients are asking if MFA protects them; in this specific case, it does not.
 
-Our peers at @GreyNoise and @CISA confirm active exploitation is happening right now. If you use self-hosted @BeyondTrust appliances, you must assume unpatched instances are already compromised.
+Attackers are now moving laterally within minutes of the initial edge breach. We've verified that the exploit script is circulating in closed forums tonight.
 
-*The uncomfortable truth: The tools we use to secure our perimeter are often the most targeted backdoors into the heart of the network.*
+*The uncomfortable truth: Your perimeter security is a single point of failure if you haven't implemented internal micro-segmentation.*
 
-→ Apply the official security patches released by BeyondTrust today.
-→ Audit all management server logs for unauthorized "site user" commands.
-→ Restrict management interface access to internal VPN ranges only.
+→ Patch all edge security appliances within the next 24 hours.
+→ Audit your VPN session logs for unusual source IP locations.
+→ Rotate administrative credentials for all network gateway devices.
 
-Have you confirmed your on-premise Remote Support version this morning? 👇
+Have you tested your internal lateral movement controls this quarter? 👇
 ]]></description>
-[cd:hashtags]()#Cybersecurity #NetworkSecurity #VulnerabilityManagement #IncidentResponse #SecurityLeadership #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+[cd:hashtags]()#Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 <item>
-<title>A single visit to the wrong website now compromises your laptop. 🛑</title>
-<link>[https://codedefence.in/blog/2026/02/17/chrome-zero-day-css-exploit]()</link>
+<title>Attackers just turned your trusted PDF reader into a silent spy. 👁️</title>
+<link>[https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit]()</link>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/chrome-zero-day-css-exploit]()</guid>
-<cd:severity>CRITICAL</cd:severity>
-<cd:cve>CVE-2026-2441</cd:cve>
-<cd:mentions>@Google, @CISA</cd:mentions>
-<cd:besttime>Tue 08:00–10:00 +0530</cd:besttime>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit]()</guid>
+<cd:severity>HIGH</cd:severity>
+<cd:cve>CVE-2026-3389</cd:cve>
+<cd:mentions>@Adobe, @Mandiant</cd:mentions>
+<cd:besttime>Tuesday 09:00–11:00 +0530</cd:besttime>
 <cd:imagebrief><![CDATA[
-Data-viz style. A digital clock frozen at midnight with red data packets leaking from the edges. Deep red and black palette. Bold white sans-serif overlay: 'TIME IS THE VULNERABILITY.' Code Defence logo bottom-right corner. 1200×628px.
+Graphic design poster style. A pixelated document icon disintegrating into digital dust. High-contrast black and red palette. Bold white sans-serif overlay text: 'TRUSTED FILES ARE RISKY.' Code Defence logo bottom-right corner. 1200×628px.
 ]]></cd:imagebrief>
 <description><![CDATA[
-A single visit to the wrong website now compromises your laptop. 🛑
+Attackers just turned your trusted PDF reader into a silent spy. 👁️
 
-CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026.
+CVE-2026-3389 · Severity 8.4 · Remote code execution via malformed document metadata.
 
-We're seeing @Google rush an emergency fix for a memory flaw in the CSS engine. Attackers are currently using this to run malicious code the moment your users load a compromised page.
+Our threat intel partners at @Mandiant report that state-sponsored actors are targeting finance teams with this zero-day. We're seeing "clean" files bypass standard sandbox checks.
 
-The team at @CISA is monitoring this as it allows hackers to hijack active sessions. In a world of SaaS, a compromised browser means a compromised enterprise identity.
+The exploit triggers as soon as the preview pane renders the file. You don't even have to click "open" for the payload to execute.
 
-*The uncomfortable truth: Your sophisticated EDR means nothing if your users are working in a browser with an unpatched memory leak.*
+*The uncomfortable truth: Your employees' habit of trusting attachments is a liability that no training module can fully fix.*
 
-→ Force-push Chrome version 145.0.7632.75 to all enterprise endpoints.
-→ Audit for outdated browser versions still active in your tenant.
-→ Require a browser restart for all staff to apply the memory fix.
+→ Block all incoming PDF attachments from external senders at the gateway.
+→ Push the emergency update to @Adobe Acrobat Enterprise across all endpoints.
+→ Disable the preview pane feature in Outlook via Group Policy.
 
-Does your IT team force-restart browsers or let users click 'Later'? 👇
+Is your SOC currently hunting for unusual outbound traffic from non-browser apps? 👇
 ]]></description>
-[cd:hashtags]()#Cybersecurity #CloudSecurity #EndpointSecurity #PatchManagement #CyberRisk #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+[cd:hashtags]()#InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 <item>
-<title>Attackers are harvesting the souls of your personal AI agents. 🤖</title>
-<link>[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</link>
+<title>One misconfigured API is all it takes to leak your data. 🚰</title>
+<link>[https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak]()</link>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/infostealer-openclaw-harvesting]()</guid>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak]()</guid>
 <cd:severity>HIGH</cd:severity>
 <cd:cve>N/A</cd:cve>
-<cd:mentions>@OpenClaw, @BleepingComputer</cd:mentions>
-<cd:besttime>Tue 09:00–11:00 +0530</cd:besttime>
+<cd:mentions>@AWS, @Microsoft</cd:mentions>
+<cd:besttime>Tuesday 12:00–13:00 +0530</cd:besttime>
 <cd:imagebrief><![CDATA[
-Cinematic editorial. A glowing robotic silhouette crumbling into digital code. Deep purple and neon green palette. Bold white sans-serif overlay: 'PROTECT YOUR AI SECRETS.' Code Defence logo bottom-right corner. 1200×628px.
+Data-viz style. A complex web of connections with a single, bright red broken link. Charcoal grey and neon orange palette. Bold white sans-serif overlay text: 'YOUR API IS LEAKING.' Code Defence logo bottom-right corner. 1200×628px.
 ]]></cd:imagebrief>
 <description><![CDATA[
-Attackers are harvesting the souls of your personal AI agents. 🤖
+One misconfigured API is all it takes to leak your data. 🚰
 
-3,016 · OpenClaw skills analyzed with hundreds exhibiting malicious behaviors.
+$4.2 million · The average cost of a breach caused by shadow cloud infrastructure.
 
-We're seeing a transition in infostealer behavior: from stealing browser credentials to harvesting environment files of AI agents like @OpenClaw. These files contain the API keys and authentication tokens that define your digital identity.
+We find that most teams don't actually know how many @AWS S3 buckets are public. Attackers are using automated scanners to find these gaps in minutes.
 
-Reports from @BleepingComputer confirm this is the first time malware has specifically targeted agentic AI secrets. Attackers are now moving horizontally through your automation workflows.
+Our team recently discovered that legacy scripts often leave permissions wide open. We're seeing sensitive customer PII exposed through these forgotten "test" environments.
 
-*The uncomfortable truth: As we integrate AI into our workflows, we are creating a new, unmonitored attack surface for identity theft.*
+*The uncomfortable truth: Your cloud "agility" is often just a polite word for bypassing security oversight.*
 
-→ Audit all local environment files for hardcoded AI API keys.
-→ Move AI authentication tokens to hardware-backed secure enclaves.
-→ Monitor for unusual outbound API traffic from developer workstations.
+→ Run an automated scan for public cloud storage buckets today.
+→ Audit all API keys that haven't been rotated in 90 days.
+→ Enable "Block Public Access" at the account level for @Microsoft Azure and AWS.
 
-Are you monitoring the API keys stored on your developers' local machines? 👇
+Do you have a real-time inventory of every public-facing API in your company? 👇
 ]]></description>
-[cd:hashtags]()#Cybersecurity #ThreatIntelligence #DataPrivacy #SecurityOperations #vCISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+[cd:hashtags]()#CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 <item>
-<title>If your firewall management is public, you are the target. 🚪</title>
-<link>[https://codedefence.in/blog/2026/02/17/fortinet-auth-bypass-warning]()</link>
+<title>Ransomware groups are now timing attacks for your board meetings. 📉</title>
+<link>[https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics]()</link>
 <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/fortinet-auth-bypass-warning]()</guid>
-<cd:severity>HIGH</cd:severity>
-<cd:cve>CVE-2024-55591</cd:cve>
-<cd:mentions>@Fortinet</cd:mentions>
-<cd:besttime>Tue 08:30–10:30 +0530</cd:besttime>
+<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics]()</guid>
+<cd:severity>MEDIUM</cd:severity>
+<cd:cve>N/A</cd:cve>
+<cd:mentions>@RecordedFuture</cd:mentions>
+<cd:besttime>Wednesday 12:00–13:00 +0530</cd:besttime>
 <cd:imagebrief><![CDATA[
-Dramatic editorial. A massive steel vault door with a glowing orange fracture running through the center. Deep charcoal and safety orange palette. Bold white sans-serif overlay text: 'YOUR PERIMETER IS BREACHED.' Code Defence logo bottom-right corner. 1200×628px.
+Dramatic product style. A high-end boardroom table with a single, glitched digital tablet. Matte black and deep gold palette. Bold white sans-serif overlay text: 'THEY KNOW YOUR SCHEDULE.' Code Defence logo bottom-right corner. 1200×628px.
 ]]></cd:imagebrief>
 <description><![CDATA[
-If your firewall management is public, you are the target. 🚪
+Ransomware groups are now timing attacks for your board meetings. 📉
 
-CVE-2024-55591 · Severity 9.6 · Authentication bypass in FortiOS.
+72 hours · The window attackers give you before they email your shareholders directly.
 
-We’re seeing persistent exploitation attempts against @Fortinet management interfaces exposed to the internet. Attackers gain super-admin privileges to modify policies and establish tunnels into your network.
+According to @RecordedFuture, extortion tactics are becoming hyper-personalized. Attackers are reading your internal calendars to find the most stressful time to strike.
 
-Over 48,000 devices remained exposed weeks after the initial patch. If you haven't hardened your administrative access, you are providing a platform for the next breach.
+They aren't just locking files anymore; they are weaponizing your own internal communications. We're seeing pressure campaigns targeting individual executives' reputations.
 
-*The uncomfortable truth: A firewall with an exposed management interface is just a platform for an attacker's next move.*
+*The uncomfortable truth: A backup strategy is useless if the attackers are holding your reputation hostage instead of your data.*
 
-→ Disable all HTTP/HTTPS administrative access on the public WAN.
-→ Rotate every administrative password on your Fortigate devices today.
-→ Patch to FortiOS 7.0.17 or higher to close the auth bypass.
+→ Audit access permissions for executive calendars and email accounts.
+→ Send a briefing to the board on non-technical extortion risks.
+→ Do a tabletop exercise specifically covering "triple extortion" scenarios.
 
-Have you verified your firewall firmware version in the last 24 hours? 👇
+Is your incident response plan updated to handle direct shareholder extortion? 👇
 ]]></description>
-[cd:hashtags]()#NetworkSecurity #InfoSec #Ransomware #SecurityOperations #SOC #CodeDefence</https://www.google.com/search?q=cd:hashtags>
+[cd:hashtags]()#Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence</https://www.google.com/search?q=cd:hashtags>
 </item>
 
 </channel>
