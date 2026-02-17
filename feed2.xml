@@ -1,40 +1,38 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-
-<rss version="2.0" xmlns:atom="[http://www.w3.org/2005/Atom]()"
-xmlns:cd="[https://codedefence.in/rss/extensions]()">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+                    xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-
-<title>Code Defence Intelligence Brief — Tue, 17 Feb 2026</title>
-<link>[https://codedefence.in/executive-briefing]()</link>
-<description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 17 Feb 2026.</description>
-<language>en-us</language>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
-<atom:link href="[https://codedefence.in/executive-briefing/rss]()"
-rel="self" type="application/rss+xml" />
-<cd:promptVersion>2.0</cd:promptVersion>
-<cd:storyCount>4</cd:storyCount>
+  <title>Code Defence Intelligence Brief — Tue, 17 Feb 2026</title>
+  <link>https://codedefence.in/executive-briefing</link>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 17 Feb 2026.</description>
+  <language>en-us</language>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <lastBuildDate>Tue, 17 Feb 2026 06:00:00 +0530</lastBuildDate>
+  <atom:link href="https://codedefence.in/executive-briefing/rss"
+             rel="self" type="application/rss+xml" />
+  <cd:promptVersion>2.0</cd:promptVersion>
+  <cd:storyCount>4</cd:storyCount>
 
 <item>
-<title>Your firewall is blind to the packets your admins authorized. 🛡️</title>
-<link>[https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass]()</link>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass]()</guid>
-<cd:severity>CRITICAL</cd:severity>
-<cd:cve>CVE-2026-1122</cd:cve>
-<cd:mentions>@[Cisco](), @[CISA]()</cd:mentions>
-<cd:besttime>Tuesday 08:00–10:00 +0530</cd:besttime>
-<cd:imagebrief><![CDATA[
-Dramatic dark-blue cinematic editorial. A lone network operations console glowing in a dark server room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR FIREWALL IS BLIND.' Code Defence logo bottom-right corner. 1200×628px.
-]]></cd:imagebrief>
-<description><![CDATA[
+  <title>Your firewall is blind to the packets your admins authorized. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/cisco-asa-auth-bypass</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-1122</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Tuesday 08:00–10:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Dramatic dark-blue cinematic editorial. A lone network operations console glowing in a dark server room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR FIREWALL IS BLIND.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
 Your firewall is blind to the packets your admins authorized. 🛡️
 
 CVE-2026-1122 · Severity 9.8 · Critical authentication bypass in core edge gateway firmware.
 
-We’re seeing attackers bypass identity checks on @[Cisco]() ASA devices to gain full network persistence. Our clients are asking if MFA protects them; in this specific case, it does not.
+We’re seeing attackers bypass identity checks on @[Cisco](urn:li:organization:1063) ASA devices to gain full network persistence. Our team is receiving reports that MFA does not protect against this specific exploit.
 
-Attackers are now moving laterally within minutes of the initial edge breach. We've verified that the exploit script is circulating in closed forums tonight according to latest reports from @[CISA]().
+Attackers are now moving laterally within minutes of the initial edge breach. We've verified that the exploit script is circulating in closed forums tonight according to data released by @[CISA](urn:li:organization:13010360).
 
 The uncomfortable truth: Your perimeter security is a single point of failure if you haven't implemented internal micro-segmentation.
 
@@ -45,29 +43,29 @@ The uncomfortable truth: Your perimeter security is a single point of failure if
 Have you tested your internal lateral movement controls this quarter? 👇
 
 #Cybersecurity #NetworkSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence
-]]></description>
+  ]]></description>
 </item>
 
 <item>
-<title>Attackers just turned your trusted PDF reader into a silent spy. 👁️</title>
-<link>[https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit]()</link>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit]()</guid>
-<cd:severity>HIGH</cd:severity>
-<cd:cve>CVE-2026-3389</cd:cve>
-<cd:mentions>@[Adobe](), @[Mandiant]()</cd:mentions>
-<cd:besttime>Tuesday 09:00–11:00 +0530</cd:besttime>
-<cd:imagebrief><![CDATA[
-Graphic design poster style. A pixelated document icon disintegrating into digital dust. High-contrast black and red palette. Bold white sans-serif overlay text: 'TRUSTED FILES ARE RISKY.' Code Defence logo bottom-right corner. 1200×628px.
-]]></cd:imagebrief>
-<description><![CDATA[
+  <title>Attackers just turned your trusted PDF reader into a silent spy. 👁️</title>
+  <link>https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/adobe-zero-day-exploit</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-3389</cd:cve>
+  <cd:mentions>@[Adobe](urn:li:organization:1480), @[Mandiant](urn:li:organization:264848)</cd:mentions>
+  <cd:besttime>Tuesday 09:00–11:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Graphic design poster style. A pixelated document icon disintegrating into digital dust. High-contrast black and red palette. Bold white sans-serif overlay text: 'TRUSTED FILES ARE RISKY.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
 Attackers just turned your trusted PDF reader into a silent spy. 👁️
 
 CVE-2026-3389 · Severity 8.4 · Remote code execution via malformed document metadata.
 
-Threat researchers at @[Mandiant]() report that state-sponsored actors are targeting finance teams with this zero-day. We're seeing clean files bypass standard sandbox checks.
+Research indicates that state-sponsored actors are targeting finance teams with this zero-day. We are observing clean files that successfully bypass standard sandbox checks.
 
-The exploit triggers as soon as the preview pane renders the file. You don't even have to click open for the payload to execute within your @[Adobe]() environment.
+The exploit triggers as soon as the preview pane renders the file. You don't even have to click open for the payload to execute within your @[Adobe](urn:li:organization:1480) environment.
 
 The uncomfortable truth: Your employees' habit of trusting attachments is a liability that no training module can fully fix.
 
@@ -78,29 +76,29 @@ The uncomfortable truth: Your employees' habit of trusting attachments is a liab
 Is your SOC currently hunting for unusual outbound traffic from non-browser apps? 👇
 
 #InfoSec #CloudSecurity #EndpointSecurity #ThreatIntelligence #SecurityLeadership #CodeDefence
-]]></description>
+  ]]></description>
 </item>
 
 <item>
-<title>One misconfigured API is all it takes to leak your data. 🚰</title>
-<link>[https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak]()</link>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak]()</guid>
-<cd:severity>HIGH</cd:severity>
-<cd:cve>N/A</cd:cve>
-<cd:mentions>@[AWS](), @[Microsoft]()</cd:mentions>
-<cd:besttime>Tuesday 12:00–13:00 +0530</cd:besttime>
-<cd:imagebrief><![CDATA[
-Data-viz style. A complex web of connections with a single, bright red broken link. Charcoal grey and neon orange palette. Bold white sans-serif overlay text: 'YOUR API IS LEAKING.' Code Defence logo bottom-right corner. 1200×628px.
-]]></cd:imagebrief>
-<description><![CDATA[
+  <title>One misconfigured API is all it takes to leak your data. 🚰</title>
+  <link>https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/cloud-storage-api-leak</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Amazon Web Services (AWS)](urn:li:organization:3054326), @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Tuesday 12:00–13:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Data-viz style. A complex web of connections with a single, bright red broken link. Charcoal grey and neon orange palette. Bold white sans-serif overlay text: 'YOUR API IS LEAKING.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
 One misconfigured API is all it takes to leak your data. 🚰
 
 $4.2 million · The average cost of a breach caused by shadow cloud infrastructure.
 
-We find that most teams don't actually know how many @[AWS]() S3 buckets are public. Attackers are using automated scanners to find these gaps in minutes.
+Evidence shows that most teams do not know how many @[Amazon Web Services (AWS)](urn:li:organization:3054326) S3 buckets are public. Attackers use automated scanners to find these gaps in minutes.
 
-Our team recently discovered that legacy scripts often leave permissions wide open. We're seeing sensitive customer PII exposed through these forgotten test environments on @[Microsoft]() Azure.
+We recently discovered that legacy scripts often leave permissions wide open. We're seeing sensitive customer PII exposed through these forgotten test environments on @[Microsoft](urn:li:organization:1035) Azure.
 
 The uncomfortable truth: Your cloud agility is often just a polite word for bypassing security oversight.
 
@@ -111,27 +109,27 @@ The uncomfortable truth: Your cloud agility is often just a polite word for bypa
 Do you have a real-time inventory of every public-facing API in your company? 👇
 
 #CloudSecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #SOC #CodeDefence
-]]></description>
+  ]]></description>
 </item>
 
 <item>
-<title>Ransomware groups are now timing attacks for your board meetings. 📉</title>
-<link>[https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics]()</link>
-<pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
-<guid isPermaLink="true">[https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics]()</guid>
-<cd:severity>MEDIUM</cd:severity>
-<cd:cve>N/A</cd:cve>
-<cd:mentions>@[Recorded Future]()</cd:mentions>
-<cd:besttime>Wednesday 12:00–13:00 +0530</cd:besttime>
-<cd:imagebrief><![CDATA[
-Dramatic product style. A high-end boardroom table with a single, glitched digital tablet. Matte black and deep gold palette. Bold white sans-serif overlay text: 'THEY KNOW YOUR SCHEDULE.' Code Defence logo bottom-right corner. 1200×628px.
-]]></cd:imagebrief>
-<description><![CDATA[
+  <title>Ransomware groups are now timing attacks for your board meetings. 📉</title>
+  <link>https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics</link>
+  <pubDate>Tue, 17 Feb 2026 06:00:00 +0530</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/17/ransomware-extortion-tactics</guid>
+  <cd:severity>MEDIUM</cd:severity>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Recorded Future](urn:li:organization:1145618)</cd:mentions>
+  <cd:besttime>Wednesday 12:00–13:00 +0530</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Dramatic product style. A high-end boardroom table with a single, glitched digital tablet. Matte black and deep gold palette. Bold white sans-serif overlay text: 'THEY KNOW YOUR SCHEDULE.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
 Ransomware groups are now timing attacks for your board meetings. 📉
 
 72 hours · The window attackers give you before they email your shareholders directly.
 
-Intelligence from @[Recorded Future]() suggests extortion tactics are becoming hyper-personalized. Attackers are reading your internal calendars to find the most stressful time to strike.
+Intelligence reports suggest extortion tactics are becoming hyper-personalized. Attackers are reading internal calendars to find the most stressful time to strike according to data from @[Recorded Future](urn:li:organization:1145618).
 
 They aren't just locking files anymore; they are weaponizing your own internal communications. We're seeing pressure campaigns targeting individual executives' reputations.
 
@@ -144,7 +142,7 @@ The uncomfortable truth: A backup strategy is useless if the attackers are holdi
 Is your incident response plan updated to handle direct shareholder extortion? 👇
 
 #Cybersecurity #Ransomware #IncidentResponse #SecurityLeadership #vCISO #CodeDefence
-]]></description>
+  ]]></description>
 </item>
 
 </channel>
