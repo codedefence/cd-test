@@ -2,146 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 19 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 20 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Thu, 19 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Fri, 20 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 19 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 19 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 20 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your virtualization core is now an open target for ransomware. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/19/vmware-vcenter-rce-active-exploitation</link>
-  <pubDate>Thu, 19 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/19/vmware-vcenter-rce-active-exploitation</guid>
+  <title>Your mobile device management is now a backdoor for attackers. 📱</title>
+  <link>https://codedefence.in/blog/2026/02/20/ivanti-epmm-zero-day-alert</link>
+  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/ivanti-epmm-zero-day-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3021</cd:cve>
-  <cd:mentions>@[Broadcom](urn:li:organization:1598), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Friday 08:00–10:00 +0300</cd:besttime>
+  <cd:cve>CVE-2026-1281</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:36124), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital server rack glowing with deep red warning lights. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'VIRTUALIZATION AT RISK.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital silhouette of a smartphone with a glowing orange fracture line. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR MDM IS COMPROMISED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your virtualization core is now an open target for ransomware. 🛡️
+Your mobile device management is now a backdoor for attackers. 📱
 
-CVE-2026-3021 · Severity 9.8 · Critical remote code execution in @[Broadcom](urn:li:organization:1598) VMware vCenter Server.
+CVE-2026-1281 · Severity 9.8 · Critical unauthenticated RCE in Ivanti Endpoint Manager Mobile (EPMM).
 
-We are seeing ransomware groups shift their focus to vCenter instances to paralyze entire data centers at once. This vulnerability allows an attacker with network access to execute commands with full administrative privileges.
+We are seeing attackers use automated scanners to locate vulnerable @[Ivanti](urn:li:organization:36124) servers. Successful exploitation allows for full control of the MDM infrastructure and a direct path into your enterprise network.
 
-Reports from @[CISA](urn:li:organization:13010360) indicate that exploitation attempts have spiked in the last 24 hours. If your management interface is internet-facing, it is likely already compromised.
+The @[CISA](urn:li:organization:13010360) has added this to the Known Exploited Vulnerabilities catalog today. Attackers are currently deploying web shells and establishing persistent backdoors that survive standard restarts.
 
-The uncomfortable truth: Single points of management like vCenter are the ultimate high-value targets for total network extinction.
+The uncomfortable truth: The tool you use to secure your mobile fleet is currently the most effective way for an attacker to bypass your entire perimeter.
 
-→ Patch vCenter Server to the latest emergency release immediately.
-→ Isolate the vCenter management network from the general production environment.
-→ Implement strict multi-factor authentication for all administrative access.
+→ Patch all EPMM instances to the latest security release immediately.
+→ Audit your server logs for unusual HTTP requests targeting legacy bash scripts.
+→ Conduct a full forensic review of managed devices for unauthorized app installations.
 
-Have you verified that your vCenter management interface is completely hidden from the public internet? 👇
+Have you verified that your MDM management portal is restricted to trusted administrative IPs? 👇
 
-#Cybersecurity #DataCenter #VMware #Ransomware #CISO #CodeDefence
+#Cybersecurity #MDM #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Attackers are back inside your email server through a new bypass. 📧</title>
-  <link>https://codedefence.in/blog/2026/02/19/microsoft-exchange-auth-bypass</link>
-  <pubDate>Thu, 19 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/19/microsoft-exchange-auth-bypass</guid>
+  <title>State-sponsored actors have been living in your backups for months. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/20/dell-recoverpoint-espionage-alert</link>
+  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/dell-recoverpoint-espionage-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-2188</cd:cve>
+  <cd:cve>CVE-2026-22769</cd:cve>
+  <cd:mentions>@[Dell Technologies](urn:li:organization:1193), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital storage rack with a single glowing red light in a dark room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THEY ARE IN YOUR BACKUPS.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+State-sponsored actors have been living in your backups for months. 🛡️
+
+CVE-2026-22769 · Severity 10.0 · Hardcoded credentials in Dell RecoverPoint for Virtual Machines.
+
+We are seeing reports that China-linked espionage groups have exploited this flaw since mid-2024. The @[CISA](urn:li:organization:13010360) has given federal agencies only three days to patch this due to the extreme risk.
+
+Attackers are using "Ghost NICs" on virtual machines to quietly pivot through compromised environments without alerting security teams. This allows for long-term persistence within your disaster recovery site.
+
+The uncomfortable truth: Your disaster recovery plan is a weapon in the hands of an attacker if your backup infrastructure is unpatched.
+
+→ Update @[Dell Technologies](urn:li:organization:1193) RecoverPoint for VMs to the patched version by tomorrow morning.
+→ Rotate all administrative credentials associated with your virtualization and backup stack.
+→ Hunt for unauthorized lateral movement originating from your disaster recovery nodes.
+
+Is your SOC currently monitoring your backup infrastructure for unauthorized network pivots? 👇
+
+#Cybersecurity #DataProtection #Espionage #InfrastructureSecurity #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>If your team uses Markdown, your endpoints are at risk today. 📝</title>
+  <link>https://codedefence.in/blog/2026/02/20/notepad-markdown-rce-escalation</link>
+  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/notepad-markdown-rce-escalation</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-20841</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Friday 08:00–10:00 +0300</cd:besttime>
+  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital envelope with a broken wax seal leaking glowing binary code. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THEY ARE IN YOUR MAIL.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A pixelated document icon disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'ONE CLICK TO EXECUTE.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Attackers are back inside your email server through a new bypass. 📧
+If your team uses Markdown, your endpoints are at risk today. 📝
 
-CVE-2026-2188 · Severity 9.1 · Critical authentication bypass in @[Microsoft](urn:li:organization:1035) Exchange Server.
+CVE-2026-20841 · Severity 7.8 · Remote code execution in Windows 11 Notepad via crafted Markdown links.
 
-We are seeing state-sponsored actors leverage this flaw to access executive mailboxes without needing valid credentials. This affects on-premise Exchange environments that haven't applied the latest cumulative updates.
+We are seeing attackers distribute malicious README files that trigger unverified protocol launches. One click on a link in @[Microsoft](urn:li:organization:1035) Notepad is enough to execute remote code.
 
-Once inside, attackers are setting up silent forwarding rules to exfiltrate sensitive commercial data. This activity often goes undetected by standard EDR because it uses native server functions.
+This flaw demonstrates how even the most basic native applications are now being weaponized. If your organization relies on Store-based app updates, your patching may be lagging behind.
 
-The uncomfortable truth: Your email server remains the most valuable treasure chest for corporate espionage.
+The uncomfortable truth: Your security boundary is only as strong as the least complex application your users trust.
 
-→ Apply the February 2026 Cumulative Update (CU) to all Exchange Servers.
-→ Run a global audit of mailbox forwarding rules for all high-level accounts.
-→ Check your IIS logs for unusual POST requests to the /autodiscover/ endpoint.
+→ Force an update of the Notepad Store app to the latest version immediately.
+→ Restrict the use of high-risk protocol handlers at the operating system level.
+→ Audit your environment for unexpected process chains originating from notepad.exe.
 
-When was the last time you audited for unauthorized forwarding rules in your executive mailboxes? 👇
+Are you managing Store-based application updates with the same rigor as your OS patches? 👇
 
-#Cybersecurity #EmailSecurity #Infosec #ExchangeServer #CISO #CodeDefence
+#Cybersecurity #EndpointSecurity #PatchManagement #ThreatIntelligence #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your edge gateway is the first thing attackers will test today. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/19/palo-alto-networks-zero-day-alert</link>
-  <pubDate>Thu, 19 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/19/palo-alto-networks-zero-day-alert</guid>
+  <title>Your browser is the primary entry point for modern ransomware. 🌐</title>
+  <link>https://codedefence.in/blog/2026/02/20/chrome-zero-day-exploitation-update</link>
+  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/chrome-zero-day-exploitation-update</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-4401</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:10620), @[Mandiant](urn:li:organization:264848)</cd:mentions>
-  <cd:besttime>Friday 09:00–11:00 +0300</cd:besttime>
+  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A digital firewall barrier with a bright orange crack forming. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'EDGE DEFENSES FAILING.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A digital web browser interface with a single bright red broken link. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your edge gateway is the first thing attackers will test today. 🛡️
+Your browser is the primary entry point for modern ransomware. 🌐
 
-CVE-2026-4401 · Severity 8.6 · Active exploitation of GlobalProtect portals in @[Palo Alto Networks](urn:li:organization:10620) PAN-OS.
+CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026 targeting CSS components.
 
-Threat researchers at @[Mandiant](urn:li:organization:264848) have identified a new campaign targeting perimeter security devices. Attackers are using a sophisticated memory corruption exploit to gain initial network access.
+We are seeing attackers leverage this flaw to execute arbitrary code within the browser sandbox. While @[Google](urn:li:organization:1441) has released a fix, unpatched browsers remain a critical risk to your entire enterprise.
 
-This allows them to tunnel directly into your internal network, bypassing standard VPN identity checks. We are seeing these attempts move from targeted to broad scanning in the last 24 hours.
+Attackers are currently pairing this with social engineering to target corporate users. A single visit to a compromised website can initiate a full infection chain.
 
-The uncomfortable truth: Your perimeter security is a single point of failure if you haven't implemented Zero Trust internal controls.
+The uncomfortable truth: Your users are one malicious click away from a system compromise if you do not automate your browser updates.
 
-→ Disable the GlobalProtect portal on non-essential interfaces.
-→ Update PAN-OS to the latest maintenance release immediately.
-→ Enable advanced threat prevention signatures for known exploit patterns.
+→ Ensure all @[Google](urn:li:organization:1441) Chrome instances are updated to version 145.0.7632.75 or later.
+→ Enable hardware-enforced stack protection on all compatible Windows endpoints.
+→ Monitor for unusual outbound traffic originating from browser processes.
 
-Is your SOC monitoring for unusual encrypted tunnels originating from your edge gateways? 👇
+Have you confirmed that your browser update policy is successfully reaching 100% of your fleet? 👇
 
-#NetworkSecurity #ZeroTrust #CyberRisk #PaloAltoNetworks #vCISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>One misconfigured cloud identity can drain your entire data lake. 🚰</title>
-  <link>https://codedefence.in/blog/2026/02/19/okta-impersonation-risk-alert</link>
-  <pubDate>Thu, 19 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/19/okta-impersonation-risk-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[Okta](urn:li:organization:235288), @[BeyondTrust](urn:li:organization:12625)</cd:mentions>
-  <cd:besttime>Friday 12:00–13:00 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Data-viz style. A complex web of digital identities with a single golden key being duplicated. Matte black and deep gold palette. Bold white sans-serif overlay text: 'IDENTITY IS THE NEW PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-One misconfigured cloud identity can drain your entire data lake. 🚰
-
-$4.8 million · The average cost of a breach where identity was the primary vector.
-
-We are seeing a resurgence in sophisticated session-hijacking attacks targeting @[Okta](urn:li:organization:235288) tenants. Attackers are using adversary-in-the-middle kits to bypass traditional MFA and gain persistent cloud access.
-
-Combined with privileged access flaws recently noted in @[BeyondTrust](urn:li:organization:12625) environments, attackers can move from a standard user to a global admin in minutes.
-
-The uncomfortable truth: Your MFA is only as strong as your session management policies.
-
-→ Enforce phish-resistant MFA (FIDO2/WebAuthn) for all privileged users.
-→ Shorten session token lifetimes to less than 4 hours for critical applications.
-→ Implement continuous access evaluation to revoke tokens immediately on suspicious IP changes.
-
-Are you prepared to revoke all active cloud sessions organization-wide in the next 10 minutes? 👇
-
-#CloudSecurity #IdentityManagement #MFA #CyberAwareness #SOC #CodeDefence
+#Cybersecurity #PatchManagement #Infosec #ZeroTrust #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
