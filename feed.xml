@@ -2,144 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 20 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 21 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Fri, 20 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Sat, 21 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 20 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat, 21 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your mobile device management is now a backdoor for attackers. 📱</title>
-  <link>https://codedefence.in/blog/2026/02/20/ivanti-epmm-zero-day-alert</link>
-  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/ivanti-epmm-zero-day-alert</guid>
+  <title>Your webmail is a silent doorway for state-sponsored espionage. 📧</title>
+  <link>https://codedefence.in/blog/2026/02/21/roundcube-webmail-critical-rce-alert</link>
+  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/roundcube-webmail-critical-rce-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-1281</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:36124), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
+  <cd:cve>CVE-2025-49113</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Saturday 20:00–22:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital silhouette of a smartphone with a glowing orange fracture line. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR MDM IS COMPROMISED.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital envelope with glowing orange binary code leaking from its seams. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'WEBMAIL UNDER ATTACK.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your mobile device management is now a backdoor for attackers. 📱
+Your webmail is a silent doorway for state-sponsored espionage. 📧
 
-CVE-2026-1281 · Severity 9.8 · Critical unauthenticated RCE in Ivanti Endpoint Manager Mobile (EPMM).
+CVE-2025-49113 · Severity 9.9 · Critical Remote Code Execution in Roundcube Webmail.
 
-We are seeing attackers use automated scanners to locate vulnerable @[Ivanti](urn:li:organization:36124) servers. Successful exploitation allows for full control of the MDM infrastructure and a direct path into your enterprise network.
+We are seeing attackers leverage this deserialization flaw to take full control of affected systems. This vulnerability was added to the @[CISA](urn:li:organization:13010360) KEV catalog in the last 24 hours due to active exploitation by advanced threat groups.
 
-The @[CISA](urn:li:organization:13010360) has added this to the Known Exploited Vulnerabilities catalog today. Attackers are currently deploying web shells and establishing persistent backdoors that survive standard restarts.
+Attackers are targeting unpatched webmail servers to steal login credentials and spy on sensitive communications. With over 53 million hosts potentially impacted, the window for remediation is closing rapidly.
 
-The uncomfortable truth: The tool you use to secure your mobile fleet is currently the most effective way for an attacker to bypass your entire perimeter.
+The uncomfortable truth: Your webmail is the most direct path for an attacker to compromise your corporate identity and internal communications.
 
-→ Patch all EPMM instances to the latest security release immediately.
-→ Audit your server logs for unusual HTTP requests targeting legacy bash scripts.
-→ Conduct a full forensic review of managed devices for unauthorized app installations.
+→ Patch Roundcube Webmail to version 1.6.11 or 1.5.10 LTS immediately.
+→ Audit your mail server logs for unauthorized PHP object deserialization attempts.
+→ Force a password reset for all users if your server was exposed and unpatched.
 
-Have you verified that your MDM management portal is restricted to trusted administrative IPs? 👇
+Have you confirmed that your webmail infrastructure is running the latest security patches? 👇
 
-#Cybersecurity #MDM #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence
+#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>State-sponsored actors have been living in your backups for months. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/20/dell-recoverpoint-espionage-alert</link>
-  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/dell-recoverpoint-espionage-alert</guid>
+  <title>If attackers own your remote access, they own your entire network. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/21/beyondtrust-rce-mass-exploitation</link>
+  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/beyondtrust-rce-mass-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-22769</cd:cve>
-  <cd:mentions>@[Dell Technologies](urn:li:organization:1193), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
+  <cd:cve>CVE-2026-1731</cd:cve>
+  <cd:mentions>@[BeyondTrust](urn:li:organization:12625), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Saturday 20:00–22:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital storage rack with a single glowing red light in a dark room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THEY ARE IN YOUR BACKUPS.' Code Defence logo bottom-right corner. 1200×628px.
+    Cinematic editorial style. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR GATEWAY IS OPEN.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-State-sponsored actors have been living in your backups for months. 🛡️
+If attackers own your remote access, they own your entire network. 🔓
 
-CVE-2026-22769 · Severity 10.0 · Hardcoded credentials in Dell RecoverPoint for Virtual Machines.
+CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in Remote Support and PRA.
 
-We are seeing reports that China-linked espionage groups have exploited this flaw since mid-2024. The @[CISA](urn:li:organization:13010360) has given federal agencies only three days to patch this due to the extreme risk.
+We are seeing a massive surge in exploitation attempts against @[BeyondTrust](urn:li:organization:12625) instances. The @[CISA](urn:li:organization:13010360) has issued an urgent deadline for federal agencies to remediate this flaw within three days.
 
-Attackers are using "Ghost NICs" on virtual machines to quietly pivot through compromised environments without alerting security teams. This allows for long-term persistence within your disaster recovery site.
+Attackers are currently deploying web shells and backdoors to achieve persistent access. This vulnerability allows for the execution of arbitrary commands with full administrative privileges without a valid login.
 
-The uncomfortable truth: Your disaster recovery plan is a weapon in the hands of an attacker if your backup infrastructure is unpatched.
+The uncomfortable truth: The software you use to secure your environment is becoming the highest-risk point of failure for your enterprise.
 
-→ Update @[Dell Technologies](urn:li:organization:1193) RecoverPoint for VMs to the patched version by tomorrow morning.
-→ Rotate all administrative credentials associated with your virtualization and backup stack.
-→ Hunt for unauthorized lateral movement originating from your disaster recovery nodes.
+→ Patch all self-hosted Remote Support and PRA appliances to version BT26-02 immediately.
+→ Restrict appliance web management access to known IP ranges or a secure VPN only.
+→ Conduct a retrospective forensic search for unauthorized admin account creation.
 
-Is your SOC currently monitoring your backup infrastructure for unauthorized network pivots? 👇
+Is your remote access infrastructure currently internet-exposed without secondary IP restrictions? 👇
 
-#Cybersecurity #DataProtection #Espionage #InfrastructureSecurity #CISO #CodeDefence
+#Cybersecurity #ZeroTrust #PatchManagement #IncidentResponse #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>If your team uses Markdown, your endpoints are at risk today. 📝</title>
-  <link>https://codedefence.in/blog/2026/02/20/notepad-markdown-rce-escalation</link>
-  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/notepad-markdown-rce-escalation</guid>
+  <title>Attackers just bypassed your Windows security prompts entirely. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/21/windows-shell-zero-day-bypass-alert</link>
+  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/windows-shell-zero-day-bypass-alert</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-20841</cd:cve>
+  <cd:cve>CVE-2026-21510</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
+  <cd:besttime>Saturday 21:00–23:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A pixelated document icon disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'ONE CLICK TO EXECUTE.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A pixelated Windows security dialog box disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-If your team uses Markdown, your endpoints are at risk today. 📝
+Attackers just bypassed your Windows security prompts entirely. 🛡️
 
-CVE-2026-20841 · Severity 7.8 · Remote code execution in Windows 11 Notepad via crafted Markdown links.
+CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen security.
 
-We are seeing attackers distribute malicious README files that trigger unverified protocol launches. One click on a link in @[Microsoft](urn:li:organization:1035) Notepad is enough to execute remote code.
+We are seeing attackers distribute malicious shortcut files that bypass SmartScreen warnings to execute code silently. This vulnerability allows for the suppression of are-you-sure dialogs for untrusted content on @[Microsoft](urn:li:organization:1035) systems.
 
-This flaw demonstrates how even the most basic native applications are now being weaponized. If your organization relies on Store-based app updates, your patching may be lagging behind.
+This flaw is being used to deliver further payloads without raising user suspicion. It highlights a critical failure in the UI-based security boundaries that many organizations still rely on.
 
-The uncomfortable truth: Your security boundary is only as strong as the least complex application your users trust.
+The uncomfortable truth: User training won't save your network when the operating system fails to provide a warning for malicious content.
 
-→ Force an update of the Notepad Store app to the latest version immediately.
-→ Restrict the use of high-risk protocol handlers at the operating system level.
-→ Audit your environment for unexpected process chains originating from notepad.exe.
+→ Apply the February 2026 security updates to all Windows endpoints immediately.
+→ Block the download or execution of .LNK and .URL files from external sources at the gateway.
+→ Enable Attack Surface Reduction rules to prevent shortcuts from launching untrusted code.
 
-Are you managing Store-based application updates with the same rigor as your OS patches? 👇
+Are you still relying on user intuition to spot malicious shortcut and link files? 👇
 
-#Cybersecurity #EndpointSecurity #PatchManagement #ThreatIntelligence #SOC #CodeDefence
+#Cybersecurity #EndpointSecurity #RansomwareProtection #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your browser is the primary entry point for modern ransomware. 🌐</title>
-  <link>https://codedefence.in/blog/2026/02/20/chrome-zero-day-exploitation-update</link>
-  <pubDate>Fri, 20 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/20/chrome-zero-day-exploitation-update</guid>
+  <title>Your browser update cycle is a race against active exploitation. 🌐</title>
+  <link>https://codedefence.in/blog/2026/02/21/chrome-zero-day-css-exploitation</link>
+  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/chrome-zero-day-css-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2026-2441</cd:cve>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Friday 19:26–21:00 +0300</cd:besttime>
+  <cd:besttime>Saturday 21:00–23:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Data-viz style. A digital web browser interface with a single bright red broken link. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your browser is the primary entry point for modern ransomware. 🌐
+Your browser update cycle is a race against active exploitation. 🌐
 
 CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026 targeting CSS components.
 
-We are seeing attackers leverage this flaw to execute arbitrary code within the browser sandbox. While @[Google](urn:li:organization:1441) has released a fix, unpatched browsers remain a critical risk to your entire enterprise.
+We are seeing attackers leverage this use-after-free flaw to execute arbitrary code within the browser sandbox. While @[Google](urn:li:organization:1441) has released a fix, unpatched browsers remain a critical risk for initial entry into your network.
 
-Attackers are currently pairing this with social engineering to target corporate users. A single visit to a compromised website can initiate a full infection chain.
+Compromise happens as soon as a victim visits a malicious or hijacked website. This vulnerability is currently being utilized in targeted campaigns aimed at corporate credentials and data.
 
-The uncomfortable truth: Your users are one malicious click away from a system compromise if you do not automate your browser updates.
+The uncomfortable truth: Your users are one malicious link away from a system compromise if browser updates aren't automated.
 
-→ Ensure all @[Google](urn:li:organization:1441) Chrome instances are updated to version 145.0.7632.75 or later.
-→ Enable hardware-enforced stack protection on all compatible Windows endpoints.
-→ Monitor for unusual outbound traffic originating from browser processes.
+→ Force a global update for all Chrome instances to version 145.0.7632.75 or higher.
+→ Monitor endpoint logs for unauthorized shell executions originating from browser processes.
+→ Enable hardware-enforced stack protection on all supported enterprise workstations.
 
-Have you confirmed that your browser update policy is successfully reaching 100% of your fleet? 👇
+Have you automated your browser patch deployment to happen within four hours of release? 👇
 
 #Cybersecurity #PatchManagement #Infosec #ZeroTrust #SecurityLeadership #CodeDefence
   ]]></description>
