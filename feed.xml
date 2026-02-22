@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 21 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 22 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Sat, 21 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Sun, 22 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 21 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 22 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 22 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
@@ -15,13 +15,13 @@
 
 <item>
   <title>Your webmail is a silent doorway for state-sponsored espionage. 📧</title>
-  <link>https://codedefence.in/blog/2026/02/21/roundcube-webmail-critical-rce-alert</link>
-  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/roundcube-webmail-critical-rce-alert</guid>
+  <link>https://codedefence.in/blog/2026/02/22/roundcube-webmail-critical-exploitation</link>
+  <pubDate>Sun, 22 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/22/roundcube-webmail-critical-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-49113</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Saturday 20:00–22:00 +0300</cd:besttime>
+  <cd:besttime>Monday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Dramatic dark-blue cinematic editorial. A digital envelope with glowing orange binary code leaking from its seams. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'WEBMAIL UNDER ATTACK.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
@@ -30,13 +30,13 @@ Your webmail is a silent doorway for state-sponsored espionage. 📧
 
 CVE-2025-49113 · Severity 9.9 · Critical Remote Code Execution in Roundcube Webmail.
 
-We are seeing attackers leverage this deserialization flaw to take full control of affected systems. This vulnerability was added to the @[CISA](urn:li:organization:13010360) KEV catalog in the last 24 hours due to active exploitation by advanced threat groups.
+We are seeing attackers leverage this deserialization flaw to take full control of affected systems. This vulnerability was recently added to the @[CISA](urn:li:organization:13010360) KEV catalog due to rapid weaponization by advanced threat groups.
 
-Attackers are targeting unpatched webmail servers to steal login credentials and spy on sensitive communications. With over 53 million hosts potentially impacted, the window for remediation is closing rapidly.
+Attackers are targeting unpatched webmail servers to steal login credentials and spy on sensitive communications. With millions of potential targets, the window for remediation before a full compromise is closing.
 
 The uncomfortable truth: Your webmail is the most direct path for an attacker to compromise your corporate identity and internal communications.
 
-→ Patch Roundcube Webmail to version 1.6.11 or 1.5.10 LTS immediately.
+→ Patch Roundcube Webmail to the latest security version 1.6.11 or 1.5.10 immediately.
 → Audit your mail server logs for unauthorized PHP object deserialization attempts.
 → Force a password reset for all users if your server was exposed and unpatched.
 
@@ -47,27 +47,27 @@ Have you confirmed that your webmail infrastructure is running the latest securi
 </item>
 
 <item>
-  <title>If attackers own your remote access, they own your entire network. 🔓</title>
-  <link>https://codedefence.in/blog/2026/02/21/beyondtrust-rce-mass-exploitation</link>
-  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/beyondtrust-rce-mass-exploitation</guid>
+  <title>If attackers own your remote access, they own your network. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/22/beyondtrust-rce-ransomware-escalation</link>
+  <pubDate>Sun, 22 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/22/beyondtrust-rce-ransomware-escalation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-1731</cd:cve>
   <cd:mentions>@[BeyondTrust](urn:li:organization:12625), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Saturday 20:00–22:00 +0300</cd:besttime>
+  <cd:besttime>Monday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Cinematic editorial style. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'YOUR GATEWAY IS OPEN.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-If attackers own your remote access, they own your entire network. 🔓
+If attackers own your remote access, they own your network. 🔓
 
-CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in Remote Support and PRA.
+CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in BeyondTrust Remote Support.
 
-We are seeing a massive surge in exploitation attempts against @[BeyondTrust](urn:li:organization:12625) instances. The @[CISA](urn:li:organization:13010360) has issued an urgent deadline for federal agencies to remediate this flaw within three days.
+We are seeing a massive surge in exploitation attempts against @[BeyondTrust](urn:li:organization:12625) instances as ransomware groups integrate this into their playbooks. The @[CISA](urn:li:organization:13010360) has issued an urgent remediation warning due to the observed delivery of SparkRAT and VShell payloads.
 
-Attackers are currently deploying web shells and backdoors to achieve persistent access. This vulnerability allows for the execution of arbitrary commands with full administrative privileges without a valid login.
+Attackers are currently deploying persistent backdoors that allow for full administrative takeover without a valid login. This vulnerability highlights the extreme risk of maintaining internet-exposed management tools.
 
-The uncomfortable truth: The software you use to secure your environment is becoming the highest-risk point of failure for your enterprise.
+The uncomfortable truth: The software you use to secure your environment is becoming the most effective doorway for a full-scale ransomware attack.
 
 → Patch all self-hosted Remote Support and PRA appliances to version BT26-02 immediately.
 → Restrict appliance web management access to known IP ranges or a secure VPN only.
@@ -80,47 +80,47 @@ Is your remote access infrastructure currently internet-exposed without secondar
 </item>
 
 <item>
-  <title>Attackers just bypassed your Windows security prompts entirely. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/21/windows-shell-zero-day-bypass-alert</link>
-  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/windows-shell-zero-day-bypass-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-21510</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Saturday 21:00–23:00 +0300</cd:besttime>
+  <title>A single unauthenticated request can now compromise your web server. 🐚</title>
+  <link>https://codedefence.in/blog/2026/02/22/react2shell-critical-rce-alert</link>
+  <pubDate>Sun, 22 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/22/react2shell-critical-rce-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Monday 09:00–11:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A pixelated Windows security dialog box disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A digital web server interface with a bright red shell prompt overlay. Charcoal grey and electric blue palette. Bold white sans-serif overlay text: 'WEB SERVERS AT RISK.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Attackers just bypassed your Windows security prompts entirely. 🛡️
+A single unauthenticated request can now compromise your web server. 🐚
 
-CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen security.
+React2Shell · Severity Critical · Remote Code Execution in React Server Components.
 
-We are seeing attackers distribute malicious shortcut files that bypass SmartScreen warnings to execute code silently. This vulnerability allows for the suppression of are-you-sure dialogs for untrusted content on @[Microsoft](urn:li:organization:1035) systems.
+We are tracking a global wave of scanning activity as threat actors seek to exploit the React2Shell vulnerability. This flaw allows an unauthenticated attacker to take full control of vulnerable web servers with no more than a single request.
 
-This flaw is being used to deliver further payloads without raising user suspicion. It highlights a critical failure in the UI-based security boundaries that many organizations still rely on.
+Reports indicate that state-sponsored actors from multiple regions have already begun exploiting this in cloud and enterprise environments. Tens of thousands of instances remain exposed to the open internet tonight.
 
-The uncomfortable truth: User training won't save your network when the operating system fails to provide a warning for malicious content.
+The uncomfortable truth: Your modern web framework may be introducing critical vulnerabilities faster than your security team can scan for them.
 
-→ Apply the February 2026 security updates to all Windows endpoints immediately.
-→ Block the download or execution of .LNK and .URL files from external sources at the gateway.
-→ Enable Attack Surface Reduction rules to prevent shortcuts from launching untrusted code.
+→ Audit your web applications for vulnerable versions of React Server Components.
+→ Implement strict WAF rules to block unusual POST requests targeting server-side components.
+→ Conduct an immediate vulnerability scan of all public-facing web infrastructure.
 
-Are you still relying on user intuition to spot malicious shortcut and link files? 👇
+Do you have a real-time inventory of all web applications using React Server Components? 👇
 
-#Cybersecurity #EndpointSecurity #RansomwareProtection #VulnerabilityManagement #SOC #CodeDefence
+#Cybersecurity #AppSec #WebSecurity #ThreatIntelligence #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
   <title>Your browser update cycle is a race against active exploitation. 🌐</title>
-  <link>https://codedefence.in/blog/2026/02/21/chrome-zero-day-css-exploitation</link>
-  <pubDate>Sat, 21 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/21/chrome-zero-day-css-exploitation</guid>
+  <link>https://codedefence.in/blog/2026/02/22/chrome-zero-day-css-exploitation</link>
+  <pubDate>Sun, 22 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/22/chrome-zero-day-css-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2026-2441</cd:cve>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Saturday 21:00–23:00 +0300</cd:besttime>
+  <cd:besttime>Monday 12:00–13:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Data-viz style. A digital web browser interface with a single bright red broken link. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
