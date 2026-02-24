@@ -2,142 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 23 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 24 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Mon, 23 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 24 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 23 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 23 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 24 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Organized AI-powered attacks are now targeting national digital platforms. 🇦🇪</title>
-  <link>https://codedefence.in/blog/2026/02/23/uae-infrastructure-ai-attack-alert</link>
-  <pubDate>Mon, 23 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/23/uae-infrastructure-ai-attack-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[UAE Cybersecurity Council](urn:li:organization:71112480)</cd:mentions>
-  <cd:besttime>Monday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital representation of a city skyline with glowing data pulse lines being interrupted by static. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'AI WARFARE AT THE EDGE.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Organized AI-powered attacks are now targeting national digital platforms. 🇦🇪
-
-Sophisticated actors are using generative AI to adapt malicious tools in real-time, according to the @[UAE Cybersecurity Council](urn:li:organization:71112480). This wave specifically targets vital infrastructure and government digital services.
-
-We are seeing a shift where AI is used not just for phishing, but to automate the exploitation of discovered network gaps at a speed that traditional SOC teams struggle to match. These attacks are coordinated and designed to destabilize essential services.
-
-The uncomfortable truth: Your defensive response time must now be measured in seconds, as attackers have successfully automated the "human" part of the attack chain.
-
-→ Review and harden access to all public-facing government and critical infrastructure APIs.
-→ Deploy AI-augmented monitoring to detect automated, adaptive lateral movement.
-→ Conduct a tabletop exercise focused on high-speed, automated extortion scenarios.
-
-Is your incident response plan fast enough to counter an attack that adapts every few seconds? 👇
-
-#Cybersecurity #AI #NationalSecurity #InfrastructureProtection #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Attackers are using your remote support tools to deploy ransomware. 🔓</title>
-  <link>https://codedefence.in/blog/2026/02/23/beyondtrust-rce-ransomware-alert</link>
-  <pubDate>Mon, 23 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/19/beyondtrust-rce-ransomware-alert</guid>
+  <title>Your remote access tools are being used to dismantle your network. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/24/beyondtrust-rce-active-exploitation-escalation</link>
+  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/beyondtrust-rce-active-exploitation-escalation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-1731</cd:cve>
   <cd:mentions>@[BeyondTrust](urn:li:organization:12625), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Monday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'TRUSTED TOOLS, UNTRUSTED ACCESS.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'TRUSTED TOOLS, UNTRUSTED ACCESS.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Attackers are using your remote support tools to deploy ransomware. 🔓
+Your remote access tools are being used to dismantle your network. 🔓
 
-CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in Remote Support and PRA tools.
+CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in Remote Support and PRA.
 
-The @[CISA](urn:li:organization:13010360) has confirmed that this vulnerability is now being actively weaponized by ransomware groups. Attackers are bypassing authentication to deploy VShell and achieve full administrative persistence.
+We are seeing a major escalation in the exploitation of @[BeyondTrust](urn:li:organization:12625) instances. Attackers are currently bypassing authentication to deploy VShell backdoors and SparkRAT for persistent control. The @[CISA](urn:li:organization:13010360) has confirmed these flaws are being used for reconnaissance, lateral movement, and data theft.
 
-This affects self-hosted @[BeyondTrust](urn:li:organization:12625) instances that haven't applied the emergency patches. Because these tools have high-level access to your endpoints, a compromise here is often a "game over" scenario for the domain.
+This campaign has already impacted sectors in the U.S., France, and Germany. Because these tools often hold the highest privileges in your network, a compromise here allows an attacker to bypass traditional identity controls entirely.
 
-The uncomfortable truth: The tools you trust most for remote administration are currently the highest-value targets for initial network entry.
+The uncomfortable truth: If you are running an unpatched management portal exposed to the internet, it is no longer a question of if you will be breached, but how long they have already been inside.
 
 → Patch all self-hosted Remote Support and PRA appliances to version BT26-02 immediately.
-→ Restrict management portal access to internal VPN or verified IP ranges only.
-→ Audit your credential vaults for any unauthorized exports or new admin account creations.
+→ Restrict appliance portal access to internal VPN or verified IP allowlists only.
+→ Audit your main admin accounts for any unauthorized 60-second hijacks or new profile creations.
 
-Have you verified your remote support tool logs for unauthorized command execution today? 👇
+Have you confirmed that your remote support portals are hidden from public automated scanners? 👇
 
-#Cybersecurity #ZeroTrust #PatchManagement #Ransomware #CISO #CodeDefence
+#Cybersecurity #ZeroTrust #PatchManagement #IncidentResponse #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>A new supply chain worm is siphoning enterprise API keys and secrets. 🐚</title>
-  <link>https://codedefence.in/blog/2026/02/23/npm-shai-hulud-worm-alert</link>
-  <pubDate>Mon, 23 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/23/npm-shai-hulud-worm-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[GitHub](urn:li:organization:1118635)</cd:mentions>
-  <cd:besttime>Monday 20:00–21:30 +0300</cd:besttime>
+  <title>State-sponsored actors have established a permanent home in your backups. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/24/dell-recoverpoint-zero-day-espionage</link>
+  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/dell-recoverpoint-zero-day-espionage</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-22769</cd:cve>
+  <cd:mentions>@[Dell Technologies](urn:li:organization:1193), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A pixelated document icon disintegrating into digital dust with a worm-like data trail. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'POISONED PACKAGES.' Code Defence logo bottom-right corner. 1200×628px.
+    Cinematic editorial style. A digital storage rack with a single glowing red light in a dark room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THEY ARE IN YOUR BACKUPS.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-A new supply chain worm is siphoning enterprise API keys and secrets. 🐚
+State-sponsored actors have established a permanent home in your backups. 🛡️
 
-A cluster of at least 19 malicious npm packages has been identified in an active credential harvesting campaign. This "Shai-Hulud" worm automatically propagates by abusing stolen @[GitHub](urn:li:organization:1118635) identities.
+CVE-2026-22769 · Severity 10.0 · Hardcoded credentials in Dell RecoverPoint for Virtual Machines.
 
-The malicious code targets developer environments to steal environment secrets, access tokens, and cloud API keys. Once a developer is compromised, the worm uses their credentials to publish trojanized versions of legitimate packages to extend its reach.
+The @[CISA](urn:li:organization:13010360) has issued an emergency 3-day patch order for this maximum-severity flaw. Evidence shows that China-nexus espionage groups have been exploiting this since mid-2024 to move laterally across virtualized environments.
 
-The uncomfortable truth: Your internal software supply chain is only as secure as the personal GitHub account of your most distracted developer.
+Attackers are using "Ghost NICs" to quietly pivot through compromised networks without triggering standard EDR alarms. This vulnerability in @[Dell Technologies](urn:li:organization:1193) infrastructure allows for unauthorized access to the core of your disaster recovery stack.
 
-→ Run a scan of all internal node_modules for known malicious package fingerprints.
-→ Enforce hardware-based MFA for all npm and GitHub account access.
-→ Implement secrets scanning to prevent API keys from being stored in environment variables.
+The uncomfortable truth: Your disaster recovery environment is often the least monitored and most vulnerable part of your infrastructure.
 
-Do you have visibility into which third-party packages are currently running in your dev environments? 👇
+→ Patch @[Dell Technologies](urn:li:organization:1193) RecoverPoint for VMs to version 6.0.3.1 HF1 or later today.
+→ Rotate all administrative passwords for your virtualization management layer.
+→ Search for the presence of the Brickstorm or Grimbolt malware families within your VM clusters.
 
-#Cybersecurity #AppSec #SupplyChain #SoftwareSecurity #SOC #CodeDefence
+When was the last time you performed a forensic audit of your disaster recovery site? 👇
+
+#Cybersecurity #DataProtection #InfrastructureSecurity #ThreatIntelligence #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your webmail is a silent gateway for state-sponsored data theft. 📧</title>
-  <link>https://codedefence.in/blog/2026/02/23/roundcube-webmail-exploitation-escalation</link>
-  <pubDate>Mon, 23 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/23/roundcube-webmail-exploitation-escalation</guid>
+  <title>Your webmail is currently the lowest-resistance path for data theft. 📧</title>
+  <link>https://codedefence.in/blog/2026/02/24/roundcube-webmail-zero-day-exploitation</link>
+  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/roundcube-webmail-zero-day-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-49113</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Monday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Data-viz style. A digital envelope with a single bright red broken link. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'EXPOSED COMMUNICATIONS.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A digital envelope with a single bright red broken link representing compromised data. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'EXPOSED COMMUNICATIONS.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your webmail is a silent gateway for state-sponsored data theft. 📧
+Your webmail is currently the lowest-resistance path for data theft. 📧
 
 CVE-2025-49113 · Severity 9.9 · Critical deserialization vulnerability in Roundcube Webmail.
 
-The @[CISA](urn:li:organization:13010360) has recently added this to the KEV catalog as APT groups continue to exploit unpatched servers. This flaw allows an unauthenticated attacker to execute arbitrary code and gain access to sensitive mail data.
+The @[CISA](urn:li:organization:13010360) has added this to the KEV catalog as global exploitation spikes. This flaw allow unauthenticated attackers to execute arbitrary code simply by sending a malicious request to an unpatched mail server.
 
-We are seeing a surge in automated scanning for this specific vulnerability. Because webmail is often exposed to the public internet, it serves as a low-resistance entry point for lateral movement into the broader corporate network.
+We are seeing automated scripts harvesting credentials and exfiltrating private communications at scale. Because webmail is usually public-facing, it serves as the perfect initial entry point for broader network compromise.
 
-The uncomfortable truth: If your webmail is unpatched, your private communications have likely already been ingested by an automated collection script.
+The uncomfortable truth: If your webmail is unpatched, you should assume that your internal executive communications are no longer private.
 
-→ Update Roundcube Webmail to the latest stable release (1.6.11+) immediately.
+→ Update Roundcube Webmail to the latest security release (1.6.11+) immediately.
 → Audit mail server logs for unauthorized PHP object deserialization attempts.
-→ Review your DMZ architecture to ensure mail servers are properly segmented.
+→ Review your DMZ architecture to ensure mail servers are properly segmented from internal assets.
 
-Are you still running legacy on-premise webmail interfaces exposed to the public internet? 👇
+Is your webmail interface still exposed to the internet without a Web Application Firewall? 👇
 
-#Cybersecurity #EmailSecurity #ThreatIntelligence #SecurityLeadership #vCISO #CodeDefence
+#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Your browser update policy is a race against active zero-day kits. 🌐</title>
+  <link>https://codedefence.in/blog/2026/02/24/chrome-chromium-zero-day-escalation</link>
+  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/chrome-chromium-zero-day-escalation</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441), @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital web browser interface with glitching code elements. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Your browser update policy is a race against active zero-day kits. 🌐
+
+CVE-2026-2441 · Severity 8.8 · Active zero-day exploitation of Chromium CSS components.
+
+We are seeing a "double-patch" cycle where attackers are pivoting to this zero-day faster than enterprises can deploy the previous week's updates. This memory corruption flaw allows remote code execution via specifically crafted web pages on @[Google](urn:li:organization:1441) Chrome and @[Microsoft](urn:li:organization:1035) Edge.
+
+Exploit kits are already being utilized to deploy infostealers and achieve initial access. Because this vulnerability is tied to core CSS rendering, it cannot be "disabled" without breaking the web.
+
+The uncomfortable truth: Your users are one malicious click away from compromise, and reporting on the risk is not the same as neutralizing it.
+
+→ Force a global update for all Chromium browsers to version 145.0.7632.75 or higher.
+→ Enable hardware-enforced stack protection on all compatible enterprise workstations.
+→ Monitor for unusual outbound traffic originating from browser processes to unknown domains.
+
+Does your browser security stack actually block these exploits, or just report them after the fact? 👇
+
+#Cybersecurity #PatchManagement #Infosec #ZeroTrust #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
