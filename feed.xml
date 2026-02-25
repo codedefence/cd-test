@@ -2,146 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 24 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 25 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 24 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Wed, 25 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 24 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 25 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your remote access tools are being used to dismantle your network. 🔓</title>
-  <link>https://codedefence.in/blog/2026/02/24/beyondtrust-rce-active-exploitation-escalation</link>
-  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/beyondtrust-rce-active-exploitation-escalation</guid>
+  <title>Your file transfer gateway is now an active execution point for attackers. 📂</title>
+  <link>https://codedefence.in/blog/2026/02/25/soliton-filezen-critical-exploitation-alert</link>
+  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/soliton-filezen-critical-exploitation-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-1731</cd:cve>
-  <cd:mentions>@[BeyondTrust](urn:li:organization:12625), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
+  <cd:cve>CVE-2026-25108</cd:cve>
+  <cd:mentions>@[Soliton Systems](urn:li:organization:166291), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital silhouette of an open vault door glowing with orange data leaks. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'TRUSTED TOOLS, UNTRUSTED ACCESS.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital folder icon with glowing orange data leaks and a command prompt overlay. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'FILE TRANSFER EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your remote access tools are being used to dismantle your network. 🔓
+Your file transfer gateway is now an active execution point for attackers. 📂
 
-CVE-2026-1731 · Severity 9.9 · Critical unauthenticated RCE in Remote Support and PRA.
+CVE-2026-25108 · Severity 9.8 · Critical OS Command Injection in Soliton Systems FileZen.
 
-We are seeing a major escalation in the exploitation of @[BeyondTrust](urn:li:organization:12625) instances. Attackers are currently bypassing authentication to deploy VShell backdoors and SparkRAT for persistent control. The @[CISA](urn:li:organization:13010360) has confirmed these flaws are being used for reconnaissance, lateral movement, and data theft.
+The @[CISA](urn:li:organization:13010360) has confirmed active exploitation of @[Soliton Systems](urn:li:organization:166291) FileZen appliances within the last 24 hours. This vulnerability allows an unauthenticated attacker to execute arbitrary system commands via a crafted network request.
 
-This campaign has already impacted sectors in the U.S., France, and Germany. Because these tools often hold the highest privileges in your network, a compromise here allows an attacker to bypass traditional identity controls entirely.
+Attackers are currently leveraging this to establish initial access and move laterally into corporate networks. Because these devices handle sensitive file transfers, they serve as a high-value bridge between internal and external segments.
 
-The uncomfortable truth: If you are running an unpatched management portal exposed to the internet, it is no longer a question of if you will be breached, but how long they have already been inside.
+The uncomfortable truth: Your secure file transfer appliance is a prime target for attackers looking to bypass your perimeter without needing stolen credentials.
 
-→ Patch all self-hosted Remote Support and PRA appliances to version BT26-02 immediately.
-→ Restrict appliance portal access to internal VPN or verified IP allowlists only.
-→ Audit your main admin accounts for any unauthorized 60-second hijacks or new profile creations.
+→ Update all @[Soliton Systems](urn:li:organization:166291) FileZen instances to version 5.0.11 immediately.
+→ Reset all administrative and account passwords once the patch is applied.
+→ Audit your network logs for unusual outbound traffic originating from file transfer nodes.
 
-Have you confirmed that your remote support portals are hidden from public automated scanners? 👇
+Have you confirmed that your file transfer appliances are fully patched and isolated from direct internet access? 👇
 
-#Cybersecurity #ZeroTrust #PatchManagement #IncidentResponse #CISO #CodeDefence
+#Cybersecurity #DataSecurity #ZeroTrust #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>State-sponsored actors have established a permanent home in your backups. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/24/dell-recoverpoint-zero-day-espionage</link>
-  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/dell-recoverpoint-zero-day-espionage</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-22769</cd:cve>
-  <cd:mentions>@[Dell Technologies](urn:li:organization:1193), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital storage rack with a single glowing red light in a dark room. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'THEY ARE IN YOUR BACKUPS.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-State-sponsored actors have established a permanent home in your backups. 🛡️
-
-CVE-2026-22769 · Severity 10.0 · Hardcoded credentials in Dell RecoverPoint for Virtual Machines.
-
-The @[CISA](urn:li:organization:13010360) has issued an emergency 3-day patch order for this maximum-severity flaw. Evidence shows that China-nexus espionage groups have been exploiting this since mid-2024 to move laterally across virtualized environments.
-
-Attackers are using "Ghost NICs" to quietly pivot through compromised networks without triggering standard EDR alarms. This vulnerability in @[Dell Technologies](urn:li:organization:1193) infrastructure allows for unauthorized access to the core of your disaster recovery stack.
-
-The uncomfortable truth: Your disaster recovery environment is often the least monitored and most vulnerable part of your infrastructure.
-
-→ Patch @[Dell Technologies](urn:li:organization:1193) RecoverPoint for VMs to version 6.0.3.1 HF1 or later today.
-→ Rotate all administrative passwords for your virtualization management layer.
-→ Search for the presence of the Brickstorm or Grimbolt malware families within your VM clusters.
-
-When was the last time you performed a forensic audit of your disaster recovery site? 👇
-
-#Cybersecurity #DataProtection #InfrastructureSecurity #ThreatIntelligence #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Your webmail is currently the lowest-resistance path for data theft. 📧</title>
-  <link>https://codedefence.in/blog/2026/02/24/roundcube-webmail-zero-day-exploitation</link>
-  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/roundcube-webmail-zero-day-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-49113</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Data-viz style. A digital envelope with a single bright red broken link representing compromised data. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'EXPOSED COMMUNICATIONS.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Your webmail is currently the lowest-resistance path for data theft. 📧
-
-CVE-2025-49113 · Severity 9.9 · Critical deserialization vulnerability in Roundcube Webmail.
-
-The @[CISA](urn:li:organization:13010360) has added this to the KEV catalog as global exploitation spikes. This flaw allow unauthenticated attackers to execute arbitrary code simply by sending a malicious request to an unpatched mail server.
-
-We are seeing automated scripts harvesting credentials and exfiltrating private communications at scale. Because webmail is usually public-facing, it serves as the perfect initial entry point for broader network compromise.
-
-The uncomfortable truth: If your webmail is unpatched, you should assume that your internal executive communications are no longer private.
-
-→ Update Roundcube Webmail to the latest security release (1.6.11+) immediately.
-→ Audit mail server logs for unauthorized PHP object deserialization attempts.
-→ Review your DMZ architecture to ensure mail servers are properly segmented from internal assets.
-
-Is your webmail interface still exposed to the internet without a Web Application Firewall? 👇
-
-#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Your browser update policy is a race against active zero-day kits. 🌐</title>
-  <link>https://codedefence.in/blog/2026/02/24/chrome-chromium-zero-day-escalation</link>
-  <pubDate>Tue, 24 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/24/chrome-chromium-zero-day-escalation</guid>
+  <title>AI-powered assembly lines are now breaching firewalls at global scale. 🤖</title>
+  <link>https://codedefence.in/blog/2026/02/25/ai-powered-firewall-breach-wave</link>
+  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/ai-powered-firewall-breach-wave</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-2441</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441), @[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Tuesday 20:00–21:30 +0300</cd:besttime>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Amazon](urn:li:organization:1586), @[Fortinet](urn:li:organization:13303)</cd:mentions>
+  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital web browser interface with glitching code elements. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
+    Cinematic editorial style. A digital representation of a robotic arm typing at a glowing terminal, with multiple firewall shields shattering. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'AI-DRIVEN MASS EXPLOITATION.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your browser update policy is a race against active zero-day kits. 🌐
+AI-powered assembly lines are now breaching firewalls at global scale. 🤖
 
-CVE-2026-2441 · Severity 8.8 · Active zero-day exploitation of Chromium CSS components.
+Over 600 firewalls breached across 55 countries in just five weeks using generative AI tools.
 
-We are seeing a "double-patch" cycle where attackers are pivoting to this zero-day faster than enterprises can deploy the previous week's updates. This memory corruption flaw allows remote code execution via specifically crafted web pages on @[Google](urn:li:organization:1441) Chrome and @[Microsoft](urn:li:organization:1035) Edge.
+Security research from @[Amazon](urn:li:organization:1586) reveals that financially motivated threat actors are using commercial AI to automate the discovery and exploitation of weak credentials and single-factor authentication. This has allowed even low-skilled attackers to compromise network devices at an unprecedented scale.
 
-Exploit kits are already being utilized to deploy infostealers and achieve initial access. Because this vulnerability is tied to core CSS rendering, it cannot be "disabled" without breaking the web.
+The campaign has successfully impacted firewalls in South Asia, Latin America, and Northern Europe. Once inside, attackers are attempting to pivot further into the network to set up ransomware operations.
 
-The uncomfortable truth: Your users are one malicious click away from compromise, and reporting on the risk is not the same as neutralizing it.
+The uncomfortable truth: Your firewall is only as strong as its weakest authentication point, and AI has just made finding that weakness instantaneous.
 
-→ Force a global update for all Chromium browsers to version 145.0.7632.75 or higher.
-→ Enable hardware-enforced stack protection on all compatible enterprise workstations.
-→ Monitor for unusual outbound traffic originating from browser processes to unknown domains.
+→ Enforce multi-factor authentication (MFA) for all administrative access to network devices.
+→ Conduct an immediate audit of firewall login credentials to eliminate simple or default passwords.
+→ Monitor for rapid-fire login attempts that may indicate AI-driven automated brute forcing.
 
-Does your browser security stack actually block these exploits, or just report them after the fact? 👇
+Are you still relying on single-factor authentication for your core network security infrastructure? 👇
 
-#Cybersecurity #PatchManagement #Infosec #ZeroTrust #SecurityLeadership #CodeDefence
+#Cybersecurity #AI #NetworkSecurity #Ransomware #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>A decade-long espionage apparatus was just dismantled by threat researchers. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/25/google-disrupts-chinese-espionage-cluster</link>
+  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/google-disrupts-chinese-espionage-cluster</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Data-viz style. A complex web of digital connections with a single golden key representing a disrupted command center. Matte black and deep gold palette. Bold white sans-serif overlay text: 'ESPIONAGE NETWORK DISMANTLED.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+A decade-long espionage apparatus was just dismantled by threat researchers. 🛡️
+
+53 organizations globally · Compromised by a Chinese-linked hacking group using legitimate cloud tools.
+
+@[Google](urn:li:organization:1441) has disrupted the "Gallium" (UNC2814) cluster, which targeted government and telecommunications entities across 42 countries. The group used @[Google Sheets](urn:li:organization:1441) to blend their command-and-control traffic with normal network activity, making detection nearly impossible for standard tools.
+
+The group successfully exfiltrated call records and monitored SMS messages through lawful intercept capabilities. This disruption involved disabling the accounts and infrastructure used to manage the stolen data.
+
+The uncomfortable truth: Advanced actors are hiding in the cloud tools your business uses every day, making your own "allow-listed" traffic your biggest blind spot.
+
+→ Review and restrict third-party cloud app permissions across your environment.
+→ Monitor for unusual data exfiltration patterns to common SaaS platforms like Sheets or Drive.
+→ Audit your telecommunications lawful intercept interfaces for unauthorized access or configuration changes.
+
+How well does your SOC differentiate between legitimate cloud tool usage and malicious data exfiltration? 👇
+
+#Cybersecurity #ThreatIntelligence #Espionage #CloudSecurity #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Unauthenticated command execution can turn your routers into entry points. 🛑</title>
+  <link>https://codedefence.in/blog/2026/02/25/zyxel-router-critical-vulnerability-alert</link>
+  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/zyxel-router-critical-vulnerability-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>N/A</cd:cve>
+  <cd:mentions>@[Zyxel](urn:li:organization:10952)</cd:mentions>
+  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Graphic design poster style. A rusted digital router with a bright red warning light. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'ROUTER VULNERABILITY ALERT.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Unauthenticated command execution can turn your routers into entry points. 🛑
+
+Critical Severity · RCE vulnerability affecting over a dozen @[Zyxel](urn:li:organization:10952) router models.
+
+We are seeing reports of a critical flaw that allows unauthenticated attackers to gain remote command execution on unpatched @[Zyxel](urn:li:organization:10952) networking devices. This vulnerability provides a direct pathway for attackers to bypass edge security and establish persistence.
+
+Updates have been released to address this issue across affected models. Failure to patch allows attackers to pivot from the edge into the internal management network, potentially compromising sensitive corporate traffic.
+
+The uncomfortable truth: Your edge networking gear is the first line of defense, but also the first point of failure if it is not regularly audited and patched.
+
+→ Patch all @[Zyxel](urn:li:organization:10952) routers to the latest firmware version immediately.
+→ Disable remote management interfaces on routers unless absolutely required for operations.
+→ Ensure all networking gear is included in your automated vulnerability scanning schedule.
+
+Is your edge hardware currently part of your automated patch management cycle? 👇
+
+#Cybersecurity #NetworkSecurity #PatchManagement #Infosec #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
