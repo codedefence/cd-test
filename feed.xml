@@ -2,146 +2,146 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 25 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 26 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Wed, 25 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Thu, 26 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 25 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 26 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your file transfer gateway is now an active execution point for attackers. 📂</title>
-  <link>https://codedefence.in/blog/2026/02/25/soliton-filezen-critical-exploitation-alert</link>
-  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/soliton-filezen-critical-exploitation-alert</guid>
+  <title>Your SD-WAN fabric is under active attack for root-level control. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/02/26/cisco-sd-wan-emergency-directive-alert</link>
+  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/cisco-sd-wan-emergency-directive-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-25108</cd:cve>
-  <cd:mentions>@[Soliton Systems](urn:li:organization:166291), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <cd:cve>CVE-2026-20127</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital folder icon with glowing orange data leaks and a command prompt overlay. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'FILE TRANSFER EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital network map with glowing red nodes representing compromised SD-WAN controllers. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SD-WAN FABRIC COMPROMISED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your file transfer gateway is now an active execution point for attackers. 📂
+Your SD-WAN fabric is under active attack for root-level control. 🛡️
 
-CVE-2026-25108 · Severity 9.8 · Critical OS Command Injection in Soliton Systems FileZen.
+CVE-2026-20127 · Severity 10.0 · Critical Authentication Bypass in Cisco Catalyst SD-WAN.
 
-The @[CISA](urn:li:organization:13010360) has confirmed active exploitation of @[Soliton Systems](urn:li:organization:166291) FileZen appliances within the last 24 hours. This vulnerability allows an unauthenticated attacker to execute arbitrary system commands via a crafted network request.
+The @[CISA](urn:li:organization:13010360) has issued Emergency Directive 26-03 following confirmed active exploitation of @[Cisco](urn:li:organization:1063) SD-WAN Manager and Controller. This maximum-severity flaw allows unauthenticated remote attackers to obtain administrative privileges and manipulate entire network fabrics.
 
-Attackers are currently leveraging this to establish initial access and move laterally into corporate networks. Because these devices handle sensitive file transfers, they serve as a high-value bridge between internal and external segments.
+Federal agencies have been ordered to inventory all systems by tonight and apply patches by tomorrow afternoon. This is not just a vulnerability; it is a live campaign that dates back to 2023 and has now reached a critical threshold.
 
-The uncomfortable truth: Your secure file transfer appliance is a prime target for attackers looking to bypass your perimeter without needing stolen credentials.
+The uncomfortable truth: If your SD-WAN management plane is compromised, the attacker essentially owns every packet and policy across your entire wide-area network.
 
-→ Update all @[Soliton Systems](urn:li:organization:166291) FileZen instances to version 5.0.11 immediately.
-→ Reset all administrative and account passwords once the patch is applied.
-→ Audit your network logs for unusual outbound traffic originating from file transfer nodes.
+→ Inventory all Cisco Catalyst SD-WAN Manager and Controller instances immediately.
+→ Apply Cisco provided updates to address CVE-2026-20127 and CVE-2022-20775 by tomorrow.
+→ Conduct a deep hunt for indicators of compromise using the hunt guidance provided in ED 26-03.
 
-Have you confirmed that your file transfer appliances are fully patched and isolated from direct internet access? 👇
+Have you verified the integrity of your SD-WAN controller logs for unauthorized administrative logins? 👇
 
-#Cybersecurity #DataSecurity #ZeroTrust #PatchManagement #CISO #CodeDefence
+#Cybersecurity #NetworkSecurity #SDWAN #ZeroTrust #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>AI-powered assembly lines are now breaching firewalls at global scale. 🤖</title>
-  <link>https://codedefence.in/blog/2026/02/25/ai-powered-firewall-breach-wave</link>
-  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/ai-powered-firewall-breach-wave</guid>
+  <title>State-sponsored actors used your cloud spreadsheets as a spy tool. 📊</title>
+  <link>https://codedefence.in/blog/2026/02/26/google-sheets-espionage-disruption</link>
+  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/google-sheets-espionage-disruption</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[Amazon](urn:li:organization:1586), @[Fortinet](urn:li:organization:13303)</cd:mentions>
-  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <cd:mentions>@[Google](urn:li:organization:1441), @[Mandiant](urn:li:organization:264848)</cd:mentions>
+  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital representation of a robotic arm typing at a glowing terminal, with multiple firewall shields shattering. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'AI-DRIVEN MASS EXPLOITATION.' Code Defence logo bottom-right corner. 1200×628px.
+    Cinematic editorial style. A digital spreadsheet interface with glowing red rows representing hidden command-and-control traffic. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SHEETS AS A COVER.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-AI-powered assembly lines are now breaching firewalls at global scale. 🤖
+State-sponsored actors used your cloud spreadsheets as a spy tool. 📊
 
-Over 600 firewalls breached across 55 countries in just five weeks using generative AI tools.
+53 Organizations · 42 Countries · China-linked espionage cluster UNC2814 disrupted.
 
-Security research from @[Amazon](urn:li:organization:1586) reveals that financially motivated threat actors are using commercial AI to automate the discovery and exploitation of weak credentials and single-factor authentication. This has allowed even low-skilled attackers to compromise network devices at an unprecedented scale.
+@[Google](urn:li:organization:1441) and @[Mandiant](urn:li:organization:264848) have revealed a prolific campaign that used @[Google Sheets](urn:li:organization:1441) as a covert command-and-control (C2) channel. By hiding malicious traffic within legitimate cloud API requests, attackers evaded detection for nearly a decade while targeting telecoms and governments.
 
-The campaign has successfully impacted firewalls in South Asia, Latin America, and Northern Europe. Once inside, attackers are attempting to pivot further into the network to set up ransomware operations.
+The group deployed a novel backdoor named GridTide, which masqueraded as legitimate system processes. This camouflage allowed them to slip past standard network triggers by blending in with the cloud patterns teams see every day.
 
-The uncomfortable truth: Your firewall is only as strong as its weakest authentication point, and AI has just made finding that weakness instantaneous.
+The uncomfortable truth: Your greatest blind spot is the legitimate cloud software that your security tools are trained to ignore.
 
-→ Enforce multi-factor authentication (MFA) for all administrative access to network devices.
-→ Conduct an immediate audit of firewall login credentials to eliminate simple or default passwords.
-→ Monitor for rapid-fire login attempts that may indicate AI-driven automated brute forcing.
+→ Review and restrict API access to cloud productivity suites for non-essential service accounts.
+→ Monitor for unusual data transfer patterns to common SaaS platforms like Sheets or Drive.
+→ Audit your Linux servers for unauthorized binaries masquerading as package managers like apt.
 
-Are you still relying on single-factor authentication for your core network security infrastructure? 👇
+How does your SOC detect data exfiltration when it is disguised as a legitimate cloud API call? 👇
 
-#Cybersecurity #AI #NetworkSecurity #Ransomware #SOC #CodeDefence
+#Cybersecurity #ThreatIntelligence #CloudSecurity #Espionage #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>A decade-long espionage apparatus was just dismantled by threat researchers. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/25/google-disrupts-chinese-espionage-cluster</link>
-  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/google-disrupts-chinese-espionage-cluster</guid>
+  <title>Attackers found a way to bypass your Windows security prompts entirely. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/26/windows-shell-active-bypass-alert</link>
+  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/windows-shell-active-bypass-alert</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <cd:cve>CVE-2026-21510</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Data-viz style. A complex web of digital connections with a single golden key representing a disrupted command center. Matte black and deep gold palette. Bold white sans-serif overlay text: 'ESPIONAGE NETWORK DISMANTLED.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A pixelated Windows security dialog box disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-A decade-long espionage apparatus was just dismantled by threat researchers. 🛡️
+Attackers found a way to bypass your Windows security prompts entirely. 🔓
 
-53 organizations globally · Compromised by a Chinese-linked hacking group using legitimate cloud tools.
+CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen mechanisms.
 
-@[Google](urn:li:organization:1441) has disrupted the "Gallium" (UNC2814) cluster, which targeted government and telecommunications entities across 42 countries. The group used @[Google Sheets](urn:li:organization:1441) to blend their command-and-control traffic with normal network activity, making detection nearly impossible for standard tools.
+We are seeing a surge in attacks utilizing this @[Microsoft](urn:li:organization:1035) zero-day to bypass SmartScreen and Windows Shell security prompts. By tricking a user into clicking a crafted shortcut file, attackers can execute code without any user warning or consent.
 
-The group successfully exfiltrated call records and monitored SMS messages through lawful intercept capabilities. This disruption involved disabling the accounts and infrastructure used to manage the stolen data.
+The @[CISA](urn:li:organization:13010360) has added this to the KEV catalog as it is currently being used in active ransomware and infostealer campaigns. This flaw represents a fundamental breakdown in the UI-based security boundaries that many employees rely on.
 
-The uncomfortable truth: Advanced actors are hiding in the cloud tools your business uses every day, making your own "allow-listed" traffic your biggest blind spot.
+The uncomfortable truth: User training won't save you when the operating system's built-in warnings are successfully suppressed by the attacker.
 
-→ Review and restrict third-party cloud app permissions across your environment.
-→ Monitor for unusual data exfiltration patterns to common SaaS platforms like Sheets or Drive.
-→ Audit your telecommunications lawful intercept interfaces for unauthorized access or configuration changes.
+→ Apply the February 2026 security updates to all Windows endpoints immediately.
+→ Implement Attack Surface Reduction (ASR) rules to block the execution of potentially obfuscated scripts.
+→ Audit for unusual .LNK and .URL files arriving via email or downloaded from the web.
 
-How well does your SOC differentiate between legitimate cloud tool usage and malicious data exfiltration? 👇
+Are you still relying on user intuition to spot malicious shortcut files? 👇
 
-#Cybersecurity #ThreatIntelligence #Espionage #CloudSecurity #CISO #CodeDefence
+#Cybersecurity #EndpointSecurity #PatchManagement #Infosec #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Unauthenticated command execution can turn your routers into entry points. 🛑</title>
-  <link>https://codedefence.in/blog/2026/02/25/zyxel-router-critical-vulnerability-alert</link>
-  <pubDate>Wed, 25 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/25/zyxel-router-critical-vulnerability-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[Zyxel](urn:li:organization:10952)</cd:mentions>
-  <cd:besttime>Wednesday 20:00–21:30 +0300</cd:besttime>
+  <title>Legacy OLE components are the weakest link in your Office suite. 🖇️</title>
+  <link>https://codedefence.in/blog/2026/02/26/microsoft-word-ole-bypass-alert</link>
+  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/microsoft-word-ole-bypass-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-21514</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A rusted digital router with a bright red warning light. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'ROUTER VULNERABILITY ALERT.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A rusted digital chain with a glowing red link representing legacy OLE code. Matte black and deep gold palette. Bold white sans-serif overlay text: 'LEGACY RISKS ARE REAL.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Unauthenticated command execution can turn your routers into entry points. 🛑
+Legacy OLE components are the weakest link in your Office suite. 🖇️
 
-Critical Severity · RCE vulnerability affecting over a dozen @[Zyxel](urn:li:organization:10952) router models.
+CVE-2026-21514 · Severity 7.8 · Active bypass of OLE mitigations in @[Microsoft](urn:li:organization:1035) Word.
 
-We are seeing reports of a critical flaw that allows unauthenticated attackers to gain remote command execution on unpatched @[Zyxel](urn:li:organization:10952) networking devices. This vulnerability provides a direct pathway for attackers to bypass edge security and establish persistence.
+We are seeing attackers use crafted Word documents to bypass the OLE mitigations designed to protect users from malicious controls. This vulnerability is being actively exploited to achieve code execution when a user opens a compromised Office file.
 
-Updates have been released to address this issue across affected models. Failure to patch allows attackers to pivot from the edge into the internal management network, potentially compromising sensitive corporate traffic.
+This flaw is particularly dangerous because it bypasses the protections that users have come to expect in modern @[Microsoft](urn:li:organization:1035) 365 environments. While the Preview Pane is not affected, the act of opening a document is enough to initiate the compromise.
 
-The uncomfortable truth: Your edge networking gear is the first line of defense, but also the first point of failure if it is not regularly audited and patched.
+The uncomfortable truth: Your modern cloud security stack is only as strong as the legacy protocols it still supports.
 
-→ Patch all @[Zyxel](urn:li:organization:10952) routers to the latest firmware version immediately.
-→ Disable remote management interfaces on routers unless absolutely required for operations.
-→ Ensure all networking gear is included in your automated vulnerability scanning schedule.
+→ Patch all Microsoft 365 and Office installations with the latest February updates.
+→ Disable the execution of OLE objects via Group Policy for users who do not require it.
+→ Audit your email sandbox logs for Word documents attempting to trigger legacy COM controls.
 
-Is your edge hardware currently part of your automated patch management cycle? 👇
+Do you know which departments in your organization still rely on legacy OLE functionality? 👇
 
-#Cybersecurity #NetworkSecurity #PatchManagement #Infosec #SecurityLeadership #CodeDefence
+#Cybersecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #vCISO #CodeDefence
   ]]></description>
 </item>
 
