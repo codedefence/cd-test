@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 26 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 27 Feb 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Thu, 26 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Fri, 27 Feb 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 26 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 27 Feb 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 27 Feb 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
@@ -15,13 +15,13 @@
 
 <item>
   <title>Your SD-WAN fabric is under active attack for root-level control. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/26/cisco-sd-wan-emergency-directive-alert</link>
-  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/cisco-sd-wan-emergency-directive-alert</guid>
+  <link>https://codedefence.in/blog/2026/02/27/cisco-sd-wan-critical-bypass-emergency</link>
+  <pubDate>Fri, 27 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/27/cisco-sd-wan-critical-bypass-emergency</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-20127</cd:cve>
   <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Dramatic dark-blue cinematic editorial. A digital network map with glowing red nodes representing compromised SD-WAN controllers. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SD-WAN FABRIC COMPROMISED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
@@ -30,118 +30,118 @@ Your SD-WAN fabric is under active attack for root-level control. 🛡️
 
 CVE-2026-20127 · Severity 10.0 · Critical Authentication Bypass in Cisco Catalyst SD-WAN.
 
-The @[CISA](urn:li:organization:13010360) has issued Emergency Directive 26-03 following confirmed active exploitation of @[Cisco](urn:li:organization:1063) SD-WAN Manager and Controller. This maximum-severity flaw allows unauthenticated remote attackers to obtain administrative privileges and manipulate entire network fabrics.
+The @[CISA](urn:li:organization:13010360) has issued Emergency Directive 26-03 following confirmed active exploitation of @[Cisco](urn:li:organization:1063) SD-WAN Manager and Controller. This maximum-severity flaw allows unauthenticated remote attackers to bypass peering authentication and obtain high-privilege administrative access.
 
-Federal agencies have been ordered to inventory all systems by tonight and apply patches by tomorrow afternoon. This is not just a vulnerability; it is a live campaign that dates back to 2023 and has now reached a critical threshold.
+Federal agencies have been ordered to apply patches by 5:00 PM ET today. Evidence suggests that a sophisticated actor has been leveraging this flaw for silent network persistence. If your management plane is reachable from the internet, you are at immediate risk of a fabric-wide compromise.
 
-The uncomfortable truth: If your SD-WAN management plane is compromised, the attacker essentially owns every packet and policy across your entire wide-area network.
+The uncomfortable truth: If your SD-WAN controller is breached, the attacker can manipulate policies, route traffic, and add rogue peers across your entire global network.
 
-→ Inventory all Cisco Catalyst SD-WAN Manager and Controller instances immediately.
-→ Apply Cisco provided updates to address CVE-2026-20127 and CVE-2022-20775 by tomorrow.
-→ Conduct a deep hunt for indicators of compromise using the hunt guidance provided in ED 26-03.
+→ Patch Cisco Catalyst SD-WAN Manager and Controller instances to the fixed release immediately.
+→ Isolate SD-WAN management interfaces from the public internet using strict ACLs.
+→ Hunt for unauthorized peers or unexpected root-level logins in your controller logs.
 
-Have you verified the integrity of your SD-WAN controller logs for unauthorized administrative logins? 👇
+Have you verified the integrity of your SD-WAN peering authentication today? 👇
 
-#Cybersecurity #NetworkSecurity #SDWAN #ZeroTrust #CISO #CodeDefence
+#Cybersecurity #NetworkSecurity #ZeroTrust #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>State-sponsored actors used your cloud spreadsheets as a spy tool. 📊</title>
-  <link>https://codedefence.in/blog/2026/02/26/google-sheets-espionage-disruption</link>
-  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/google-sheets-espionage-disruption</guid>
+  <title>Your security console just became a gateway for a full system takeover. 🛑</title>
+  <link>https://codedefence.in/blog/2026/02/27/trend-micro-apex-one-rce-alert</link>
+  <pubDate>Fri, 27 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/27/trend-micro-apex-one-rce-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-71210</cd:cve>
+  <cd:mentions>@[Trend Micro](urn:li:organization:1843)</cd:mentions>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital security dashboard with a bright red shell prompt overlaying the interface. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SECURITY CONSOLE EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+Your security console just became a gateway for a full system takeover. 🛑
+
+CVE-2025-71210 · Severity 9.8 · Critical Path Traversal and RCE in Trend Micro Apex One.
+
+We are seeing a critical alert for @[Trend Micro](urn:li:organization:1843) Apex One users. A path traversal flaw in the management console allows an attacker to execute arbitrary code with system privileges. While the SaaS version has been updated, on-premise installations remain vulnerable until manually patched.
+
+Attackers can leverage this to disable endpoint protections and deploy ransomware across the entire managed environment. This vulnerability demonstrates that the tools meant to protect your fleet can be turned into a weapon against it.
+
+The uncomfortable truth: A single unpatched security management server can lead to a 100% compromise rate across your workstations.
+
+→ Update on-premise Apex One to Critical Patch Build 14136 or higher immediately.
+→ Restrict console access to administrative segments only.
+→ Monitor for unauthorized file modifications within the Apex One installation directories.
+
+Is your on-premise security infrastructure included in your emergency patch cycle? 👇
+
+#Cybersecurity #EndpointSecurity #Infosec #PatchManagement #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Attackers are weaponizing the core of the internet to bypass your filters. 🕸️</title>
+  <link>https://codedefence.in/blog/2026/02/27/arpa-phishing-campaign-alert</link>
+  <pubDate>Fri, 27 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/27/arpa-phishing-campaign-alert</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>N/A</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441), @[Mandiant](urn:li:organization:264848)</cd:mentions>
-  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital spreadsheet interface with glowing red rows representing hidden command-and-control traffic. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SHEETS AS A COVER.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A digital network web with a single glowing red strand representing the .arpa domain. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'CORE INFRASTRUCTURE ABUSED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-State-sponsored actors used your cloud spreadsheets as a spy tool. 📊
+Attackers are weaponizing the core of the internet to bypass your filters. 🕸️
 
-53 Organizations · 42 Countries · China-linked espionage cluster UNC2814 disrupted.
+New Phishing Anomaly · Reverse DNS abuse in the .arpa top-level domain.
 
-@[Google](urn:li:organization:1441) and @[Mandiant](urn:li:organization:264848) have revealed a prolific campaign that used @[Google Sheets](urn:li:organization:1441) as a covert command-and-control (C2) channel. By hiding malicious traffic within legitimate cloud API requests, attackers evaded detection for nearly a decade while targeting telecoms and governments.
+We are seeing a novel phishing method that bypasses traditional domain reputation checks by hosting malicious content on reverse DNS records within the .arpa space. Attackers are creating IPv6 tunnels and abusing @[Google](urn:li:organization:1441) and other DNS provider controls to host fraudulent sites.
 
-The group deployed a novel backdoor named GridTide, which masqueraded as legitimate system processes. This camouflage allowed them to slip past standard network triggers by blending in with the cloud patterns teams see every day.
+Because .arpa is a reserved infrastructure domain, most security products don't even look at it as a potential threat surface. This allows phishing emails to deliver links that look like legitimate internet plumbing while siphoning executive credentials.
 
-The uncomfortable truth: Your greatest blind spot is the legitimate cloud software that your security tools are trained to ignore.
+The uncomfortable truth: If your security stack only looks for malicious .com or .net URLs, you are blind to attacks coming from the internet's own foundation.
 
-→ Review and restrict API access to cloud productivity suites for non-essential service accounts.
-→ Monitor for unusual data transfer patterns to common SaaS platforms like Sheets or Drive.
-→ Audit your Linux servers for unauthorized binaries masquerading as package managers like apt.
+→ Block all outbound HTTP/HTTPS traffic to the .arpa top-level domain at the gateway.
+→ Inspect DNS logs for unusual reverse lookup patterns involving high-volume IPv6 tunnels.
+→ Update your phishing protection rules to include infrastructure-based TLDs.
 
-How does your SOC detect data exfiltration when it is disguised as a legitimate cloud API call? 👇
+Does your current web filter even recognize .arpa as a resolvable web destination? 👇
 
-#Cybersecurity #ThreatIntelligence #CloudSecurity #Espionage #CISO #CodeDefence
+#Cybersecurity #DNS #Phishing #InfrastructureSecurity #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Attackers found a way to bypass your Windows security prompts entirely. 🔓</title>
-  <link>https://codedefence.in/blog/2026/02/26/windows-shell-active-bypass-alert</link>
-  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/windows-shell-active-bypass-alert</guid>
+  <title>One click is still enough to bypass your entire Windows security stack. 🔓</title>
+  <link>https://codedefence.in/blog/2026/02/27/windows-shell-zero-day-exploitation</link>
+  <pubDate>Fri, 27 Feb 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/27/windows-shell-zero-day-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2026-21510</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Graphic design poster style. A pixelated Windows security dialog box disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Attackers found a way to bypass your Windows security prompts entirely. 🔓
-
-CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen mechanisms.
-
-We are seeing a surge in attacks utilizing this @[Microsoft](urn:li:organization:1035) zero-day to bypass SmartScreen and Windows Shell security prompts. By tricking a user into clicking a crafted shortcut file, attackers can execute code without any user warning or consent.
-
-The @[CISA](urn:li:organization:13010360) has added this to the KEV catalog as it is currently being used in active ransomware and infostealer campaigns. This flaw represents a fundamental breakdown in the UI-based security boundaries that many employees rely on.
-
-The uncomfortable truth: User training won't save you when the operating system's built-in warnings are successfully suppressed by the attacker.
-
-→ Apply the February 2026 security updates to all Windows endpoints immediately.
-→ Implement Attack Surface Reduction (ASR) rules to block the execution of potentially obfuscated scripts.
-→ Audit for unusual .LNK and .URL files arriving via email or downloaded from the web.
-
-Are you still relying on user intuition to spot malicious shortcut files? 👇
-
-#Cybersecurity #EndpointSecurity #PatchManagement #Infosec #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Legacy OLE components are the weakest link in your Office suite. 🖇️</title>
-  <link>https://codedefence.in/blog/2026/02/26/microsoft-word-ole-bypass-alert</link>
-  <pubDate>Thu, 26 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/26/microsoft-word-ole-bypass-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-21514</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Thursday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Data-viz style. A rusted digital chain with a glowing red link representing legacy OLE code. Matte black and deep gold palette. Bold white sans-serif overlay text: 'LEGACY RISKS ARE REAL.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A pixelated Windows security dialog box disintegrating into digital dust. Matte black and deep gold palette. Bold white sans-serif overlay text: 'UI PROTECTION FAILURE.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Legacy OLE components are the weakest link in your Office suite. 🖇️
+One click is still enough to bypass your entire Windows security stack. 🔓
 
-CVE-2026-21514 · Severity 7.8 · Active bypass of OLE mitigations in @[Microsoft](urn:li:organization:1035) Word.
+CVE-2026-21510 · Severity 8.8 · Active exploitation of Windows Shell and SmartScreen.
 
-We are seeing attackers use crafted Word documents to bypass the OLE mitigations designed to protect users from malicious controls. This vulnerability is being actively exploited to achieve code execution when a user opens a compromised Office file.
+We are seeing a continued wave of exploitation targeting this @[Microsoft](urn:li:organization:1035) zero-day. Attackers use crafted shortcut files to bypass the SmartScreen security warnings that normally alert users to untrusted content. This allows for silent code execution upon a single user click.
 
-This flaw is particularly dangerous because it bypasses the protections that users have come to expect in modern @[Microsoft](urn:li:organization:1035) 365 environments. While the Preview Pane is not affected, the act of opening a document is enough to initiate the compromise.
+Ransomware groups have already integrated this bypass into their phishing kits to reduce the "friction" of an infection. When the OS fails to provide a warning, the last line of defense is removed.
 
-The uncomfortable truth: Your modern cloud security stack is only as strong as the legacy protocols it still supports.
+The uncomfortable truth: If you are relying on user intuition to spot malicious files, you have already lost the battle against sophisticated UI bypasses.
 
-→ Patch all Microsoft 365 and Office installations with the latest February updates.
-→ Disable the execution of OLE objects via Group Policy for users who do not require it.
-→ Audit your email sandbox logs for Word documents attempting to trigger legacy COM controls.
+→ Apply the February 2026 Microsoft security updates to all Windows endpoints today.
+→ Enable Attack Surface Reduction (ASR) rules to prevent obfuscated scripts from launching.
+→ Audit for unauthorized .LNK files in user profile temporary directories.
 
-Do you know which departments in your organization still rely on legacy OLE functionality? 👇
+Have you confirmed that your endpoint security policy is actively blocking untrusted script execution? 👇
 
-#Cybersecurity #DataPrivacy #VulnerabilityManagement #CyberRisk #vCISO #CodeDefence
+#Cybersecurity #EndpointSecurity #Ransomware #PatchManagement #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
