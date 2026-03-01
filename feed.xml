@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 28 Feb 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 01 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Sat, 28 Feb 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Sun, 01 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 28 Feb 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 28 Feb 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 01 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 01 Mar 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:promptVersion>2.0</cd:promptVersion>
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your SD-WAN fabric has been an open target for over three years. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/02/28/cisco-sd-wan-zero-day-escalation</link>
-  <pubDate>Sat, 28 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/28/cisco-sd-wan-zero-day-escalation</guid>
+  <title>Your SD-WAN fabric is under active attack for root-level control. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/01/cisco-sd-wan-emergency-directive-remediation</link>
+  <pubDate>Sun, 01 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/01/cisco-sd-wan-emergency-directive-remediation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-20127</cd:cve>
   <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Saturday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Monday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Dramatic dark-blue cinematic editorial. A digital network map with glowing red nodes representing compromised SD-WAN controllers. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SD-WAN FABRIC COMPROMISED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your SD-WAN fabric has been an open target for over three years. 🛡️
+Your SD-WAN fabric is under active attack for root-level control. 🛡️
 
 CVE-2026-20127 · Severity 10.0 · Critical Authentication Bypass in Cisco Catalyst SD-WAN.
 
-Evidence released in the last 24 hours confirms that a sophisticated threat actor has been exploiting @[Cisco](urn:li:organization:1063) SD-WAN controllers since at least 2023. The @[CISA](urn:li:organization:13010360) has issued Emergency Directive 26-03, mandating immediate federal action. This flaw allows unauthenticated attackers to gain root-level access by sending crafted requests to the management plane.
+The @[CISA](urn:li:organization:13010360) has issued Emergency Directive 26-03 following confirmed active exploitation of @[Cisco](urn:li:organization:1063) SD-WAN Manager and Controller. This maximum-severity flaw allows unauthenticated remote attackers to bypass peering authentication and obtain high-privilege administrative access.
 
-Attackers are using this access to add rogue peers and manipulate network policies across entire enterprise fabrics. If your management interfaces are reachable from the public internet, they should be considered compromised until proven otherwise.
+Evidence suggests that sophisticated actors have been leveraging this flaw for silent network persistence. If your management plane is reachable from the internet, you are at immediate risk of a fabric-wide compromise.
 
-The uncomfortable truth: A three-year-old zero-day in your core network fabric means your historical traffic data and network segmentation may have been visible to an adversary for years.
+The uncomfortable truth: If your SD-WAN controller is breached, the attacker can manipulate policies, route traffic, and add rogue peers across your entire global network.
 
-→ Patch all Cisco Catalyst SD-WAN Manager and Controller instances to the fixed release immediately.
-→ Conduct a deep forensic audit of controller logs for unauthorized peer additions or version downgrades.
-→ Strictly isolate all SD-WAN management interfaces from the public internet.
+→ Patch Cisco Catalyst SD-WAN Manager and Controller instances to the fixed release immediately.
+→ Isolate SD-WAN management interfaces from the public internet using strict ACLs.
+→ Hunt for unauthorized peers or unexpected root-level logins in your controller logs.
 
-Have you audited your SD-WAN controller for unauthorized peer relationships this weekend? 👇
+Have you verified the integrity of your SD-WAN peering authentication today? 👇
 
 #Cybersecurity #NetworkSecurity #ZeroTrust #PatchManagement #CISO #CodeDefence
   ]]></description>
@@ -48,13 +48,13 @@ Have you audited your SD-WAN controller for unauthorized peer relationships this
 
 <item>
   <title>Leaked cloud keys are exposing your private AI data to the public. 🔑</title>
-  <link>https://codedefence.in/blog/2026/02/28/google-cloud-api-key-exposure-alert</link>
-  <pubDate>Sat, 28 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/28/google-cloud-api-key-exposure-alert</guid>
+  <link>https://codedefence.in/blog/2026/03/01/google-cloud-api-key-exposure-alert</link>
+  <pubDate>Sun, 01 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/01/google-cloud-api-key-exposure-alert</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>N/A</cd:cve>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Saturday 20:00–21:30 +0300</cd:besttime>
+  <cd:besttime>Monday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Cinematic editorial style. A digital representation of a golden key fracturing into glowing binary code. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'AI ACCESS EXPOSED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
@@ -80,68 +80,68 @@ Do you have a real-time inventory of every API key currently active in your clou
 </item>
 
 <item>
-  <title>One click is still enough to bypass your entire Windows security stack. 🔓</title>
-  <link>https://codedefence.in/blog/2026/02/28/microsoft-word-zero-day-exploitation-wave</link>
-  <pubDate>Sat, 28 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/28/microsoft-word-zero-day-exploitation-wave</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-21514</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Saturday 20:00–21:30 +0300</cd:besttime>
+  <title>Your webmail is a silent doorway for state-sponsored data theft. 📧</title>
+  <link>https://codedefence.in/blog/2026/03/01/roundcube-webmail-exploitation-alert</link>
+  <pubDate>Sun, 01 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/01/roundcube-webmail-exploitation-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-49113</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Monday 09:00–11:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A pixelated document icon disintegrating into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'BYPASSING YOUR DEFENSES.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A digital envelope with glowing orange binary code leaking from its seams. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'WEBMAIL UNDER ATTACK.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-One click is still enough to bypass your entire Windows security stack. 🔓
+Your webmail is a silent doorway for state-sponsored data theft. 📧
 
-CVE-2026-21514 · Severity 7.8 · Active exploitation of OLE bypass in Microsoft Word.
+CVE-2025-49113 · Severity 9.9 · Critical deserialization vulnerability in Roundcube Webmail.
 
-Attackers are actively utilizing this @[Microsoft](urn:li:organization:1035) zero-day to deliver malware via crafted Office documents. By exploiting a failure in OLE mitigations, this vulnerability allows an attacker to bypass the security prompts that would normally warn a user about dangerous content.
+The @[CISA](urn:li:organization:13010360) has confirmed active exploitation of Roundcube Webmail as APT groups continue to exploit unpatched servers. This flaw allows an unauthenticated attacker to execute arbitrary code simply by sending a malicious request to an unpatched mail server.
 
-The @[CISA](urn:li:organization:13010360) has confirmed this is being used in live phishing campaigns to deliver ransomware and infostealers. When the operating system fails to provide a warning, the "human firewall" is effectively neutralized.
+We are seeing automated scripts harvesting credentials and exfiltrating private communications at scale. Because webmail is usually public-facing, it serves as the perfect initial entry point for broader network compromise.
 
-The uncomfortable truth: If your security strategy depends on users spotting malicious files, you have no defense against an exploit that silences the system's own warnings.
+The uncomfortable truth: If your webmail is unpatched, you should assume that your internal executive communications are no longer private.
 
-→ Apply the February 2026 Microsoft security updates to all Office installations immediately.
-→ Enforce Protected View for all documents originating from the internet or external email.
-→ Disable OLE object execution via Group Policy for all non-essential business units.
+→ Update Roundcube Webmail to the latest security release (1.6.11+) immediately.
+→ Audit mail server logs for unauthorized PHP object deserialization attempts.
+→ Review your DMZ architecture to ensure mail servers are properly segmented from internal assets.
 
-Are you still relying on user training to catch what the OS should be blocking? 👇
+Is your webmail interface still exposed to the internet without a Web Application Firewall? 👇
 
-#Cybersecurity #EndpointSecurity #PatchManagement #Infosec #SOC #CodeDefence
+#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your simple text editor is now a high-risk remote execution point. 📝</title>
-  <link>https://codedefence.in/blog/2026/02/28/windows-notepad-rce-escalation</link>
-  <pubDate>Sat, 28 Feb 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/02/28/windows-notepad-rce-escalation</guid>
+  <title>Your browser update cycle is a race against active zero-day kits. 🌐</title>
+  <link>https://codedefence.in/blog/2026/03/01/chrome-zero-day-exploitation-escalation</link>
+  <pubDate>Sun, 01 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/01/chrome-zero-day-exploitation-escalation</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-20841</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Saturday 20:00–21:30 +0300</cd:besttime>
+  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Monday 12:00–13:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Data-viz style. A complex web of digital connections with a single, bright red broken link representing Notepad code. Matte black and deep gold palette. Bold white sans-serif overlay text: 'ONE CLICK TO COMPROMISE.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A digital web browser interface with a single bright red broken link. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME IS THE PERIMETER.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your simple text editor is now a high-risk remote execution point. 📝
+Your browser update cycle is a race against active zero-day kits. 🌐
 
-CVE-2026-20841 · Severity 7.8 · Remote code execution via Markdown links in Windows 11 Notepad.
+CVE-2026-2441 · Severity 8.8 · First actively exploited Chrome zero-day of 2026 targeting CSS components.
 
-We are seeing a surge in attacks utilizing trojanized "README" files that exploit improper protocol handling in the @[Microsoft](urn:li:organization:1035) Notepad Store app. A single click on a crafted Markdown link can trigger a remote file download and execution.
+We are seeing a continued surge in exploitation targeting this @[Google](urn:li:organization:1441) zero-day. Attackers use specifically crafted web pages to trigger a use-after-free condition, achieving remote code execution within the browser sandbox.
 
-This vulnerability illustrates how even the most basic native applications are now being weaponized to bypass traditional perimeter defenses. If your organization relies on automated Store app updates, your patching may be lagging behind the active threat.
+Exploit kits have been observed delivering infostealers and ransomware payloads via this vulnerability. While a patch is available, manual update lags in enterprise fleets remain a primary target for initial access.
 
-The uncomfortable truth: Every application on your endpoint that can render a link is a potential remote execution engine for an attacker.
+The uncomfortable truth: Your users are one malicious click away from compromise, and reporting on the risk is not the same as neutralizing it.
 
-→ Update the Microsoft Notepad App via the Store to version 11.2510 or higher today.
-→ Restrict the use of high-risk protocol handlers (like ms-appinstaller) at the OS level.
-→ Audit your environment for unexpected process chains originating from notepad.exe.
+→ Force a global update for all Chrome instances to version 145.0.7632.75 or higher.
+→ Enable hardware-enforced stack protection on all compatible enterprise workstations.
+→ Monitor for unusual outbound traffic originating from browser processes to unknown domains.
 
-Do you treat your native Windows App updates with the same urgency as your core OS patches? 👇
+Does your browser security stack actually block these exploits, or just report them after the fact? 👇
 
-#Cybersecurity #AppSec #VulnerabilityManagement #CyberRisk #vCISO #CodeDefence
+#Cybersecurity #PatchManagement #Infosec #ZeroTrust #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
