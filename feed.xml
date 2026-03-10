@@ -2,143 +2,144 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 09 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 10 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Mon, 09 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 10 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 09 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 09 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 10 Mar 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your Android fleet is facing the largest security update in years. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/09/android-qualcomm-zero-day-emergency-patch</link>
-  <pubDate>Mon, 09 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/09/android-qualcomm-zero-day-emergency-patch</guid>
+  <title>Microsoft patches six actively exploited zero-days in massive Patch Tuesday. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/10/microsoft-patch-tuesday-march-2026-zero-day-alert</link>
+  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/microsoft-patch-tuesday-march-2026-zero-day-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21385</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441), @[Qualcomm](urn:li:organization:2113)</cd:mentions>
-  <cd:besttime>Tuesday 08:00–10:00 +0300</cd:besttime>
+  <cd:cve>CVE-2026-21510</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Wednesday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A pixelated smartphone icon disintegrating into digital dust with 129 glowing patch points. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'MOBILE ZERO-DAY ACTIVE.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital shield icon with six glowing orange fracture lines. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SIX ZERO-DAYS PATCHED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your Android fleet is facing the largest security update in years. 📱
+Microsoft patches six actively exploited zero-days in massive Patch Tuesday. 🛡️
 
-CVE-2026-21385 · Severity 7.8 · Active Zero-Day Exploitation in Qualcomm Display Components.
+March 2026 Patch Tuesday · 58 Flaws total · 6 Zero-Days under active exploitation.
 
-@[Google](urn:li:organization:1441) has released its most significant Android update in nearly eight years, patching 129 vulnerabilities. This includes an actively exploited zero-day in @[Qualcomm](urn:li:organization:2113) graphics components affecting 234 different chipsets. The flaw allows for memory corruption and unauthorized code execution.
+@[Microsoft](urn:li:organization:1035) has released its most critical security update of 2026. The patch addresses six vulnerabilities (CVE-2026-21510, 21513, 21514, 21519, 21525, 21533) that are confirmed as being used in the wild for remote code execution and elevation of privilege.
 
-We are seeing targeted attacks against high-value individuals, including executives and government officials. Because this exists at the chipset level, it can bypass standard software-based sandboxes. This update is critical for any organization with a managed mobile fleet.
+These flaws impact the Windows Shell, MSHTML Framework, and Microsoft Word. Attackers are currently using them to bypass security prompts and execute malicious code the moment a user views a crafted document or link. The @[CISA](urn:li:organization:13010360) has mandated immediate remediation for these flaws across federal agencies.
 
-The uncomfortable truth: Your corporate perimeter is only as secure as the personal mobile device your most privileged user uses to access the network.
+The uncomfortable truth: If your enterprise workstations are not patched by the end of today, you are operating with multiple open doors for state-sponsored and ransomware actors.
 
-→ Force a security update for all managed Android devices to the March 2026 patch level today.
-→ Update your MDM policies to block unpatched devices from accessing corporate resources.
-→ Monitor for unusual display-related system crashes that may indicate exploitation attempts.
+→ Apply the March 2026 Microsoft security updates to all Windows endpoints immediately.
+→ Prioritize systems running legacy MSHTML and Word components, as these are the primary vectors for initial entry.
+→ Audit your environment for unusual process executions originating from Shell and Office binaries.
 
-Are you treating mobile security updates with the same urgency as your core server patches? 👇
+Is your automated patching cycle fast enough to deploy these critical fixes within the next 12 hours? 👇
 
-#Cybersecurity #MobileSecurity #Android #Qualcomm #CISO #CodeDefence
+#Cybersecurity #PatchTuesday #Microsoft #ZeroDay #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your Nginx backups are now an open book for unauthenticated attackers. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/09/nginx-ui-critical-backup-exposure</link>
-  <pubDate>Mon, 09 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/09/nginx-ui-critical-backup-exposure</guid>
+  <title>ShinyHunters claims breach of 400 companies via cloud misconfigurations. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/10/salesforce-experience-cloud-data-theft-alert</link>
+  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/salesforce-experience-cloud-data-theft-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Salesforce](urn:li:organization:1509), @[Mandiant](urn:li:organization:264848)</cd:mentions>
+  <cd:besttime>Wednesday 08:00–10:00 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital web interface with a bright red shell prompt appearing over corporate logos. Deep navy and electric cyan palette. Bold white sans-serif overlay text: '400 COMPANIES BREACHED.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+ShinyHunters claims breach of 400 companies via cloud misconfigurations. 🐚
+
+Data Theft Alert · Exploitation of overly permissive Experience Cloud guest users.
+
+The ShinyHunters hacking group claims to have compromised roughly 400 companies by exploiting insecure guest user configurations on @[Salesforce](urn:li:organization:1509) Experience Cloud sites. @[Mandiant](urn:li:organization:264848) has confirmed that attackers are using a modified version of the AuraInspector tool to perform mass scans for vulnerable sites.
+
+By bypassing record-query limitations, attackers have been siphoning sensitive data from public-facing portals since late 2025. This campaign specifically targets organizations that have not restricted guest user visibility or disabled self-registration features on their cloud sites.
+
+The uncomfortable truth: Your cloud collaboration platforms are the new primary frontier for mass data exfiltration if your default permissions are not set to Private.
+
+→ Review and restrict @[Salesforce](urn:li:organization:1509) Experience Cloud guest user permissions immediately.
+→ Uncheck 'Portal User Visibility' and 'Site User Visibility' in Sharing Settings to prevent member enumeration.
+→ Disable self-registration if your site does not require unauthenticated visitors to create accounts.
+
+Have you audited your public cloud portal configurations for overly permissive guest access this month? 👇
+
+#Cybersecurity #CloudSecurity #Salesforce #DataBreach #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds SolarWinds and Ivanti flaws to Known Exploited Vulnerabilities. 🔓</title>
+  <link>https://codedefence.in/blog/2026/03/10/cisa-kev-addition-solarwinds-ivanti-workspaceone</link>
+  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/cisa-kev-addition-solarwinds-ivanti-workspaceone</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-26399</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360), @[Ivanti](urn:li:organization:36124), @[SolarWinds](urn:li:organization:166292)</cd:mentions>
+  <cd:besttime>Wednesday 09:00–11:00 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Graphic design poster style. A digital toolkit icon fracturing into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'MANAGEMENT TOOLS EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+CISA adds SolarWinds and Ivanti flaws to Known Exploited Vulnerabilities. 🔓
+
+CVE-2025-26399 · Severity 9.8 · Deserialization RCE in SolarWinds Web Help Desk.
+
+The @[CISA](urn:li:organization:13010360) has added three security flaws to its KEV catalog in the last 24 hours. This includes a critical RCE in @[SolarWinds](urn:li:organization:166292) Web Help Desk and a high-severity authentication bypass in @[Ivanti](urn:li:organization:36124) Endpoint Manager (CVE-2026-1603) that allows unauthenticated attackers to leak credential data.
+
+These management tools are high-value targets because they often hold administrative access to vast segments of the enterprise. Attackers are prioritizing these platforms to establish initial access and move laterally into sensitive internal environments.
+
+The uncomfortable truth: The tools you use to manage your network are currently the most effective way for an attacker to dismantle it.
+
+→ Patch SolarWinds Web Help Desk and Ivanti Endpoint Manager to the latest resolved versions immediately.
+→ Strictly isolate all management interfaces from the public internet using secure VPNs or zero-trust gateways.
+→ Monitor for unauthorized credential access or anomalous administrative command execution.
+
+Are you managing your support and management tools with the same rigor as your production servers? 👇
+
+#Cybersecurity #VulnerabilityManagement #SolarWinds #Ivanti #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Your Nginx backups are now an open book for unauthenticated attackers. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/10/nginx-ui-critical-backup-exposure-update</link>
+  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/nginx-ui-critical-backup-exposure-update</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-27944</cd:cve>
   <cd:mentions>@[Nginx](urn:li:organization:2410313)</cd:mentions>
-  <cd:besttime>Tuesday 08:00–10:00 +0300</cd:besttime>
+  <cd:besttime>Wednesday 12:00–13:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital folder icon with glowing orange data leaks appearing over a web server interface. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'BACKUPS EXPOSED.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A digital folder icon with glowing orange data leaks appearing over a web server interface. Matte black and deep gold palette. Bold white sans-serif overlay text: 'BACKUPS EXPOSED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your Nginx backups are now an open book for unauthenticated attackers. 🛡️
+Your Nginx backups are now an open book for unauthenticated attackers. 🐚
 
-CVE-2026-27944 · Severity 9.9 · Critical Unauthenticated Backup Download in Nginx UI.
+CVE-2026-27944 · Severity 9.8 · Unauthenticated Backup Download in Nginx UI.
 
-A critical vulnerability has been disclosed in Nginx UI that allows unauthenticated attackers to download and decrypt server backups. This flaw exposes sensitive configurations, including SSL private keys, environment secrets, and server-side credentials.
+A critical vulnerability in Nginx UI allows unauthenticated attackers to download and decrypt full system backups. The flaw stems from the /api/backup endpoint lacking authentication and exposing AES-256 encryption keys in the HTTP response headers.
 
-We are seeing automated scanners targeting Nginx UI instances to harvest these backups. Because this allows for full server impersonation and credential theft, it is a high-impact risk for web infrastructure and API gateways.
+Attackers can use this to obtain admin credentials, session tokens, and SSL private keys, allowing for full control of the management interface and website impersonation. Automated scanners are currently active, searching for exposed Nginx UI management portals.
 
-The uncomfortable truth: Your backup strategy is a weapon for an attacker if the management tool you use exposes them to the public internet.
+The uncomfortable truth: Your backup strategy is a weapon for an attacker if your management tool exposes the keys required to unlock them.
 
-→ Update Nginx UI to the latest security version immediately.
-→ Ensure that management interfaces are not internet-exposed and are behind a VPN.
-→ Rotate any SSL certificates and environment secrets if your Nginx UI instance was reachable.
+→ Update Nginx UI to the latest version and ensure the /api/backup endpoint is restricted.
+→ Restrict access to all management interfaces through private networks or secure tunnels.
+→ Rotate any SSL private keys and administrative credentials if your portal was internet-exposed.
 
-Have you verified that your web server management tools are hidden from public scanners? 👇
+Have you verified that your web server management tools are hidden from public automated scanners? 👇
 
-#Cybersecurity #WebSecurity #Nginx #DataPrivacy #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>A major phishing-as-a-service platform has been dismantled. 🔓</title>
-  <link>https://codedefence.in/blog/2026/03/09/tycoon-2fa-phishing-platform-takedown</link>
-  <pubDate>Mon, 09 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/09/tycoon-2fa-phishing-platform-takedown</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Tuesday 09:00–11:00 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Graphic design poster style. A digital web of connections with a single golden key representing a disrupted command center. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'PHISHING NETWORK DISRUPTED.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-A major phishing-as-a-service platform has been dismantled. 🔓
-
-Global Operation · Tycoon 2FA AitM phishing infrastructure taken down by law enforcement.
-
-In the last 24 hours, a coordinated international effort has dismantled Tycoon 2FA, one of the most prolific adversary-in-the-middle (AitM) phishing kits. This service allowed cybercriminals to bypass multi-factor authentication (MFA) for @[Microsoft](urn:li:organization:1035) 365 and @[Google](urn:li:organization:1441) Workspace accounts at scale.
-
-While this disruption is a significant win, history shows that affiliates of such platforms often migrate to newer, more resilient infrastructures quickly. This operation targeted the core servers used to intercept live authentication sessions and steal session cookies.
-
-The uncomfortable truth: Standard MFA is no longer a silver bullet against modern phishing kits that are designed to sit between the user and the legitimate service.
-
-→ Transition high-privileged users to phish-resistant MFA (FIDO2/WebAuthn).
-→ Shorten session token lifetimes and implement continuous access evaluation (CAE).
-→ Audit your identity logs for anomalous IP changes during active sessions.
-
-Are you moving your executive team toward hardware-based phishing-resistant security keys? 👇
-
-#Cybersecurity #MFA #Phishing #IdentitySecurity #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Attackers are using AI-powered tools to find your security gaps faster. 🤖</title>
-  <link>https://codedefence.in/blog/2026/03/09/ibm-threat-report-ai-exploitation</link>
-  <pubDate>Mon, 2026/03/09 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/09/ibm-threat-report-ai-exploitation</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[IBM](urn:li:organization:1009)</cd:mentions>
-  <cd:besttime>Tuesday 12:00–13:00 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Data-viz style. A digital representation of a robotic arm typing at a glowing terminal with multiple firewall shields shattering. Matte black and deep gold palette. Bold white sans-serif overlay text: 'AI SPEEDING UP ATTACKS.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Attackers are using AI-powered tools to find your security gaps faster. 🤖
-
-44% Increase · Global surge in attacks exploiting public-facing applications.
-
-The 2026 Threat Intelligence Index from @[IBM](urn:li:organization:1009) X-Force confirms that cybercriminals are using AI to find and exploit basic vulnerabilities faster than ever. This automation is driving a massive rise in attacks on internet-exposed systems, bypassing the need for human phishing.
-
-Manufacturing and finance remain the most targeted sectors. The report highlights that attackers aren't reinventing their playbooks—they are simply accelerating them. With AI, the time between a vulnerability being published and its mass exploitation has collapsed to near zero.
-
-The uncomfortable truth: Your manual patching and response cycles are no longer enough to counter an adversary that uses AI to scan and strike in seconds.
-
-→ Prioritize the patching of all public-facing applications and APIs today.
-→ Implement AI-augmented threat detection to catch automated, high-speed scanning activity.
-→ Conduct a full audit of your internet-exposed attack surface to reduce unnecessary exposure.
-
-Is your security team equipped with the same AI automation tools that your adversaries are using? 👇
-
-#Cybersecurity #AI #ThreatIntelligence #VulnerabilityManagement #SOC #CodeDefence
+#Cybersecurity #WebSecurity #Nginx #DataPrivacy #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
