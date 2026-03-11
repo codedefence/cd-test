@@ -2,107 +2,107 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 10 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 11 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Tue, 10 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Wed, 11 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 10 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 11 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 11 Mar 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Microsoft patches six actively exploited zero-days in massive Patch Tuesday. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/10/microsoft-patch-tuesday-march-2026-zero-day-alert</link>
-  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/microsoft-patch-tuesday-march-2026-zero-day-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21510</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Wednesday 08:00–10:00 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital shield icon with six glowing orange fracture lines. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'SIX ZERO-DAYS PATCHED.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Microsoft patches six actively exploited zero-days in massive Patch Tuesday. 🛡️
-
-March 2026 Patch Tuesday · 58 Flaws total · 6 Zero-Days under active exploitation.
-
-@[Microsoft](urn:li:organization:1035) has released its most critical security update of 2026. The patch addresses six vulnerabilities (CVE-2026-21510, 21513, 21514, 21519, 21525, 21533) that are confirmed as being used in the wild for remote code execution and elevation of privilege.
-
-These flaws impact the Windows Shell, MSHTML Framework, and Microsoft Word. Attackers are currently using them to bypass security prompts and execute malicious code the moment a user views a crafted document or link. The @[CISA](urn:li:organization:13010360) has mandated immediate remediation for these flaws across federal agencies.
-
-The uncomfortable truth: If your enterprise workstations are not patched by the end of today, you are operating with multiple open doors for state-sponsored and ransomware actors.
-
-→ Apply the March 2026 Microsoft security updates to all Windows endpoints immediately.
-→ Prioritize systems running legacy MSHTML and Word components, as these are the primary vectors for initial entry.
-→ Audit your environment for unusual process executions originating from Shell and Office binaries.
-
-Is your automated patching cycle fast enough to deploy these critical fixes within the next 12 hours? 👇
-
-#Cybersecurity #PatchTuesday #Microsoft #ZeroDay #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>ShinyHunters claims breach of 400 companies via cloud misconfigurations. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/10/salesforce-experience-cloud-data-theft-alert</link>
-  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/salesforce-experience-cloud-data-theft-alert</guid>
+  <title>Your public cloud portals are being systematically drained of corporate data. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/11/salesforce-aura-data-theft-campaign-alert</link>
+  <pubDate>Wed, 11 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/11/salesforce-aura-data-theft-campaign-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Salesforce](urn:li:organization:1509), @[Mandiant](urn:li:organization:264848)</cd:mentions>
-  <cd:besttime>Wednesday 08:00–10:00 +0300</cd:besttime>
+  <cd:besttime>Thursday 08:00–10:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital web interface with a bright red shell prompt appearing over corporate logos. Deep navy and electric cyan palette. Bold white sans-serif overlay text: '400 COMPANIES BREACHED.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital representation of a cloud portal fracturing into glowing red data streams. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CLOUD DATA THEFT ACTIVE.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-ShinyHunters claims breach of 400 companies via cloud misconfigurations. 🐚
+Your public cloud portals are being systematically drained of corporate data. 🐚
 
-Data Theft Alert · Exploitation of overly permissive Experience Cloud guest users.
+Data Theft Alert · ShinyHunters exploiting Salesforce Experience Cloud misconfigurations.
 
-The ShinyHunters hacking group claims to have compromised roughly 400 companies by exploiting insecure guest user configurations on @[Salesforce](urn:li:organization:1509) Experience Cloud sites. @[Mandiant](urn:li:organization:264848) has confirmed that attackers are using a modified version of the AuraInspector tool to perform mass scans for vulnerable sites.
+In the last 24 hours, evidence has surfaced of a massive data theft campaign targeting @[Salesforce](urn:li:organization:1509) Experience Cloud sites. The ShinyHunters group is utilizing a modified version of the AuraInspector tool to identify misconfigured guest user permissions, allowing them to exfiltrate records from over 300 companies.
 
-By bypassing record-query limitations, attackers have been siphoning sensitive data from public-facing portals since late 2025. This campaign specifically targets organizations that have not restricted guest user visibility or disabled self-registration features on their cloud sites.
+While @[Salesforce](urn:li:organization:1509) maintains the platform itself is secure, the issue stems from customer-configured guest access settings that allow unauthenticated users to query sensitive data. Attackers have bypassed previous record-limit restrictions and are actively harvesting data using the user agent Anthropic/RapeForceV2.01.39.
 
 The uncomfortable truth: Your cloud collaboration platforms are the new primary frontier for mass data exfiltration if your default permissions are not set to Private.
 
-→ Review and restrict @[Salesforce](urn:li:organization:1509) Experience Cloud guest user permissions immediately.
-→ Uncheck 'Portal User Visibility' and 'Site User Visibility' in Sharing Settings to prevent member enumeration.
-→ Disable self-registration if your site does not require unauthenticated visitors to create accounts.
+→ Review and restrict Salesforce Experience Cloud guest user permissions immediately.
+→ Disable 'Portal User Visibility' and 'Site User Visibility' in your global sharing settings.
+→ Audit your web logs for unusual GraphQL API queries originating from unknown user agents.
 
 Have you audited your public cloud portal configurations for overly permissive guest access this month? 👇
 
-#Cybersecurity #CloudSecurity #Salesforce #DataBreach #SOC #CodeDefence
+#Cybersecurity #CloudSecurity #Salesforce #DataBreach #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds SolarWinds and Ivanti flaws to Known Exploited Vulnerabilities. 🔓</title>
-  <link>https://codedefence.in/blog/2026/03/10/cisa-kev-addition-solarwinds-ivanti-workspaceone</link>
-  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/cisa-kev-addition-solarwinds-ivanti-workspaceone</guid>
+  <title>March Patch Tuesday fixes two zero-days and 79 security flaws. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/11/microsoft-patch-tuesday-march-2026-summary</link>
+  <pubDate>Wed, 11 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/11/microsoft-patch-tuesday-march-2026-summary</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21262</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:besttime>Thursday 08:00–10:00 +0300</cd:besttime>
+  <cd:imagebrief><![CDATA[
+    Cinematic editorial style. A digital shield icon with 79 glowing patch points. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'PATCH TUESDAY ALERT.' Code Defence logo bottom-right corner. 1200×628px.
+  ]]></cd:imagebrief>
+  <description><![CDATA[
+March Patch Tuesday fixes two zero-days and 79 security flaws. 🛡️
+
+March 2026 Patch Tuesday · 79 Vulnerabilities · 2 Publicly Disclosed Zero-Days.
+
+@[Microsoft](urn:li:organization:1035) has released its March 2026 security update, addressing critical vulnerabilities across the Windows ecosystem. The update includes fixes for two zero-days: an elevation of privilege flaw in SQL Server (CVE-2026-21262) and a denial of service vulnerability in .NET (CVE-2026-26127).
+
+While neither zero-day has confirmed active exploitation in the wild as of this morning, the public disclosure significantly increases the risk of rapid weaponization. The update also includes 18 remote code execution (RCE) fixes, with several labeled as critical impact for Office and Windows Graphics components.
+
+The uncomfortable truth: Your enterprise endpoints are currently vulnerable to multiple RCE and privilege escalation paths that are now public knowledge.
+
+→ Apply the March 2026 Microsoft security updates to all Windows endpoints and servers immediately.
+→ Prioritize the patching of SQL Server and .NET environments due to the zero-day disclosures.
+→ Ensure all Microsoft Office installations are updated to address critical RCE flaws in Excel and Word.
+
+Is your automated patching cycle fast enough to deploy these critical fixes within the next 24 hours? 👇
+
+#Cybersecurity #PatchTuesday #Microsoft #VulnerabilityManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA flags SolarWinds and Ivanti management tools as actively exploited. 🔓</title>
+  <link>https://codedefence.in/blog/2026/03/11/cisa-kev-addition-solarwinds-ivanti-alert</link>
+  <pubDate>Wed, 11 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/11/cisa-kev-addition-solarwinds-ivanti-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-26399</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360), @[Ivanti](urn:li:organization:36124), @[SolarWinds](urn:li:organization:166292)</cd:mentions>
-  <cd:besttime>Wednesday 09:00–11:00 +0300</cd:besttime>
+  <cd:besttime>Thursday 09:00–11:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Graphic design poster style. A digital toolkit icon fracturing into digital dust. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'MANAGEMENT TOOLS EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-CISA adds SolarWinds and Ivanti flaws to Known Exploited Vulnerabilities. 🔓
+CISA flags SolarWinds and Ivanti management tools as actively exploited. 🔓
 
 CVE-2025-26399 · Severity 9.8 · Deserialization RCE in SolarWinds Web Help Desk.
 
-The @[CISA](urn:li:organization:13010360) has added three security flaws to its KEV catalog in the last 24 hours. This includes a critical RCE in @[SolarWinds](urn:li:organization:166292) Web Help Desk and a high-severity authentication bypass in @[Ivanti](urn:li:organization:36124) Endpoint Manager (CVE-2026-1603) that allows unauthenticated attackers to leak credential data.
+The @[CISA](urn:li:organization:13010360) has added critical vulnerabilities in @[SolarWinds](urn:li:organization:166292) Web Help Desk and @[Ivanti](urn:li:organization:36124) Endpoint Manager (CVE-2026-1603) to the Known Exploited Vulnerabilities catalog. Reports indicate that ransomware groups are actively exploiting the SolarWinds flaw to achieve initial access and execute commands on host machines.
 
-These management tools are high-value targets because they often hold administrative access to vast segments of the enterprise. Attackers are prioritizing these platforms to establish initial access and move laterally into sensitive internal environments.
+Management platforms are high-value targets because they often possess deep administrative privileges across the entire enterprise. A compromise here allows an attacker to move laterally with ease and disable security controls across the network.
 
 The uncomfortable truth: The tools you use to manage your network are currently the most effective way for an attacker to dismantle it.
 
 → Patch SolarWinds Web Help Desk and Ivanti Endpoint Manager to the latest resolved versions immediately.
 → Strictly isolate all management interfaces from the public internet using secure VPNs or zero-trust gateways.
-→ Monitor for unauthorized credential access or anomalous administrative command execution.
+→ Monitor for unauthorized credential access or anomalous administrative command execution originating from these servers.
 
 Are you managing your support and management tools with the same rigor as your production servers? 👇
 
@@ -111,30 +111,30 @@ Are you managing your support and management tools with the same rigor as your p
 </item>
 
 <item>
-  <title>Your Nginx backups are now an open book for unauthenticated attackers. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/10/nginx-ui-critical-backup-exposure-update</link>
-  <pubDate>Tue, 10 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/10/nginx-ui-critical-backup-exposure-update</guid>
+  <title>Critical Nginx UI vulnerability allows unauthenticated backup theft. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/11/nginx-ui-unauthenticated-backup-alert</link>
+  <pubDate>Wed, 11 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/11/nginx-ui-unauthenticated-backup-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-27944</cd:cve>
   <cd:mentions>@[Nginx](urn:li:organization:2410313)</cd:mentions>
-  <cd:besttime>Wednesday 12:00–13:00 +0300</cd:besttime>
+  <cd:besttime>Thursday 12:00–13:00 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
     Data-viz style. A digital folder icon with glowing orange data leaks appearing over a web server interface. Matte black and deep gold palette. Bold white sans-serif overlay text: 'BACKUPS EXPOSED.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your Nginx backups are now an open book for unauthenticated attackers. 🐚
+Critical Nginx UI vulnerability allows unauthenticated backup theft. 🐚
 
 CVE-2026-27944 · Severity 9.8 · Unauthenticated Backup Download in Nginx UI.
 
-A critical vulnerability in Nginx UI allows unauthenticated attackers to download and decrypt full system backups. The flaw stems from the /api/backup endpoint lacking authentication and exposing AES-256 encryption keys in the HTTP response headers.
+A critical vulnerability in Nginx UI has been confirmed as under active exploitation. The flaw allows unauthenticated attackers to download and decrypt full system backups, exposing SSL private keys, administrative credentials, and session tokens.
 
-Attackers can use this to obtain admin credentials, session tokens, and SSL private keys, allowing for full control of the management interface and website impersonation. Automated scanners are currently active, searching for exposed Nginx UI management portals.
+Automated scanners are currently targeting Nginx UI management portals to harvest these backups. Because this allows for full server impersonation and administrative takeover, it represents a maximum-severity risk for any organization running an exposed Nginx UI instance.
 
-The uncomfortable truth: Your backup strategy is a weapon for an attacker if your management tool exposes the keys required to unlock them.
+The uncomfortable truth: Your backup strategy is an asset for an attacker if your management tool leaves the encryption keys exposed to the public internet.
 
-→ Update Nginx UI to the latest version and ensure the /api/backup endpoint is restricted.
-→ Restrict access to all management interfaces through private networks or secure tunnels.
+→ Update Nginx UI to the latest security version and ensure the backup API endpoint is restricted.
+→ Restrict access to all management interfaces through private networks or secure zero-trust tunnels.
 → Rotate any SSL private keys and administrative credentials if your portal was internet-exposed.
 
 Have you verified that your web server management tools are hidden from public automated scanners? 👇
