@@ -2,144 +2,143 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 12 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 13 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Thu, 12 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Fri, 13 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 12 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 12 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 13 Mar 2026 19:15:00 +0300</lastBuildDate>
   <atom:link href="https://codedefence.in/executive-briefing/rss"
              rel="self" type="application/rss+xml" />
   <cd:storyCount>4</cd:storyCount>
 
 <item>
-  <title>Your workflow automation is now an active execution engine for attackers. ⚙️</title>
-  <link>https://codedefence.in/blog/2026/03/12/n8n-critical-rce-cisa-kev-alert</link>
-  <pubDate>Thu, 12 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/12/n8n-critical-rce-cisa-kev-alert</guid>
+  <title>Google issues emergency patch for two Chrome zero-days exploited in the wild. 🌐</title>
+  <link>https://codedefence.in/blog/2026/03/13/chrome-emergency-patch-two-zero-days</link>
+  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/chrome-emergency-patch-two-zero-days</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-68613</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Friday 08:00–10:00 +0300</cd:besttime>
+  <cd:cve>CVE-2026-3909, CVE-2026-3910</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital gear icon fracturing with glowing red binary code leaking from the center. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'AUTOMATION EXPLOITED.' Code Defence logo bottom-right corner. 1200×628px.
+    Dramatic dark-blue cinematic editorial. A digital web browser interface with glitching code elements and two glowing red fracture lines. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME ZERO-DAYS ACTIVE.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your workflow automation is now an active execution engine for attackers. ⚙️
+Google issues emergency patch for two Chrome zero-days exploited in the wild. 🌐
 
-CVE-2025-68613 · Severity 9.9 · Critical Remote Code Execution in n8n.
+CVE-2026-3909 & CVE-2026-3910 · Severity 8.8 · Active Zero-Day Exploitation in Chrome.
 
-The @[CISA](urn:li:organization:13010360) has added a critical expression injection flaw in n8n to its Known Exploited Vulnerabilities catalog today. This vulnerability allows an unauthenticated attacker to execute arbitrary system-level commands by exploiting the workflow expression evaluation system.
+@[Google](urn:li:organization:1441) has released emergency security updates to address two high-severity vulnerabilities in Chrome that are being actively weaponized. CVE-2026-3909 involves an out-of-bounds write in the Skia graphics library, while CVE-2026-3910 is an inappropriate implementation in the V8 JavaScript engine.
 
-Current estimates show that over 24,000 n8n instances remain exposed on the internet without the necessary patches. Attackers are leveraging this to modify workflows, exfiltrate sensitive data from connected apps like Slack and Gmail, and gain full control over the underlying server environment.
+Both flaws can be triggered via crafted HTML pages to achieve remote code execution (RCE) or sandbox escapes. Evidence suggests these vulnerabilities are being targeted by commercial spyware vendors to compromise high-value targets. This is the third emergency update for Chrome in early 2026, highlighting the intense focus on browser-based initial access.
 
-The uncomfortable truth: Your automation platform has deeper access to your corporate data than almost any other tool, making it the highest-value target for initial entry.
+The uncomfortable truth: Your browser is the most frequently targeted entry point in your enterprise, and the window between a new zero-day and its mass exploitation is now measured in hours.
 
-→ Update n8n to version 1.120.4, 1.121.1, or 1.122.0 immediately.
-→ Strictly isolate n8n instances from the public internet using a secure VPN or Zero Trust gateway.
-→ Audit your workflow logs for any unauthorized modifications or anomalous outbound API requests.
+→ Force a global update for all Chrome instances to version 146.0.7680.75 or higher immediately.
+→ Enable hardware-enforced stack protection on all compatible Windows endpoints to mitigate RCE.
+→ Monitor for unusual outbound traffic originating from browser processes to unverified domains.
 
-Have you confirmed that your automation platform is not part of the 24,000 unpatched instances exposed online? 👇
+Have you confirmed that your browser update policy is fast enough to neutralize zero-days within 24 hours? 👇
 
-#Cybersecurity #AppSec #Automation #ZeroTrust #CISO #CodeDefence
+#Cybersecurity #Chrome #ZeroDay #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>A geopolitical wiper attack has crippled a global medical technology giant. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/12/stryker-wiper-attack-geopolitical-escalation</link>
-  <pubDate>Thu, 12 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/12/stryker-wiper-attack-geopolitical-escalation</guid>
+  <title>A geopolitical wiper attack exploited identity infrastructure to cripple Stryker. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/13/stryker-wiper-attack-intune-exploitation</link>
+  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/stryker-wiper-attack-intune-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Stryker](urn:li:organization:1592), @[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Friday 08:00–10:00 +0300</cd:besttime>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital medical monitor showing static and a 'Handala' logo overlay. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'WIPER ATTACK DISRUPTION.' Code Defence logo bottom-right corner. 1200×628px.
+    Cinematic editorial style. A digital representation of a central command console showing a 'Remote Wipe' command cascading across a global map. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'IDENTITY AS A WEAPON.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-A geopolitical wiper attack has crippled a global medical technology giant. 🛑
+A geopolitical wiper attack exploited identity infrastructure to cripple Stryker. 🛑
 
-Disruption Alert · Iran-linked 'Handala' group claims wiper attack on Stryker.
+Disruption Alert · Iran-linked 'Handala' group claims wiper attack on @[Stryker](urn:li:organization:1592).
 
-In the last 24 hours, @[Stryker](urn:li:organization:1592) has faced a massive systems outage following a destructive wiper attack. The pro-Palestinian group Handala has claimed responsibility, stating they have wiped thousands of @[Microsoft](urn:li:organization:1035) Windows endpoints across the company's global network in retaliation for geopolitical events.
+In a significant escalation, the 'Handala' group has claimed a destructive attack against medtech giant @[Stryker](urn:li:organization:1592). Reports indicate the attackers gained access to administrative credentials for @[Microsoft](urn:li:organization:1035) Intune, which they utilized to issue 'Remote Wipe' commands to thousands of corporate endpoints globally.
 
-This attack represents a significant escalation, shifting from financially motivated ransomware to purely destructive operations targeting critical healthcare supply chains. Reports indicate that corporate laptops and servers were suddenly disabled, with the attackers' logo appearing on encrypted or wiped screens.
+This method turns the organization's own management tools into a destructive weapon, bypassing traditional malware detection. Over 5,000 workers were reportedly sent home as systems were wiped in real-time. This incident demonstrates a shift toward identity-based destructive operations where compromised admin access is used for pure disruption.
 
-The uncomfortable truth: Your disaster recovery plan is no longer just for hardware failure; it is now a frontline defense against geopolitical cyber warfare.
+The uncomfortable truth: Your centralized management tools are your greatest operational efficiency, but also your single greatest point of catastrophic failure if identity security fails.
 
-→ Ensure your offline backups are current and have been tested for full-scale restoration.
-→ Implement strict network segmentation to prevent wiper malware from moving laterally across the globe.
-→ Monitor for unusual 'cleaning' or disk-level utility execution across your Windows fleet.
+→ Enforce phishing-resistant MFA (FIDO2) for all administrative accounts, especially those with Intune or Entra ID access.
+→ Implement strict Conditional Access policies to limit where and when administrative commands can be issued.
+→ Conduct a retrospective audit of Intune logs for any unauthorized remote wipe or system-wide configuration changes.
 
-Is your incident response plan prepared for a scenario where your entire endpoint fleet is suddenly unbootable? 👇
+Is your incident response plan prepared for a scenario where your own security tools are used to wipe your fleet? 👇
 
-#Cybersecurity #HealthcareSecurity #WiperMalware #IncidentResponse #SOC #CodeDefence
+#Cybersecurity #WiperAttack #Stryker #IdentitySecurity #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Your older Apple devices are now targets for the Coruna exploit kit. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/12/apple-webkit-coruna-exploit-kit-alert</link>
-  <pubDate>Thu, 12 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/12/apple-webkit-coruna-exploit-kit-alert</guid>
+  <title>Fake enterprise VPN clients are being used to siphon corporate credentials. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/13/fake-vpn-client-phishing-campaign-alert</link>
+  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/fake-vpn-client-phishing-campaign-alert</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2023-43010</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
-  <cd:besttime>Friday 09:00–11:00 +0300</cd:besttime>
+  <cd:mentions>@[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), @[Fortinet](urn:li:organization:13303)</cd:mentions>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Graphic design poster style. A rusted digital chain with a glowing red link representing a WebKit exploit. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'LEGACY BROWSER RISK.' Code Defence logo bottom-right corner. 1200×628px.
+    Graphic design poster style. A digital padlock icon with a bright red shell prompt appearing over VPN logos. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'POISONED VPN CLIENTS.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-Your older Apple devices are now targets for the Coruna exploit kit. 📱
+Fake enterprise VPN clients are being used to siphon corporate credentials. 🐚
 
-CVE-2023-43010 · Severity 8.8 · Active WebKit Exploitation in Legacy iOS and macOS.
+Phishing Alert · Storm-2561 distributing malicious @[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), and @[Fortinet](urn:li:organization:13303) installers.
 
-@[Apple](urn:li:organization:162479) has backported security fixes to older versions of iOS, iPadOS, and macOS Sonoma today. This follows the discovery of active exploitation by the Coruna exploit kit, which leverages a WebKit memory corruption flaw to achieve remote code execution.
+A threat actor tracked as Storm-2561 is leveraging SEO poisoning and fraudulent download portals to distribute fake enterprise VPN installers. These malicious files masquerade as legitimate clients for @[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), and @[Fortinet](urn:li:organization:13303), but instead install credential-stealing malware.
 
-The Coruna kit is a sophisticated toolkit used in cyberespionage and crypto-theft campaigns. By targeting the browser engine, attackers can compromise a device simply when a user views a maliciously crafted web page. This highlights the extreme risk of maintaining legacy unpatched devices within an enterprise environment.
+The campaign specifically targets remote workers searching for software updates or connection tools. Once installed, the malware captures VPN login data and system information, providing the attacker with the keys required to bypass the network perimeter silently.
 
-The uncomfortable truth: Your security posture is only as strong as the oldest, unpatched iPad in your executive's home office.
+The uncomfortable truth: Your perimeter security is bypassed the moment a single user installs a poisoned version of the tool meant to protect them.
 
-→ Force a security update for all Apple devices, including older hardware, to the latest backported releases today.
-→ Use MDM to identify and isolate any devices that are no longer receiving security updates from Apple.
-→ Enable Lockdown Mode for high-value targets to reduce the attack surface for complex WebKit exploits.
+→ Instruct all employees to download enterprise software only from official, IT-approved internal portals.
+→ Use EDR tools to block the execution of unsigned or unrecognized installers from common download directories.
+→ Audit your VPN logs for unusual login patterns originating from non-standard or geographic IP blocks.
 
-Are you still allowing legacy, end-of-life mobile devices to connect to your corporate email? 👇
+Do you have a strictly enforced policy that blocks users from installing non-approved software on company assets? 👇
 
-#Cybersecurity #MobileSecurity #Apple #ThreatIntelligence #SOC #CodeDefence
+#Cybersecurity #VPN #Phishing #CredentialTheft #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>One unauthenticated request can now compromise your SQL Server environment. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/12/microsoft-sql-server-privilege-escalation-alert</link>
-  <pubDate>Thu, 2026/03/12 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/12/microsoft-sql-server-privilege-escalation-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-21262</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Friday 12:00–13:00 +0300</cd:besttime>
+  <title>Final remediation deadline for critical Roundcube Webmail RCE today. 🔓</title>
+  <link>https://codedefence.in/blog/2026/03/13/roundcube-webmail-cisa-remediation-deadline</link>
+  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/roundcube-webmail-cisa-remediation-deadline</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-49113</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
   <cd:imagebrief><![CDATA[
-    Data-viz style. A digital database icon with a bright red 'Sysadmin' badge being unlocked. Matte black and deep gold palette. Bold white sans-serif overlay text: 'DATABASE ACCESS EXPOSED.' Code Defence logo bottom-right corner. 1200×628px.
+    Data-viz style. A digital envelope icon with glowing orange binary code leaking from its seams. Matte black and deep gold palette. Bold white sans-serif overlay text: 'REMEDIATION DEADLINE TODAY.' Code Defence logo bottom-right corner. 1200×628px.
   ]]></cd:imagebrief>
   <description><![CDATA[
-One unauthenticated request can now compromise your SQL Server environment. 🐚
+Final remediation deadline for critical Roundcube Webmail RCE today. 🔓
 
-CVE-2026-21262 · Severity 8.8 · Active Privilege Escalation in Microsoft SQL Server.
+Remediation Alert · @[CISA](urn:li:organization:13010360) KEV deadline for CVE-2025-49113 (Severity 9.9).
 
-Following the March Patch Tuesday release, we are seeing a spike in interest and scanning activity for CVE-2026-21262. This publicly disclosed flaw allows an authorized attacker with low-level access to elevate their privileges to 'sysadmin' over the network.
+Today marks the final deadline for federal agencies to remediate the critical deserialization flaw in Roundcube Webmail software. This vulnerability, which had been hidden in the codebase for over 10 years, allows an authenticated attacker to execute arbitrary system-level commands without validation.
 
-This vulnerability is particularly dangerous because it bypasses the standard identity boundaries within the database environment. If an attacker has gained a foothold anywhere in your network, this flaw provides a direct path to the crown jewels—your corporate data.
+Nation-state groups, including APT28 and Winter Vivern, have been observed weaponizing multiple Roundcube flaws for cyberespionage. Because webmail is a primary entry point for corporate data, an unpatched server allows for the silent exfiltration of entire executive communication histories.
 
-The uncomfortable truth: Your database encryption and access controls mean nothing if an attacker can simply promote themselves to a system administrator.
+The uncomfortable truth: If your webmail interface is unpatched today, you should assume that your internal executive data is already being harvested by an automated botnet.
 
-→ Apply the March 2026 @[Microsoft](urn:li:organization:1035) security updates to all SQL Server instances immediately.
-→ Enforce the principle of least privilege and conduct a review of all accounts with network access to SQL instances.
-→ Monitor for unusual administrative account promotions or schema changes within your databases.
+→ Update Roundcube Webmail to the latest stable release (1.6.11+) immediately.
+→ Conduct a deep forensic audit of your mail server logs for unauthorized PHP object deserialization attempts.
+→ Implement strict network segmentation to ensure mail servers cannot communicate with internal database segments.
 
-Is your database patching cycle as aggressive as your workstation update policy? 👇
+Have you confirmed that every legacy webmail instance in your environment has been patched or decommissioned? 👇
 
-#Cybersecurity #DatabaseSecurity #SQLServer #VulnerabilityManagement #SOC #CodeDefence
+#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
