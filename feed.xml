@@ -2,143 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 13 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Sat&#44; 14 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence and LinkedIn-ready executive posts for Fri, 13 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat&#44; 14 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 13 Mar 2026 19:15:00 +0300</lastBuildDate>
-  <atom:link href="https://codedefence.in/executive-briefing/rss"
-             rel="self" type="application/rss+xml" />
-  <cd:storyCount>4</cd:storyCount>
+  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Google issues emergency patch for two Chrome zero-days exploited in the wild. 🌐</title>
-  <link>https://codedefence.in/blog/2026/03/13/chrome-emergency-patch-two-zero-days</link>
-  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/chrome-emergency-patch-two-zero-days</guid>
+  <title>Your automation platform is now an active RCE gateway for attackers. ⚙️</title>
+  <link>https://codedefence.in/blog/2026/03/14/n8n-critical-expression-injection-alert</link>
+  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/14/n8n-critical-expression-injection-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3909, CVE-2026-3910</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Dramatic dark-blue cinematic editorial. A digital web browser interface with glitching code elements and two glowing red fracture lines. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'CHROME ZERO-DAYS ACTIVE.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Google issues emergency patch for two Chrome zero-days exploited in the wild. 🌐
-
-CVE-2026-3909 & CVE-2026-3910 · Severity 8.8 · Active Zero-Day Exploitation in Chrome.
-
-@[Google](urn:li:organization:1441) has released emergency security updates to address two high-severity vulnerabilities in Chrome that are being actively weaponized. CVE-2026-3909 involves an out-of-bounds write in the Skia graphics library, while CVE-2026-3910 is an inappropriate implementation in the V8 JavaScript engine.
-
-Both flaws can be triggered via crafted HTML pages to achieve remote code execution (RCE) or sandbox escapes. Evidence suggests these vulnerabilities are being targeted by commercial spyware vendors to compromise high-value targets. This is the third emergency update for Chrome in early 2026, highlighting the intense focus on browser-based initial access.
-
-The uncomfortable truth: Your browser is the most frequently targeted entry point in your enterprise, and the window between a new zero-day and its mass exploitation is now measured in hours.
-
-→ Force a global update for all Chrome instances to version 146.0.7680.75 or higher immediately.
-→ Enable hardware-enforced stack protection on all compatible Windows endpoints to mitigate RCE.
-→ Monitor for unusual outbound traffic originating from browser processes to unverified domains.
-
-Have you confirmed that your browser update policy is fast enough to neutralize zero-days within 24 hours? 👇
-
-#Cybersecurity #Chrome #ZeroDay #PatchManagement #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>A geopolitical wiper attack exploited identity infrastructure to cripple Stryker. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/13/stryker-wiper-attack-intune-exploitation</link>
-  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/stryker-wiper-attack-intune-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Stryker](urn:li:organization:1592), @[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Cinematic editorial style. A digital representation of a central command console showing a 'Remote Wipe' command cascading across a global map. Deep navy and electric cyan palette. Bold white sans-serif overlay text: 'IDENTITY AS A WEAPON.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-A geopolitical wiper attack exploited identity infrastructure to cripple Stryker. 🛑
-
-Disruption Alert · Iran-linked 'Handala' group claims wiper attack on @[Stryker](urn:li:organization:1592).
-
-In a significant escalation, the 'Handala' group has claimed a destructive attack against medtech giant @[Stryker](urn:li:organization:1592). Reports indicate the attackers gained access to administrative credentials for @[Microsoft](urn:li:organization:1035) Intune, which they utilized to issue 'Remote Wipe' commands to thousands of corporate endpoints globally.
-
-This method turns the organization's own management tools into a destructive weapon, bypassing traditional malware detection. Over 5,000 workers were reportedly sent home as systems were wiped in real-time. This incident demonstrates a shift toward identity-based destructive operations where compromised admin access is used for pure disruption.
-
-The uncomfortable truth: Your centralized management tools are your greatest operational efficiency, but also your single greatest point of catastrophic failure if identity security fails.
-
-→ Enforce phishing-resistant MFA (FIDO2) for all administrative accounts, especially those with Intune or Entra ID access.
-→ Implement strict Conditional Access policies to limit where and when administrative commands can be issued.
-→ Conduct a retrospective audit of Intune logs for any unauthorized remote wipe or system-wide configuration changes.
-
-Is your incident response plan prepared for a scenario where your own security tools are used to wipe your fleet? 👇
-
-#Cybersecurity #WiperAttack #Stryker #IdentitySecurity #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Fake enterprise VPN clients are being used to siphon corporate credentials. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/13/fake-vpn-client-phishing-campaign-alert</link>
-  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/fake-vpn-client-phishing-campaign-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), @[Fortinet](urn:li:organization:13303)</cd:mentions>
-  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Graphic design poster style. A digital padlock icon with a bright red shell prompt appearing over VPN logos. Charcoal grey and warning yellow palette. Bold white sans-serif overlay text: 'POISONED VPN CLIENTS.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
-  <description><![CDATA[
-Fake enterprise VPN clients are being used to siphon corporate credentials. 🐚
-
-Phishing Alert · Storm-2561 distributing malicious @[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), and @[Fortinet](urn:li:organization:13303) installers.
-
-A threat actor tracked as Storm-2561 is leveraging SEO poisoning and fraudulent download portals to distribute fake enterprise VPN installers. These malicious files masquerade as legitimate clients for @[Cisco](urn:li:organization:1063), @[Ivanti](urn:li:organization:36124), and @[Fortinet](urn:li:organization:13303), but instead install credential-stealing malware.
-
-The campaign specifically targets remote workers searching for software updates or connection tools. Once installed, the malware captures VPN login data and system information, providing the attacker with the keys required to bypass the network perimeter silently.
-
-The uncomfortable truth: Your perimeter security is bypassed the moment a single user installs a poisoned version of the tool meant to protect them.
-
-→ Instruct all employees to download enterprise software only from official, IT-approved internal portals.
-→ Use EDR tools to block the execution of unsigned or unrecognized installers from common download directories.
-→ Audit your VPN logs for unusual login patterns originating from non-standard or geographic IP blocks.
-
-Do you have a strictly enforced policy that blocks users from installing non-approved software on company assets? 👇
-
-#Cybersecurity #VPN #Phishing #CredentialTheft #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Final remediation deadline for critical Roundcube Webmail RCE today. 🔓</title>
-  <link>https://codedefence.in/blog/2026/03/13/roundcube-webmail-cisa-remediation-deadline</link>
-  <pubDate>Fri, 13 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/13/roundcube-webmail-cisa-remediation-deadline</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-49113</cd:cve>
+  <cd:cve>CVE-2025-68613</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <cd:besttime>Friday 20:00–21:30 +0300</cd:besttime>
-  <cd:imagebrief><![CDATA[
-    Data-viz style. A digital envelope icon with glowing orange binary code leaking from its seams. Matte black and deep gold palette. Bold white sans-serif overlay text: 'REMEDIATION DEADLINE TODAY.' Code Defence logo bottom-right corner. 1200×628px.
-  ]]></cd:imagebrief>
   <description><![CDATA[
-Final remediation deadline for critical Roundcube Webmail RCE today. 🔓
+Your automation platform is an active RCE gateway for attackers. ⚙️
 
-Remediation Alert · @[CISA](urn:li:organization:13010360) KEV deadline for CVE-2025-49113 (Severity 9.9).
+CVE-2025-68613 · Severity 9.9 · CISA KEV Addition for n8n Expression Injection.
 
-Today marks the final deadline for federal agencies to remediate the critical deserialization flaw in Roundcube Webmail software. This vulnerability, which had been hidden in the codebase for over 10 years, allows an authenticated attacker to execute arbitrary system-level commands without validation.
+The @[CISA](urn:li:organization:13010360) has added a critical vulnerability in the n8n automation platform to its Known Exploited Vulnerabilities catalog. This expression injection flaw allows an unauthenticated attacker to execute arbitrary system-level commands&#44; providing a direct path to full server compromise.
 
-Nation-state groups, including APT28 and Winter Vivern, have been observed weaponizing multiple Roundcube flaws for cyberespionage. Because webmail is a primary entry point for corporate data, an unpatched server allows for the silent exfiltration of entire executive communication histories.
+Automation platforms like n8n are high-value targets because they often possess deep administrative access to connected SaaS apps and internal databases. Attackers are currently leveraging this flaw to establish persistence and move laterally across enterprise networks.
 
-The uncomfortable truth: If your webmail interface is unpatched today, you should assume that your internal executive data is already being harvested by an automated botnet.
+The uncomfortable truth: Your automation workflows are the new shadow IT perimeters&#44; often operating with more privilege and less scrutiny than your core production servers.
 
-→ Update Roundcube Webmail to the latest stable release (1.6.11+) immediately.
-→ Conduct a deep forensic audit of your mail server logs for unauthorized PHP object deserialization attempts.
-→ Implement strict network segmentation to ensure mail servers cannot communicate with internal database segments.
+→ Update n8n to version 1.120.4&#44; 1.121.1&#44; or 1.122.0 immediately to address CVE-2025-68613.
+→ Strictly isolate all automation management interfaces from the public internet using secure VPNs.
+→ Audit your workflow logs for any unauthorized modifications or anomalous outbound API requests.
 
-Have you confirmed that every legacy webmail instance in your environment has been patched or decommissioned? 👇
+#Cybersecurity #AppSec #Automation #ZeroTrust #SOC #CodeDefence
+  ]]></description>
+</item>
 
-#Cybersecurity #EmailSecurity #ZeroTrust #VulnerabilityManagement #SOC #CodeDefence
+<item>
+  <title>Identity-based wiper attacks are crippling critical infrastructure today. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/14/stryker-wiper-attack-identity-escalation</link>
+  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/14/stryker-wiper-attack-identity-escalation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Stryker](urn:li:organization:1592)&#44; @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+Identity-based wiper attacks are crippling critical infrastructure today. 🛑
+
+Disruption Alert · Handala group weaponizes Microsoft Intune against Stryker.
+
+In a significant escalation of geopolitical cyber warfare&#44; the group Handala has claimed a massive wiper attack against @[Stryker](urn:li:organization:1592). In the last 24 hours&#44; over 5&#44;000 employees were reportedly sent home as thousands of corporate endpoints were wiped in real-time. The attackers allegedly exploited @[Microsoft](urn:li:organization:1035) Intune to issue remote wipe commands globally.
+
+This method turns an organization's own administrative efficiency into a weapon of mass disruption. By targeting identity infrastructure rather than deploying malware&#44; attackers can bypass traditional endpoint security.
+
+The uncomfortable truth: Your centralized management tools are your greatest strength&#44; but also your single greatest point of catastrophic failure if your identity security is breached.
+
+→ Enforce phishing-resistant MFA (FIDO2) for all administrative accounts&#44; especially those with Intune access.
+→ Implement strict Conditional Access policies to restrict where and when administrative commands can be issued.
+→ Conduct a retrospective audit of Intune logs for any unauthorized remote wipe or configuration changes.
+
+#Cybersecurity #WiperAttack #Stryker #IdentitySecurity #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
