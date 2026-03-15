@@ -2,63 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat&#44; 14 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Sun‚ 15 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat&#44; 14 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun‚ 15 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun‚ 15 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun‚ 15 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Your automation platform is now an active RCE gateway for attackers. ⚙️</title>
-  <link>https://codedefence.in/blog/2026/03/14/n8n-critical-expression-injection-alert</link>
-  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/14/n8n-critical-expression-injection-alert</guid>
+  <title>AppsFlyer Web SDK hijacked in major supply-chain crypto attack. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/15/appsflyer-web-sdk-supply-chain-hijack</link>
+  <pubDate>Sun‚ 15 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/15/appsflyer-web-sdk-supply-chain-hijack</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-68613</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[AppsFlyer](urn:li:organization:2451368)</cd:mentions>
   <description><![CDATA[
-Your automation platform is an active RCE gateway for attackers. ⚙️
+Your trusted web SDKs are being weaponized against your users. 🛡️
 
-CVE-2025-68613 · Severity 9.9 · CISA KEV Addition for n8n Expression Injection.
+Supply-Chain Alert · AppsFlyer Web SDK hijacked to distribute malicious JavaScript.
 
-The @[CISA](urn:li:organization:13010360) has added a critical vulnerability in the n8n automation platform to its Known Exploited Vulnerabilities catalog. This expression injection flaw allows an unauthenticated attacker to execute arbitrary system-level commands&#44; providing a direct path to full server compromise.
+In the last 24 hours‚ the @[AppsFlyer](urn:li:organization:2451368) Web SDK was temporarily hijacked in a sophisticated supply-chain attack. Malicious actors injected JavaScript code designed to steal cryptocurrency from users visiting sites that utilize the SDK. While the vendor has addressed the issue‚ the incident highlights the extreme vulnerability of the modern web ecosystem.
 
-Automation platforms like n8n are high-value targets because they often possess deep administrative access to connected SaaS apps and internal databases. Attackers are currently leveraging this flaw to establish persistence and move laterally across enterprise networks.
+This type of attack bypasses traditional server-side security by executing directly in the user browser. If your public web applications rely on third-party SDKs for analytics or marketing‚ you are effectively granting those vendors execution rights on your customers devices.
 
-The uncomfortable truth: Your automation workflows are the new shadow IT perimeters&#44; often operating with more privilege and less scrutiny than your core production servers.
+The uncomfortable truth: Your website security is only as strong as the least-secure third-party script you have allow-listed in your header.
 
-→ Update n8n to version 1.120.4&#44; 1.121.1&#44; or 1.122.0 immediately to address CVE-2025-68613.
-→ Strictly isolate all automation management interfaces from the public internet using secure VPNs.
-→ Audit your workflow logs for any unauthorized modifications or anomalous outbound API requests.
+→ Implement Subresource Integrity (SRI) for all third-party scripts to detect and block unauthorized changes.
+→ Use a strict Content Security Policy (CSP) to limit where your web applications can load scripts from.
+→ Audit your current use of external SDKs and remove any that are not essential for business operations.
 
-#Cybersecurity #AppSec #Automation #ZeroTrust #SOC #CodeDefence
+#Cybersecurity #SupplyChain #AppSec #WebSecurity #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Identity-based wiper attacks are crippling critical infrastructure today. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/14/stryker-wiper-attack-identity-escalation</link>
-  <pubDate>Sat&#44; 14 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/14/stryker-wiper-attack-identity-escalation</guid>
+  <title>Microsoft releases emergency hotpatch for critical Windows 11 RCE. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/15/microsoft-windows-11-rce-hotpatch-alert</link>
+  <pubDate>Sun‚ 15 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/15/microsoft-windows-11-rce-hotpatch-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Stryker](urn:li:organization:1592)&#44; @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Identity-based wiper attacks are crippling critical infrastructure today. 🛑
+Microsoft releases emergency hotpatch for critical Windows 11 RCE. 🛑
 
-Disruption Alert · Handala group weaponizes Microsoft Intune against Stryker.
+OOB Update · Remote Access Connection Manager (RRAS) RCE flaw patched.
 
-In a significant escalation of geopolitical cyber warfare&#44; the group Handala has claimed a massive wiper attack against @[Stryker](urn:li:organization:1592). In the last 24 hours&#44; over 5&#44;000 employees were reportedly sent home as thousands of corporate endpoints were wiped in real-time. The attackers allegedly exploited @[Microsoft](urn:li:organization:1035) Intune to issue remote wipe commands globally.
+@[Microsoft](urn:li:organization:1035) has released an out-of-band (OOB) security update for Windows 11 Enterprise devices that receive hotpatching. This emergency fix addresses a critical remote code execution flaw in the Routing and Remote Access Service (RRAS).
 
-This method turns an organization's own administrative efficiency into a weapon of mass disruption. By targeting identity infrastructure rather than deploying malware&#44; attackers can bypass traditional endpoint security.
+This vulnerability allows unauthenticated attackers to execute code with system privileges via crafted network packets. Because this flaw skipped the standard Patch Tuesday cycle‚ it represents a high-priority risk for organizations using hotpatching for zero-downtime environments.
 
-The uncomfortable truth: Your centralized management tools are your greatest strength&#44; but also your single greatest point of catastrophic failure if your identity security is breached.
+The uncomfortable truth: Your high-availability systems are the most attractive targets for attackers because they often skip traditional reboot-based patching cycles.
 
-→ Enforce phishing-resistant MFA (FIDO2) for all administrative accounts&#44; especially those with Intune access.
-→ Implement strict Conditional Access policies to restrict where and when administrative commands can be issued.
-→ Conduct a retrospective audit of Intune logs for any unauthorized remote wipe or configuration changes.
+→ Apply the OOB hotpatch to all Windows 11 Enterprise instances immediately.
+→ Verify the status of your hotpatching infrastructure to ensure the update was successfully deployed.
+→ Monitor network logs for unusual traffic targeting RRAS endpoints or unexpected process creation.
 
-#Cybersecurity #WiperAttack #Stryker #IdentitySecurity #SecurityLeadership #CodeDefence
+#Cybersecurity #PatchManagement #Windows11 #ZeroDay #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Operation Synergia III dismantles 45‚000 malicious IP addresses. 🔓</title>
+  <link>https://codedefence.in/blog/2026/03/15/interpol-operation-synergia-iii-disruption</link>
+  <pubDate>Sun‚ 15 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/15/interpol-operation-synergia-iii-disruption</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Interpol](urn:li:organization:530511)</cd:mentions>
+  <description><![CDATA[
+A major coordinated effort has disrupted global phishing and ransomware infrastructure. 🔓
+
+Global Disruption · 45‚000 malicious IPs sinkholed and 94 suspects arrested.
+
+In a massive operation codenamed Synergia III‚ @[Interpol](urn:li:organization:530511) and 72 countries have successfully dismantled a vast network of malicious infrastructure. The operation targeted 45‚000 IP addresses and servers used to host phishing sites‚ distribute malware‚ and facilitate ransomware payments.
+
+While this disruption is a major victory‚ the decentralized nature of cybercrime means that new infrastructure will likely emerge quickly. This action significantly increases the cost for attackers by forcing them to rebuild their command-and-control networks from scratch.
+
+The uncomfortable truth: Mass disruptions provide a temporary breathing room‚ but the underlying vulnerabilities that these networks exploit still exist on your perimeter.
+
+→ Audit your network logs for any historical communication with the newly published list of malicious IPs.
+→ Refresh your DNS filters and IP reputation lists to ensure current blocked-list status.
+→ Continue to focus on patching the vulnerabilities that these botnets target for initial access.
+
+#Cybersecurity #Interpol #Botnet #Ransomware #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Fake enterprise VPN sites are stealing corporate credentials at scale. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/15/fake-vpn-sites-credential-theft-storm-2561</link>
+  <pubDate>Sun‚ 15 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/15/fake-vpn-sites-credential-theft-storm-2561</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[Ivanti](urn:li:organization:36124)‚ @[Fortinet](urn:li:organization:13303)</cd:mentions>
+  <description><![CDATA[
+Your remote workers are being targeted by SEO-poisoned search results. 🐚
+
+Phishing Alert · Storm-2561 using fake VPN sites to harvest corporate logins.
+
+A threat actor tracked as Storm-2561 is currently distributing fake enterprise VPN clients for @[Cisco](urn:li:organization:1063)‚ @[Ivanti](urn:li:organization:36124)‚ and @[Fortinet](urn:li:organization:13303). By using SEO poisoning‚ the attackers ensure their fraudulent download portals appear at the top of search results for employees seeking VPN updates.
+
+Once a user downloads and attempts to log in via the fake client‚ their corporate credentials are sent directly to the attackers. This campaign bypasses traditional network security by targeting the user at home before they even connect to the corporate network.
+
+The uncomfortable truth: Your perimeter security is effectively bypassed the moment a user installs a poisoned version of the tool meant to protect them.
+
+→ Instruct all employees to download enterprise software only from official‚ IT-approved internal portals.
+→ Use EDR tools to block the execution of unsigned installers from non-standard download directories.
+→ Audit your VPN authentication logs for unusual login patterns or geographic IP anomalies.
+
+#Cybersecurity #VPN #Phishing #CredentialTheft #CISO #CodeDefence
   ]]></description>
 </item>
 
