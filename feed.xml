@@ -2,112 +2,114 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon‚ 16 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Tue‚ 17 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon‚ 16 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue‚ 17 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon‚ 16 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon‚ 16 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue‚ 17 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Stryker operational systems remain offline five days after Iran-linked attack. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/16/stryker-cyberattack-restoration-update</link>
-  <pubDate>Mon‚ 16 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/stryker-cyberattack-restoration-update</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Stryker](urn:li:organization:1592)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <title>CISA flags actively exploited Wing FTP Server vulnerability. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/17/cisa-kev-wing-ftp-server-exploitation-alert</link>
+  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/cisa-kev-wing-ftp-server-exploitation-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2025-47813</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-One of the world leading medical device makers is struggling to restore core business operations. 🛑
+Your internal file transfer paths are being leaked to unauthenticated scanners. 🛡️
 
-Disruption Alert · Stryker internal Microsoft environment remains compromised.
+CVE-2025-47813 · Severity Medium · Active Exploitation in Wing FTP Server.
 
-In the last 24 hours‚ @[Stryker](urn:li:organization:1592) has provided an update on the cyberattack claimed by the Iran-linked group Handala. While the company emphasizes that its medical products and connected technologies remain safe for hospital use‚ its internal ordering‚ supply‚ and shipping systems remain severely hampered globally.
+The @[CISA](urn:li:organization:13010360) has added an information disclosure vulnerability in Wing FTP Server to its Known Exploited Vulnerabilities catalog today. This flaw allows an unauthenticated attacker to leak the installation path and configuration data of the server through crafted requests.
 
-The event was contained to Stryker internal @[Microsoft](urn:li:organization:1035) environment. The attackers reportedly exploited identity infrastructure to disrupt logistics rather than deploying traditional ransomware. This incident highlights the massive operational risk when centralized corporate environments are targeted for purely disruptive purposes.
+While the severity is rated as medium‚ this vulnerability is a high-value P2 selection because it is a critical prerequisite for advanced path traversal and RCE attacks. Attackers are currently scanning for exposed Wing FTP instances to map internal directories before launching destructive secondary payloads.
 
-The uncomfortable truth: Your products may be secure‚ but if your internal logistics environment is paralyzed‚ your ability to serve customers and sustain revenue is effectively neutralized.
+The uncomfortable truth: Small information leaks in your perimeter services are the primary building blocks for large-scale administrative takeovers.
 
-→ Prioritize the restoration of identity and supply chain systems to resume global shipping.
-→ Conduct a forensic audit of the internal Microsoft environment to ensure all unauthorized persistence is removed.
-→ Use this outage as a disaster recovery wake-up call to test off-network shipping and ordering protocols.
+→ Update Wing FTP Server to the latest security release immediately to prevent directory leakage.
+→ Strictly restrict management and FTP ports to known internal IP ranges using a firewall.
+→ Audit server logs for anomalous GET requests targeting system-level configuration files.
 
-#Cybersecurity #HealthcareSecurity #IdentitySecurity #DisasterRecovery #CISO #CodeDefence
+#Cybersecurity #Infosec #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Google moves to block malware abuse of Accessibility APIs in Android 17. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/16/android-17-accessibility-api-security-hardening</link>
-  <pubDate>Mon‚ 16 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/android-17-accessibility-api-security-hardening</guid>
+  <title>Stryker restoration begins after Intune wipe attack erases 80‚000 devices. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/17/stryker-intune-wipe-attack-investigation-update</link>
+  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/stryker-intune-wipe-attack-investigation-update</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Stryker](urn:li:organization:1592)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+One of the world leading medical device makers was crippled without a single line of malware. 🛑
+
+Disruption Alert · Attackers abused Microsoft Intune to wipe 80‚000 employee devices.
+
+Investigation details released in the last 24 hours confirm that the attack on @[Stryker](urn:li:organization:1592) was an identity-based disruption campaign. After compromising an administrative account‚ the Iran-linked group Handala created a new Global Administrator in @[Microsoft](urn:li:organization:1035) Entra ID and used the wipe command in Intune to erase the fleet.
+
+Nearly 80‚000 devices—including corporate laptops and mobile devices—were wiped in a three-hour window. While medical products remain safe‚ electronic ordering and shipping systems remain offline as the company focuses on manual replenishment for hospital customers.
+
+The uncomfortable truth: Your centralized management tools are a double-edged sword; they provide massive efficiency for IT but can be weaponized for total operational destruction in minutes.
+
+→ Enforce phishing-resistant MFA (FIDO2) for all accounts with Global Admin or Intune permissions.
+→ Review your Entra ID logs for the creation of unauthorized administrative accounts over the last week.
+→ Implement strict Conditional Access policies to prevent administrative actions from unknown IP blocks.
+
+#Cybersecurity #IdentitySecurity #Intune #DisasterRecovery #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>LeakNet ransomware adopts ClickFix and Deno runtime for stealthy attacks. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/17/leaknet-ransomware-clickfix-deno-loader-alert</link>
+  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/leaknet-ransomware-clickfix-deno-loader-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <description><![CDATA[
+Attackers are bypassing browser security by tricking users into running system-level commands. 🐚
+
+Threat Alert · LeakNet ransomware gang using ClickFix and Deno loaders.
+
+We are seeing a new wave of attacks from the LeakNet ransomware group targeting corporate environments via the ClickFix technique. Attackers present users with fake browser errors or AI tool update prompts that instruct them to copy and paste a command into the terminal to 'fix' the issue.
+
+This campaign is notable for using a malware loader based on the open-source Deno runtime. By abusing legitimate developer tools like Deno‚ the attackers can execute malicious JavaScript and TypeScript with system-level access while evading traditional browser-based sandbox security.
+
+The uncomfortable truth: If your security strategy depends on users not following helpful-looking instructions‚ you have no defense against modern social engineering.
+
+→ Educate employees specifically on the ClickFix technique and the danger of running copied terminal commands.
+→ Restrict the execution of developer runtimes like Deno‚ Node.js‚ and Python on non-technical workstations.
+→ Monitor endpoint logs for unusual shell activity originating from browser process parentage.
+
+#Cybersecurity #Ransomware #SocialEngineering #EndpointSecurity #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Google testing Android 17 feature to block Accessibility API abuse by malware. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/17/android-17-accessibility-api-malware-protection</link>
+  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/android-17-accessibility-api-malware-protection</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
 Google is closing a long-standing loophole used by mobile credential stealers. 📱
 
-Security Hardening · Android 17 to restrict Accessibility Service access for non-standard apps.
+Security Hardening · Android 17 Advanced Protection Mode to restrict Accessibility Service access.
 
-In reports surfaced today‚ @[Google](urn:li:organization:1441) is testing a significant security change in the Android 17 Beta. The feature prevents apps that are not explicitly recognized as accessibility tools from using the Accessibility Services API. This API is a primary vector for malware to 'read' screen content‚ harvest MFA codes‚ and perform unauthorized actions on behalf of the user.
+Reports surfaced in the last 24 hours regarding a new security feature in the Android 17 Beta. @[Google](urn:li:organization:1441) is implementing a block that prevents non-accessibility apps from utilizing the Accessibility Services API. This API has been the primary vector for mobile malware to 'read' screen content and harvest MFA codes.
 
-By enforcing these restrictions within the Advanced Protection Mode‚ Google aims to break the kill-chain for most modern mobile infostealers. This move reflects a broader industry shift toward hardened API permissions to counter automated malware abuse.
+When enabled via Advanced Protection Mode‚ this feature effectively neutralizes the primary kill-chain for most modern mobile infostealers. This move reflects a broader industry shift toward hardened API permissions to counter automated malware abuse on mobile devices.
 
-The uncomfortable truth: The features designed to make technology inclusive are the same tools attackers use to automate the theft of your most sensitive corporate credentials.
+The uncomfortable truth: The features designed to make technology inclusive are the same tools attackers use to automate the theft of your corporate credentials.
 
-→ Update managed Android devices to the latest beta or stable releases to leverage Advanced Protection Mode.
-→ Audit your mobile fleet for apps requesting excessive Accessibility permissions today.
-→ Transition your mobile security policy to prioritize hardware-based MFA over app-based codes.
+→ Audit managed Android devices for third-party apps requesting excessive Accessibility permissions today.
+→ Transition your mobile security policy to prioritize hardware-based security keys over app-based MFA codes.
+→ Stay updated on Android 17 enterprise management features to enforce Advanced Protection Mode across the fleet.
 
 #Cybersecurity #MobileSecurity #Android17 #AppSec #ZeroTrust #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>GlassWorm supply-chain campaign weaponizes 72 Open VSX extensions. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/16/glassworm-open-vsx-supply-chain-escalation</link>
-  <pubDate>Mon‚ 16 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/glassworm-open-vsx-supply-chain-escalation</guid>
-  <cd:severity>HIGH</cd:severity>
-  <description><![CDATA[
-Attackers are using transitive dependencies to turn benign developer tools into malware. 🛡️
-
-Supply-Chain Alert · GlassWorm campaign targets developers via Open VSX registry.
-
-Cybersecurity researchers have flagged a significant escalation in the GlassWorm campaign in the last 24 hours. Threat actors are now abusing extension packs and dependencies in the Open VSX registry to deliver malicious loaders. Instead of embedding malware directly‚ they use standalone-looking extensions to pull in separate malicious packages.
-
-At least 72 malicious extensions have been identified since late January. This technique allows the initial package to appear benign to standard scanners‚ only triggering the infection once the developer installs the full transitive dependency chain.
-
-The uncomfortable truth: Your developers' productivity tools are the most trusted and least scrutinized entry point for high-privilege access into your production environment.
-
-→ Audit developer workstations for unauthorized or community-managed Open VSX extensions.
-→ Enforce a policy of using only verified or internally mirrored extension registries.
-→ Monitor for unusual outbound network activity originating from IDE processes and developer tools.
-
-#Cybersecurity #SupplyChain #DevSecOps #AppSec #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Interpol operation Synergia III disrupts 45‚000 malicious IP addresses. 🔓</title>
-  <link>https://codedefence.in/blog/2026/03/16/interpol-operation-synergia-iii-takedown</link>
-  <pubDate>Mon‚ 16 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/interpol-operation-synergia-iii-takedown</guid>
-  <cd:severity>HIGH</cd:severity>
-  <description><![CDATA[
-A massive global coordinated effort has dismantled the foundation of numerous cybercrime networks. 🔓
-
-Global Disruption · Interpol sinkholes tens of thousands of IPs used for phishing and malware.
-
-Interpol has announced the results of Operation Synergia III‚ a 72-country law enforcement action that neutralized 45‚000 malicious IP addresses and servers. The operation targeted the core infrastructure used by phishing‚ malware‚ and ransomware groups to communicate with compromised systems.
-
-This disruption increases the operational cost for cybercriminals significantly by forcing them to rebuild their global command-and-control networks. However‚ historical data suggests that attackers will migrate to new hosting providers and decentralized infrastructures within days.
-
-The uncomfortable truth: Takedowns provide temporary relief‚ but they do not fix the underlying software vulnerabilities that allowed these botnets to grow in the first place.
-
-→ Refresh your block-lists and DNS filters with the latest indicators from global law enforcement.
-→ Conduct a retrospective audit of your network logs for any historical communication with the disrupted IP ranges.
-→ Maintain your focus on patching the perimeter vulnerabilities that these botnets target for initial access.
-
-#Cybersecurity #Interpol #Botnet #ThreatIntelligence #SecurityLeadership #CodeDefence
   ]]></description>
 </item>
 
