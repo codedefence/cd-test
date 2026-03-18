@@ -2,114 +2,118 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue‚ 17 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Wed‚ 18 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue‚ 17 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed‚ 18 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue‚ 17 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed‚ 18 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA flags actively exploited Wing FTP Server vulnerability. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/17/cisa-kev-wing-ftp-server-exploitation-alert</link>
-  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/cisa-kev-wing-ftp-server-exploitation-alert</guid>
+  <title>Google rushes emergency Chrome update for two zero-days under active attack. 🌐</title>
+  <link>https://codedefence.in/blog/2026/03/18/chrome-emergency-zero-day-update-skia-v8</link>
+  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/chrome-emergency-zero-day-update-skia-v8</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-3909‚ CVE-2026-3910</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <description><![CDATA[
+Google has issued an emergency Chrome update to address two zero-day vulnerabilities already being exploited in the wild. 🌐
+
+CVE-2026-3909 and CVE-2026-3910 · Severity 8.8 · Active Zero-Day Exploitation in Chrome.
+
+The first flaw (CVE-2026-3909) is an out-of-bounds write in the Skia graphics library‚ while the second (CVE-2026-3910) is an inappropriate implementation in the V8 JavaScript engine. Both allow remote attackers to execute arbitrary code simply by tricking a user into visiting a malicious webpage.
+
+This marks the third actively weaponized Chrome zero-day of 2026. Because browsers are the primary window for enterprise users‚ these flaws are high-value targets for initial access and commercial spyware deployment.
+
+The uncomfortable truth: Your browser is your most exposed attack surface‚ and the gap between zero-day discovery and mass automated exploitation is now measured in minutes.
+
+→ Force an immediate update of Google Chrome to version 146.0.7680.75 or higher across all managed endpoints.
+→ Enable Site Isolation and hardware-enforced stack protection on compatible Windows devices.
+→ Monitor for unusual outbound network activity originating from browser process parentage.
+
+#Cybersecurity #Chrome #ZeroDay #PatchManagement #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Critical pre-auth OpenSSH flaw exposes Linux servers to root compromise. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/18/openssh-pre-auth-flaw-ubuntu-debian-alert</link>
+  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/openssh-pre-auth-flaw-ubuntu-debian-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-3497</cd:cve>
+  <cd:mentions>@[Ubuntu](urn:li:organization:2813589)</cd:mentions>
+  <description><![CDATA[
+A critical pre-authentication vulnerability has been identified in OpenSSH impacting core Linux distributions. 🛡️
+
+CVE-2026-3497 · Severity 9.8 · Unauthenticated Heap Corruption in OpenSSH.
+
+Impacted systems include Ubuntu and Debian servers where GSSAPI Key Exchange is enabled. An attacker can trigger this bug with a single crafted 300-byte SSH packet without any authentication. The flaw leads to uninitialized variable use and information leakage of up to 127KB of heap data to the root monitor.
+
+This is a maximum-severity perimeter risk because it allows for unauthenticated interaction with the most privileged part of the SSH daemon. Ransomware actors and state-sponsored groups prioritize these types of unauthenticated entry points for mass network penetration.
+
+The uncomfortable truth: Your most trusted remote access tool can become your most dangerous liability with a single line of unverified code.
+
+→ Update OpenSSH packages on all Linux servers immediately‚ specifically targeting the GSSAPI patch fix.
+→ Disable GSSAPIKeyExchange in your sshd_config if it is not strictly required for your environment.
+→ Implement geo-blocking and fail2ban rules to mitigate automated scanning of your SSH ports.
+
+#Cybersecurity #Linux #OpenSSH #VulnerabilityManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Veeam patches seven critical RCE flaws in Backup and Replication. 💾</title>
+  <link>https://codedefence.in/blog/2026/03/18/veeam-backup-replication-critical-rce-patches</link>
+  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/veeam-backup-replication-critical-rce-patches</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21666‚ CVE-2026-21667</cd:cve>
+  <cd:mentions>@[Veeam](urn:li:organization:1053424)</cd:mentions>
+  <description><![CDATA[
+Veeam has released urgent security updates for its Backup and Replication software to address seven critical flaws. 💾
+
+CVE-2026-21666 · Severity 9.9 · Remote Code Execution in Veeam Backup and Replication.
+
+The most severe flaws allow authenticated domain users or even those with limited Backup Viewer permissions to achieve full RCE on the backup server. This is a high-impact risk for ransomware scenarios‚ as attackers often target backup infrastructure to ensure victims cannot recover data without paying.
+
+Because backup servers hold high-privilege credentials for the entire virtualized estate‚ an RCE here is a 'keys to the kingdom' scenario. Several of these flaws require no user interaction beyond the initial authentication foothold.
+
+The uncomfortable truth: Your last line of defense—your backups—is a primary target for attackers looking to maximize their leverage.
+
+→ Update @[Veeam](urn:li:organization:1053424) Backup and Replication to the latest patched version (v12.1.2.172+ or v12.2+) today.
+→ Restrict administrative access to your backup console to a dedicated‚ isolated management network.
+→ Audit your backup server for any unauthorized account creation or anomalous database queries.
+
+#Cybersecurity #Veeam #Ransomware #DataRecovery #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA flags actively exploited Wing FTP Server vulnerability. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/18/cisa-kev-wing-ftp-server-exploitation</link>
+  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/cisa-kev-wing-ftp-server-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2025-47813</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Your internal file transfer paths are being leaked to unauthenticated scanners. 🛡️
+Your internal file transfer configurations are being leaked to unauthenticated scanners. 🐚
 
 CVE-2025-47813 · Severity Medium · Active Exploitation in Wing FTP Server.
 
-The @[CISA](urn:li:organization:13010360) has added an information disclosure vulnerability in Wing FTP Server to its Known Exploited Vulnerabilities catalog today. This flaw allows an unauthenticated attacker to leak the installation path and configuration data of the server through crafted requests.
+The @[CISA](urn:li:organization:13010360) has added an information disclosure flaw in Wing FTP Server to the Known Exploited Vulnerabilities catalog. This vulnerability allows an unauthenticated attacker to leak the installation path and configuration data through crafted requests.
 
-While the severity is rated as medium‚ this vulnerability is a high-value P2 selection because it is a critical prerequisite for advanced path traversal and RCE attacks. Attackers are currently scanning for exposed Wing FTP instances to map internal directories before launching destructive secondary payloads.
+While rated as medium severity‚ this is a critical precursor for path traversal and RCE. Attackers are using these leaks to map internal directories before launching destructive secondary payloads.
 
-The uncomfortable truth: Small information leaks in your perimeter services are the primary building blocks for large-scale administrative takeovers.
+The uncomfortable truth: Information leaks in your perimeter services are the building blocks for full administrative takeovers.
 
-→ Update Wing FTP Server to the latest security release immediately to prevent directory leakage.
-→ Strictly restrict management and FTP ports to known internal IP ranges using a firewall.
+→ Update Wing FTP Server to the latest security release immediately.
+→ Restrict management and FTP ports to known internal IP ranges using hardware firewalls.
 → Audit server logs for anomalous GET requests targeting system-level configuration files.
 
-#Cybersecurity #Infosec #PatchManagement #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Stryker restoration begins after Intune wipe attack erases 80‚000 devices. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/17/stryker-intune-wipe-attack-investigation-update</link>
-  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/16/stryker-intune-wipe-attack-investigation-update</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Stryker](urn:li:organization:1592)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-One of the world leading medical device makers was crippled without a single line of malware. 🛑
-
-Disruption Alert · Attackers abused Microsoft Intune to wipe 80‚000 employee devices.
-
-Investigation details released in the last 24 hours confirm that the attack on @[Stryker](urn:li:organization:1592) was an identity-based disruption campaign. After compromising an administrative account‚ the Iran-linked group Handala created a new Global Administrator in @[Microsoft](urn:li:organization:1035) Entra ID and used the wipe command in Intune to erase the fleet.
-
-Nearly 80‚000 devices—including corporate laptops and mobile devices—were wiped in a three-hour window. While medical products remain safe‚ electronic ordering and shipping systems remain offline as the company focuses on manual replenishment for hospital customers.
-
-The uncomfortable truth: Your centralized management tools are a double-edged sword; they provide massive efficiency for IT but can be weaponized for total operational destruction in minutes.
-
-→ Enforce phishing-resistant MFA (FIDO2) for all accounts with Global Admin or Intune permissions.
-→ Review your Entra ID logs for the creation of unauthorized administrative accounts over the last week.
-→ Implement strict Conditional Access policies to prevent administrative actions from unknown IP blocks.
-
-#Cybersecurity #IdentitySecurity #Intune #DisasterRecovery #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>LeakNet ransomware adopts ClickFix and Deno runtime for stealthy attacks. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/17/leaknet-ransomware-clickfix-deno-loader-alert</link>
-  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/leaknet-ransomware-clickfix-deno-loader-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <description><![CDATA[
-Attackers are bypassing browser security by tricking users into running system-level commands. 🐚
-
-Threat Alert · LeakNet ransomware gang using ClickFix and Deno loaders.
-
-We are seeing a new wave of attacks from the LeakNet ransomware group targeting corporate environments via the ClickFix technique. Attackers present users with fake browser errors or AI tool update prompts that instruct them to copy and paste a command into the terminal to 'fix' the issue.
-
-This campaign is notable for using a malware loader based on the open-source Deno runtime. By abusing legitimate developer tools like Deno‚ the attackers can execute malicious JavaScript and TypeScript with system-level access while evading traditional browser-based sandbox security.
-
-The uncomfortable truth: If your security strategy depends on users not following helpful-looking instructions‚ you have no defense against modern social engineering.
-
-→ Educate employees specifically on the ClickFix technique and the danger of running copied terminal commands.
-→ Restrict the execution of developer runtimes like Deno‚ Node.js‚ and Python on non-technical workstations.
-→ Monitor endpoint logs for unusual shell activity originating from browser process parentage.
-
-#Cybersecurity #Ransomware #SocialEngineering #EndpointSecurity #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Google testing Android 17 feature to block Accessibility API abuse by malware. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/17/android-17-accessibility-api-malware-protection</link>
-  <pubDate>Tue‚ 17 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/17/android-17-accessibility-api-malware-protection</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <description><![CDATA[
-Google is closing a long-standing loophole used by mobile credential stealers. 📱
-
-Security Hardening · Android 17 Advanced Protection Mode to restrict Accessibility Service access.
-
-Reports surfaced in the last 24 hours regarding a new security feature in the Android 17 Beta. @[Google](urn:li:organization:1441) is implementing a block that prevents non-accessibility apps from utilizing the Accessibility Services API. This API has been the primary vector for mobile malware to 'read' screen content and harvest MFA codes.
-
-When enabled via Advanced Protection Mode‚ this feature effectively neutralizes the primary kill-chain for most modern mobile infostealers. This move reflects a broader industry shift toward hardened API permissions to counter automated malware abuse on mobile devices.
-
-The uncomfortable truth: The features designed to make technology inclusive are the same tools attackers use to automate the theft of your corporate credentials.
-
-→ Audit managed Android devices for third-party apps requesting excessive Accessibility permissions today.
-→ Transition your mobile security policy to prioritize hardware-based security keys over app-based MFA codes.
-→ Stay updated on Android 17 enterprise management features to enforce Advanced Protection Mode across the fleet.
-
-#Cybersecurity #MobileSecurity #Android17 #AppSec #ZeroTrust #CodeDefence
+#Cybersecurity #Infosec #NetworkSecurity #ZeroTrust #SOC #CodeDefence
   ]]></description>
 </item>
 
