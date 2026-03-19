@@ -2,118 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed‚ 18 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Thu‚ 19 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed‚ 18 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu‚ 19 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed‚ 18 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu‚ 19 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Google rushes emergency Chrome update for two zero-days under active attack. 🌐</title>
-  <link>https://codedefence.in/blog/2026/03/18/chrome-emergency-zero-day-update-skia-v8</link>
-  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/chrome-emergency-zero-day-update-skia-v8</guid>
+  <title>Interlock ransomware exploited Cisco FMC zero-day for 36 days before disclosure. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/19/cisco-fmc-zero-day-interlock-ransomware-alert</link>
+  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/cisco-fmc-zero-day-interlock-ransomware-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3909‚ CVE-2026-3910</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:mentions>@[Cisco]\\(urn:li:organization:1063\\)</cd:mentions>
   <description><![CDATA[
-Google has issued an emergency Chrome update to address two zero-day vulnerabilities already being exploited in the wild. 🌐
+The Interlock ransomware group had a one-month head start on your defense team. 🛡️
 
-CVE-2026-3909 and CVE-2026-3910 · Severity 8.8 · Active Zero-Day Exploitation in Chrome.
+CVE-2026-20131 · Severity 10.0 · Critical Java Deserialization in Cisco Secure FMC.
 
-The first flaw (CVE-2026-3909) is an out-of-bounds write in the Skia graphics library‚ while the second (CVE-2026-3910) is an inappropriate implementation in the V8 JavaScript engine. Both allow remote attackers to execute arbitrary code simply by tricking a user into visiting a malicious webpage.
+Amazon Threat Intelligence has confirmed that the Interlock ransomware group has been weaponizing a critical flaw in @[Cisco]\\(urn:li:organization:1063\\) Secure Firewall Management Center ❨FMC❩ since January 26‚ 2026. This unauthenticated RCE allows attackers to bypass authentication and execute Java code as root.
 
-This marks the third actively weaponized Chrome zero-day of 2026. Because browsers are the primary window for enterprise users‚ these flaws are high-value targets for initial access and commercial spyware deployment.
+The vulnerability stems from insecure deserialization of user-supplied Java byte streams. Because FMC manages your entire firewall estate‚ root access here allows an attacker to dismantle network security controls and deploy ransomware globally from a single trusted node.
 
-The uncomfortable truth: Your browser is your most exposed attack surface‚ and the gap between zero-day discovery and mass automated exploitation is now measured in minutes.
+The uncomfortable truth: Your perimeter security tools are now the primary vehicles for automated ransomware delivery because they often operate with the highest privileges and the least oversight.
 
-→ Force an immediate update of Google Chrome to version 146.0.7680.75 or higher across all managed endpoints.
-→ Enable Site Isolation and hardware-enforced stack protection on compatible Windows devices.
-→ Monitor for unusual outbound network activity originating from browser process parentage.
+→ Update Cisco Secure Firewall Management Center to the latest patched version immediately.
+→ Strictly isolate all management plane interfaces from the public internet using a secure VPN or OOB management network.
+→ Audit your FMC logs for unauthorized administrative accounts or anomalous Java process executions dating back to January.
 
-#Cybersecurity #Chrome #ZeroDay #PatchManagement #CISO #CodeDefence
+#Cybersecurity #Ransomware #Cisco #ZeroDay #PatchManagement #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Critical pre-auth OpenSSH flaw exposes Linux servers to root compromise. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/18/openssh-pre-auth-flaw-ubuntu-debian-alert</link>
-  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/openssh-pre-auth-flaw-ubuntu-debian-alert</guid>
+  <title>DarkSword exploit kit targets millions of iPhones for full device takeover. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/19/darksword-ios-spyware-exploit-kit-alert</link>
+  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/darksword-ios-spyware-exploit-kit-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3497</cd:cve>
-  <cd:mentions>@[Ubuntu](urn:li:organization:2813589)</cd:mentions>
+  <cd:mentions>@[Apple]\\(urn:li:organization:162479\\)‚ @[Google]\\(urn:li:organization:1441\\)</cd:mentions>
   <description><![CDATA[
-A critical pre-authentication vulnerability has been identified in OpenSSH impacting core Linux distributions. 🛡️
+A new Russian-linked exploit kit is silently compromising iPhones via infected websites. 📱
 
-CVE-2026-3497 · Severity 9.8 · Unauthenticated Heap Corruption in OpenSSH.
+DarkSword · Targets iOS 18.4 to 18.7 · Full Device Takeover and Data Theft.
 
-Impacted systems include Ubuntu and Debian servers where GSSAPI Key Exchange is enabled. An attacker can trigger this bug with a single crafted 300-byte SSH packet without any authentication. The flaw leads to uninitialized variable use and information leakage of up to 127KB of heap data to the root monitor.
+Joint research from @[Google]\\(urn:li:organization:1441\\)‚ iVerify‚ and Lookout has identified a sophisticated new spyware delivery framework dubbed DarkSword. Hosted on compromised government servers in Ukraine‚ the kit uses six distinct flaws to gain root control over iPhones when a user simply visits a malicious site.
 
-This is a maximum-severity perimeter risk because it allows for unauthenticated interaction with the most privileged part of the SSH daemon. Ransomware actors and state-sponsored groups prioritize these types of unauthenticated entry points for mass network penetration.
+The spyware exfiltrates Wi-Fi passwords‚ call history‚ root location history‚ and specifically targets cryptocurrency wallets and health databases. Researchers estimate that up to 270 million iPhones remain vulnerable due to running outdated software released in mid-2025.
 
-The uncomfortable truth: Your most trusted remote access tool can become your most dangerous liability with a single line of unverified code.
+The uncomfortable truth: Your mobile devices are no longer just communication tools; they are the primary targets for high-speed‚ automated espionage and financial theft.
 
-→ Update OpenSSH packages on all Linux servers immediately‚ specifically targeting the GSSAPI patch fix.
-→ Disable GSSAPIKeyExchange in your sshd_config if it is not strictly required for your environment.
-→ Implement geo-blocking and fail2ban rules to mitigate automated scanning of your SSH ports.
+→ Force a security update for all managed @[Apple]\\(urn:li:organization:162479\\) devices to the latest iOS 26.3+ or the Background Security Improvements ❨BSI❩ update.
+→ Enable Lockdown Mode for high-risk users to reduce the attack surface for WebKit-based exploits.
+→ Use MDM to isolate any devices that are no longer receiving critical security patches.
 
-#Cybersecurity #Linux #OpenSSH #VulnerabilityManagement #SOC #CodeDefence
+#Cybersecurity #MobileSecurity #iOS #Spyware #ThreatIntelligence #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Veeam patches seven critical RCE flaws in Backup and Replication. 💾</title>
-  <link>https://codedefence.in/blog/2026/03/18/veeam-backup-replication-critical-rce-patches</link>
-  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/veeam-backup-replication-critical-rce-patches</guid>
+  <title>CISA orders federal agencies to patch critical SharePoint RCE flaw today. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/19/cisa-kev-sharepoint-rce-remediation-deadline</link>
+  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/cisa-kev-sharepoint-rce-remediation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21666‚ CVE-2026-21667</cd:cve>
-  <cd:mentions>@[Veeam](urn:li:organization:1053424)</cd:mentions>
+  <cd:cve>CVE-2026-20963</cd:cve>
+  <cd:mentions>@[Microsoft]\\(urn:li:organization:1035\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
   <description><![CDATA[
-Veeam has released urgent security updates for its Backup and Replication software to address seven critical flaws. 💾
+A critical unauthenticated remote code execution flaw in SharePoint is being weaponized in the wild. 🛑
 
-CVE-2026-21666 · Severity 9.9 · Remote Code Execution in Veeam Backup and Replication.
+CVE-2026-20963 · Severity 9.8 · CISA KEV Remediation Deadline: March 21‚ 2026.
 
-The most severe flaws allow authenticated domain users or even those with limited Backup Viewer permissions to achieve full RCE on the backup server. This is a high-impact risk for ransomware scenarios‚ as attackers often target backup infrastructure to ensure victims cannot recover data without paying.
+The @[CISA]\\(urn:li:organization:13010360\\) has added a critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server to the Known Exploited Vulnerabilities catalog. In a network-based attack‚ an unauthenticated attacker can execute arbitrary code to inject and execute commands remotely on the server.
 
-Because backup servers hold high-privilege credentials for the entire virtualized estate‚ an RCE here is a 'keys to the kingdom' scenario. Several of these flaws require no user interaction beyond the initial authentication foothold.
+While the flaw was patched in January‚ active exploitation has recently surged. Because SharePoint often stores the core intellectual property and internal communications of an organization‚ an RCE here represents a total compromise of corporate data.
 
-The uncomfortable truth: Your last line of defense—your backups—is a primary target for attackers looking to maximize their leverage.
+The uncomfortable truth: If your SharePoint servers are internet-exposed and unpatched today‚ you are operating an open repository for automated data exfiltration.
 
-→ Update @[Veeam](urn:li:organization:1053424) Backup and Replication to the latest patched version (v12.1.2.172+ or v12.2+) today.
-→ Restrict administrative access to your backup console to a dedicated‚ isolated management network.
-→ Audit your backup server for any unauthorized account creation or anomalous database queries.
+→ Apply the January 2026 security updates for SharePoint Server 2016‚ 2019‚ and Subscription Edition immediately.
+→ Conduct a retrospective audit of your SharePoint logs for unauthorized code injection or anomalous service account activity.
+→ Ensure that internal SharePoint instances are not reachable from the public internet without a Zero Trust gateway.
 
-#Cybersecurity #Veeam #Ransomware #DataRecovery #CISO #CodeDefence
+#Cybersecurity #DataProtection #SharePoint #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>CISA flags actively exploited Wing FTP Server vulnerability. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/18/cisa-kev-wing-ftp-server-exploitation</link>
-  <pubDate>Wed‚ 18 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/18/cisa-kev-wing-ftp-server-exploitation</guid>
+  <title>Critical Zimbra XSS flaw added to CISA KEV following active attacks. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/19/zimbra-collaboration-suite-xss-cisa-kev-alert</link>
+  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/zimbra-collaboration-suite-xss-cisa-kev-alert</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2025-47813</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-66376</cd:cve>
+  <cd:mentions>@[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
   <description><![CDATA[
-Your internal file transfer configurations are being leaked to unauthenticated scanners. 🐚
+Your corporate email is being targeted through malicious CSS @import directives. 🐚
 
-CVE-2025-47813 · Severity Medium · Active Exploitation in Wing FTP Server.
+CVE-2025-66376 · Severity 7.2 · Active Stored XSS in Zimbra Collaboration Suite.
 
-The @[CISA](urn:li:organization:13010360) has added an information disclosure flaw in Wing FTP Server to the Known Exploited Vulnerabilities catalog. This vulnerability allows an unauthenticated attacker to leak the installation path and configuration data through crafted requests.
+The @[CISA]\\(urn:li:organization:13010360\\) has added a stored cross-site scripting ❨XSS❩ vulnerability in the Zimbra Classic UI to its Known Exploited Vulnerabilities catalog. Attackers are abusing CSS @import directives in HTML emails to execute malicious scripts in the context of the user session.
 
-While rated as medium severity‚ this is a critical precursor for path traversal and RCE. Attackers are using these leaks to map internal directories before launching destructive secondary payloads.
+This allows threat actors to steal session cookies‚ hijack email accounts‚ and exfiltrate sensitive communications. This vulnerability has been observed in targeted campaigns against government agencies and research institutions throughout early 2026.
 
-The uncomfortable truth: Information leaks in your perimeter services are the building blocks for full administrative takeovers.
+The uncomfortable truth: A single malicious email can compromise your entire executive communication history if your mail platform fails to neutralize complex styling directives.
 
-→ Update Wing FTP Server to the latest security release immediately.
-→ Restrict management and FTP ports to known internal IP ranges using hardware firewalls.
-→ Audit server logs for anomalous GET requests targeting system-level configuration files.
+→ Update Synacor Zimbra Collaboration Suite to version 9.0.0 P41‚ 10.0.9‚ or 10.1.1 immediately.
+→ Instruct users to utilize the Modern UI where possible‚ as the vulnerability primarily impacts the Classic UI.
+→ Monitor mail server logs for anomalous outbound traffic originating from webmail user sessions.
 
-#Cybersecurity #Infosec #NetworkSecurity #ZeroTrust #SOC #CodeDefence
+#Cybersecurity #EmailSecurity #Zimbra #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
