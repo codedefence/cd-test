@@ -2,117 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu‚ 19 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Fri‚ 20 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu‚ 19 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri‚ 20 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu‚ 19 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri‚ 20 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Interlock ransomware exploited Cisco FMC zero-day for 36 days before disclosure. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/19/cisco-fmc-zero-day-interlock-ransomware-alert</link>
-  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/cisco-fmc-zero-day-interlock-ransomware-alert</guid>
+  <title>FBI seizes domains of Iran-linked group behind Stryker wiper attack. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/20/fbi-seizes-handala-hacking-domains-stryker-update</link>
+  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/fbi-seizes-handala-hacking-domains-stryker-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20131</cd:cve>
-  <cd:mentions>@[Cisco]\\(urn:li:organization:1063\\)</cd:mentions>
+  <cd:mentions>@[Stryker]\\(urn:li:organization:1592\\)‚ @[Microsoft]\\(urn:li:organization:1035\\)</cd:mentions>
   <description><![CDATA[
-The Interlock ransomware group had a one-month head start on your defense team. 🛡️
+The FBI has struck back against the threat actors who crippled America's largest medical technology firm. 🛡️
 
-CVE-2026-20131 · Severity 10.0 · Critical Java Deserialization in Cisco Secure FMC.
+Enforcement Alert · DOJ seizes four domains linked to Iranian MOIS shell personas.
 
-Amazon Threat Intelligence has confirmed that the Interlock ransomware group has been weaponizing a critical flaw in @[Cisco]\\(urn:li:organization:1063\\) Secure Firewall Management Center ❨FMC❩ since January 26‚ 2026. This unauthenticated RCE allows attackers to bypass authentication and execute Java code as root.
+In the last 24 hours‚ the U.S. Department of Justice announced the seizure of handala-hack[.]to and handala-redwanted[.]to. These domains were used by the Iran-linked group Handala to claim credit for a destructive malware attack against @[Stryker]\\(urn:li:organization:1592\\) that wiped approximately 80‚000 devices by exploiting @[Microsoft]\\(urn:li:organization:1035\\) Intune.
 
-The vulnerability stems from insecure deserialization of user-supplied Java byte streams. Because FMC manages your entire firewall estate‚ root access here allows an attacker to dismantle network security controls and deploy ransomware globally from a single trusted node.
+Authorities confirmed that Handala is a shell persona for Iran's Ministry of Intelligence and Security ❨MOIS❩. While the domains are down‚ the group remains active on Telegram. This disruption is part of a broader effort to neutralize "Cyber Enabled Psychological Operations" designed to terrorize U.S. infrastructure and residents.
 
-The uncomfortable truth: Your perimeter security tools are now the primary vehicles for automated ransomware delivery because they often operate with the highest privileges and the least oversight.
+The uncomfortable truth: Seizing domains stops the PR machine‚ but the underlying identity vulnerabilities that allowed the wipe of 80‚000 devices remain a blueprint for future geopolitical attacks.
 
-→ Update Cisco Secure Firewall Management Center to the latest patched version immediately.
-→ Strictly isolate all management plane interfaces from the public internet using a secure VPN or OOB management network.
-→ Audit your FMC logs for unauthorized administrative accounts or anomalous Java process executions dating back to January.
+→ Review @[CISA]\\(urn:li:organization:13010360\\) urgent guidance on hardening Microsoft Intune and endpoint management systems.
+→ Enforce Multi-Admin Approval for high-impact actions like device wipes or global script deployments.
+→ Audit all administrative logs for the creation of unauthorized accounts in Entra ID ❨formerly Azure AD❩.
 
-#Cybersecurity #Ransomware #Cisco #ZeroDay #PatchManagement #CodeDefence
+#Cybersecurity #Stryker #IdentitySecurity #Intune #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>DarkSword exploit kit targets millions of iPhones for full device takeover. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/19/darksword-ios-spyware-exploit-kit-alert</link>
-  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/darksword-ios-spyware-exploit-kit-alert</guid>
+  <title>CISA adds critical Apple WebKit buffer overflow to KEV catalog today. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/20/cisa-kev-apple-webkit-buffer-overflow-alert</link>
+  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/cisa-kev-apple-webkit-buffer-overflow-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Apple]\\(urn:li:organization:162479\\)‚ @[Google]\\(urn:li:organization:1441\\)</cd:mentions>
+  <cd:cve>CVE-2025-31277</cd:cve>
+  <cd:mentions>@[Apple]\\(urn:li:organization:162479\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
   <description><![CDATA[
-A new Russian-linked exploit kit is silently compromising iPhones via infected websites. 📱
+A critical buffer overflow in Safari and iOS is being actively exploited to compromise mobile devices. 📱
 
-DarkSword · Targets iOS 18.4 to 18.7 · Full Device Takeover and Data Theft.
+CVE-2025-31277 · Severity High · Active Exploitation in Apple WebKit.
 
-Joint research from @[Google]\\(urn:li:organization:1441\\)‚ iVerify‚ and Lookout has identified a sophisticated new spyware delivery framework dubbed DarkSword. Hosted on compromised government servers in Ukraine‚ the kit uses six distinct flaws to gain root control over iPhones when a user simply visits a malicious site.
+The @[CISA]\\(urn:li:organization:13010360\\) has added a critical vulnerability impacting @[Apple]\\(urn:li:organization:162479\\) Safari‚ iOS‚ and iPadOS to the Known Exploited Vulnerabilities catalog today. The flaw allows the processing of maliciously crafted web content to trigger a buffer overflow‚ leading to memory corruption and arbitrary code execution.
 
-The spyware exfiltrates Wi-Fi passwords‚ call history‚ root location history‚ and specifically targets cryptocurrency wallets and health databases. Researchers estimate that up to 270 million iPhones remain vulnerable due to running outdated software released in mid-2025.
+This vulnerability is a primary vehicle for zero-click and one-click mobile exploit kits. By targeting the browser engine‚ attackers can gain initial entry into a device without the user downloading a suspicious file. Federal agencies are mandated to remediate this flaw by April 3‚ 2026.
 
-The uncomfortable truth: Your mobile devices are no longer just communication tools; they are the primary targets for high-speed‚ automated espionage and financial theft.
+The uncomfortable truth: Your mobile browser is the most frequently exploited and least visible attack surface in your enterprise fleet.
 
-→ Force a security update for all managed @[Apple]\\(urn:li:organization:162479\\) devices to the latest iOS 26.3+ or the Background Security Improvements ❨BSI❩ update.
-→ Enable Lockdown Mode for high-risk users to reduce the attack surface for WebKit-based exploits.
-→ Use MDM to isolate any devices that are no longer receiving critical security patches.
+→ Force a security update for all managed Apple devices to the latest iOS 26.3.1 or macOS 16.4.1 releases today.
+→ Enable Lockdown Mode for high-risk users to specifically neutralize WebKit-based memory corruption paths.
+→ Utilize Mobile Device Management ❨MDM❩ to ensure no devices with outdated browser engines are accessing corporate data.
 
-#Cybersecurity #MobileSecurity #iOS #Spyware #ThreatIntelligence #CodeDefence
+#Cybersecurity #MobileSecurity #Apple #ZeroDay #PatchManagement #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>CISA orders federal agencies to patch critical SharePoint RCE flaw today. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/19/cisa-kev-sharepoint-rce-remediation-deadline</link>
-  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/cisa-kev-sharepoint-rce-remediation-deadline</guid>
+  <title>CISA orders federal agencies to patch critical SharePoint RCE by Saturday. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/20/cisa-kev-sharepoint-deserialization-remediation-deadline</link>
+  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/cisa-kev-sharepoint-deserialization-remediation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-20963</cd:cve>
   <cd:mentions>@[Microsoft]\\(urn:li:organization:1035\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
   <description><![CDATA[
-A critical unauthenticated remote code execution flaw in SharePoint is being weaponized in the wild. 🛑
+The remediation window for a critical SharePoint remote code execution flaw is closing fast. 🛑
 
 CVE-2026-20963 · Severity 9.8 · CISA KEV Remediation Deadline: March 21‚ 2026.
 
-The @[CISA]\\(urn:li:organization:13010360\\) has added a critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server to the Known Exploited Vulnerabilities catalog. In a network-based attack‚ an unauthenticated attacker can execute arbitrary code to inject and execute commands remotely on the server.
+The @[CISA]\\(urn:li:organization:13010360\\) added this critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server to the KEV catalog earlier this week following reports of active weaponization. Attackers can execute arbitrary code on the server by sending crafted data to a vulnerable instance.
 
-While the flaw was patched in January‚ active exploitation has recently surged. Because SharePoint often stores the core intellectual property and internal communications of an organization‚ an RCE here represents a total compromise of corporate data.
+Because SharePoint is the primary repository for internal corporate knowledge and documents‚ an RCE here is a catastrophic event for data confidentiality. Attackers are currently using this flaw to bypass authentication and exfiltrate entire document libraries silently.
 
-The uncomfortable truth: If your SharePoint servers are internet-exposed and unpatched today‚ you are operating an open repository for automated data exfiltration.
+The uncomfortable truth: If your SharePoint servers are unpatched and internet-facing by tomorrow‚ you are essentially hosting an open library for nation-state data harvesting.
 
 → Apply the January 2026 security updates for SharePoint Server 2016‚ 2019‚ and Subscription Edition immediately.
-→ Conduct a retrospective audit of your SharePoint logs for unauthorized code injection or anomalous service account activity.
-→ Ensure that internal SharePoint instances are not reachable from the public internet without a Zero Trust gateway.
+→ Strictly restrict network access to SharePoint management interfaces to internal users only.
+→ Audit your SharePoint logs for unauthorized code injection or anomalous service account activity.
 
-#Cybersecurity #DataProtection #SharePoint #PatchManagement #SOC #CodeDefence
+#Cybersecurity #DataProtection #SharePoint #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Zimbra XSS flaw added to CISA KEV following active attacks. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/19/zimbra-collaboration-suite-xss-cisa-kev-alert</link>
-  <pubDate>Thu‚ 19 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/19/zimbra-collaboration-suite-xss-cisa-kev-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2025-66376</cd:cve>
-  <cd:mentions>@[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
+  <title>Critical Adobe Commerce PolyShell flaw allows unauthenticated takeover. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/20/adobe-commerce-magento-polyshell-vulnerability-alert</link>
+  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/adobe-commerce-magento-polyshell-vulnerability-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Adobe]\\(urn:li:organization:1441\\)</cd:mentions>
   <description><![CDATA[
-Your corporate email is being targeted through malicious CSS @import directives. 🐚
+A newly disclosed flaw dubbed PolyShell allows attackers to take full control of e-commerce sites. 🐚
 
-CVE-2025-66376 · Severity 7.2 · Active Stored XSS in Zimbra Collaboration Suite.
+Vulnerability Alert · Impacting Adobe Commerce and Magento Open Source.
 
-The @[CISA]\\(urn:li:organization:13010360\\) has added a stored cross-site scripting ❨XSS❩ vulnerability in the Zimbra Classic UI to its Known Exploited Vulnerabilities catalog. Attackers are abusing CSS @import directives in HTML emails to execute malicious scripts in the context of the user session.
+Security researchers have disclosed a critical flaw in @[Adobe]\\(urn:li:organization:1441\\) Commerce stable version 2 installations. Dubbed PolyShell‚ this vulnerability allows unauthenticated attackers to execute arbitrary code and achieve full account takeover of the administrative interface.
 
-This allows threat actors to steal session cookies‚ hijack email accounts‚ and exfiltrate sensitive communications. This vulnerability has been observed in targeted campaigns against government agencies and research institutions throughout early 2026.
+This is a maximum-priority risk for the retail and finance sectors. Attackers are prioritizing these platforms to inject credit card skimmers ❨Magecart❩ and exfiltrate customer PII. The flaw stems from an improper implementation of shell execution triggers in the core application logic.
 
-The uncomfortable truth: A single malicious email can compromise your entire executive communication history if your mail platform fails to neutralize complex styling directives.
+The uncomfortable truth: Your e-commerce platform is your most public-facing and financially sensitive asset; a single unpatched shell flaw can bankrupt your customer trust in minutes.
 
-→ Update Synacor Zimbra Collaboration Suite to version 9.0.0 P41‚ 10.0.9‚ or 10.1.1 immediately.
-→ Instruct users to utilize the Modern UI where possible‚ as the vulnerability primarily impacts the Classic UI.
-→ Monitor mail server logs for anomalous outbound traffic originating from webmail user sessions.
+→ Update @[Adobe]\\(urn:li:organization:1441\\) Commerce and Magento Open Source to the latest security release immediately.
+→ Implement a Web Application Firewall ❨WAF❩ to detect and block anomalous POST requests targeting administrative paths.
+→ Conduct a deep scan of your e-commerce codebase for unauthorized PHP or JavaScript injections.
 
-#Cybersecurity #EmailSecurity #Zimbra #VulnerabilityManagement #SOC #CodeDefence
+#Cybersecurity #Ecommerce #Magento #AppSec #SOC #CodeDefence
   ]]></description>
 </item>
 
