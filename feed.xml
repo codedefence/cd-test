@@ -15,19 +15,19 @@
   <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/fbi-seizes-handala-hacking-domains-stryker-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Stryker]\\(urn:li:organization:1592\\)‚ @[Microsoft]\\(urn:li:organization:1035\\)</cd:mentions>
+  <cd:mentions>@[Stryker](urn:li:organization:1592)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-The FBI has struck back against the threat actors who crippled America's largest medical technology firm. 🛡️
+The FBI has struck back against the threat actors who crippled one of the largest medical technology firms. 🛡️
 
 Enforcement Alert · DOJ seizes four domains linked to Iranian MOIS shell personas.
 
-In the last 24 hours‚ the U.S. Department of Justice announced the seizure of handala-hack[.]to and handala-redwanted[.]to. These domains were used by the Iran-linked group Handala to claim credit for a destructive malware attack against @[Stryker]\\(urn:li:organization:1592\\) that wiped approximately 80‚000 devices by exploiting @[Microsoft]\\(urn:li:organization:1035\\) Intune.
+In the last 24 hours‚ the U.S. Department of Justice announced the seizure of handala-hack[.]to and handala-redwanted[.]to. These domains were used by the Iran-linked group Handala to claim credit for a destructive malware attack against @[Stryker](urn:li:organization:1592) that wiped approximately 80‚000 devices by exploiting @[Microsoft](urn:li:organization:1035) Intune.
 
-Authorities confirmed that Handala is a shell persona for Iran's Ministry of Intelligence and Security ❨MOIS❩. While the domains are down‚ the group remains active on Telegram. This disruption is part of a broader effort to neutralize "Cyber Enabled Psychological Operations" designed to terrorize U.S. infrastructure and residents.
+Authorities confirmed that Handala is a shell persona for Iran Ministry of Intelligence and Security ❨MOIS❩. While the domains are down‚ the group remains active on Telegram. This disruption is part of a broader effort to neutralize Cyber Enabled Psychological Operations designed to terrorize infrastructure and residents.
 
 The uncomfortable truth: Seizing domains stops the PR machine‚ but the underlying identity vulnerabilities that allowed the wipe of 80‚000 devices remain a blueprint for future geopolitical attacks.
 
-→ Review @[CISA]\\(urn:li:organization:13010360\\) urgent guidance on hardening Microsoft Intune and endpoint management systems.
+→ Review @[CISA](urn:li:organization:13010360) urgent guidance on hardening Microsoft Intune and endpoint management systems.
 → Enforce Multi-Admin Approval for high-impact actions like device wipes or global script deployments.
 → Audit all administrative logs for the creation of unauthorized accounts in Entra ID ❨formerly Azure AD❩.
 
@@ -42,13 +42,13 @@ The uncomfortable truth: Seizing domains stops the PR machine‚ but the underly
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/cisa-kev-apple-webkit-buffer-overflow-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-31277</cd:cve>
-  <cd:mentions>@[Apple]\\(urn:li:organization:162479\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
+  <cd:mentions>@[Apple](urn:li:organization:162479)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
 A critical buffer overflow in Safari and iOS is being actively exploited to compromise mobile devices. 📱
 
 CVE-2025-31277 · Severity High · Active Exploitation in Apple WebKit.
 
-The @[CISA]\\(urn:li:organization:13010360\\) has added a critical vulnerability impacting @[Apple]\\(urn:li:organization:162479\\) Safari‚ iOS‚ and iPadOS to the Known Exploited Vulnerabilities catalog today. The flaw allows the processing of maliciously crafted web content to trigger a buffer overflow‚ leading to memory corruption and arbitrary code execution.
+The @[CISA](urn:li:organization:13010360) has added a critical vulnerability impacting @[Apple](urn:li:organization:162479) Safari‚ iOS‚ and iPadOS to the Known Exploited Vulnerabilities catalog today. The flaw allows the processing of maliciously crafted web content to trigger a buffer overflow‚ leading to memory corruption and arbitrary code execution.
 
 This vulnerability is a primary vehicle for zero-click and one-click mobile exploit kits. By targeting the browser engine‚ attackers can gain initial entry into a device without the user downloading a suspicious file. Federal agencies are mandated to remediate this flaw by April 3‚ 2026.
 
@@ -63,51 +63,24 @@ The uncomfortable truth: Your mobile browser is the most frequently exploited an
 </item>
 
 <item>
-  <title>CISA orders federal agencies to patch critical SharePoint RCE by Saturday. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/20/cisa-kev-sharepoint-deserialization-remediation-deadline</link>
-  <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/cisa-kev-sharepoint-deserialization-remediation-deadline</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20963</cd:cve>
-  <cd:mentions>@[Microsoft]\\(urn:li:organization:1035\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
-  <description><![CDATA[
-The remediation window for a critical SharePoint remote code execution flaw is closing fast. 🛑
-
-CVE-2026-20963 · Severity 9.8 · CISA KEV Remediation Deadline: March 21‚ 2026.
-
-The @[CISA]\\(urn:li:organization:13010360\\) added this critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server to the KEV catalog earlier this week following reports of active weaponization. Attackers can execute arbitrary code on the server by sending crafted data to a vulnerable instance.
-
-Because SharePoint is the primary repository for internal corporate knowledge and documents‚ an RCE here is a catastrophic event for data confidentiality. Attackers are currently using this flaw to bypass authentication and exfiltrate entire document libraries silently.
-
-The uncomfortable truth: If your SharePoint servers are unpatched and internet-facing by tomorrow‚ you are essentially hosting an open library for nation-state data harvesting.
-
-→ Apply the January 2026 security updates for SharePoint Server 2016‚ 2019‚ and Subscription Edition immediately.
-→ Strictly restrict network access to SharePoint management interfaces to internal users only.
-→ Audit your SharePoint logs for unauthorized code injection or anomalous service account activity.
-
-#Cybersecurity #DataProtection #SharePoint #VulnerabilityManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
   <title>Critical Adobe Commerce PolyShell flaw allows unauthenticated takeover. 🐚</title>
   <link>https://codedefence.in/blog/2026/03/20/adobe-commerce-magento-polyshell-vulnerability-alert</link>
   <pubDate>Fri‚ 20 Mar 2026 19:15:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/adobe-commerce-magento-polyshell-vulnerability-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Adobe]\\(urn:li:organization:1441\\)</cd:mentions>
+  <cd:mentions>@[Adobe](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
 A newly disclosed flaw dubbed PolyShell allows attackers to take full control of e-commerce sites. 🐚
 
 Vulnerability Alert · Impacting Adobe Commerce and Magento Open Source.
 
-Security researchers have disclosed a critical flaw in @[Adobe]\\(urn:li:organization:1441\\) Commerce stable version 2 installations. Dubbed PolyShell‚ this vulnerability allows unauthenticated attackers to execute arbitrary code and achieve full account takeover of the administrative interface.
+Security researchers have disclosed a critical flaw in @[Adobe](urn:li:organization:1441) Commerce stable version 2 installations. Dubbed PolyShell‚ this vulnerability allows unauthenticated attackers to execute arbitrary code and achieve full account takeover of the administrative interface.
 
 This is a maximum-priority risk for the retail and finance sectors. Attackers are prioritizing these platforms to inject credit card skimmers ❨Magecart❩ and exfiltrate customer PII. The flaw stems from an improper implementation of shell execution triggers in the core application logic.
 
 The uncomfortable truth: Your e-commerce platform is your most public-facing and financially sensitive asset; a single unpatched shell flaw can bankrupt your customer trust in minutes.
 
-→ Update @[Adobe]\\(urn:li:organization:1441\\) Commerce and Magento Open Source to the latest security release immediately.
+→ Update Adobe Commerce and Magento Open Source to the latest security release immediately.
 → Implement a Web Application Firewall ❨WAF❩ to detect and block anomalous POST requests targeting administrative paths.
 → Conduct a deep scan of your e-commerce codebase for unauthorized PHP or JavaScript injections.
 
