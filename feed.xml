@@ -24,7 +24,7 @@ CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager
 
 Oracle has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited‚ an attacker can execute arbitrary code and gain full administrative control over the identity environment.
 
-Because Identity Manager is the heart of user provisioning and access control for many enterprises‚ a compromise here is a "total loss" scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
+Because Identity Manager is the heart of user provisioning and access control for many enterprises‚ a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
 
 The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
 
@@ -54,7 +54,7 @@ The worm uses these stolen secrets to automatically compromise and republish add
 
 The uncomfortable truth: Your automated security scanners are only as secure as the pipelines that deliver them; a single hijacked tag can turn your defense tool into a malware delivery vehicle.
 
-→ Audit your CI/CD pipelines for any use of "aquasecurity/trivy-action" or "aquasecurity/setup-trivy" tags modified in the last 48 hours.
+→ Audit your CI/CD pipelines for any use of aquasecurity/trivy-action tags modified in the last 48 hours.
 → Immediately rotate all secrets‚ tokens‚ and API keys that may have been exposed in GitHub Actions logs.
 → Implement pin-to-hash policies for all third-party GitHub Actions to prevent unauthorized tag hijacking from impacting your builds.
 
@@ -63,55 +63,55 @@ The uncomfortable truth: Your automated security scanners are only as secure as 
 </item>
 
 <item>
-  <title>CISA orders final remediation for maximum-severity Cisco FMC flaw by Sunday. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/21/cisa-kev-cisco-fmc-remediation-deadline-alert</link>
+  <title>Final remediation deadline for Microsoft SharePoint RCE flaw today. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</link>
   <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/cisa-kev-cisco-fmc-remediation-deadline-alert</guid>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20131</cd:cve>
-  <cd:mentions>@[Cisco]\\(urn:li:organization:1063\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
+  <cd:cve>CVE-2026-20963</cd:cve>
+  <cd:mentions>@[Microsoft]\\(urn:li:organization:1035\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
   <description><![CDATA[
-The window for patching a critical firewall management flaw used in ransomware campaigns is closing. 🛑
+The remediation window for a critical SharePoint remote code execution flaw is closing today. 🛑
 
-CVE-2026-20131 · Severity 10.0 · CISA KEV Remediation Deadline: March 22‚ 2026.
+CVE-2026-20963 · Severity 9.8 · CISA KEV Remediation Deadline: March 21‚ 2026.
 
-The @[CISA]\\(urn:li:organization:13010360\\) has issued a final reminder that federal agencies must remediate a maximum-severity RCE flaw in @[Cisco]\\(urn:li:organization:1063\\) Secure Firewall Management Center ❨FMC❩ by tomorrow. This vulnerability has been under active exploitation by ransomware groups as a zero-day for over a month.
+The @[CISA]\\(urn:li:organization:13010360\\) has mandated that all federal agencies remediate this critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server by the end of today. Attackers can execute arbitrary code on the server by sending crafted data to a vulnerable instance.
 
-The flaw allows an unauthenticated attacker to execute Java code as root on the underlying operating system. Because FMC is the unified control plane for your firewall estate‚ a compromise here allows an attacker to disable security rules and deploy malware across the entire network fabric simultaneously.
+While the flaw was patched in January‚ active exploitation has surged. Because SharePoint often stores the core intellectual property and internal communications of an organization‚ an RCE here represents a total compromise of corporate data.
 
-The uncomfortable truth: If your management plane is unpatched and reachable today‚ you are effectively ceding control of your entire network to an automated adversary.
+The uncomfortable truth: If your SharePoint servers are internet-exposed and unpatched today‚ you are operating an open repository for automated data exfiltration.
 
-→ Update Cisco Secure Firewall Management Center to the latest patched release immediately.
-→ Strictly isolate all management plane interfaces from the public internet using a secure VPN or OOB management network.
-→ Conduct a deep forensic audit of your FMC logs for unauthorized administrative accounts or anomalous process executions.
+→ Apply the January 2026 security updates for SharePoint Server immediately.
+→ Strictly restrict network access to SharePoint management interfaces to internal users only.
+→ Audit your SharePoint logs for unauthorized code injection or anomalous service account activity.
 
-#Cybersecurity #NetworkSecurity #Cisco #PatchManagement #SOC #CodeDefence
+#Cybersecurity #DataProtection #SharePoint #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>FBI and CISA warn of Russian-linked phishing targeting Signal and WhatsApp. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/21/fbi-cisa-russian-phishing-signal-whatsapp-alert</link>
+  <title>Critical Langflow flaw exploited within 20 hours of public disclosure. 🤖</title>
+  <link>https://codedefence.in/blog/2026/03/21/langflow-ai-framework-rce-active-exploitation</link>
   <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/fbi-cisa-russian-phishing-signal-whatsapp-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[CISA]\\(urn:li:organization:13010360\\)‚ @[Google]\\(urn:li:organization:1441\\)</cd:mentions>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/langflow-ai-framework-rce-active-exploitation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-33017</cd:cve>
   <description><![CDATA[
-Russian intelligence-linked hackers are using sophisticated phishing to hijack encrypted messaging accounts. 🐚
+Attackers are weaponizing AI framework vulnerabilities almost as fast as they are published. 🤖
 
-Threat Alert · Thousands of Signal and WhatsApp accounts compromised in targeted campaigns.
+CVE-2026-33017 · Severity 9.3 · Active Exploitation in Langflow AI Framework.
 
-The FBI and @[CISA]\\(urn:li:organization:13010360\\) have issued a joint advisory warning that Russian-linked threat actors are targeting individuals of high intelligence value on encrypted messaging apps. The campaign uses social engineering to trick users into sharing authentication codes or clicking malicious links that bypass user-level security protections.
+A critical security flaw impacting Langflow has come under active exploitation within 20 hours of public disclosure. The defect is a case of missing authentication combined with code injection that could result in unauthenticated remote code execution.
 
-While the encryption systems of these apps remain intact‚ the attackers are impersonating trusted contacts or official security prompts to gain full account access. This allows for the exfiltration of private messages‚ call histories‚ and contact lists from high-value government and military personnel.
+Attackers are currently scanning the internet for exposed Langflow instances to extract sensitive environment variables‚ configuration files‚ and credentials. This information can then be used to access connected databases and broader cloud infrastructure.
 
-The uncomfortable truth: No amount of end-to-end encryption can protect your communications if an attacker uses social engineering to take over your account at the identity level.
+The uncomfortable truth: The speed of AI innovation is currently outpacing the speed of AI security; a single unauthenticated endpoint in your AI workflow can compromise your entire data pipeline.
 
-→ Instruct all high-value personnel to enable a Registration Lock or PIN on their messaging apps to prevent unauthorized account transfers.
-→ Treat any unsolicited security prompts or authentication code requests as malicious and report them immediately.
-→ Move highly sensitive corporate communications to managed‚ organization-controlled platforms that support phishing-resistant MFA.
+→ Update Langflow to the latest patched version immediately.
+→ Ensure that all AI development frameworks are hosted behind a Zero Trust gateway and are not internet-exposed.
+→ Audit your system logs for unauthorized API requests or anomalous Python process executions.
 
-#Cybersecurity #SocialEngineering #Signal #WhatsApp #Privacy #CodeDefence
+#Cybersecurity #AISecurity #Langflow #AppSec #ThreatIntelligence #CodeDefence
   ]]></description>
 </item>
 
