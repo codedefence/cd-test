@@ -6,13 +6,13 @@
   <link>https://codedefence.in/executive-briefing</link>
   <description>Daily cybersecurity intelligence for Sat‚ 21 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat‚ 21 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
+  <lastBuildDate>Sat‚ 21 Mar 2026 23:15:00 +0300</lastBuildDate>
 
 <item>
   <title>Oracle issues emergency fix for critical Identity Manager RCE flaw. 🛡️</title>
   <link>https://codedefence.in/blog/2026/03/21/oracle-identity-manager-emergency-rce-patch</link>
-  <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
+  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/oracle-identity-manager-emergency-rce-patch</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-21992</cd:cve>
@@ -39,7 +39,7 @@ The uncomfortable truth: Your centralized identity system is your greatest secur
 <item>
   <title>Self-spreading CanisterWorm hits npm registry following Trivy breach. 🐛</title>
   <link>https://codedefence.in/blog/2026/03/21/canisterworm-npm-supply-chain-attack-alert</link>
-  <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
+  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/canisterworm-npm-supply-chain-attack-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[GitHub]\\(urn:li:organization:19041\\)</cd:mentions>
@@ -63,9 +63,36 @@ The uncomfortable truth: Your automated security scanners are only as secure as 
 </item>
 
 <item>
+  <title>Critical Quest KACE SMA vulnerability potentially exploited in active attacks. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/21/quest-kace-sma-authentication-bypass-exploitation</link>
+  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/quest-kace-sma-authentication-bypass-exploitation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-32975</cd:cve>
+  <cd:mentions>@[Quest Software]\\(urn:li:organization:2353\\)</cd:mentions>
+  <description><![CDATA[
+Your endpoint management infrastructure is being targeted for unauthenticated administrative takeover. 🛡️
+
+CVE-2025-32975 · Severity 9.8 · Authentication Bypass in Quest KACE SMA.
+
+Arctic Wolf Labs has detected suspicious activity tied to the exploitation of a critical authentication bypass in Quest KACE Systems Management Appliances ❨SMA❩. Unauthenticated threat actors are exploiting this flaw to impersonate legitimate users and achieve full administrative control of the appliance.
+
+KACE SMA is an on-premises tool used for software distribution and patching‚ making it a high-value target for lateral movement and mass malware deployment. Observed attacks appear to be opportunistic and have specifically impacted the education sector in the last 24 hours.
+
+The uncomfortable truth: Your patching and management tools are often the most trusted and least scrutinized entry points for a wide-scale network compromise.
+
+→ Update Quest KACE SMA to the latest patched version immediately.
+→ Isolate KACE SMA management interfaces from the public internet using a secure VPN or Zero Trust gateway.
+→ Audit your appliance logs for unauthorized user impersonation or anomalous software distribution tasks.
+
+#Cybersecurity #EndpointSecurity #Quest #VulnerabilityManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
   <title>Final remediation deadline for Microsoft SharePoint RCE flaw today. 🛑</title>
   <link>https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</link>
-  <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
+  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-20963</cd:cve>
@@ -86,32 +113,6 @@ The uncomfortable truth: If your SharePoint servers are internet-exposed and unp
 → Audit your SharePoint logs for unauthorized code injection or anomalous service account activity.
 
 #Cybersecurity #DataProtection #SharePoint #PatchManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Critical Langflow flaw exploited within 20 hours of public disclosure. 🤖</title>
-  <link>https://codedefence.in/blog/2026/03/21/langflow-ai-framework-rce-active-exploitation</link>
-  <pubDate>Sat‚ 21 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/langflow-ai-framework-rce-active-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33017</cd:cve>
-  <description><![CDATA[
-Attackers are weaponizing AI framework vulnerabilities almost as fast as they are published. 🤖
-
-CVE-2026-33017 · Severity 9.3 · Active Exploitation in Langflow AI Framework.
-
-A critical security flaw impacting Langflow has come under active exploitation within 20 hours of public disclosure. The defect is a case of missing authentication combined with code injection that could result in unauthenticated remote code execution.
-
-Attackers are currently scanning the internet for exposed Langflow instances to extract sensitive environment variables‚ configuration files‚ and credentials. This information can then be used to access connected databases and broader cloud infrastructure.
-
-The uncomfortable truth: The speed of AI innovation is currently outpacing the speed of AI security; a single unauthenticated endpoint in your AI workflow can compromise your entire data pipeline.
-
-→ Update Langflow to the latest patched version immediately.
-→ Ensure that all AI development frameworks are hosted behind a Zero Trust gateway and are not internet-exposed.
-→ Audit your system logs for unauthorized API requests or anomalous Python process executions.
-
-#Cybersecurity #AISecurity #Langflow #AppSec #ThreatIntelligence #CodeDefence
   ]]></description>
 </item>
 
