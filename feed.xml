@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat‚ 21 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 22 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat‚ 21 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 22 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
-  <lastBuildDate>Sat‚ 21 Mar 2026 23:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 22 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
   <title>Oracle issues emergency fix for critical Identity Manager RCE flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/21/oracle-identity-manager-emergency-rce-patch</link>
-  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/oracle-identity-manager-emergency-rce-patch</guid>
+  <link>https://codedefence.in/blog/2026/03/22/oracle-identity-manager-emergency-rce-patch</link>
+  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/oracle-identity-manager-emergency-rce-patch</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-21992</cd:cve>
-  <cd:mentions>@[Oracle]\\(urn:li:organization:1009\\)</cd:mentions>
+  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
   <description><![CDATA[
 Your core identity infrastructure is open to unauthenticated remote takeover. 🛡️
 
 CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
 
-Oracle has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited‚ an attacker can execute arbitrary code and gain full administrative control over the identity environment.
+Oracle has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited, an attacker can execute arbitrary code and gain full administrative control over the identity environment.
 
-Because Identity Manager is the heart of user provisioning and access control for many enterprises‚ a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
+Because Identity Manager is the heart of user provisioning and access control for many enterprises, a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
 
-The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+The uncomfortable truth: Your centralized identity system is your greatest security asset, but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
 
 → Apply the Oracle March 2026 emergency security updates for Identity Manager and Web Services Manager immediately.
 → Strictly restrict network access to identity management consoles to internal administrative segments only.
@@ -37,82 +37,81 @@ The uncomfortable truth: Your centralized identity system is your greatest secur
 </item>
 
 <item>
-  <title>Self-spreading CanisterWorm hits npm registry following Trivy breach. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/21/canisterworm-npm-supply-chain-attack-alert</link>
-  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/canisterworm-npm-supply-chain-attack-alert</guid>
+  <title>DarkSword exploit kit targets millions of iPhones for full device takeover. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/22/darksword-ios-spyware-exploit-kit-alert</link>
+  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/darksword-ios-spyware-exploit-kit-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub]\\(urn:li:organization:19041\\)</cd:mentions>
+  <cd:mentions>@[Apple](urn:li:organization:162479), @[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-A self-propagating worm is currently moving through the npm ecosystem to steal developer secrets. 🐛
+A new Russian-linked exploit kit is silently compromising iPhones via infected websites. 📱
 
-Supply Chain Alert · CanisterWorm infecting 47 npm packages and counting.
+DarkSword · Targets iOS 18 and older · Full Device Takeover and Data Theft.
 
-In the last 24 hours‚ security researchers have identified a self-spreading worm dubbed CanisterWorm targeting the npm registry. This campaign follows a significant breach of the Trivy security scanner GitHub Actions repository‚ where attackers force-pushed 75 hijacked tags to steal CI/CD secrets and tokens.
+Joint research from @[Google](urn:li:organization:1441), iVerify, and Lookout has identified a sophisticated new spyware delivery framework dubbed DarkSword. Hosted on compromised government and news servers, the kit uses web-based exploitation to gain root control over iPhones when a user simply visits a malicious site.
 
-The worm uses these stolen secrets to automatically compromise and republish additional npm packages with malicious code. This creates a cascading effect where the compromise of one developer tool leads to the silent infection of dozens of downstream dependencies.
+The spyware exfiltrates passwords, Health data, and specifically targets cryptocurrency wallet credentials. Researchers warn that millions of users who have not updated to the latest iOS 26.x releases are at high risk of silent compromise.
+
+The uncomfortable truth: Your mobile devices are no longer just communication tools; they are the primary targets for high-speed, automated espionage and financial theft.
+
+→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS releases today.
+→ Enable Lockdown Mode for high-risk users to specifically neutralize web-based memory corruption paths.
+→ Utilize Mobile Device Management (MDM) to ensure no devices with outdated browser engines are accessing corporate data.
+
+#Cybersecurity #MobileSecurity #iOS #Spyware #ThreatIntelligence #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Final remediation deadline for critical Cisco FMC RCE flaw today. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/22/cisa-kev-cisco-fmc-remediation-deadline-alert</link>
+  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/cisa-kev-cisco-fmc-remediation-deadline-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+The window for patching a critical firewall management flaw used in ransomware campaigns is closing today. 🛑
+
+CVE-2026-20131 · Severity 10.0 · CISA KEV Remediation Deadline: March 22, 2026.
+
+The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a maximum-severity RCE flaw in @[Cisco](urn:li:organization:1063) Secure Firewall Management Center (FMC) by the end of today. This vulnerability has been under active exploitation by ransomware groups as a zero-day for over a month.
+
+The flaw allows an unauthenticated attacker to execute arbitrary code as root. Because FMC is the unified control plane for your firewall estate, a compromise here allows an attacker to disable security rules and deploy malware across the entire network fabric simultaneously.
+
+The uncomfortable truth: If your management plane is unpatched and reachable today, you are effectively ceding control of your entire network to an automated adversary.
+
+→ Update Cisco Secure Firewall Management Center to the latest patched release immediately.
+→ Strictly isolate all management plane interfaces from the public internet using a secure VPN or OOB management network.
+→ Conduct a deep forensic audit of your FMC logs for unauthorized administrative accounts or anomalous process executions.
+
+#Cybersecurity #NetworkSecurity #Cisco #PatchManagement #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Trivy vulnerability scanner compromised in supply-chain infostealer attack. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/22/trivy-scanner-supply-chain-attack-alert</link>
+  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/trivy-scanner-supply-chain-attack-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <description><![CDATA[
+Your automated security tools are being weaponized to steal your corporate secrets. 🐛
+
+Supply Chain Alert · TeamPCP compromising Trivy scanner via GitHub Actions.
+
+The Trivy vulnerability scanner has been compromised in a sophisticated supply-chain attack. Threat actors known as TeamPCP successfully hijacked the @[GitHub](urn:li:organization:19041) Actions workflow to distribute credential-stealing malware through official releases.
+
+The malicious code is designed to exfiltrate environment variables, AWS keys, and CI/CD secrets during the scanning process. This creates a high-impact risk for DevOps environments where security tools often have high-privilege access to the build infrastructure.
 
 The uncomfortable truth: Your automated security scanners are only as secure as the pipelines that deliver them; a single hijacked tag can turn your defense tool into a malware delivery vehicle.
 
-→ Audit your CI/CD pipelines for any use of aquasecurity/trivy-action tags modified in the last 48 hours.
-→ Immediately rotate all secrets‚ tokens‚ and API keys that may have been exposed in GitHub Actions logs.
+→ Audit your CI/CD pipelines for any use of Trivy tags modified in the last 48 hours.
+→ Immediately rotate all secrets, tokens, and API keys that may have been exposed in GitHub Actions logs.
 → Implement pin-to-hash policies for all third-party GitHub Actions to prevent unauthorized tag hijacking from impacting your builds.
 
-#Cybersecurity #SupplyChain #DevSecOps #npm #GitHub #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Critical Quest KACE SMA vulnerability potentially exploited in active attacks. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/21/quest-kace-sma-authentication-bypass-exploitation</link>
-  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/quest-kace-sma-authentication-bypass-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-32975</cd:cve>
-  <cd:mentions>@[Quest Software]\\(urn:li:organization:2353\\)</cd:mentions>
-  <description><![CDATA[
-Your endpoint management infrastructure is being targeted for unauthenticated administrative takeover. 🛡️
-
-CVE-2025-32975 · Severity 9.8 · Authentication Bypass in Quest KACE SMA.
-
-Arctic Wolf Labs has detected suspicious activity tied to the exploitation of a critical authentication bypass in Quest KACE Systems Management Appliances ❨SMA❩. Unauthenticated threat actors are exploiting this flaw to impersonate legitimate users and achieve full administrative control of the appliance.
-
-KACE SMA is an on-premises tool used for software distribution and patching‚ making it a high-value target for lateral movement and mass malware deployment. Observed attacks appear to be opportunistic and have specifically impacted the education sector in the last 24 hours.
-
-The uncomfortable truth: Your patching and management tools are often the most trusted and least scrutinized entry points for a wide-scale network compromise.
-
-→ Update Quest KACE SMA to the latest patched version immediately.
-→ Isolate KACE SMA management interfaces from the public internet using a secure VPN or Zero Trust gateway.
-→ Audit your appliance logs for unauthorized user impersonation or anomalous software distribution tasks.
-
-#Cybersecurity #EndpointSecurity #Quest #VulnerabilityManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Final remediation deadline for Microsoft SharePoint RCE flaw today. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</link>
-  <pubDate>Sat‚ 21 Mar 2026 23:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/21/cisa-kev-sharepoint-rce-remediation-deadline</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20963</cd:cve>
-  <cd:mentions>@[Microsoft]\\(urn:li:organization:1035\\)‚ @[CISA]\\(urn:li:organization:13010360\\)</cd:mentions>
-  <description><![CDATA[
-The remediation window for a critical SharePoint remote code execution flaw is closing today. 🛑
-
-CVE-2026-20963 · Severity 9.8 · CISA KEV Remediation Deadline: March 21‚ 2026.
-
-The @[CISA]\\(urn:li:organization:13010360\\) has mandated that all federal agencies remediate this critical deserialization flaw in @[Microsoft]\\(urn:li:organization:1035\\) SharePoint Server by the end of today. Attackers can execute arbitrary code on the server by sending crafted data to a vulnerable instance.
-
-While the flaw was patched in January‚ active exploitation has surged. Because SharePoint often stores the core intellectual property and internal communications of an organization‚ an RCE here represents a total compromise of corporate data.
-
-The uncomfortable truth: If your SharePoint servers are internet-exposed and unpatched today‚ you are operating an open repository for automated data exfiltration.
-
-→ Apply the January 2026 security updates for SharePoint Server immediately.
-→ Strictly restrict network access to SharePoint management interfaces to internal users only.
-→ Audit your SharePoint logs for unauthorized code injection or anomalous service account activity.
-
-#Cybersecurity #DataProtection #SharePoint #PatchManagement #SOC #CodeDefence
+#Cybersecurity #SupplyChain #DevSecOps #GitHub #AppSec #CodeDefence
   ]]></description>
 </item>
 
