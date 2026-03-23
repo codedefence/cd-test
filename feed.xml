@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 22 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 23 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 22 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 23 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 22 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 23 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Oracle issues emergency fix for critical Identity Manager RCE flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/22/oracle-identity-manager-emergency-rce-patch</link>
-  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/oracle-identity-manager-emergency-rce-patch</guid>
+  <title>CanisterWorm transitions to wiper attack targeting cloud infrastructure. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/23/canisterworm-wiper-attack-iran-cloud-alert</link>
+  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/canisterworm-wiper-attack-iran-cloud-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21992</cd:cve>
-  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
+  <cd:mentions>@[Docker](urn:li:organization:3071271), @[GitHub](urn:li:organization:19041)</cd:mentions>
   <description><![CDATA[
-Your core identity infrastructure is open to unauthenticated remote takeover. 🛡️
+The threat actors behind the Trivy supply chain attack have unleashed a destructive cloud-native worm. 🛡️
 
-CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
+Threat Alert · TeamPCP deploying CanisterWorm wiper via exposed Docker and Kubernetes APIs.
 
-Oracle has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited, an attacker can execute arbitrary code and gain full administrative control over the identity environment.
+In the last 24 hours, security researchers have observed a shift in TeamPCP's tactics. The group is now deploying a new variant of CanisterWorm that executes a wiper payload if the infected system is located in the Iran timezone or has Farsi set as the default language. The worm spreads by industrializing the exploitation of exposed control planes and misconfigured cloud APIs.
 
-Because Identity Manager is the heart of user provisioning and access control for many enterprises, a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
+If the wiper component detects that the victim is in the target region and has access to a Kubernetes cluster, it will systematically destroy data on every node in that cluster. This follows the group's recent supply chain attack on the Trivy scanner via @[GitHub](urn:li:organization:19041) Actions.
 
-The uncomfortable truth: Your centralized identity system is your greatest security asset, but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+The uncomfortable truth: Your cloud-native infrastructure is no longer just a target for data theft; it is now a frontline for automated, geopolitical destructive operations.
 
-→ Apply the Oracle March 2026 emergency security updates for Identity Manager and Web Services Manager immediately.
-→ Strictly restrict network access to identity management consoles to internal administrative segments only.
-→ Audit your identity logs for unauthorized administrative actions or anomalous service account creations.
+→ Audit all @[Docker](urn:li:organization:3071271) and Kubernetes APIs to ensure they are not exposed to the public internet without strict authentication.
+→ Rotate all cloud credentials, SSH keys, and tokens that may have been exposed during recent Trivy or npm registry scans.
+→ Implement egress filtering on all container nodes to prevent the worm from communicating with command-and-control infrastructure.
 
-#Cybersecurity #IdentitySecurity #Oracle #PatchManagement #CISO #CodeDefence
+#Cybersecurity #CloudSecurity #CanisterWorm #SupplyChain #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>DarkSword exploit kit targets millions of iPhones for full device takeover. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/22/darksword-ios-spyware-exploit-kit-alert</link>
-  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/darksword-ios-spyware-exploit-kit-alert</guid>
+  <title>Unpatched Quest KACE SMA systems hit by mass exploitation campaign. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/23/quest-kace-sma-authentication-bypass-mass-exploitation</link>
+  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/quest-kace-sma-authentication-bypass-mass-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Apple](urn:li:organization:162479), @[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:cve>CVE-2025-32975</cd:cve>
+  <cd:mentions>@[Quest Software](urn:li:organization:2353)</cd:mentions>
   <description><![CDATA[
-A new Russian-linked exploit kit is silently compromising iPhones via infected websites. 📱
+Threat actors are systematically hijacking unpatched endpoint management appliances globally. 🛑
 
-DarkSword · Targets iOS 18 and older · Full Device Takeover and Data Theft.
+CVE-2025-32975 · Severity 10.0 · Active Exploitation in Quest KACE SMA.
 
-Joint research from @[Google](urn:li:organization:1441), iVerify, and Lookout has identified a sophisticated new spyware delivery framework dubbed DarkSword. Hosted on compromised government and news servers, the kit uses web-based exploitation to gain root control over iPhones when a user simply visits a malicious site.
+Arctic Wolf has warned of a surge in malicious activity targeting unpatched @[Quest Software](urn:li:organization:2353) KACE Systems Management Appliances (SMA). Attackers are exploiting a critical authentication bypass to impersonate administrative users and gain full root control over the appliance.
 
-The spyware exfiltrates passwords, Health data, and specifically targets cryptocurrency wallet credentials. Researchers warn that millions of users who have not updated to the latest iOS 26.x releases are at high risk of silent compromise.
+Because KACE SMA is used for centralized software distribution and patching, root access here allows an attacker to push malware to every connected endpoint in the enterprise fleet. The campaign has specifically impacted the education sector in the last 24 hours.
 
-The uncomfortable truth: Your mobile devices are no longer just communication tools; they are the primary targets for high-speed, automated espionage and financial theft.
+The uncomfortable truth: Your patching tools are the most dangerous entry points for an attacker because they operate with the highest privileges and are often trusted implicitly by every device on your network.
 
-→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS releases today.
-→ Enable Lockdown Mode for high-risk users to specifically neutralize web-based memory corruption paths.
-→ Utilize Mobile Device Management (MDM) to ensure no devices with outdated browser engines are accessing corporate data.
+→ Update Quest KACE SMA to the latest patched version immediately.
+→ Strictly isolate the KACE SMA management interface from the public internet using a secure VPN or Zero Trust gateway.
+→ Audit your appliance logs for the creation of unauthorized administrative accounts or anomalous software distribution tasks.
 
-#Cybersecurity #MobileSecurity #iOS #Spyware #ThreatIntelligence #CodeDefence
+#Cybersecurity #EndpointSecurity #Quest #VulnerabilityManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Final remediation deadline for critical Cisco FMC RCE flaw today. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/22/cisa-kev-cisco-fmc-remediation-deadline-alert</link>
-  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/cisa-kev-cisco-fmc-remediation-deadline-alert</guid>
+  <title>CISA orders federal agencies to patch DarkSword iOS and Craft CMS flaws. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/23/cisa-kev-darksword-ios-craft-cms-laravel-alert</link>
+  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/cisa-kev-darksword-ios-craft-cms-laravel-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20131</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063), @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-32432, CVE-2025-31277</cd:cve>
+  <cd:mentions>@[Apple](urn:li:organization:162479), @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-The window for patching a critical firewall management flaw used in ransomware campaigns is closing today. 🛑
+Five critical vulnerabilities being used in active cyberespionage and code injection attacks have been added to the KEV catalog. 📱
 
-CVE-2026-20131 · Severity 10.0 · CISA KEV Remediation Deadline: March 22, 2026.
+KEV Update · DarkSword exploit kit targeted · Remediation Deadline: April 3, 2026.
 
-The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a maximum-severity RCE flaw in @[Cisco](urn:li:organization:1063) Secure Firewall Management Center (FMC) by the end of today. This vulnerability has been under active exploitation by ransomware groups as a zero-day for over a month.
+The @[CISA](urn:li:organization:13010360) has added five security flaws to its Known Exploited Vulnerabilities catalog. This includes a maximum-severity code injection in Craft CMS (CVE-2025-32432) and multiple @[Apple](urn:li:organization:162479) WebKit flaws (CVE-2025-31277) that are core components of the DarkSword iOS exploit kit.
 
-The flaw allows an unauthenticated attacker to execute arbitrary code as root. Because FMC is the unified control plane for your firewall estate, a compromise here allows an attacker to disable security rules and deploy malware across the entire network fabric simultaneously.
+These vulnerabilities are being used to compromise mobile devices and web platforms remotely. DarkSword allows for the silent exfiltration of passwords, Health data, and crypto wallets, while the CMS flaws enable unauthenticated command execution on web servers.
 
-The uncomfortable truth: If your management plane is unpatched and reachable today, you are effectively ceding control of your entire network to an automated adversary.
+The uncomfortable truth: Your mobile browser and public-facing CMS are the primary entry points for modern state-sponsored intrusion sets.
 
-→ Update Cisco Secure Firewall Management Center to the latest patched release immediately.
-→ Strictly isolate all management plane interfaces from the public internet using a secure VPN or OOB management network.
-→ Conduct a deep forensic audit of your FMC logs for unauthorized administrative accounts or anomalous process executions.
+→ Update all @[Apple](urn:li:organization:162479) devices to the latest iOS 26.3.1 or macOS 16.4.1 releases today to neutralize WebKit exploits.
+→ Patch Craft CMS and Laravel Livewire instances to their latest versions immediately to prevent unauthenticated code injection.
+→ Enable Lockdown Mode for high-value targets to specifically reduce the attack surface for complex memory corruption flaws.
 
-#Cybersecurity #NetworkSecurity #Cisco #PatchManagement #SOC #CodeDefence
+#Cybersecurity #AppSec #MobileSecurity #Apple #CraftCMS #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Trivy vulnerability scanner compromised in supply-chain infostealer attack. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/22/trivy-scanner-supply-chain-attack-alert</link>
-  <pubDate>Sun, 22 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/22/trivy-scanner-supply-chain-attack-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <title>Microsoft warns of IRS-themed phishing delivering RMM malware to 29,000 users. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/23/microsoft-irs-phishing-rmm-malware-campaign-alert</link>
+  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/microsoft-irs-phishing-rmm-malware-campaign-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Your automated security tools are being weaponized to steal your corporate secrets. 🐛
+Attackers are exploiting tax-season urgency to deploy remote management tools across corporate networks. 🐚
 
-Supply Chain Alert · TeamPCP compromising Trivy scanner via GitHub Actions.
+Phishing Alert · 29,000 users targeted with malicious refund and filing reminders.
 
-The Trivy vulnerability scanner has been compromised in a sophisticated supply-chain attack. Threat actors known as TeamPCP successfully hijacked the @[GitHub](urn:li:organization:19041) Actions workflow to distribute credential-stealing malware through official releases.
+@[Microsoft](urn:li:organization:1035) has identified a massive phishing campaign masquerading as IRS refund notices and filing reminders. The campaign tricks users into opening malicious attachments that deploy legitimate Remote Monitoring and Management (RMM) tools, providing the attacker with persistent, backdoor access to the endpoint.
 
-The malicious code is designed to exfiltrate environment variables, AWS keys, and CI/CD secrets during the scanning process. This creates a high-impact risk for DevOps environments where security tools often have high-privilege access to the build infrastructure.
+By using legitimate RMM software, the attackers can bypass many traditional antivirus detections. Once established, they move laterally to siphon credentials and prepare for ransomware deployment.
 
-The uncomfortable truth: Your automated security scanners are only as secure as the pipelines that deliver them; a single hijacked tag can turn your defense tool into a malware delivery vehicle.
+The uncomfortable truth: Your users' natural concern for their financial and legal compliance is a weapon that attackers use to bypass your most expensive security controls.
 
-→ Audit your CI/CD pipelines for any use of Trivy tags modified in the last 48 hours.
-→ Immediately rotate all secrets, tokens, and API keys that may have been exposed in GitHub Actions logs.
-→ Implement pin-to-hash policies for all third-party GitHub Actions to prevent unauthorized tag hijacking from impacting your builds.
+→ Educate employees specifically on tax-themed lures and the danger of clicking "Refund" or "Correction" links in unsolicited emails.
+→ Implement strict application control policies to block the execution of unauthorized RMM tools on non-IT workstations.
+→ Audit your network for unusual outbound connections originating from common remote management binary names.
 
-#Cybersecurity #SupplyChain #DevSecOps #GitHub #AppSec #CodeDefence
+#Cybersecurity #Phishing #Microsoft #SocialEngineering #SOC #CodeDefence
   ]]></description>
 </item>
 
