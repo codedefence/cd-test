@@ -1,119 +1,27 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
-                    xmlns:cd="https://codedefence.in/rss/extensions">
-<channel>
-  <title>Code Defence Intelligence Brief — Mon, 23 Mar 2026</title>
-  <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 23 Mar 2026.</description>
-  <language>en-us</language>
-  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 23 Mar 2026 19:15:00 +0300</lastBuildDate>
-
-<item>
-  <title>CanisterWorm transitions to wiper attack targeting cloud infrastructure. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/23/canisterworm-wiper-attack-iran-cloud-alert</link>
-  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/canisterworm-wiper-attack-iran-cloud-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Docker](urn:li:organization:3071271), @[GitHub](urn:li:organization:19041)</cd:mentions>
-  <description><![CDATA[
-The threat actors behind the Trivy supply chain attack have unleashed a destructive cloud-native worm. 🛡️
-
-Threat Alert · TeamPCP deploying CanisterWorm wiper via exposed Docker and Kubernetes APIs.
-
-In the last 24 hours, security researchers have observed a shift in TeamPCP's tactics. The group is now deploying a new variant of CanisterWorm that executes a wiper payload if the infected system is located in the Iran timezone or has Farsi set as the default language. The worm spreads by industrializing the exploitation of exposed control planes and misconfigured cloud APIs.
-
-If the wiper component detects that the victim is in the target region and has access to a Kubernetes cluster, it will systematically destroy data on every node in that cluster. This follows the group's recent supply chain attack on the Trivy scanner via @[GitHub](urn:li:organization:19041) Actions.
-
-The uncomfortable truth: Your cloud-native infrastructure is no longer just a target for data theft; it is now a frontline for automated, geopolitical destructive operations.
-
-→ Audit all @[Docker](urn:li:organization:3071271) and Kubernetes APIs to ensure they are not exposed to the public internet without strict authentication.
-→ Rotate all cloud credentials, SSH keys, and tokens that may have been exposed during recent Trivy or npm registry scans.
-→ Implement egress filtering on all container nodes to prevent the worm from communicating with command-and-control infrastructure.
-
-#Cybersecurity #CloudSecurity #CanisterWorm #SupplyChain #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Unpatched Quest KACE SMA systems hit by mass exploitation campaign. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/23/quest-kace-sma-authentication-bypass-mass-exploitation</link>
-  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/quest-kace-sma-authentication-bypass-mass-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-32975</cd:cve>
-  <cd:mentions>@[Quest Software](urn:li:organization:2353)</cd:mentions>
-  <description><![CDATA[
-Threat actors are systematically hijacking unpatched endpoint management appliances globally. 🛑
-
-CVE-2025-32975 · Severity 10.0 · Active Exploitation in Quest KACE SMA.
-
-Arctic Wolf has warned of a surge in malicious activity targeting unpatched @[Quest Software](urn:li:organization:2353) KACE Systems Management Appliances (SMA). Attackers are exploiting a critical authentication bypass to impersonate administrative users and gain full root control over the appliance.
-
-Because KACE SMA is used for centralized software distribution and patching, root access here allows an attacker to push malware to every connected endpoint in the enterprise fleet. The campaign has specifically impacted the education sector in the last 24 hours.
-
-The uncomfortable truth: Your patching tools are the most dangerous entry points for an attacker because they operate with the highest privileges and are often trusted implicitly by every device on your network.
-
-→ Update Quest KACE SMA to the latest patched version immediately.
-→ Strictly isolate the KACE SMA management interface from the public internet using a secure VPN or Zero Trust gateway.
-→ Audit your appliance logs for the creation of unauthorized administrative accounts or anomalous software distribution tasks.
-
-#Cybersecurity #EndpointSecurity #Quest #VulnerabilityManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA orders federal agencies to patch DarkSword iOS and Craft CMS flaws. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/23/cisa-kev-darksword-ios-craft-cms-laravel-alert</link>
-  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/cisa-kev-darksword-ios-craft-cms-laravel-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-32432, CVE-2025-31277</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479), @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Five critical vulnerabilities being used in active cyberespionage and code injection attacks have been added to the KEV catalog. 📱
-
-KEV Update · DarkSword exploit kit targeted · Remediation Deadline: April 3, 2026.
-
-The @[CISA](urn:li:organization:13010360) has added five security flaws to its Known Exploited Vulnerabilities catalog. This includes a maximum-severity code injection in Craft CMS (CVE-2025-32432) and multiple @[Apple](urn:li:organization:162479) WebKit flaws (CVE-2025-31277) that are core components of the DarkSword iOS exploit kit.
-
-These vulnerabilities are being used to compromise mobile devices and web platforms remotely. DarkSword allows for the silent exfiltration of passwords, Health data, and crypto wallets, while the CMS flaws enable unauthenticated command execution on web servers.
-
-The uncomfortable truth: Your mobile browser and public-facing CMS are the primary entry points for modern state-sponsored intrusion sets.
-
-→ Update all @[Apple](urn:li:organization:162479) devices to the latest iOS 26.3.1 or macOS 16.4.1 releases today to neutralize WebKit exploits.
-→ Patch Craft CMS and Laravel Livewire instances to their latest versions immediately to prevent unauthenticated code injection.
-→ Enable Lockdown Mode for high-value targets to specifically reduce the attack surface for complex memory corruption flaws.
-
-#Cybersecurity #AppSec #MobileSecurity #Apple #CraftCMS #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Microsoft warns of IRS-themed phishing delivering RMM malware to 29,000 users. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/23/microsoft-irs-phishing-rmm-malware-campaign-alert</link>
-  <pubDate>Mon, 23 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/23/microsoft-irs-phishing-rmm-malware-campaign-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-Attackers are exploiting tax-season urgency to deploy remote management tools across corporate networks. 🐚
-
-Phishing Alert · 29,000 users targeted with malicious refund and filing reminders.
-
-@[Microsoft](urn:li:organization:1035) has identified a massive phishing campaign masquerading as IRS refund notices and filing reminders. The campaign tricks users into opening malicious attachments that deploy legitimate Remote Monitoring and Management (RMM) tools, providing the attacker with persistent, backdoor access to the endpoint.
-
-By using legitimate RMM software, the attackers can bypass many traditional antivirus detections. Once established, they move laterally to siphon credentials and prepare for ransomware deployment.
-
-The uncomfortable truth: Your users' natural concern for their financial and legal compliance is a weapon that attackers use to bypass your most expensive security controls.
-
-→ Educate employees specifically on tax-themed lures and the danger of clicking "Refund" or "Correction" links in unsolicited emails.
-→ Implement strict application control policies to block the execution of unauthorized RMM tools on non-IT workstations.
-→ Audit your network for unusual outbound connections originating from common remote management binary names.
-
-#Cybersecurity #Phishing #Microsoft #SocialEngineering #SOC #CodeDefence
-  ]]></description>
-</item>
-
-</channel>
-</rss>
+Tuesday, March 24, 2026
+🚨 Tuesday Intel: DarkSword iOS Spyware Leak, Crunchyroll's 6.8M Record Exposure, and the "Agentic AI" Security Shift.
+📱 Mobile Security: DarkSword Exploit Kit Leaks on GitHub
+A dangerous hacking tool named "DarkSword" has surfaced on GitHub, putting hundreds of millions of Apple devices at risk.
+ * The Threat: The leaked kit contains simple HTML and JavaScript files that exploit older versions of iOS (specifically iOS 18.4 through 18.7).
+ * The Risk: It is a "zero-click" or "low-interaction" full-chain exploit. Once triggered via a malicious website, it exfiltrates iMessages, Wi-Fi passwords, and location history.
+ * Scope: Security researchers estimate roughly 25% of all active iPhones remain on vulnerable firmware.
+ * Action: Apple urges immediate updates to iOS 26.3 or the latest emergency security patches. Enabling "Lockdown Mode" is a confirmed mitigation for high-risk targets.
+🔓 Data Breach: Crunchyroll (Sony) Investigates Support Ticket Leak
+Anime streaming giant Crunchyroll has confirmed it is investigating claims of a major data breach impacting millions of users.
+ * The Entry: Threat actors reportedly compromised the Okta SSO account of a third-party support agent (Telus International) via infostealer malware.
+ * The Exposure: Approximately 8 million support tickets and 6.8 million unique email addresses were exfiltrated from Zendesk, Slack, and Jira.
+ * Impact: Stolen data includes names, IP addresses, and geographic locations. The hackers are reportedly demanding a $5M ransom to withhold the data.
+🤖 AI Governance: Anthropic’s "Computer Use" & Agentic Risk
+Anthropic has broadly rolled out "Computer Use" for Claude, allowing the AI to navigate desktops, click menus, and type as a human would.
+ * The Vulnerability: Anthropic has warned of "Indirect Prompt Injection," where instructions buried in a third-party webpage could hijack the AI agent's session to exfiltrate local files.
+ * Market Shift: At RSA 2026, the focus has shifted from "Copilots" to "Agentic AI Defense," with companies like Twine Security winning awards for AI "Digital Employees" designed to automate IAM and compliance tasks.
+🔥 Critical Deadline: CISA KEV Reminders
+Several high-priority vulnerabilities have reached their mandatory remediation deadlines this week.
+ * Wing FTP Server (CVE-2025-47813): An information disclosure flaw used in pre-ransomware reconnaissance.
+ * Synacor Zimbra (CVE-2025-66376): A cross-site scripting (XSS) vulnerability added to the KEV catalog due to active exploitation.
+ * Action: Verify all public-facing file transfer and mail servers are patched to prevent these entry-level exploits from becoming full-system breaches.
+🛡️ Leadership Takeaway:
+The combination of the DarkSword leak and the Crunchyroll BPO breach proves that the "Extended Perimeter" (mobile devices and third-party support) is the primary target for 2026. As AI agents gain the ability to "use" our computers, our security models must transition from static access to behavioral monitoring of autonomous entities.
+Strategy: Implement "Agentic Guardrails." Every AI agent operating in your environment should be treated as a privileged identity with its own audit log and restricted access to sensitive local resources.
+#Cybersecurity #InfoSec #ThreatIntelligence #VulnerabilityManagement #SOC #CodeDefence
+Would you like me to draft an incident response checklist for auditing your third-party BPO access logs in light of the Crunchyroll support agent compromise?
