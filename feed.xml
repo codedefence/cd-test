@@ -2,116 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 24 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 25 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 24 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 25 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 24 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 24 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 25 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Citrix urges immediate patching of critical NetScaler data leak flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/24/citrix-netscaler-critical-memory-overread-alert</link>
-  <pubDate>Tue, 24 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/24/citrix-netscaler-critical-memory-overread-alert</guid>
+  <title>TeamPCP poisons LiteLLM AI package to steal cloud and SSH secrets. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/25/teampcp-litellm-pypi-supply-chain-attack-alert</link>
+  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/teampcp-litellm-pypi-supply-chain-attack-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <description><![CDATA[
+Your AI development tools are being weaponized to harvest your most sensitive infrastructure keys. 🐛
+
+Supply Chain Alert · TeamPCP backdoors LiteLLM PyPI package versions 1.82.7 and 1.82.8.
+
+In the last 24 hours‚ researchers identified that the LiteLLM Python library was compromised after TeamPCP gained access to maintainer credentials via earlier attacks on Trivy and Checkmarx @[GitHub](urn:li:organization:19041) Actions. The malicious versions ❨1.82.7 and 1.82.8❩ contain a high-capability credential harvester that targets SSH keys‚ AWS/Azure/GCP tokens‚ and Kubernetes secrets.
+
+The attack is particularly dangerous because version 1.82.8 utilizes a .pth file hijack. This ensures the malware executes every time any Python script is run in the environment‚ even if LiteLLM is never imported. This represents a significant escalation in TeamPCP industrialization of supply chain vulnerabilities.
+
+The uncomfortable truth: Your AI innovation speed is creating blind spots in your dependency management that attackers are now exploiting to gain persistent root access to your cloud clusters.
+
+→ Immediately uninstall LiteLLM versions 1.82.7 and 1.82.8 and revert to the last safe release ❨1.82.6❩.
+→ Rotate all SSH keys‚ cloud provider secrets‚ and CI/CD tokens that were present on any system where the malicious versions were installed.
+→ Implement pin-to-hash policies for all PyPI and GitHub dependencies to prevent automated tag-based poisoning.
+
+#Cybersecurity #SupplyChain #AISecurity #DevSecOps #AppSec #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Oracle issues emergency fix for critical Identity Manager RCE flaw. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/25/oracle-identity-manager-emergency-rce-patch-alert</link>
+  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/oracle-identity-manager-emergency-rce-patch-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21992</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
+  <description><![CDATA[
+Your core identity infrastructure is open to unauthenticated remote takeover. 🛡️
+
+CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
+
+@[Oracle](urn:li:organization:1009) has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited‚ an attacker can execute arbitrary code and gain full administrative control over the identity environment.
+
+Because Identity Manager is the heart of user provisioning and access management for many enterprises‚ a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
+
+The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+
+→ Apply the Oracle March 2026 emergency security updates for Identity Manager and Web Services Manager immediately.
+→ Strictly restrict network access to identity management consoles to internal administrative segments only.
+→ Audit your identity logs for unauthorized administrative actions or anomalous service account creations.
+
+#Cybersecurity #IdentitySecurity #Oracle #PatchManagement #CISO #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Citrix urges immediate patching of critical NetScaler data leak flaw. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/25/citrix-netscaler-critical-memory-overread-alert</link>
+  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/citrix-netscaler-critical-memory-overread-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-3055</cd:cve>
   <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
-Your gateway is leaking sensitive session data to unauthenticated attackers. 🛡️
+Your gateway is leaking sensitive session data to unauthenticated attackers. 🛑
 
 CVE-2026-3055 · Severity 9.3 · Critical Memory Overread in NetScaler ADC & Gateway.
 
-@[Citrix](urn:li:organization:1598) has released emergency security updates to address a critical vulnerability in NetScaler ADC and NetScaler Gateway. The flaw stems from insufficient input validation‚ allowing an unauthenticated remote attacker to perform a memory overread and leak sensitive information from the application process memory.
+@[Citrix](urn:li:organization:1598) has released emergency security updates for a critical vulnerability in NetScaler ADC and Gateway. The flaw allows an unauthenticated remote attacker to perform a memory overread and leak sensitive information from the application process memory.
 
-Leaked data can include session tokens‚ administrative credentials‚ and internal network configuration. This is a maximum-priority risk for organizations using Citrix for remote access‚ as session hijacking can bypass multi-factor authentication entirely.
+Leaked data can include session tokens and administrative credentials. This is a maximum-priority risk for organizations using Citrix for remote access‚ as session hijacking can bypass multi-factor authentication entirely.
 
 The uncomfortable truth: Your perimeter security tools are the most attractive targets for attackers because they often possess the highest level of trust and access to your internal network.
 
-→ Update NetScaler ADC and NetScaler Gateway to the latest patched releases immediately.
+→ Update NetScaler ADC and Gateway to the latest patched releases immediately.
 → Force a global password reset for all administrative accounts that have logged into the Gateway in the last 48 hours.
 → Monitor for unusual session activity originating from non-standard or geographic IP blocks.
 
-#Cybersecurity #NetworkSecurity #Citrix #PatchManagement #CISO #CodeDefence
+#Cybersecurity #NetworkSecurity #Citrix #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>TeamPCP compromises official Checkmarx GitHub Actions workflows. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/24/checkmarx-github-actions-supply-chain-compromise</link>
-  <pubDate>Tue, 24 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/24/checkmarx-github-actions-supply-chain-compromise</guid>
+  <title>Final remediation deadline for critical n8n RCE vulnerability today. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/25/cisa-kev-n8n-rce-remediation-deadline-alert</link>
+  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/cisa-kev-n8n-rce-remediation-deadline-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Checkmarx](urn:li:organization:230873)‚ @[GitHub](urn:li:organization:19041)</cd:mentions>
-  <description><![CDATA[
-Your automated security tools are being weaponized to steal your corporate secrets. 🐛
-
-Supply Chain Alert · TeamPCP hijacking official @[Checkmarx](urn:li:organization:230873) GitHub Actions.
-
-The hacking group TeamPCP has successfully compromised two official @[Checkmarx](urn:li:organization:230873) GitHub Actions: ast-github-action and kics-github-action. By using stolen CI credentials‚ the attackers have modified the official release tags to distribute malicious code designed to exfiltrate build environment variables and developer secrets.
-
-This follows the group recent supply-chain attack on the Trivy scanner. Because these actions are used by thousands of organizations to secure their code‚ the compromise of these tools provides a direct path for the attacker to move into the heart of the corporate development pipeline.
-
-The uncomfortable truth: Your automated security scanners are only as secure as the @[GitHub](urn:li:organization:19041) Actions that deliver them; a single hijacked tag can turn your defense tool into a malware delivery vehicle.
-
-→ Audit your CI/CD pipelines for any use of Checkmarx actions and verify the integrity of the commit hashes.
-→ Immediately rotate all secrets‚ tokens‚ and API keys that may have been exposed in GitHub Actions logs over the last 48 hours.
-→ Implement pin-to-hash policies for all third-party GitHub Actions to prevent unauthorized tag hijacking from impacting your builds.
-
-#Cybersecurity #SupplyChain #DevSecOps #GitHub #Checkmarx #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA warns of actively exploited Wing FTP Server vulnerability. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/24/cisa-kev-wing-ftp-server-exploitation-alert</link>
-  <pubDate>Tue, 24 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/24/cisa-kev-wing-ftp-server-exploitation-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2025-47813</cd:cve>
+  <cd:cve>CVE-2025-68613</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Your internal file transfer configurations are being leaked to unauthenticated scanners. 🐚
+The window for patching a critical automation platform flaw under active exploitation closes today. 🛡️
 
-CVE-2025-47813 · Severity Medium · Active Exploitation in Wing FTP Server.
+CVE-2025-68613 · Severity 10.0 · CISA KEV Remediation Deadline: March 25‚ 2026.
 
-The @[CISA](urn:li:organization:13010360) has added an information disclosure flaw in Wing FTP Server to the Known Exploited Vulnerabilities catalog today. This vulnerability allows an unauthenticated attacker to leak the installation path and configuration data through crafted requests.
+The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a critical RCE flaw in the n8n automation platform by the end of today. This vulnerability allows an authenticated attacker to execute arbitrary code with the same privileges as the n8n process.
 
-While rated as medium severity‚ this is a critical precursor for path traversal and RCE attacks. Attackers are using these leaks to map internal directories before launching destructive secondary payloads.
+Automation platforms are high-value targets because they often possess deep administrative access to connected SaaS apps and databases. Attackers are currently leveraging this flaw to establish persistence and move laterally across enterprise networks.
 
-The uncomfortable truth: Information leaks in your perimeter services are the building blocks for full administrative takeovers.
+The uncomfortable truth: If your automation platform is unpatched and reachable today‚ you are effectively granting root access to your entire business logic to an adversary.
 
-→ Update Wing FTP Server to the latest security release immediately to prevent directory leakage.
-→ Restrict management and FTP ports to known internal IP ranges using hardware firewalls.
-→ Audit server logs for anomalous GET requests targeting system-level configuration files.
+→ Update n8n to version 1.120.4‚ 1.121.1‚ or 1.122.0 immediately.
+→ Restrict workflow creation and editing to fully trusted users only.
+→ Run n8n in a hardened environment with restricted operating system privileges.
 
-#Cybersecurity #Infosec #NetworkSecurity #ZeroTrust #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>North Korean StoatWaffle malware targets developers via VS Code tasks. 🤖</title>
-  <link>https://codedefence.in/blog/2026/03/24/north-korean-stoatwaffle-vs-code-malware-alert</link>
-  <pubDate>Tue, 24 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/24/north-korean-stoatwaffle-vs-code-malware-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-North Korean threat actors are using the automated features of developer tools to bypass security controls. 🤖
-
-Threat Alert · StoatWaffle malware abusing Visual Studio Code tasks.json feature.
-
-A North Korean hacking group is distributing the StoatWaffle malware via malicious @[Microsoft](urn:li:organization:1035) Visual Studio Code ❨VS Code❩ projects. The attack leverages the tasks.json file‚ which is designed to automate build and test tasks. When a developer opens the compromised project and triggers the auto-run feature‚ the malware is deployed silently.
-
-This tactic is particularly dangerous because developers often work with external or open-source projects without a full security review of the project configuration. The malware is designed for data theft and initial access persistence.
-
-The uncomfortable truth: The tools designed to increase your developers productivity are the same ones that attackers use to bypass your most expensive endpoint security controls.
-
-→ Educate developer teams specifically on the risks of opening unverified VS Code projects and the abuse of tasks.json.
-→ Use EDR tools to monitor for unusual shell activity originating from IDE processes.
-→ Audit your network for anomalous outbound connections originating from developer workstations.
-
-#Cybersecurity #DevSecOps #VSCode #NorthKorea #AppSec #CodeDefence
+#Cybersecurity #AppSec #Automation #ZeroTrust #SOC #CodeDefence
   ]]></description>
 </item>
 
