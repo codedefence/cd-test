@@ -2,117 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 25 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 26 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 25 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 26 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 25 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 26 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 26 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>TeamPCP poisons LiteLLM AI package to steal cloud and SSH secrets. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/25/teampcp-litellm-pypi-supply-chain-attack-alert</link>
-  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/teampcp-litellm-pypi-supply-chain-attack-alert</guid>
+  <title>APT28 weaponizes LLMs with PROMPTSTEAL malware for automated theft. 🤖</title>
+  <link>https://codedefence.in/blog/2026/03/26/apt28-promptsteal-llm-malware-alert</link>
+  <pubDate>Thu, 26 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/26/apt28-promptsteal-llm-malware-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+State-sponsored attackers are now using AI to automate the generation of malicious system commands in real-time. 🤖
+
+Threat Alert · PROMPTSTEAL malware attributed to APT28 ❨FROZENLAKE❩ identifies and exfiltrates documents.
+
+In a structural shift for cyberespionage‚ researchers have identified PROMPTSTEAL‚ a malware family that actively queries Large Language Models during live operations. Attributed to the Russian government-backed actor APT28‚ the malware uses LLMs to generate one-line Windows commands tailored to the victim environment to facilitate silent document theft.
+
+This marks the first confirmed observation of a state-sponsored actor integrating AI queries directly into a malware kill-chain. By leveraging AI to adapt to the specific file structures of a target system‚ the attackers can bypass traditional static detection rules and accelerate the speed of data exfiltration.
+
+The uncomfortable truth: Your defense-in-depth model is being outpaced by an adversary that now uses the same AI productivity tools as your developers to automate the destruction of your perimeter.
+
+→ Audit your network for anomalous outbound API traffic to known AI provider endpoints originating from non-authorized service accounts.
+→ Implement strict application control to prevent the execution of unsigned or unauthorized scripts generated on-the-fly.
+→ Monitor for unusual document access patterns on executive workstations and sensitive file shares.
+
+#Cybersecurity #AISecurity #APT28 #Infosec #SecurityLeadership #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Interlock ransomware weaponizes Cisco zero-day for mass intrusion. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/26/interlock-ransomware-cisco-fmc-zero-day-exploitation</link>
+  <pubDate>Thu, 26 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/26/interlock-ransomware-cisco-fmc-zero-day-exploitation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
+  <description><![CDATA[
+A critical firewall management flaw was exploited for weeks before defenders were even aware it existed. 🛑
+
+CVE-2026-20131 · Severity 10.0 · Interlock Ransomware targeting Cisco Secure FMC.
+
+The Interlock ransomware group has been confirmed as the primary actor exploiting a maximum-severity flaw in @[Cisco](urn:li:organization:1063) Secure Firewall Management Center ❨FMC❩. Investigations reveal the group had access to this zero-day and was using it to establish persistent root backdoors several weeks before the public disclosure and patch release.
+
+Once initial access is achieved via the management interface‚ the attackers deploy memory-resident backdoors and BASH-based relay networks to hide their true location. This allows them to pivot laterally into the Windows environment and enumerate data before deploying the final ransomware payload.
+
+The uncomfortable truth: Edge devices like firewalls and VPNs are no longer just barriers; they are the high-value pivot points that ransomware groups now prioritize for unauthenticated entry.
+
+→ Immediately upgrade Cisco Secure FMC to the latest fixed release to close CVE-2026-20131.
+→ Conduct a retrospective audit of your management logs for any unauthorized administrative account creation dating back to January 2026.
+→ Ensure that all management interfaces are strictly isolated from the public internet using a secure VPN or OOB network.
+
+#Cybersecurity #Ransomware #Cisco #EdgeSecurity #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>TeamPCP backdoors LiteLLM AI package in ongoing supply-chain campaign. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/26/litellm-pypi-supply-chain-attack-teampcp</link>
+  <pubDate>Thu, 26 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/26/litellm-pypi-supply-chain-attack-teampcp</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
   <description><![CDATA[
-Your AI development tools are being weaponized to harvest your most sensitive infrastructure keys. 🐛
+The supply-chain campaign that hit Trivy and Checkmarx has moved into the AI development ecosystem. 🐛
 
-Supply Chain Alert · TeamPCP backdoors LiteLLM PyPI package versions 1.82.7 and 1.82.8.
+Supply Chain Alert · TeamPCP poisoning LiteLLM PyPI package versions 1.82.7 and 1.82.8.
 
-In the last 24 hours‚ researchers identified that the LiteLLM Python library was compromised after TeamPCP gained access to maintainer credentials via earlier attacks on Trivy and Checkmarx @[GitHub](urn:li:organization:19041) Actions. The malicious versions ❨1.82.7 and 1.82.8❩ contain a high-capability credential harvester that targets SSH keys‚ AWS/Azure/GCP tokens‚ and Kubernetes secrets.
+The threat group TeamPCP has successfully compromised the LiteLLM Python package on PyPI. By leveraging credentials stolen during earlier attacks on @[GitHub](urn:li:organization:19041) Actions‚ the group injected a persistent credential stealer into versions 1.82.7 and 1.82.8 of the library.
 
-The attack is particularly dangerous because version 1.82.8 utilizes a .pth file hijack. This ensures the malware executes every time any Python script is run in the environment‚ even if LiteLLM is never imported. This represents a significant escalation in TeamPCP industrialization of supply chain vulnerabilities.
+The attack utilizes a .pth file hijack‚ which ensures the malicious payload executes every time any Python script is run in the environment‚ regardless of whether LiteLLM is explicitly imported. This technique allows for silent‚ widespread persistence across AI development workstations and cloud clusters.
 
-The uncomfortable truth: Your AI innovation speed is creating blind spots in your dependency management that attackers are now exploiting to gain persistent root access to your cloud clusters.
+The uncomfortable truth: Your speed-to-market with AI is creating unvetted dependency chains that are now the primary targets for industrialized credential harvesting.
 
-→ Immediately uninstall LiteLLM versions 1.82.7 and 1.82.8 and revert to the last safe release ❨1.82.6❩.
-→ Rotate all SSH keys‚ cloud provider secrets‚ and CI/CD tokens that were present on any system where the malicious versions were installed.
-→ Implement pin-to-hash policies for all PyPI and GitHub dependencies to prevent automated tag-based poisoning.
+→ Immediately uninstall LiteLLM versions 1.82.7 and 1.82.8 and revert to a verified release.
+→ Rotate all AWS/Azure/GCP tokens and SSH keys that were present on any system where the malicious package was installed.
+→ Enforce pin-to-hash policies for all third-party Python dependencies in your build pipelines.
 
-#Cybersecurity #SupplyChain #AISecurity #DevSecOps #AppSec #CodeDefence
+#Cybersecurity #SupplyChain #DevSecOps #AISecurity #AppSec #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Oracle issues emergency fix for critical Identity Manager RCE flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/25/oracle-identity-manager-emergency-rce-patch-alert</link>
-  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/oracle-identity-manager-emergency-rce-patch-alert</guid>
+  <title>CISA orders federal agencies to patch critical Craft CMS and Apple flaws. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/26/cisa-kev-craft-cms-apple-ios-alert</link>
+  <pubDate>Thu, 26 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/26/cisa-kev-craft-cms-apple-ios-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21992</cd:cve>
-  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
+  <cd:cve>CVE-2025-32432‚ CVE-2025-31277</cd:cve>
+  <cd:mentions>@[Apple](urn:li:organization:162479)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Your core identity infrastructure is open to unauthenticated remote takeover. 🛡️
+The US cyber security agency has added five critical vulnerabilities to the KEV catalog following active exploitation. 🛡️
 
-CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
+KEV Update · Craft CMS and Apple WebKit flaws targeted in live attacks.
 
-@[Oracle](urn:li:organization:1009) has released an out-of-band security update to address a critical flaw in Identity Manager and Web Services Manager. This vulnerability can be exploited over a network without the need for a username or password. If successfully exploited‚ an attacker can execute arbitrary code and gain full administrative control over the identity environment.
+The @[CISA](urn:li:organization:13010360) has added five security flaws to its Known Exploited Vulnerabilities catalog‚ including a maximum-severity code injection in Craft CMS ❨CVE-2025-32432❩ and multiple @[Apple](urn:li:organization:162479) WebKit issues. These vulnerabilities are being leveraged in targeted cyberespionage campaigns to gain root control over mobile devices and web servers.
 
-Because Identity Manager is the heart of user provisioning and access management for many enterprises‚ a compromise here is a total loss scenario for corporate security. Attackers are already scanning for vulnerable instances following the disclosure.
+The Apple-related flaws are core components of the DarkSword exploit kit‚ which allows for the silent exfiltration of sensitive data—including passwords and health records—when a user visits a malicious website. Federal agencies are mandated to remediate these flaws by April 3‚ 2026.
 
-The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+The uncomfortable truth: Your public-facing content management systems and mobile browser engines are the two most volatile entry points in your modern enterprise architecture.
 
-→ Apply the Oracle March 2026 emergency security updates for Identity Manager and Web Services Manager immediately.
-→ Strictly restrict network access to identity management consoles to internal administrative segments only.
-→ Audit your identity logs for unauthorized administrative actions or anomalous service account creations.
+→ Update all @[Apple](urn:li:organization:162479) devices to the latest iOS 26.x and macOS 16.x releases today to neutralize WebKit exploits.
+→ Patch Craft CMS and Laravel Livewire instances to their latest security releases immediately.
+→ Enable Lockdown Mode for high-value targets to reduce the attack surface for complex memory corruption flaws.
 
-#Cybersecurity #IdentitySecurity #Oracle #PatchManagement #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Citrix urges immediate patching of critical NetScaler data leak flaw. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/25/citrix-netscaler-critical-memory-overread-alert</link>
-  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/citrix-netscaler-critical-memory-overread-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3055</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
-  <description><![CDATA[
-Your gateway is leaking sensitive session data to unauthenticated attackers. 🛑
-
-CVE-2026-3055 · Severity 9.3 · Critical Memory Overread in NetScaler ADC & Gateway.
-
-@[Citrix](urn:li:organization:1598) has released emergency security updates for a critical vulnerability in NetScaler ADC and Gateway. The flaw allows an unauthenticated remote attacker to perform a memory overread and leak sensitive information from the application process memory.
-
-Leaked data can include session tokens and administrative credentials. This is a maximum-priority risk for organizations using Citrix for remote access‚ as session hijacking can bypass multi-factor authentication entirely.
-
-The uncomfortable truth: Your perimeter security tools are the most attractive targets for attackers because they often possess the highest level of trust and access to your internal network.
-
-→ Update NetScaler ADC and Gateway to the latest patched releases immediately.
-→ Force a global password reset for all administrative accounts that have logged into the Gateway in the last 48 hours.
-→ Monitor for unusual session activity originating from non-standard or geographic IP blocks.
-
-#Cybersecurity #NetworkSecurity #Citrix #PatchManagement #SOC #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Final remediation deadline for critical n8n RCE vulnerability today. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/25/cisa-kev-n8n-rce-remediation-deadline-alert</link>
-  <pubDate>Wed, 25 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/25/cisa-kev-n8n-rce-remediation-deadline-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-68613</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-The window for patching a critical automation platform flaw under active exploitation closes today. 🛡️
-
-CVE-2025-68613 · Severity 10.0 · CISA KEV Remediation Deadline: March 25‚ 2026.
-
-The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a critical RCE flaw in the n8n automation platform by the end of today. This vulnerability allows an authenticated attacker to execute arbitrary code with the same privileges as the n8n process.
-
-Automation platforms are high-value targets because they often possess deep administrative access to connected SaaS apps and databases. Attackers are currently leveraging this flaw to establish persistence and move laterally across enterprise networks.
-
-The uncomfortable truth: If your automation platform is unpatched and reachable today‚ you are effectively granting root access to your entire business logic to an adversary.
-
-→ Update n8n to version 1.120.4‚ 1.121.1‚ or 1.122.0 immediately.
-→ Restrict workflow creation and editing to fully trusted users only.
-→ Run n8n in a hardened environment with restricted operating system privileges.
-
-#Cybersecurity #AppSec #Automation #ZeroTrust #SOC #CodeDefence
+#Cybersecurity #AppSec #MobileSecurity #Apple #CISA #CodeDefence
   ]]></description>
 </item>
 
