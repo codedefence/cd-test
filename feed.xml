@@ -2,114 +2,115 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 27 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 28 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 27 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 28 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 27 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 27 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat, 28 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA and German Police warn of critical unpatched PTC Windchill RCE. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/27/ptc-windchill-critical-rce-cve-2026-4681-alert</link>
-  <pubDate>Fri, 27 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/27/ptc-windchill-critical-rce-cve-2026-4681-alert</guid>
+  <title>CISA adds critical F5 BIG-IP APM flaw to KEV following active RCE attacks. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/28/cisa-kev-f5-big-ip-apm-rce-alert</link>
+  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/cisa-kev-f5-big-ip-apm-rce-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-4681</cd:cve>
+  <cd:cve>CVE-2025-53521</cd:cve>
+  <cd:mentions>@[F5](urn:li:organization:1260)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical vulnerability in industrial product lifecycle software has triggered an unprecedented physical response from law enforcement. 🛡️
+Your gateway and access management infrastructure is under active attack by unauthenticated threat actors. 🛡️
 
-CVE-2026-4681 · Severity Critical · Unauthenticated RCE in PTC Windchill and FlexPLM.
+CVE-2025-53521 · Severity 9.3 · Remote Code Execution in F5 BIG-IP Access Policy Manager ❨APM❩.
 
-German authorities have taken the extraordinary step of physically visiting companies at night to warn them of CVE-2026-4681. This flaw stems from the insecure deserialization of untrusted data‚ allowing a remote‚ unauthenticated attacker to execute arbitrary code with system privileges.
+The @[CISA](urn:li:organization:13010360) has added a critical security flaw in @[F5](urn:li:organization:1260) BIG-IP APM to the Known Exploited Vulnerabilities catalog today. The vulnerability allows an unauthenticated attacker with network access to the BIG-IP system to execute arbitrary commands with administrative privileges.
 
-While PTC has not yet released a formal patch‚ they have provided mitigation guidance and Indicators of Compromise ❨IoCs❩. The urgency of the police response suggests that sophisticated threat actors are currently attempting to weaponize this flaw against industrial and manufacturing targets.
+APM is a high-value target because it manages authentication and access to internal corporate applications. A compromise here allows an attacker to bypass all perimeter security controls and gain a persistent foothold inside the internal network. Exploitation has been observed in the wild targeting government and financial sectors.
 
-The uncomfortable truth: When police are knocking on your door at 2:00 AM to discuss a software vulnerability‚ your traditional patching window has effectively collapsed.
+The uncomfortable truth: The tools you rely on to manage secure access are currently the most volatile entry points for an automated adversary.
 
-→ Immediately isolate PTC Windchill and FlexPLM servers from the public internet.
-→ Apply the manual mitigation steps provided by the vendor to disable vulnerable endpoints.
-→ Conduct a forensic audit of system logs for the IoCs released by PTC to detect early-stage exploitation attempts.
+→ Update F5 BIG-IP to the latest patched release immediately to close CVE-2025-53521.
+→ Strictly restrict management plane access to the BIG-IP system to a dedicated‚ isolated management network.
+→ Audit your APM logs for unauthorized administrative activity or anomalous process executions.
 
-#Cybersecurity #IndustrialSecurity #PTC #PatchManagement #CISO #CodeDefence
+#Cybersecurity #NetworkSecurity #F5 #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Langflow AI flaw to KEV following active workflow hijacking. 🤖</title>
-  <link>https://codedefence.in/blog/2026/03/27/cisa-kev-langflow-ai-hijacking-alert</link>
-  <pubDate>Fri, 27 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/27/cisa-kev-langflow-ai-hijacking-alert</guid>
+  <title>European Commission confirms major breach of AWS cloud infrastructure. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/28/european-commission-aws-cloud-data-breach</link>
+  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/european-commission-aws-cloud-data-breach</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33017</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Amazon Web Services ❨AWS❩](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
-Attackers are now weaponizing AI automation frameworks to exfiltrate corporate secrets. 🤖
+A threat actor has exfiltrated hundreds of gigabytes of sensitive data from the heart of EU executive cloud operations. 🛑
 
-CVE-2026-33017 · Severity 9.3 · CISA KEV Addition for Langflow Framework.
+Data Breach Alert · European Commission cloud account compromised via AWS infrastructure.
 
-The @[CISA](urn:li:organization:13010360) has added a critical vulnerability in the Langflow AI framework to the Known Exploited Vulnerabilities catalog. The flaw involves a lack of authentication that allows remote attackers to hijack AI agent workflows and execute arbitrary code.
+The European Commission has confirmed a significant security incident affecting its @[Amazon Web Services ❨AWS❩](urn:li:organization:1598) environment. A threat actor claims to have exfiltrated over 350 GB of data‚ including internal databases and employee records‚ after gaining access to public-facing web platforms hosted on the service.
 
-Threat actors are actively scanning for exposed Langflow instances to steal environment variables‚ configuration files‚ and API tokens used for connected LLMs and databases. This vulnerability represents a new frontier in the industrialization of AI-related exploits.
+The Commission has stated that while internal systems remain isolated‚ data from several public-facing platforms was taken. This is the second major breach for the Commission in 2026‚ highlighting ongoing challenges in securing multi-tenant cloud configurations for high-profile government bodies.
 
-The uncomfortable truth: The tools you are using to build the future of your business logic are currently being used as a direct backdoor into your most sensitive data.
+The uncomfortable truth: Public-facing cloud accessibility is often the weak link that allows attackers to move from a web server to a massive corporate data dump.
 
-→ Update Langflow to the latest patched version immediately.
-→ Ensure all AI development and orchestration frameworks are hosted behind a Zero Trust gateway and are not internet-exposed.
-→ Audit your system logs for unauthorized API requests or anomalous Python process executions originating from AI service accounts.
+→ Conduct a deep audit of all public-facing cloud credentials and access keys.
+→ Enforce strict multi-factor authentication for all cloud management accounts and service principals.
+→ Implement enhanced egress filtering and logging to detect large-scale data exfiltration events in real-time.
 
-#Cybersecurity #AISecurity #Langflow #AppSec #CISA #CodeDefence
+#Cybersecurity #CloudSecurity #EU #DataBreach #AWS #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Coruna exploit kit reveals evolution of Triangulation iOS espionage. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/27/coruna-ios-exploit-kit-triangulation-evolution</link>
-  <pubDate>Fri, 27 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/27/coruna-ios-exploit-kit-triangulation-evolution</guid>
+  <title>TeamPCP poisons telnyx Python package with steganographic WAV malware. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/28/teampcp-telnyx-pypi-supply-chain-attack</link>
+  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/teampcp-telnyx-pypi-supply-chain-attack</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <description><![CDATA[
+Attackers are using audio files to hide credential harvesters within your AI and developer toolchains. 🐛
+
+Supply Chain Alert · TeamPCP poisoning telnyx package versions 4.87.1 and 4.87.2 on PyPI.
+
+The threat group TeamPCP has successfully compromised the telnyx Python library. By leveraging credentials likely stolen during earlier attacks on @[GitHub](urn:li:organization:19041) Actions‚ the group injected a persistent credential stealer into versions 4.87.1 and 4.87.2. The malware conceals its payload within a .WAV audio file to evade standard security scanners.
+
+This technique allows the malicious package to appear benign during initial automated vetting processes. Once installed‚ it exfiltrates AWS keys‚ SSH tokens‚ and environment variables. This represents a further industrialization of supply-chain attacks targeting cloud-native development environments.
+
+The uncomfortable truth: Your speed-to-market with AI and cloud services is creating blind spots in your dependency management that are now the primary targets for nation-state actors.
+
+→ Immediately uninstall telnyx versions 4.87.1 and 4.87.2 and revert to a verified release.
+→ Rotate all SSH keys and cloud provider secrets that were present on any system where the malicious package was installed.
+→ Enforce pin-to-hash policies for all third-party dependencies in your build pipelines to prevent automated poisoning.
+
+#Cybersecurity #SupplyChain #DevSecOps #AppSec #Python #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Apple sends emergency alerts to users as DarkSword spyware kit surges. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/28/apple-darksword-spyware-emergency-alert-campaign</link>
+  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/apple-darksword-spyware-emergency-alert-campaign</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
   <description><![CDATA[
-A highly sophisticated mobile exploit kit has emerged‚ targeting high-value individuals with updated kernel exploits. 📱
+A Russian-linked hacking group is targeting millions of iPhones with a sophisticated web-based exploit kit. 📱
 
-Threat Alert · Coruna exploit kit linked to the evolution of Operation Triangulation.
+Threat Alert · TA446 deploying DarkSword exploit kit in mass spear-phishing campaign.
 
-Security researchers have identified a new iOS exploit kit dubbed Coruna. Analysis reveals that the framework reuses and updates code from the 2023 Operation Triangulation attacks‚ which previously targeted @[Apple](urn:li:organization:162479) devices via zero-click iMessage exploits.
+@[Apple](urn:li:organization:162479) has begun sending emergency Lock Screen notifications to users running outdated versions of iOS to warn of active cyberattacks. The threat actor TA446 ❨also known as Callisto❩ is leveraging the DarkSword exploit kit to compromise iPhones simply by tricking users into visiting infected websites.
 
-Coruna is designed for deep persistence and stealthy data exfiltration from modern iPhones. It utilizes a chain of vulnerabilities to achieve kernel-level privileges‚ allowing attackers to monitor encrypted communications and access sensitive device hardware. This kit is currently being deployed in highly targeted espionage campaigns.
+The kit is designed for silent data exfiltration—including passwords‚ health data‚ and crypto wallet credentials. This campaign reflects a major escalation in the use of automated web-based exploit chains to achieve root-level compromise of mobile devices.
 
-The uncomfortable truth: The most advanced mobile threats do not disappear; they evolve into more efficient‚ maintainable platforms for long-term state-sponsored surveillance.
+The uncomfortable truth: Your mobile device is no longer just a communication tool; it is a high-value surveillance target that can be compromised without any file downloads.
 
-→ Force a security update for all managed Apple devices to the latest iOS 26.4 release today to leverage recent kernel protections.
-→ Enable Lockdown Mode for high-risk users to specifically reduce the attack surface for complex iMessage and WebKit exploits.
-→ Utilize Mobile Device Management ❨MDM❩ to ensure no unpatched or jailbroken devices are accessing corporate resources.
+→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS releases immediately.
+→ Enable Lockdown Mode for high-risk users to specifically reduce the attack surface for complex WebKit exploits.
+→ Utilize Mobile Device Management ❨MDM❩ to ensure no unpatched devices are accessing corporate resources.
 
 #Cybersecurity #MobileSecurity #Apple #Spyware #ThreatIntelligence #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Red Menshen APT caught deep within global telecom backbone infrastructure. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/27/red-menshen-telecom-backbone-espionage-alert</link>
-  <pubDate>Fri, 27 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/27/red-menshen-telecom-backbone-espionage-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <description><![CDATA[
-State-sponsored threat actors have achieved long-term persistence within the core of global communications. 🐚
-
-Threat Alert · Red Menshen APT deploying stealthy BPFDoor implants in telecom networks.
-
-A China-linked threat actor known as Red Menshen has been discovered deep within the backbone infrastructure of multiple global telecommunications providers. The group utilized stealthy BPFDoor kernel implants and passive backdoors to maintain long-term‚ high-level espionage access.
-
-The implants operate at the kernel level‚ allowing the attackers to intercept traffic and monitor communications without triggering standard user-space security alerts. This access provides the adversary with a strategic vantage point to monitor government and corporate traffic at scale.
-
-The uncomfortable truth: The infrastructure you rely on for secure communication is a primary battleground for nation-state actors seeking permanent visibility into global data flows.
-
-→ Conduct a deep hunt for unauthorized BPF-based implants and kernel modules within your critical network infrastructure.
-→ Implement strict network segmentation to isolate administrative control planes from general traffic flows.
-→ Monitor for anomalous outbound traffic patterns originating from telecom hardware and backbone nodes.
-
-#Cybersecurity #TelecomSecurity #APT #RedMenshen #NationalSecurity #CodeDefence
   ]]></description>
 </item>
 
