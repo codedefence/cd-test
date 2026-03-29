@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 28 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 29 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 28 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 29 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 28 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 29 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds critical F5 BIG-IP APM flaw to KEV following active RCE attacks. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/28/cisa-kev-f5-big-ip-apm-rce-alert</link>
-  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/cisa-kev-f5-big-ip-apm-rce-alert</guid>
+  <title>CISA orders emergency patching for F5 BIG-IP APM RCE flaw. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/29/cisa-kev-f5-big-ip-apm-rce-emergency-alert</link>
+  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/cisa-kev-f5-big-ip-apm-rce-emergency-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-53521</cd:cve>
   <cd:mentions>@[F5](urn:li:organization:1260)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
@@ -22,9 +22,9 @@ Your gateway and access management infrastructure is under active attack by unau
 
 CVE-2025-53521 · Severity 9.3 · Remote Code Execution in F5 BIG-IP Access Policy Manager ❨APM❩.
 
-The @[CISA](urn:li:organization:13010360) has added a critical security flaw in @[F5](urn:li:organization:1260) BIG-IP APM to the Known Exploited Vulnerabilities catalog today. The vulnerability allows an unauthenticated attacker with network access to the BIG-IP system to execute arbitrary commands with administrative privileges.
+The @[CISA](urn:li:organization:13010360) has added a critical security flaw in @[F5](urn:li:organization:1260) BIG-IP APM to the Known Exploited Vulnerabilities catalog. The vulnerability allows an unauthenticated attacker with network access to the BIG-IP system to execute arbitrary commands with administrative privileges.
 
-APM is a high-value target because it manages authentication and access to internal corporate applications. A compromise here allows an attacker to bypass all perimeter security controls and gain a persistent foothold inside the internal network. Exploitation has been observed in the wild targeting government and financial sectors.
+APM is a high-value target because it manages authentication and access to internal corporate applications. A compromise here allows an attacker to bypass perimeter security controls and gain a persistent foothold inside the internal network. The remediation deadline for federal agencies is tomorrow‚ March 30‚ 2026.
 
 The uncomfortable truth: The tools you rely on to manage secure access are currently the most volatile entry points for an automated adversary.
 
@@ -37,10 +37,10 @@ The uncomfortable truth: The tools you rely on to manage secure access are curre
 </item>
 
 <item>
-  <title>European Commission confirms major breach of AWS cloud infrastructure. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/28/european-commission-aws-cloud-data-breach</link>
-  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/european-commission-aws-cloud-data-breach</guid>
+  <title>European Commission investigates 350 GB data theft in cloud breach. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/29/european-commission-aws-cloud-breach-investigation</link>
+  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/european-commission-aws-cloud-breach-investigation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Amazon Web Services ❨AWS❩](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
@@ -50,9 +50,9 @@ Data Breach Alert · European Commission cloud account compromised via AWS infra
 
 The European Commission has confirmed a significant security incident affecting its @[Amazon Web Services ❨AWS❩](urn:li:organization:1598) environment. A threat actor claims to have exfiltrated over 350 GB of data‚ including internal databases and employee records‚ after gaining access to public-facing web platforms hosted on the service.
 
-The Commission has stated that while internal systems remain isolated‚ data from several public-facing platforms was taken. This is the second major breach for the Commission in 2026‚ highlighting ongoing challenges in securing multi-tenant cloud configurations for high-profile government bodies.
+Leaked screenshots provided by the attacker show detailed information about European Commission officials and configurations of their internal mail servers. The Commission has stated that while internal systems remain isolated‚ data from several public-facing platforms was stolen.
 
-The uncomfortable truth: Public-facing cloud accessibility is often the weak link that allows attackers to move from a web server to a massive corporate data dump.
+The uncomfortable truth: Public-facing cloud accessibility is often the weak link that allows attackers to move from a simple web server to a massive corporate data dump.
 
 → Conduct a deep audit of all public-facing cloud credentials and access keys.
 → Enforce strict multi-factor authentication for all cloud management accounts and service principals.
@@ -63,54 +63,55 @@ The uncomfortable truth: Public-facing cloud accessibility is often the weak lin
 </item>
 
 <item>
-  <title>TeamPCP poisons telnyx Python package with steganographic WAV malware. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/28/teampcp-telnyx-pypi-supply-chain-attack</link>
-  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/teampcp-telnyx-pypi-supply-chain-attack</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
-  <description><![CDATA[
-Attackers are using audio files to hide credential harvesters within your AI and developer toolchains. 🐛
-
-Supply Chain Alert · TeamPCP poisoning telnyx package versions 4.87.1 and 4.87.2 on PyPI.
-
-The threat group TeamPCP has successfully compromised the telnyx Python library. By leveraging credentials likely stolen during earlier attacks on @[GitHub](urn:li:organization:19041) Actions‚ the group injected a persistent credential stealer into versions 4.87.1 and 4.87.2. The malware conceals its payload within a .WAV audio file to evade standard security scanners.
-
-This technique allows the malicious package to appear benign during initial automated vetting processes. Once installed‚ it exfiltrates AWS keys‚ SSH tokens‚ and environment variables. This represents a further industrialization of supply-chain attacks targeting cloud-native development environments.
-
-The uncomfortable truth: Your speed-to-market with AI and cloud services is creating blind spots in your dependency management that are now the primary targets for nation-state actors.
-
-→ Immediately uninstall telnyx versions 4.87.1 and 4.87.2 and revert to a verified release.
-→ Rotate all SSH keys and cloud provider secrets that were present on any system where the malicious package was installed.
-→ Enforce pin-to-hash policies for all third-party dependencies in your build pipelines to prevent automated poisoning.
-
-#Cybersecurity #SupplyChain #DevSecOps #AppSec #Python #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Apple sends emergency alerts to users as DarkSword spyware kit surges. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/28/apple-darksword-spyware-emergency-alert-campaign</link>
-  <pubDate>Sat, 28 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/28/apple-darksword-spyware-emergency-alert-campaign</guid>
+  <title>Apple pushes lock screen warnings to alert users of active exploit kits. 📱</title>
+  <link>https://codedefence.in/blog/2026/03/29/apple-lock-screen-security-alerts-ios-exploitation</link>
+  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/apple-lock-screen-security-alerts-ios-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
   <description><![CDATA[
-A Russian-linked hacking group is targeting millions of iPhones with a sophisticated web-based exploit kit. 📱
+Apple is taking the unprecedented step of warning users via their lock screens about active cyberattacks. 📱
 
-Threat Alert · TA446 deploying DarkSword exploit kit in mass spear-phishing campaign.
+Threat Alert · iOS and iPadOS users receiving emergency notifications about web-based exploits.
 
-@[Apple](urn:li:organization:162479) has begun sending emergency Lock Screen notifications to users running outdated versions of iOS to warn of active cyberattacks. The threat actor TA446 ❨also known as Callisto❩ is leveraging the DarkSword exploit kit to compromise iPhones simply by tricking users into visiting infected websites.
+@[Apple](urn:li:organization:162479) has begun pushing urgent full-screen security alerts to users running outdated versions of iOS. These warnings state that the device is vulnerable to active web-based exploits capable of silent compromise. This move follows the surge of exploit kits like DarkSword‚ which can compromise iPhones when a user visits an infected website.
 
-The kit is designed for silent data exfiltration—including passwords‚ health data‚ and crypto wallet credentials. This campaign reflects a major escalation in the use of automated web-based exploit chains to achieve root-level compromise of mobile devices.
+The kit is designed for silent data exfiltration—including passwords and sensitive health data. This campaign reflects a major escalation in the use of automated web-based exploit chains to achieve root-level compromise of mobile devices.
 
-The uncomfortable truth: Your mobile device is no longer just a communication tool; it is a high-value surveillance target that can be compromised without any file downloads.
+The uncomfortable truth: Your mobile device is no longer just a communication tool; it is a high-value surveillance target that can be compromised without any user interaction beyond clicking a link.
 
 → Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS releases immediately.
 → Enable Lockdown Mode for high-risk users to specifically reduce the attack surface for complex WebKit exploits.
 → Utilize Mobile Device Management ❨MDM❩ to ensure no unpatched devices are accessing corporate resources.
 
 #Cybersecurity #MobileSecurity #Apple #Spyware #ThreatIntelligence #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Scans surge for critical Oracle Identity Manager RCE vulnerability. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/29/oracle-identity-manager-exploitation-scans-surge</link>
+  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/oracle-identity-manager-exploitation-scans-surge</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21992</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
+  <description><![CDATA[
+Attackers are industrializing the scanning and exploitation of core identity infrastructure. 🐚
+
+CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
+
+Threat researchers have observed a massive surge in scanning activity targeting @[Oracle](urn:li:organization:1009) Identity Manager for CVE-2026-21992. This maximum-severity vulnerability allows unauthenticated attackers to execute arbitrary code and gain full administrative control over the identity environment.
+
+Honeypot logs reveal that attackers are utilizing automated scripts to identify vulnerable HTTP endpoints. This flaw is of particular interest to big game hunters seeking initial access for lateral movement and privilege escalation within large organizational networks.
+
+The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+
+→ Apply the Oracle March 2026 emergency security updates for Identity Manager immediately.
+→ Strictly restrict network access to identity management consoles to internal administrative segments only.
+→ Audit your identity logs for unauthorized administrative actions or anomalous service account creations.
+
+#Cybersecurity #IdentitySecurity #Oracle #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
