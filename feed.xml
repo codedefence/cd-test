@@ -6,112 +6,112 @@
   <link>https://codedefence.in/executive-briefing</link>
   <description>Daily cybersecurity intelligence for Mon, 30 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 30 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
+  <lastBuildDate>Mon, 30 Mar 2026 23:59:00 +0300</lastBuildDate>
 
 <item>
-  <title>New macOS Infinity Stealer uses fake CAPTCHAs to bypass security. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/30/macos-infinity-stealer-nuitka-python-alert</link>
-  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/macos-infinity-stealer-nuitka-python-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
-  <description><![CDATA[
-A sophisticated new infostealer is targeting macOS users with highly deceptive delivery techniques. 🛡️
-
-Threat Alert · Infinity Stealer leveraging fake Cloudflare CAPTCHAs and ClickFix.
-
-Researchers have identified Infinity Stealer‚ a macOS-specific malware that targets browser data‚ cookies‚ and cryptocurrency wallets. The malware is delivered via fake Cloudflare verification pages that trick users into running a malicious command in the terminal. The payload is a Python-based executable compiled with Nuitka‚ making it significantly harder for traditional antivirus tools to detect.
-
-This marks the first documented macOS campaign combining ClickFix delivery with a Python-based infostealer. Attackers are increasingly targeting macOS as enterprise adoption grows‚ specifically aiming for high-value session tokens that can bypass multi-factor authentication.
-
-The uncomfortable truth: Your users trust in security verification symbols like CAPTCHAs is being weaponized to trick them into executing terminal commands that dismantle your endpoint security.
-
-→ Educate users to never copy and paste commands into the Terminal from untrusted or unverified websites.
-→ Use EDR tools to monitor for unusual shell activity originating from browser processes on @[Apple](urn:li:organization:162479) devices.
-→ Block known malicious domains associated with the Infinity Stealer infrastructure.
-
-#Cybersecurity #macOS #Infostealer #SocialEngineering #EDR #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>LangChain path traversal flaw exposes sensitive AI pipeline secrets. 🤖</title>
-  <link>https://codedefence.in/blog/2026/03/30/langchain-path-traversal-bug-ai-pipeline-risk</link>
-  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/langchain-path-traversal-bug-ai-pipeline-risk</amicable_link>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-34070</cd:cve>
-  <description><![CDATA[
-A critical input validation flaw in a popular AI framework allows for arbitrary file reads on host systems. 🤖
-
-CVE-2026-34070 · Severity 7.5 · Path Traversal in LangChain Template Loader.
-
-Security researchers have disclosed a path traversal vulnerability in LangChain. The flaw arises from how the framework resolves file paths when loading prompt templates or external resources. By supplying crafted input‚ an unauthenticated attacker can traverse directories and read arbitrary files from the host system‚ potentially exposing configuration files and API credentials.
-
-This is the latest in a series of vulnerabilities targeting AI orchestration tools. As these frameworks gain more autonomous access to internal systems‚ a single input validation bug can lead to the full compromise of the underlying application environment and its connected data sources.
-
-The uncomfortable truth: The speed of AI adoption is creating significant technical debt in input sanitization‚ turning your newest productivity tools into your most accessible backdoors.
-
-→ Update LangChain to the latest version immediately to resolve CVE-2026-34070.
-→ Implement strict input validation and sanitization for all user-supplied data entering AI prompts or templates.
-→ Run AI orchestration agents in isolated‚ low-privilege containers with restricted access to the local filesystem.
-
-#Cybersecurity #AISecurity #LangChain #AppSec #VulnerabilityManagement #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds Aqua Security Trivy supply chain flaw to KEV catalog. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/30/cisa-kev-aqua-security-trivy-compromise-alert</link>
-  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/cisa-kev-aqua-security-trivy-compromise-alert</guid>
+  <title>CISA remediation deadline today for critical F5 BIG-IP RCE flaw. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/30/f5-big-ip-apm-cisa-kev-deadline-alert</link>
+  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/f5-big-ip-apm-cisa-kev-deadline-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33634</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-53521</cd:cve>
+  <cd:mentions>@[F5](urn:li:organization:1260)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-The automated security scanner you trust to find vulnerabilities was itself weaponized in a global campaign. 🛑
+The window for patching a critical unauthenticated RCE in your access management infrastructure closes today. 🛡️
 
-CVE-2026-33634 · Severity Critical · CISA KEV Addition for Trivy Supply Chain Breach.
+CVE-2025-53521 · Severity 9.8 · CISA KEV Remediation Deadline: March 30‚ 2026.
 
-The @[CISA](urn:li:organization:13010360) has added a critical vulnerability impacting the Trivy vulnerability scanner to the Known Exploited Vulnerabilities catalog. This follows the recent supply chain attack by the TeamPCP group‚ where malicious code was injected into the official release tags on GitHub to siphon CI/CD secrets and cloud credentials.
+The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a critical vulnerability in @[F5](urn:li:organization:1260) BIG-IP Access Policy Manager ❨APM❩ by the end of today. The flaw allows unauthenticated remote attackers to execute arbitrary code with administrative privileges on the target system.
 
-This addition underscores the extreme risk posed by supply chain compromises of core security tools. Federal agencies and private organizations are urged to verify the integrity of their scanning pipelines and assume compromise if vulnerable versions were in use during the last 14 days.
+Because BIG-IP APM sits at the junction of corporate identity and network access‚ a compromise here provides attackers with a persistent foothold to bypass MFA and move laterally into the internal environment. Active exploitation has been confirmed in multiple sectors.
 
-The uncomfortable truth: When your vulnerability scanner is compromised‚ the very tool you use to manage risk becomes the primary vehicle for high-velocity data exfiltration.
+The uncomfortable truth: Your perimeter gatekeeper is currently your most volatile vulnerability if it has not been patched in the last 72 hours.
 
-→ Audit your CI/CD pipelines to ensure you are using verified‚ non-malicious versions of Trivy.
-→ Immediately rotate all secrets‚ tokens‚ and API keys that were present on any system where a compromised version of Trivy was executed.
-→ Move to pin-to-hash policies for all third-party GitHub Actions to prevent future tag-hijacking attacks.
+→ Update F5 BIG-IP to the latest patched release immediately to close CVE-2025-53521.
+→ Strictly isolate all management plane interfaces from the public internet using OOB networks.
+→ Audit your APM logs for unauthorized administrative accounts or anomalous process executions.
 
-#Cybersecurity #SupplyChain #DevSecOps #Trivy #CISA #CodeDefence
+#Cybersecurity #NetworkSecurity #F5 #PatchManagement #CISO #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Citrix NetScaler systems probed ahead of suspected CVE-2026-3055 exploitation. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/30/citrix-netscaler-cve-2026-3055-reconnaissance-surge</link>
-  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/citrix-netscaler-cve-2026-3055-reconnaissance-surge</guid>
-  <cd:severity>HIGH</cd:severity>
+  <title>Citrix NetScaler confirmed under exploitation in new global spree. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/30/citrix-netscaler-adc-gateway-active-exploitation</link>
+  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/citrix-netscaler-adc-gateway-active-exploitation</guid>
+  <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-3055</cd:cve>
   <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
-Attackers are actively scanning for vulnerable gateways to leak sensitive session tokens. 🐚
+Researchers have confirmed active exploitation of a memory overread flaw that could bypass all session security. 🛑
 
-CVE-2026-3055 · Severity 9.3 · Active Reconnaissance for NetScaler Memory Overread.
+CVE-2026-3055 · Severity 9.3 · Active Exploitation in NetScaler ADC & Gateway.
 
-Cybersecurity researchers are warning of a massive surge in reconnaissance activity targeting @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances. Attackers are probing for CVE-2026-3055‚ a critical memory overread flaw that allows an unauthenticated attacker to leak potentially sensitive information from the application process memory.
+Security researchers at watchTowr have confirmed that attackers are actively exploiting CVE-2026-3055 in @[Citrix](urn:li:organization:1598) NetScaler appliances. The flaw allows unauthenticated attackers to leak sensitive memory contents‚ including session tokens and credentials.
 
-Leaked data can include session tokens and administrative credentials‚ which can be used to bypass multi-factor authentication. This probing phase is often the precursor to a wide-scale automated exploitation campaign targeting enterprise remote access infrastructure.
+This campaign echoes the 2023 CitrixBleed attacks and is observed to be targeting large-scale enterprise deployments. If exploited‚ an attacker can hijack active sessions and bypass multi-factor authentication to gain full access to internal corporate resources.
 
-The uncomfortable truth: Your perimeter is being mapped in real-time by adversaries looking for the single unpatched gateway that grants them access to your entire network.
+The uncomfortable truth: Your browser-based remote access gateways are the primary targets for attackers seeking silent and persistent access to your enterprise core.
 
-→ Update NetScaler ADC and Gateway to the latest patched releases immediately.
-→ Monitor your gateway logs for unusual scanning patterns and failed authentication attempts from non-standard IP ranges.
-→ Implement strict egress filtering on your gateway appliances to limit the impact of potential session data leaks.
+→ Update NetScaler ADC and Gateway to the latest security releases immediately.
+→ Monitor for unusual session activity originating from non-standard geographic IP blocks.
+→ Terminate all active sessions and force a re-authentication once the patches are applied.
 
-#Cybersecurity #NetworkSecurity #Citrix #PatchManagement #SOC #CodeDefence
+#Cybersecurity #NetScaler #Citrix #SessionHijacking #SOC #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>European Commission confirms 350 GB data theft in AWS cloud hack. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/30/european-commission-aws-breach-confirmed</link>
+  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/european-commission-aws-breach-confirmed</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Amazon Web Services ❨AWS❩](urn:li:organization:1598)</cd:mentions>
+  <description><![CDATA[
+A threat actor has exfiltrated hundreds of gigabytes of data from the heart of EU executive cloud operations. 🐚
+
+Data Breach Alert · European Commission AWS infrastructure compromised via credential theft.
+
+The European Commission confirmed today that its @[Amazon Web Services ❨AWS❩](urn:li:organization:1598) environment was breached on March 24‚ 2026. The attacker claims to have exfiltrated over 350 GB of data‚ including internal databases and employee directories. Screenshots provided as proof show access to an internal employee email server.
+
+While the Commission stated that its internal systems were not affected‚ the breach of public-facing cloud infrastructure highlights the risks of managing large-scale cloud estates for high-profile government bodies. AWS confirmed the hack resulted from compromised account credentials.
+
+The uncomfortable truth: Your cloud security is only as strong as the credentials used to manage it; a single compromised admin account can expose terabytes of sovereign data.
+
+→ Conduct a deep audit of all public-facing cloud credentials and administrative access keys.
+→ Enforce strict phishing-resistant MFA for all cloud management accounts and service principals.
+→ Implement enhanced egress filtering to detect large-scale data exfiltration from cloud storage buckets.
+
+#Cybersecurity #CloudSecurity #EU #DataBreach #AWS #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>CanisterWorm wiper attack targets cloud clusters in Iran timezone. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/30/canisterworm-wiper-cloud-attack-iran-alert</link>
+  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/canisterworm-wiper-cloud-attack-iran-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Docker](urn:li:organization:3071271)</cd:mentions>
+  <description><![CDATA[
+A destructive new worm is systematically wiping data on cloud infrastructure targeting specific geographic regions. 🐛
+
+Threat Alert · CanisterWorm targeting exposed Docker and Kubernetes clusters in Iran.
+
+Security researchers have identified a destructive variant of the CanisterWorm malware. Attributed to the group TeamPCP‚ the worm spreads via exposed cloud APIs and includes a wiper component that triggers if the infected system uses the Iran timezone or has Farsi set as the default language.
+
+The malware targets @[Docker](urn:li:organization:3071271) and Kubernetes instances‚ destroying all stored data on infected nodes. This represents a significant escalation in the industrialization of geopolitical cyberattacks targeting cloud-native infrastructure.
+
+The uncomfortable truth: Your cloud-native control planes are now front-line targets for automated‚ destructive operations that can wipe your entire production environment in seconds.
+
+→ Audit all Docker and Kubernetes APIs to ensure they are not exposed to the public internet.
+→ Rotate all cloud provider credentials and CI/CD tokens that may have been exposed in recent scans.
+→ Implement strict network isolation for container management planes to prevent automated worm propagation.
+
+#Cybersecurity #CloudSecurity #CanisterWorm #WiperMalware #Docker #CodeDefence
   ]]></description>
 </item>
 
