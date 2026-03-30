@@ -2,116 +2,116 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 29 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 30 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 29 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 30 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 29 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 30 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA orders emergency patching for F5 BIG-IP APM RCE flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/29/cisa-kev-f5-big-ip-apm-rce-emergency-alert</link>
-  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/cisa-kev-f5-big-ip-apm-rce-emergency-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-53521</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:1260)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Your gateway and access management infrastructure is under active attack by unauthenticated threat actors. 🛡️
-
-CVE-2025-53521 · Severity 9.3 · Remote Code Execution in F5 BIG-IP Access Policy Manager ❨APM❩.
-
-The @[CISA](urn:li:organization:13010360) has added a critical security flaw in @[F5](urn:li:organization:1260) BIG-IP APM to the Known Exploited Vulnerabilities catalog. The vulnerability allows an unauthenticated attacker with network access to the BIG-IP system to execute arbitrary commands with administrative privileges.
-
-APM is a high-value target because it manages authentication and access to internal corporate applications. A compromise here allows an attacker to bypass perimeter security controls and gain a persistent foothold inside the internal network. The remediation deadline for federal agencies is tomorrow‚ March 30‚ 2026.
-
-The uncomfortable truth: The tools you rely on to manage secure access are currently the most volatile entry points for an automated adversary.
-
-→ Update F5 BIG-IP to the latest patched release immediately to close CVE-2025-53521.
-→ Strictly restrict management plane access to the BIG-IP system to a dedicated‚ isolated management network.
-→ Audit your APM logs for unauthorized administrative activity or anomalous process executions.
-
-#Cybersecurity #NetworkSecurity #F5 #PatchManagement #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>European Commission investigates 350 GB data theft in cloud breach. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/29/european-commission-aws-cloud-breach-investigation</link>
-  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/european-commission-aws-cloud-breach-investigation</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Amazon Web Services ❨AWS❩](urn:li:organization:1598)</cd:mentions>
-  <description><![CDATA[
-A threat actor has exfiltrated hundreds of gigabytes of sensitive data from the heart of EU executive cloud operations. 🛑
-
-Data Breach Alert · European Commission cloud account compromised via AWS infrastructure.
-
-The European Commission has confirmed a significant security incident affecting its @[Amazon Web Services ❨AWS❩](urn:li:organization:1598) environment. A threat actor claims to have exfiltrated over 350 GB of data‚ including internal databases and employee records‚ after gaining access to public-facing web platforms hosted on the service.
-
-Leaked screenshots provided by the attacker show detailed information about European Commission officials and configurations of their internal mail servers. The Commission has stated that while internal systems remain isolated‚ data from several public-facing platforms was stolen.
-
-The uncomfortable truth: Public-facing cloud accessibility is often the weak link that allows attackers to move from a simple web server to a massive corporate data dump.
-
-→ Conduct a deep audit of all public-facing cloud credentials and access keys.
-→ Enforce strict multi-factor authentication for all cloud management accounts and service principals.
-→ Implement enhanced egress filtering and logging to detect large-scale data exfiltration events in real-time.
-
-#Cybersecurity #CloudSecurity #EU #DataBreach #AWS #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Apple pushes lock screen warnings to alert users of active exploit kits. 📱</title>
-  <link>https://codedefence.in/blog/2026/03/29/apple-lock-screen-security-alerts-ios-exploitation</link>
-  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/apple-lock-screen-security-alerts-ios-exploitation</guid>
-  <cd:severity>CRITICAL</cd:severity>
+  <title>New macOS Infinity Stealer uses fake CAPTCHAs to bypass security. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/30/macos-infinity-stealer-nuitka-python-alert</link>
+  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/macos-infinity-stealer-nuitka-python-alert</guid>
+  <cd:severity>HIGH</cd:severity>
   <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
   <description><![CDATA[
-Apple is taking the unprecedented step of warning users via their lock screens about active cyberattacks. 📱
+A sophisticated new infostealer is targeting macOS users with highly deceptive delivery techniques. 🛡️
 
-Threat Alert · iOS and iPadOS users receiving emergency notifications about web-based exploits.
+Threat Alert · Infinity Stealer leveraging fake Cloudflare CAPTCHAs and ClickFix.
 
-@[Apple](urn:li:organization:162479) has begun pushing urgent full-screen security alerts to users running outdated versions of iOS. These warnings state that the device is vulnerable to active web-based exploits capable of silent compromise. This move follows the surge of exploit kits like DarkSword‚ which can compromise iPhones when a user visits an infected website.
+Researchers have identified Infinity Stealer‚ a macOS-specific malware that targets browser data‚ cookies‚ and cryptocurrency wallets. The malware is delivered via fake Cloudflare verification pages that trick users into running a malicious command in the terminal. The payload is a Python-based executable compiled with Nuitka‚ making it significantly harder for traditional antivirus tools to detect.
 
-The kit is designed for silent data exfiltration—including passwords and sensitive health data. This campaign reflects a major escalation in the use of automated web-based exploit chains to achieve root-level compromise of mobile devices.
+This marks the first documented macOS campaign combining ClickFix delivery with a Python-based infostealer. Attackers are increasingly targeting macOS as enterprise adoption grows‚ specifically aiming for high-value session tokens that can bypass multi-factor authentication.
 
-The uncomfortable truth: Your mobile device is no longer just a communication tool; it is a high-value surveillance target that can be compromised without any user interaction beyond clicking a link.
+The uncomfortable truth: Your users trust in security verification symbols like CAPTCHAs is being weaponized to trick them into executing terminal commands that dismantle your endpoint security.
 
-→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS releases immediately.
-→ Enable Lockdown Mode for high-risk users to specifically reduce the attack surface for complex WebKit exploits.
-→ Utilize Mobile Device Management ❨MDM❩ to ensure no unpatched devices are accessing corporate resources.
+→ Educate users to never copy and paste commands into the Terminal from untrusted or unverified websites.
+→ Use EDR tools to monitor for unusual shell activity originating from browser processes on @[Apple](urn:li:organization:162479) devices.
+→ Block known malicious domains associated with the Infinity Stealer infrastructure.
 
-#Cybersecurity #MobileSecurity #Apple #Spyware #ThreatIntelligence #CodeDefence
+#Cybersecurity #macOS #Infostealer #SocialEngineering #EDR #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Scans surge for critical Oracle Identity Manager RCE vulnerability. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/29/oracle-identity-manager-exploitation-scans-surge</link>
-  <pubDate>Sun, 29 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/29/oracle-identity-manager-exploitation-scans-surge</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21992</cd:cve>
-  <cd:mentions>@[Oracle](urn:li:organization:1009)</cd:mentions>
+  <title>LangChain path traversal flaw exposes sensitive AI pipeline secrets. 🤖</title>
+  <link>https://codedefence.in/blog/2026/03/30/langchain-path-traversal-bug-ai-pipeline-risk</link>
+  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/langchain-path-traversal-bug-ai-pipeline-risk</amicable_link>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-34070</cd:cve>
   <description><![CDATA[
-Attackers are industrializing the scanning and exploitation of core identity infrastructure. 🐚
+A critical input validation flaw in a popular AI framework allows for arbitrary file reads on host systems. 🤖
 
-CVE-2026-21992 · Severity 9.8 · Unauthenticated RCE in Oracle Identity Manager.
+CVE-2026-34070 · Severity 7.5 · Path Traversal in LangChain Template Loader.
 
-Threat researchers have observed a massive surge in scanning activity targeting @[Oracle](urn:li:organization:1009) Identity Manager for CVE-2026-21992. This maximum-severity vulnerability allows unauthenticated attackers to execute arbitrary code and gain full administrative control over the identity environment.
+Security researchers have disclosed a path traversal vulnerability in LangChain. The flaw arises from how the framework resolves file paths when loading prompt templates or external resources. By supplying crafted input‚ an unauthenticated attacker can traverse directories and read arbitrary files from the host system‚ potentially exposing configuration files and API credentials.
 
-Honeypot logs reveal that attackers are utilizing automated scripts to identify vulnerable HTTP endpoints. This flaw is of particular interest to big game hunters seeking initial access for lateral movement and privilege escalation within large organizational networks.
+This is the latest in a series of vulnerabilities targeting AI orchestration tools. As these frameworks gain more autonomous access to internal systems‚ a single input validation bug can lead to the full compromise of the underlying application environment and its connected data sources.
 
-The uncomfortable truth: Your centralized identity system is your greatest security asset‚ but it is also the single most attractive target for an adversary looking to bypass every other control in your stack.
+The uncomfortable truth: The speed of AI adoption is creating significant technical debt in input sanitization‚ turning your newest productivity tools into your most accessible backdoors.
 
-→ Apply the Oracle March 2026 emergency security updates for Identity Manager immediately.
-→ Strictly restrict network access to identity management consoles to internal administrative segments only.
-→ Audit your identity logs for unauthorized administrative actions or anomalous service account creations.
+→ Update LangChain to the latest version immediately to resolve CVE-2026-34070.
+→ Implement strict input validation and sanitization for all user-supplied data entering AI prompts or templates.
+→ Run AI orchestration agents in isolated‚ low-privilege containers with restricted access to the local filesystem.
 
-#Cybersecurity #IdentitySecurity #Oracle #PatchManagement #SOC #CodeDefence
+#Cybersecurity #AISecurity #LangChain #AppSec #VulnerabilityManagement #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds Aqua Security Trivy supply chain flaw to KEV catalog. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/30/cisa-kev-aqua-security-trivy-compromise-alert</link>
+  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/cisa-kev-aqua-security-trivy-compromise-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-33634</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+The automated security scanner you trust to find vulnerabilities was itself weaponized in a global campaign. 🛑
+
+CVE-2026-33634 · Severity Critical · CISA KEV Addition for Trivy Supply Chain Breach.
+
+The @[CISA](urn:li:organization:13010360) has added a critical vulnerability impacting the Trivy vulnerability scanner to the Known Exploited Vulnerabilities catalog. This follows the recent supply chain attack by the TeamPCP group‚ where malicious code was injected into the official release tags on GitHub to siphon CI/CD secrets and cloud credentials.
+
+This addition underscores the extreme risk posed by supply chain compromises of core security tools. Federal agencies and private organizations are urged to verify the integrity of their scanning pipelines and assume compromise if vulnerable versions were in use during the last 14 days.
+
+The uncomfortable truth: When your vulnerability scanner is compromised‚ the very tool you use to manage risk becomes the primary vehicle for high-velocity data exfiltration.
+
+→ Audit your CI/CD pipelines to ensure you are using verified‚ non-malicious versions of Trivy.
+→ Immediately rotate all secrets‚ tokens‚ and API keys that were present on any system where a compromised version of Trivy was executed.
+→ Move to pin-to-hash policies for all third-party GitHub Actions to prevent future tag-hijacking attacks.
+
+#Cybersecurity #SupplyChain #DevSecOps #Trivy #CISA #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Citrix NetScaler systems probed ahead of suspected CVE-2026-3055 exploitation. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/30/citrix-netscaler-cve-2026-3055-reconnaissance-surge</link>
+  <pubDate>Mon, 30 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/20/citrix-netscaler-cve-2026-3055-reconnaissance-surge</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-3055</cd:cve>
+  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
+  <description><![CDATA[
+Attackers are actively scanning for vulnerable gateways to leak sensitive session tokens. 🐚
+
+CVE-2026-3055 · Severity 9.3 · Active Reconnaissance for NetScaler Memory Overread.
+
+Cybersecurity researchers are warning of a massive surge in reconnaissance activity targeting @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances. Attackers are probing for CVE-2026-3055‚ a critical memory overread flaw that allows an unauthenticated attacker to leak potentially sensitive information from the application process memory.
+
+Leaked data can include session tokens and administrative credentials‚ which can be used to bypass multi-factor authentication. This probing phase is often the precursor to a wide-scale automated exploitation campaign targeting enterprise remote access infrastructure.
+
+The uncomfortable truth: Your perimeter is being mapped in real-time by adversaries looking for the single unpatched gateway that grants them access to your entire network.
+
+→ Update NetScaler ADC and Gateway to the latest patched releases immediately.
+→ Monitor your gateway logs for unusual scanning patterns and failed authentication attempts from non-standard IP ranges.
+→ Implement strict egress filtering on your gateway appliances to limit the impact of potential session data leaks.
+
+#Cybersecurity #NetworkSecurity #Citrix #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
