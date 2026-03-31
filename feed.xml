@@ -2,116 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 30 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 31 Mar 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 30 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 31 Mar 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
-  <lastBuildDate>Mon, 30 Mar 2026 23:59:00 +0300</lastBuildDate>
+  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 31 Mar 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA remediation deadline today for critical F5 BIG-IP RCE flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/30/f5-big-ip-apm-cisa-kev-deadline-alert</link>
-  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/f5-big-ip-apm-cisa-kev-deadline-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-53521</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:1260)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-The window for patching a critical unauthenticated RCE in your access management infrastructure closes today. 🛡️
-
-CVE-2025-53521 · Severity 9.8 · CISA KEV Remediation Deadline: March 30‚ 2026.
-
-The @[CISA](urn:li:organization:13010360) has mandated that all federal agencies remediate a critical vulnerability in @[F5](urn:li:organization:1260) BIG-IP Access Policy Manager ❨APM❩ by the end of today. The flaw allows unauthenticated remote attackers to execute arbitrary code with administrative privileges on the target system.
-
-Because BIG-IP APM sits at the junction of corporate identity and network access‚ a compromise here provides attackers with a persistent foothold to bypass MFA and move laterally into the internal environment. Active exploitation has been confirmed in multiple sectors.
-
-The uncomfortable truth: Your perimeter gatekeeper is currently your most volatile vulnerability if it has not been patched in the last 72 hours.
-
-→ Update F5 BIG-IP to the latest patched release immediately to close CVE-2025-53521.
-→ Strictly isolate all management plane interfaces from the public internet using OOB networks.
-→ Audit your APM logs for unauthorized administrative accounts or anomalous process executions.
-
-#Cybersecurity #NetworkSecurity #F5 #PatchManagement #CISO #CodeDefence
-  ]]></description>
-</item>
-
-<item>
-  <title>Citrix NetScaler confirmed under exploitation in new global spree. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/30/citrix-netscaler-adc-gateway-active-exploitation</link>
-  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/citrix-netscaler-adc-gateway-active-exploitation</guid>
+  <title>CISA orders emergency patching for actively exploited Citrix NetScaler flaw. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/03/31/cisa-kev-citrix-netscaler-cve-2026-3055-alert</link>
+  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/cisa-kev-citrix-netscaler-cve-2026-3055-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-3055</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
+  <cd:mentions>@[Citrix](urn:li:organization:1598)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Researchers have confirmed active exploitation of a memory overread flaw that could bypass all session security. 🛑
+Your authentication gateway is leaking session tokens to unauthenticated attackers. 🛡️
 
 CVE-2026-3055 · Severity 9.3 · Active Exploitation in NetScaler ADC & Gateway.
 
-Security researchers at watchTowr have confirmed that attackers are actively exploiting CVE-2026-3055 in @[Citrix](urn:li:organization:1598) NetScaler appliances. The flaw allows unauthenticated attackers to leak sensitive memory contents‚ including session tokens and credentials.
+The @[CISA](urn:li:organization:13010360) has added a critical out-of-bounds read vulnerability in @[Citrix](urn:li:organization:1598) NetScaler appliances to the Known Exploited Vulnerabilities catalog. Attackers are actively scanning and targeting systems configured as SAML Identity Providers to leak sensitive memory contents‚ including authenticated session IDs.
 
-This campaign echoes the 2023 CitrixBleed attacks and is observed to be targeting large-scale enterprise deployments. If exploited‚ an attacker can hijack active sessions and bypass multi-factor authentication to gain full access to internal corporate resources.
+This vulnerability echoes the impact of the infamous CitrixBleed flaw. Federal agencies are mandated to remediate this vulnerability by Thursday‚ April 2‚ 2026. Because these devices sit in the primary authentication path‚ a compromise allows for widespread session hijacking and bypass of multi-factor authentication.
 
-The uncomfortable truth: Your browser-based remote access gateways are the primary targets for attackers seeking silent and persistent access to your enterprise core.
+The uncomfortable truth: Your perimeter gatekeeper is currently your most volatile vulnerability if it has not been patched in the last 24 hours.
 
-→ Update NetScaler ADC and Gateway to the latest security releases immediately.
-→ Monitor for unusual session activity originating from non-standard geographic IP blocks.
+→ Update NetScaler ADC and Gateway to the latest patched versions ❨14.1-66.59 or 13.1-62.23❩ immediately.
+→ Monitor authentication logs for unusual session activity originating from non-standard geographic IP blocks.
 → Terminate all active sessions and force a re-authentication once the patches are applied.
 
-#Cybersecurity #NetScaler #Citrix #SessionHijacking #SOC #CodeDefence
+#Cybersecurity #NetScaler #Citrix #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>European Commission confirms 350 GB data theft in AWS cloud hack. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/30/european-commission-aws-breach-confirmed</link>
-  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/european-commission-aws-breach-confirmed</guid>
+  <title>F5 upgrades BIG-IP flaw to critical RCE as active exploitation begins. 🛑</title>
+  <link>https://codedefence.in/blog/2026/03/31/f5-big-ip-apm-rce-active-exploitation-update</link>
+  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/f5-big-ip-apm-rce-active-exploitation-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Amazon Web Services ❨AWS❩](urn:li:organization:1598)</cd:mentions>
+  <cd:cve>CVE-2025-53521</cd:cve>
+  <cd:mentions>@[F5](urn:li:organization:1260)</cd:mentions>
   <description><![CDATA[
-A threat actor has exfiltrated hundreds of gigabytes of data from the heart of EU executive cloud operations. 🐚
+What was once a denial-of-service risk has evolved into a full remote takeover capability. 🛑
 
-Data Breach Alert · European Commission AWS infrastructure compromised via credential theft.
+CVE-2025-53521 · Severity 9.3 · Unauthenticated RCE in F5 BIG-IP APM.
 
-The European Commission confirmed today that its @[Amazon Web Services ❨AWS❩](urn:li:organization:1598) environment was breached on March 24‚ 2026. The attacker claims to have exfiltrated over 350 GB of data‚ including internal databases and employee directories. Screenshots provided as proof show access to an internal employee email server.
+@[F5](urn:li:organization:1260) has reclassified a vulnerability in the BIG-IP Access Policy Manager from a DoS to a critical-severity remote code execution flaw. New intelligence confirms that unauthenticated attackers are currently exploiting this flaw to deploy webshells on unpatched devices.
 
-While the Commission stated that its internal systems were not affected‚ the breach of public-facing cloud infrastructure highlights the risks of managing large-scale cloud estates for high-profile government bodies. AWS confirmed the hack resulted from compromised account credentials.
+The vulnerability is triggered when specific malicious traffic is sent to a virtual server with an APM access policy configured. This allows for full administrative compromise of the appliance‚ providing a persistent foothold for lateral movement into the internal network.
 
-The uncomfortable truth: Your cloud security is only as strong as the credentials used to manage it; a single compromised admin account can expose terabytes of sovereign data.
+The uncomfortable truth: Security appliances are no longer just barriers; they are the high-value pivot points that sophisticated threat actors prioritize for initial access.
 
-→ Conduct a deep audit of all public-facing cloud credentials and administrative access keys.
-→ Enforce strict phishing-resistant MFA for all cloud management accounts and service principals.
-→ Implement enhanced egress filtering to detect large-scale data exfiltration from cloud storage buckets.
+→ Update @[F5](urn:li:organization:1260) BIG-IP to the latest security release immediately to resolve CVE-2025-53521.
+→ Strictly isolate all management plane interfaces from the public internet using OOB networks.
+→ Audit system files for the presence of unauthorized webshells or anomalous cron jobs.
 
-#Cybersecurity #CloudSecurity #EU #DataBreach #AWS #CodeDefence
+#Cybersecurity #NetworkSecurity #F5 #Ransomware #VulnerabilityManagement #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>CanisterWorm wiper attack targets cloud clusters in Iran timezone. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/30/canisterworm-wiper-cloud-attack-iran-alert</link>
-  <pubDate>Mon, 30 Mar 2026 23:59:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/30/canisterworm-wiper-cloud-attack-iran-alert</guid>
+  <title>Axios npm package hijacked to drop malware on millions of systems. 🐛</title>
+  <link>https://codedefence.in/blog/2026/03/31/axios-npm-package-supply-chain-compromise</link>
+  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/axios-npm-package-supply-chain-compromise</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Docker](urn:li:organization:3071271)</cd:mentions>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
   <description><![CDATA[
-A destructive new worm is systematically wiping data on cloud infrastructure targeting specific geographic regions. 🐛
+One of the most popular JavaScript libraries in the world has been weaponized against developers. 🐛
 
-Threat Alert · CanisterWorm targeting exposed Docker and Kubernetes clusters in Iran.
+Supply Chain Alert · Axios npm package compromised to distribute cross-platform RATs.
 
-Security researchers have identified a destructive variant of the CanisterWorm malware. Attributed to the group TeamPCP‚ the worm spreads via exposed cloud APIs and includes a wiper component that triggers if the infected system uses the Iran timezone or has Farsi set as the default language.
+Threat actors successfully hijacked the maintainer account of the Axios npm package‚ which sees over 100 million weekly downloads. Malicious versions were published to the registry to deliver remote access trojans targeting Windows‚ Linux‚ and macOS systems.
 
-The malware targets @[Docker](urn:li:organization:3071271) and Kubernetes instances‚ destroying all stored data on infected nodes. This represents a significant escalation in the industrialization of geopolitical cyberattacks targeting cloud-native infrastructure.
+The malware is designed to exfiltrate environment variables‚ CI/CD secrets‚ and developer credentials. Given the massive reach of Axios‚ this compromise represents one of the largest supply chain incidents of 2026‚ impacting thousands of downstream enterprise projects.
 
-The uncomfortable truth: Your cloud-native control planes are now front-line targets for automated‚ destructive operations that can wipe your entire production environment in seconds.
+The uncomfortable truth: Your software builds are only as secure as the weakest link in your dependency chain; a single hijacked maintainer account can compromise your entire developer fleet.
 
-→ Audit all Docker and Kubernetes APIs to ensure they are not exposed to the public internet.
-→ Rotate all cloud provider credentials and CI/CD tokens that may have been exposed in recent scans.
-→ Implement strict network isolation for container management planes to prevent automated worm propagation.
+→ Audit your project dependencies and ensure you are not using the malicious Axios versions released in the last 24 hours.
+→ Immediately rotate all secrets‚ tokens‚ and API keys present on any system where a compromised version was installed.
+→ Implement strict pin-to-hash policies for all critical npm dependencies to prevent automated malicious updates.
 
-#Cybersecurity #CloudSecurity #CanisterWorm #WiperMalware #Docker #CodeDefence
+#Cybersecurity #SupplyChain #DevSecOps #npm #JavaScript #CodeDefence
+  ]]></description>
+</item>
+
+<item>
+  <title>Fortinet FortiClient EMS flaw exploited to achieve SQL injection. 🐚</title>
+  <link>https://codedefence.in/blog/2026/03/31/fortinet-forticlient-ems-sql-injection-active-exploitation</link>
+  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/fortinet-forticlient-ems-sql-injection-active-exploitation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21643</cd:cve>
+  <cd:mentions>@[Fortinet](urn:li:organization:15197)</cd:mentions>
+  <description><![CDATA[
+Your endpoint management server is being targeted to execute arbitrary code via database queries. 🐚
+
+CVE-2026-21643 · Severity 9.8 · SQL Injection in FortiClient EMS.
+
+Threat actors have begun actively exploiting a critical SQL injection vulnerability in @[Fortinet](urn:li:organization:15197) FortiClient Endpoint Management Server. The flaw allows unauthenticated attackers to execute arbitrary code remotely via specially crafted HTTP requests.
+
+FortiClient EMS is a high-value target as it manages the security posture of all endpoints in an organization. A compromise of this server allows an attacker to manipulate endpoint policies‚ disable security features‚ and deploy secondary payloads across the entire organization.
+
+The uncomfortable truth: Endpoint management systems are the "keys to the kingdom" for an attacker looking for mass-scale deployment of ransomware.
+
+→ Update FortiClient EMS to the latest patched version immediately.
+→ Restrict access to the EMS management portal to authorized internal administrative IP ranges only.
+→ Conduct a deep audit of the EMS database for unauthorized modifications or anomalous queries.
+
+#Cybersecurity #EndpointSecurity #Fortinet #SQLInjection #ThreatIntelligence #CodeDefence
   ]]></description>
 </item>
 
