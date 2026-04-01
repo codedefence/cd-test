@@ -2,117 +2,117 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 31 Mar 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 1 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 31 Mar 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 1 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 31 Mar 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 01 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA orders emergency patching for actively exploited Citrix NetScaler flaw. 🛡️</title>
-  <link>https://codedefence.in/blog/2026/03/31/cisa-kev-citrix-netscaler-cve-2026-3055-alert</link>
-  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/cisa-kev-citrix-netscaler-cve-2026-3055-alert</guid>
+  <title>North Korean hackers hijack Axios npm package in massive supply chain hit. 🛡️</title>
+  <link>https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</link>
+  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3055</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1598)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)‚ @[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Your authentication gateway is leaking session tokens to unauthenticated attackers. 🛡️
+One of the world most trusted HTTP client libraries has been turned into a delivery mechanism for North Korean malware. 🛡️
 
-CVE-2026-3055 · Severity 9.3 · Active Exploitation in NetScaler ADC & Gateway.
+Supply Chain Alert · Axios npm package poisoned by UNC1069 ❨North Korean APT❩.
 
-The @[CISA](urn:li:organization:13010360) has added a critical out-of-bounds read vulnerability in @[Citrix](urn:li:organization:1598) NetScaler appliances to the Known Exploited Vulnerabilities catalog. Attackers are actively scanning and targeting systems configured as SAML Identity Providers to leak sensitive memory contents‚ including authenticated session IDs.
+In the last 24 hours‚ @[Google](urn:li:organization:1441) and independent researchers confirmed that the Axios npm package was compromised. Attackers hijacked the maintainer account and released two poisoned versions ❨1.14.1 and 0.30.4❩. These versions included a hidden dependency called plain-crypto-js which immediately executes a Remote Access Trojan ❨RAT❩ upon installation.
 
-This vulnerability echoes the impact of the infamous CitrixBleed flaw. Federal agencies are mandated to remediate this vulnerability by Thursday‚ April 2‚ 2026. Because these devices sit in the primary authentication path‚ a compromise allows for widespread session hijacking and bypass of multi-factor authentication.
+The malware targets Windows‚ Linux‚ and macOS to exfiltrate cloud access keys‚ SSH tokens‚ and database credentials. Because Axios is used in millions of automated build pipelines‚ this attack provides the adversary with potential reach into the heart of global production environments. UNC1069 is known for targeting the financial and cryptocurrency sectors to fund state programs.
 
-The uncomfortable truth: Your perimeter gatekeeper is currently your most volatile vulnerability if it has not been patched in the last 24 hours.
+The uncomfortable truth: Your automated build systems trust your dependencies implicitly; a single compromised account on @[GitHub](urn:li:organization:19041) or npm can weaponize your entire infrastructure in seconds.
 
-→ Update NetScaler ADC and Gateway to the latest patched versions ❨14.1-66.59 or 13.1-62.23❩ immediately.
-→ Monitor authentication logs for unusual session activity originating from non-standard geographic IP blocks.
-→ Terminate all active sessions and force a re-authentication once the patches are applied.
+→ Check project lockfiles for Axios 1.14.1 or 0.30.4 and downgrade immediately.
+→ Rotate all cloud access keys ❨AWS‚ Azure‚ GCP❩‚ NPM tokens‚ and database credentials present on affected systems.
+→ Scope incident response to include CI/CD runners and build infrastructure‚ not just developer workstations.
 
-#Cybersecurity #NetScaler #Citrix #PatchManagement #SOC #CodeDefence
+#Cybersecurity #SupplyChain #Axios #DevSecOps #NorthKorea #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>F5 upgrades BIG-IP flaw to critical RCE as active exploitation begins. 🛑</title>
-  <link>https://codedefence.in/blog/2026/03/31/f5-big-ip-apm-rce-active-exploitation-update</link>
-  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/f5-big-ip-apm-rce-active-exploitation-update</guid>
+  <title>Google fixes fourth Chrome zero-day exploited in active attacks this year. 🛑</title>
+  <link>https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</link>
+  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-53521</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:1260)</cd:mentions>
+  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-What was once a denial-of-service risk has evolved into a full remote takeover capability. 🛑
+Attackers are leveraging a high-severity flaw in the browser CSS component to achieve remote code execution. 🛑
 
-CVE-2025-53521 · Severity 9.3 · Unauthenticated RCE in F5 BIG-IP APM.
+CVE-2026-2441 · Severity High · Active Exploitation in Google Chrome.
 
-@[F5](urn:li:organization:1260) has reclassified a vulnerability in the BIG-IP Access Policy Manager from a DoS to a critical-severity remote code execution flaw. New intelligence confirms that unauthenticated attackers are currently exploiting this flaw to deploy webshells on unpatched devices.
+@[Google](urn:li:organization:1441) has released an emergency security update to patch a high-severity use-after-free vulnerability in the Chrome CSS component. The company confirmed that an exploit for this flaw exists in the wild. Attackers can trigger the vulnerability by enticing a user to visit a maliciously crafted website.
 
-The vulnerability is triggered when specific malicious traffic is sent to a virtual server with an APM access policy configured. This allows for full administrative compromise of the appliance‚ providing a persistent foothold for lateral movement into the internal network.
+If successfully exploited‚ the flaw allows for arbitrary code execution within the browser sandbox. While a secondary sandbox escape is typically required for full system takeover‚ this vulnerability is highly effective for session hijacking and stealing data directly from the browser memory. This marks the fourth zero-day patched in Chrome since January 2026.
 
-The uncomfortable truth: Security appliances are no longer just barriers; they are the high-value pivot points that sophisticated threat actors prioritize for initial access.
+The uncomfortable truth: Your browser is the most frequently targeted and volatile entry point in your enterprise fleet.
 
-→ Update @[F5](urn:li:organization:1260) BIG-IP to the latest security release immediately to resolve CVE-2025-53521.
-→ Strictly isolate all management plane interfaces from the public internet using OOB networks.
-→ Audit system files for the presence of unauthorized webshells or anomalous cron jobs.
+→ Update @[Google](urn:li:organization:1441) Chrome to version 145.0.7632.75/76 for Windows/Mac immediately.
+→ Enforce browser isolation or Zero Trust gateways for high-risk users to neutralize web-based exploits.
+→ Audit your network for anomalous outbound traffic originating from browser processes.
 
-#Cybersecurity #NetworkSecurity #F5 #Ransomware #VulnerabilityManagement #CodeDefence
+#Cybersecurity #Chrome #ZeroDay #PatchManagement #SOC #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Axios npm package hijacked to drop malware on millions of systems. 🐛</title>
-  <link>https://codedefence.in/blog/2026/03/31/axios-npm-package-supply-chain-compromise</link>
-  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/axios-npm-package-supply-chain-compromise</guid>
+  <title>CISA adds Aqua Security Trivy supply chain breach to KEV catalog. 🐛</title>
+  <link>https://codedefence.in/blog/2026/04/01/cisa-kev-trivy-supply-chain-remediation-deadline</link>
+  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/cisa-kev-trivy-supply-chain-remediation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <cd:cve>CVE-2026-33634</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Wiz](urn:li:organization:27083049)</cd:mentions>
   <description><![CDATA[
-One of the most popular JavaScript libraries in the world has been weaponized against developers. 🐛
+The scanner you trust to find vulnerabilities has been added to the government list of known security failures. 🐛
 
-Supply Chain Alert · Axios npm package compromised to distribute cross-platform RATs.
+CVE-2026-33634 · Severity Critical · CISA KEV Remediation Deadline: April 09‚ 2026.
 
-Threat actors successfully hijacked the maintainer account of the Axios npm package‚ which sees over 100 million weekly downloads. Malicious versions were published to the registry to deliver remote access trojans targeting Windows‚ Linux‚ and macOS systems.
+The @[CISA](urn:li:organization:13010360) has added the embedded malicious code vulnerability in Aqua Security Trivy to the Known Exploited Vulnerabilities catalog. This follows the industrial-scale supply chain attack by TeamPCP where malicious releases were used to siphon CI/CD tokens and cloud credentials.
 
-The malware is designed to exfiltrate environment variables‚ CI/CD secrets‚ and developer credentials. Given the massive reach of Axios‚ this compromise represents one of the largest supply chain incidents of 2026‚ impacting thousands of downstream enterprise projects.
+Researchers at @[Wiz](urn:li:organization:27083049) have reported that TeamPCP is now explicitly collaborating with the Lapsus$ extortion group‚ acting as an Initial Access Broker ❨IAB❩. They are rapidly validating stolen cloud secrets and selling access to the highest bidder within hours of exfiltration.
 
-The uncomfortable truth: Your software builds are only as secure as the weakest link in your dependency chain; a single hijacked maintainer account can compromise your entire developer fleet.
+The uncomfortable truth: When your security tools are compromised‚ they become the primary vehicle for high-velocity exfiltration and immediate extortion.
 
-→ Audit your project dependencies and ensure you are not using the malicious Axios versions released in the last 24 hours.
-→ Immediately rotate all secrets‚ tokens‚ and API keys present on any system where a compromised version was installed.
-→ Implement strict pin-to-hash policies for all critical npm dependencies to prevent automated malicious updates.
+→ Apply all vendor-provided mitigations and ensure you are running verified releases of Trivy.
+→ Conduct a mandatory rotation of all CI/CD secrets‚ AWS keys‚ and SSH tokens used in environments where Trivy was executed in the last 14 days.
+→ Transition to pinning all third-party GitHub Actions to full SHA hashes to prevent tag-based hijacking.
 
-#Cybersecurity #SupplyChain #DevSecOps #npm #JavaScript #CodeDefence
+#Cybersecurity #SupplyChain #Trivy #TeamPCP #CISA #CodeDefence
   ]]></description>
 </item>
 
 <item>
-  <title>Fortinet FortiClient EMS flaw exploited to achieve SQL injection. 🐚</title>
-  <link>https://codedefence.in/blog/2026/03/31/fortinet-forticlient-ems-sql-injection-active-exploitation</link>
-  <pubDate>Tue, 31 Mar 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/03/31/fortinet-forticlient-ems-sql-injection-active-exploitation</guid>
+  <title>Apple patches multiple zero-days in iOS and macOS tied to spyware kits. 🐚</title>
+  <link>https://codedefence.in/blog/2026/04/01/apple-emergency-security-updates-webkit-kernel-flaws</link>
+  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/apple-emergency-security-updates-webkit-kernel-flaws</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21643</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15197)</cd:mentions>
+  <cd:cve>CVE-2025-31277‚ CVE-2025-43510</cd:cve>
+  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
   <description><![CDATA[
-Your endpoint management server is being targeted to execute arbitrary code via database queries. 🐚
+Your mobile fleet is currently being targeted by web-based exploit kits capable of memory corruption. 🐚
 
-CVE-2026-21643 · Severity 9.8 · SQL Injection in FortiClient EMS.
+Vulnerability Alert · Impacting Apple Safari‚ iOS‚ iPadOS‚ and macOS.
 
-Threat actors have begun actively exploiting a critical SQL injection vulnerability in @[Fortinet](urn:li:organization:15197) FortiClient Endpoint Management Server. The flaw allows unauthenticated attackers to execute arbitrary code remotely via specially crafted HTTP requests.
+@[Apple](urn:li:organization:162479) has released emergency updates to address multiple vulnerabilities being exploited by mobile spyware kits like DarkSword. CVE-2025-31277 is a critical buffer overflow in WebKit that allows maliciously crafted web content to execute arbitrary code. CVE-2025-43510 is an improper locking flaw that allows apps to cause unexpected changes in shared memory.
 
-FortiClient EMS is a high-value target as it manages the security posture of all endpoints in an organization. A compromise of this server allows an attacker to manipulate endpoint policies‚ disable security features‚ and deploy secondary payloads across the entire organization.
+These flaws are core components of automated cyberespionage frameworks designed to exfiltrate passwords‚ health data‚ and crypto wallet credentials from high-value targets. The remediation deadline for federal agencies is fast approaching on April 3‚ 2026.
 
-The uncomfortable truth: Endpoint management systems are the "keys to the kingdom" for an attacker looking for mass-scale deployment of ransomware.
+The uncomfortable truth: Your mobile device is a high-value surveillance target that can be compromised simply by loading a website in a vulnerable browser.
 
-→ Update FortiClient EMS to the latest patched version immediately.
-→ Restrict access to the EMS management portal to authorized internal administrative IP ranges only.
-→ Conduct a deep audit of the EMS database for unauthorized modifications or anomalous queries.
+→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS 26.x and macOS 16.x releases today.
+→ Enable Lockdown Mode for high-risk executives to specifically neutralize WebKit-based exploitation paths.
+→ Utilize MDM to block unpatched devices from accessing sensitive corporate applications.
 
-#Cybersecurity #EndpointSecurity #Fortinet #SQLInjection #ThreatIntelligence #CodeDefence
+#Cybersecurity #MobileSecurity #Apple #Spyware #ThreatIntelligence #CodeDefence
   ]]></description>
 </item>
 
