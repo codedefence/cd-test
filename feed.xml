@@ -2,117 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 1 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 01 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 1 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 01 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 01 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
+  <lastBuildDate>Wed, 01 Apr 2026 23:06:00 +0300</lastBuildDate>
 
 <item>
-  <title>North Korean hackers hijack Axios npm package in massive supply chain hit. 🛡️</title>
+  <title>North Korea UNC1069 compromises Axios npm package in major supply chain attack</title>
   <link>https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</link>
-  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[GitHub](urn:li:organization:19041)‚ @[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-One of the world most trusted HTTP client libraries has been turned into a delivery mechanism for North Korean malware. 🛡️
+One of the world most trusted HTTP client libraries has been weaponized as a delivery mechanism for a cross-platform remote access trojan. This attack targets developer workstations and automated build pipelines that pull the latest versions of the Axios npm package.
 
-Supply Chain Alert · Axios npm package poisoned by UNC1069 ❨North Korean APT❩.
+On March 31‚ 2026‚ the North Korea-nexus threat actor UNC1069 compromised the maintainer account for Axios and published poisoned versions 1.14.1 and 0.30.4. These releases contain a malicious dependency named plain-crypto-js that executes an obfuscated dropper via npm post-install hooks. The payload‚ WAVESHAPER.V2‚ provides persistent remote access and automates the exfiltration of environment variables‚ cloud access keys‚ and SSH tokens.
 
-In the last 24 hours‚ @[Google](urn:li:organization:1441) and independent researchers confirmed that the Axios npm package was compromised. Attackers hijacked the maintainer account and released two poisoned versions ❨1.14.1 and 0.30.4❩. These versions included a hidden dependency called plain-crypto-js which immediately executes a Remote Access Trojan ❨RAT❩ upon installation.
+Organizations often prioritize speed over dependency integrity in their CI/CD workflows. This incident demonstrates that implicit trust in a reputable package name is a high-impact failure point. When a primary library is compromised‚ the attack surface is no longer your perimeter‚ but the verified code running inside your production infrastructure.
 
-The malware targets Windows‚ Linux‚ and macOS to exfiltrate cloud access keys‚ SSH tokens‚ and database credentials. Because Axios is used in millions of automated build pipelines‚ this attack provides the adversary with potential reach into the heart of global production environments. UNC1069 is known for targeting the financial and cryptocurrency sectors to fund state programs.
+- Check project lockfiles for Axios versions 1.14.1 or 0.30.4 and reference to plain-crypto-js.
+- Revert to Axios 1.14.0 or 0.30.3 immediately and delete affected node_modules directories.
+- Rotate all secrets present in environment variables on any system where the poisoned versions executed.
+- Enforce SHA-256 hash pinning for all critical npm dependencies to prevent automated version hijacking.
 
-The uncomfortable truth: Your automated build systems trust your dependencies implicitly; a single compromised account on @[GitHub](urn:li:organization:19041) or npm can weaponize your entire infrastructure in seconds.
-
-→ Check project lockfiles for Axios 1.14.1 or 0.30.4 and downgrade immediately.
-→ Rotate all cloud access keys ❨AWS‚ Azure‚ GCP❩‚ NPM tokens‚ and database credentials present on affected systems.
-→ Scope incident response to include CI/CD runners and build infrastructure‚ not just developer workstations.
-
-#Cybersecurity #SupplyChain #Axios #DevSecOps #NorthKorea #CodeDefence
+Implicit trust in collaborative code-sharing communities is a systemic risk that requires architectural hardening rather than simple patching. #CodeDefence #SupplyChain #Axios #UNC1069
   ]]></description>
 </item>
 
 <item>
-  <title>Google fixes fourth Chrome zero-day exploited in active attacks this year. 🛑</title>
+  <title>Google issues emergency Chrome update for zero-day exploited in drive-by attacks</title>
   <link>https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</link>
-  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
+  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
   <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-2441</cd:cve>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Attackers are leveraging a high-severity flaw in the browser CSS component to achieve remote code execution. 🛑
+Attackers are leveraging a high-severity memory corruption flaw in the Chromium engine to achieve remote code execution on Windows and macOS systems. This zero-day enables drive-by compromises where systems are infected simply by visiting a malicious or compromised website.
 
-CVE-2026-2441 · Severity High · Active Exploitation in Google Chrome.
+CVE-2026-2441 is a use-after-free vulnerability in the Chrome CSS rendering engine. By abusing how the engine processes font feature values‚ attackers can manipulate application memory to execute arbitrary code. Google confirmed this flaw has been under active exploitation since February. While execution is currently limited to the browser sandbox‚ it provides the necessary foundation for full system takeover when chained with a secondary sandbox escape.
 
-@[Google](urn:li:organization:1441) has released an emergency security update to patch a high-severity use-after-free vulnerability in the Chrome CSS component. The company confirmed that an exploit for this flaw exists in the wild. Attackers can trigger the vulnerability by enticing a user to visit a maliciously crafted website.
+The modern browser is the most volatile entry point in the enterprise fleet because it is designed to execute untrusted code from the internet by default. User education is insufficient for drive-by attacks; the solution must be technical and immediate to mitigate the risk of session hijacking.
 
-If successfully exploited‚ the flaw allows for arbitrary code execution within the browser sandbox. While a secondary sandbox escape is typically required for full system takeover‚ this vulnerability is highly effective for session hijacking and stealing data directly from the browser memory. This marks the fourth zero-day patched in Chrome since January 2026.
+- Force update @[Google](urn:li:organization:1441) Chrome to version 145.0.7632.75 or higher across all managed endpoints.
+- Enable site isolation and hardware-enforced stack protection via Group Policy or MDM.
+- Utilize browser isolation or zero-trust web gateways for high-risk users to neutralize web-based exploits.
+- Audit network logs for anomalous outbound traffic originating from browser processes to known malicious C2 IPs.
 
-The uncomfortable truth: Your browser is the most frequently targeted and volatile entry point in your enterprise fleet.
-
-→ Update @[Google](urn:li:organization:1441) Chrome to version 145.0.7632.75/76 for Windows/Mac immediately.
-→ Enforce browser isolation or Zero Trust gateways for high-risk users to neutralize web-based exploits.
-→ Audit your network for anomalous outbound traffic originating from browser processes.
-
-#Cybersecurity #Chrome #ZeroDay #PatchManagement #SOC #CodeDefence
+Browser engines are high-value targets for initial access brokers because they bypass traditional network-layer defenses. #CodeDefence #Chrome #ZeroDay #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Aqua Security Trivy supply chain breach to KEV catalog. 🐛</title>
-  <link>https://codedefence.in/blog/2026/04/01/cisa-kev-trivy-supply-chain-remediation-deadline</link>
-  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/cisa-kev-trivy-supply-chain-remediation-deadline</guid>
+  <title>TeamPCP pivots to active extortion using stolen Trivy and Checkmarx CI/CD secrets</title>
+  <link>https://codedefence.in/blog/2026/04/01/teampcp-trivy-extortion-lapsus-collaboration</link>
+  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/teampcp-trivy-extortion-lapsus-collaboration</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-33634</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Wiz](urn:li:organization:27083049)</cd:mentions>
   <description><![CDATA[
-The scanner you trust to find vulnerabilities has been added to the government list of known security failures. 🐛
+The threat actor group TeamPCP has transitioned from initial credential harvesting to large-scale extortion of multi-billion-dollar organizations. This follows the systemic compromise of the Trivy and Checkmarx security scanners used in thousands of enterprise build pipelines.
 
-CVE-2026-33634 · Severity Critical · CISA KEV Remediation Deadline: April 09‚ 2026.
+Tracked under CVE-2026-33634‚ the group utilized compromised service accounts to push malicious code into official GitHub Action tags. Researchers at @[Wiz](urn:li:organization:27083049) report that TeamPCP is now collaborating with the Lapsus$ group to monetize approximately 300 GB of exfiltrated CI/CD secrets. These secrets provide direct access to cloud providers‚ SaaS environments‚ and internal codebases.
 
-The @[CISA](urn:li:organization:13010360) has added the embedded malicious code vulnerability in Aqua Security Trivy to the Known Exploited Vulnerabilities catalog. This follows the industrial-scale supply chain attack by TeamPCP where malicious releases were used to siphon CI/CD tokens and cloud credentials.
+When security tools are turned into weapons‚ they become the most efficient vehicle for data exfiltration because they already possess the high-level permissions required to traverse the network. This highlights the operational danger of maintaining long-lived secrets in CI/CD runners.
 
-Researchers at @[Wiz](urn:li:organization:27083049) have reported that TeamPCP is now explicitly collaborating with the Lapsus$ extortion group‚ acting as an Initial Access Broker ❨IAB❩. They are rapidly validating stolen cloud secrets and selling access to the highest bidder within hours of exfiltration.
+- Rotate all AWS keys‚ Azure tokens‚ and database credentials present in environments where Trivy or Checkmarx ran in the last 14 days.
+- Transition to OIDC-based short-lived credentials for all cloud provider interactions in CI/CD.
+- Apply all vendor mitigations for Trivy and ensure all GitHub Actions are pinned to full SHA-256 hashes.
+- Monitor cloud provider logs for anomalous service principal activity or unauthorized resource creation.
 
-The uncomfortable truth: When your security tools are compromised‚ they become the primary vehicle for high-velocity exfiltration and immediate extortion.
-
-→ Apply all vendor-provided mitigations and ensure you are running verified releases of Trivy.
-→ Conduct a mandatory rotation of all CI/CD secrets‚ AWS keys‚ and SSH tokens used in environments where Trivy was executed in the last 14 days.
-→ Transition to pinning all third-party GitHub Actions to full SHA hashes to prevent tag-based hijacking.
-
-#Cybersecurity #SupplyChain #Trivy #TeamPCP #CISA #CodeDefence
+The compromise of security tooling requires a forensic assumption of full infrastructure exposure rather than a simple patch cycle. #CodeDefence #Trivy #TeamPCP #DevSecOps
   ]]></description>
 </item>
 
 <item>
-  <title>Apple patches multiple zero-days in iOS and macOS tied to spyware kits. 🐚</title>
-  <link>https://codedefence.in/blog/2026/04/01/apple-emergency-security-updates-webkit-kernel-flaws</link>
-  <pubDate>Wed, 01 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/apple-emergency-security-updates-webkit-kernel-flaws</guid>
+  <title>Attackers exploit critical Langflow AI framework RCE within hours of disclosure</title>
+  <link>https://codedefence.in/blog/2026/04/01/langflow-ai-rce-cisa-kev-alert</link>
+  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/langflow-ai-rce-cisa-kev-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-31277‚ CVE-2025-43510</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
+  <cd:cve>CVE-2026-33017</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Your mobile fleet is currently being targeted by web-based exploit kits capable of memory corruption. 🐚
+Threat actors are weaponizing a critical code injection flaw in the Langflow AI framework to hijack agent workflows and steal sensitive environment data. Active exploitation was observed less than a day after the vulnerability became public.
 
-Vulnerability Alert · Impacting Apple Safari‚ iOS‚ iPadOS‚ and macOS.
+CVE-2026-33017 stems from a default setting that leaves an API endpoint unauthenticated in versions prior to 1.9.0. This allows attackers to submit malicious workflow data containing embedded Python code. Successful exploitation grants the ability to execute arbitrary commands with the privileges of the Langflow service account‚ leading to the theft of LLM provider API keys and database credentials.
 
-@[Apple](urn:li:organization:162479) has released emergency updates to address multiple vulnerabilities being exploited by mobile spyware kits like DarkSword. CVE-2025-31277 is a critical buffer overflow in WebKit that allows maliciously crafted web content to execute arbitrary code. CVE-2025-43510 is an improper locking flaw that allows apps to cause unexpected changes in shared memory.
+The rapid pace of AI adoption is outpacing traditional security oversight‚ resulting in "shadow AI" deployments with insecure default configurations. Attackers are operationalizing automation to find and exploit these frameworks as soon as they are connected to the public internet.
 
-These flaws are core components of automated cyberespionage frameworks designed to exfiltrate passwords‚ health data‚ and crypto wallet credentials from high-value targets. The remediation deadline for federal agencies is fast approaching on April 3‚ 2026.
+- Immediately upgrade Langflow to version 1.9.0 or higher across all development and production environments.
+- Place all AI orchestration and agent frameworks behind a VPN or Zero Trust gateway to prevent public API exposure.
+- Enforce strict identity-based access controls for all internal API endpoints in the AI stack.
+- Monitor for anomalous Python process executions originating from AI service accounts.
 
-The uncomfortable truth: Your mobile device is a high-value surveillance target that can be compromised simply by loading a website in a vulnerable browser.
-
-→ Force a security update for all managed @[Apple](urn:li:organization:162479) devices to the latest iOS 26.x and macOS 16.x releases today.
-→ Enable Lockdown Mode for high-risk executives to specifically neutralize WebKit-based exploitation paths.
-→ Utilize MDM to block unpatched devices from accessing sensitive corporate applications.
-
-#Cybersecurity #MobileSecurity #Apple #Spyware #ThreatIntelligence #CodeDefence
+AI infrastructure represents a new high-value target for unauthenticated remote code execution. #CodeDefence #Langflow #AISecurity #CISA
   ]]></description>
 </item>
 
