@@ -2,105 +2,104 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 01 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 02 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 01 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 02 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
-  <lastBuildDate>Wed, 01 Apr 2026 23:06:00 +0300</lastBuildDate>
+  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 02 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>North Korea UNC1069 compromises Axios npm package in major supply chain attack</title>
-  <link>https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</link>
-  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/axios-npm-supply-chain-compromise-unc1069</guid>
+  <title>CISA adds Google Dawn use-after-free to KEV following active browser attacks</title>
+  <link>https://codedefence.in/blog/2026/04/02/cisa-kev-google-dawn-use-after-free-alert</link>
+  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/cisa-kev-google-dawn-use-after-free-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub](urn:li:organization:19041)‚ @[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:cve>CVE-2026-5281</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-One of the world most trusted HTTP client libraries has been weaponized as a delivery mechanism for a cross-platform remote access trojan. This attack targets developer workstations and automated build pipelines that pull the latest versions of the Axios npm package.
+Attackers are weaponizing a critical memory corruption flaw in a shared graphics component to achieve remote code execution across the global Chromium fleet. This vulnerability facilitates drive-by compromises where a user only needs to land on a maliciously crafted webpage to trigger the exploit.
 
-On March 31‚ 2026‚ the North Korea-nexus threat actor UNC1069 compromised the maintainer account for Axios and published poisoned versions 1.14.1 and 0.30.4. These releases contain a malicious dependency named plain-crypto-js that executes an obfuscated dropper via npm post-install hooks. The payload‚ WAVESHAPER.V2‚ provides persistent remote access and automates the exfiltration of environment variables‚ cloud access keys‚ and SSH tokens.
+Tracked as CVE-2026-5281‚ the flaw is a use-after-free vulnerability in the Google Dawn component used for WebGPU and graphics rendering. CISA added this to the KEV catalog on April 1 after confirming in-the-wild exploitation. Because this component is integrated into Chrome‚ Edge‚ and hundreds of Chromium-based desktop applications‚ the effective attack surface extends far beyond a traditional web browser.
 
-Organizations often prioritize speed over dependency integrity in their CI/CD workflows. This incident demonstrates that implicit trust in a reputable package name is a high-impact failure point. When a primary library is compromised‚ the attack surface is no longer your perimeter‚ but the verified code running inside your production infrastructure.
+Memory-unsafe code in graphics subsystems remains a preferred target because it often operates with higher privileges and handles complex data structures that are difficult to sanitize. The industrialization of browser zero-days means that the window between disclosure and widespread exploitation has collapsed to hours rather than weeks.
 
-- Check project lockfiles for Axios versions 1.14.1 or 0.30.4 and reference to plain-crypto-js.
-- Revert to Axios 1.14.0 or 0.30.3 immediately and delete affected node_modules directories.
-- Rotate all secrets present in environment variables on any system where the poisoned versions executed.
-- Enforce SHA-256 hash pinning for all critical npm dependencies to prevent automated version hijacking.
+- Force update @[Google](urn:li:organization:1441) Chrome and all Chromium-based browsers to version 145.0.7632.84 or higher across all managed endpoints.
+- Utilize MDM or Group Policy to enforce the immediate restart of browsers to ensure the patched runtime is active.
+- Implement browser isolation for high-risk users to prevent unverified web content from interacting with the local graphics stack.
+- Audit for unauthorized browser extensions or side-loaded binaries that may attempt to hook into the Chromium rendering process.
 
-Implicit trust in collaborative code-sharing communities is a systemic risk that requires architectural hardening rather than simple patching. #CodeDefence #SupplyChain #Axios #UNC1069
+The persistent nature of memory corruption in shared browser components requires an architectural shift toward hardware-enforced memory safety. #CodeDefence #Chrome #ZeroDay #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Google issues emergency Chrome update for zero-day exploited in drive-by attacks</title>
-  <link>https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</link>
-  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/google-chrome-zero-day-cve-2026-2441-alert</guid>
+  <title>Critical 15-year-old strongSwan flaw enables unauthenticated VPN service disruption</title>
+  <link>https://codedefence.in/blog/2026/04/02/strongswan-vpn-integer-underflow-vulnerability</link>
+  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/strongswan-vpn-integer-underflow-vulnerability</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-2441</cd:cve>
+  <cd:cve>CVE-2026-25075</cd:cve>
+  <description><![CDATA[
+A critical vulnerability has been identified in a core VPN plugin that has existed for over a decade‚ potentially impacting the stability of encrypted tunnels across enterprise infrastructure. This flaw allows a remote‚ unauthenticated attacker to crash VPN services and cause massive memory corruption.
+
+CVE-2026-25075 is an integer underflow vulnerability in the EAP-TTLS plugin of strongSwan‚ affecting versions 4.5.0 through 6.0.4. By sending a crafted EAP-TTLS message‚ an attacker can bypass size checks and trigger a heap-based buffer overflow. While primarily a denial-of-service risk‚ the resulting memory corruption could be leveraged for more complex code execution chains in specific environments.
+
+Legacy codebases in critical connectivity infrastructure often harbor "dormant" vulnerabilities that become high-impact when modern automated fuzzing tools identify them. The operational reality of VPNs often leads to "patch hesitancy" due to the risk of disconnecting remote workforces‚ which attackers exploit to maintain long-term disruption capabilities.
+
+- Identify all strongSwan-based VPN gateways and check for the presence of the EAP-TTLS plugin.
+- Update strongSwan to version 6.0.5 or apply the vendor-provided patch to the EAP-TTLS plugin immediately.
+- If patching is not immediately possible‚ disable the EAP-TTLS plugin if it is not a requirement for your authentication flows.
+- Monitor for anomalous IKEv2 traffic patterns and frequent service restarts on perimeter VPN appliances.
+
+Trust in legacy network infrastructure must be validated through continuous scanning and the isolation of non-essential authentication plugins. #CodeDefence #VPN #strongSwan #Infosec
+  ]]></description>
+</item>
+
+<item>
+  <title>NoVoice Android malware infects 2.3 million devices via Google Play data theft</title>
+  <link>https://codedefence.in/blog/2026/04/02/novoice-android-malware-whatsapp-data-theft</link>
+  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/novoice-android-malware-whatsapp-data-theft</guid>
+  <cd:severity>HIGH</cd:severity>
   <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Attackers are leveraging a high-severity memory corruption flaw in the Chromium engine to achieve remote code execution on Windows and macOS systems. This zero-day enables drive-by compromises where systems are infected simply by visiting a malicious or compromised website.
+A widespread malware campaign has successfully bypassed app store vetting to infect millions of mobile devices with a primary focus on exfiltrating private communications. The malware targets the most popular encrypted messaging app to gain access to sensitive corporate and personal data.
 
-CVE-2026-2441 is a use-after-free vulnerability in the Chrome CSS rendering engine. By abusing how the engine processes font feature values‚ attackers can manipulate application memory to execute arbitrary code. Google confirmed this flaw has been under active exploitation since February. While execution is currently limited to the browser sandbox‚ it provides the necessary foundation for full system takeover when chained with a secondary sandbox escape.
+The NoVoice malware was discovered in several seemingly benign utility apps on @[Google](urn:li:organization:1441) Play. Once installed‚ it exploits legacy Android vulnerabilities to gain root privileges and specifically targets WhatsApp databases. It exfiltrates chat histories‚ contact lists‚ and media files to remote command-and-control servers. This scale of infection suggests a significant failure in automated app behavioral analysis.
 
-The modern browser is the most volatile entry point in the enterprise fleet because it is designed to execute untrusted code from the internet by default. User education is insufficient for drive-by attacks; the solution must be technical and immediate to mitigate the risk of session hijacking.
+The mobile device is the most vulnerable link in the identity chain because users treat it as a personal space while using it for enterprise authentication. The psychological bypass of "app store trust" remains a highly effective vector for state-sponsored and criminal surveillance at scale.
 
-- Force update @[Google](urn:li:organization:1441) Chrome to version 145.0.7632.75 or higher across all managed endpoints.
-- Enable site isolation and hardware-enforced stack protection via Group Policy or MDM.
-- Utilize browser isolation or zero-trust web gateways for high-risk users to neutralize web-based exploits.
-- Audit network logs for anomalous outbound traffic originating from browser processes to known malicious C2 IPs.
+- Utilize Mobile Device Management ❨MDM❩ to enforce strict application allow-lists and block the installation of unverified utilities.
+- Implement Conditional Access policies that require a mobile security agent to be active and "healthy" before accessing corporate SaaS apps.
+- Educate employees on the dangers of granting broad accessibility permissions to non-essential mobile applications.
+- Monitor for anomalous data egress from mobile devices‚ particularly to non-standard cloud storage or anonymous IP blocks.
 
-Browser engines are high-value targets for initial access brokers because they bypass traditional network-layer defenses. #CodeDefence #Chrome #ZeroDay #PatchManagement
+Securing the mobile fleet requires moving beyond app vetting toward a zero-trust model of continuous behavioral monitoring. #CodeDefence #MobileSecurity #Android #WhatsApp
   ]]></description>
 </item>
 
 <item>
-  <title>TeamPCP pivots to active extortion using stolen Trivy and Checkmarx CI/CD secrets</title>
-  <link>https://codedefence.in/blog/2026/04/01/teampcp-trivy-extortion-lapsus-collaboration</link>
-  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/teampcp-trivy-extortion-lapsus-collaboration</guid>
+  <title>Urgent deadline for Trivy supply chain remediation and secret rotation compliance</title>
+  <link>https://codedefence.in/blog/2026/04/02/trivy-supply-chain-remediation-deadline-alert</link>
+  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/trivy-supply-chain-remediation-deadline-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-33634</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Wiz](urn:li:organization:27083049)</cd:mentions>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[GitHub](urn:li:organization:19041)</cd:mentions>
   <description><![CDATA[
-The threat actor group TeamPCP has transitioned from initial credential harvesting to large-scale extortion of multi-billion-dollar organizations. This follows the systemic compromise of the Trivy and Checkmarx security scanners used in thousands of enterprise build pipelines.
+Organizations have less than a week to complete the forensic cleanup of infrastructure exposed by a compromised vulnerability scanner. The complexity of this remediation lies not in the software update‚ but in the mandatory rotation of every secret that touched the build pipeline.
 
-Tracked under CVE-2026-33634‚ the group utilized compromised service accounts to push malicious code into official GitHub Action tags. Researchers at @[Wiz](urn:li:organization:27083049) report that TeamPCP is now collaborating with the Lapsus$ group to monetize approximately 300 GB of exfiltrated CI/CD secrets. These secrets provide direct access to cloud providers‚ SaaS environments‚ and internal codebases.
+Tracked as CVE-2026-33634‚ the TeamPCP group hijacked @[GitHub](urn:li:organization:19041) Action tags for the Trivy scanner to exfiltrate CI/CD environment variables. CISA has set an April 9 deadline for remediation. This is a strategic pivot for defenders: a simple patch does not remove the risk of exfiltrated credentials being used weeks or months later to launch a secondary breach.
 
-When security tools are turned into weapons‚ they become the most efficient vehicle for data exfiltration because they already possess the high-level permissions required to traverse the network. This highlights the operational danger of maintaining long-lived secrets in CI/CD runners.
+The human element of "remediation fatigue" is a significant hurdle; teams often stop after updating the tool and ignore the grueling task of rotating hundreds of cloud and database keys. This "authorization gap" is exactly what the adversary is banking on for long-term persistence.
 
-- Rotate all AWS keys‚ Azure tokens‚ and database credentials present in environments where Trivy or Checkmarx ran in the last 14 days.
-- Transition to OIDC-based short-lived credentials for all cloud provider interactions in CI/CD.
-- Apply all vendor mitigations for Trivy and ensure all GitHub Actions are pinned to full SHA-256 hashes.
-- Monitor cloud provider logs for anomalous service principal activity or unauthorized resource creation.
+- Conduct a mandatory rotation of all AWS keys‚ Azure tokens‚ and database credentials used in any pipeline where Trivy executed in March 2026.
+- Transition to OIDC-based short-lived credentials for all cloud provider interactions to eliminate the risk of long-lived secret theft.
+- Pin all third-party @[GitHub](urn:li:organization:19041) Actions to full SHA-256 hashes to prevent future tag-based supply chain hijacking.
+- Audit cloud provider logs for any unauthorized resource creation or service principal activity originating from the exfiltrated keys.
 
-The compromise of security tooling requires a forensic assumption of full infrastructure exposure rather than a simple patch cycle. #CodeDefence #Trivy #TeamPCP #DevSecOps
-  ]]></description>
-</item>
-
-<item>
-  <title>Attackers exploit critical Langflow AI framework RCE within hours of disclosure</title>
-  <link>https://codedefence.in/blog/2026/04/01/langflow-ai-rce-cisa-kev-alert</link>
-  <pubDate>Wed, 01 Apr 2026 23:06:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/01/langflow-ai-rce-cisa-kev-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33017</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Threat actors are weaponizing a critical code injection flaw in the Langflow AI framework to hijack agent workflows and steal sensitive environment data. Active exploitation was observed less than a day after the vulnerability became public.
-
-CVE-2026-33017 stems from a default setting that leaves an API endpoint unauthenticated in versions prior to 1.9.0. This allows attackers to submit malicious workflow data containing embedded Python code. Successful exploitation grants the ability to execute arbitrary commands with the privileges of the Langflow service account‚ leading to the theft of LLM provider API keys and database credentials.
-
-The rapid pace of AI adoption is outpacing traditional security oversight‚ resulting in "shadow AI" deployments with insecure default configurations. Attackers are operationalizing automation to find and exploit these frameworks as soon as they are connected to the public internet.
-
-- Immediately upgrade Langflow to version 1.9.0 or higher across all development and production environments.
-- Place all AI orchestration and agent frameworks behind a VPN or Zero Trust gateway to prevent public API exposure.
-- Enforce strict identity-based access controls for all internal API endpoints in the AI stack.
-- Monitor for anomalous Python process executions originating from AI service accounts.
-
-AI infrastructure represents a new high-value target for unauthenticated remote code execution. #CodeDefence #Langflow #AISecurity #CISA
+Remediation of a supply chain breach is an exercise in total identity reset‚ not a traditional vulnerability patch cycle. #CodeDefence #SupplyChain #Trivy #DevSecOps
   ]]></description>
 </item>
 
