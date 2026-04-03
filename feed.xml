@@ -2,104 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 02 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 03 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 02 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 03 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 02 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 03 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 03 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Google Dawn use-after-free to KEV following active browser attacks</title>
-  <link>https://codedefence.in/blog/2026/04/02/cisa-kev-google-dawn-use-after-free-alert</link>
-  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/cisa-kev-google-dawn-use-after-free-alert</guid>
+  <title>UNC1069 North Korea-nexus actor compromises Axios npm package distribution</title>
+  <link>https://codedefence.in/blog/2026/04/03/axios-npm-supply-chain-compromise-unc1069</link>
+  <pubDate>Fri, 03 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/03/axios-npm-supply-chain-compromise-unc1069</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-5281</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[GitHub](urn:li:organization:19041)‚ @[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Attackers are weaponizing a critical memory corruption flaw in a shared graphics component to achieve remote code execution across the global Chromium fleet. This vulnerability facilitates drive-by compromises where a user only needs to land on a maliciously crafted webpage to trigger the exploit.
+The North Korea-nexus threat actor UNC1069 successfully compromised the distribution channel for Axios‚ the most popular JavaScript HTTP client library. This supply chain attack delivered a multi-stage remote access trojan to developer workstations and CI/CD runners during a three-hour exposure window on March 31.
 
-Tracked as CVE-2026-5281‚ the flaw is a use-after-free vulnerability in the Google Dawn component used for WebGPU and graphics rendering. CISA added this to the KEV catalog on April 1 after confirming in-the-wild exploitation. Because this component is integrated into Chrome‚ Edge‚ and hundreds of Chromium-based desktop applications‚ the effective attack surface extends far beyond a traditional web browser.
+The attacker hijacked the maintainer account on @[GitHub](urn:li:organization:19041) and published malicious Axios versions 1.14.1 and 0.30.4. These versions introduced a dependency named plain-crypto-js which utilized a postinstall hook to execute an obfuscated dropper. The final payload‚ WAVESHAPER.V2‚ automates the theft of cloud credentials‚ SSH keys‚ and Kubernetes tokens from the infected environment.
 
-Memory-unsafe code in graphics subsystems remains a preferred target because it often operates with higher privileges and handles complex data structures that are difficult to sanitize. The industrialization of browser zero-days means that the window between disclosure and widespread exploitation has collapsed to hours rather than weeks.
+This incident highlights the failure of identity-only trust models in software distribution. Despite the use of OIDC Trusted Publishing‚ the fallback to long-lived NPM_TOKEN environment variables allowed the attacker to bypass modern provenance controls. Organizations must move beyond trusting package names and implement behavioral monitoring for build processes.
 
-- Force update @[Google](urn:li:organization:1441) Chrome and all Chromium-based browsers to version 145.0.7632.84 or higher across all managed endpoints.
-- Utilize MDM or Group Policy to enforce the immediate restart of browsers to ensure the patched runtime is active.
-- Implement browser isolation for high-risk users to prevent unverified web content from interacting with the local graphics stack.
-- Audit for unauthorized browser extensions or side-loaded binaries that may attempt to hook into the Chromium rendering process.
+- Audit package-lock.json and yarn.lock files for Axios versions 1.14.1 or 0.30.4 and the plain-crypto-js package.
+- Revert to Axios version 1.14.0 or 0.30.3 and enforce strict version pinning in all repository configurations.
+- Rotate every secret‚ including AWS-vault tokens and service account keys‚ present in any environment where the malicious versions were executed.
+- Revoke all long-lived npm tokens and transition to OIDC-only publishing to eliminate fallback vulnerabilities.
 
-The persistent nature of memory corruption in shared browser components requires an architectural shift toward hardware-enforced memory safety. #CodeDefence #Chrome #ZeroDay #CISA
+Dependency pinning is a baseline requirement‚ but the rotation of exposed secrets is the only way to remediate the long-term risk of credential-based lateral movement. #CodeDefence #SupplyChain #Axios #UNC1069
   ]]></description>
 </item>
 
 <item>
-  <title>Critical 15-year-old strongSwan flaw enables unauthenticated VPN service disruption</title>
-  <link>https://codedefence.in/blog/2026/04/02/strongswan-vpn-integer-underflow-vulnerability</link>
-  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/strongswan-vpn-integer-underflow-vulnerability</guid>
+  <title>CISA adds TrueConf Client code integrity flaw to KEV following active exploitation</title>
+  <link>https://codedefence.in/blog/2026/04/03/cisa-kev-trueconf-client-integrity-check-alert</link>
+  <pubDate>Fri, 03 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/03/cisa-kev-trueconf-client-integrity-check-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-25075</cd:cve>
+  <cd:cve>CVE-2026-3502</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical vulnerability has been identified in a core VPN plugin that has existed for over a decade‚ potentially impacting the stability of encrypted tunnels across enterprise infrastructure. This flaw allows a remote‚ unauthenticated attacker to crash VPN services and cause massive memory corruption.
+A critical vulnerability in the TrueConf video conferencing client is being actively exploited to download and execute malicious code without integrity verification. This flaw provides a direct path for unauthenticated remote code execution on enterprise endpoints.
 
-CVE-2026-25075 is an integer underflow vulnerability in the EAP-TTLS plugin of strongSwan‚ affecting versions 4.5.0 through 6.0.4. By sending a crafted EAP-TTLS message‚ an attacker can bypass size checks and trigger a heap-based buffer overflow. While primarily a denial-of-service risk‚ the resulting memory corruption could be leveraged for more complex code execution chains in specific environments.
+Tracked as CVE-2026-3502‚ the vulnerability resides in the update and component download mechanism of the TrueConf desktop client. Because the software fails to validate the digital signature or integrity of downloaded files‚ an attacker can perform a man-in-the-middle attack to swap legitimate updates with malicious binaries. CISA added this to the KEV catalog on April 2‚ mandating remediation by April 16.
 
-Legacy codebases in critical connectivity infrastructure often harbor "dormant" vulnerabilities that become high-impact when modern automated fuzzing tools identify them. The operational reality of VPNs often leads to "patch hesitancy" due to the risk of disconnecting remote workforces‚ which attackers exploit to maintain long-term disruption capabilities.
+Enterprise communication tools are high-value targets because they are often granted broad permissions to bypass local firewalls and interact with the camera and microphone. The absence of automated integrity checks in third-party software represents an operational blind spot that standard EDR solutions may struggle to intercept during the initial update phase.
 
-- Identify all strongSwan-based VPN gateways and check for the presence of the EAP-TTLS plugin.
-- Update strongSwan to version 6.0.5 or apply the vendor-provided patch to the EAP-TTLS plugin immediately.
-- If patching is not immediately possible‚ disable the EAP-TTLS plugin if it is not a requirement for your authentication flows.
-- Monitor for anomalous IKEv2 traffic patterns and frequent service restarts on perimeter VPN appliances.
+- Update TrueConf Client to version 8.5 or higher immediately to ensure integrity checks are enforced.
+- Utilize MDM or Endpoint Management tools to audit all installed software versions and force the update on non-compliant devices.
+- Implement network-layer inspection to block non-verified update traffic originating from collaboration software.
+- Review EDR logs for anomalous child processes spawned by video conferencing applications.
 
-Trust in legacy network infrastructure must be validated through continuous scanning and the isolation of non-essential authentication plugins. #CodeDefence #VPN #strongSwan #Infosec
+The security of the endpoint is inextricably linked to the integrity of the update pipelines for every installed third-party application. #CodeDefence #CISA #EndpointSecurity #TrueConf
   ]]></description>
 </item>
 
 <item>
-  <title>NoVoice Android malware infects 2.3 million devices via Google Play data theft</title>
-  <link>https://codedefence.in/blog/2026/04/02/novoice-android-malware-whatsapp-data-theft</link>
-  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/novoice-android-malware-whatsapp-data-theft</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <title>Final CISA deadline for critical Apple WebKit and Laravel Livewire vulnerabilities</title>
+  <link>https://codedefence.in/blog/2026/04/03/cisa-kev-deadline-apple-laravel-remediation</link>
+  <pubDate>Fri, 03 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/03/cisa-kev-deadline-apple-laravel-remediation</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-31277‚ CVE-2025-54068</cd:cve>
+  <cd:mentions>@[Apple](urn:li:organization:162479)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A widespread malware campaign has successfully bypassed app store vetting to infect millions of mobile devices with a primary focus on exfiltrating private communications. The malware targets the most popular encrypted messaging app to gain access to sensitive corporate and personal data.
+Today marks the final remediation deadline for a series of high-impact vulnerabilities that allow for remote code execution and session hijacking across mobile and web platforms. Failure to patch these flaws by the end of today leaves infrastructure in a non-compliant and high-risk state.
 
-The NoVoice malware was discovered in several seemingly benign utility apps on @[Google](urn:li:organization:1441) Play. Once installed‚ it exploits legacy Android vulnerabilities to gain root privileges and specifically targets WhatsApp databases. It exfiltrates chat histories‚ contact lists‚ and media files to remote command-and-control servers. This scale of infection suggests a significant failure in automated app behavioral analysis.
+CVE-2025-31277 is a critical buffer overflow in @[Apple](urn:li:organization:162479) WebKit used in the DarkSword exploit kit to compromise iPhones. Simultaneously‚ CVE-2025-54068 impacts Laravel Livewire‚ allowing unauthenticated attackers to perform code injection. Both flaws have been under active exploitation for several weeks and were prioritized by CISA for their ability to facilitate initial access.
 
-The mobile device is the most vulnerable link in the identity chain because users treat it as a personal space while using it for enterprise authentication. The psychological bypass of "app store trust" remains a highly effective vector for state-sponsored and criminal surveillance at scale.
+Remediation timelines for mobile devices often lag behind server infrastructure due to the complexity of managing personal devices used for work. This "compliance gap" provides a stable window for state-sponsored actors to exfiltrate passwords and MFA session data from executive mobile endpoints.
 
-- Utilize Mobile Device Management ❨MDM❩ to enforce strict application allow-lists and block the installation of unverified utilities.
-- Implement Conditional Access policies that require a mobile security agent to be active and "healthy" before accessing corporate SaaS apps.
-- Educate employees on the dangers of granting broad accessibility permissions to non-essential mobile applications.
-- Monitor for anomalous data egress from mobile devices‚ particularly to non-standard cloud storage or anonymous IP blocks.
+- Force update all managed @[Apple](urn:li:organization:162479) devices to iOS 26.x and macOS 16.x using MDM-enforced restart policies.
+- Audit all Laravel applications and update the Livewire component to the latest patched security release.
+- Implement Conditional Access policies to block any mobile device from accessing corporate SaaS apps if it is not on the latest security patch level.
+- Monitor for anomalous web traffic patterns targeting Laravel endpoints that may indicate residual scanning or exploitation.
 
-Securing the mobile fleet requires moving beyond app vetting toward a zero-trust model of continuous behavioral monitoring. #CodeDefence #MobileSecurity #Android #WhatsApp
+Patching mobile browser engines and web frameworks is a race against industrialized exploit kits that target the modern identity perimeter. #CodeDefence #CISA #Apple #Laravel
   ]]></description>
 </item>
 
 <item>
-  <title>Urgent deadline for Trivy supply chain remediation and secret rotation compliance</title>
-  <link>https://codedefence.in/blog/2026/04/02/trivy-supply-chain-remediation-deadline-alert</link>
-  <pubDate>Thu, 02 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/02/trivy-supply-chain-remediation-deadline-alert</guid>
+  <title>Interlock ransomware weaponizes Cisco Secure FMC RCE for edge-device intrusions</title>
+  <link>https://codedefence.in/blog/2026/04/03/interlock-ransomware-cisco-fmc-exploitation-alert</link>
+  <pubDate>Fri, 03 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/03/interlock-ransomware-cisco-fmc-exploitation-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33634</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[GitHub](urn:li:organization:19041)</cd:mentions>
+  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
   <description><![CDATA[
-Organizations have less than a week to complete the forensic cleanup of infrastructure exposed by a compromised vulnerability scanner. The complexity of this remediation lies not in the software update‚ but in the mandatory rotation of every secret that touched the build pipeline.
+The Interlock ransomware group is systematically exploiting a critical root-level code execution flaw in firewall management infrastructure. This campaign bypasses traditional perimeter defenses by targeting the management plane of the network security fabric.
 
-Tracked as CVE-2026-33634‚ the TeamPCP group hijacked @[GitHub](urn:li:organization:19041) Action tags for the Trivy scanner to exfiltrate CI/CD environment variables. CISA has set an April 9 deadline for remediation. This is a strategic pivot for defenders: a simple patch does not remove the risk of exfiltrated credentials being used weeks or months later to launch a secondary breach.
+CVE-2026-20131 allows an unauthenticated attacker to execute arbitrary Java code as root on @[Cisco](urn:li:organization:1063) Secure Firewall Management Center. The Interlock group uses this initial access to deploy persistent backdoors and enumerate internal network topologies before moving to lateral movement and data exfiltration. This campaign demonstrates a mature understanding of edge-device vulnerabilities and their utility in double-extortion schemes.
 
-The human element of "remediation fatigue" is a significant hurdle; teams often stop after updating the tool and ignore the grueling task of rotating hundreds of cloud and database keys. This "authorization gap" is exactly what the adversary is banking on for long-term persistence.
+Network administrators often treat management interfaces as "internal only‚" but misconfigurations frequently leave these high-value targets exposed to the public internet. Ransomware actors are no longer relying solely on phishing; they are industrializing the exploitation of the security tools themselves to gain an immediate administrative foothold.
 
-- Conduct a mandatory rotation of all AWS keys‚ Azure tokens‚ and database credentials used in any pipeline where Trivy executed in March 2026.
-- Transition to OIDC-based short-lived credentials for all cloud provider interactions to eliminate the risk of long-lived secret theft.
-- Pin all third-party @[GitHub](urn:li:organization:19041) Actions to full SHA-256 hashes to prevent future tag-based supply chain hijacking.
-- Audit cloud provider logs for any unauthorized resource creation or service principal activity originating from the exfiltrated keys.
+- Immediately update @[Cisco](urn:li:organization:1063) Secure FMC to the latest fixed version to neutralize CVE-2026-20131.
+- Strictly isolate all management plane interfaces behind a dedicated OOB network or Zero Trust gateway.
+- Conduct a forensic audit of the FMC for unauthorized administrative accounts or anomalous shell commands dating back to January.
+- Monitor for unusual egress traffic from security appliances to unknown external IP addresses.
 
-Remediation of a supply chain breach is an exercise in total identity reset‚ not a traditional vulnerability patch cycle. #CodeDefence #SupplyChain #Trivy #DevSecOps
+Firewall management planes are the "brain" of the network security posture; their compromise represents a total failure of the internal trust boundary. #CodeDefence #Ransomware #Cisco #EdgeSecurity
   ]]></description>
 </item>
 
