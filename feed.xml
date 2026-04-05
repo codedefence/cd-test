@@ -2,104 +2,105 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 04 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 05 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 04 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 05 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 04 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 04 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 05 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>European Commission breach linked to TeamPCP Trivy supply chain compromise</title>
-  <link>https://codedefence.in/blog/2026/04/04/eu-commission-breach-trivy-supply-chain-link</link>
-  <pubDate>Sat, 04 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/04/eu-commission-breach-trivy-supply-chain-link</guid>
+  <title>React2Shell campaign compromises 766 hosts via Next.js vulnerability</title>
+  <link>https://codedefence.in/blog/2026/04/05/react2shell-nextjs-credential-harvesting-alert</link>
+  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/react2shell-nextjs-credential-harvesting-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Amazon Web Services (AWS)](urn:li:organization:1598)</cd:mentions>
+  <cd:cve>CVE-2025-55182</cd:cve>
   <description><![CDATA[
-The major data exfiltration event impacting the European Commission cloud infrastructure has been formally traced to the compromise of a trusted security scanner. This incident confirms the successful industrialization of supply chain vulnerabilities to target sovereign data at scale.
+A large-scale automated campaign is currently exploiting a critical flaw in Next.js applications to map and harvest credentials from cloud-native environments. This operation provides the adversary with a comprehensive inventory of victim infrastructure, including internal API keys and production database access.
 
-CERT-EU has assessed with high confidence that the initial access vector was the Trivy supply chain compromise ❨CVE-2026-33634❩, attributed to the group TeamPCP. The attackers used a compromised AWS secret harvested during a vulnerability scan to create a new access key and exfiltrate over 350 GB of data from 71 EU-related entities. The leaked dataset includes employee records‚ database dumps‚ and thousands of outbound email files.
+Tracked as CVE-2025-55182, the React2Shell vulnerability allows unauthenticated attackers to execute code and extract environment variables, shell history, and Docker configurations. The threat actor, identified as UAT-10608, exfiltrates this data to a centralized command-and-control interface called NEXUS Listener. This GUI-based tool allows operators to analyze stolen AWS secrets, SSH keys, and Kubernetes tokens in real-time, facilitating immediate lateral movement.
 
-This breach highlights the operational danger of granting security tools long-lived, high-privilege credentials. When a tool designed to find risks becomes the risk itself‚ it creates a massive blind spot where traditional egress monitoring fails to distinguish legitimate scanning activity from automated data theft.
+Modern web frameworks often run with excessive local permissions, turning a single application-layer flaw into a full infrastructure compromise. The rapid aggregation of stolen secrets into a searchable database suggests that UAT-10608 is operating as an Initial Access Broker, preparing high-value targets for resale to ransomware affiliates.
 
-- Conduct a forensic audit of all cloud provider logs for any unauthorized access key creation linked to automated scanner accounts.
-- Transition immediately to OIDC-based short-lived credentials for all CI/CD security scanning tasks.
-- Perform a mandatory rotation of every secret that was present in environment variables on any system running Trivy in March 2026.
-- Implement strict egress filtering for CI/CD runners to prevent direct communication with unauthorized external IP addresses.
+- Audit all Next.js deployments and update to the latest patched security release immediately.
+- Enforce AWS IMDSv2 on all EC2 instances to prevent the theft of temporary security credentials from metadata services.
+- Implement secret scanning across all repositories and CI/CD pipelines to identify and rotate exposed keys.
+- Strictly adhere to the principle of least privilege for application service accounts to limit the blast radius of RCE.
 
-The compromise of a security tool demands a complete reset of the identity perimeter rather than a simple software update. #CodeDefence #SupplyChain #EUCommission #AWS
+The centralization of stolen cloud secrets into an analytics platform represents a professionalization of the initial access market. #CodeDefence #NextJS #CloudSecurity #React2Shell
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds TrueConf Client code integrity flaw to KEV amid active exploitation</title>
-  <link>https://codedefence.in/blog/2026/04/04/cisa-kev-trueconf-client-code-execution-alert</link>
-  <pubDate>Sat, 04 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/04/cisa-kev-trueconf-client-code-execution-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3502</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-A critical vulnerability in a widely used video conferencing client is being actively exploited to distribute malicious code to enterprise endpoints. This flaw allows for unauthenticated remote code execution by bypassing standard integrity checks during software updates.
-
-CVE-2026-3502 affects the TrueConf Windows Client update mechanism. Because the software fails to validate the digital signature of downloaded update packages‚ an attacker can swap legitimate binaries with malicious payloads. This flaw is being used in the "TrueChaos" campaign to deploy the Havoc command-and-control framework through DLL side-loading. CISA added this to the KEV catalog on April 3‚ requiring remediation by April 16.
-
-Enterprise collaboration tools are frequently granted broad local permissions to facilitate audio and video communication‚ making them ideal vehicles for persistent malware delivery. The psychological trust users place in official "Update" prompts makes this vector particularly effective for bypassing standard social engineering training.
-
-- Update TrueConf Client to version 8.5.3 or higher immediately to ensure signature validation is enforced.
-- Use MDM policies to enforce application update integrity and block the installation of unverified executable files.
-- Monitor endpoint EDR logs for anomalous child processes or DLL side-loading events associated with collaboration software.
-- Restrict network access to third-party update servers to known‚ verified IP ranges where possible.
-
-The update channel is the ultimate trust boundary; its failure represents an immediate and total compromise of the managed endpoint. #CodeDefence #CISA #TrueConf #EndpointSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>Active exploitation of Citrix NetScaler memory disclosure flaw surging globally</title>
-  <link>https://codedefence.in/blog/2026/04/04/citrix-netscaler-cve-2026-3055-active-exploitation</link>
-  <pubDate>Sat, 04 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/04/citrix-netscaler-cve-2026-3055-active-exploitation</guid>
+  <title>Citrix NetScaler memory disclose flaw actively exploited for session takeover</title>
+  <link>https://codedefence.in/blog/2026/04/05/citrix-netscaler-cve-2026-3055-active-exploitation</link>
+  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/citrix-netscaler-cve-2026-3055-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-3055</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
+  <cd:mentions>@[Citrix](urn:li:organization:1598)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Attackers are industrializing the exploitation of a memory overread flaw to hijack enterprise sessions and bypass multi-factor authentication. This vulnerability targets the perimeter gateway at its most sensitive point: the identity provider interface.
+Attackers are leveraging an unauthenticated memory overread vulnerability to bypass multi-factor authentication on enterprise gateways. This flaw specifically targets the most sensitive part of the perimeter: the identity provider service responsible for managing user sessions.
 
-Tracked as CVE-2026-3055‚ this out-of-bounds read vulnerability impacts @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances configured as SAML Identity Providers. By sending a crafted request to SAML-related endpoints‚ an unauthenticated attacker can leak sensitive memory data‚ including Base64-encoded session cookies and administrative IDs. This information allows for direct session takeover without triggering MFA prompts.
+CVE-2026-3055 affects @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances configured as SAML Identity Providers. By sending crafted requests to specific SAML endpoints, an attacker can leak administrative session IDs directly from system memory. This technique enables full session hijacking without the need for valid credentials or a secondary authentication factor. @[CISA](urn:li:organization:13010360) added this vulnerability to the KEV catalog following confirmed reports of in-the-wild abuse.
 
-The exploitation of memory disclosure flaws in perimeter gateways has become a primary method for state-sponsored and criminal actors to achieve silent initial access. These attacks are often difficult to detect because they occur before a full authentication handshake is completed.
+The recurrence of memory disclosure flaws in perimeter hardware suggests that legacy code handling complex XML and SAML protocols remains a critical failure point. Security teams often focus on patching RCE, but memory disclosure is frequently more dangerous because it allows for silent access that bypasses logs designed to flag failed login attempts.
 
-- Apply the security updates for NetScaler ADC and Gateway ❨versions 14.1-66.59 or 13.1-62.23❩ immediately.
-- Conduct a retroactive audit of gateway logs for anomalous GET requests targeting /saml/login or /wsfed/passive.
-- Implement session timeouts and force the re-authentication of all users following the application of the patch.
-- Monitor for session cookies being used from geographic locations or IP ranges that do not match the original login event.
+- Apply the emergency security updates for NetScaler ADC and Gateway version 14.1-66.59 or 13.1-62.23.
+- Monitor gateway logs for anomalous GET requests targeting SAML login endpoints from unfamiliar IP ranges.
+- Terminate all active administrative sessions and force a re-authentication event once the patch is applied.
+- Utilize Conditional Access policies to restrict administrative logins to known, verified corporate network blocks.
 
-Perimeter identity gateways must be treated as zero-trust endpoints where every memory read is a potential exfiltration path. #CodeDefence #Citrix #NetScaler #SAML
+Perimeter identity services are the high-value pivot points for modern intrusions; their compromise grants immediate, trusted access to the internal network. #CodeDefence #Citrix #NetScaler #ZeroTrust
   ]]></description>
 </item>
 
 <item>
-  <title>North Korean UNC1069 used social engineering to hijack Axios npm distribution</title>
-  <link>https://codedefence.in/blog/2026/04/04/axios-npm-social-engineering-unc1069-update</link>
-  <pubDate>Sat, 04 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/04/axios-npm-social-engineering-unc1069-update</guid>
+  <title>Interlock ransomware weaponizes Cisco Secure FMC RCE for edge-device entry</title>
+  <link>https://codedefence.in/blog/2026/04/05/interlock-ransomware-cisco-fmc-exploitation</link>
+  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/interlock-ransomware-cisco-fmc-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
+  <description><![CDATA[
+The Interlock ransomware group is actively targeting network security management planes to gain root-level control over enterprise firewalls. This campaign represents a shift toward edge-device exploitation as the primary vector for double-extortion attacks.
+
+Tracked as CVE-2026-20131, the vulnerability allows unauthenticated remote code execution as root on @[Cisco](urn:li:organization:1063) Secure Firewall Management Center (FMC). The Interlock group uses this access to disable local security monitoring and enumerate network topologies before moving laterally. By controlling the management plane, attackers can create backdoors across the entire firewall estate simultaneously, making eviction exceptionally difficult.
+
+Network administrators frequently assume management interfaces are safe if they are not indexed by search engines, but ransomware groups now use industrialized scanning to find these endpoints. The operational risk of losing the firewall management plane is a total loss of visibility into the network perimeter.
+
+- Immediately update @[Cisco](urn:li:organization:1063) Secure FMC to the latest patched version to neutralize CVE-2026-20131.
+- Strictly isolate all management interfaces on a dedicated, out-of-band management network.
+- Audit the FMC for unauthorized administrative accounts or anomalous shell commands dating back to January 2026.
+- Implement hardware-enforced egress filtering to prevent security appliances from communicating with unverified external IP addresses.
+
+The management plane of your security fabric is the "brain" of the network; its compromise allows an attacker to redefine the rules of your perimeter. #CodeDefence #Ransomware #Cisco #EdgeSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>TeamPCP leverages stolen Trivy secrets to compromise secondary cloud targets</title>
+  <link>https://codedefence.in/blog/2026/04/05/teampcp-supply-chain-pivot-litellm-telnyx</link>
+  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/teampcp-supply-chain-pivot-litellm-telnyx</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-33634</cd:cve>
   <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
   <description><![CDATA[
-The sophisticated supply chain attack on the Axios library has been confirmed as the result of a targeted social engineering campaign against a project maintainer. This incident reveals the high level of effort state-sponsored actors are investing to bypass modern technical security controls.
+The supply chain campaign initiated through a compromised vulnerability scanner has successfully pivoted into secondary cloud-native libraries. This cascading failure demonstrates how a single breach in a security tool can weaponize the entire downstream development lifecycle.
 
-The North Korea-nexus actor UNC1069 posed as a helpful contributor for several weeks to build a relationship with a project maintainer. This relationship allowed them to steal session cookies and lift account credentials‚ providing the ability to publish malicious versions 1.14.1 and 0.30.4. These versions delivered the WAVESHAPER.V2 backdoor‚ built to profile and exfiltrate secrets from Windows‚ Linux‚ and macOS systems.
+Following the compromise of @[GitHub](urn:li:organization:19041) Action tags for the Trivy scanner, the group TeamPCP used stolen PyPI publishing credentials to poison the LiteLLM and Telnyx packages. These malicious versions were used to harvest SSH keys and cloud provider tokens from infected build runners. The group is now systematically validating these secrets to gain persistent access to production cloud clusters.
 
-When an attacker successfully hijacks the human relationship at the core of an open-source project‚ technical measures like MFA and OIDC provenance can still be bypassed. This represents a strategic shift where the maintainer is the primary target for identity theft rather than the infrastructure itself.
+The speed at which TeamPCP pivoted from one compromised package to the next indicates a professionalized operation that treats stolen CI/CD secrets as high-velocity currency. This highlights the danger of long-lived credentials in automated pipelines; once a scanner or build tool is breached, the clock for rotate-or-compromise begins instantly.
 
-- Force rotate all NPM_TOKEN secrets and long-lived GitHub access keys that have been exposed in environment variables.
-- Audit the project node_modules directory for any references to plain-crypto-js or unauthorized dependencies.
-- Revert to Axios version 1.14.0 or 0.30.3 and implement strict version pinning in all project configuration files.
-- Monitor build logs for anomalous outbound connections to unknown IP addresses during npm install.
+- Conduct a mandatory rotation of every cloud provider secret and SSH key that touched a pipeline where Trivy ran in March 2026.
+- Transition to OIDC-based short-lived credentials for all CI/CD tasks to eliminate the risk of long-lived secret theft.
+- Pin all third-party @[GitHub](urn:li:organization:19041) Actions and npm/PyPI packages to full SHA-256 hashes.
+- Monitor cloud logs for anomalous service principal activity or unauthorized resource creation originating from the exfiltrated keys.
 
-The security of the supply chain is as dependent on the identity and relationship management of the maintainers as it is on the security of the code. #CodeDefence #Axios #SupplyChain #UNC1069
+The security of the supply chain is a recursive problem: your defense tools are only as secure as the pipelines that deliver them. #CodeDefence #SupplyChain #Trivy #DevSecOps
   ]]></description>
 </item>
 
