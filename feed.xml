@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 05 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 06 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 05 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 06 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 05 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 06 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 06 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>React2Shell campaign compromises 766 hosts via Next.js vulnerability</title>
-  <link>https://codedefence.in/blog/2026/04/05/react2shell-nextjs-credential-harvesting-alert</link>
-  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/react2shell-nextjs-credential-harvesting-alert</guid>
+  <title>React2Shell campaign exploits critical Next.js RCE for automated cloud harvesting</title>
+  <link>https://codedefence.in/blog/2026/04/06/react2shell-nextjs-automated-cloud-harvesting-alert</link>
+  <pubDate>Mon, 06 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/06/react2shell-nextjs-automated-cloud-harvesting-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2025-55182</cd:cve>
   <description><![CDATA[
-A large-scale automated campaign is currently exploiting a critical flaw in Next.js applications to map and harvest credentials from cloud-native environments. This operation provides the adversary with a comprehensive inventory of victim infrastructure, including internal API keys and production database access.
+A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in React Server Components and Next.js applications to siphon credentials from cloud-native environments. This operation provides the adversary with a comprehensive inventory of victim infrastructure including internal API keys and production database access.
 
-Tracked as CVE-2025-55182, the React2Shell vulnerability allows unauthenticated attackers to execute code and extract environment variables, shell history, and Docker configurations. The threat actor, identified as UAT-10608, exfiltrates this data to a centralized command-and-control interface called NEXUS Listener. This GUI-based tool allows operators to analyze stolen AWS secrets, SSH keys, and Kubernetes tokens in real-time, facilitating immediate lateral movement.
+Tracked as CVE-2025-55182, the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables, shell history, and Kubernetes configurations. The threat actor, identified as UAT-10608, exfiltrates this data to a centralized command-and-control interface called NEXUS Listener. This GUI-based tool allows operators to analyze stolen AWS secrets, SSH keys, and Kubernetes tokens in real-time, facilitating immediate lateral movement.
 
-Modern web frameworks often run with excessive local permissions, turning a single application-layer flaw into a full infrastructure compromise. The rapid aggregation of stolen secrets into a searchable database suggests that UAT-10608 is operating as an Initial Access Broker, preparing high-value targets for resale to ransomware affiliates.
+Modern web frameworks often run with excessive local permissions, turning a single application-layer flaw into a full infrastructure compromise. The rapid aggregation of stolen secrets into a searchable database suggests that UAT-10608 is operating as an Initial Access Broker, preparing high-value targets for resale to ransomware affiliates or state actors.
 
 - Audit all Next.js deployments and update to the latest patched security release immediately.
 - Enforce AWS IMDSv2 on all EC2 instances to prevent the theft of temporary security credentials from metadata services.
@@ -33,74 +33,73 @@ The centralization of stolen cloud secrets into an analytics platform represents
 </item>
 
 <item>
-  <title>Citrix NetScaler memory disclose flaw actively exploited for session takeover</title>
-  <link>https://codedefence.in/blog/2026/04/05/citrix-netscaler-cve-2026-3055-active-exploitation</link>
-  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/citrix-netscaler-cve-2026-3055-active-exploitation</guid>
+  <title>North Korean UNC1069 attributed to Axios npm supply chain compromise</title>
+  <link>https://codedefence.in/blog/2026/04/06/axios-npm-supply-chain-unc1069-attribution-update</link>
+  <pubDate>Mon, 06 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/06/axios-npm-supply-chain-unc1069-attribution-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3055</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1598)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Attackers are leveraging an unauthenticated memory overread vulnerability to bypass multi-factor authentication on enterprise gateways. This flaw specifically targets the most sensitive part of the perimeter: the identity provider service responsible for managing user sessions.
+One of the most trusted HTTP client libraries in the JavaScript ecosystem has been weaponized by a North Korea-nexus actor to distribute a cross-platform remote access trojan. This attack specifically targets the developer workstations and automated build pipelines that pull the latest versions of the Axios npm package.
 
-CVE-2026-3055 affects @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances configured as SAML Identity Providers. By sending crafted requests to specific SAML endpoints, an attacker can leak administrative session IDs directly from system memory. This technique enables full session hijacking without the need for valid credentials or a secondary authentication factor. @[CISA](urn:li:organization:13010360) added this vulnerability to the KEV catalog following confirmed reports of in-the-wild abuse.
+On March 31, 2026, the threat actor UNC1069 compromised the maintainer account for Axios and published poisoned versions 1.14.1 and 0.30.4. These releases delivered the WAVESHAPER.V2 backdoor to an estimated 600,000 installs during a three-hour window. The malware automates the exfiltration of environment variables, cloud access keys, and GitHub personal access tokens from Windows, macOS, and Linux systems.
 
-The recurrence of memory disclosure flaws in perimeter hardware suggests that legacy code handling complex XML and SAML protocols remains a critical failure point. Security teams often focus on patching RCE, but memory disclosure is frequently more dangerous because it allows for silent access that bypasses logs designed to flag failed login attempts.
+Organizations frequently prioritize speed over dependency integrity in their CI/CD workflows, often relying on implicit trust in a reputable package name. When a primary library is compromised, the attack surface is no longer your perimeter, but the verified code running inside your production infrastructure.
 
-- Apply the emergency security updates for NetScaler ADC and Gateway version 14.1-66.59 or 13.1-62.23.
-- Monitor gateway logs for anomalous GET requests targeting SAML login endpoints from unfamiliar IP ranges.
-- Terminate all active administrative sessions and force a re-authentication event once the patch is applied.
-- Utilize Conditional Access policies to restrict administrative logins to known, verified corporate network blocks.
+- Check project lockfiles for Axios versions 1.14.1 or 0.30.4 and reference to plain-crypto-js.
+- Revert to Axios 1.14.0 or 0.30.3 immediately and delete affected node_modules directories.
+- Rotate all secrets present in environment variables on any system where the poisoned versions executed.
+- Enforce SHA-256 hash pinning for all critical npm dependencies to prevent automated version hijacking.
 
-Perimeter identity services are the high-value pivot points for modern intrusions; their compromise grants immediate, trusted access to the internal network. #CodeDefence #Citrix #NetScaler #ZeroTrust
+Implicit trust in collaborative code-sharing communities is a systemic risk that requires architectural hardening rather than simple patching. #CodeDefence #SupplyChain #Axios #UNC1069
   ]]></description>
 </item>
 
 <item>
-  <title>Interlock ransomware weaponizes Cisco Secure FMC RCE for edge-device entry</title>
-  <link>https://codedefence.in/blog/2026/04/05/interlock-ransomware-cisco-fmc-exploitation</link>
-  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/interlock-ransomware-cisco-fmc-exploitation</guid>
+  <title>Cisco releases emergency fixes for critical Integrated Management Controller bypass</title>
+  <link>https://codedefence.in/blog/2026/04/06/cisco-imc-critical-authentication-bypass-alert</link>
+  <pubDate>Mon, 06 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/06/cisco-imc-critical-authentication-bypass-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20131</cd:cve>
+  <cd:cve>CVE-2026-20093</cd:cve>
   <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
   <description><![CDATA[
-The Interlock ransomware group is actively targeting network security management planes to gain root-level control over enterprise firewalls. This campaign represents a shift toward edge-device exploitation as the primary vector for double-extortion attacks.
+A critical vulnerability in the management interface of high-performance server hardware allows unauthenticated attackers to gain full administrative control. This flaw bypasses the primary gatekeeper for hardware-level operations, providing a direct path to total system takeover.
 
-Tracked as CVE-2026-20131, the vulnerability allows unauthenticated remote code execution as root on @[Cisco](urn:li:organization:1063) Secure Firewall Management Center (FMC). The Interlock group uses this access to disable local security monitoring and enumerate network topologies before moving laterally. By controlling the management plane, attackers can create backdoors across the entire firewall estate simultaneously, making eviction exceptionally difficult.
+CVE-2026-20093 is a maximum-severity authentication bypass in @[Cisco](urn:li:organization:1063) Integrated Management Controller (IMC) software. Remote attackers can exploit this flaw to reset any account, including the Admin account, and gain full control over the target device. This software is used across ENCS 5000, Catalyst 8300 uCPE, and UCS C-Series M5/M6 servers.
 
-Network administrators frequently assume management interfaces are safe if they are not indexed by search engines, but ransomware groups now use industrialized scanning to find these endpoints. The operational risk of losing the firewall management plane is a total loss of visibility into the network perimeter.
+Hardware management interfaces are the "keys to the physical kingdom" but are often left with legacy protocols and exposed to broader network segments than necessary. When an attacker can reset an Admin account via the management plane, traditional operating system security controls become effectively irrelevant.
 
-- Immediately update @[Cisco](urn:li:organization:1063) Secure FMC to the latest patched version to neutralize CVE-2026-20131.
-- Strictly isolate all management interfaces on a dedicated, out-of-band management network.
-- Audit the FMC for unauthorized administrative accounts or anomalous shell commands dating back to January 2026.
-- Implement hardware-enforced egress filtering to prevent security appliances from communicating with unverified external IP addresses.
+- Immediately update @[Cisco](urn:li:organization:1063) IMC software to the latest fixed version to neutralize CVE-2026-20093.
+- Strictly isolate all management plane interfaces behind a dedicated OOB network or Zero Trust gateway.
+- Conduct a retroactive audit of IMC logs for any unauthorized account password resets dating back to January 2026.
+- Monitor for anomalous administrative login events originating from non-authorized management subnets.
 
-The management plane of your security fabric is the "brain" of the network; its compromise allows an attacker to redefine the rules of your perimeter. #CodeDefence #Ransomware #Cisco #EdgeSecurity
+The management plane of your compute fabric must be treated as your most sensitive and isolated network segment. #CodeDefence #Cisco #IMC #IdentitySecurity
   ]]></description>
 </item>
 
 <item>
-  <title>TeamPCP leverages stolen Trivy secrets to compromise secondary cloud targets</title>
-  <link>https://codedefence.in/blog/2026/04/05/teampcp-supply-chain-pivot-litellm-telnyx</link>
-  <pubDate>Sun, 05 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/05/teampcp-supply-chain-pivot-litellm-telnyx</guid>
+  <title>Active exploitation of Citrix NetScaler memory disclosure flaw surging globally</title>
+  <link>https://codedefence.in/blog/2026/04/06/citrix-netscaler-cve-2026-3055-active-exploitation-surge</link>
+  <pubDate>Mon, 06 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/06/citrix-netscaler-cve-2026-3055-active-exploitation-surge</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33634</cd:cve>
-  <cd:mentions>@[GitHub](urn:li:organization:19041)</cd:mentions>
+  <cd:cve>CVE-2026-3055</cd:cve>
+  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
-The supply chain campaign initiated through a compromised vulnerability scanner has successfully pivoted into secondary cloud-native libraries. This cascading failure demonstrates how a single breach in a security tool can weaponize the entire downstream development lifecycle.
+Attackers are industrializing the exploitation of a memory overread flaw to hijack enterprise sessions and bypass multi-factor authentication. This vulnerability targets the perimeter gateway at its most sensitive point: the identity provider interface.
 
-Following the compromise of @[GitHub](urn:li:organization:19041) Action tags for the Trivy scanner, the group TeamPCP used stolen PyPI publishing credentials to poison the LiteLLM and Telnyx packages. These malicious versions were used to harvest SSH keys and cloud provider tokens from infected build runners. The group is now systematically validating these secrets to gain persistent access to production cloud clusters.
+Tracked as CVE-2026-3055, this out-of-bounds read vulnerability impacts @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances configured as SAML Identity Providers. By sending a crafted request to SAML-related endpoints, an unauthenticated attacker can leak sensitive memory data, including Base64-encoded session cookies and administrative IDs. This information allows for direct session takeover without triggering MFA prompts.
 
-The speed at which TeamPCP pivoted from one compromised package to the next indicates a professionalized operation that treats stolen CI/CD secrets as high-velocity currency. This highlights the danger of long-lived credentials in automated pipelines; once a scanner or build tool is breached, the clock for rotate-or-compromise begins instantly.
+The exploitation of memory disclosure flaws in perimeter gateways has become a primary method for state-sponsored and criminal actors to achieve silent initial access. These attacks are often difficult to detect because they occur before a full authentication handshake is completed.
 
-- Conduct a mandatory rotation of every cloud provider secret and SSH key that touched a pipeline where Trivy ran in March 2026.
-- Transition to OIDC-based short-lived credentials for all CI/CD tasks to eliminate the risk of long-lived secret theft.
-- Pin all third-party @[GitHub](urn:li:organization:19041) Actions and npm/PyPI packages to full SHA-256 hashes.
-- Monitor cloud logs for anomalous service principal activity or unauthorized resource creation originating from the exfiltrated keys.
+- Apply the security updates for NetScaler ADC and Gateway version 14.1-66.59 or 13.1-62.23 immediately.
+- Conduct a retroactive audit of gateway logs for anomalous GET requests targeting /saml/login or /wsfed/passive.
+- Implement session timeouts and force the re-authentication of all users following the application of the patch.
+- Monitor for session cookies being used from geographic locations or IP ranges that do not match the original login event.
 
-The security of the supply chain is a recursive problem: your defense tools are only as secure as the pipelines that deliver them. #CodeDefence #SupplyChain #Trivy #DevSecOps
+Perimeter identity gateways must be treated as zero-trust endpoints where every memory read is a potential exfiltration path. #CodeDefence #Citrix #NetScaler #SAML
   ]]></description>
 </item>
 
