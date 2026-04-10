@@ -2,102 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 09 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 10 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 09 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 10 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 09 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 09 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 10 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 10 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Sophisticated Adobe Reader zero-day exploit identified after months of active use</title>
-  <link>https://codedefence.in/blog/2026/04/09/adobe-reader-zero-day-pdf-exploit-alert</link>
-  <pubDate>Thu, 09 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/09/adobe-reader-zero-day-pdf-exploit-alert</guid>
+  <title>Supply chain attack at CPUID pushes malware via poisoned CPU-Z installers</title>
+  <link>https://codedefence.in/blog/2026/04/10/cpuid-supply-chain-attack-cpu-z-malware</link>
+  <pubDate>Fri, 10 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/10/cpuid-supply-chain-attack-cpu-z-malware</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
+  <cd:mentions>@[CPUID](urn:li:organization:12345)</cd:mentions>
   <description><![CDATA[
-A highly sophisticated zero-day vulnerability in the world most popular PDF reader has been active in the wild since late 2025. This flaw allows for unauthenticated remote code execution on both Windows and macOS systems via the opening of a maliciously crafted document.
+A critical supply chain compromise has impacted the distribution infrastructure of the CPUID project. Attackers gained unauthorized access to an internal API and successfully modified download links on the official website to serve malicious versions of the widely used CPU-Z and HWMonitor utilities.
 
-The exploit utilizes a multi-stage memory corruption chain embedded in seemingly benign PDF invoices. Researchers first identified samples of the attack on VirusTotal dating back to November 2025. The attack bypasses standard @[Adobe](urn:li:organization:1480) sandboxing protections to deliver secondary payloads‚ including the Atomic Stealer for macOS and credential-harvesting implants for Windows environments.
+The malicious installers were configured to deploy a second-stage infostealer designed to harvest browser credentials, session cookies, and cryptocurrency wallet data from developer and administrator workstations. Because these tools are frequently used by system administrators to profile server hardware, the potential for high-value credential theft across enterprise environments is significant.
 
-User trust in the PDF format remains a structural weakness in corporate defense. Because invoices are a core component of business operations‚ social engineering campaigns that leverage high-fidelity PDF exploits often achieve a high rate of success before security teams can implement detection rules.
+This incident underscores the fragility of software distribution trust models that rely on centralized APIs. Even when a website remains visually intact, the underlying data feeds that generate download links can be weaponized to deliver malware through officially verified channels.
 
-- Immediately update @[Adobe](urn:li:organization:1480) Acrobat and Reader to the latest security version to neutralize the zero-day exploit.
-- Utilize MDM to disable the execution of JavaScript and untrusted 3D content within PDF readers across the enterprise.
-- Deploy browser isolation or secure email gateways to pre-scan and neutralize suspicious PDF attachments before they reach the endpoint.
-- Monitor for anomalous child processes spawned by Acrobat.exe or AdobeReader.app in EDR logs.
+- Verify the checksums of any CPU-Z or HWMonitor installers downloaded between April 9 and April 10.
+- Conduct a forensic audit of any system where these tools were installed or updated during the infection window.
+- Rotate all administrative and cloud service credentials present on any workstation that executed the malicious binaries.
+- Implement strict application whitelisting and enforce code integrity checks for all system profiling tools.
 
-The longevity of this zero-day highlights the strategic advantage an adversary gains when targeting core productivity tools that are excluded from aggressive sandboxing. #CodeDefence #Adobe #ZeroDay #Phishing
+The targeting of hardware utilities represents a strategic move to compromise the very tools used by IT professionals for infrastructure management. #CodeDefence #SupplyChain #CPUID #Malware
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Ivanti EPMM code injection flaw to KEV following active exploitation</title>
-  <link>https://codedefence.in/blog/2026/04/09/cisa-kev-ivanti-epmm-code-injection-alert</link>
-  <pubDate>Thu, 09 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/09/ivanti-epmm-cisa-kev-exploitation-alert</guid>
+  <title>Thirteen-year-old Apache ActiveMQ RCE vulnerability targeted in new reconnaissance campaign</title>
+  <link>https://codedefence.in/blog/2026/04/10/apache-activemq-13-year-old-rce-vulnerability</link>
+  <pubDate>Fri, 10 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/10/apache-activemq-13-year-old-rce-vulnerability</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-34197</cd:cve>
+  <description><![CDATA[
+A long-dormant remote code execution vulnerability in a core enterprise message broker has been identified and is currently being probed by automated scanning clusters. This flaw resides in legacy management APIs that have remained unpatched in many production environments for over a decade.
+
+CVE-2026-34197 involves the Jolokia management API in Apache ActiveMQ Classic, which exposes a broker function that can be abused to load external configurations. By sending a crafted request, an attacker can force the broker to fetch a remote XML file and execute arbitrary commands during initialization. While authentication is typically required, secondary vulnerabilities in versions 6.0.0 through 6.1.1 can render the API unauthenticated, significantly lowering the barrier for remote exploitation.
+
+Message brokers like ActiveMQ often sit at the intersection of internal and external network zones, acting as a gateway for application data. A compromise here provides an attacker with a powerful vantage point for lateral movement and the interception of sensitive inter-service communication.
+
+- Update Apache ActiveMQ Classic to version 5.19.4 or 6.2.3 and above immediately.
+- Disable the Jolokia management API if it is not strictly required for operational monitoring.
+- Audit broker logs for anomalous requests to the /api/jolokia endpoint, particularly those originating from external IP addresses.
+- Restrict network access to ActiveMQ management ports to authorized administrative subnets only.
+
+The discovery of decade-old flaws in critical middleware highlights the persistent risk of legacy software in modern cloud-native architectures. #CodeDefence #ActiveMQ #LegacyIT #RCE
+  ]]></description>
+</item>
+
+<item>
+  <title>Adobe Reader zero-day exploit used in months-long campaign targeting energy sector</title>
+  <link>https://codedefence.in/blog/2026/04/10/adobe-reader-zero-day-oil-gas-lures</link>
+  <pubDate>Fri, 10 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/10/adobe-reader-zero-day-oil-gas-lures</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
+  <description><![CDATA[
+A sophisticated zero-day vulnerability in @[Adobe](urn:li:organization:1480) Reader is being leveraged in a targeted campaign that has remained undetected since at least December 2025. The attack utilizes high-fidelity document lures related to the Russian oil and gas industry to achieve silent code execution on victim endpoints.
+
+The exploit targets the JavaScript engine within @[Adobe](urn:li:organization:1480) Reader, utilizing privileged APIs to access and exfiltrate local system data. Researchers have observed the exploit calling the RSS.addFeed() function to beacon stolen information back to actor-controlled infrastructure. The use of specific industry lures suggests a state-sponsored or advanced persistent threat actor focused on industrial espionage.
+
+Targeting document readers is an effective way to bypass perimeter defenses because PDFs are a fundamental component of business communication. When combined with a zero-day exploit and sector-specific social engineering, the likelihood of a successful initial intrusion increases exponentially.
+
+- Monitor for an official security update from @[Adobe](urn:li:organization:1480) and apply it to all Acrobat and Reader instances immediately upon release.
+- Implement automated scanning of PDF attachments and block files containing obfuscated JavaScript or unauthorized API calls.
+- Train users to be wary of unsolicited PDF documents, even when they appear to relate to relevant industry topics.
+- Utilize EDR to monitor for anomalous network connections originating from PDF reader processes.
+
+The persistence of this zero-day highlights the strategic value of targeting core productivity software with tailored industry intelligence. #CodeDefence #Adobe #ZeroDay #IndustrialEspionage
+]]></description>
+</item>
+
+<item>
+  <title>CISA mandates remediation for Ivanti EPMM code injection vulnerability exploited in wild</title>
+  <link>https://codedefence.in/blog/2026/04/10/ivanti-epmm-cisa-kev-deadline-alert</link>
+  <pubDate>Fri, 10 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/10/ivanti-epmm-cisa-kev-deadline-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-1340</cd:cve>
   <cd:mentions>@[Ivanti](urn:li:organization:11462)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Your mobile device management infrastructure is being targeted to achieve unauthenticated remote code execution. This vulnerability provides a direct path to the administrative core of your mobile security posture.
+A critical code injection vulnerability in a leading mobile management platform is being actively exploited to establish unauthenticated remote access. This flaw targets the management plane of the mobile enterprise, providing a direct route to compromise managed devices.
 
-CVE-2026-1340 is a critical code injection vulnerability in @[Ivanti](urn:li:organization:11462) Endpoint Manager Mobile ❨EPMM❩. CISA added this to the KEV catalog on April 8 after confirming active exploitation in the wild since January 2026. This flaw allows an unauthenticated attacker to execute arbitrary commands on the server‚ potentially compromising all managed mobile devices connected to the platform.
+Tracked as CVE-2026-1340, the vulnerability affects @[Ivanti](urn:li:organization:11462) Endpoint Manager Mobile ❨EPMM❩. Attackers can exploit this flaw by sending specially crafted HTTP requests to vulnerable appliances, resulting in web shell deployment and persistent backdoor installation. @[CISA](urn:li:organization:13010360) has added this to the KEV catalog, with a mandatory remediation deadline of April 11.
 
-Mobile management servers are high-value targets because they maintain persistent communication channels with the entire mobile fleet and often sit on the perimeter. The operational risk of an MDM compromise is the total loss of device integrity and the potential for malicious app deployment at scale.
+Mobile management servers are high-value targets because they often sit on the network perimeter and maintain elevated permissions across the entire mobile fleet. A compromise of the EPMM server effectively grants the attacker control over the security policies and data access of every managed mobile device.
 
-- Apply the security updates for @[Ivanti](urn:li:organization:11462) EPMM immediately to neutralize CVE-2026-1340.
-- Restrict all access to the EPMM management interface to authorized administrative IP ranges or a dedicated OOB management network.
-- Audit the EPMM server for unauthorized administrative accounts or anomalous process executions dating back to January.
-- Utilize Conditional Access policies to block mobile devices from accessing corporate apps if the MDM server reports a non-healthy state.
+- Apply all available mitigations and security patches provided by @[Ivanti](urn:li:organization:11462) for the EPMM platform immediately.
+- Conduct a thorough compromise assessment of any internet-exposed EPMM appliances before returning them to normal operation.
+- Restrict access to the EPMM management interface to authorized administrative IP ranges only.
+- Monitor for the creation of new administrative accounts or anomalous shell activity on the EPMM appliance.
 
-When the platform responsible for enforcing device compliance is compromised‚ the entire mobile trust boundary is effectively neutralized. #CodeDefence #Ivanti #MobileSecurity #CISA
-  ]]></description>
-</item>
-
-<item>
-  <title>Thirteen-year-old Apache ActiveMQ bug weaponized in new ransomware campaigns</title>
-  <link>https://codedefence.in/blog/2026/04/09/apache-activemq-rce-legacy-bug-weaponization</link>
-  <pubDate>Thu, 09 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/09/apache-activemq-rce-legacy-bug-weaponization</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <description><![CDATA[
-A critical remote code execution flaw in a legacy message broker is being actively exploited to deploy botnets and ransomware across enterprise networks. This vulnerability allows for unauthenticated command execution on systems that have not been patched in over a decade.
-
-The vulnerability affects Apache ActiveMQ Classic and has remained undetected for 13 years. Threat actors behind the Chaos botnet are currently leveraging the flaw to establish persistent backdoors and conduct lateral movement. Because ActiveMQ often serves as the backbone for internal application communication‚ a compromise provides an attacker with a strategic vantage point to intercept sensitive data flows.
-
-Legacy middleware often harbors dormant vulnerabilities that become high-impact targets when modern automated scanning identifies them in the perimeter. The operational challenge of patching "set-and-forget" infrastructure often leads to massive security gaps that are invisible to modern endpoint telemetry.
-
-- Identify all internal and external instances of Apache ActiveMQ Classic and verify their version numbers.
-- Update Apache ActiveMQ to the latest security release or apply the manual mitigations to the vulnerable EAP-TTLS plugins.
-- Restrict the ActiveMQ broker ports to known‚ internal IP ranges to prevent unauthenticated remote access from the internet.
-- Monitor network traffic for anomalous outbound connections originating from middleware servers to unknown IP addresses.
-
-Trust in legacy application backbones must be validated through continuous scanning and the strict isolation of non-essential management plugins. #CodeDefence #ActiveMQ #LegacyIT #RCE
-  ]]></description>
-</item>
-
-<item>
-  <title>React2Shell campaign achieves industrial scale with NEXUS Listener command center</title>
-  <link>https://codedefence.in/blog/2026/04/09/react2shell-nextjs-nexus-listener-campaign-update</link>
-  <pubDate>Thu, 09 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/09/react2shell-nextjs-nexus-listener-campaign-update</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-55182</cd:cve>
-  <description><![CDATA[
-A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in Next.js applications to siphon credentials from cloud-native environments. The operation has reached a professionalized state‚ with hundreds of hosts being harvested simultaneously for high-value cloud secrets.
-
-Tracked as CVE-2025-55182‚ the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables‚ shell history‚ and Kubernetes service account tokens. The threat actor is exfiltrating this data to a centralized command-and-control interface called NEXUS Listener. This tool automates the validation of stolen AWS secrets and SSH keys‚ facilitating immediate lateral movement into production clusters.
-
-The rapid aggregation of stolen secrets into a searchable database demonstrates how application-layer flaws are now the primary engine for cloud-native data breaches. Threat actors no longer need to manually explore a network; they simply wait for their automated scanners to populate their dashboard with valid production credentials.
-
-- Audit all Next.js and React Server Component deployments and update to the latest patched security release immediately.
-- Enforce the use of AWS IMDSv2 and disable IMDSv1 to prevent the theft of temporary security credentials from metadata services.
-- Implement automated secret scanning across all CI/CD pipelines to identify and rotate any keys that may have been exposed.
-- Place all public-facing web applications behind a Web Application Firewall ❨WAF❩ with rules specifically targeting RCE patterns.
-
-The shift toward automated credential harvesting at the application layer requires a zero-trust architecture where secrets are short-lived and identity-bound. #CodeDefence #NextJS #CloudSecurity #React2Shell
+The security of the mobile fleet is entirely dependent on the integrity of the platform that manages it. #CodeDefence #Ivanti #MobileSecurity #CISA
   ]]></description>
 </item>
 
