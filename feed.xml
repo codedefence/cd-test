@@ -2,103 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 11 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 12 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 11 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 12 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 11 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 11 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 12 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CPUID API compromise leads to malware distribution via CPU-Z and HWMonitor</title>
-  <link>https://codedefence.in/blog/2026/04/11/cpuid-supply-chain-malware-distribution-alert</link>
-  <pubDate>Sat, 11 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/11/cpuid-supply-chain-malware-distribution-alert</guid>
+  <title>Critical Marimo AI notebook pre-auth RCE vulnerability under active exploitation</title>
+  <link>https://codedefence.in/blog/2026/04/12/marimo-ai-notebook-pre-auth-rce-alert</link>
+  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/marimo-ai-notebook-pre-auth-rce-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[CPUID](urn:li:organization:12345)</cd:mentions>
   <description><![CDATA[
-A critical supply chain compromise has impacted the official distribution site for @[CPUID](urn:li:organization:12345) utilities. Attackers successfully weaponized an internal API to redirect legitimate download links to malicious executables masquerading as CPU-Z and HWMonitor.
+A critical pre-authentication remote code execution vulnerability in the Marimo reactive notebook framework is currently being exploited to compromise AI development environments. This flaw allows unauthenticated attackers to execute arbitrary code and exfiltrate sensitive data from the host system.
 
-The malicious versions were designed to drop second-stage infostealers that harvest browser credentials‚ session cookies‚ and sensitive hardware profiles from developer and administrator workstations. Because these tools are standard for hardware troubleshooting and performance monitoring‚ the attack targets high-value users with elevated privileges on corporate networks. The compromise was active for several hours on April 10 before detection.
+The vulnerability targets the core execution engine of the Marimo notebook. By sending a crafted HTTP request to an exposed Marimo instance‚ an attacker can bypass authentication and inject malicious Python code. This leads to the immediate theft of environment variables‚ LLM API keys‚ and local datasets. Researchers have observed automated scanners identifying these notebooks in the wild to facilitate rapid credential harvesting.
 
-Security professionals often treat hardware profiling tools as "utilities" rather than critical software dependencies. This attack demonstrates that the trust placed in simple‚ standalone diagnostics is a primary vector for initial access into secure administrative environments.
+The rapid adoption of collaborative AI tools often bypasses traditional security gatekeepers‚ resulting in "shadow AI" deployments that lack basic authentication. When developer productivity tools are exposed to the public internet without isolation‚ they become the most direct path to compromising the organization's entire AI data pipeline.
 
-- Audit all systems for CPU-Z or HWMonitor downloads performed on April 10 and verify file hashes against clean releases.
-- Immediately rotate all credentials and session tokens on any workstation that executed the malicious installers.
-- Enforce MDM or Group Policy rules that require signed code and verified checksums for all diagnostic utilities.
-- Monitor for anomalous outbound network traffic from profiling tools to unknown C2 IP addresses.
+- Immediately upgrade Marimo to the latest security version and verify that authentication is enabled for all instances.
+- Place all AI development notebooks behind a Zero Trust gateway or VPN to prevent public API exposure.
+- Implement strict egress filtering for development environments to block unauthorized communication with external C2 servers.
+- Audit your cloud environments for any unmanaged Marimo instances that may have been deployed outside of IT oversight.
 
-The compromise of common hardware diagnostics highlights the necessity of treating all third-party binaries as high-risk regardless of their utility function. #CodeDefence #SupplyChain #CPUID #Malware
+AI development tools are high-value targets because they reside at the intersection of raw compute power and sensitive corporate data. #CodeDefence #AISecurity #Marimo #RCE
   ]]></description>
 </item>
 
 <item>
-  <title>Decade-old Apache ActiveMQ RCE vulnerability targeted in mass scanning campaign</title>
-  <link>https://codedefence.in/blog/2026/04/11/apache-activemq-rce-vulnerability-active-recon</link>
-  <pubDate>Sat, 11 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/11/apache-activemq-rce-vulnerability-active-recon</guid>
+  <title>Fortinet FortiClient EMS zero-day exploitation surges as hotfix deployment lags</title>
+  <link>https://codedefence.in/blog/2026/04/12/fortinet-forticlient-ems-cve-2026-35616-exploitation-surge</link>
+  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/fortinet-forticlient-ems-cve-2026-35616-exploitation-surge</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-34197</cd:cve>
+  <cd:cve>CVE-2026-35616</cd:cve>
+  <cd:mentions>@[Fortinet](urn:li:organization:15197)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical remote code execution vulnerability has been identified in a legacy management component of Apache ActiveMQ Classic. Automated scanning clusters are currently mapping internet-exposed brokers that have remained unpatched for over 13 years.
+Attackers have significantly ramped up exploitation of a critical zero-day vulnerability in endpoint management infrastructure. This improper access control flaw provides an unauthenticated path to execute code with administrative privileges on the server managing your entire endpoint fleet.
 
-CVE-2026-34197 leverages the Jolokia management API to force the broker into loading an external‚ malicious XML configuration. This provides an unauthenticated remote attacker with a path to full command execution on the host system. While newer versions have restricted this behavior‚ thousands of legacy brokers in enterprise application backbones remain vulnerable to this decade-old logic flaw.
+CVE-2026-35616 affects @[Fortinet](urn:li:organization:15197) FortiClient Enterprise Management Server ❨EMS❩. Despite the availability of an emergency hotfix released over the holiday weekend‚ nearly 2,000 instances remain publicly exposed. Attackers are currently probing these instances to bypass API authentication and deploy secondary payloads. CISA added this flaw to the KEV catalog earlier this week‚ mandating urgent remediation.
 
-Middleware often exists in the "blind spot" of modern security operations because it is rarely updated once integrated into stable application flows. Attackers are prioritizing these legacy backdoors because they offer a reliable path to unauthenticated root access on systems that lack modern endpoint telemetry.
+Holiday weekends are a preferred window for threat actors because they exploit the operational gap created by reduced security staffing. The delay in deploying hotfixes for perimeter management software allows attackers to establish persistent backdoors that remain hidden long after the holiday shift concludes.
 
-- Update Apache ActiveMQ Classic to version 5.19.4 or 6.2.3 and higher immediately.
-- Disable the Jolokia management API if it is not essential for production monitoring or restrict its access to the localhost.
-- Restrict all broker management ports to an isolated‚ internal administrative network segment.
-- Audit broker logs for anomalous requests to the /api/jolokia endpoint originating from unauthorized network blocks.
+- Apply the @[Fortinet](urn:li:organization:15197) emergency hotfix for FortiClient EMS 7.4.5 and 7.4.6 immediately.
+- Strictly restrict all access to the EMS management interface to authorized administrative IP ranges or an OOB network.
+- Conduct a retroactive audit of EMS server logs for anomalous API requests or unauthorized account creation.
+- Utilize EDR to monitor for unusual child processes spawned by the FortiClient EMS service on the management host.
 
-Legacy middleware remains the silent backbone of many enterprise breaches due to the "set-and-forget" mentality of infrastructure management. #CodeDefence #ActiveMQ #RCE #LegacyIT
+The integrity of the endpoint is only as strong as the security of the server that manages its policies. #CodeDefence #Fortinet #CISA #EndpointSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Adobe Reader zero-day exploit used in targeted energy sector espionage since 2025</title>
-  <link>https://codedefence.in/blog/2026/04/11/adobe-reader-zero-day-espionage-campaign</link>
-  <pubDate>Sat, 11 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/11/adobe-reader-zero-day-espionage-campaign</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
+  <title>Russian Forest Blizzard APT hijacks 18,000 routers to siphon Microsoft Office tokens</title>
+  <link>https://codedefence.in/blog/2026/04/12/russian-apt28-router-hijacking-microsoft-office-tokens</link>
+  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/russian-apt28-router-hijacking-microsoft-office-tokens</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-A sophisticated zero-day vulnerability in @[Adobe](urn:li:organization:1480) Reader is being weaponized in a targeted campaign that has remained active and undetected for several months. The attack utilizes industry-specific lures related to the energy sector to deliver malicious PDF documents that exfiltrate data from victim environments.
+State-sponsored threat actors are bypassing endpoint security controls by compromising legacy network hardware to steal cloud authentication tokens. This campaign targets the underlying network trust model to achieve persistent access without ever deploying malware on the user's workstation.
 
-The exploit targets the JavaScript engine within @[Adobe](urn:li:organization:1480) Reader‚ utilizing privileged APIs to access local files and establish a command-and-control connection via malicious RSS feeds. Samples found on VirusTotal indicate the campaign has been active since at least December 2025‚ specifically targeting organizations involved in Russian oil and gas infrastructure.
+The Russian-linked unit Forest Blizzard ❨APT28❩ has compromised over 18,000 SOHO routers by exploiting known flaws in older Mikrotik and TP-Link devices. Once a router is compromised‚ the attackers modify DNS settings to redirect authentication traffic to their own servers. This allows for the silent capture of OAuth tokens from @[Microsoft](urn:li:organization:1035) Office users across the entire local network.
 
-The PDF format remains one of the most effective delivery vectors for state-sponsored espionage because it is ubiquitous in corporate document workflows. By leveraging a zero-day and highly tailored industry intelligence‚ attackers can bypass standard sandboxing and security awareness training with high fidelity.
+Attackers prioritize "unmanaged" edge devices because they lack the telemetry and automated patching of modern endpoints. By hijacking DNS at the router level‚ the adversary effectively owns every session originating from that network without ever needing to trigger local endpoint detection.
 
-- Apply all available security patches for @[Adobe](urn:li:organization:1480) Acrobat and Reader immediately to neutralize the zero-day exploit.
-- Disable JavaScript and unauthorized API calls within PDF readers across the managed enterprise fleet.
-- Utilize secure email gateways to sanitize PDF attachments and block files containing obfuscated code or unauthorized URI schemes.
-- Monitor EDR logs for anomalous child processes or network connections originating from document reader applications.
+- Identify and decommission all end-of-life SOHO routers from remote worker environments and satellite offices.
+- Enforce the use of encrypted DNS ❨DNS-over-HTTPS❩ across all managed endpoints to prevent network-layer redirection.
+- Transition to phishing-resistant MFA and enforce Conditional Access policies that require managed device compliance.
+- Audit @[Microsoft](urn:li:organization:1035) Entra ID logs for anomalous sign-in events originating from non-standard IP ranges.
 
-Targeting document readers is a strategic move to exploit the human trust inherent in standard corporate business operations. #CodeDefence #Adobe #ZeroDay #Espionage
+Network-layer trust is a relic of the past; security must be enforced at the identity and browser layers to survive compromised infrastructure. #CodeDefence #APT28 #Microsoft365 #NetworkSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Remediation deadline today for Ivanti EPMM code injection vulnerability in KEV</title>
-  <link>https://codedefence.in/blog/2026/04/11/ivanti-epmm-cisa-kev-remediation-deadline</link>
-  <pubDate>Sat, 11 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/11/ivanti-epmm-cisa-kev-remediation-deadline</guid>
+  <title>React2Shell campaign achieves industrial scale with NEXUS Listener command center</title>
+  <link>https://codedefence.in/blog/2026/04/12/react2shell-nextjs-nexus-listener-campaign-update</link>
+  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/react2shell-nextjs-nexus-listener-campaign-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-1340</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:11462)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-55182</cd:cve>
   <description><![CDATA[
-Organizations have until the end of today to remediate a critical code injection vulnerability in a leading mobile management platform that is under active exploitation. Failure to patch this flaw leaves the entire managed mobile fleet at risk of unauthenticated remote compromise.
+A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in Next.js applications to siphon credentials from cloud-native environments. The operation has reached a professionalized state‚ with hundreds of hosts being harvested simultaneously for high-value cloud secrets.
 
-CVE-2026-1340 affects @[Ivanti](urn:li:organization:11462) Endpoint Manager Mobile ❨EPMM❩ and allows for the execution of arbitrary commands on the management server. @[CISA](urn:li:organization:13010360) has mandated remediation by April 11 after observing threat actors deploying web shells to maintain persistent access to perimeter-exposed management nodes.
+Tracked as CVE-2025-55182‚ the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables‚ shell history‚ and Kubernetes service account tokens. The threat actor is exfiltrating this data to a centralized command-and-control interface called NEXUS Listener. This tool automates the validation of stolen AWS secrets and SSH keys‚ facilitating immediate lateral movement into production clusters.
 
-Mobile device management servers are high-value targets because they maintain root-level access and persistent communication channels to the most sensitive mobile endpoints in the organization. The operational risk of an MDM server compromise is the total loss of device integrity and the potential for large-scale data exfiltration.
+The rapid aggregation of stolen secrets into a searchable database demonstrates how application-layer flaws are now the primary engine for cloud-native data breaches. Threat actors no longer need to manually explore a network; they simply wait for their automated scanners to populate their dashboard with valid production credentials.
 
-- Immediately upgrade @[Ivanti](urn:li:organization:11462) EPMM to the latest patched security version or apply the vendor-specified hotfixes.
-- Conduct a retroactive compromise assessment on any EPMM server that was exposed to the public internet without a patch.
-- Strictly isolate all management interfaces behind a dedicated OOB network or Zero Trust gateway.
-- Utilize EDR to monitor for the creation of new administrative accounts or anomalous shell commands on the MDM appliance.
+- Audit all Next.js and React Server Component deployments and update to the latest patched security release immediately.
+- Enforce the use of AWS IMDSv2 and disable IMDSv1 to prevent the theft of temporary security credentials from metadata services.
+- Implement automated secret scanning across all CI/CD pipelines to identify and rotate any keys that may have been exposed.
+- Place all public-facing web applications behind a Web Application Firewall ❨WAF❩ with rules specifically targeting RCE patterns.
 
-When the platform responsible for enforcing security compliance is compromised‚ the entire trust boundary for mobile workers is effectively neutralized. #CodeDefence #Ivanti #MobileSecurity #CISA
+The shift toward automated credential harvesting at the application layer requires a zero-trust architecture where secrets are short-lived and identity-bound. #CodeDefence #NextJS #CloudSecurity #React2Shell
   ]]></description>
 </item>
 
