@@ -2,25 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 12 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 13 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 12 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 13 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 12 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 13 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 13 Apr 2026 19:15:00 +0300</lastBuildDate>
+
+<item>
+  <title>Storm infostealer bypasses local decryption to hijack enterprise sessions</title>
+  <link>https://codedefence.in/blog/2026/04/13/storm-infostealer-server-side-decryption-alert</link>
+  <pubDate>Mon, 13 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/13/storm-infostealer-server-side-decryption-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <description><![CDATA[
+A sophisticated new infostealer is bypassing traditional endpoint security by moving the decryption of stolen browser data to attacker-controlled infrastructure. This technique allows the malware to exfiltrate raw session data without triggering local alerts or needing to interact with the local security subsystem.
+
+The Storm infostealer specifically targets browser profiles to harvest cookies and saved credentials. By exfiltrating the raw data for server-side decryption, the adversary can hijack active sessions and bypass multi-factor authentication for cloud services and enterprise dashboards. This method effectively neutralizes on-device protection mechanisms that rely on intercepting the decryption process.
+
+The shift toward server-side decryption is a strategic evolution in the malware landscape, reducing the local footprint and detection probability. When the decryption occurs off-box, traditional EDR and antivirus signatures are rendered ineffective against the exfiltration of the raw, encrypted data blobs.
+
+- Enforce the use of phishing-resistant MFA and strictly manage session duration policies for sensitive cloud applications.
+- Implement browser isolation or secure enterprise browsers to prevent the exfiltration of raw profile data from the endpoint.
+- Monitor for anomalous outbound traffic patterns originating from browser processes to non-standard IP ranges.
+- Rotate all administrative and cloud provider session tokens if an endpoint is suspected of a Storm infostealer infection.
+
+Identity-based attacks are moving beyond the device; security must be enforced at the session and authentication layer to mitigate data exfiltration. #CodeDefence #Infostealer #SessionHijacking #CloudSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>North Korean UNC1069 attributed to Axios npm supply chain compromise</title>
+  <link>https://codedefence.in/blog/2026/04/13/axios-npm-supply-chain-unc1069-attribution-update</link>
+  <pubDate>Mon, 13 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/13/axios-npm-supply-chain-unc1069-attribution-update</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[Google](urn:li:organization:1441)</cd:mentions>
+  <description><![CDATA[
+One of the most trusted HTTP client libraries in the JavaScript ecosystem was weaponized by a North Korea-nexus actor to distribute a cross-platform remote access trojan. This attack specifically targeted the developer workstations and automated build pipelines that pull the latest versions of the Axios npm package.
+
+On March 31, 2026, the threat actor UNC1069 ❨also known as Sapphire Sleet❩ compromised a maintainer account and published poisoned versions 1.14.1 and 0.30.4. These releases delivered the WAVESHAPER.V2 backdoor to Windows, macOS, and Linux systems. The malware automates the exfiltration of environment variables, cloud access keys, and GitHub personal access tokens during the npm install or update workflow.
+
+Organizations frequently prioritize speed over dependency integrity in their CI/CD workflows, often relying on implicit trust in a reputable package name. When a primary library is compromised, the attack surface is no longer your perimeter, but the verified code running inside your production infrastructure.
+
+- Check project lockfiles for Axios versions 1.14.1 or 0.30.4 and reference to plain-crypto-js.
+- Revert to Axios 1.14.0 or 0.30.3 immediately and delete affected node_modules directories.
+- Rotate all secrets present in environment variables on any system where the poisoned versions executed.
+- Enforce SHA-256 hash pinning for all critical npm dependencies to prevent automated version hijacking.
+
+Implicit trust in collaborative code-sharing communities is a systemic risk that requires architectural hardening rather than simple patching. #CodeDefence #SupplyChain #Axios #UNC1069
+  ]]></description>
+</item>
 
 <item>
   <title>Critical Marimo AI notebook pre-auth RCE vulnerability under active exploitation</title>
-  <link>https://codedefence.in/blog/2026/04/12/marimo-ai-notebook-pre-auth-rce-alert</link>
-  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/marimo-ai-notebook-pre-auth-rce-alert</guid>
+  <link>https://codedefence.in/blog/2026/04/13/marimo-ai-notebook-pre-auth-rce-alert</link>
+  <pubDate>Mon, 13 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/13/marimo-ai-notebook-pre-auth-rce-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <description><![CDATA[
 A critical pre-authentication remote code execution vulnerability in the Marimo reactive notebook framework is currently being exploited to compromise AI development environments. This flaw allows unauthenticated attackers to execute arbitrary code and exfiltrate sensitive data from the host system.
 
-The vulnerability targets the core execution engine of the Marimo notebook. By sending a crafted HTTP request to an exposed Marimo instance‚ an attacker can bypass authentication and inject malicious Python code. This leads to the immediate theft of environment variables‚ LLM API keys‚ and local datasets. Researchers have observed automated scanners identifying these notebooks in the wild to facilitate rapid credential harvesting.
+The vulnerability targets the core execution engine of the Marimo notebook. By sending a crafted HTTP request to an exposed Marimo instance, an attacker can bypass authentication and inject malicious Python code. This leads to the immediate theft of environment variables, LLM API keys, and local datasets. Researchers have observed automated scanners identifying these notebooks in the wild to facilitate rapid credential harvesting.
 
-The rapid adoption of collaborative AI tools often bypasses traditional security gatekeepers‚ resulting in "shadow AI" deployments that lack basic authentication. When developer productivity tools are exposed to the public internet without isolation‚ they become the most direct path to compromising the organization's entire AI data pipeline.
+The rapid adoption of collaborative AI tools often bypasses traditional security gatekeepers, resulting in shadow AI deployments that lack basic authentication. When developer productivity tools are exposed to the public internet without isolation, they become the most direct path to compromising the organization entire AI data pipeline.
 
 - Immediately upgrade Marimo to the latest security version and verify that authentication is enabled for all instances.
 - Place all AI development notebooks behind a Zero Trust gateway or VPN to prevent public API exposure.
@@ -32,72 +77,26 @@ AI development tools are high-value targets because they reside at the intersect
 </item>
 
 <item>
-  <title>Fortinet FortiClient EMS zero-day exploitation surges as hotfix deployment lags</title>
-  <link>https://codedefence.in/blog/2026/04/12/fortinet-forticlient-ems-cve-2026-35616-exploitation-surge</link>
-  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/fortinet-forticlient-ems-cve-2026-35616-exploitation-surge</guid>
+  <title>Active exploitation of Citrix NetScaler memory disclosure flaw surging globally</title>
+  <link>https://codedefence.in/blog/2026/04/13/citrix-netscaler-cve-2026-3055-exploitation-surge</link>
+  <pubDate>Mon, 13 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/13/citrix-netscaler-cve-2026-3055-exploitation-surge</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-35616</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15197)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-3055</cd:cve>
+  <cd:mentions>@[Citrix](urn:li:organization:1598)</cd:mentions>
   <description><![CDATA[
-Attackers have significantly ramped up exploitation of a critical zero-day vulnerability in endpoint management infrastructure. This improper access control flaw provides an unauthenticated path to execute code with administrative privileges on the server managing your entire endpoint fleet.
+Attackers are industrializing the exploitation of a memory overread flaw to hijack enterprise sessions and bypass multi-factor authentication. This vulnerability targets the perimeter gateway at its most sensitive point: the identity provider interface.
 
-CVE-2026-35616 affects @[Fortinet](urn:li:organization:15197) FortiClient Enterprise Management Server ❨EMS❩. Despite the availability of an emergency hotfix released over the holiday weekend‚ nearly 2,000 instances remain publicly exposed. Attackers are currently probing these instances to bypass API authentication and deploy secondary payloads. CISA added this flaw to the KEV catalog earlier this week‚ mandating urgent remediation.
+CVE-2026-3055 is a critical out-of-bounds read vulnerability impacting @[Citrix](urn:li:organization:1598) NetScaler ADC and Gateway appliances configured as SAML Identity Providers. By sending crafted requests to SAML endpoints, an unauthenticated attacker can leak sensitive memory data, including administrative session IDs. This information allows for direct session takeover without triggering MFA prompts.
 
-Holiday weekends are a preferred window for threat actors because they exploit the operational gap created by reduced security staffing. The delay in deploying hotfixes for perimeter management software allows attackers to establish persistent backdoors that remain hidden long after the holiday shift concludes.
+The exploitation of memory disclosure flaws in perimeter gateways has become a primary method for state-sponsored and criminal actors to achieve silent initial access. These attacks are exceptionally difficult to detect because the malicious requests often appear as legitimate, albeit malformed, authentication attempts.
 
-- Apply the @[Fortinet](urn:li:organization:15197) emergency hotfix for FortiClient EMS 7.4.5 and 7.4.6 immediately.
-- Strictly restrict all access to the EMS management interface to authorized administrative IP ranges or an OOB network.
-- Conduct a retroactive audit of EMS server logs for anomalous API requests or unauthorized account creation.
-- Utilize EDR to monitor for unusual child processes spawned by the FortiClient EMS service on the management host.
+- Apply the security updates for NetScaler ADC and Gateway version 14.1-66.59 or 13.1-62.23 immediately.
+- Conduct a retroactive audit of gateway logs for anomalous GET requests targeting /saml/login or /wsfed/passive.
+- Implement session timeouts and force the re-authentication of all users following the application of the patch.
+- Monitor for session cookies being used from geographic locations or IP ranges that do not match the original login event.
 
-The integrity of the endpoint is only as strong as the security of the server that manages its policies. #CodeDefence #Fortinet #CISA #EndpointSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>Russian Forest Blizzard APT hijacks 18,000 routers to siphon Microsoft Office tokens</title>
-  <link>https://codedefence.in/blog/2026/04/12/russian-apt28-router-hijacking-microsoft-office-tokens</link>
-  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/russian-apt28-router-hijacking-microsoft-office-tokens</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-State-sponsored threat actors are bypassing endpoint security controls by compromising legacy network hardware to steal cloud authentication tokens. This campaign targets the underlying network trust model to achieve persistent access without ever deploying malware on the user's workstation.
-
-The Russian-linked unit Forest Blizzard ❨APT28❩ has compromised over 18,000 SOHO routers by exploiting known flaws in older Mikrotik and TP-Link devices. Once a router is compromised‚ the attackers modify DNS settings to redirect authentication traffic to their own servers. This allows for the silent capture of OAuth tokens from @[Microsoft](urn:li:organization:1035) Office users across the entire local network.
-
-Attackers prioritize "unmanaged" edge devices because they lack the telemetry and automated patching of modern endpoints. By hijacking DNS at the router level‚ the adversary effectively owns every session originating from that network without ever needing to trigger local endpoint detection.
-
-- Identify and decommission all end-of-life SOHO routers from remote worker environments and satellite offices.
-- Enforce the use of encrypted DNS ❨DNS-over-HTTPS❩ across all managed endpoints to prevent network-layer redirection.
-- Transition to phishing-resistant MFA and enforce Conditional Access policies that require managed device compliance.
-- Audit @[Microsoft](urn:li:organization:1035) Entra ID logs for anomalous sign-in events originating from non-standard IP ranges.
-
-Network-layer trust is a relic of the past; security must be enforced at the identity and browser layers to survive compromised infrastructure. #CodeDefence #APT28 #Microsoft365 #NetworkSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>React2Shell campaign achieves industrial scale with NEXUS Listener command center</title>
-  <link>https://codedefence.in/blog/2026/04/12/react2shell-nextjs-nexus-listener-campaign-update</link>
-  <pubDate>Sun, 12 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/12/react2shell-nextjs-nexus-listener-campaign-update</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-55182</cd:cve>
-  <description><![CDATA[
-A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in Next.js applications to siphon credentials from cloud-native environments. The operation has reached a professionalized state‚ with hundreds of hosts being harvested simultaneously for high-value cloud secrets.
-
-Tracked as CVE-2025-55182‚ the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables‚ shell history‚ and Kubernetes service account tokens. The threat actor is exfiltrating this data to a centralized command-and-control interface called NEXUS Listener. This tool automates the validation of stolen AWS secrets and SSH keys‚ facilitating immediate lateral movement into production clusters.
-
-The rapid aggregation of stolen secrets into a searchable database demonstrates how application-layer flaws are now the primary engine for cloud-native data breaches. Threat actors no longer need to manually explore a network; they simply wait for their automated scanners to populate their dashboard with valid production credentials.
-
-- Audit all Next.js and React Server Component deployments and update to the latest patched security release immediately.
-- Enforce the use of AWS IMDSv2 and disable IMDSv1 to prevent the theft of temporary security credentials from metadata services.
-- Implement automated secret scanning across all CI/CD pipelines to identify and rotate any keys that may have been exposed.
-- Place all public-facing web applications behind a Web Application Firewall ❨WAF❩ with rules specifically targeting RCE patterns.
-
-The shift toward automated credential harvesting at the application layer requires a zero-trust architecture where secrets are short-lived and identity-bound. #CodeDefence #NextJS #CloudSecurity #React2Shell
+Perimeter identity gateways must be treated as zero-trust endpoints where every memory read is a potential exfiltration path. #CodeDefence #Citrix #NetScaler #SAML
   ]]></description>
 </item>
 
