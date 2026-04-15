@@ -2,105 +2,106 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 14 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 15 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 14 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 15 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 14 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 14 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 15 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 15 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Adobe patches critical Acrobat and Reader zero-day exploited since 2025</title>
-  <link>https://codedefence.in/blog/2026/04/14/adobe-acrobat-reader-zero-day-cve-2026-34621-alert</link>
-  <pubDate>Tue, 14 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/14/adobe-acrobat-reader-zero-day-cve-2026-34621-alert</guid>
+  <title>Microsoft SharePoint Server zero-day CVE-2026-32201 exploited for trusted content spoofing</title>
+  <link>https://codedefence.in/blog/2026/04/15/microsoft-sharepoint-zero-day-cve-2026-32201-alert</link>
+  <pubDate>Wed, 15 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/15/microsoft-sharepoint-zero-day-cve-2026-32201-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-32201</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Attackers are actively exploiting a critical spoofing vulnerability in Microsoft SharePoint Server to falsify internal communications and facilitate social engineering campaigns. This zero-day allows unauthorized actors to present malicious content as trusted internal information within the enterprise collaboration environment.
+
+CVE-2026-32201 is an improper input validation flaw that enables an attacker to perform spoofing over the network without user interaction. By manipulating trusted SharePoint interfaces‚ threat actors can execute high-fidelity phishing attacks or deceive employees into downloading secondary malware payloads. CISA added this flaw to the KEV catalog on April 14‚ mandating immediate remediation for all internet-facing SharePoint deployments.
+
+Trust in internal collaboration platforms is a psychological blind spot that attackers are increasingly weaponizing. When the medium itself is compromised‚ traditional security awareness training fails because the phishing lure originates from a verified and authenticated corporate domain.
+
+- Immediately update @[Microsoft](urn:li:organization:1035) SharePoint Server to the April 2026 security patch level to neutralize CVE-2026-32201.
+- Audit SharePoint audit logs for anomalous modifications to high-traffic internal pages or site templates dating back to March 2026.
+- Enforce strict Conditional Access policies for all SharePoint administrative accounts and service principals.
+- Monitor for unusual internal traffic patterns originating from SharePoint servers toward unauthorized external IP addresses.
+
+Spoofing vulnerabilities in trusted collaboration suites bypass the standard scrutiny users apply to external communications. #CodeDefence #Microsoft #SharePoint #ZeroDay
+  ]]></description>
+</item>
+
+<item>
+  <title>Adobe Reader zero-day CVE-2026-34621 confirmed active in wild since November 2025</title>
+  <link>https://codedefence.in/blog/2026/04/15/adobe-reader-zero-day-cve-2026-34621-active-exploitation</link>
+  <pubDate>Wed, 15 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/15/adobe-reader-zero-day-cve-2026-34621-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-34621</cd:cve>
   <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
   <description><![CDATA[
-A critical prototype pollution vulnerability in the world most popular PDF reader has been active in the wild for several months. This flaw allows for unauthenticated remote code execution on both Windows and macOS systems via the opening of a maliciously crafted document.
+A critical prototype pollution vulnerability in the world most popular PDF reader was weaponized months before its public disclosure. This zero-day allows for arbitrary code execution on Windows and macOS systems simply by opening a maliciously crafted PDF document.
 
-Tracked as CVE-2026-34621‚ the vulnerability resides in the JavaScript engine of @[Adobe](urn:li:organization:1480) Acrobat and Reader. Attackers have been leveraging this flaw since at least December 2025 to deliver secondary payloads and exfiltrate sensitive local data. CISA added this to the KEV catalog on April 13 following the release of an emergency patch from the vendor.
+Tracked as CVE-2026-34621‚ the flaw resides in the JavaScript engine of @[Adobe](urn:li:organization:1480) Acrobat and Reader. Threat intelligence indicates that the vulnerability has been under active exploitation by advanced persistent threat actors since at least November 2025. The exploit specifically targets the application objects and properties to bypass standard sandboxing and execute unauthorized JavaScript on the host system.
 
-Document readers remain a primary vector for initial access because PDFs are a fundamental component of business operations. When a zero-day exploit remains undetected for months‚ it provides a stable window for sophisticated threat actors to maintain persistence across high-value enterprise endpoints.
+The five-month exposure window for this zero-day demonstrates the strategic advantage attackers maintain when targeting core productivity tools. Because PDF readers are often excluded from aggressive application control policies in the enterprise‚ they remain a reliable and stable vehicle for long-term espionage.
 
-- Update @[Adobe](urn:li:organization:1480) Acrobat and Reader to the latest security version ❨APSB26-43❩ immediately.
-- Utilize MDM to disable JavaScript and untrusted API calls within PDF readers across the enterprise fleet.
+- Force update all @[Adobe](urn:li:organization:1480) Acrobat and Reader installations to version 26.001.21411 or higher immediately.
+- Utilize MDM to disable JavaScript and unauthorized API calls within PDF readers across the managed enterprise fleet.
 - Deploy secure email gateways to pre-scan and neutralize suspicious PDF attachments before they reach the endpoint.
-- Monitor for anomalous child processes spawned by Acrobat.exe or AdobeReader.app in EDR logs.
+- Monitor EDR logs for anomalous child processes or network connections originating from Acrobat.exe or AdobeReader.app.
 
-The longevity of this zero-day highlights the strategic advantage an adversary gains when targeting core productivity tools that are excluded from aggressive sandboxing. #CodeDefence #Adobe #ZeroDay #CISA
+Document reader zero-days exploit the fundamental business necessity of document sharing to bypass the traditional network-layer perimeter. #CodeDefence #Adobe #ZeroDay #ThreatIntelligence
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds critical Fortinet FortiClient EMS SQL injection to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/04/14/cisa-kev-fortinet-forticlient-ems-sql-injection-alert</link>
-  <pubDate>Tue, 14 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/14/cisa-kev-fortinet-forticlient-ems-sql-injection-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21643</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15197)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Your endpoint management infrastructure is currently being targeted to achieve unauthorized code execution via a critical SQL injection flaw. This vulnerability provides a direct path for unauthenticated attackers to execute commands on the server managing your entire security posture.
-
-CVE-2026-21643 is a critical SQL injection vulnerability in @[Fortinet](urn:li:organization:15197) FortiClient Enterprise Management Server ❨EMS❩. By sending crafted HTTP requests to the management interface‚ an unauthenticated attacker can execute arbitrary code or commands. CISA added this to the KEV catalog on April 13 after confirming active exploitation in the wild.
-
-Endpoint management servers are high-value targets because they maintain root-level access and persistent communication channels to every managed device in the organization. A compromise of the EMS server effectively grants the attacker control over the security policies and data access of the entire managed fleet.
-
-- Update @[Fortinet](urn:li:organization:15197) FortiClient EMS to the latest patched version immediately to neutralize CVE-2026-21643.
-- Restrict all access to the EMS management interface to authorized administrative IP ranges only.
-- Conduct a thorough audit of the EMS database for unauthorized modifications or anomalous queries dating back to March 2026.
-- Implement strict network isolation for security appliances and place them behind a Zero Trust gateway.
-
-The integrity of the endpoint is inextricably linked to the security of the server that manages it; its compromise is a total loss event for the local trust boundary. #CodeDefence #Fortinet #FortiClient #CISA
-  ]]></description>
-</item>
-
-<item>
-  <title>React2Shell campaign exploits Next.js RCE for automated cloud harvesting</title>
-  <link>https://codedefence.in/blog/2026/04/14/react2shell-nextjs-automated-cloud-harvesting-alert</link>
-  <pubDate>Tue, 14 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/14/react2shell-nextjs-automated-cloud-harvesting-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-55182</cd:cve>
-  <description><![CDATA[
-A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in Next.js applications to siphon credentials from cloud-native environments. This operation provides the adversary with a comprehensive inventory of victim infrastructure including internal API keys and production tokens.
-
-Tracked as CVE-2025-55182‚ the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables‚ shell history‚ and Kubernetes service account tokens. The threat actor is exfiltrating this data to a centralized command-and-control interface called NEXUS Listener. This tool automates the validation of stolen AWS secrets and SSH keys‚ facilitating immediate lateral movement.
-
-Modern web frameworks often run with excessive local permissions‚ turning a single application-layer flaw into a full infrastructure compromise. The rapid aggregation of stolen secrets into a searchable database demonstrates how application-layer flaws are now the primary engine for high-velocity cloud-native data breaches.
-
-- Audit all Next.js deployments and update to the latest patched security release immediately.
-- Enforce AWS IMDSv2 on all EC2 instances to prevent the theft of temporary security credentials from metadata services.
-- Implement automated secret scanning across all CI/CD pipelines to identify and rotate any keys that may have been exposed.
-- Place all public-facing web applications behind a Web Application Firewall ❨WAF❩ with rules targeting RCE patterns.
-
-The shift toward automated credential harvesting at the application layer requires a zero-trust architecture where secrets are short-lived and identity-bound. #CodeDefence #NextJS #CloudSecurity #React2Shell
-  ]]></description>
-</item>
-
-<item>
-  <title>Microsoft Visual Basic VBA insecure library loading flaw added to CISA KEV</title>
-  <link>https://codedefence.in/blog/2026/04/14/microsoft-visual-basic-vba-cisa-kev-alert</link>
-  <pubDate>Tue, 14 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/14/microsoft-visual-basic-vba-cisa-kev-alert</guid>
+  <title>Microsoft patches BlueHammer Windows Defender privilege escalation bug after exploit leak</title>
+  <link>https://codedefence.in/blog/2026/04/15/microsoft-defender-bluehammer-exploit-patch-alert</link>
+  <pubDate>Wed, 15 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/15/microsoft-defender-bluehammer-exploit-patch-alert</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2012-1854</cd:cve>
+  <cd:cve>CVE-2026-33825</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+A high-severity privilege escalation vulnerability in the Windows security subsystem has been patched following the public release of functional exploit code. This flaw allows a local attacker with limited permissions to gain SYSTEM-level access on fully patched Windows 11 systems.
+
+CVE-2026-33825 is a privilege escalation bug in the Windows Defender engine. The exploit code‚ dubbed BlueHammer‚ was leaked by a security researcher who claimed frustration with the @[Microsoft](urn:li:organization:1035) vulnerability disclosure process. While the April 15 security updates neutralize the existing exploit code‚ the incident highlights the fragility of the vendor-researcher relationship and the speed at which private research can become public threat intelligence.
+
+When security software itself contains privilege escalation flaws‚ it provides an ideal pivot point for an attacker who has already achieved initial access. The operational danger is that the very tool designed to block malicious activity can be weaponized to dismantle the local security posture.
+
+- Apply the April 2026 security updates for Windows 11 and Windows Server immediately across the enterprise.
+- Review and restrict local administrative privileges to the absolute minimum required for business operations.
+- Enforce virtualization-based security ❨VBS❩ and Hypervisor-Protected Code Integrity ❨HVCI❩ to mitigate kernel-level exploitation.
+- Monitor for anomalous privilege escalation attempts using EDR rules specifically looking for BlueHammer-related artifacts.
+
+The compromise of core endpoint security engines represents a critical failure in the local trust boundary that requires immediate architectural hardening. #CodeDefence #Microsoft #Defender #PrivilegeEscalation
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds legacy Microsoft Office Excel RCE to KEV following ransomware precursor use</title>
+  <link>https://codedefence.in/blog/2026/04/15/cisa-kev-legacy-microsoft-excel-rce-alert</link>
+  <pubDate>Wed, 15 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/15/cisa-kev-legacy-microsoft-excel-rce-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2009-0238</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A legacy vulnerability in the Microsoft Visual Basic for Applications engine is being resurfaced by threat actors to achieve unauthorized code execution. This flaw highlights the persistent risk of older codebases in modern enterprise environments.
+A 17-year-old remote code execution vulnerability in the Microsoft Office Excel engine has been resurfaced for use in modern ransomware delivery chains. This legacy flaw is being leveraged by initial access brokers to achieve reliable compromise on systems running outdated Office software.
 
-Tracked as CVE-2012-1854‚ this insecure library loading vulnerability in the @[Microsoft](urn:li:organization:1035) Visual Basic for Applications ❨VBA❩ engine allows an attacker to execute arbitrary code. CISA added this legacy flaw to the KEV catalog on April 13 after observing a resurgence in its use by commodity malware and ransomware groups to establish initial access.
+Tracked as CVE-2009-0238‚ this legacy vulnerability allows an attacker to take complete control of a system if a user opens a specially crafted Excel file. CISA added this flaw to the KEV catalog on April 14 after observing its use in automated campaigns designed to establish persistence on high-value enterprise endpoints. This demonstrates that "forgotten" vulnerabilities remain a staple for adversaries targeting the legacy "compliance gap."
 
-Legacy vulnerabilities in core software engines remain effective because they often fall out of the scope of modern vulnerability scanners. Attackers prioritize these "forgotten" flaws to bypass modern security controls that are tuned to detect more recent zero-day exploitation patterns.
+The recurrence of decade-old flaws in modern threat intelligence is a stark indicator of the longevity of unpatched software in corporate environments. Attackers prioritize these legacy backdoors because they often bypass modern security controls tuned specifically for more recent exploitation patterns.
 
-- Ensure all @[Microsoft](urn:li:organization:1035) Office applications are fully patched and that the latest security updates for VBA are applied.
+- Identify and decommission any legacy @[Microsoft](urn:li:organization:1035) Office installations that have not been updated in the last decade.
 - Implement strict Group Policy rules to disable macros or restrict them to signed code from trusted publishers.
-- Utilize EDR to monitor for anomalous child processes spawned by Office applications or the VBA engine.
-- Audit the enterprise for any legacy applications that may rely on outdated versions of the VBA engine.
+- Utilize EDR to monitor for anomalous child processes spawned by Excel or the VBA engine.
+- Enforce MDM policies that require all managed endpoints to run modern‚ supported versions of the Microsoft Office suite.
 
-Remediation of legacy flaws is a baseline requirement to close the "compliance gap" that attackers exploit for reliable initial access. #CodeDefence #Microsoft #VBA #PatchManagement
+Remediation of legacy flaws is a baseline requirement to close the operational blind spots that attackers exploit for reliable initial access. #CodeDefence #MicrosoftOffice #CISA #LegacySecurity
   ]]></description>
 </item>
 
