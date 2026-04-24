@@ -2,104 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 23 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 24 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 23 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 24 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 23 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 23 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 24 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 24 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Apple patches notification service flaw used to recover deleted Signal messages</title>
-  <link>https://codedefence.in/blog/2026/04/23/apple-ios-notification-flaw-forensics-bypass-alert</link>
-  <pubDate>Thu, 23 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/23/apple-ios-notification-flaw-forensics-bypass-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-28950</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
+  <title>CISA adds critical Marimo AI notebook pre-auth RCE to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/04/24/cisa-kev-marimo-ai-rce-alert</link>
+  <pubDate>Fri, 24 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/24/cisa-kev-marimo-ai-rce-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-39987</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical data persistence vulnerability in mobile notification services has been addressed following reports that it was being used by law enforcement to recover messages intended to be deleted. This flaw highlights the difference between application-level encryption and operating system-level data storage.
+A critical pre-authentication remote code execution vulnerability in a popular AI orchestration framework is now being exploited in the wild. This flaw provides unauthenticated attackers with a direct path to shell access on development and production AI workstations.
 
-Tracked as CVE-2026-28950, the flaw in iOS and iPadOS notification services allowed notifications to be retained on the device even after the associated application and its data were removed. Reports indicate that federal forensics teams successfully recovered Signal messages from this storage, bypassing the app's encrypted database. @[Apple](urn:li:organization:162479) implemented a fix via improved data redaction in iOS 26.4.2 and iPadOS 26.4.2.
+Tracked as CVE-2026-39987, the vulnerability resides in the Marimo reactive notebook for Python. Attackers are currently exploiting the lack of authorization in the core execution engine to inject malicious code and exfiltrate environment variables, including LLM API keys and cloud access tokens. CISA added this flaw to the KEV catalog on April 23 after observing its use in automated campaigns targeting exposed researcher notebooks.
 
-For enterprise privacy, this incident proves that end-to-end encryption is only as secure as the notification hooks it uses. When sensitive data is leaked to the OS notification center, it falls outside the app's secure container and becomes subject to device-level forensics and potential exfiltration.
+The rapid adoption of collaborative AI tools has outpaced traditional security governance, resulting in shadow AI deployments that lack basic perimeter isolation. When developer tools are exposed to the public internet without authentication, they become the most efficient vehicle for an attacker to compromise the organization entire AI data pipeline.
 
-- Immediately update all @[Apple](urn:li:organization:162479) iPhones and iPads to iOS 26.4.2 or higher to neutralize data persistence in notifications.
-- Enforce MDM policies that restrict notification previews on the lock screen for sensitive communications apps.
-- Instruct users to utilize the "Clear All" notification command periodically to ensure manual purging of the OS-level notification database.
-- Monitor for anomalous forensic tool artifacts in device audit logs where physical access is a known threat.
+- Immediately upgrade Marimo to the latest security version and verify that authentication is enabled for all instances.
+- Place all AI development notebooks and orchestration frameworks behind a Zero Trust gateway or VPN.
+- Implement strict egress filtering for development environments to block unauthorized communication with external C2 servers.
+- Audit your cloud environments for any unmanaged Marimo instances that may have been deployed outside of IT oversight.
 
-The persistence of deleted data at the OS layer represents a critical privacy failure that requires both technical patching and policy-driven data hygiene. #CodeDefence #Apple #Privacy #MobileSecurity
+AI infrastructure represents a new and high-value target for unauthenticated remote code execution that bypasses standard endpoint security. #CodeDefence #Marimo #AISecurity #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Microsoft Defender BlueHammer privilege escalation flaw to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/04/23/cisa-kev-microsoft-defender-bluehammer-alert</link>
-  <pubDate>Thu, 23 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/23/cisa-kev-microsoft-defender-bluehammer-alert</guid>
+  <title>China-backed hackers industrialize botnets for mass enterprise perimeter scanning</title>
+  <link>https://codedefence.in/blog/2026/04/24/china-apt-industrialized-botnet-perimeter-attacks</link>
+  <pubDate>Fri, 24 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/24/china-apt-industrialized-botnet-perimeter-attacks</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[F5](urn:li:organization:1508)‚ @[Cisco](urn:li:organization:1063)</cd:mentions>
+  <description><![CDATA[
+State-sponsored threat actors have scaled their reconnaissance operations by weaponizing massive botnets to identify and exploit unpatched management interfaces at the enterprise edge. This strategy allows the adversary to maintain a high-velocity exploitation cycle that targets vulnerabilities as soon as they are disclosed.
+
+The botnets are specifically focused on identifying unauthenticated RCE flaws in perimeter devices, such as @[F5](urn:li:organization:1508) BIG-IP management consoles and @[Cisco](urn:li:organization:1063) Catalyst SD-WAN Manager. By automating the initial discovery and exploitation phase, the threat actors can establish thousands of persistent footholds across global infrastructure in a matter of hours, far outpacing the typical enterprise patching cycle.
+
+The industrialization of the exploitation process means that the window for manual remediation has effectively collapsed. When attackers use AI-managed botnets to map the perimeter, organizations must rely on automated discovery and defensive isolation to prevent initial access.
+
+- Immediately restrict all access to network management interfaces to authorized internal administrative IP ranges only.
+- Utilize automated vulnerability scanning to identify and patch perimeter-exposed devices within 24 hours of a critical advisory.
+- Implement behavioral monitoring to detect anomalous traffic patterns originating from management planes toward unknown external IP blocks.
+- Transition to out-of-band (OOB) management for all core networking and security appliances to remove the attack surface from the public internet.
+
+The perimeter is now an automated battlefield where the speed of discovery determines the success of the defense. #CodeDefence #Botnet #APT #PerimeterSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>Microsoft Defender BlueHammer privilege escalation exploitation enters high-volume phase</title>
+  <link>https://codedefence.in/blog/2026/04/24/microsoft-defender-bluehammer-exploitation-surge-alert</link>
+  <pubDate>Fri, 24 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/24/microsoft-defender-bluehammer-exploitation-surge-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-33825</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical privilege escalation flaw in the Windows security subsystem has been added to the federal list of known exploited threats. This vulnerability allows local attackers to gain SYSTEM-level permissions by abusing the very tool intended to provide endpoint protection.
+Attackers are industrializing the exploitation of a critical privilege escalation flaw in the Windows security subsystem to gain SYSTEM-level access on compromised endpoints. This vulnerability targets the very tool designed to block malicious activity, making it a highly effective pivot point for lateral movement.
 
-CVE-2026-33825, publicly dubbed BlueHammer, stems from insufficient granularity of access control in @[Microsoft](urn:li:organization:1035) Defender. Attackers can weaponize this flaw following an initial intrusion to dismantle local security controls and deploy secondary payloads. @[CISA](urn:li:organization:13010360) added this to the KEV catalog on April 22 with a mandatory remediation deadline of May 14, 2026.
+Tracked as CVE-2026-33825, the BlueHammer exploit abuses the @[Microsoft](urn:li:organization:1035) Defender remediation workflow to execute privileged file operations on behalf of a low-privileged user. Functional exploit code is widely available, and CISA has mandated remediation by May 14. Researchers have observed a significant spike in the use of this flaw as a secondary payload following initial access via compromised VPN credentials.
 
-When security software becomes the vehicle for privilege escalation, it creates an ideal pivot point for an adversary. This flaw is particularly dangerous because it exploits legitimate update and remediation workflows that are often excluded from standard behavioral monitoring rules.
+When security software becomes the vehicle for privilege escalation, it bypasses the standard behavioral rules that focus on unauthorized third-party binaries. The exploit allows an adversary to dismantle local security controls and exfiltrate credentials with the highest possible permissions on the system.
 
-- Apply the April 2026 security updates for Windows 11 and Server 2025 immediately to neutralize the BlueHammer exploit.
-- Review and restrict local administrative privileges to the absolute minimum required for business operations.
+- Apply the April 2026 @[Microsoft](urn:li:organization:1035) security updates immediately to neutralize the BlueHammer exploit chain.
+- Review and restrict local administrative privileges to prevent the initial access required to run the exploit.
 - Enforce Virtualization-Based Security ❨VBS❩ and Hypervisor-Protected Code Integrity ❨HVCI❩ to provide hardware-level kernel protection.
 - Monitor for anomalous file operations originating from the Defender service (MsMpEng.exe) targeting sensitive system directories.
 
-The compromise of core endpoint security engines represents a critical failure in the local trust boundary that requires immediate architectural hardening. #CodeDefence #Microsoft #Defender #BlueHammer #CISA
+Security software must be treated as a high-value attack surface that requires immediate architectural hardening following a public exploit leak. #CodeDefence #Microsoft #Defender #BlueHammer #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>China-linked GopherWhisper APT abuses Outlook and Slack for stealthy C2 comms</title>
-  <link>https://codedefence.in/blog/2026/04/23/gopherwhisper-apt-china-microsoft-slack-c2-abuse</link>
-  <pubDate>Thu, 23 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/23/gopherwhisper-apt-china-microsoft-slack-c2-abuse</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-A previously undocumented state-backed threat actor is leveraging legitimate enterprise SaaS platforms to hide its command-and-control traffic. This strategy allows the actor to bypass traditional network-layer detection by blending in with authorized corporate communication flows.
-
-The actor, identified as GopherWhisper, uses a Go-based custom toolkit to infect target systems. The malware utilizes @[Microsoft](urn:li:organization:1035) 365 Outlook, Slack, and Discord as dead-drop resolvers or direct C2 channels. By communicating through verified Microsoft Graph API endpoints, the malware avoids triggering alerts for unauthorized external connections, making it exceptionally difficult for security teams to identify.
-
-The abuse of trusted SaaS providers for C2 is a strategic evolution in stealth. When an attacker "lives off the cloud," the perimeter-based detection model fails because the malicious traffic is indistinguishable from the legitimate collaboration tools that employees use every day.
-
-- Implement strict OAuth application monitoring to identify unauthorized SaaS applications or API integrations.
-- Utilize SSL inspection and deep packet inspection to analyze traffic patterns within encrypted SaaS tunnels.
-- Monitor for anomalous API token usage and sign-ins from non-standard geographic locations or IP blocks.
-- Enforce strict egress filtering that restricts API communication to only the specific tenants and services authorized by the organization.
-
-Defending against SaaS-based C2 requires shifting from destination-based filtering to behavioral and identity-based traffic analysis. #CodeDefence #APT #Stealth #SaaS #ThreatIntelligence
-  ]]></description>
-</item>
-
-<item>
-  <title>Vercel confirms additional compromised accounts in Context.ai-linked breach</title>
-  <link>https://codedefence.in/blog/2026/04/23/vercel-context-ai-breach-update-compromised-accounts</link>
-  <pubDate>Thu, 23 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/23/vercel-context-ai-breach-update-compromised-accounts</guid>
+  <title>New The Gentlemen ransomware group targets MSPs via Bomgar RMM exploitation</title>
+  <link>https://codedefence.in/blog/2026/04/24/gentlemen-ransomware-bomgar-rmm-msp-attacks</link>
+  <pubDate>Fri, 24 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/24/gentlemen-ransomware-bomgar-rmm-msp-attacks</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Vercel](urn:li:organization:14493325)</cd:mentions>
   <description><![CDATA[
-Ongoing analysis of a major supply chain intrusion has revealed additional compromised customer accounts following the abuse of a third-party AI tool. This incident highlights the expanding risk surface created by the rapid integration of AI platforms into the developer workflow.
+A new ransomware threat actor has emerged, specifically targeting Managed Service Providers to deliver encryption payloads to dozens of downstream clients simultaneously. This group utilizes the rapid exploitation of remote monitoring and management (RMM) tools to achieve massive scale.
 
-The breach at @[Vercel](urn:li:organization:14493325) originated from the compromise of an AI analytics platform called Context.ai. Threat actors exfiltrated OAuth tokens and environment variables, providing them with a path to enumerate and access GitHub repositories and NPM publishing keys. @[Vercel](urn:li:organization:14493325) has confirmed that further customer accounts were impacted but has not disclosed the full extent of the data theft.
+The group, calling themselves The Gentlemen, has been linked to the exploitation of critical vulnerabilities in the Bomgar RMM platform. By compromising a single MSP administrative account, the actors can push ransomware to every managed endpoint within the MSP's customer portfolio. This strategy bypasses individual customer perimeters and leverages the trusted management channel for high-velocity distribution.
 
-The integration of third-party AI tools with broad OAuth permissions creates a high-velocity pivot point that bypasses traditional SaaS security boundaries. When an AI tool "reads" your workspace, it inherits the permissions of the employee who authorized it, turning a single identity compromise into a massive supply chain event.
+The targeting of MSPs represents a force multiplier for ransomware groups, turning a single breach into a multi-victim data extortion event. When the management tools themselves are weaponized, individual endpoint security is often neutralized by the authorized administrator permissions granted to the RMM agent.
 
-- Force rotate all NPM, GitHub, and cloud provider API keys for all developers and service accounts.
-- Audit Google Workspace and GitHub logs for unauthorized OAuth applications with the name Context.ai or similar.
-- Implement a "Zero Trust for AI" policy that requires manual approval for all new third-party AI tool integrations.
-- Review and restrict environment variable access within @[Vercel](urn:li:organization:14493325) projects to ensure sensitive keys are not stored in plaintext.
+- Enforce phishing-resistant MFA across all administrative and technician accounts in the RMM platform.
+- Restrict RMM agent communication to authorized internal administrative IP ranges and utilize Zero Trust gateways.
+- Audit RMM platform logs for anomalous mass-distribution events or the unauthorized creation of technician accounts.
+- Transition to a least-privilege model where RMM agents do not possess persistent administrative permissions on the endpoint.
 
-Supply chain integrity now requires a forensic audit of the entire AI ecosystem integrated into the modern software development lifecycle. #CodeDefence #Vercel #SupplyChain #AISecurity
+MSP-scale attacks require a shift in trust where the management channel is treated with the same scrutiny as an external threat. #CodeDefence #Ransomware #MSP #Bomgar #SupplyChain
   ]]></description>
 </item>
 
