@@ -2,105 +2,103 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 25 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 26 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 25 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 26 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 25 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 25 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 26 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 26 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds critical Marimo AI notebook pre-auth RCE to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/04/25/cisa-kev-marimo-ai-rce-alert</link>
-  <pubDate>Sat, 25 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/25/cisa-kev-marimo-ai-rce-alert</guid>
+  <title>LMDeploy SSRF vulnerability CVE-2026-33626 exploited within 13 hours of disclosure</title>
+  <link>https://codedefence.in/blog/2026/04/26/lmdeploy-ai-ssrf-vulnerability-active-exploitation</link>
+  <pubDate>Sun, 26 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/26/lmdeploy-ai-ssrf-vulnerability-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-39987</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-33626</cd:cve>
   <description><![CDATA[
-A critical pre-authentication remote code execution vulnerability in a popular AI orchestration framework is now being exploited in the wild. This flaw provides unauthenticated attackers with a direct path to shell access on development and production AI workstations.
+A critical Server-Side Request Forgery vulnerability in a popular toolkit for deploying large language models is being actively weaponized to compromise AI serving infrastructure. The collapse of the exploit window to less than 13 hours highlights the speed at which adversaries are now automating the weaponization of new disclosures.
 
-Tracked as CVE-2026-39987, the vulnerability resides in the Marimo reactive notebook for Python. Attackers are currently exploiting the lack of authorization in the core execution engine to inject malicious code and exfiltrate environment variables, including LLM API keys and cloud access tokens. CISA added this flaw to the KEV catalog on April 23 after observing its use in automated campaigns targeting exposed researcher notebooks.
+Tracked as CVE-2026-33626, the vulnerability impacts LMDeploy. An attacker can supply a malicious request that forces the server to interact with internal network resources or exfiltrate sensitive cloud metadata. This provides a direct path to steal LLM API keys and service account tokens from the host environment.
 
-The rapid adoption of collaborative AI tools has outpaced traditional security governance, resulting in shadow AI deployments that lack basic perimeter isolation. When developer tools are exposed to the public internet without authentication, they become the most efficient vehicle for an attacker to compromise the organization entire AI data pipeline.
+AI infrastructure is frequently deployed in segments with broad internal permissions to facilitate high-speed data processing. When an SSRF vulnerability exists in the serving layer, it effectively turns the AI model itself into a pivot point for unauthenticated access to the underlying cloud control plane.
 
-- Immediately upgrade Marimo to the latest security version and verify that authentication is enabled for all instances.
-- Place all AI development notebooks and orchestration frameworks behind a Zero Trust gateway or VPN.
-- Implement strict egress filtering for development environments to block unauthorized communication with external C2 servers.
-- Audit your cloud environments for any unmanaged Marimo instances that may have been deployed outside of IT oversight.
+- Immediately update LMDeploy to version 0.7.1 or higher to neutralize the SSRF vulnerability.
+- Implement strict network egress filtering for all LLM serving nodes to prevent unauthorized connections to internal metadata services.
+- Utilize a Web Application Firewall ❨WAF❩ to detect and block SSRF-style request patterns targeting the AI API.
+- Audit all cloud IAM permissions for AI service accounts to ensure they adhere to the principle of least privilege.
 
-AI infrastructure represents a new and high-value target for unauthenticated remote code execution that bypasses standard endpoint security. #CodeDefence #Marimo #AISecurity #CISA
+The rapid exploitation of AI deployment tools demonstrates that these platforms are now a primary target for automated cloud-native reconnaissance. #CodeDefence #AISecurity #SSRF #LMDeploy
   ]]></description>
 </item>
 
 <item>
-  <title>Public PoC exploit released for critical Fortinet FortiSandbox RCE vulnerability</title>
-  <link>https://codedefence.in/blog/2026/04/25/fortinet-fortisandbox-rce-poc-release-alert</link>
-  <pubDate>Sat, 25 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/25/fortinet-fortisandbox-rce-poc-release-alert</guid>
+  <title>CISA adds Samsung MagicINFO path traversal flaw to KEV following active abuse</title>
+  <link>https://codedefence.in/blog/2026/04/26/cisa-kev-samsung-magicinfo-path-traversal-alert</link>
+  <pubDate>Sun, 26 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/26/cisa-kev-samsung-magicinfo-path-traversal-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-39808</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15197)</cd:mentions>
+  <cd:cve>CVE-2024-7399</cd:cve>
+  <cd:mentions>@[Samsung](urn:li:organization:1720)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A functional proof-of-concept exploit has been published for a critical command execution vulnerability in your automated threat analysis infrastructure. This flaw allows unauthenticated attackers to gain administrative control over the appliance used to detonate and analyze malicious files.
+A critical path traversal vulnerability in a widely used enterprise display management server has been added to the federal list of known exploited threats. This flaw allows unauthorized attackers to read and write arbitrary files on the server, potentially leading to full system compromise.
 
-CVE-2026-39808 is a critical vulnerability in the @[Fortinet](urn:li:organization:15197) FortiSandbox management interface. The release of a public PoC significantly lowers the barrier for threat actors to weaponize the flaw for initial access or lateral movement. Attackers can leverage this vulnerability to disable sandboxing features, exfiltrate sensitive malware samples, or use the appliance as a pivot point into the secure network segment.
+CVE-2024-7399 affects @[Samsung](urn:li:organization:1720) MagicINFO 9 Server. Attackers are exploiting this flaw to exfiltrate sensitive configuration files and potentially execute arbitrary code on unpatched management instances. CISA added this to the KEV catalog on April 24 after observing its use in targeted intrusions against government and retail signage networks.
 
-When security tools themselves are vulnerable to unauthenticated RCE, they become the most efficient vehicle for an attacker to bypass the entire security stack. The publication of an exploit code usually precedes a surge in automated scanning and exploitation by several hours.
+Enterprise display networks are high-value targets for both information theft and visual disruption. Because these servers often sit in a trusted segment of the network to manage internal and external displays, a compromise provides a strategic foothold for lateral movement.
 
-- Update @[Fortinet](urn:li:organization:15197) FortiSandbox to the latest security release immediately to neutralize CVE-2026-39808.
-- Restrict all access to the FortiSandbox management interface to authorized administrative IP ranges only.
-- Audit the appliance for any unauthorized administrative accounts or anomalous shell commands dating back to April 15.
-- Monitor network logs for unusual egress traffic originating from the sandbox appliance toward unauthorized external IP addresses.
+- Apply the latest security updates for @[Samsung](urn:li:organization:1720) MagicINFO Server immediately.
+- Restrict all access to the MagicINFO management interface to authorized administrative IP ranges only.
+- Conduct a forensic audit of the server for unauthorized file access or modifications dating back to March 2026.
+- Isolate display management infrastructure behind a dedicated VLAN or Zero Trust gateway.
 
-Security appliances must be treated as high-risk endpoints that require immediate patching and strict network isolation from the public internet. #CodeDefence #Fortinet #FortiSandbox #RCE
+Vulnerabilities in non-standard IT infrastructure like digital signage often go overlooked, making them ideal targets for silent persistence. #CodeDefence #Samsung #MagicINFO #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>React2Shell campaign achieves industrial scale with NEXUS Listener command center</title>
-  <link>https://codedefence.in/blog/2026/04/25/react2shell-nextjs-nexus-listener-campaign-update</link>
-  <pubDate>Sat, 25 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/25/react2shell-nextjs-nexus-listener-campaign-update</guid>
+  <title>Rclone unauthenticated RCE vulnerabilities targeted in mass cloud harvesting campaign</title>
+  <link>https://codedefence.in/blog/2026/04/26/rclone-unauthenticated-rce-vulnerabilities-alert</link>
+  <pubDate>Sun, 26 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/26/rclone-unauthenticated-rce-vulnerabilities-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-55182</cd:cve>
+  <cd:cve>CVE-2026-41176‚ CVE-2026-41179</cd:cve>
   <description><![CDATA[
-A large-scale automated campaign is currently exploiting a critical pre-authentication RCE in Next.js applications to siphon credentials from cloud-native environments. The operation has reached a professionalized state, with hundreds of hosts being harvested simultaneously for high-value cloud secrets.
+Two critical vulnerabilities in a popular cloud migration and backup utility are being exploited to execute unauthorized commands on backup servers. These flaws target the remote control interface of the tool, allowing attackers to hijack active data transfers and exfiltrate cloud credentials.
 
-Tracked as CVE-2025-55182, the React2Shell vulnerability allows unauthenticated attackers to execute arbitrary code and extract environment variables, shell history, and Kubernetes service account tokens. The threat actor is exfiltrating this data to a centralized command-and-control interface called NEXUS Listener. This tool automates the validation of stolen AWS secrets and SSH keys, facilitating immediate lateral movement into production clusters.
+The most dangerous of the two, CVE-2026-41179, resides in the "bearer_token_command" functionality of Rclone. An unauthenticated attacker can supply a malicious backend definition that executes local commands during initialization. This provides a direct path to remote code execution on any server where the Rclone remote control ❨RC❩ interface is enabled without proper authentication.
 
-The rapid aggregation of stolen secrets into a searchable database demonstrates how application-layer flaws are now the primary engine for cloud-native data breaches. Threat actors no longer need to manually explore a network; they simply wait for their automated scanners to populate their dashboard with valid production credentials.
+Rclone is frequently used for massive cloud migrations and automated backups, meaning a compromise here grants the attacker access to all data being transferred. The exploitation of migration tools is a strategic move to compromise the entire cloud data footprint of an organization at the moment of transit.
 
-- Audit all Next.js and React Server Component deployments and update to the latest patched security release immediately.
-- Enforce the use of AWS IMDSv2 and disable IMDSv1 to prevent the theft of temporary security credentials from metadata services.
-- Implement automated secret scanning across all CI/CD pipelines to identify and rotate any keys that may have been exposed.
-- Place all public-facing web applications behind a Web Application Firewall ❨WAF❩ with rules specifically targeting RCE patterns.
+- Upgrade Rclone to version 1.73.5 or higher immediately to neutralize the RCE path.
+- Verify that the Rclone remote control interface is not public-facing and that "rc-no-auth" is not enabled in production.
+- Monitor for anomalous child processes spawned by rclone.exe or rclone binaries on backup and automation servers.
+- Rotate all cloud API keys and service account tokens that were managed or utilized by unpatched Rclone instances.
 
-The shift toward automated credential harvesting at the application layer requires a zero-trust architecture where secrets are short-lived and identity-bound. #CodeDefence #NextJS #CloudSecurity #React2Shell
+The security of the migration channel is as critical as the security of the destination; its compromise is a total loss event for data integrity. #CodeDefence #Rclone #CloudSecurity #RCE
   ]]></description>
 </item>
 
 <item>
-  <title>Microsoft Defender BlueHammer privilege escalation exploitation enters high-volume phase</title>
-  <link>https://codedefence.in/blog/2026/04/25/microsoft-defender-bluehammer-exploitation-surge-alert</link>
-  <pubDate>Sat, 25 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/25/microsoft-defender-bluehammer-exploitation-surge-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-33825</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>UNC6692 impersonates IT help desk via Microsoft Teams to deploy SNOW malware</title>
+  <link>https://codedefence.in/blog/2026/04/26/unc6692-microsoft-teams-vishing-malware-alert</link>
+  <pubDate>Sun, 26 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/26/unc6692-microsoft-teams-vishing-malware-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Attackers are industrializing the exploitation of a critical privilege escalation flaw in the Windows security subsystem to gain SYSTEM-level access on compromised endpoints. This vulnerability targets the very tool designed to block malicious activity, making it a highly effective pivot point for lateral movement.
+A previously undocumented threat actor is leveraging social engineering via internal collaboration platforms to bypass traditional email security perimeters. This campaign utilizes the inherent trust users place in instant messaging to deploy a custom malware suite for credential theft.
 
-Tracked as CVE-2026-33825, the BlueHammer exploit abuses the @[Microsoft](urn:li:organization:1035) Defender remediation workflow to execute privileged file operations on behalf of a low-privileged user. Functional exploit code is widely available, and CISA has mandated remediation by May 14. Researchers have observed a significant spike in the use of this flaw as a secondary payload following initial access via compromised VPN credentials.
+The threat actor, tracked as UNC6692, initiates @[Microsoft](urn:li:organization:1035) Teams chat invitations from external accounts impersonating IT help desk employees. Once the victim accepts, the actor convinces them to download and execute a "security update" which is actually the SNOW malware. This malware exfiltrates browser cookies, stored passwords, and session tokens to facilitate follow-on business email compromise ❨BEC❩.
 
-When security software becomes the vehicle for privilege escalation, it bypasses the standard behavioral rules that focus on unauthorized third-party binaries. The exploit allows an adversary to dismantle local security controls and exfiltrate credentials with the highest possible permissions on the system.
+The shift toward Teams-based social engineering highlights the fragility of internal trust models. When an attacker can message an employee directly through a "trusted" interface, the psychological barrier to running malicious software is significantly lower than with traditional phishing.
 
-- Apply the April 2026 @[Microsoft](urn:li:organization:1035) security updates immediately to neutralize the BlueHammer exploit chain.
-- Review and restrict local administrative privileges to prevent the initial access required to run the exploit.
-- Enforce Virtualization-Based Security ❨VBS❩ and Hypervisor-Protected Code Integrity ❨HVCI❩ to provide hardware-level kernel protection.
-- Monitor for anomalous file operations originating from the Defender service (MsMpEng.exe) targeting sensitive system directories.
+- Disable the ability for external users to initiate chat invitations with internal @[Microsoft](urn:li:organization:1035) Teams users unless strictly necessary.
+- Update security awareness training to include specific examples of Teams-based social engineering and IT help desk impersonation.
+- Enforce phishing-resistant MFA to reduce the utility of harvested credentials and session tokens.
+- Monitor Teams logs for anomalous external chat invitations and high-volume messaging events.
 
-Security software must be treated as a high-value attack surface that requires immediate architectural hardening following a public exploit leak. #CodeDefence #Microsoft #Defender #BlueHammer #CISA
+Internal chat platforms are the new frontline for social engineering; identity verification must move beyond the username and avatar. #CodeDefence #MicrosoftTeams #UNC6692 #SocialEngineering
   ]]></description>
 </item>
 
