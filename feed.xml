@@ -2,102 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 27 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 28 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 27 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 28 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 27 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 28 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 28 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Google issues record-breaking Android update to patch Qualcomm zero-day</title>
-  <link>https://codedefence.in/blog/2026/04/27/android-qualcomm-zero-day-record-patch-alert</link>
-  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/27/android-qualcomm-zero-day-record-patch-alert</guid>
+  <title>Critical LiteLLM SQL injection CVE-2026-42208 exploited to steal AI master keys</title>
+  <link>https://codedefence.in/blog/2026/04/28/litellm-ai-gateway-sql-injection-active-exploitation</link>
+  <pubDate>Tue, 28 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/28/litellm-ai-gateway-sql-injection-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)‚ @[Qualcomm](urn:li:organization:2111)</cd:mentions>
+  <cd:cve>CVE-2026-42208</cd:cve>
   <description><![CDATA[
-A critical security update for the Android ecosystem has been released to address a zero-day vulnerability currently being exploited across hundreds of chipset variants. This represents the largest single-day security release for the platform in nearly eight years, targeting foundational flaws in mobile hardware.
+A critical pre-authentication SQL injection vulnerability in the LiteLLM AI gateway is currently being exploited in the wild to exfiltrate master API keys and cloud provider credentials. LiteLLM acts as a central proxy for major language models including OpenAI and Anthropic, making it a high-value target for identity theft.
 
-The update addresses 129 vulnerabilities, headlined by a critical flaw in Qualcomm chipsets. Threat intelligence indicates that this zero-day is under targeted exploitation to bypass hardware-level memory protections and execute unauthorized code. Because the flaw exists at the chipset level, it affects over 230 different mobile device models across multiple manufacturers, making it one of the most broadly impactful mobile vulnerabilities in recent history.
+The vulnerability stems from a failure to securely sanitize the Authorization Bearer header during the proxy verification process. By injecting a single quote into a fake token, unauthenticated attackers can break out of the intended database query and execute malicious PostgreSQL commands. This allows for the direct extraction of sensitive cloud access tokens and enterprise billing information from the platform database.
 
-The complexity of patching hardware-level flaws in a fragmented ecosystem creates a prolonged window of exposure. Attackers are prioritizing these "downstream" vulnerabilities because they remain viable long after the initial software-layer patches are deployed by primary vendors.
+As organizations consolidate AI management into centralized gateways, these proxies become single points of failure. A compromise of a gateway like LiteLLM provides an attacker with the master keys to the organization entire AI infrastructure, effectively bypassing individual model-level security controls.
 
-- Force update all managed @[Google](urn:li:organization:1441) Android devices to the April 2026 security patch level immediately.
-- Utilize MDM to identify and isolate devices running EOL hardware that may not receive the @[Qualcomm](urn:li:organization:2111) chipset-level fix.
-- Monitor for anomalous system-level crashes or unauthorized privilege escalation attempts on high-value mobile endpoints.
-- Review and restrict the use of highly privileged system apps on devices that have not yet reached the required patch level.
+- Immediately upgrade LiteLLM to version 1.35.0 or higher to neutralize the SQL injection path.
+- Rotate all master API keys and cloud provider credentials stored within the LiteLLM database.
+- Audit PostgreSQL logs for anomalous queries originating from the LiteLLM service account, particularly those targeting the credentials table.
+- Implement strict network-level isolation to ensure the gateway database is not accessible from untrusted network segments.
 
-Hardware-level zero-days represent a systemic risk that requires immediate and coordinated remediation across the entire mobile enterprise fleet. #CodeDefence #Android #Qualcomm #ZeroDay
+AI orchestration layers are the new frontier for credential harvesting and require immediate architectural hardening to prevent total cloud-native identity loss. #CodeDefence #AISecurity #LiteLLM #SQLi
   ]]></description>
 </item>
 
 <item>
-  <title>CISA KEV deadline today for actively exploited Adobe Reader prototype pollution</title>
-  <link>https://codedefence.in/blog/2026/04/27/cisa-kev-adobe-reader-remediation-deadline</link>
-  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/27/cisa-kev-adobe-reader-remediation-deadline</guid>
+  <title>Microsoft Defender BlueHammer privilege escalation used to dismantle EDR telemetry</title>
+  <link>https://codedefence.in/blog/2026/04/28/microsoft-defender-bluehammer-cve-2026-33825-exploitation-update</link>
+  <pubDate>Tue, 28 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/28/microsoft-defender-bluehammer-cve-2026-33825-exploitation-update</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-34621</cd:cve>
-  <cd:mentions>@[Adobe](urn:li:organization:1480)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-33825</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Organizations have until the end of today to remediate a critical prototype pollution vulnerability in the world most popular PDF reader. This flaw has been under active exploitation for months, providing a reliable vehicle for silent initial access and ransomware delivery.
+Attackers are industrializing the exploitation of the BlueHammer privilege escalation flaw to bypass endpoint detection and response (EDR) platforms. By gaining SYSTEM privileges through the security engine itself, threat actors are successfully blinding security teams before executing encryption routines.
 
-Tracked as CVE-2026-34621, the vulnerability resides in the JavaScript engine of @[Adobe](urn:li:organization:1480) Acrobat and Reader. Attackers exploit this flaw by delivering specially crafted PDF documents that bypass sandboxing and execute unauthorized code. @[CISA](urn:li:organization:13010360) added this to the KEV catalog with a mandatory remediation deadline of April 27, citing its use in automated espionage and ransomware precursor operations.
+Tracked as CVE-2026-33825, this flaw in @[Microsoft](urn:li:organization:1035) Defender allows attackers to abuse internal remediation workflows to perform privileged file operations. New intelligence indicates that ransomware groups are prioritizing this exploit following initial access to disable agent-based telemetry. @[CISA](urn:li:organization:13010360) has mandated remediation for all federal agencies, citing its use as a primary precursor for large-scale ransomware events.
 
-The persistence of document-based exploits highlights the human trust inherent in standard corporate workflows. When the platform responsible for viewing business documents is compromised, the entire security perimeter is bypassed via a simple file download.
+The weaponization of the security stack against itself represents a critical failure in local trust boundaries. When an attacker can use the antivirus service to gain administrative control, they can effectively whitelist their own tools and silence alerts for lateral movement.
 
-- Verify that all @[Adobe](urn:li:organization:1480) Acrobat and Reader instances are updated to version 26.001.21411 or higher.
-- Conduct a retroactive compromise assessment on any endpoint where unpatched PDF documents were opened since December 2025.
-- Utilize MDM to disable JavaScript and unauthorized API calls within PDF readers across the managed enterprise fleet.
-- Monitor for anomalous child processes or network connections originating from Acrobat.exe or AdobeReader.app.
+- Verify that @[Microsoft](urn:li:organization:1035) Defender Antimalware Platform is updated to version 4.18.24040 or higher.
+- Monitor for the sudden termination of EDR agent processes or the unauthorized modification of antimalware exclusion lists.
+- Enforce Virtualization-Based Security ❨VBS❩ and Hypervisor-Protected Code Integrity ❨HVCI❩ to provide hardware-level protection for the Windows kernel.
+- Conduct an immediate audit of systems where EDR telemetry has been intermittent or silenced over the last 48 hours.
 
-Remediation of document reader zero-days is a baseline requirement to close the most common vector for unauthenticated initial access. #CodeDefence #Adobe #CISA #VulnerabilityManagement
+The integrity of the endpoint relies on the security of the engine that protects it; BlueHammer proves that the protector can be weaponized as the ultimate pivot point. #CodeDefence #Microsoft #Defender #BlueHammer #Ransomware
   ]]></description>
 </item>
 
 <item>
-  <title>APT36 weaponizes AI coding tools to flood networks with unique Vibeware variants</title>
-  <link>https://codedefence.in/blog/2026/04/27/apt36-ai-vibeware-malware-assembly-line-alert</link>
-  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/27/apt36-ai-vibeware-malware-assembly-line-alert</guid>
-  <cd:severity>HIGH</cd:severity>
+  <title>Axios npm compromise remediation alert: Assume breach for cloud access keys</title>
+  <link>https://codedefence.in/blog/2026/04/28/axios-npm-supply-chain-remediation-assume-breach</link>
+  <pubDate>Tue, 28 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/28/axios-npm-supply-chain-remediation-assume-breach</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-A state-linked threat actor is utilizing AI-accelerated development to generate thousands of unique malware variants to bypass traditional detection mechanisms. This strategy, dubbed Distributed Denial of Detection, aims to overwhelm signature-based security tools with a constant stream of disposable code.
+Remediation warnings for the North Korean-linked Axios supply chain strike have shifted to a full assume-breach posture for affected development environments. Attackers successfully exfiltrated environmental secrets and cloud access keys during the high-velocity infection window in April.
 
-The actor, tracked as APT36, is using AI coding assistants to rapidly iterate and produce "Vibeware"—malware that maintains the same functional intent but possesses unique code signatures and structures for every target. These variants are currently being deployed against government and critical infrastructure targets, specifically focusing on credential theft and persistent access.
+The compromise, attributed to UNC1069, utilized poisoned versions of the Axios library to deploy the WAVESHAPER.V2 backdoor. Recent forensic data confirms that the malware prioritized the theft of AWS, @[Google](urn:li:organization:1441) Cloud, and GitHub tokens from developer environment variables. Organizations that did not perform a total credential reset following the removal of the poisoned packages remain at high risk of unauthorized cloud access.
 
-The shift toward AI-generated malware represents a fundamental change in the economics of the attack. When the cost of producing a unique malware variant drops to near-zero, the value of traditional file-based signatures is effectively neutralized.
+Supply chain strikes on foundational libraries are identity-theft events disguised as software bugs. Simply reverting the library version does not address the stolen credentials that the adversary can now use to access internal cloud resources from any location globally.
 
-- Shift defensive focus from file-based signatures to behavioral-based detection and anomaly analysis.
-- Implement strict application whitelisting to prevent the execution of unauthorized or unknown binaries.
-- Utilize EDR and XDR platforms to identify anomalous process behaviors and network traffic patterns in real-time.
-- Update security awareness training to include the risks of highly tailored, AI-assisted phishing and malware delivery.
+- Perform a mandatory rotation of all cloud provider API keys and GitHub personal access tokens for all developers.
+- Audit cloud provider access logs for anomalous activity originating from non-standard IP ranges, focusing on March and April 2026.
+- Implement a Zero Trust identity model where CI/CD tokens are short-lived and tied to specific, verified build runners.
+- Monitor developer workstations for anomalous outbound network connections to known North Korean-linked command-and-control infrastructure.
 
-Defending against AI-generated malware requires a transition to identity-bound and behavior-centric security models. #CodeDefence #APT36 #Vibeware #AISecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>Critical Linux Pack2TheRoot race condition grants unprivileged root access</title>
-  <link>https://codedefence.in/blog/2026/04/27/linux-packagekit-privilege-escalation-cve-2026-6112</link>
-  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/27/linux-packagekit-privilege-escalation-cve-2026-6112</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-6112</cd:cve>
-  <description><![CDATA[
-A critical race condition in a common Linux package management component is being exploited to achieve local privilege escalation. This vulnerability allows an unprivileged user to gain full root access on the system during the installation or update of software packages.
-
-Tracked as CVE-2026-6112 and dubbed Pack2TheRoot, the flaw resides in the PackageKit service. By timing a malicious request during the package installation process, an attacker can manipulate the system's authorization checks to execute commands with elevated permissions. Researchers have observed this flaw being used in automated post-exploitation scripts following the initial compromise of web applications.
-
-Linux-based cloud workloads are particularly vulnerable to this flaw because they frequently utilize automated package updates. When a local attacker can escalate to root, they gain complete control over the host, enabling them to disable security controls and exfiltrate data from other containers or services.
-
-- Apply the latest security updates for PackageKit and related system services across all Linux distributions immediately.
-- Review and restrict local user permissions to the absolute minimum necessary for business operations.
-- Implement system-level auditing ❨e.g., auditd❩ to monitor for anomalous privilege escalation attempts.
-- Utilize container security tools to detect and block unauthorized system calls or file modifications within cloud environments.
-
-The exploitation of foundational system services like PackageKit represents a critical failure in the local trust boundary that requires immediate patching. #CodeDefence #Linux #PrivilegeEscalation #CloudSecurity
+The removal of the malicious code is only the first step; the stolen identity of the developer remains the primary threat after a supply chain breach. #CodeDefence #SupplyChain #Axios #CloudSecurity
   ]]></description>
 </item>
 
