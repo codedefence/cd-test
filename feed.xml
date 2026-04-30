@@ -2,78 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 29 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 30 Apr 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 29 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 30 Apr 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 29 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 29 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 30 Apr 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Firefox 150 patches 271 zero-days discovered by Claude Mythos AI model</title>
-  <link>https://codedefence.in/blog/2026/04/29/firefox-150-ai-discovered-zero-day-surge</link>
-  <pubDate>Wed, 29 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/29/firefox-150-ai-discovered-zero-day-surge</guid>
+  <title>Critical GitHub RCE vulnerability CVE-2026-3854 exposed millions of repositories</title>
+  <link>https://codedefence.in/blog/2026/04/30/github-rce-vulnerability-cve-2026-3854-alert</link>
+  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/github-rce-vulnerability-cve-2026-3854-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Mozilla](urn:li:organization:4994)</cd:mentions>
+  <cd:cve>CVE-2026-3854</cd:cve>
+  <cd:mentions>@[GitHub](urn:li:organization:13347)</cd:mentions>
   <description><![CDATA[
-A monumental shift in the security landscape has occurred as a major web browser addressed nearly 300 vulnerabilities identified by a frontier AI model. This release demonstrates that automated vulnerability discovery is now operating at a scale that challenges traditional defensive cycles.
+A critical remote code execution vulnerability in the world most popular code hosting platform allowed authenticated users to compromise backend storage nodes and access private repositories belonging to other organizations. This flaw highlights the extreme risk of protocol-level injections in shared infrastructure.
 
-The update to Firefox 150 by @[Mozilla](urn:li:organization:4994) includes fixes for 271 security-sensitive bugs identified through a collaboration with Anthropic using the Claude Mythos Preview model. These findings span a wide range of memory safety and logic flaws that had remained latent in the codebase for years. While this represents a major win for browser security, it also highlights the vertigo-inducing volume of latent vulnerabilities that AI can now surface in a single scan.
+Tracked as CVE-2026-3854, the vulnerability impacts @[GitHub](urn:li:organization:13347).com and GitHub Enterprise Server. By exploiting an injection flaw in the internal Git protocol, an attacker with push access to any repository could execute arbitrary commands on GitHub's backend servers. Forensic evidence suggests that while the flaw was discovered via AI-assisted research, over 80 percent of Enterprise Server instances remained unpatched weeks after the initial disclosure.
 
-The industrialization of vulnerability discovery via AI means that any delay in patching now carries a vastly higher risk. For enterprises, this reinforces the need for automated browser updates and a move toward zero-trust browsing environments to mitigate the risk of zero-day exploitation that outpaces manual disclosure.
+The impact on shared storage nodes means that a single successful exploit could grant access to thousands of private repositories hosted on the same physical infrastructure. For enterprises, this reinforces the critical nature of keeping self-hosted instances updated and monitoring for anomalous internal Git traffic.
 
-- Force update all managed @[Mozilla](urn:li:organization:4994) Firefox installations to version 150 or higher immediately.
-- Utilize MDM or Group Policy to ensure that automatic browser updates are enabled and cannot be deferred by end users.
-- Implement browser isolation or secure enterprise browsers for high-risk users to provide a secondary layer of protection against unpatched browser flaws.
-- Monitor for anomalous system-level crashes or process injections targeting browser instances in EDR logs.
+- Immediately update @[GitHub](urn:li:organization:13347) Enterprise Server to the latest patched version ❨e.g., 3.12.x or higher❩.
+- Conduct a forensic audit of GitHub logs for anomalous git push commands or unauthorized backend process execution.
+- Review and restrict repository push permissions, as even a temporary collaborator could have used this flaw to pivot into the server infrastructure.
+- Implement automated vulnerability scanning for all self-hosted DevOps tools to ensure compliance with emergency patch releases.
 
-AI-driven discovery has turned browser security into an automated arms race where the speed of patching is the only viable defense. #CodeDefence #Firefox #ZeroDay #AISecurity
+Protocol-level vulnerabilities in foundational DevOps tools represent a total-loss event for intellectual property integrity. #CodeDefence #GitHub #RCE #SupplyChain
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Microsoft Windows Shell and ConnectWise ScreenConnect flaws to KEV</title>
-  <link>https://codedefence.in/blog/2026/04/29/cisa-kev-windows-shell-connectwise-alert</link>
-  <pubDate>Wed, 29 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/29/cisa-kev-windows-shell-connectwise-alert</guid>
+  <title>CISA adds zero-click Windows NTLM hash leak vulnerability to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/04/30/cisa-kev-windows-ntlm-leak-cve-2026-32202</link>
+  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/cisa-kev-windows-ntlm-leak-cve-2026-32202</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[ConnectWise](urn:li:organization:17688)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-32202</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Two critical vulnerabilities impacting core Windows components and popular remote management software have been added to the federal list of known exploited threats. These flaws provide unauthenticated attackers with direct paths for initial access and unauthorized command execution.
+A critical Windows protection mechanism failure that allows for the zero-click theft of hashed credentials has been added to the federal list of known exploited threats. This flaw is being used as a high-fidelity vector for lateral movement and pass-the-hash attacks within enterprise networks.
 
-The @[CISA](urn:li:organization:13010360) addition includes a critical Windows Shell vulnerability being exploited as a zero-day to gain initial access to targeted environments. Simultaneously, @[ConnectWise](urn:li:organization:17688) ScreenConnect is under fire via CVE-2024-1708, where improper path validation allows an attacker to execute arbitrary commands on management appliances. Both flaws are being utilized by advanced threat actors to establish persistent footholds and bypass traditional perimeter defenses.
+Tracked as CVE-2026-32202, the vulnerability resides in the Windows Shell and was inadvertently left behind after an incomplete patch for a previous RCE flaw. An attacker can trigger a leak of NTLM hashes simply by having the victim system process a malicious file, without requiring the user to execute it. @[CISA](urn:li:organization:13010360) added this to the KEV catalog on April 28 following reports of active exploitation by advanced threat groups.
 
-Remote management tools like @[ConnectWise](urn:li:organization:17688) ScreenConnect are high-value targets because they maintain persistent, administrative access to dozens of downstream endpoints. A compromise of the management plane effectively bypasses the individual security controls of every managed client, turning a single breach into a multi-victim distribution event.
+Zero-click vulnerabilities are exceptionally dangerous because they remove the human element from the initial access chain. Once an NTLM hash is leaked, attackers can authenticate as the compromised user across the network, facilitating rapid lateral movement and data exfiltration.
 
-- Apply the latest security updates for @[Microsoft](urn:li:organization:1035) Windows and @[ConnectWise](urn:li:organization:17688) ScreenConnect immediately.
-- Strictly isolate all remote management interfaces behind a Zero Trust gateway or VPN and restrict access to verified IP ranges.
-- Conduct a retroactive compromise assessment on any ScreenConnect instance that was exposed to the public internet since March 2026.
-- Monitor Windows Shell execution logs for anomalous process spawning or unauthorized script execution.
+- Apply the latest @[Microsoft](urn:li:organization:1035) security updates for Windows 10, 11, and Server 2022/2025 immediately.
+- Enforce SMB signing and disable NTLM where possible, transitioning to Kerberos for internal authentication.
+- Implement Credential Guard to protect NTLM hashes and other secrets in memory from being exfiltrated.
+- Monitor for anomalous NTLM authentication attempts originating from endpoints that have recently processed untrusted external files.
 
-When the tools used to secure the network are weaponized, the entire trust model of the organization requires an immediate forensic audit. #CodeDefence #Microsoft #ConnectWise #CISA #InitialAccess
+The failure of core protection mechanisms requires an immediate transition to modern, phishing-resistant authentication protocols. #CodeDefence #Microsoft #Windows #NTLM #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Critical cPanel authentication bypass allows unauthenticated server takeover</title>
-  <link>https://codedefence.in/blog/2026/04/29/cpanel-authentication-bypass-critical-vulnerability-alert</link>
-  <pubDate>Wed, 29 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/29/cpanel-authentication-bypass-critical-vulnerability-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
+  <title>DEEP DOOR Python backdoor utilizes tunneling services for stealthy exfiltration</title>
+  <link>https://codedefence.in/blog/2026/04/30/deep-door-python-backdoor-tunneling-alert</link>
+  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/deep-door-python-backdoor-tunneling-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-A critical authentication bypass vulnerability has been identified in a foundational web hosting management platform, exposing thousands of websites to unauthenticated takeover. This flaw allows an attacker to obtain administrative access to the control panel, bypassing security checks across various authentication paths.
+A sophisticated Python-based backdoor is targeting developer workstations to harvest browser cookies and cloud access tokens. This malware utilizes legitimate tunneling services to bypass firewalls and hide its command-and-control traffic from traditional network monitoring.
 
-The vulnerability impacts all supported versions of cPanel. Attackers are currently exploiting this flaw to hijack websites, redirect client traffic to malicious domains, and launch large-scale phishing campaigns. Security researchers have noted that the issue stems from improper handling of authentication tokens during specific login flows, providing an unauthenticated path to root-level control of the hosting environment.
+The malware, tracked as DEEP#DOOR, initiates its infection chain via a batch script that disables local security controls. Once persistent, it utilizes tunneling services like Ngrok or Cloudflare to establish an encrypted C2 channel. It specifically targets @[Google](urn:li:organization:1441) Chrome and other Chromium browsers to steal active session tokens, enabling attackers to hijack cloud provider and DevOps platform accounts without triggering MFA.
 
-Web hosting control panels are the crown jewels of SMB infrastructure; a compromise here provides the adversary with complete control over the site files, databases, and associated email accounts. The rapid exploitation of this flaw demonstrates the high demand for reliable, unauthenticated access into hosted environments.
+The use of legitimate tunneling services for C2 is a strategic evolution in stealth, as the traffic appears as authorized developer activity. By focusing on session tokens rather than just passwords, the adversary can bypass modern multi-factor authentication and maintain long-term access to sensitive cloud environments.
 
-- Upgrade cPanel installations to patched versions ❨11.110.0.97, 11.118.0.63, 11.126.0.54, or 11.132.0.29❩ immediately.
-- Audit authentication logs for suspicious or failed login attempts originating from unknown IP addresses.
-- Force a password reset for all administrative and user accounts managed through the cPanel interface following the patch.
-- Implement two-factor authentication ❨2FA❩ for all accounts to provide an additional layer of protection against token-based bypasses.
+- Monitor for unauthorized installations of Ngrok, Cloudflare Tunnel, or similar services on developer workstations.
+- Implement strict EDR rules to detect the execution of obfuscated batch scripts or the disabling of Windows Defender.
+- Utilize session-binding and device-compliance checks to prevent the use of exfiltrated cookies on unauthorized devices.
+- Educate development teams on the risks of running unverified scripts or utilities from untrusted sources.
 
-Hosting infrastructure requires immediate remediation to prevent the weaponization of legitimate websites for global phishing and malware distribution. #CodeDefence #cPanel #WebHosting #AuthenticationBypass
+When attackers "live off the tunnel," traditional perimeter security is bypassed; defense must shift to behavioral analysis and identity-bound session management. #CodeDefence #Malware #CloudSecurity #Python
   ]]></description>
 </item>
 
