@@ -2,81 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 30 Apr 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 01 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 30 Apr 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 01 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 30 Apr 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 01 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 01 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical GitHub RCE vulnerability CVE-2026-3854 exposed millions of repositories</title>
-  <link>https://codedefence.in/blog/2026/04/30/github-rce-vulnerability-cve-2026-3854-alert</link>
-  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/github-rce-vulnerability-cve-2026-3854-alert</guid>
+  <title>Critical cPanel and WHM authentication bypass CVE-2026-41940 exploited as zero-day</title>
+  <link>https://codedefence.in/blog/2026/05/01/cpanel-whm-auth-bypass-zero-day-alert</link>
+  <pubDate>Fri, 01 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/01/cpanel-whm-auth-bypass-zero-day-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-3854</cd:cve>
-  <cd:mentions>@[GitHub](urn:li:organization:13347)</cd:mentions>
+  <cd:cve>CVE-2026-41940</cd:cve>
   <description><![CDATA[
-A critical remote code execution vulnerability in the world most popular code hosting platform allowed authenticated users to compromise backend storage nodes and access private repositories belonging to other organizations. This flaw highlights the extreme risk of protocol-level injections in shared infrastructure.
+A critical authentication bypass vulnerability in the world most popular web hosting control panel is under active zero-day exploitation. This flaw allows unauthenticated remote attackers to gain full administrative access to cPanel and WHM instances, bypassing all security checks.
 
-Tracked as CVE-2026-3854, the vulnerability impacts @[GitHub](urn:li:organization:13347).com and GitHub Enterprise Server. By exploiting an injection flaw in the internal Git protocol, an attacker with push access to any repository could execute arbitrary commands on GitHub's backend servers. Forensic evidence suggests that while the flaw was discovered via AI-assisted research, over 80 percent of Enterprise Server instances remained unpatched weeks after the initial disclosure.
+Tracked as CVE-2026-41940, the vulnerability stems from a Carriage Return Line Feed ❨CRLF❩ injection in the session loading process. By injecting raw characters via a malicious authorization header, attackers can insert arbitrary properties into their session files, such as elevating their status to root. Intelligence suggests targeted exploitation began as early as February 2026, months before public disclosure.
 
-The impact on shared storage nodes means that a single successful exploit could grant access to thousands of private repositories hosted on the same physical infrastructure. For enterprises, this reinforces the critical nature of keeping self-hosted instances updated and monitoring for anomalous internal Git traffic.
+Web hosting platforms are the gateway to thousands of enterprise websites and databases. A compromise at the WHM level grants the attacker root access to the entire host system, enabling mass data exfiltration, site hijacking, and the deployment of large-scale phishing infrastructure across all hosted tenants.
 
-- Immediately update @[GitHub](urn:li:organization:13347) Enterprise Server to the latest patched version ❨e.g., 3.12.x or higher❩.
-- Conduct a forensic audit of GitHub logs for anomalous git push commands or unauthorized backend process execution.
-- Review and restrict repository push permissions, as even a temporary collaborator could have used this flaw to pivot into the server infrastructure.
-- Implement automated vulnerability scanning for all self-hosted DevOps tools to ensure compliance with emergency patch releases.
+- Immediately upgrade cPanel and WHM to the latest security releases ❨11.110.0.97, 11.118.0.63, or higher❩.
+- Audit all session files and authentication logs for unauthorized root-level logins originating from unknown IP addresses.
+- Monitor for anomalous administrative account creation or changes to global server configurations.
+- Enforce strict firewall rules to restrict access to ports 2083 and 2087 to authorized administrative subnets only.
 
-Protocol-level vulnerabilities in foundational DevOps tools represent a total-loss event for intellectual property integrity. #CodeDefence #GitHub #RCE #SupplyChain
+When the management plane of the hosting ecosystem is compromised, every tenant site must be forensically treated as potentially breached. #CodeDefence #cPanel #ZeroDay #AuthBypass
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds zero-click Windows NTLM hash leak vulnerability to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/04/30/cisa-kev-windows-ntlm-leak-cve-2026-32202</link>
-  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/cisa-kev-windows-ntlm-leak-cve-2026-32202</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-32202</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-A critical Windows protection mechanism failure that allows for the zero-click theft of hashed credentials has been added to the federal list of known exploited threats. This flaw is being used as a high-fidelity vector for lateral movement and pass-the-hash attacks within enterprise networks.
-
-Tracked as CVE-2026-32202, the vulnerability resides in the Windows Shell and was inadvertently left behind after an incomplete patch for a previous RCE flaw. An attacker can trigger a leak of NTLM hashes simply by having the victim system process a malicious file, without requiring the user to execute it. @[CISA](urn:li:organization:13010360) added this to the KEV catalog on April 28 following reports of active exploitation by advanced threat groups.
-
-Zero-click vulnerabilities are exceptionally dangerous because they remove the human element from the initial access chain. Once an NTLM hash is leaked, attackers can authenticate as the compromised user across the network, facilitating rapid lateral movement and data exfiltration.
-
-- Apply the latest @[Microsoft](urn:li:organization:1035) security updates for Windows 10, 11, and Server 2022/2025 immediately.
-- Enforce SMB signing and disable NTLM where possible, transitioning to Kerberos for internal authentication.
-- Implement Credential Guard to protect NTLM hashes and other secrets in memory from being exfiltrated.
-- Monitor for anomalous NTLM authentication attempts originating from endpoints that have recently processed untrusted external files.
-
-The failure of core protection mechanisms requires an immediate transition to modern, phishing-resistant authentication protocols. #CodeDefence #Microsoft #Windows #NTLM #CISA
-  ]]></description>
-</item>
-
-<item>
-  <title>DEEP DOOR Python backdoor utilizes tunneling services for stealthy exfiltration</title>
-  <link>https://codedefence.in/blog/2026/04/30/deep-door-python-backdoor-tunneling-alert</link>
-  <pubDate>Thu, 30 Apr 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/04/30/deep-door-python-backdoor-tunneling-alert</guid>
+  <title>ADT identity breach exposes 5.5 million records following Okta vishing attack</title>
+  <link>https://codedefence.in/blog/2026/05/01/adt-data-breach-shinyhunters-okta-vishing</link>
+  <pubDate>Fri, 01 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/01/adt-data-breach-shinyhunters-okta-vishing</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:mentions>@[ADT](urn:li:organization:2622)</cd:mentions>
   <description><![CDATA[
-A sophisticated Python-based backdoor is targeting developer workstations to harvest browser cookies and cloud access tokens. This malware utilizes legitimate tunneling services to bypass firewalls and hide its command-and-control traffic from traditional network monitoring.
+One of the largest home security providers in the United States has confirmed a major data breach impacting millions of customers. The incident highlights the continued success of identity-focused social engineering attacks targeting corporate single sign-on ❨SSO❩ environments.
 
-The malware, tracked as DEEP#DOOR, initiates its infection chain via a batch script that disables local security controls. Once persistent, it utilizes tunneling services like Ngrok or Cloudflare to establish an encrypted C2 channel. It specifically targets @[Google](urn:li:organization:1441) Chrome and other Chromium browsers to steal active session tokens, enabling attackers to hijack cloud provider and DevOps platform accounts without triggering MFA.
+The breach at @[ADT](urn:li:organization:2622) originated from a voice phishing ❨vishing❩ campaign that compromised an employee Okta account. This provided the ShinyHunters extortion group with a pivot point into internal systems, where they exfiltrated 5.5 million records containing names, phone numbers, and addresses. While no payment data or security system control was compromised, the exfiltrated data provides a high-value dataset for secondary targeted phishing.
 
-The use of legitimate tunneling services for C2 is a strategic evolution in stealth, as the traffic appears as authorized developer activity. By focusing on session tokens rather than just passwords, the adversary can bypass modern multi-factor authentication and maintain long-term access to sensitive cloud environments.
+This incident proves that even robust technical perimeters are vulnerable to human-centric identity theft. When an attacker gains access to a verified corporate SSO account, they effectively "live off the land" within the internal network, making their activity difficult to distinguish from legitimate administrative tasks.
 
-- Monitor for unauthorized installations of Ngrok, Cloudflare Tunnel, or similar services on developer workstations.
-- Implement strict EDR rules to detect the execution of obfuscated batch scripts or the disabling of Windows Defender.
-- Utilize session-binding and device-compliance checks to prevent the use of exfiltrated cookies on unauthorized devices.
-- Educate development teams on the risks of running unverified scripts or utilities from untrusted sources.
+- Enforce phishing-resistant multi-factor authentication ❨FIDO2/WebAuthn❩ across all employee SSO and administrative accounts.
+- Conduct a thorough review of SSO logs for anomalous login patterns or unauthorized application assignments dating back to April 20.
+- Update security awareness training to include specific modules on AI-enhanced voice phishing and helpdesk impersonation.
+- Implement strict "least privilege" access controls to ensure a single compromised account cannot access millions of customer records.
 
-When attackers "live off the tunnel," traditional perimeter security is bypassed; defense must shift to behavioral analysis and identity-bound session management. #CodeDefence #Malware #CloudSecurity #Python
+Identity is the new perimeter; its compromise via social engineering remains the most efficient path for large-scale data extortion. #CodeDefence #ADT #DataBreach #IdentitySecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>Critical OSPF integer overflow in FRRouting CVE-2026-28532 crashes core routers</title>
+  <link>https://codedefence.in/blog/2026/05/01/frrouting-ospf-integer-overflow-vulnerability-alert</link>
+  <pubDate>Fri, 01 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/01/frrouting-ospf-integer-overflow-vulnerability-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-28532</cd:cve>
+  <description><![CDATA[
+A critical vulnerability in a foundational open-source routing suite allows attackers to crash core networking infrastructure and disrupt entire autonomous systems. This flaw targets the heart of the OSPF protocol, a cornerstone of enterprise and service provider networks.
+
+Tracked as CVE-2026-28532, the flaw resides in the OSPF parser functions of FRRouting. Attackers with OSPF adjacency can send a crafted Link State Update ❨LSU❩ packet to trigger an integer overflow. This leads to out-of-bounds memory reads that crash the routing daemon, resulting in a denial-of-service ❨DoS❩ condition for all routers in the OSPF area.
+
+Routing protocol vulnerabilities are exceptionally dangerous because they operate at the infrastructure layer, beneath the application and host security stacks. A successful attack can segment networks, disrupt cloud services, and facilitate man-in-the-middle attacks by forcing traffic over unauthorized paths.
+
+- Upgrade FRRouting to version 10.5.3 or higher immediately to neutralize the integer overflow path.
+- Enforce OSPF authentication ❨MD5 or SHA❩ to prevent unauthorized peers from injecting malicious LSAs into the routing domain.
+- Implement strict ingress filtering to ensure that only trusted, verified peers can establish OSPF adjacencies.
+- Monitor for frequent routing daemon restarts or anomalous "LS Update" packet sizes in network telemetry.
+
+Infrastructure-layer security requires strict protocol-level validation and peer authentication to prevent network-wide disruption. #CodeDefence #Networking #FRRouting #OSPF
   ]]></description>
 </item>
 
