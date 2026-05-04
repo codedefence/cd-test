@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 03 May 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 04 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 03 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 04 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 03 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 03 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 04 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 04 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds VMware Aria Operations authentication bypass CVE-2026-22719 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/05/03/cisa-kev-vmware-aria-operations-auth-bypass-alert</link>
-  <pubDate>Sun, 03 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/03/cisa-kev-vmware-aria-operations-auth-bypass-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-22719</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[VMware](urn:li:organization:1145)</cd:mentions>
-  <description><![CDATA[
-A critical authentication bypass vulnerability in a major cloud operations management platform has been added to the federal list of known exploited threats. This flaw allows unauthenticated remote attackers to gain administrative access to the management console, providing a direct path to manipulate cloud infrastructure.
-
-Tracked as CVE-2026-22719, the vulnerability impacts VMware Aria Operations ❨formerly vRealize Operations❩. CISA added this to the KEV catalog on May 2, 2026, following reports of active exploitation in targeted intrusions against enterprise cloud environments. The flaw allows an adversary to bypass the login process entirely, enabling the theft of sensitive infrastructure data or the disruption of critical cloud services.
-
-Cloud management tools are high-value targets because they maintain persistent, administrative access to entire clusters of virtualized resources. A compromise at this layer grants the attacker "god-mode" over the underlying infrastructure, bypassing individual guest-level security controls and silent exfiltration of configuration secrets.
-
-- Immediately upgrade @[VMware](urn:li:organization:1145) Aria Operations to the latest security version ❨e.g., 8.16.x or higher❩ per vendor instructions.
-- Audit all administrative login logs for unauthorized sessions or anomalous activity originating from unknown IP addresses.
-- Strictly isolate the management interface of Aria Operations behind a Zero Trust gateway or VPN.
-- Monitor for unauthorized changes to cloud resource configurations or the creation of new administrative accounts.
-
-When the platform used to manage the cloud is compromised, the entire virtualized estate must be forensically treated as potentially breached. #CodeDefence #VMware #CloudSecurity #CISA #KEV
-  ]]></description>
-</item>
-
-<item>
-  <title>Widespread cPanel exploitation expected as PoC for root-level auth bypass goes public</title>
-  <link>https://codedefence.in/blog/2026/05/03/cpanel-auth-bypass-cve-2026-41940-poc-alert</link>
-  <pubDate>Sun, 03 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/03/cpanel-auth-bypass-cve-2026-41940-poc-alert</guid>
+  <title>Over 44,000 servers compromised as Sorry ransomware exploits cPanel zero-day</title>
+  <link>https://codedefence.in/blog/2026/05/04/cpanel-mass-exploitation-sorry-ransomware-alert</link>
+  <pubDate>Mon, 04 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/04/cpanel-mass-exploitation-sorry-ransomware-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-41940</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Mass exploitation of the world most popular web hosting control panel is now imminent following the publication of a functional proof-of-concept exploit. This flaw allows unauthenticated attackers to gain root-level control over cPanel and WHM instances by manipulating session loading processes.
+A critical authentication bypass vulnerability in the cPanel and WHM management platform is being mass-exploited to deploy a new strain of Linux ransomware. At least 44,000 IP addresses have already been identified as compromised, highlighting the devastating scale of this infrastructure-level attack.
 
-Tracked as CVE-2026-41940, the vulnerability involves a Carriage Return Line Feed ❨CRLF❩ injection in the `cpsrvd` daemon. Attackers can inject raw characters via a malicious authorization header, causing the system to write arbitrary properties—such as `user=root`—into a new session file. The publication of technical details by security firm watchTowr on April 29 has significantly lowered the barrier for automated exploitation by botnets.
+Tracked as CVE-2026-41940, the flaw allows unauthenticated attackers to inject administrative credentials into session files via malformed authorization headers. Once root access is achieved, attackers are deploying the Sorry ransomware, a Go-based encryptor that targets web root directories and databases. @[CISA](urn:li:organization:13010360) moved the remediation deadline for federal agencies to May 3, but automated botnets continue to sweep the internet for unpatched instances.
 
-With approximately 1.5 million cPanel instances exposed to the public internet, the potential blast radius for this flaw is massive. Successful exploitation grants complete control over the host system, its databases, and all managed websites, enabling site hijacking and mass malware distribution.
+The compromise of a web hosting control panel at this scale represents a systemic threat to the integrity of millions of hosted domains. For enterprises, this breach results in the total loss of confidentiality for hosted data and provides attackers with a massive network of legitimate domains to use for secondary phishing and malware distribution.
 
-- Immediately upgrade cPanel and WHM to the latest security releases ❨11.110.0.97, 11.118.0.63, or higher❩.
-- Audit the `/home/.cpanel/sessions` directory for any unauthorized session files created by the `cpsrvd` service.
-- Monitor TCP ports 2083 and 2087 for anomalous traffic patterns or unauthorized basic authorization attempts.
-- Transition all web hosting management to a least-privilege model where root access is strictly gated behind MFA and IP-restricted gateways.
+- Immediately upgrade cPanel and WHM to versions 11.110.0.97, 11.118.0.63, or higher.
+- Perform a forensic audit of the /home/.cpanel/sessions directory for any session files created by unauthorized IP addresses.
+- Monitor for the presence of Go-based binaries in /tmp or web root directories that may indicate a ransomware implant.
+- Implement strict ingress filtering to restrict management ports 2083 and 2087 to verified administrative subnets only.
 
-The publication of a PoC for a root-level bypass turns an urgent patch into an emergency remediation event. #CodeDefence #cPanel #AuthBypass #WebHosting #RCE
+When the management engine for a hosting environment is compromised, every tenant and every database must be treated as fully breached. #CodeDefence #cPanel #Ransomware #Sorry #AuthBypass
   ]]></description>
 </item>
 
 <item>
-  <title>F5 BIG-IP APM reclassification to unauthenticated RCE leads to surge in web shell implants</title>
-  <link>https://codedefence.in/blog/2026/05/03/f5-big-ip-apm-rce-web-shell-surge-alert</link>
-  <pubDate>Sun, 03 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/03/f5-big-ip-apm-rce-web-shell-surge-alert</guid>
+  <title>Copy Fail Linux Kernel exploit CVE-2026-31431 enters active exploitation phase</title>
+  <link>https://codedefence.in/blog/2026/05/04/linux-kernel-copy-fail-exploitation-alert</link>
+  <pubDate>Mon, 27 Apr 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/04/linux-kernel-copy-fail-exploitation-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-53521</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:1508)</cd:mentions>
+  <cd:cve>CVE-2026-31431</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Attackers are aggressively weaponizing a reclassified vulnerability in F5 BIG-IP to deploy web shells and establish persistent footholds in enterprise perimeters. The shift from a denial-of-service classification to unauthenticated remote code execution has led to a high-volume exploitation cycle by initial access brokers.
+A decade-old logic flaw in the Linux kernel is now under active exploitation following the public disclosure of a proof-of-concept. This flaw provides a reliable path for unprivileged local users to seize full administrative control on nearly every major Linux distribution released since 2017.
 
-Tracked as CVE-2025-53521, the flaw resides in the Access Policy Manager ❨APM❩ when an access policy is attached to a virtual server. Threat actors are utilizing crafted traffic to execute unauthorized code directly on the appliance. Recent forensic investigations have identified multiple clusters of compromised BIG-IP instances where web shells were implanted shortly after the reclassification was publicized.
+Tracked as CVE-2026-31431 and dubbed Copy Fail, the vulnerability stems from a failure to securely manage page cache transitions during cross-sphere resource transfers. Researchers used AI-powered scanning tools to unearth the bug, which had remained latent in core kernel code for nine years. @[CISA](urn:li:organization:13010360) has confirmed active exploitation in the wild, likely as a post-exploitation payload for lateral movement.
 
-Perimeter gateways are high-risk targets because they frequently bypass the visibility of internal security tools. A compromise at the APM layer allows an attacker to intercept traffic, steal credentials, and pivot into the secure internal network segment.
+The impact of Copy Fail is widespread, affecting Ubuntu, RHEL, Amazon Linux, and SUSE. For cloud-native environments, this flaw allows an attacker who has compromised a low-privileged container or web application to escalate to the host kernel, potentially compromising all other workloads running on the same hardware.
 
-- Immediately upgrade @[F5](urn:li:organization:1508) BIG-IP to the latest fixed versions ❨17.1.3, 16.1.6.1, 15.1.10.8, or higher❩.
-- Conduct a thorough forensic sweep of the BIG-IP file system for unauthorized web shells or anomalous cron jobs.
-- Audit all authentication logs for anomalous session creation or unauthorized account activity dating back to March 2026.
-- Implement strict ingress filtering and utilize a Zero Trust gateway to protect the appliance management and data planes.
+- Apply emergency kernel updates provided by your Linux distribution vendor immediately.
+- Review and restrict local user access to sensitive system APIs that facilitate cross-sphere resource management.
+- Utilize kernel-level auditing ❨e.g., auditd❩ to detect anomalous resource transfer requests or unauthorized privilege escalation.
+- Implement strict container isolation and avoid running processes as root within cloud-native workloads.
 
-Perimeter security infrastructure requires immediate remediation to prevent its transition from a defensive tool into an adversary pivot point. #CodeDefence #F5 #BIGIP #RCE #PerimeterSecurity
+A kernel-level trust failure is a total-loss event for the host security model and requires immediate, fleet-wide patching. #CodeDefence #Linux #Kernel #CopyFail #LPE
+  ]]></description>
+</item>
+
+<item>
+  <title>Telegram FEMITBOT operation impersonates Apple and NVIDIA to deliver Android malware</title>
+  <link>https://codedefence.in/blog/2026/05/04/telegram-mini-app-fraud-femitbot-malware-alert</link>
+  <pubDate>Mon, 04 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/04/telegram-mini-app-fraud-femitbot-malware-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Apple](urn:li:organization:162479)‚ @[NVIDIA](urn:li:organization:15263)</cd:mentions>
+  <description><![CDATA[
+A sophisticated fraud network is utilizing the Mini App feature within Telegram to impersonate high-value brands and deliver Android malware. This campaign leverages the app-like interface of Telegram bots to create a convincing experience that tricks users into siphoning their own credentials.
+
+The operation, identified as FEMITBOT, uses embedded Mini Apps to mimic the branding of @[Apple](urn:li:organization:162479), @[NVIDIA](urn:li:organization:15263), and Coca-Cola. Victims are lured into interacting with these bots for fake giveaways or support requests, leading to the download of malicious APKs. These payloads include banking trojans and credential harvesters specifically designed for the Android platform.
+
+The use of Mini Apps for malware delivery represents a strategic shift in mobile social engineering. By operating entirely within a trusted messaging platform, attackers bypass traditional browser-based phishing protections and exploit the inherent trust users place in official-looking app interfaces.
+
+- Instruct employees to avoid interacting with unverified Telegram bots or Mini Apps for corporate business.
+- Enforce strict mobile device management ❨MDM❩ policies to block the installation of APKs from unauthorized sources.
+- Monitor for anomalous network traffic originating from Telegram toward known malware command-and-control domains.
+- Update security awareness training to include the risks of platform-native social engineering within messaging apps.
+
+When the phishing medium is indistinguishable from a legitimate app, the human trust model is the primary point of failure. #CodeDefence #Telegram #Android #Malware #SocialEngineering
   ]]></description>
 </item>
 
