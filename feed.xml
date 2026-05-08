@@ -2,81 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 07 May 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 08 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 07 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 08 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 07 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 07 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 08 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical Palo Alto Networks PAN-OS zero-day RCE exploited in the wild</title>
-  <link>https://codedefence.in/blog/2026/05/07/palo-alto-networks-pan-os-zero-day-rce-alert</link>
-  <pubDate>Thu, 07 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/07/palo-alto-networks-pan-os-zero-day-rce-alert</guid>
+  <title>Ivanti patches EPMM zero-day CVE-2026-6973 added to CISA KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/05/08/ivanti-epmm-zero-day-cve-2026-6973-alert</link>
+  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/ivanti-epmm-zero-day-cve-2026-6973-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-0300</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)</cd:mentions>
+  <cd:cve>CVE-2026-6973</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3113)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical buffer overflow vulnerability in the User-ID Authentication Portal of PAN-OS is being actively exploited by a likely state-sponsored threat actor. This zero-day allows unauthenticated remote attackers to execute arbitrary code with root privileges on PA-Series and VM-Series firewalls.
+A critical improper input validation vulnerability in a widely used mobile device management platform is under active, targeted exploitation. This flaw allows authenticated attackers with administrative privileges to execute arbitrary code, potentially leading to full control of the MDM infrastructure.
 
-Tracked as CVE-2026-0300, the flaw carries a CVSS score of 9.3 for internet-exposed deployments. Attackers can trigger the vulnerability by sending specially crafted network packets to the portal service. While official patches are scheduled for rollout starting May 13, 2026, Palo Alto Networks has confirmed limited exploitation attempts dating back to early April.
+Tracked as CVE-2026-6973, the vulnerability impacts Ivanti Endpoint Manager Mobile ❨EPMM❩. CISA added this to the KEV catalog on May 7, 2026, following evidence of its use in targeted intrusions. Forensic analysis suggests this flaw may be chained with previous vulnerabilities to gain the initial administrative access required for exploitation. Organizations that have not rotated credentials following earlier Ivanti breaches are at significantly higher risk.
 
-The exposure of the User-ID Authentication Portal to untrusted IP addresses represents a severe risk to perimeter integrity. Successful exploitation grants persistent root-level access to the firewall, enabling the attacker to intercept traffic, dismantle security policies, and pivot into the secure internal network.
+The compromise of an MDM platform represents a systemic threat to the mobile enterprise fleet. Once an attacker gains root access to the MDM server, they can push malicious profiles, exfiltrate data from managed devices, and dismantle mobile security policies across the entire organization.
 
-- Immediately restrict access to the User-ID Authentication Portal to trusted internal IP ranges or disable the service if it is not required.
-- Monitor for anomalous inbound traffic on ports 6081 and 6082, which are utilized by the affected portal.
-- Conduct a forensic audit of PAN-OS logs for unauthorized administrative activity or unexpected system-level changes.
-- Apply the official security updates immediately upon their release starting May 13.
+- Immediately upgrade Ivanti EPMM to the latest security version provided in the May 2026 update.
+- Conduct a mandatory rotation of all administrative credentials and API keys associated with the MDM platform.
+- Audit MDM logs for unauthorized administrative activity or the creation of anomalous device management profiles.
+- Review and restrict administrative access to the EPMM management console to authorized internal subnets only.
 
-When the perimeter security appliance itself is vulnerable to unauthenticated root-level RCE, the entire organizational trust model is bypassed. #CodeDefence #PaloAltoNetworks #ZeroDay #RCE #PANOS
+When the infrastructure used to secure mobile devices is weaponized, the entire mobile trust model requires a forensic reset. #CodeDefence #Ivanti #ZeroDay #MDM #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Google Chrome 148 patches 127 vulnerabilities including three critical zero-days</title>
-  <link>https://codedefence.in/blog/2026/05/07/google-chrome-148-security-update-alert</link>
-  <pubDate>Thu, 07 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/07/google-chrome-148-security-update-alert</guid>
+  <title>ShinyHunters ransomware hits Canvas LMS exposing data of 275 million users</title>
+  <link>https://codedefence.in/blog/2026/05/08/canvas-lms-ransomware-shinyhunters-breach</link>
+  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/canvas-lms-ransomware-shinyhunters-breach</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-7896‚ CVE-2026-7897‚ CVE-2026-7898</cd:cve>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
   <description><![CDATA[
-The latest stable release of Google Chrome addresses a massive volume of security defects, including multiple critical-severity flaws that allow for remote code execution via heap memory corruption. This update is a high-priority remediation item for all managed workstation fleets.
+One of the world largest learning management systems is reeling from a massive ransomware attack that has reportedly compromised the personal data of hundreds of millions of students and educators. The incident has caused widespread service disruptions across global academic institutions.
 
-The rollout of Chrome 148 includes fixes for 127 vulnerabilities. Headlines include CVE-2026-7896, an integer overflow in the Blink rendering engine that allows for heap corruption, and two use-after-free weaknesses in Mobile and Chromoting components ❨CVE-2026-7897, CVE-2026-7898❩. Additionally, over 30 high-severity vulnerabilities were addressed, primarily use-after-free bugs impacting core components like DOM, GPU, and WebRTC.
+The attack on the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), has been claimed by the ShinyHunters threat group. The group alleges to have stolen data from 275 million individuals at nearly 9,000 universities. Attackers managed to insert extortion messages directly into Canvas login pages, setting a ransom deadline for May 12, 2026. While core services are being restored, the extent of the data exfiltration represents a generational privacy crisis for the education sector.
 
-The diversity of components affected in this release highlights the expanding attack surface of the modern web browser. For enterprises, the high volume of critical and high-severity patches necessitates an immediate, automated deployment to prevent the weaponization of these flaws for initial access.
+Large-scale SaaS platforms are high-value targets for data extortion due to the sheer volume of concentrated personal information. A breach of this magnitude provides threat actors with a permanent dataset for secondary phishing, identity theft, and social engineering targeting the academic community.
 
-- Force update all managed @[Google](urn:li:organization:1441) Chrome installations to version 148 or higher immediately.
-- Utilize MDM or Group Policy to ensure that automatic browser updates are enabled and cannot be deferred by end users.
-- Implement browser isolation or secure enterprise browsers for high-risk users to provide an additional layer of protection against zero-day browser flaws.
-- Monitor EDR logs for anomalous process spawning or unauthorized memory access targeting browser instances.
+- Monitor for anomalous administrative access patterns within your organization Canvas instance.
+- Instruct all students and faculty to remain vigilant against highly targeted phishing attempts utilizing personal details from the Canvas breach.
+- Review and harden identity protections for academic accounts, prioritizing the use of phishing-resistant MFA.
+- Conduct a thorough audit of any third-party integrations or API keys associated with the Canvas platform.
 
-Modern browsers are the primary entry point for corporate data access; keeping them updated is the most effective way to reduce the organization attack surface. #CodeDefence #Google #Chrome #BrowserSecurity #RCE
+Ransomware attacks on foundational educational infrastructure require a total reset of the student and faculty data trust model. #CodeDefence #Canvas #Ransomware #ShinyHunters #DataBreach
   ]]></description>
 </item>
 
 <item>
-  <title>Critical vm2 Node.js library vulnerabilities enable sandbox escape and RCE</title>
-  <link>https://codedefence.in/blog/2026/05/07/vm2-nodejs-library-sandbox-escape-alert</link>
-  <pubDate>Thu, 07 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/07/vm2-nodejs-library-sandbox-escape-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-24118‚ CVE-2026-24120</cd:cve>
+  <title>New Linux PamDOORa backdoor uses PAM modules for persistent SSH credential theft</title>
+  <link>https://codedefence.in/blog/2026/05/08/linux-pamdoora-backdoor-ssh-credential-theft</link>
+  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/linux-pamdoora-backdoor-ssh-credential-theft</guid>
+  <cd:severity>HIGH</cd:severity>
   <description><![CDATA[
-A dozen critical security vulnerabilities have been disclosed in a popular Node.js library used for executing untrusted code in a secure sandbox. These flaws allow attackers to break out of the intended isolation and execute arbitrary commands on the underlying host system.
+A sophisticated new Linux backdoor has been identified that targets the Pluggable Authentication Module ❨PAM❩ stack to maintain persistence and harvest SSH credentials. This post-exploitation toolkit is designed to remain silent while collecting the credentials of every legitimate user who authenticates to the system.
 
-Tracked as CVE-2026-24118 ❨CVSS 9.8❩, the primary vulnerability allows for sandbox escape via specific getter methods. Another critical flaw, CVE-2026-24120, represents a patch bypass for a previous high-severity bug. These vulnerabilities impact any application that utilizes the vm2 library to run untrusted JavaScript, such as online code editors or automated testing platforms.
+PamDOORa, currently being sold on cybercrime forums, allows an attacker to authenticate to compromised servers via OpenSSH using a "magic password" combined with a specific TCP port trigger. Unlike traditional backdoors that spawn new processes, PamDOORa integrates directly into the system authentication workflow, making it exceptionally difficult to detect with standard process monitoring tools.
 
-When a sandbox library fails, it effectively neutralizes the primary security control for executing external code. For cloud-native environments, a sandbox escape allows an attacker to pivot from a limited application context to full administrative control of the host or container.
+The use of PAM for persistence is a high-stealth tactic that allows an adversary to "live off the authentication." By harvesting valid SSH credentials, the attacker can move laterally through the internal network using legitimate accounts, effectively bypassing identity-based anomaly detection.
 
-- Update the vm2 library to version 3.11.0 or higher immediately across all projects and dependencies.
-- Audit any application that uses vm2 to ensure it is not processing unverified or untrusted code without additional security layers.
-- Implement strict container isolation and use least-privilege service accounts to limit the blast radius of a potential sandbox escape.
-- Consider transitioning to more robust isolation methods, such as WebAssembly or dedicated virtualization, for high-risk code execution tasks.
+- Periodically verify the integrity of PAM configuration files and associated library binaries ❨e.g., pam_unix.so❩.
+- Implement system-level file integrity monitoring ❨FIM❩ to detect unauthorized changes to the /etc/pam.d/ directory.
+- Utilize centralized logging and analyze SSH authentication patterns for the use of non-standard ports or anomalous "magic" password triggers.
+- Transition to certificate-based SSH authentication to neutralize the effectiveness of password-harvesting backdoors.
 
-The failure of a core isolation library turns every piece of untrusted code into a potential remote code execution vector for the underlying infrastructure. #CodeDefence #NodeJS #vm2 #SandboxEscape #AppSec
+When the authentication stack itself is compromised, the primary trust boundary of the Linux server is neutralized; defense must shift to hardware-backed identity. #CodeDefence #Linux #Backdoor #SSH #PamDOORa
   ]]></description>
 </item>
 
