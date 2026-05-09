@@ -2,79 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 08 May 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 09 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 08 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 09 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 08 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat, 09 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Ivanti patches EPMM zero-day CVE-2026-6973 added to CISA KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/05/08/ivanti-epmm-zero-day-cve-2026-6973-alert</link>
-  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/ivanti-epmm-zero-day-cve-2026-6973-alert</guid>
+  <title>CISA KEV Deadline: Palo Alto Networks PAN-OS root-level RCE requires immediate mitigation</title>
+  <link>https://codedefence.in/blog/2026/05/09/palo-alto-networks-pan-os-cve-2026-0300-mitigation-deadline</link>
+  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/palo-alto-networks-pan-os-cve-2026-0300-mitigation-deadline</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-6973</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3113)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-0300</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical improper input validation vulnerability in a widely used mobile device management platform is under active, targeted exploitation. This flaw allows authenticated attackers with administrative privileges to execute arbitrary code, potentially leading to full control of the MDM infrastructure.
+Organizations have until midnight tonight to meet the federal remediation deadline for a critical zero-day vulnerability in perimeter security infrastructure. This flaw allows unauthenticated remote attackers to execute code with root privileges, effectively seizing control of the firewall operating system.
 
-Tracked as CVE-2026-6973, the vulnerability impacts Ivanti Endpoint Manager Mobile ❨EPMM❩. CISA added this to the KEV catalog on May 7, 2026, following evidence of its use in targeted intrusions. Forensic analysis suggests this flaw may be chained with previous vulnerabilities to gain the initial administrative access required for exploitation. Organizations that have not rotated credentials following earlier Ivanti breaches are at significantly higher risk.
+Tracked as CVE-2026-0300, the vulnerability resides in the PAN-OS User-ID Authentication Portal. Because official patches from @[Palo Alto Networks](urn:li:organization:15502) are not expected until May 13, @[CISA](urn:li:organization:13010360) has mandated immediate defensive actions. Threat actors have been observed abusing this bug in real-world attacks since at least early April, specifically targeting appliances where the Captive Portal is enabled for guest access or identity-based policy enforcement.
 
-The compromise of an MDM platform represents a systemic threat to the mobile enterprise fleet. Once an attacker gains root access to the MDM server, they can push malicious profiles, exfiltrate data from managed devices, and dismantle mobile security policies across the entire organization.
+When a perimeter gateway is vulnerable to root-level RCE, the adversary can bypass all internal security controls and silence telemetry. This makes the firewall a stable pivot point for lateral movement and large-scale data exfiltration that remains invisible to standard endpoint protection tools.
 
-- Immediately upgrade Ivanti EPMM to the latest security version provided in the May 2026 update.
-- Conduct a mandatory rotation of all administrative credentials and API keys associated with the MDM platform.
-- Audit MDM logs for unauthorized administrative activity or the creation of anomalous device management profiles.
-- Review and restrict administrative access to the EPMM management console to authorized internal subnets only.
+- Immediately restrict access to the User-ID Authentication Portal to trusted internal IP ranges or disable the service entirely if not strictly required for business operations.
+- Monitor for anomalous inbound traffic on ports 6081 and 6082, which are associated with the vulnerable portal service.
+- Conduct a forensic audit of PAN-OS logs for unauthorized administrative activity or unexpected system-level changes dating back to April 9.
+- Ensure all PA-Series and VM-Series firewalls are prepared for immediate patching as soon as the May 13 security updates are released.
 
-When the infrastructure used to secure mobile devices is weaponized, the entire mobile trust model requires a forensic reset. #CodeDefence #Ivanti #ZeroDay #MDM #CISA
+The compromise of the perimeter gateway is a total-loss event for network integrity; immediate architectural isolation is the only reliable defense before patches arrive. #CodeDefence #PaloAltoNetworks #PANOS #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>ShinyHunters ransomware hits Canvas LMS exposing data of 275 million users</title>
-  <link>https://codedefence.in/blog/2026/05/08/canvas-lms-ransomware-shinyhunters-breach</link>
-  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/canvas-lms-ransomware-shinyhunters-breach</guid>
+  <title>Instructure confirms Canvas LMS breach scope as ShinyHunters extends ransom deadline</title>
+  <link>https://codedefence.in/blog/2026/05/09/canvas-lms-breach-shinyhunters-deadline-extension</link>
+  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/canvas-lms-breach-shinyhunters-deadline-extension</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
   <description><![CDATA[
-One of the world largest learning management systems is reeling from a massive ransomware attack that has reportedly compromised the personal data of hundreds of millions of students and educators. The incident has caused widespread service disruptions across global academic institutions.
+The fallout from the massive intrusion into a leading global learning management system continues to expand as threat actors demonstrate their persistence within the platform ecosystem. Forensic investigations have confirmed that the exposure window for sensitive student and institutional data remained open for over a week.
 
-The attack on the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), has been claimed by the ShinyHunters threat group. The group alleges to have stolen data from 275 million individuals at nearly 9,000 universities. Attackers managed to insert extortion messages directly into Canvas login pages, setting a ransom deadline for May 12, 2026. While core services are being restored, the extent of the data exfiltration represents a generational privacy crisis for the education sector.
+The breach at the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), resulted from the exploitation of the Free-For-Teacher account program. ShinyHunters has extended the ransom deadline to May 12, 2026, while claiming to hold 3.6 TB of data covering 275 million users. Instructure has confirmed the exfiltration of names, email addresses, student ID numbers, and private messages between users, though no evidence of password or financial data exposure has been found.
 
-Large-scale SaaS platforms are high-value targets for data extortion due to the sheer volume of concentrated personal information. A breach of this magnitude provides threat actors with a permanent dataset for secondary phishing, identity theft, and social engineering targeting the academic community.
+This incident marks the second major breach for the vendor in eight months, highlighting a pattern of underdefended adjacencies where trust boundaries were weaker than the data they protected. The exfiltrated dataset provides a permanent resource for highly targeted social engineering campaigns across the global academic community.
 
-- Monitor for anomalous administrative access patterns within your organization Canvas instance.
-- Instruct all students and faculty to remain vigilant against highly targeted phishing attempts utilizing personal details from the Canvas breach.
-- Review and harden identity protections for academic accounts, prioritizing the use of phishing-resistant MFA.
-- Conduct a thorough audit of any third-party integrations or API keys associated with the Canvas platform.
+- Perform a mandatory rotation of all API keys and revoke privileged credentials associated with the Canvas platform.
+- Instruct all institutional users to be hyper-vigilant against phishing attempts that utilize specific student IDs or internal messaging details.
+- Disable or strictly audit the use of the Free-For-Teacher program within your organization environment.
+- Review and harden identity protections for all academic service accounts, ensuring the use of phishing-resistant MFA.
 
-Ransomware attacks on foundational educational infrastructure require a total reset of the student and faculty data trust model. #CodeDefence #Canvas #Ransomware #ShinyHunters #DataBreach
+When a foundational educational platform is compromised, the data of an entire generation of students must be treated as permanently exposed to threat actor databases. #CodeDefence #Canvas #Instructure #ShinyHunters #DataBreach
   ]]></description>
 </item>
 
 <item>
-  <title>New Linux PamDOORa backdoor uses PAM modules for persistent SSH credential theft</title>
-  <link>https://codedefence.in/blog/2026/05/08/linux-pamdoora-backdoor-ssh-credential-theft</link>
-  <pubDate>Fri, 08 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/08/linux-pamdoora-backdoor-ssh-credential-theft</guid>
+  <title>Ivanti warns of EPMM RCE vulnerability CVE-2026-6973 under limited exploitation</title>
+  <link>https://codedefence.in/blog/2026/05/09/ivanti-epmm-rce-cve-2026-6973-active-exploitation</link>
+  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/ivanti-epmm-rce-cve-2026-6973-active-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-6973</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3113)</cd:mentions>
   <description><![CDATA[
-A sophisticated new Linux backdoor has been identified that targets the Pluggable Authentication Module ❨PAM❩ stack to maintain persistence and harvest SSH credentials. This post-exploitation toolkit is designed to remain silent while collecting the credentials of every legitimate user who authenticates to the system.
+A high-severity vulnerability in a major mobile device management platform is being targeted in limited, active attacks in the wild. This flaw allows authenticated attackers with administrative access to achieve remote code execution, making the rotation of privileged credentials a critical defensive priority.
 
-PamDOORa, currently being sold on cybercrime forums, allows an attacker to authenticate to compromised servers via OpenSSH using a "magic password" combined with a specific TCP port trigger. Unlike traditional backdoors that spawn new processes, PamDOORa integrates directly into the system authentication workflow, making it exceptionally difficult to detect with standard process monitoring tools.
+Tracked as CVE-2026-6973, the improper input validation flaw impacts @[Ivanti](urn:li:organization:3113) Endpoint Manager Mobile ❨EPMM❩ versions prior to 12.8.0.1. While successful exploitation requires administrative authentication, organizations that failed to rotate credentials following earlier breaches in January 2026 are at significantly higher risk. The flaw allows an adversary to gain full control of the MDM appliance, which can then be used to compromise the entire fleet of managed mobile devices.
 
-The use of PAM for persistence is a high-stealth tactic that allows an adversary to "live off the authentication." By harvesting valid SSH credentials, the attacker can move laterally through the internal network using legitimate accounts, effectively bypassing identity-based anomaly detection.
+The reuse of administrative credentials across vulnerable appliances is a primary driver for these attacks. When an attacker has previously harvested admin rights, a "high-severity" flaw that requires authentication effectively becomes a "critical" unauthenticated path for that specific adversary.
 
-- Periodically verify the integrity of PAM configuration files and associated library binaries ❨e.g., pam_unix.so❩.
-- Implement system-level file integrity monitoring ❨FIM❩ to detect unauthorized changes to the /etc/pam.d/ directory.
-- Utilize centralized logging and analyze SSH authentication patterns for the use of non-standard ports or anomalous "magic" password triggers.
-- Transition to certificate-based SSH authentication to neutralize the effectiveness of password-harvesting backdoors.
+- Upgrade @[Ivanti](urn:li:organization:3113) EPMM to version 12.6.1.1, 12.7.0.1, or 12.8.0.1 immediately to neutralize the RCE path.
+- Review all accounts with administrative rights and perform a mandatory password rotation for all MDM service accounts.
+- Audit MDM management logs for any anomalous administrative activity or unauthorized device enrollment requests.
+- Implement strict network-level isolation for the EPMM appliance and ensure management interfaces are not accessible via public internet.
 
-When the authentication stack itself is compromised, the primary trust boundary of the Linux server is neutralized; defense must shift to hardware-backed identity. #CodeDefence #Linux #Backdoor #SSH #PamDOORa
+The security of the mobile enterprise fleet depends on the integrity of the MDM management engine; its compromise is a total-loss event for mobile trust boundaries. #CodeDefence #Ivanti #EPMM #MDM #RCE
   ]]></description>
 </item>
 
