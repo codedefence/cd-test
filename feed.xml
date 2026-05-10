@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 09 May 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 10 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 09 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 10 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 09 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 10 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA KEV Deadline: Palo Alto Networks PAN-OS root-level RCE requires immediate mitigation</title>
-  <link>https://codedefence.in/blog/2026/05/09/palo-alto-networks-pan-os-cve-2026-0300-mitigation-deadline</link>
-  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/palo-alto-networks-pan-os-cve-2026-0300-mitigation-deadline</guid>
+  <title>Ivanti EPMM zero-day CVE-2026-6973 added to CISA KEV following targeted attacks</title>
+  <link>https://codedefence.in/blog/2026/05/10/ivanti-epmm-zero-day-cisa-kev-alert</link>
+  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/ivanti-epmm-zero-day-cisa-kev-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-0300</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-6973</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3113)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Organizations have until midnight tonight to meet the federal remediation deadline for a critical zero-day vulnerability in perimeter security infrastructure. This flaw allows unauthenticated remote attackers to execute code with root privileges, effectively seizing control of the firewall operating system.
+A critical improper input validation vulnerability in the Ivanti Endpoint Manager Mobile platform has been added to the federal list of known exploited threats. This flaw allows authenticated remote attackers with administrative privileges to achieve code execution, presenting a severe risk to mobile fleet management infrastructure.
 
-Tracked as CVE-2026-0300, the vulnerability resides in the PAN-OS User-ID Authentication Portal. Because official patches from @[Palo Alto Networks](urn:li:organization:15502) are not expected until May 13, @[CISA](urn:li:organization:13010360) has mandated immediate defensive actions. Threat actors have been observed abusing this bug in real-world attacks since at least early April, specifically targeting appliances where the Captive Portal is enabled for guest access or identity-based policy enforcement.
+Tracked as CVE-2026-6973, the vulnerability is being actively leveraged in a very limited number of targeted attacks. Because exploitation requires administrative authentication, threat actors are likely pairing this flaw with credentials harvested during earlier 2026 Ivanti breaches. CISA added the flaw to the KEV catalog on May 8, 2026, signaling that organizations must prioritize remediation to prevent full appliance takeover.
 
-When a perimeter gateway is vulnerable to root-level RCE, the adversary can bypass all internal security controls and silence telemetry. This makes the firewall a stable pivot point for lateral movement and large-scale data exfiltration that remains invisible to standard endpoint protection tools.
+The compromise of an MDM server grants an adversary the ability to exfiltrate data from all managed devices and push malicious configuration profiles. This makes Ivanti EPMM a recurring high-value target for state-sponsored and ransomware groups seeking a persistent foothold at the network edge.
 
-- Immediately restrict access to the User-ID Authentication Portal to trusted internal IP ranges or disable the service entirely if not strictly required for business operations.
-- Monitor for anomalous inbound traffic on ports 6081 and 6082, which are associated with the vulnerable portal service.
-- Conduct a forensic audit of PAN-OS logs for unauthorized administrative activity or unexpected system-level changes dating back to April 9.
-- Ensure all PA-Series and VM-Series firewalls are prepared for immediate patching as soon as the May 13 security updates are released.
+- Immediately update Ivanti EPMM to version 12.6.1.1, 12.7.0.1, or 12.8.0.1 to neutralize the RCE path.
+- Conduct a mandatory audit of all accounts with administrative rights and perform a total credential rotation for all MDM service accounts.
+- Monitor MDM logs for anomalous administrative sessions or unauthorized device enrollment requests originating from unknown IP ranges.
+- Restrict all management interface access to authorized internal subnets only to mitigate the risk of credential-based exploitation.
 
-The compromise of the perimeter gateway is a total-loss event for network integrity; immediate architectural isolation is the only reliable defense before patches arrive. #CodeDefence #PaloAltoNetworks #PANOS #CISA #KEV
+When security infrastructure becomes the attack vector, a total forensic reset of the administrative trust boundary is required. #CodeDefence #Ivanti #EPMM #MDM #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Instructure confirms Canvas LMS breach scope as ShinyHunters extends ransom deadline</title>
-  <link>https://codedefence.in/blog/2026/05/09/canvas-lms-breach-shinyhunters-deadline-extension</link>
-  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/canvas-lms-breach-shinyhunters-deadline-extension</guid>
+  <title>Instructure shuts down Free-For-Teacher program as Canvas breach extortion deadline nears</title>
+  <link>https://codedefence.in/blog/2026/05/10/canvas-lms-extortion-deadline-free-for-teacher-shutdown</link>
+  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/canvas-lms-extortion-deadline-free-for-teacher-shutdown</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
   <description><![CDATA[
-The fallout from the massive intrusion into a leading global learning management system continues to expand as threat actors demonstrate their persistence within the platform ecosystem. Forensic investigations have confirmed that the exposure window for sensitive student and institutional data remained open for over a week.
+The global academic community is facing an imminent data disclosure threat as a major learning management system provider approaches a final extortion deadline. Forensic investigations have identified a legacy program as the primary catalyst for the intrusion.
 
-The breach at the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), resulted from the exploitation of the Free-For-Teacher account program. ShinyHunters has extended the ransom deadline to May 12, 2026, while claiming to hold 3.6 TB of data covering 275 million users. Instructure has confirmed the exfiltration of names, email addresses, student ID numbers, and private messages between users, though no evidence of password or financial data exposure has been found.
+The breach at the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), was facilitated by a compromise of the Free-For-Teacher account system. While the vendor has now permanently discontinued this program to close the exposure window, ShinyHunters has extended the payment deadline to May 12, 2026. The group claims to hold 3.6 TB of exfiltrated student and faculty data. Instructure has confirmed the exposure of names, emails, and student IDs, though no evidence suggests passwords or financial data were accessed.
 
-This incident marks the second major breach for the vendor in eight months, highlighting a pattern of underdefended adjacencies where trust boundaries were weaker than the data they protected. The exfiltrated dataset provides a permanent resource for highly targeted social engineering campaigns across the global academic community.
+The shutdown of the Free-For-Teacher program effectively removes a key shadow IT vector that allowed attackers to bypass institutional security controls. However, the data already exfiltrated remains a potent asset for future spear-phishing campaigns targeting universities and research entities.
 
-- Perform a mandatory rotation of all API keys and revoke privileged credentials associated with the Canvas platform.
-- Instruct all institutional users to be hyper-vigilant against phishing attempts that utilize specific student IDs or internal messaging details.
-- Disable or strictly audit the use of the Free-For-Teacher program within your organization environment.
-- Review and harden identity protections for all academic service accounts, ensuring the use of phishing-resistant MFA.
+- Revoke all privileged credentials and rotate API keys associated with institutional Canvas tenants immediately.
+- Prepare academic staff for a surge in highly personalized phishing attempts utilizing student ID numbers and internal messaging details.
+- Audit all remaining third-party integrations and verify that no active sessions remain from the exposure window of April 30 to May 7.
+- Implement phishing-resistant MFA for all institutional academic accounts to mitigate the risk of follow-on credential abuse.
 
-When a foundational educational platform is compromised, the data of an entire generation of students must be treated as permanently exposed to threat actor databases. #CodeDefence #Canvas #Instructure #ShinyHunters #DataBreach
+The permanent removal of vulnerable legacy features is a necessary step in rebuilding the trust boundary of global educational infrastructure. #CodeDefence #Canvas #Instructure #ShinyHunters #DataBreach
   ]]></description>
 </item>
 
 <item>
-  <title>Ivanti warns of EPMM RCE vulnerability CVE-2026-6973 under limited exploitation</title>
-  <link>https://codedefence.in/blog/2026/05/09/ivanti-epmm-rce-cve-2026-6973-active-exploitation</link>
-  <pubDate>Sat, 09 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/09/ivanti-epmm-rce-cve-2026-6973-active-exploitation</guid>
+  <title>CISA KEV Deadline Update: Samsung MagicINFO remediation window closes</title>
+  <link>https://codedefence.in/blog/2026/05/10/cisa-kev-deadline-samsung-magicinfo-update</link>
+  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/cisa-kev-deadline-samsung-magicinfo-update</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-6973</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3113)</cd:mentions>
+  <cd:cve>CVE-2024-7399</cd:cve>
+  <cd:mentions>@[Samsung](urn:li:organization:1720)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A high-severity vulnerability in a major mobile device management platform is being targeted in limited, active attacks in the wild. This flaw allows authenticated attackers with administrative access to achieve remote code execution, making the rotation of privileged credentials a critical defensive priority.
+Federal agencies have reached the remediation deadline for a critical path traversal vulnerability in enterprise digital signage infrastructure. This flaw allows unauthorized attackers to write files with system authority, creating a path for persistent malware delivery.
 
-Tracked as CVE-2026-6973, the improper input validation flaw impacts @[Ivanti](urn:li:organization:3113) Endpoint Manager Mobile ❨EPMM❩ versions prior to 12.8.0.1. While successful exploitation requires administrative authentication, organizations that failed to rotate credentials following earlier breaches in January 2026 are at significantly higher risk. The flaw allows an adversary to gain full control of the MDM appliance, which can then be used to compromise the entire fleet of managed mobile devices.
+CVE-2024-7399 impacts @[Samsung](urn:li:organization:1720) MagicINFO 9 Server. The remediation deadline set by @[CISA](urn:li:organization:13010360) was May 8, 2026, marking this as an urgent overdue item for any organization still running unpatched signage servers. Historically, exploitation of this flaw has been linked to Mirai botnet activity and targeted intrusions into retail and government display networks.
 
-The reuse of administrative credentials across vulnerable appliances is a primary driver for these attacks. When an attacker has previously harvested admin rights, a "high-severity" flaw that requires authentication effectively becomes a "critical" unauthenticated path for that specific adversary.
+Digital signage servers are often overlooked in standard vulnerability management cycles but maintain significant privileges within the corporate network. A compromise here allows an attacker to manipulate public-facing content and establish a foothold for further lateral movement into the secure internal segment.
 
-- Upgrade @[Ivanti](urn:li:organization:3113) EPMM to version 12.6.1.1, 12.7.0.1, or 12.8.0.1 immediately to neutralize the RCE path.
-- Review all accounts with administrative rights and perform a mandatory password rotation for all MDM service accounts.
-- Audit MDM management logs for any anomalous administrative activity or unauthorized device enrollment requests.
-- Implement strict network-level isolation for the EPMM appliance and ensure management interfaces are not accessible via public internet.
+- Verify that all @[Samsung](urn:li:organization:1720) MagicINFO Servers have been updated to the latest security version immediately.
+- If patching is not feasible, discontinue use of the signage server and isolate it from the internal network fabric.
+- Conduct a forensic audit of the signage server for unauthorized file creation or anomalous administrative commands.
+- Ensure all signage management interfaces are restricted to authorized internal IP ranges only.
 
-The security of the mobile enterprise fleet depends on the integrity of the MDM management engine; its compromise is a total-loss event for mobile trust boundaries. #CodeDefence #Ivanti #EPMM #MDM #RCE
+Infrastructure components like signage servers are critical perimeters that require the same level of security rigor as core application servers. #CodeDefence #Samsung #MagicINFO #CISA #VulnerabilityManagement
   ]]></description>
 </item>
 
