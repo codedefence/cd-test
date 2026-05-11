@@ -2,81 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 10 May 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 11 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 10 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 11 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sun, 10 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 11 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Ivanti EPMM zero-day CVE-2026-6973 added to CISA KEV following targeted attacks</title>
-  <link>https://codedefence.in/blog/2026/05/10/ivanti-epmm-zero-day-cisa-kev-alert</link>
-  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/ivanti-epmm-zero-day-cisa-kev-alert</guid>
+  <title>Critical Bleeding Llama vulnerability in Ollama allows remote process memory leak</title>
+  <link>https://codedefence.in/blog/2026/05/11/ollama-bleeding-llama-cve-2026-7482-alert</link>
+  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/ollama-bleeding-llama-cve-2026-7482-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-6973</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3113)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-7482</cd:cve>
   <description><![CDATA[
-A critical improper input validation vulnerability in the Ivanti Endpoint Manager Mobile platform has been added to the federal list of known exploited threats. This flaw allows authenticated remote attackers with administrative privileges to achieve code execution, presenting a severe risk to mobile fleet management infrastructure.
+A critical heap out-of-bounds read vulnerability has been disclosed in a popular open-source framework used for running large language models locally. This flaw allows unauthenticated remote attackers to leak the entire process memory of the affected server, posing a severe risk to data confidentiality in private AI deployments.
 
-Tracked as CVE-2026-6973, the vulnerability is being actively leveraged in a very limited number of targeted attacks. Because exploitation requires administrative authentication, threat actors are likely pairing this flaw with credentials harvested during earlier 2026 Ivanti breaches. CISA added the flaw to the KEV catalog on May 8, 2026, signaling that organizations must prioritize remediation to prevent full appliance takeover.
+Tracked as CVE-2026-7482 and codenamed Bleeding Llama, the vulnerability resides in the GGUF model loader of Ollama versions prior to 0.17.1. By supplying a crafted GGUF file with declared tensor offsets that exceed the actual file length, an attacker can trigger a memory leak during the quantization process. With over 300,000 servers potentially exposed, this flaw represents a significant risk to the rapidly growing local AI ecosystem.
 
-The compromise of an MDM server grants an adversary the ability to exfiltrate data from all managed devices and push malicious configuration profiles. This makes Ivanti EPMM a recurring high-value target for state-sponsored and ransomware groups seeking a persistent foothold at the network edge.
+The shift toward local LLM execution is often driven by privacy concerns; however, vulnerabilities like Bleeding Llama demonstrate that self-hosted AI infrastructure requires the same level of rigorous security patching as cloud-based services. A memory leak of this scale can expose sensitive model weights, user prompts, and internal system configurations.
 
-- Immediately update Ivanti EPMM to version 12.6.1.1, 12.7.0.1, or 12.8.0.1 to neutralize the RCE path.
-- Conduct a mandatory audit of all accounts with administrative rights and perform a total credential rotation for all MDM service accounts.
-- Monitor MDM logs for anomalous administrative sessions or unauthorized device enrollment requests originating from unknown IP ranges.
-- Restrict all management interface access to authorized internal subnets only to mitigate the risk of credential-based exploitation.
+- Immediately upgrade Ollama to version 0.17.1 or higher to neutralize the Bleeding Llama vulnerability.
+- Audit all local AI deployments to ensure that the Ollama API is not exposed to untrusted network segments.
+- Implement strict input validation for all GGUF and model-related files processed by the framework.
+- Monitor for anomalous memory usage or unauthorized process read attempts targeting the Ollama service.
 
-When security infrastructure becomes the attack vector, a total forensic reset of the administrative trust boundary is required. #CodeDefence #Ivanti #EPMM #MDM #CISA #KEV
+When private AI infrastructure becomes a vector for unauthenticated memory leaks, the very privacy it was intended to protect is compromised. #CodeDefence #Ollama #BleedingLlama #AISecurity #MemoryLeak
   ]]></description>
 </item>
 
 <item>
-  <title>Instructure shuts down Free-For-Teacher program as Canvas breach extortion deadline nears</title>
-  <link>https://codedefence.in/blog/2026/05/10/canvas-lms-extortion-deadline-free-for-teacher-shutdown</link>
-  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/canvas-lms-extortion-deadline-free-for-teacher-shutdown</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
-  <description><![CDATA[
-The global academic community is facing an imminent data disclosure threat as a major learning management system provider approaches a final extortion deadline. Forensic investigations have identified a legacy program as the primary catalyst for the intrusion.
-
-The breach at the Canvas platform, managed by @[Instructure](urn:li:organization:1310123), was facilitated by a compromise of the Free-For-Teacher account system. While the vendor has now permanently discontinued this program to close the exposure window, ShinyHunters has extended the payment deadline to May 12, 2026. The group claims to hold 3.6 TB of exfiltrated student and faculty data. Instructure has confirmed the exposure of names, emails, and student IDs, though no evidence suggests passwords or financial data were accessed.
-
-The shutdown of the Free-For-Teacher program effectively removes a key shadow IT vector that allowed attackers to bypass institutional security controls. However, the data already exfiltrated remains a potent asset for future spear-phishing campaigns targeting universities and research entities.
-
-- Revoke all privileged credentials and rotate API keys associated with institutional Canvas tenants immediately.
-- Prepare academic staff for a surge in highly personalized phishing attempts utilizing student ID numbers and internal messaging details.
-- Audit all remaining third-party integrations and verify that no active sessions remain from the exposure window of April 30 to May 7.
-- Implement phishing-resistant MFA for all institutional academic accounts to mitigate the risk of follow-on credential abuse.
-
-The permanent removal of vulnerable legacy features is a necessary step in rebuilding the trust boundary of global educational infrastructure. #CodeDefence #Canvas #Instructure #ShinyHunters #DataBreach
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA KEV Deadline Update: Samsung MagicINFO remediation window closes</title>
-  <link>https://codedefence.in/blog/2026/05/10/cisa-kev-deadline-samsung-magicinfo-update</link>
-  <pubDate>Sun, 10 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/10/cisa-kev-deadline-samsung-magicinfo-update</guid>
+  <title>Google identifies first AI-generated zero-day exploit targeting web admin tools</title>
+  <link>https://codedefence.in/blog/2026/05/11/google-gtig-ai-generated-zero-day-exploit-discovery</link>
+  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/google-gtig-ai-generated-zero-day-exploit-discovery</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2024-7399</cd:cve>
-  <cd:mentions>@[Samsung](urn:li:organization:1720)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Federal agencies have reached the remediation deadline for a critical path traversal vulnerability in enterprise digital signage infrastructure. This flaw allows unauthorized attackers to write files with system authority, creating a path for persistent malware delivery.
+Cybersecurity researchers have identified a sophisticated zero-day exploit that appears to have been developed with the assistance of an advanced AI model. This discovery marks a fundamental shift in the threat landscape, where large language models are now actively contributing to the automation of vulnerability discovery and weaponization.
 
-CVE-2024-7399 impacts @[Samsung](urn:li:organization:1720) MagicINFO 9 Server. The remediation deadline set by @[CISA](urn:li:organization:13010360) was May 8, 2026, marking this as an urgent overdue item for any organization still running unpatched signage servers. Historically, exploitation of this flaw has been linked to Mirai botnet activity and targeted intrusions into retail and government display networks.
+The exploit, analyzed by the @[Google](urn:li:organization:1441) Threat Intelligence Group, targets a popular open-source web administration tool. Researchers concluded with high confidence that the exploit code was AI-generated due to its "textbook" Pythonic structure, an abundance of educational docstrings, and a hallucinated CVSS score—all characteristic of LLM training data. While the attack was intercepted before reaching mass exploitation, it demonstrates that adversaries are successfully using AI to compress the timeline from vulnerability identification to weaponization.
 
-Digital signage servers are often overlooked in standard vulnerability management cycles but maintain significant privileges within the corporate network. A compromise here allows an attacker to manipulate public-facing content and establish a foothold for further lateral movement into the secure internal segment.
+The emergence of AI-generated exploits means that the window for manual remediation is effectively closing. For enterprises, this reinforces the necessity of moving toward automated defensive systems that can identify and block anomalous exploit patterns in real-time, even when those exploits are novel or AI-authored.
 
-- Verify that all @[Samsung](urn:li:organization:1720) MagicINFO Servers have been updated to the latest security version immediately.
-- If patching is not feasible, discontinue use of the signage server and isolate it from the internal network fabric.
-- Conduct a forensic audit of the signage server for unauthorized file creation or anomalous administrative commands.
-- Ensure all signage management interfaces are restricted to authorized internal IP ranges only.
+- Review all open-source web administration tools for exposure to the public internet and place them behind a Zero Trust gateway.
+- Utilize behavioral analysis and EDR platforms to detect the execution of "textbook" exploit scripts that may lack traditional signatures.
+- Implement strict 2FA and identity-based access controls for all management interfaces to mitigate the risk of automated bypass attempts.
+- Monitor threat intelligence feeds for signatures associated with AI-orchestrated scanning and exploitation campaigns.
 
-Infrastructure components like signage servers are critical perimeters that require the same level of security rigor as core application servers. #CodeDefence #Samsung #MagicINFO #CISA #VulnerabilityManagement
+When the attacker uses AI to author the exploit, the defender must use AI to orchestrate the response. #CodeDefence #Google #AISecurity #ZeroDay #Exploitation
+  ]]></description>
+</item>
+
+<item>
+  <title>Typosquatted OpenAI Privacy Filter repo on Hugging Face delivers Rust-based infostealer</title>
+  <link>https://codedefence.in/blog/2026/05/11/hugging-face-supply-chain-openai-typosquatting-alert</link>
+  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/hugging-face-supply-chain-openai-typosquatting-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[OpenAI](urn:li:organization:10011504)</cd:mentions>
+  <description><![CDATA[
+A malicious repository masquerading as a legitimate privacy tool from a leading AI laboratory trended on Hugging Face, leading to hundreds of thousands of unauthorized downloads. This supply chain attack demonstrates the growing risk of typosquatted models and poisoned loaders in the AI development ecosystem.
+
+The repository, named Open-OSS/privacy-filter, copied the description and branding of the @[OpenAI](urn:li:organization:10011504) Privacy Filter released in April 2026. However, the repository included a malicious loader.py file that fetched and executed a Rust-based information stealer on Windows systems. Before being disabled, the repo achieved 244,000 downloads, targeting developers seeking to implement PII redaction in their applications.
+
+The targeting of privacy-focused developers is a strategic move, as these users often have access to sensitive unstructured text and PII. This incident highlights that the AI supply chain is subject to the same typosquatting and social engineering risks as traditional package managers like npm or PyPI.
+
+- Audit all Hugging Face models and libraries used in internal development projects to ensure they originate from verified organization accounts.
+- Implement strict software composition analysis ❨SCA❩ for all AI-related dependencies and model loaders.
+- Instruct development teams to verify repository names and maintainer identities against official vendor announcements before integration.
+- Monitor developer workstations for anomalous outbound network traffic or the execution of unauthorized Rust-based binaries.
+
+Supply chain security in the AI era requires verifying the identity of the model as strictly as the integrity of the code. #CodeDefence #SupplyChain #HuggingFace #OpenAI #Malware
   ]]></description>
 </item>
 
