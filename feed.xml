@@ -2,79 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 11 May 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 12 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 11 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 12 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 11 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 12 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical Bleeding Llama vulnerability in Ollama allows remote process memory leak</title>
-  <link>https://codedefence.in/blog/2026/05/11/ollama-bleeding-llama-cve-2026-7482-alert</link>
-  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/ollama-bleeding-llama-cve-2026-7482-alert</guid>
+  <title>Instructure pays ransom to ShinyHunters to prevent 3.65TB Canvas LMS data leak</title>
+  <link>https://codedefence.in/blog/2026/05/12/instructure-canvas-lms-ransom-agreement-alert</link>
+  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/instructure-canvas-lms-ransom-agreement-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-7482</cd:cve>
+  <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
   <description><![CDATA[
-A critical heap out-of-bounds read vulnerability has been disclosed in a popular open-source framework used for running large language models locally. This flaw allows unauthenticated remote attackers to leak the entire process memory of the affected server, posing a severe risk to data confidentiality in private AI deployments.
+The parent company of a global learning management system has confirmed reaching a settlement with threat actors to avoid the publication of stolen data belonging to millions of students. This decision concludes a weeks-long extortion campaign that disrupted access to academic materials at thousands of institutions.
 
-Tracked as CVE-2026-7482 and codenamed Bleeding Llama, the vulnerability resides in the GGUF model loader of Ollama versions prior to 0.17.1. By supplying a crafted GGUF file with declared tensor offsets that exceed the actual file length, an attacker can trigger a memory leak during the quantization process. With over 300,000 servers potentially exposed, this flaw represents a significant risk to the rapidly growing local AI ecosystem.
+Tracked as the May 2026 Canvas security incident, the breach resulted in the theft of 3.65TB of data by the ShinyHunters group. @[Instructure](urn:li:organization:1310123) stated that they reached an agreement with the unauthorized actor to provide peace of mind to customers, receiving digital confirmation that the stolen data was destroyed. The breach originated from an unspecified vulnerability in the Free-for-Teacher environment and eventually impacted nearly 9,000 organizations.
 
-The shift toward local LLM execution is often driven by privacy concerns; however, vulnerabilities like Bleeding Llama demonstrate that self-hosted AI infrastructure requires the same level of rigorous security patching as cloud-based services. A memory leak of this scale can expose sensitive model weights, user prompts, and internal system configurations.
+While the payment aims to prevent a mass leak, it does not erase the fact that sensitive identifiers like student IDs and private messages were in adversary hands for weeks. For academic institutions, the primary risk now shifts to long-term social engineering campaigns that utilize the specific institutional details exfiltrated during the breach.
 
-- Immediately upgrade Ollama to version 0.17.1 or higher to neutralize the Bleeding Llama vulnerability.
-- Audit all local AI deployments to ensure that the Ollama API is not exposed to untrusted network segments.
-- Implement strict input validation for all GGUF and model-related files processed by the framework.
-- Monitor for anomalous memory usage or unauthorized process read attempts targeting the Ollama service.
+- Conduct a final audit of all API keys and service accounts used within the Canvas environment to ensure no persistent sessions remain.
+- Monitor for a surge in targeted spear-phishing attempts that leverage student ID numbers or internal messaging context.
+- Verify that the Free-for-Teacher account program has been fully deactivated or isolated within your institutional network.
+- Reinforce phishing-resistant MFA across all academic and administrative accounts to mitigate risks of follow-on credential abuse.
 
-When private AI infrastructure becomes a vector for unauthenticated memory leaks, the very privacy it was intended to protect is compromised. #CodeDefence #Ollama #BleedingLlama #AISecurity #MemoryLeak
+The resolution of the extortion campaign through payment represents a strategic closure but necessitates a total forensic reset of student and faculty data trust. #CodeDefence #Canvas #Instructure #ShinyHunters #Ransomware
   ]]></description>
 </item>
 
 <item>
-  <title>Google identifies first AI-generated zero-day exploit targeting web admin tools</title>
-  <link>https://codedefence.in/blog/2026/05/11/google-gtig-ai-generated-zero-day-exploit-discovery</link>
-  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/google-gtig-ai-generated-zero-day-exploit-discovery</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <title>Over 44,000 cPanel servers hit by Sorry ransomware following authentication bypass exploit</title>
+  <link>https://codedefence.in/blog/2026/05/12/cpanel-mass-exploitation-sorry-ransomware-surge</link>
+  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/cpanel-mass-exploitation-sorry-ransomware-surge</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-41940</cd:cve>
   <description><![CDATA[
-Cybersecurity researchers have identified a sophisticated zero-day exploit that appears to have been developed with the assistance of an advanced AI model. This discovery marks a fundamental shift in the threat landscape, where large language models are now actively contributing to the automation of vulnerability discovery and weaponization.
+A critical authentication bypass vulnerability in Linux-based web hosting control panels is being mass-exploited to deploy a new strain of ransomware. Security researchers have identified a massive surge in compromised IP addresses, with attackers prioritizing the encryption of web roots and associated databases.
 
-The exploit, analyzed by the @[Google](urn:li:organization:1441) Threat Intelligence Group, targets a popular open-source web administration tool. Researchers concluded with high confidence that the exploit code was AI-generated due to its "textbook" Pythonic structure, an abundance of educational docstrings, and a hallucinated CVSS score—all characteristic of LLM training data. While the attack was intercepted before reaching mass exploitation, it demonstrates that adversaries are successfully using AI to compress the timeline from vulnerability identification to weaponization.
+The flaw, tracked as CVE-2026-41940, allows unauthenticated attackers to gain administrative control over cPanel and WHM instances. Successful breaches are leading to the deployment of the Sorry ransomware, a Go-based Linux encryptor that utilizes the ChaCha20 stream cipher. Encrypted files are appended with the .sorry extension, and ransom notes are being indexed by search engines across hundreds of impacted legitimate domains.
 
-The emergence of AI-generated exploits means that the window for manual remediation is effectively closing. For enterprises, this reinforces the necessity of moving toward automated defensive systems that can identify and block anomalous exploit patterns in real-time, even when those exploits are novel or AI-authored.
+The industrial scale of this campaign suggests that attackers are using automated botnets to sweep for unpatched hosting infrastructure. For enterprise users, a compromise of the control panel provides an adversary with full access to webmail, databases, and the underlying server filesystem.
 
-- Review all open-source web administration tools for exposure to the public internet and place them behind a Zero Trust gateway.
-- Utilize behavioral analysis and EDR platforms to detect the execution of "textbook" exploit scripts that may lack traditional signatures.
-- Implement strict 2FA and identity-based access controls for all management interfaces to mitigate the risk of automated bypass attempts.
-- Monitor threat intelligence feeds for signatures associated with AI-orchestrated scanning and exploitation campaigns.
+- Immediately update cPanel and WHM to the emergency security releases provided by the vendor.
+- Audit the /home/.cpanel/sessions directory for unauthorized session files created by unknown IP addresses.
+- Search for Go-based binaries in /tmp or system-wide that exhibit ransomware-like behavior.
+- Strictly isolate all control panel management interfaces behind a VPN or IP-restricted gateway to neutralize the unauthenticated exploit path.
 
-When the attacker uses AI to author the exploit, the defender must use AI to orchestrate the response. #CodeDefence #Google #AISecurity #ZeroDay #Exploitation
+The mass exploitation of web hosting infrastructure turns a single control panel flaw into a global platform for data extortion and malware delivery. #CodeDefence #cPanel #Ransomware #Sorry #AuthBypass
   ]]></description>
 </item>
 
 <item>
-  <title>Typosquatted OpenAI Privacy Filter repo on Hugging Face delivers Rust-based infostealer</title>
-  <link>https://codedefence.in/blog/2026/05/11/hugging-face-supply-chain-openai-typosquatting-alert</link>
-  <pubDate>Mon, 11 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/11/hugging-face-supply-chain-openai-typosquatting-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[OpenAI](urn:li:organization:10011504)</cd:mentions>
+  <title>Palo Alto Networks prepares for May 13 patch rollout for critical PAN-OS zero-day</title>
+  <link>https://codedefence.in/blog/2026/05/12/palo-alto-networks-pan-os-cve-2026-0300-patch-countdown</link>
+  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/palo-alto-networks-pan-os-cve-2026-0300-patch-countdown</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-0300</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)</cd:mentions>
   <description><![CDATA[
-A malicious repository masquerading as a legitimate privacy tool from a leading AI laboratory trended on Hugging Face, leading to hundreds of thousands of unauthorized downloads. This supply chain attack demonstrates the growing risk of typosquatted models and poisoned loaders in the AI development ecosystem.
+Enterprise security teams are entering the final 24 hours of a critical unpatched exposure period for perimeter firewalls. Official software updates are scheduled for release tomorrow to address a root-level buffer overflow that has been under active exploitation for over a month.
 
-The repository, named Open-OSS/privacy-filter, copied the description and branding of the @[OpenAI](urn:li:organization:10011504) Privacy Filter released in April 2026. However, the repository included a malicious loader.py file that fetched and executed a Rust-based information stealer on Windows systems. Before being disabled, the repo achieved 244,000 downloads, targeting developers seeking to implement PII redaction in their applications.
+Tracked as CVE-2026-0300, the flaw impacts the User-ID Authentication Portal in PAN-OS. Unauthenticated remote attackers can execute arbitrary code with root privileges by sending crafted packets to the portal service. @[Palo Alto Networks](urn:li:organization:15502) has maintained that the risk is greatly reduced if access to the portal is restricted to trusted internal IP addresses, a mitigation that remains mandatory until the patches are verified and applied.
 
-The targeting of privacy-focused developers is a strategic move, as these users often have access to sensitive unstructured text and PII. This incident highlights that the AI supply chain is subject to the same typosquatting and social engineering risks as traditional package managers like npm or PyPI.
+Firewall vulnerabilities are high-priority targets because they lack the standard endpoint logging present on servers and workstations. A successful exploit grants persistent, high-privileged access to the network edge, enabling the adversary to intercept traffic and facilitate lateral movement without triggering traditional security alerts.
 
-- Audit all Hugging Face models and libraries used in internal development projects to ensure they originate from verified organization accounts.
-- Implement strict software composition analysis ❨SCA❩ for all AI-related dependencies and model loaders.
-- Instruct development teams to verify repository names and maintainer identities against official vendor announcements before integration.
-- Monitor developer workstations for anomalous outbound network traffic or the execution of unauthorized Rust-based binaries.
+- Verify that all PA-Series and VM-Series firewalls have the User-ID Authentication Portal restricted to trusted zones.
+- Establish an emergency patching window for May 13 to apply the incoming PAN-OS security updates.
+- Monitor for anomalous inbound traffic patterns on the ports associated with the Authentication Portal service.
+- Audit administrative logs for any unauthorized configuration changes that may have occurred during the zero-day exposure window.
 
-Supply chain security in the AI era requires verifying the identity of the model as strictly as the integrity of the code. #CodeDefence #SupplyChain #HuggingFace #OpenAI #Malware
+The release of a patch for a root-level perimeter zero-day requires an immediate, fleet-wide remediation to close the adversary's window of opportunity. #CodeDefence #PaloAltoNetworks #PANOS #ZeroDay #PerimeterSecurity
   ]]></description>
 </item>
 
