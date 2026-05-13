@@ -2,80 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 12 May 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 13 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 12 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 13 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 12 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 13 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 13 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Instructure pays ransom to ShinyHunters to prevent 3.65TB Canvas LMS data leak</title>
-  <link>https://codedefence.in/blog/2026/05/12/instructure-canvas-lms-ransom-agreement-alert</link>
-  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/instructure-canvas-lms-ransom-agreement-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Instructure](urn:li:organization:1310123)</cd:mentions>
-  <description><![CDATA[
-The parent company of a global learning management system has confirmed reaching a settlement with threat actors to avoid the publication of stolen data belonging to millions of students. This decision concludes a weeks-long extortion campaign that disrupted access to academic materials at thousands of institutions.
-
-Tracked as the May 2026 Canvas security incident, the breach resulted in the theft of 3.65TB of data by the ShinyHunters group. @[Instructure](urn:li:organization:1310123) stated that they reached an agreement with the unauthorized actor to provide peace of mind to customers, receiving digital confirmation that the stolen data was destroyed. The breach originated from an unspecified vulnerability in the Free-for-Teacher environment and eventually impacted nearly 9,000 organizations.
-
-While the payment aims to prevent a mass leak, it does not erase the fact that sensitive identifiers like student IDs and private messages were in adversary hands for weeks. For academic institutions, the primary risk now shifts to long-term social engineering campaigns that utilize the specific institutional details exfiltrated during the breach.
-
-- Conduct a final audit of all API keys and service accounts used within the Canvas environment to ensure no persistent sessions remain.
-- Monitor for a surge in targeted spear-phishing attempts that leverage student ID numbers or internal messaging context.
-- Verify that the Free-for-Teacher account program has been fully deactivated or isolated within your institutional network.
-- Reinforce phishing-resistant MFA across all academic and administrative accounts to mitigate risks of follow-on credential abuse.
-
-The resolution of the extortion campaign through payment represents a strategic closure but necessitates a total forensic reset of student and faculty data trust. #CodeDefence #Canvas #Instructure #ShinyHunters #Ransomware
-  ]]></description>
-</item>
-
-<item>
-  <title>Over 44,000 cPanel servers hit by Sorry ransomware following authentication bypass exploit</title>
-  <link>https://codedefence.in/blog/2026/05/12/cpanel-mass-exploitation-sorry-ransomware-surge</link>
-  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/cpanel-mass-exploitation-sorry-ransomware-surge</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-41940</cd:cve>
-  <description><![CDATA[
-A critical authentication bypass vulnerability in Linux-based web hosting control panels is being mass-exploited to deploy a new strain of ransomware. Security researchers have identified a massive surge in compromised IP addresses, with attackers prioritizing the encryption of web roots and associated databases.
-
-The flaw, tracked as CVE-2026-41940, allows unauthenticated attackers to gain administrative control over cPanel and WHM instances. Successful breaches are leading to the deployment of the Sorry ransomware, a Go-based Linux encryptor that utilizes the ChaCha20 stream cipher. Encrypted files are appended with the .sorry extension, and ransom notes are being indexed by search engines across hundreds of impacted legitimate domains.
-
-The industrial scale of this campaign suggests that attackers are using automated botnets to sweep for unpatched hosting infrastructure. For enterprise users, a compromise of the control panel provides an adversary with full access to webmail, databases, and the underlying server filesystem.
-
-- Immediately update cPanel and WHM to the emergency security releases provided by the vendor.
-- Audit the /home/.cpanel/sessions directory for unauthorized session files created by unknown IP addresses.
-- Search for Go-based binaries in /tmp or system-wide that exhibit ransomware-like behavior.
-- Strictly isolate all control panel management interfaces behind a VPN or IP-restricted gateway to neutralize the unauthenticated exploit path.
-
-The mass exploitation of web hosting infrastructure turns a single control panel flaw into a global platform for data extortion and malware delivery. #CodeDefence #cPanel #Ransomware #Sorry #AuthBypass
-  ]]></description>
-</item>
-
-<item>
-  <title>Palo Alto Networks prepares for May 13 patch rollout for critical PAN-OS zero-day</title>
-  <link>https://codedefence.in/blog/2026/05/12/palo-alto-networks-pan-os-cve-2026-0300-patch-countdown</link>
-  <pubDate>Tue, 12 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/12/palo-alto-networks-pan-os-cve-2026-0300-patch-countdown</guid>
+  <title>Palo Alto Networks releases emergency patches for PAN-OS root-level zero-day RCE</title>
+  <link>https://codedefence.in/blog/2026/05/13/palo-alto-networks-pan-os-zero-day-patch-release-alert</link>
+  <pubDate>Wed, 13 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/13/palo-alto-networks-pan-os-zero-day-patch-release-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-0300</cd:cve>
   <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)</cd:mentions>
   <description><![CDATA[
-Enterprise security teams are entering the final 24 hours of a critical unpatched exposure period for perimeter firewalls. Official software updates are scheduled for release tomorrow to address a root-level buffer overflow that has been under active exploitation for over a month.
+Official security updates have been released to address a critical root-level vulnerability in the perimeter security infrastructure of several thousand global organizations. This flaw has been under active exploitation by an advanced persistent threat actor since early April, facilitating unauthenticated remote code execution on the firewall.
 
-Tracked as CVE-2026-0300, the flaw impacts the User-ID Authentication Portal in PAN-OS. Unauthenticated remote attackers can execute arbitrary code with root privileges by sending crafted packets to the portal service. @[Palo Alto Networks](urn:li:organization:15502) has maintained that the risk is greatly reduced if access to the portal is restricted to trusted internal IP addresses, a mitigation that remains mandatory until the patches are verified and applied.
+Tracked as CVE-2026-0300, the vulnerability resides in the User-ID Authentication Portal component of PAN-OS. Attackers can trigger a buffer overflow by sending crafted network packets to the portal service, granting them root-level access to the appliance. While temporary mitigations involving service restriction were implemented last week, the availability of official patches from @[Palo Alto Networks](urn:li:organization:15502) now makes full remediation mandatory.
 
-Firewall vulnerabilities are high-priority targets because they lack the standard endpoint logging present on servers and workstations. A successful exploit grants persistent, high-privileged access to the network edge, enabling the adversary to intercept traffic and facilitate lateral movement without triggering traditional security alerts.
+Because security appliances like the PA-Series firewalls often lack standard endpoint detection agents, they serve as ideal pivot points for long-term persistence. A compromise of the firewall allows an adversary to intercept unencrypted traffic and perform lateral movement into the internal network without triggering traditional workstation-based alerts.
 
-- Verify that all PA-Series and VM-Series firewalls have the User-ID Authentication Portal restricted to trusted zones.
-- Establish an emergency patching window for May 13 to apply the incoming PAN-OS security updates.
-- Monitor for anomalous inbound traffic patterns on the ports associated with the Authentication Portal service.
-- Audit administrative logs for any unauthorized configuration changes that may have occurred during the zero-day exposure window.
+- Apply the PAN-OS security updates immediately to all PA-Series and VM-Series firewalls to neutralize CVE-2026-0300.
+- Verify that the User-ID Authentication Portal remains restricted to trusted internal IP ranges even after patching to maintain a least-privilege perimeter.
+- Conduct a retroactive forensic audit of the firewall filesystem for unauthorized scripts or persistent web shells dating back to April 1.
+- Rotate administrative credentials for the PAN-OS management interface to ensure no sessions were hijacked during the zero-day exposure window.
 
-The release of a patch for a root-level perimeter zero-day requires an immediate, fleet-wide remediation to close the adversary's window of opportunity. #CodeDefence #PaloAltoNetworks #PANOS #ZeroDay #PerimeterSecurity
+The availability of a patch for a perimeter zero-day requires immediate, fleet-wide action to close the adversary's primary window of opportunity. #CodeDefence #PaloAltoNetworks #PANOS #ZeroDay #RCE
+  ]]></description>
+</item>
+
+<item>
+  <title>Operation Phantom Thread: Supply chain attack targets GitHub Action runners to steal secrets</title>
+  <link>https://codedefence.in/blog/2026/05/13/github-actions-supply-chain-phantom-thread-alert</link>
+  <pubDate>Wed, 13 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/13/github-actions-supply-chain-phantom-thread-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[GitHub](urn:li:organization:13347)</cd:mentions>
+  <description><![CDATA[
+A highly targeted supply chain campaign has been identified that compromises the software build process by poisoning third-party Actions within the developer ecosystem. This attack allows threat actors to exfiltrate sensitive cloud credentials and inject malicious code into production software branches before deployment.
+
+Identified as Operation Phantom Thread, the campaign utilizes typosquatted and hijacked @[GitHub](urn:li:organization:13347) Actions to execute malicious commands on the build runner. When a legitimate CI/CD pipeline triggers a build, the poisoned Action exfiltrates environment variables—including AWS, Azure, and Google Cloud secrets—to an external C2 server. In several cases, the attackers successfully injected backdoors into the final compiled binaries of enterprise applications.
+
+The abuse of the CI/CD pipeline is a force-multiplier for threat actors. By compromising the build process, they can deliver malware to the organization's entire customer base, turning a single developer-level breach into a massive supply chain event.
+
+- Audit all third-party @[GitHub](urn:li:organization:13347) Actions used in internal CI/CD pipelines and pin them to specific, verified commit SHAs rather than version tags.
+- Implement strict secret scanning and ensure that high-value cloud credentials are not stored as plaintext environment variables.
+- Utilize isolated, ephemeral build runners that are destroyed immediately after a build is completed.
+- Monitor build logs for anomalous network connections or unauthorized script execution during the CI/CD process.
+
+Supply chain integrity requires the same level of scrutiny for build-time dependencies as for production runtime code. #CodeDefence #GitHub #SupplyChain #DevSecOps #PhantomThread
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds Ivanti EPMM RCE vulnerability to KEV catalog following targeted abuse</title>
+  <link>https://codedefence.in/blog/2026/05/13/ivanti-epmm-cve-2026-6973-cisa-kev-alert</link>
+  <pubDate>Wed, 13 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/13/ivanti-epmm-cve-2026-6973-cisa-kev-alert</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-6973</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3113)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+A high-severity remote code execution vulnerability in a mobile device management platform has been added to the federal list of known exploited threats. The flaw is being targeted in refined attacks that leverage credentials likely harvested during prior intrusions, presenting a critical risk to mobile enterprise security.
+
+Tracked as CVE-2026-6973, the vulnerability impacts @[Ivanti](urn:li:organization:3113) Endpoint Manager Mobile ❨EPMM❩. While the exploit requires administrative authentication, @[CISA](urn:li:organization:13010360) added the flaw to the KEV catalog on May 12, citing its use in targeted intrusions. This indicates that threat actors are successfully chaining the RCE with previously stolen or brute-forced administrative rights to achieve full appliance takeover.
+
+The compromise of an MDM platform allows an adversary to push malicious configuration profiles to thousands of employee devices and exfiltrate sensitive mobile data. For organizations, this proves that a patch is only effective if combined with a total reset of administrative trust following a breach.
+
+- Upgrade @[Ivanti](urn:li:organization:3113) EPMM to the latest security version ❨12.6.1.1 or higher❩ immediately.
+- Perform a mandatory rotation of all administrative passwords and API keys associated with the MDM infrastructure.
+- Monitor for anomalous administrative logins or unauthorized device enrollment requests originating from unknown IP addresses.
+- Restrict all MDM management interfaces to authorized internal subnets and enforce phishing-resistant MFA for all administrators.
+
+Security infrastructure remains a primary target for sophisticated adversaries; defense requires a combination of rapid patching and rigorous identity hygiene. #CodeDefence #Ivanti #MDM #CISA #KEV
   ]]></description>
 </item>
 
