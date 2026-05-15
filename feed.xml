@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 14 May 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 15 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 14 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 15 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 14 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 14 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 15 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 15 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical Microsoft SharePoint RCE CVE-2026-23415 targeted in May security rollout</title>
-  <link>https://codedefence.in/blog/2026/05/14/microsoft-sharepoint-rce-cve-2026-23415-alert</link>
-  <pubDate>Thu, 14 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/14/microsoft-sharepoint-rce-cve-2026-23415-alert</guid>
+  <title>CISA mandates immediate remediation for Cisco Catalyst SD-WAN admin bypass</title>
+  <link>https://codedefence.in/blog/2026/05/15/cisco-sd-wan-cve-2026-20182-cisa-kev-alert</link>
+  <pubDate>Fri, 15 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/15/cisco-sd-wan-cve-2026-20182-cisa-kev-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-23415</cd:cve>
+  <cd:cve>CVE-2026-20182</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+A critical authentication bypass vulnerability in software-defined networking controllers has been added to the federal list of known exploited threats with a highly accelerated remediation timeline. This flaw allows unauthenticated remote attackers to gain full administrative privileges on the management plane of the SD-WAN infrastructure.
+
+Tracked as CVE-2026-20182, the vulnerability impacts Cisco Catalyst SD-WAN Manager and Controller. CISA added the flaw to the KEV catalog on May 14, 2026, following evidence that threat actors are successfully bypassing the login process to manipulate network traffic and exfiltrate sensitive configuration data. The compromise of a central management controller provides an adversary with "god-mode" over the entire software-defined fabric, bypassing individual branch-level security controls.
+
+When the controller of a wide-area network is compromised, the attacker can silently redirect traffic, disable security policies, and maintain persistent access to all connected edge devices. This makes SD-WAN management planes one of the highest-value targets for both state-sponsored espionage and advanced ransomware groups.
+
+- Immediately upgrade @[Cisco](urn:li:organization:1063) Catalyst SD-WAN Manager to the latest security version ❨e.g., 20.12.x or higher❩ to neutralize the bypass.
+- Conduct a forensic audit of management logs for unauthorized administrative sessions or anomalous configuration changes dating back to March 2026.
+- Strictly isolate all SD-WAN management interfaces behind a Zero Trust gateway and restrict access to authorized internal IP ranges only.
+- Implement phishing-resistant MFA for all administrative accounts to mitigate the risk of follow-on credential abuse.
+
+The integrity of the network fabric is entirely dependent on the security of its controller; its compromise represents a total loss of trust for all transit data. #CodeDefence #Cisco #SDWAN #CISA #KEV
+  ]]></description>
+</item>
+
+<item>
+  <title>Microsoft addresses max-severity CVSS 10.0 information disclosure in Azure DevOps</title>
+  <link>https://codedefence.in/blog/2026/05/15/microsoft-azure-devops-cve-2026-42826-critical-alert</link>
+  <pubDate>Fri, 15 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/15/microsoft-azure-devops-cve-2026-42826-critical-alert</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-42826</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-A critical remote code execution vulnerability in a popular enterprise collaboration platform is a primary remediation item in the latest security update. This flaw allows an authenticated attacker with Site Owner permissions or higher to execute arbitrary code in the context of the SharePoint service account.
+A maximum-severity vulnerability in a leading DevOps platform has been proactively remediated in cloud environments, but remains a critical action item for on-premises deployments. This flaw allows unauthenticated remote attackers to disclose sensitive information over the network through an exposure of sensitive information flaw.
 
-Tracked as CVE-2026-23415, the vulnerability impacts Microsoft SharePoint Server 2016, 2019, and Subscription Edition. @[Microsoft](urn:li:organization:1035) has classified this as more likely to be exploited due to the widespread nature of SharePoint deployments and the high value of the data stored within. While the attack requires authentication, the prevalence of compromised credentials and session tokens makes this a viable path for lateral movement.
+Tracked as CVE-2026-42826, the vulnerability carries a CVSS score of 10.0. While @[Microsoft](urn:li:organization:1035) has patched the cloud infrastructure for Azure DevOps, organizations managing their own on-premises instances must apply the security updates immediately. The flaw could allow an adversary to leak repository secrets, build configurations, and sensitive developer data, providing a direct path to supply chain compromise.
 
-When an attacker gains RCE on a SharePoint server, they can exfiltrate sensitive corporate documents, move laterally to other connected databases, and potentially compromise the entire identity fabric of the organization. For enterprises, this reinforces the need for strict least-privilege access to site administrative roles.
+The exposure of DevOps metadata is a strategic intelligence event for attackers. By harvesting details about the build process and internal repository structures, an adversary can tailor secondary attacks with extreme precision, often bypassing traditional security telemetry that focuses on binary execution.
 
-- Apply the May 2026 security updates for @[Microsoft](urn:li:organization:1035) SharePoint Server immediately.
-- Conduct a review of all users with Site Owner or higher privileges and enforce the principle of least privilege.
-- Monitor for anomalous service account activity or unauthorized process execution originating from the SharePoint server.
-- Ensure that SharePoint servers are isolated from the public internet and accessible only via secure, authenticated tunnels.
+- Immediately apply the May 2026 security updates for on-premises @[Microsoft](urn:li:organization:1035) Azure DevOps Server.
+- Audit all recent access logs for unauthorized connections to the DevOps API or anomalous data exfiltration patterns.
+- Ensure that all DevOps management interfaces are isolated from the public internet and accessible only via secure, authenticated tunnels.
+- Rotate any cloud provider secrets or API keys that may have been stored in plaintext within the DevOps environment.
 
-The integrity of the corporate document store is foundational to business continuity; its compromise is a significant threat to intellectual property. #CodeDefence #Microsoft #SharePoint #RCE #VulnerabilityManagement
+DevOps infrastructure is the heart of the modern software supply chain; its security is the foundation of production integrity. #CodeDefence #Microsoft #AzureDevOps #SupplyChain #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Voldemort malware campaign utilizes Google Sheets for stealthy C2 communication</title>
-  <link>https://codedefence.in/blog/2026/05/14/voldemort-malware-google-sheets-c2-espionage-alert</link>
-  <pubDate>Thu, 14 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/14/voldemort-malware-google-sheets-c2-espionage-alert</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
-  <description><![CDATA[
-A sophisticated global espionage operation has been identified utilizing legitimate cloud productivity tools to disguise malicious command and control traffic. The campaign has successfully targeted over 70 high-value organizations across multiple industrial sectors including aerospace and transport.
-
-The malware, identified as Voldemort, initiates its infection via a malicious document that fetches a secondary payload. Once active on a system, it utilizes the @[Google](urn:li:organization:1441) Sheets API to communicate with its controllers. By writing commands to and reading instructions from specific cells in a private spreadsheet, the malware avoids detection by traditional network monitoring tools that treat traffic to Google domains as trusted.
-
-The use of legitimate cloud APIs for C2 is a strategic evolution in stealth. Because many organizations allow unfettered access to productivity suites, the malware can exfiltrate data and receive updates while blending seamlessly into the encrypted traffic of daily business operations.
-
-- Monitor for anomalous API calls to @[Google](urn:li:organization:1441) Sheets originating from unauthorized non-browser processes.
-- Implement strict application whitelisting to prevent the execution of unauthorized binaries in the %TEMP% and %APPDATA% directories.
-- Utilize behavioral analysis to detect the atypical use of cloud APIs for non-business-related data transfers.
-- Update security awareness training to highlight the risks of interacting with unsolicited documents that request the execution of macros or external scripts.
-
-When the attacker lives in the cloud, the network perimeter is no longer a viable detection boundary; defense must move to the endpoint and identity layer. #CodeDefence #Voldemort #GoogleSheets #C2 #Espionage
-  ]]></description>
-</item>
-
-<item>
-  <title>Palo Alto Networks reports surge in scanning for CVE-2026-0300 following patch release</title>
-  <link>https://codedefence.in/blog/2026/05/14/palo-alto-networks-pan-os-zero-day-post-patch-scan-surge</link>
-  <pubDate>Thu, 14 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/14/palo-alto-networks-pan-os-zero-day-post-patch-scan-surge</guid>
+  <title>LiteLLM AI gateway under active SQL injection attack to harvest master API keys</title>
+  <link>https://codedefence.in/blog/2026/05/15/litellm-ai-gateway-sql-injection-exploitation-alert</link>
+  <pubDate>Fri, 15 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/15/litellm-ai-gateway-sql-injection-exploitation-alert</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-0300</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)</cd:mentions>
+  <cd:cve>CVE-2026-42208</cd:cve>
   <description><![CDATA[
-A significant increase in automated scanning activity has been observed targeting a critical perimeter vulnerability shortly after official patches were made available. This trend underscores the collapsing window between patch release and widespread exploitation attempts by botnets and initial access brokers.
+A critical SQL injection vulnerability in a popular AI orchestration gateway is being weaponized to steal sensitive provider credentials. This flaw allows unauthenticated attackers to bypass authentication and execute unauthorized database commands, facilitating the theft of master API keys for various LLM providers.
 
-Tracked as CVE-2026-0300, the root-level RCE in the PAN-OS User-ID Authentication Portal is a high-value target for attackers. @[Palo Alto Networks](urn:li:organization:15502) issued patches yesterday, and forensic telemetry now shows thousands of unique IP addresses attempting to identify vulnerable portals. Organizations that have not yet applied the security updates or disabled the affected service are at extreme risk of unauthenticated takeover.
+Tracked as CVE-2026-42208, the vulnerability resides in the LiteLLM gateway, which acts as a central proxy for major language models. Attackers are supplying crafted input that manipulates the underlying database queries, allowing them to extract stored secrets from the gateway repository. Intelligence suggests that threat actors are prioritizing this flaw to fuel unauthorized LLM access and data scraping operations.
 
-The transition from a zero-day state to a known-vulnerability state often triggers a "race to the patch." Because the vulnerability provides root-level access to the firewall, a successful exploit grants the adversary complete control over the network edge and the ability to intercept all transit traffic.
+AI gateways are becoming single points of failure in modern cloud architectures. A compromise of the gateway grants the attacker the keys to the entire AI ecosystem of the organization, effectively bypassing individual model-level security and auditing controls.
 
-- Verify that the PAN-OS security updates for CVE-2026-0300 have been applied to every PA-Series and VM-Series firewall in the fleet.
-- Continue to restrict access to the User-ID Authentication Portal to trusted internal IP ranges to maintain a defense-in-depth posture.
-- Audit firewall logs for a surge in anomalous traffic on ports 6081 and 6082, which may indicate scanning or exploitation attempts.
-- Conduct a final forensic sweep of the firewall filesystem for any signs of unauthorized activity that may have occurred prior to patching.
+- Immediately upgrade LiteLLM to version 1.35.0 or higher to neutralize the SQL injection path.
+- Rotate all master API keys and cloud provider credentials that were managed by the LiteLLM gateway.
+- Conduct a thorough audit of the gateway database logs for anomalous queries or unauthorized data extraction attempts.
+- Implement strict input validation and utilize a Web Application Firewall ❨WAF❩ to detect and block SQL injection patterns.
 
-The release of a patch for a perimeter zero-day is not the end of the threat, but the beginning of the most intense exploitation phase. #CodeDefence #PaloAltoNetworks #PANOS #ZeroDay #PerimeterSecurity
+The security of the AI proxy is as critical as the security of the model it serves; its compromise is a total-loss event for AI identity. #CodeDefence #LiteLLM #AISecurity #SQLi #CredentialTheft
   ]]></description>
 </item>
 
