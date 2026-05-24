@@ -2,81 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 23 May 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 24 May 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 23 May 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 24 May 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 23 May 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 23 May 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 24 May 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sun, 24 May 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Langflow AI orchestration vulnerability CVE-2025-34291 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/05/23/cisa-kev-langflow-ai-orchestration-exploitation-alert</link>
-  <pubDate>Sat, 23 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/23/cisa-kev-langflow-ai-orchestration-exploitation-alert</guid>
+  <title>Critical LiteSpeed cPanel Plugin vulnerability CVE-2026-48172 exploited to gain server root</title>
+  <link>https://codedefence.in/blog/2026/05/24/litespeed-cpanel-plugin-privilege-assignment-vulnerability</link>
+  <pubDate>Sun, 24 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/24/litespeed-cpanel-plugin-privilege-assignment-vulnerability</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-34291</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-48172</cd:cve>
   <description><![CDATA[
-A critical origin validation failure vulnerability inside an artificial intelligence application development platform has been officially added to the federal inventory of actively targeted threats. The security flaw allows unauthenticated remote adversaries to execute arbitrary system code and capture master application credentials.
+A maximum severity incorrect privilege assignment vulnerability within a prominent web server plugin environment has come under active exploitation in the wild. The structural security flaw allows local authenticated web hosting users to execute arbitrary commands with the highest system-level permissions.
 
-Tracked as CVE-2025-34291, the vulnerability carries a CVSS score of 9.4 and targets the Langflow framework. The defect combines permissive cross-origin resource sharing, a lack of anti-forgery guards, and an unauthenticated execution node. Recent telemetry indicates active exploitation by state-sponsored threat groups, specifically MuddyWater, to gain a stable initial foothold inside cloud-native corporate operations.
+Tracked as CVE-2026-48172, the defect scores a maximum CVSS rating of 10.0 and impacts the LiteSpeed User-End cPanel Plugin versions between 2.3 and 2.4.4. The vulnerability involves an unsafe privilege verification sequence inside internal database management routines. By crafting specific application inputs, any user with standard account access can subvert security barriers to run shell commands as root, bypassing standard application container isolation protections entirely.
 
-Subverting an AI orchestration platform represents a severe threat to enterprise data chains. Because Langflow coordinates API secrets, model weights, and access tokens for external cloud services, a compromise at this layer permits an attacker to pivot laterally into connected SaaS ecosystems and manipulate automated data processing routines without triggering traditional host security monitors.
+The compromise of core hosting management plugins presents an extreme operational threat. Because web servers frequently host multiple separate enterprise applications, an attacker leveraging this configuration flaw can break out of a single low-privilege tenant boundary to compromise all adjacent databases, clear administrative logging directories, and establish unauthorized root persistence.
 
-- Apply the designated software upgrades issued by the vendor immediately to neutralize the unauthenticated code execution pathway.
-- Conduct an exhaustive audit of all active API tokens, model secrets, and database access strings managed within the Langflow workspace.
-- Enforce rigid network constraints to isolate AI development frameworks from direct exposure to public ingress points.
-- Analyze system traffic summaries for unusual cross-origin requests targeting the orchestration management interface.
+- Upgrade the LiteSpeed WHM Plugin immediately to version 5.3.1.0 or higher, which includes the fixed cPanel plugin version 2.4.7.
+- If immediate updates are not feasible, completely remove the user-end configuration plugin using vendor-provided terminal scripts.
+- Search server audit histories for unauthorized use of internal database interaction functions.
+- Monitor administrative groups and user assignment logs across hosting profiles for unexpected privilege changes.
 
-Securing advanced automation infrastructure requires applying Timely security upgrades to ensure parsing failures cannot be weaponized into full platform takeovers. #CodeDefence #Langflow #AISecurity #CISA #KEV
+Securing web-facing application infrastructure relies on continuous monitoring of plugin layers to ensure authorization gates cannot be manipulated for administrative privilege gains. #CodeDefence #LiteSpeed #cPanel #RootPrivileges #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>GitHub confirms exfiltration of 3,800 internal code repositories via trojanized IDE extension</title>
-  <link>https://codedefence.in/blog/2026/05/23/github-data-breach-internal-repository-exfiltration</link>
-  <pubDate>Sat, 23 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/23/github-data-breach-internal-repository-exfiltration</guid>
+  <title>Laravel Lang software translation packages poisoned in automated GitHub supply chain campaign</title>
+  <link>https://codedefence.in/blog/2026/05/24/laravel-lang-localization-packages-poisoned-supply-chain-attack</link>
+  <pubDate>Sun, 24 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/24/laravel-lang-localization-packages-poisoned-supply-chain-attack</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[GitHub](urn:li:organization:13347)</cd:mentions>
   <description><![CDATA[
-A prominent code hosting and developer services platform has confirmed an unauthorized extraction targeting its internal engineering asset repositories. The intrusion was initiated through the subversion of an employee system using a malicious modification hosted on a popular plugin marketplace.
+A sophisticated application layer supply chain compromise has infected software development environments by poisoning an open-source localization asset ecosystem. The threat actors managed to insert data-harvesting modules directly into software build tools by manipulating deployment automation configurations.
 
-The breach at GitHub was traced directly to an employee device that ingested a poisoned Visual Studio Code marketplace extension. The threat actor group, tracked as TeamPCP, successfully used this access to copy 3,800 internal repositories hosting core application components. While the platform provider has stated that customer repositories and consumer databases show no evidence of unauthorized exposure, the extracted source files are being distributed on specialized cybercrime networks.
+The attack targets the Laravel Lang localization packages used by software developers globally. Threat actors successfully gained entry to the package release pipeline to manipulate automated release version tags hosted on GitHub. This allowed the insertion of a hidden malicious function routine that triggers during software compilation, scanning local system states to capture developer credentials, internal environment variables, and proprietary source code directories.
 
-The weaponization of extension marketplaces represents an aggressive trend targeting software development cycles. By inserting a malicious package into trusted engineering workflows, attackers can bypass code-signing barriers, steal active authentication parameters from memory, and exfiltrate proprietary application architecture blueprints before detection occurs.
+The infiltration of foundational developer modules demonstrates a highly organized method to bypass traditional scanning perimeters. Because developer packages are frequently integrated into automated continuous deployment pipelines, the poisoned assets can propagate directly into corporate production environments, allowing the hidden payload to execute with the identity permissions of the hijacked development engine.
 
-- Force full validation audits across all corporate engineering workstations to check for unauthorized or untrusted plugin installations.
-- Establish strict credential rotation protocols for all cloud keys and application secrets handled via developer endpoints.
-- Transition pipeline controls to freeze external dependency pulls, forcing dependencies to validate against strict commit hashes.
-- Monitor endpoint file interaction properties for anomalous directory read actions targeting development environments.
+- Force full validation sweeps of software package dependency locks to check for anomalous version pull behaviors.
+- Transition pipeline automation configurations to pin dependencies to explicit cryptographic commit hashes rather than open tags.
+- Invalidate and rotate all enterprise keys, cloud environment secrets, and code-signing tokens managed via developer workstations.
+- Analyze continuous integration execution logs for unauthorized file extraction behaviors or unexpected external communication requests.
 
-Protecting software engineering groups requires applying strict code execution constraints across developer IDE tools to block extension-based credential harvesting. #CodeDefence #GitHub #SupplyChain #ApplicationSecurity #TeamPCP
+Software delivery security relies on applying continuous software composition analysis over external components to ensure automated release workflows are protected from unauthorized modification. #CodeDefence #Laravel #GitHub #SupplyChain #ApplicationSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Threat networks launch high-volume exploitation targeting Microsoft Defender engine flaws</title>
-  <link>https://codedefence.in/blog/2026/05/23/microsoft-defender-engine-vulnerabilities-widespread-exploitation</link>
-  <pubDate>Sat, 23 May 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/23/microsoft-defender-engine-vulnerabilities-widespread-exploitation</guid>
+  <title>Mass automated exploitation targets Drupal Core SQL Injection flaw following CISA KEV listing</title>
+  <link>https://codedefence.in/blog/2026/05/24/drupal-core-sql-injection-vulnerability-cve-2026-9082-mass-exploitation</link>
+  <pubDate>Sun, 24 May 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/05/24/drupal-core-sql-injection-vulnerability-cve-2026-9082-mass-exploitation</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-41091‚ CVE-2026-45498</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-9082</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Automated compromise campaigns have expanded significantly, targeting a newly identified logic flaw inside endpoint protective services to bypass local tracking limits. Threat actors are utilizing these techniques to systematically drop security layers on workstation assets.
+Automated scanning networks have increased significantly, targeting a highly critical content management platform security flaw recently listed by federal regulators as an active internet threat. The flaw allows remote unauthenticated actors to execute unauthorized database queries, providing a direct initial entry path into corporate environments.
 
-The vulnerabilities, tracked as CVE-2026-41091 and CVE-2026-45498, affect the Microsoft Malware Protection Engine component utilized by Microsoft Windows. The primary exploit vector relies on improper link resolution steps before parsing operations, allowing a non-privileged process to trick the high-privilege antimalware driver. Real-world exploitation is leading to engine service crashes or the initialization of command processes running with full SYSTEM authority.
+The vulnerability, tracked as CVE-2026-9082, impacts Drupal Core environments. The defect involves an input validation failure inside core database parsing layers, allowing an attacker to insert malformed parameters into standard web interaction inputs. Following its addition to the Known Exploited Vulnerabilities catalog by CISA on May 22, threat groups have integrated the exploit script into automated scanning networks to rapidly identify unpatched public applications.
 
-Executing privilege escalation maneuvers by exploiting the core protective engine is an intentional technique used to blind endpoint behavior logging. Once an attacker establishes an initial low-privilege foothold on an endpoint, they launch this link-following mechanism to stop tracking processes, tamper with active registry settings, and drop secondary malware components without creating security logs.
+Unauthenticated SQL injection vulnerabilities present in popular web management systems remain a primary target for initial access brokers. By executing arbitrary database code over the network, adversaries can alter database elements, extract administrative access structures, and deploy persistent web shell implants to maintain access while completely evading standard network boundaries.
 
-- Verify that all endpoints have received the updated Microsoft Malware Protection Engine versions 1.1.26040.8 or higher immediately.
-- Enforce strict group policy objects to limit the generation of symbolic links from unprivileged user space directory trees.
-- Monitor centralized server dashboards for unexpected or rapid agent disconnection alerts across the workstation fleet.
-- Restrict binary file operations out of temporary data folders to break the initialization phase of local privilege payloads.
+- Update affected Drupal Core web environments to the latest security patch versions provided by the platform developers immediately.
+- Enforce strict web application firewall parameters to inspect incoming queries and block malformed application data structures.
+- Analyze database logs for unusual error configurations or unexpected administrative commands originating from public network paths.
+- Audit public-facing applications to confirm that database connection permissions follow strict rules of least privilege.
 
-Endpoint protection stability depends completely on isolating the security driver from being manipulated into executing administrative privilege escalations. #CodeDefence #Microsoft #Defender #CISA #PrivilegeEscalation
+Protecting public application nodes requires rapid patch validation alongside deep input filtering to prevent core data rendering pipelines from functioning as exploitation channels. #CodeDefence #Drupal #SQLi #CISA #KEV
   ]]></description>
 </item>
 
