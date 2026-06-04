@@ -2,58 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 03 June 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 04 June 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 03 June 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 04 June 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 03 June 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 03 June 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 04 June 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 04 June 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical VMware ESXi OpenSLP heap overflow CVE-2026-38204 yields hypervisor root control</title>
-  <link>https://codedefence.in/blog/2026/06/03/vmware-esxi-openslp-heap-overflow-vulnerability-alert</link>
-  <pubDate>Wed, 03 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/03/vmware-esxi-openslp-heap-overflow-vulnerability-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-38204</cd:cve>
-  <cd:mentions>@[Broadcom](urn:li:organization:18501174)</cd:mentions>
+  <title>CISA indexes Android Framework integer overflow zero-day CVE-2025-48595 after active deployment</title>
+  <link>https://codedefence.in/blog/2026/06/04/cisa-kev-android-framework-integer-overflow-zero-day</link>
+  <pubDate>Thu, 04 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/04/cisa-kev-android-framework-integer-overflow-zero-day</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2025-48595</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical heap buffer overflow vulnerability located inside a core service discovery component of virtualization management platforms is under active wild weaponization. The security defect enables network-adjacent unauthenticated threat actors to execute arbitrary system code with root privileges directly on the underlying bare-metal operating system.
+A critical integrity validation vulnerability inside a primary mobile operating framework has been officially added to the federal repository of validated threats following targeted exploitation. The flaw enables local unauthenticated script environments to break application isolation partitions to claim elevated runtime rights.
 
-Tracked as CVE-2026-38204, the flaw impacts VMware ESXi deployment architectures. The vulnerability resides within the OpenSLP component handler, where improper input allocation length checks allow malformed packets to overwrite memory structures. Broadcom issued emergency updates to address this vector following forensic telemetry indicating targeted network tracking loops looking for exposed hypervisor management interfaces.
+Tracked as CVE-2025-48595, the security defect involves an integer overflow condition inside the main core framework component of Google Android versions 14 through 16. Discovered under limited, targeted wild exploitation, the flaw requires zero active user engagement or administrative permissions to initialize. Forensic tracking indicate advanced spyware modules are leveraging this memory bug to break system sandbox limits during automated backgrounds operations.
 
-The subversion of the core hypervisor represents an extreme threat to cloud enterprise environments. Because bare-metal hosts contain multiple isolated tenant virtual environments, an attacker gaining root-level execution on the host layer can break out of standard application containers, modify underlying datastores, and plant persistent infrastructure implants while completely evading virtual machine detection logs.
+Subverting core framework parameters provides malicious developers with a highly dependable technique to drop endpoint device tracking metrics. Once initial visibility is obtained through adjacent browser exploit hooks, this execution module permits actors to silently record system transactions, duplicate database collections, and exfiltrate credentials without generating interface warnings.
 
-- Apply the emergency software maintenance patches provided by Broadcom to all affected VMware ESXi hosts immediately.
-- Completely deactivate the OpenSLP service on ESXi nodes where service discovery parameters are not explicitly mandatory.
-- Strictly isolate hypervisor management interfaces behind highly restricted internal network segments or zero trust access gateways.
-- Review host system logs for unexpected service terminations or unusual process execution events originating from the OpenSLP daemon process.
+- Mandate immediate system patch deployment across all enterprise mobile profiles to enforce the current June 2026 update bundle.
+- Implement strict application control parameters via mobile device fleet management tools to block unverified code distribution paths.
+- Audit central asset logs for unexpected process crashes or unexplained interface modifications originating from mobile hosts.
+- Segment corporate cloud endpoints to ensure transaction verification gates validate client hardware patch compliance levels.
 
-Securing virtualization infrastructure requires timely engine upgrades alongside complete service isolation to ensure management components do not operate as initial execution vectors. #CodeDefence #VMware #ESXi #Hypervisor #RCE
+Mobile interface protection relies on applying rapid software modifications to ensure underlying subsystem routines cannot be manipulated into providing root privilege access. #CodeDefence #Google #Android #ZeroDay #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Progress MOVEit Transfer SQL injection flaw CVE-2026-40112 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/06/03/cisa-kev-progress-moveit-transfer-sql-injection-alert</link>
-  <pubDate>Wed, 03 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/03/cisa-kev-progress-moveit-transfer-sql-injection-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-40112</cd:cve>
+  <title>Honeypots log widespread scanning targeting Oracle WebLogic Server validation flaw</title>
+  <link>https://codedefence.in/blog/2026/06/04/oracle-weblogic-server-unauthenticated-exploitation-cve-2024-21182</link>
+  <pubDate>Thu, 04 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/04/oracle-weblogic-server-unauthenticated-exploitation-cve-2024-21182</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2024-21182</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:1028)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Active perimeter probing networks have increased significantly, targeting a core middleware security flaw recently added to the national registry of validated internet threats. The vulnerability allows unauthenticated remote actors to pass structured protocol packets directly to vulnerable application nodes to intercept environments variables.
+
+The defect, tracked as CVE-2024-21182, impacts Oracle WebLogic Server modules within standard enterprise application hosting perimeters. By crafting specialized communications strings utilizing the T3 or IIOP protocol routes, an attacker can bypass central validation gates. Following its inclusion into the KEV index by CISA, automated initial access networks are actively mapping public-facing portals to execute unauthorized data extraction commands.
+
+Middleware components that manage back-end enterprise workflows remain preferred objectives for cybercrime and data extortion groups. Gaining unauthenticated visibility into the orchestration tier allows an adversary to capture database access keys, extract environment tokens, and establish stable footholds to facilitate follow-on horizontal penetration maneuvers across connected Active Directory systems.
+
+- Verify the immediate deployment of the designated platform security maintenance packages across all WebLogic hosting nodes.
+- Configure enterprise perimeter firewalls to actively filter and block unauthorized inbound T3 and IIOP protocol requests.
+- Scan application audit trails for atypical server connection records or unexpected database compilation anomalies.
+- Restrict middleware host environments to operate under strict configurations of least privilege to isolate underlying directory systems.
+
+Protecting internal network fabrics requires constant version alignment alongside network filtering parameters to ensure central application nodes do not serve as unauthorized entry channels. #CodeDefence #Oracle #WebLogic #CISA #KEV #VulnerabilityManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>Intrusion networks weaponize Linux Kernel cgroups privilege escalation vector CVE-2022-0492</title>
+  <link>https://codedefence.in/blog/2026/06/04/linux-kernel-cgroups-container-escape-exploitation</link>
+  <pubDate>Thu, 04 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/04/linux-kernel-cgroups-container-escape-exploitation</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2022-0492</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A newly documented input validation flaw present inside a dominant managed file transfer software platform has been officially added to the federal directory of validated threats following mass exploitation. The vulnerability permits remote unauthenticated actors to pass malformed parameters directly to database backends over web application layers.
+Advanced compromise clusters are actively weaponizing a structural privilege management vulnerability inside core infrastructure systems to break runtime sandbox barriers. Attackers are deploying specialized configuration updates inside containerized workloads to claim root execution rights on underlying bare-metal machines.
 
-The vulnerability, tracked as CVE-2026-40112, impacts Progress MOVEit Transfer web interfaces. By structuring malicious parameters within incoming HTTP request structures, attackers can manipulate backend database query structures to completely bypass authentication gates. Following its indexing into the Known Exploited Vulnerabilities catalog by CISA, automated script sets have been logged launching targeted mass sweeps to exfiltrate enterprise information archives.
+The vulnerability, tracked as CVE-2022-0492, targets the cgroups v1 release-agent parsing routine across multiple legacy Linux kernel lines. The logic defect stems from insufficient authorization validation steps during system write tasks, permitting local authenticated container processes with high-level runtime capabilities to bypass namespace isolation maps. CISA highlighted this active weaponization by indexing the flaw into the national directory of confirmed threats.
 
-Compromising a centralized file transfer engine represents a primary objective for data extortion and ransomware cells. Gaining unauthenticated database modification privileges enables adversaries to extract corporate documentation stores, insert administrative accounts, and download global configuration profiles while evading traditional border firewalls.
+Subverting logical container boundaries represents an immediate threat to modern cloud infrastructure architectures. Once initial low-privilege visibility is established on a containerized service via application web defects, threat networks launch this release-agent manipulation payload to escape the sandbox entirely, compromise the host architecture, and gain unmonitored tracking over all adjacent tenant configurations.
 
-- Update affected MOVEit Transfer environments to the current secure version levels provided by the product manufacturer instantly.
-- Configure enterprise web application firewalls to inspect incoming parameters and block structural database manipulation strings.
-- Audit database access transaction logs for anomalous query histories or unexpected bulk extraction requests.
-- Restrict file transfer application system processes to run under strict guidelines of least privilege over storage folders.
+- Update container environment operating systems to verified secure kernel release tiers provided by the platform distributor immediately.
+- Enforce strict container isolation rules, ensuring that workloads are explicitly blocked from running under privileged status flags.
+- Monitor host behavior readouts for unusual file creation sequences targeting the core cgroups release agent directory fields.
+- Utilize automated compliance metrics to identify and eliminate misconfigured containers operating with broad capability permissions.
 
-Protecting data translation environments requires rapid patch verification paired with rigid input parsing filters to guarantee public-facing components cannot be subverted for systemic data theft. #CodeDefence #Progress #MOVEit #SQLi #CISA #KEV
+Cloud cluster resilience relies on maintaining strict operational boundaries to ensure localized container workloads cannot manipulate core kernel subsystems to secure administrative host takeovers. #CodeDefence #Linux #Kernel #ContainerEscape #CloudSecurity #CISA
   ]]></description>
 </item>
 
