@@ -2,82 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 15 June 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 16 June 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 15 June 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 16 June 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 15 June 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Mon, 15 June 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Tue, 16 June 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Tue, 16 June 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Active scanning targets Splunk Enterprise unauthenticated sidecar vulnerability CVE-2026-20253</title>
-  <link>https://codedefence.in/blog/2026/06/15/splunk-enterprise-sidecar-unauthenticated-rce-active-exploitation</link>
-  <pubDate>Mon, 15 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/15/splunk-enterprise-sidecar-unauthenticated-rce-active-exploitation</guid>
+  <title>CISA adds critical Cisco Catalyst SD-WAN Manager path traversal bug CVE-2026-20262 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/06/16/cisa-kev-cisco-catalyst-sdwan-manager-path-traversal-weaponization</link>
+  <pubDate>Tue, 16 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/16/cisa-kev-cisco-catalyst-sdwan-manager-path-traversal-weaponization</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20253</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
+  <cd:cve>CVE-2026-20262</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical unauthenticated input validation vulnerability located within a secondary data collation module of a dominant enterprise logging suite is undergoing active wild target profiling. The defect permits remote network-reachable threat actors to initiate unauthorized file operations and execute raw background terminal commands without supplying validation tokens.
+A critical input mapping vulnerability located within a dominant software-defined edge networking orchestrator has been officially indexed into the federal registry of actively targeted threats. The flaw enables remote unauthenticated actors to bypass logical system boundaries and view or overwrite configuration files on the management plane.
 
-The vulnerability, tracked as CVE-2026-20253, impacts local on-premises instances of Splunk Enterprise running versions 10.0.x up to 10.0.6, and 10.2.x prior to 10.2.4. The bug stems from a total lack of access control rules on an underlying internal PostgreSQL sidecar service daemon. Because this port answers directly to unverified network socket inquiries, an attacker can format specialized transaction packets to write malformed variables, override structural directory properties, and trigger arbitrary local code loops. Splunk, now a subsidiary of Cisco, noted that cloud-managed boundaries remain unaffected due to isolated deployment properties.
+Tracked as CVE-2026-20262, the vulnerability impacts Cisco Catalyst SD-WAN Manager deployment panels. The underlying defect involves a conceptual failure to sanitize user-supplied directory path parameters within web request parsing routines. Following formal verification of wild exploitation by CISA, automated intrusion networks are actively sweeping public network borders to map exposed control nodes and modify file contents.
 
-Subverting a central log collation architecture represents an extreme hazard for enterprise environments. Because analytics frameworks consolidate sensitive configuration variables, system directories, and authentication secrets from across the entire network, a compromise at this layer lets adversaries erase historical network logs, hide ongoing data exfiltration campaigns, and position malicious scripts to move laterally into connected Active Directory environments.
+Subverting a centralized routing coordination node represents a severe hazard to enterprise wide area networks. By gaining unauthorized directory read and write capabilities over the control plane, threat groups can extract internal access records, insert rogue endpoint nodes, and disrupt encrypted communication channels across downstream branches without triggering traditional security firewall logs.
 
-- Force immediate platform modifications to deploy Splunk Enterprise update versions 10.0.7 or 10.2.4 across all instances.
-- Configure local network infrastructure rules to explicitly block external public paths from reaching internal sidecar database ports.
-- Review database query histories to detect unusual file modifications or atypical binary writes originating from unrecognized nodes.
-- Enforce rigid host-level application rules to ensure logging management accounts operate without generalized write privileges.
+- Isolate all public-facing Catalyst SD-WAN Manager panels behind highly restricted local subnets or zero trust access gateways immediately.
+- Deploy the current firmware update tracks and security hotfixes provided by the manufacturer to close the path parsing omission.
+- Conduct an exhaustive forensic audit of management interfaces for malformed dot-dot-slash parameter sequences inside web request records.
+- Enforce strict continuous diagnostics checks over edge network filesystems to flag unauthorized modifications to system maps.
 
-Data auditing boundaries depend completely on applying rapid patch verification to ensure that central monitoring engines are protected from unauthenticated remote script exploitation. #CodeDefence #Splunk #Cisco #RCE #LogAnalytics #DatabaseSecurity
+Perimeter resilience relies on the continuous application of update parameters to ensure core routing orchestrators are protected from unauthenticated folder manipulation scripts. #CodeDefence #Cisco #SDWAN #PathTraversal #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Threat networks exploit Palo Alto Networks PAN-OS GlobalProtect portal authentication bypass flaw</title>
-  <link>https://codedefence.in/blog/2026/06/15/palo-alto-networks-pan-os-globalprotect-portal-authentication-bypass</link>
-  <pubDate>Mon, 15 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/15/palo-alto-networks-pan-os-globalprotect-portal-authentication-bypass</guid>
+  <title>LiteSpeed cPanel plugin UNIX symlink following vulnerability CVE-2026-54420 weaponized for local root escalation</title>
+  <link>https://codedefence.in/blog/2026/06/16/litespeed-cpanel-plugin-symlink-following-privilege-escalation</link>
+  <pubDate>Tue, 16 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/16/litespeed-cpanel-plugin-symlink-following-privilege-escalation</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-0257</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15502)</cd:mentions>
-  <description><![CDATA[
-Active intrusion campaigns have expanded significantly, leveraging a validation failure within edge network routing platforms to instantiate unauthorized virtual private network connections. Threat actors are utilizing specialized configuration requests to bypass identity gates and plant persistent ingress points on exposed gateways.
-
-Tracked as CVE-2026-0257, the flaw impacts PAN-OS software installations where GlobalProtect portal or gateway features are operational. The logic error resides inside the processing of authentication override cookies. By submitting malformed request parameters to public-facing portals, an unauthenticated remote adversary can trick the verification engine into recognizing the session state, enabling them to spawn a valid tunnel without presenting user password credentials. Real-world target scanning has successfully pinpointed exposed boundaries to forge persistent network paths.
-
-Subverting a primary remote access gateway allows threat groups to completely bypass perimeter filters. Once an unauthenticated attacker achieves internal visibility via a forged tunnel session, they can route traffic deeper into local networks, map critical data perimeters, and perform post-exploitation scouting maneuvers while masquerading as a validated remote worker.
-
-- Apply the immediate system hotfixes and cumulative patch distributions provided by Palo Alto Networks to all firewall assets.
-- Audit perimeter routing configurations to isolate and update gateway instances that rely on authentication override cookies.
-- Scan network connection logs for anomalous session lengths or unexpected tunnel allocations originating from unknown destination nodes.
-- Supplement perimeter entry filters by gating remote connection vectors behind multi-factor authentication checkpoints that remain independent of token persistence.
-
-Perimeter security models rely on rapid software adjustments to ensure remote access engines are protected from unauthenticated authentication bypass maneuvers. #CodeDefence #PaloAltoNetworks #GlobalProtect #PANOS #VPN #AuthBypass
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA issues strict patching requirements for Ivanti Sentry OS command injection bug CVE-2026-10520</title>
-  <link>https://codedefence.in/blog/2026/06/15/cisa-kev-ivanti-sentry-os-command-injection-remediation-mandate</link>
-  <pubDate>Mon, 15 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/15/cisa-kev-ivanti-sentry-os-command-injection-remediation-mandate</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-10520</cd:cve>
+  <cd:cve>CVE-2026-54420</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cyber security regulators have enforced tight compliance schedules following increased wild weaponization of a critical operating system command injection vulnerability targeting boundary gateway access controllers. The urgency confirms that automated threat networks are actively using the defect to break enterprise perimeters.
+Active compromise campaigns are aggressively targeting an operational privilege boundary weakness within web hosting infrastructure to achieve total host takeovers. The exploit leverages a failure in local resource pointer validation to force high-privilege operations to execute actions across unverified files.
 
-The vulnerability, tracked as CVE-2026-10520, impacts Ivanti Sentry platforms configured as authentication filters for corporate mobile management suites. The error stems from an input sanitization failure within core administrative command parsing subroutines, allowing external network traffic to drop execution filters during authorization steps. Following its indexing into the Known Exploited Vulnerabilities catalog by CISA, automated script arrays have been logged conducting rapid sweeps to plant persistent web backdoors on unpatched endpoints.
+The vulnerability, tracked as CVE-2026-54420, impacts LiteSpeed cPanel user-end plugin versions prior to 2.4.8 on shared hosting architectures. The bug involves a UNIX symbolic link following weakness inside certificate and user sizing routines. Threat actors who have already secured low-privilege footholds via compromised FTP accounts or localized web shells are creating malformed symbolic link pointers to trick the root-level plugin handler into running commands outside user cages, granting immediate root capabilities. Following a surge in shared hosting breaches, CISA added this threat vector to the national catalog of validated threats.
 
-Bypassing perimeter authentication gates via operating system injections presents an immediate corporate defense risk. Attackers leveraging this weakness can execute arbitrary code scripts with root permissions on the gateway appliance, enabling them to clear device configuration records, copy unencrypted data traffic, and map covert lateral tunneling pathways to penetrate adjacent internal server subnets.
+Exploiting link validation flaws inside shared service plugins represents a highly reliable method for executing post-exploitation escapes. Once an attacker is placed on a shared server node, they can deploy this technique to cross tenant isolation barriers, dump adjacent customer databases, harvest plaintext credentials, and mask logging logs.
 
-- Upgrade all affected Ivanti Sentry installations to current secure firmware release tiers provided by the manufacturer instantly.
-- Separate the gateway administrative interface panel from public network visibility, routing control visibility through trusted internal blocks.
-- Inspect gateway event logs for malformed parameter structures or unexpected string injection vectors matching the exploit profile.
-- Execute comprehensive retroactive compliance sweeps across connected internal subnets to verify that no lateral tracking loops were spawned.
+- Force an immediate update of the LiteSpeed cPanel user-end plugin components to version 2.4.8 or higher across all web servers.
+- Execute the designated system grep commands supplied in the advisory to parse web logs for malicious jsonapi function inputs.
+- Restrict unprivileged local users from establishing symbolic links targeting system administrative resource files.
+- Audit host process behaviors for unexpected shell terminals spawned with root privileges originating from web server accounts.
 
-Perimeter asset safety relies on the rapid execution of software updates to guarantee that localized configuration verification weaknesses cannot be manipulated for administrative device takeovers. #CodeDefence #Ivanti #Sentry #CommandInjection #CISA #KEV #VulnerabilityManagement
+Web infrastructure security relies on enforcing absolute privilege boundaries to ensure auxiliary hosting plugins cannot be manipulated into providing local root capabilities. #CodeDefence #LiteSpeed #cPanel #Symlink #PrivilegeEscalation #CISA #KEV
   ]]></description>
 </item>
 
