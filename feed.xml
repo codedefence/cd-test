@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 24 June 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 25 June 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 24 June 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 25 June 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 24 June 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 24 June 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 25 June 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 25 June 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Cordyceps CI/CD vulnerabilities expose 300 plus high impact enterprise GitHub repositories to supply chain injection</title>
-  <link>https://codedefence.in/blog/2026/06/24/cordyceps-cicd-vulnerabilities-compromise-enterprise-github-repositories</link>
-  <pubDate>Wed, 24 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/24/cordyceps-cicd-vulnerabilities-compromise-enterprise-github-repositories</guid>
+  <title>CISA warns of active root command injection exploitation targeting Lantronix EDS5000 series CVE-2025-67038</title>
+  <link>https://codedefence.in/blog/2026/06/25/cisa-warns-lantronix-eds5000-root-command-injection-exploitation</link>
+  <pubDate>Thu, 25 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/25/cisa-warns-lantronix-eds5000-root-command-injection-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GitHub](urn:li:organization:13347)‚ @[Microsoft](urn:li:organization:1035)‚ @[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:cve>CVE-2025-67038</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical architectural flaw within automated continuous integration pipelines has been discovered, enabling unauthenticated remote actors to hijack development workflows and execute unauthorized changes. The exploit layout lets an unprivileged threat profile subvert approval logic partitions to inject malformed code configurations into upstream repositories.
+A critical code injection vulnerability located within a widely deployed serial-to-IP terminal service array is undergoing active real-world weaponization, prompting immediate remediation mandates across network boundaries. The flaw permits remote unauthenticated actors to pass specialized string parameters to subvert system logging subroutines and execute arbitrary operating system commands with elevated privileges.
 
-The structural vulnerability, identified by Novee Security researchers under the code name Cordyceps, affects more than 300 high-impact production spaces across GitHub. The issue centers on a logic omission within specific automated verification actions where external pull requests can inherit pipeline permissions. By sending structured requests, an unauthenticated user can trick the automation loop into bypass approval checkpoints, providing a functional vehicle to drop unauthorized modifications and harvest sensitive verification environment keys.
+The security vulnerability, tracked as CVE-2025-67038, carries a CVSS score of 9.8 and impacts Lantronix EDS5000 Series hardware converters. The defect resides inside the HTTP RPC authentication module, which automatically processes a local shell instruction to write audit data whenever an access step fails. Because the application logic concatenates the user-supplied username string directly into the command line without sanitization filters, an attacker can insert shell execution sequences into the login window to instantly claim root privileges. The exposure was mapped by Forescout Research as part of the broader BRIDGE:BREAK threat set.
 
-Subverting development infrastructure pipelines presents a catastrophic threat to software supply chains. Because corporate compilation servers maintain broad trust settings across cloud environments, a compromise at this layer permits adversaries to publish backdoored distribution builds, leak application source archives, and steal deployment secrets without modifying developer desktop stations.
+Subverting a hardware converter at the industrial boundary layer introduces an immediate persistence mechanism for operational technology networks. Because serial-to-IP controllers translate traffic lines between core industrial endpoints and general corporate local area segments, a root-level appliance takeover lets an adversary monitor internal transaction streams, intercept raw diagnostic signals, and establish persistent backdoors into protected staging networks.
 
-- Restrict pull request validation configurations to prevent untrusted external branches from triggering privileged automated actions.
-- Audit central code storage spaces to verify that no automated approvals or signature checks were bypassed by external commits.
-- Transition pipeline automation keys to short-lived token assignments to limit exposure boundaries if integration assets leak.
-- Pin third-party build elements to exact cryptographic versions to stop automated environments from quietly downloading modified files.
+- Isolate all exposed Lantronix device management interfaces from open public internet routing paths immediately.
+- Apply the current firmware updates and security hotfixes provided by the manufacturer before the federal deadline.
+- Scan network connection records for anomalous authentication failure streams containing command punctuation marks inside username fields.
+- Restrict remote management interactions to trusted local management zones protected by strict access filters.
 
-Ecosystem pipeline security relies on applying strict zero trust verification gates over automated compilation suites to ensure external code actions cannot subverted corporate execution boundaries. #CodeDefence #GitHub #Cordyceps #SupplyChain #DevSecOps #CI_CD
+Boundary hardware protection depends on applying deep input sanitization rules to guarantee that administrative logging mechanisms cannot be subverted for automated operating system takeovers. #CodeDefence #Lantronix #BRIDGEBREAK #CommandInjection #CISA #KEV #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Cisco Unified Communications Manager targeted in the wild via remote file write vulnerability CVE-2026-20230</title>
-  <link>https://codedefence.in/blog/2026/06/24/cisco-unified-communications-manager-file-write-exploitation</link>
-  <pubDate>Wed, 24 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/24/cisco-unified-communications-manager-file-write-exploitation</guid>
+  <title>Cisco Unified Communications Manager hit by automated web shell campaigns abusing WebDialer SSRF CVE-2026-20230</title>
+  <link>https://codedefence.in/blog/2026/06/25/cisco-unified-cm-webdialer-ssrf-vulnerability-drops-webshells</link>
+  <pubDate>Thu, 25 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/25/cisco-unified-cm-webdialer-ssrf-vulnerability-drops-webshells</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2026-20230</cd:cve>
   <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
   <description><![CDATA[
-Active perimeter monitoring networks have logged real-world weaponization attempts targeting a prominent telecommunications control gateway. The underlying flaw allows unauthenticated remote adversaries to pass structured HTTP request packets over network channels to perform unauthorized storage modifications.
+Automated scanning networks operating over anonymized proxy lines have initiated aggressive wild exploitation targeting an enterprise-grade communications hub following the public release of functional exploit code. The flaw enables remote unauthenticated attackers to manipulate application input checks to write files to underlying directories.
 
-The vulnerability, tracked as CVE-2026-20230, affects Cisco Unified Communications Manager and Unified CM Session Management Edition appliances. The security defect stems from an input validation omission that facilitates server-side request forgery vectors. Forensic logs show threat groups utilizing functional public exploit code to write unverified system configuration items into core folders, giving the attacker a direct vehicle to elevate standard low-privilege application sessions into full system root privileges.
+Tracked as CVE-2026-20230, the vulnerability affects Cisco Unified Communications Manager and Unified CM Session Management Edition. The exploit chain, validated by threat tracking honeypots, abuses a server-side request forgery vulnerability inside the WebDialer application module. Attackers route specially structured HTTP packets to trigger the installation of an unauthorized Apache Axis system process, which is subsequently manipulated to write a first-stage JSP file harvester and plant a second-stage command shell inside the platform services repository. Gaining this footprint lets attackers execute code strings later to elevate to root.
 
-Compromising a centralized unified communications appliance allows initial access brokers to secure an unmonitored foothold within corporate core subnets. Threat operators can leverage control of the signaling interface host to map underlying infrastructure directories, copy communication data files, and coordinate horizontal pivot maneuvers targeting connected data storage setups.
+Compromising a primary corporate telephony and call routing core provides initial access brokers with a highly privileged foothold. Adversaries can leverage control of the communications server to map internal directory structures, capture network transactions, and position secondary malware payloads targeting adjacent engineering workstations while avoiding standard edge log detection filters.
 
-- Upgrade all active unified communications server devices to the current verified secure release versions provided by Cisco immediately.
-- Enforce rigid network filtering rules to isolate telecommunications management interfaces from public routing fields.
-- Analyze access dashboard summaries for unusual HTTP request strings or malformed parameters indicating application exploitation loops.
-- Review host file directories to locate and remove any unauthorized system additions created during the exposure window.
+- Update affected Unified CM platforms immediately to the current secure maintenance releases provided by Cisco.
+- Disable the WebDialer service component across all installations if it is not an absolute operational requirement.
+- Monitor server transaction logs for unexpected application creations or malformed request chains routing through Axis pathways.
+- Audit web directory roots to locate and delete any unverified JSP files or unexpected file modification events.
 
-Perimeter asset resilience relies on the rapid execution of software modifications to guarantee that network communication controllers are completely protected from unauthenticated script manipulation. #CodeDefence #Cisco #UnifiedCM #SSRF #PrivilegeEscalation #AppSec
+Communications array protection relies on prompt patch application combined with service-level isolation to ensure that interactive web components cannot serve as automated initial access paths. #CodeDefence #Cisco #UnifiedCM #SSRF #Webshell #AppSec #PatchNow
   ]]></description>
 </item>
 
 <item>
-  <title>CISA issues strict compliance deadline for actively exploited Splunk Enterprise sidecar vulnerability CVE-2026-20253</title>
-  <link>https://codedefence.in/blog/2026/06/24/cisa-orders-remediation-for-splunk-enterprise-sidecar-vulnerability</link>
-  <pubDate>Wed, 24 June 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/24/cisa-orders-remediation-for-splunk-enterprise-sidecar-vulnerability</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20253</cd:cve>
-  <cd:mentions>@[Splunk](urn:li:organization:1205)‚ @[CISA](urn:li:organization:13010360)‚ @[Cisco](urn:li:organization:1063)</cd:mentions>
+  <title>Ubiquiti UniFi OS exploit chain actively weaponized by threat actors to deliver commodity malware</title>
+  <link>https://codedefence.in/blog/2026/06/25/ubiquiti-unifi-os-exploit-chain-delivers-commodity-malware</link>
+  <pubDate>Thu, 25 June 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/06/25/ubiquiti-unifi-os-exploit-chain-delivers-commodity-malware</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Ubiquiti](urn:li:organization:2455580)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cyber security regulators have enforced tight remediation timelines following a major spike in wild exploitation targeting a critical access flaw inside core event indexing systems. The update directive orders administrative groups to verify the absolute enclosure of unauthenticated interfaces to protect log processing nodes from command insertion.
+Active intrusion clusters have successfully weaponized a multi-vulnerability exploit chain inside a prominent device management ecosystem to achieve remote code execution. The attack layout lets unauthenticated network actors chain input check errors and folder traversal weaknesses to enforce systemic configuration modifications.
 
-The vulnerability, tracked as CVE-2026-20253, impacts local on-premises installations of Splunk Enterprise environments where data engines rely on integrated sidecar sub-processes. The defect involves a missing authentication filter inside an auxiliary PostgreSQL database sidecar service endpoint, letting any network-reachable user invoke file operations without presenting verification keys. Following active target scanning logs, CISA indexed the flaw under Binding Operational Directive 26-04 parameters to mitigate risks to the federal cloud enterprise.
+The exploit chain compromises multiple core modules of Ubiquiti UniFi OS, combining CVE-2026-34908, CVE-2026-34909, and CVE-2026-34910. Incident tracking logs confirm that threat networks are utilizing this validation sequence to break out of tenant partitions, read sensitive localized files, and drop commodity malware families. Following widespread documentation of in-the-wild exploitation, federal authorities formalized the addition of these entries into national vulnerability registries.
 
-Subverting a centralized security log management engine creates extreme hazards for corporate perimeter tracking frameworks. Because analytics applications merge sensitive infrastructure configurations, environment tokens, and tracking trails from all internal directories, an unauthenticated asset takeover permits threat actors to delete operational logs, hide concurrent data exfiltration tasks, and secure terminal control.
+Subverting a centralized network console architecture exposes all attached downstream network nodes to horizontal manipulation. Once an adversary claims administrative command execution on the management appliance, they can alter network isolation parameters, capture configuration metadata collections, and route secondary infection runs against connected internal hosts.
 
-- Force immediate system adjustments to migrate local Splunk Enterprise assets to release versions 10.0.7 or 10.2.4 or higher.
-- Apply strict host firewall controls to block external public communication routes from reaching the internal database sidecar ports.
-- Review database interaction summaries to identify anomalous file truncation events or unexpected configuration modifications.
-- Implement structured continuous diagnostics loops to isolate historical log infrastructure from open public access zones.
+- Upgrade affected UniFi OS console environments to current secure firmware levels supplied by the platform developer.
+- Review administrative account manifests to identify and eliminate any unauthorized profile additions or parameter modifications.
+- Deploy strict access control rules to isolate network controller dashboards from open untrusted network blocks.
+- Monitor endpoint behavioral metrics for unexpected external file retrievals or anomalous background terminal triggers.
 
-Data protection boundaries rely on rapid patch validation to ensure that foundational log analytics engines are completely shielded from automated remote code execution scripts. #CodeDefence #Splunk #Cisco #CISA #KEV #AuthenticationBypass #LogAnalytics
+Management plane resilience depends on the rapid installation of system upgrades to ensure that interconnected administrative panels cannot be subverted for automated malware delivery campaigns. #CodeDefence #Ubiquiti #UniFi #RCE #PathTraversal #MalwareDelivery #CISA #KEV
   ]]></description>
 </item>
 
