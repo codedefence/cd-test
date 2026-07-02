@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 01 July 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 02 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 01 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 02 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 01 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 01 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 02 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Adobe patches seven maximum severity CVSS 10.0 flaws across enterprise ColdFusion architectures</title>
-  <link>https://codedefence.in/blog/2026/07/01/adobe-coldfusion-maximum-severity-vulnerabilities-patched</link>
-  <pubDate>Wed, 01 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/01/adobe-coldfusion-maximum-severity-vulnerabilities-patched</guid>
+  <title>CISA adds Microsoft SharePoint Server deserialization RCE flaw CVE-2026-45659 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/02/cisa-kev-microsoft-sharepoint-server-deserialization-vulnerability</link>
+  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/cisa-kev-microsoft-sharepoint-server-deserialization-vulnerability</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-45659</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+A critical deserialization of untrusted data vulnerability located within a dominant enterprise document coordination and collaboration suite has been formally indexed into the federal registry of actively targeted threats. The flaw enables authenticated remote network actors to bypass standard permission filters to run arbitrary system code directly on the application server.
+
+The security vulnerability, tracked as CVE-2026-45659, impacts Microsoft SharePoint Server environments, including Subscription Edition, SharePoint Server 2019, and SharePoint Enterprise Server 2016. The underlying issue involves a data handling failure when parsing serialized application inputs. Because the interface fails to securely evaluate incoming object matrices, an authenticated user with minimum Site Member access rights can submit malformed parameters over network links to trigger the execution of untrusted code arrays without requiring administrative approval keys. Threat tracking reports confirm that extortion networks, including the Storm-2603 ransomware group, are actively abusing this vector to secure network footholds.
+
+Subverting a centralized collaboration server introduces severe security hazards across corporate networks. Because SharePoint deployments maintain deep integration hooks into internal directory systems, user access repositories, and corporate document storage backends, a successful exploitation loop lets an adversary extract intellectual property, map adjacent network infrastructure paths, and position persistent backdoors while masking actions behind valid user contexts.
+
+- Force immediate deployment of the security updates and cumulative patches supplied by Microsoft to all SharePoint instances.
+- Apply strict risk-prioritization rules under Binding Operational Directive 26-04 to insulate internal collaboration nodes within three days.
+- Audit server operational summaries for unexpected application errors or atypical file inclusions tracing to web.config structures.
+- Monitor access profiles for unusual document access behaviors or unauthorized domain administrator creations.
+
+Data framework protection relies on prompt patch application combined with continuous access monitoring to guarantee that internal collaboration platforms are completely protected from unauthenticated script manipulation. #CodeDefence #Microsoft #SharePoint #RCE #Deserialization #CISA #KEV
+  ]]></description>
+</item>
+
+<item>
+  <title>Adobe releases out of band patches for eleven critical ColdFusion unauthenticated remote execution flaws</title>
+  <link>https://codedefence.in/blog/2026/07/02/adobe-coldfusion-emergency-patches-unauthenticated-rce</link>
+  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/adobe-coldfusion-emergency-patches-unauthenticated-rce</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-48276‚ CVE-2026-48283</cd:cve>
   <cd:mentions>@[Adobe](urn:li:organization:1481)</cd:mentions>
   <description><![CDATA[
-A series of critical unauthenticated input validation and file system handling errors inside a dominant enterprise application environment have been resolved, stopping threat networks from running arbitrary code strings. The vulnerabilities permit remote attackers to submit custom web parameters to upload malicious executable files or access sensitive platform directories without providing identity validation tokens.
+Critical validation failures and missing input sanitization logic inside a primary web application development environment have forced the distribution of out-of-band software enhancements. The defects permit remote unauthenticated adversaries to submit malformed configuration requests to bypass identity gates and run background commands.
 
-The vulnerabilities carry maximum severity metrics of 10.0 and impact Adobe ColdFusion 2023 and ColdFusion 2025 deployment builds. The defects involve a failure to sanitize input parameters during file processing operations, leading to dangerous folder traversal paths and unrestricted file uploads. Forensic analysis shows automated intrusion clusters checking public web servers to spot unpatched application components and insert web shells.
+The patch distribution addresses 11 critical vulnerabilities impacting Adobe ColdFusion 2023 and ColdFusion 2025 deployment builds, with six flaws carrying the maximum CVSS score of 10.0. The core defects involve a complete lack of validation rules over file ingestion endpoints, leading to unrestricted file uploads and dangerous directory traversal pathways. Automated scanning loops are actively probing public facing systems to identify unpatched application instances and plant persistent web shell backdoors.
 
-Subverting an enterprise web deployment platform presents an extreme risk to underlying business directories. Because application servers connect directly with internal network partitions and core customer repositories, an unauthenticated takeover lets adversaries siphon intellectual property data sets, alter configuration items, and establish lateral tunneling roots to bypass perimeter security rules.
+Allowing unauthenticated file write privileges on an application tier represents a severe threat to the corporate perimeter. Because web hosting servers bridge external public paths with internal database structures, an unauthenticated takeover lets threat groups capture configuration metadata collections, erase logging histories, and establish horizontal pivoting tracks targeting connected database segments.
 
-- Upgrade affected web services to ColdFusion 2023 Update 21 or ColdFusion 2025 Update 10 immediately.
-- Enforce rigid content filtering rules to ensure the application runtime environment operates with restricted file write permissions.
-- Scan application directories for unexpected or newly added files containing hazardous extensions.
-- Limit access channels to administrative dashboards, routing visibility exclusively through trusted internal zones.
+- Update affected web processing assets to ColdFusion 2023 Update 21 or ColdFusion 2025 Update 10 immediately.
+- Enforce strict runtime constraints to ensure the web server application accounts operate without active write privileges over executable paths.
+- Scan application directory roots to locate and remove any unexpected files containing unauthorized script signatures.
+- Separate development administrative interfaces from open internet routing ranges, keeping control panels gated behind local segments.
 
-Web application protection depends on the rapid validation of software maintenance packages to ensure that interactive web deployment suites are shielded from automated file modification tools. #CodeDefence #Adobe #ColdFusion #RCE #AppSec #VulnerabilityManagement
+Application layer protection relies on rapid software update execution to ensure that interactive web deployment frameworks are shielded from automated file modification payloads. #CodeDefence #Adobe #ColdFusion #RCE #AppSec #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Citrix NetScaler infrastructure updates resolve critical data read and denial of service flaws</title>
-  <link>https://codedefence.in/blog/2026/07/01/citrix-netscaler-adc-gateway-security-updates</link>
-  <pubDate>Wed, 01 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/01/citrix-netscaler-adc-gateway-security-updates</guid>
+  <title>Ransomware syndicates target Windows BlueHammer privilege escalation vulnerability CVE-2026-33825</title>
+  <link>https://codedefence.in/blog/2026/07/02/windows-bluehammer-vulnerability-actively-exploited-by-ransomware</link>
+  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/windows-bluehammer-vulnerability-actively-exploited-by-ransomware</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-8451</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:5305)</cd:mentions>
+  <cd:cve>CVE-2026-33825</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Critical validation omissions inside an edge network delivery controller and gateway platform have driven the distribution of software updates to close data disclosure paths. The defects permit remote unauthenticated network adversaries to parse malformed interaction packages to view internal configuration items or crash service boundaries.
+Active intrusion networks have scaled up real-world deployment of local privilege escalation exploits targeting workstation protection architectures. Threat actors are utilizing functional public exploit blocks to subvert core identity files and acquire complete system takeover permissions.
 
-The vulnerabilities affect NetScaler ADC and NetScaler Gateway appliance setups. Tracked within security reports as CVE-2026-8451, the core flaw involves an improper input validation error inside administrative communication interfaces. Exploitation groups are utilizing public tracking sequences to locate exposed systems and execute arbitrary file reads to collect operational configurations.
+The vulnerability, tracked as CVE-2026-33825 and named BlueHammer, impacts Microsoft Windows endpoint configurations. Initially leaked by a researcher as a zero-day vector, the flaw involves a local validation failure within security components. Incident response logs confirm that hands-on-keyboard extortion groups are actively weaponizing this flaw on unpatched machines to access the local Security Account Manager database, copy stored password hashes, and spawn terminal shells with full SYSTEM rights.
 
-Compromising a border routing gateway isolates defensive visibility over corporate access lines. Because load balancing systems manage initial connection rules and validate identities before mapping traffic to interior database instances, an unauthenticated breakout lets threat networks gather perimeter secrets, bypass multi factor tools, and establish unmonitored entry tunnels.
+Bypassing local privilege filters allows threat groups to disable security monitoring tools and execute ransomware loops. Once an attacker elevates their session context to SYSTEM privileges, they completely override endpoint protection rules, deploy malicious encryption drivers, and wipe system event logs to complicate forensic triage steps.
 
-- Deploy the current firmware modifications and system patches provided by Citrix to all gateway nodes instantly.
-- Restrict remote management dashboard ingress paths, gating control configuration views inside isolated enterprise zones.
-- Review transaction event history pools to pinpoint unusual directory read volumes or malformed query string records.
-- Implement comprehensive network scanning parameters to ensure backup gateways are fully updated before exposure waves hit.
+- Conduct an immediate cross-reference sweep to verify that all Windows endpoints have applied the April 2026 patch distribution updates.
+- Monitor endpoint protective dashboards for unexpected terminal processes originating from high-privilege service configurations.
+- Enforce rigid credential protection rules to prevent low-privilege sessions from reading local security databases.
+- Align vulnerability remediation schedules with national directories to ensure active privilege bugs are closed across endpoint fleets.
 
-Perimeter resource safety relies on applying prompt code updates to guarantee that foundational authentication gates are completely protected from unauthenticated information harvesting runs. #CodeDefence #Citrix #NetScaler #GatewaySecurity #AppSec #VulnerabilityManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>Massive password spray campaign hits Microsoft Azure CLI tools to hijack cloud environments</title>
-  <link>https://codedefence.in/blog/2026/07/01/azure-cli-password-spray-campaign-targets-microsoft-accounts</link>
-  <pubDate>Wed, 01 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/01/azure-cli-password-spray-campaign-targets-microsoft-accounts</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-An intensive automated identity compromise operation has targeted cloud engineering interfaces, using extensive credential validation passes to breach active professional accounts. The attack pattern involves routing high volume verification requests across distributed network routes to avoid automated lock rules.
-
-The intrusion campaign targets Microsoft Azure command line interface endpoints. Incident telemetry logs confirm that threat networks leveraged an infrastructure pool to launch millions of password spray validation hits over a two week window, successfully compromising dozens of high privilege corporate profiles. The operation focuses on guessing baseline identity strings to locate accounts with weak access setups or unconfigured multi factor checkpoints.
-
-Securing administrative footprints inside a cloud infrastructure portal provides attackers with an unmonitored command environment. Once an identity check is bypassed, the adversary can deploy rogue cloud containers, alter resource tracking rules, extract database access secrets, and configure stealthy persistence tracks that mimic regular engineering tasks.
-
-- Execute immediate account validation audits to check for atypical authentication patterns originating from unrecognized external blocks.
-- Force mandatory implementation of hardware bound cryptographic multi factor policies across all cloud access profiles.
-- Review administrative connection histories to identify unexpected commands run via the command line utility.
-- Transition access configurations to enforce strict zero trust rules that restrict management tools to verified corporate device ranges.
-
-Cloud perimeter stability depends on applying absolute identity check controls to guarantee that command lines are completely shielded from automated credential harvesting sweeps. #CodeDefence #Microsoft #Azure #CloudSecurity #PasswordSpray #IdentityProtection
+Endpoint infrastructure stability relies on strict resource isolation rules to guarantee that localized credential validation components cannot be subverted for administrative privilege takeovers. #CodeDefence #Microsoft #BlueHammer #PrivilegeEscalation #Ransomware #EndpointSecurity
   ]]></description>
 </item>
 
