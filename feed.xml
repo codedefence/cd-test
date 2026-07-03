@@ -2,82 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 02 July 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 03 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 02 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 03 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 02 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 03 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Microsoft SharePoint Server deserialization RCE flaw CVE-2026-45659 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/07/02/cisa-kev-microsoft-sharepoint-server-deserialization-vulnerability</link>
-  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/cisa-kev-microsoft-sharepoint-server-deserialization-vulnerability</guid>
+  <title>CISA includes actively exploited Microsoft SharePoint Server deserialization bug CVE-2026-45659 in KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/03/cisa-kev-microsoft-sharepoint-server-deserialization-active-exploitation</link>
+  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/cisa-kev-microsoft-sharepoint-server-deserialization-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-45659</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical deserialization of untrusted data vulnerability located within a dominant enterprise document coordination and collaboration suite has been formally indexed into the federal registry of actively targeted threats. The flaw enables authenticated remote network actors to bypass standard permission filters to run arbitrary system code directly on the application server.
+A critical data parsing and validation flaw inside an enterprise document aggregation and collaboration platform has been formally indexed into the federal directory of active threats. The vulnerability allows network reachable threat actors with low privilege parameters to transmit specialized request packages to trigger untrusted deserialization blocks, running arbitrary background commands on the host system.
 
-The security vulnerability, tracked as CVE-2026-45659, impacts Microsoft SharePoint Server environments, including Subscription Edition, SharePoint Server 2019, and SharePoint Enterprise Server 2016. The underlying issue involves a data handling failure when parsing serialized application inputs. Because the interface fails to securely evaluate incoming object matrices, an authenticated user with minimum Site Member access rights can submit malformed parameters over network links to trigger the execution of untrusted code arrays without requiring administrative approval keys. Threat tracking reports confirm that extortion networks, including the Storm-2603 ransomware group, are actively abusing this vector to secure network footholds.
+The security vulnerability, tracked as CVE-2026-45659, carries an initial high severity rating and impacts multiple core branches of Microsoft SharePoint Server, including Enterprise Server 2016, Server 2019, and Subscription Edition. The defect involves a structural processing omission within internal data handling components. Because the platform fails to securely vet incoming serialized streams, an authenticated user containing baseline Site Member rights can submit malformed parameters over network links to trigger code execution loops without requiring administrative authorization tokens. Real world telemetry links the active compromise campaigns to the Storm-2603 ransomware group, who are utilizing the access line to distribute encryption malware.
 
-Subverting a centralized collaboration server introduces severe security hazards across corporate networks. Because SharePoint deployments maintain deep integration hooks into internal directory systems, user access repositories, and corporate document storage backends, a successful exploitation loop lets an adversary extract intellectual property, map adjacent network infrastructure paths, and position persistent backdoors while masking actions behind valid user contexts.
+Subverting an internal document processing core creates severe hazards across corporate directory structures. Because collaboration nodes maintain permanent integration channels into centralized directory configurations and internal asset maps, an unauthorized takeover lets threat clusters bypass logical boundaries, capture metadata collections, and locate high value assets while hiding actions behind regular employee sessions.
 
-- Force immediate deployment of the security updates and cumulative patches supplied by Microsoft to all SharePoint instances.
-- Apply strict risk-prioritization rules under Binding Operational Directive 26-04 to insulate internal collaboration nodes within three days.
-- Audit server operational summaries for unexpected application errors or atypical file inclusions tracing to web.config structures.
-- Monitor access profiles for unusual document access behaviors or unauthorized domain administrator creations.
+- Force immediate platform updates to deploy cumulative security patches provided by Microsoft across all SharePoint environments.
+- Enforce rigid risk-based remediation schedules under Binding Operational Directive 26-04 to secure internet exposed processing nodes.
+- Scan application logs for unverified file modifications or unexpected process terminations matching the deserialization footprint.
+- Audit user profile histories to ensure no unauthorized local account additions or administrative role updates occurred during exposure.
 
-Data framework protection relies on prompt patch application combined with continuous access monitoring to guarantee that internal collaboration platforms are completely protected from unauthenticated script manipulation. #CodeDefence #Microsoft #SharePoint #RCE #Deserialization #CISA #KEV
+Data framework protection relies on prompt patch application combined with continuous access monitoring to guarantee that internal collaboration platforms are completely protected from unauthenticated script manipulation. #CodeDefence #Microsoft #SharePoint #Deserialization #RCE #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Adobe releases out of band patches for eleven critical ColdFusion unauthenticated remote execution flaws</title>
-  <link>https://codedefence.in/blog/2026/07/02/adobe-coldfusion-emergency-patches-unauthenticated-rce</link>
-  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/adobe-coldfusion-emergency-patches-unauthenticated-rce</guid>
+  <title>Hackers weaponize Oracle E-Business Suite payments flaw CVE-2026-46817 for unauthenticated takeovers</title>
+  <link>https://codedefence.in/blog/2026/07/03/oracle-ebusiness-suite-payments-vulnerability-active-exploitation</link>
+  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/oracle-ebusiness-suite-payments-vulnerability-active-exploitation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-48276‚ CVE-2026-48283</cd:cve>
-  <cd:mentions>@[Adobe](urn:li:organization:1481)</cd:mentions>
+  <cd:cve>CVE-2026-46817</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:1028)</cd:mentions>
   <description><![CDATA[
-Critical validation failures and missing input sanitization logic inside a primary web application development environment have forced the distribution of out-of-band software enhancements. The defects permit remote unauthenticated adversaries to submit malformed configuration requests to bypass identity gates and run background commands.
+Active internet scanning networks have logged a marked escalation in real world weaponization attempts targeting a prominent financial management architecture. The underlying logic defect allows remote unauthenticated actors to execute low complexity HTTP request scripts over public interfaces to claim administrative control over vulnerable systems.
 
-The patch distribution addresses 11 critical vulnerabilities impacting Adobe ColdFusion 2023 and ColdFusion 2025 deployment builds, with six flaws carrying the maximum CVSS score of 10.0. The core defects involve a complete lack of validation rules over file ingestion endpoints, leading to unrestricted file uploads and dangerous directory traversal pathways. Automated scanning loops are actively probing public facing systems to identify unpatched application instances and plant persistent web shell backdoors.
+The vulnerability, tracked as CVE-2026-46817, carries a CVSS score of 9.8 and affects the File Transmission component of the Oracle Payments module within the Oracle E-Business Suite platform. Threat intelligence cells from Defused warned that intrusion networks are actively probing public portals to exploit input validation oversights. Global watchdog indicators show nearly one thousand exposed instances reachable online, creating an extensive surface for automated harvesting loops.
 
-Allowing unauthenticated file write privileges on an application tier represents a severe threat to the corporate perimeter. Because web hosting servers bridge external public paths with internal database structures, an unauthenticated takeover lets threat groups capture configuration metadata collections, erase logging histories, and establish horizontal pivoting tracks targeting connected database segments.
+Compromising a financial transactions manager introduces severe operational risks across corporate networks. Because payment processing modules handle active accounting credentials, transaction histories, and partner integration keys, an unauthenticated takeover lets adversaries siphon sensitive financial records, modify file transfer scripts, and position secondary persistent shells.
 
-- Update affected web processing assets to ColdFusion 2023 Update 21 or ColdFusion 2025 Update 10 immediately.
-- Enforce strict runtime constraints to ensure the web server application accounts operate without active write privileges over executable paths.
-- Scan application directory roots to locate and remove any unexpected files containing unauthorized script signatures.
-- Separate development administrative interfaces from open internet routing ranges, keeping control panels gated behind local segments.
+- Apply current software updates and security hotfixes provided by Oracle to all E-Business Suite environments immediately.
+- Isolate transaction validation panels from public internet routing, gating administrative controls behind restricted local zones.
+- Monitor incoming HTTP logs for anomalous parameter structures targeting the file transmission component subroutines.
+- Review database interaction summaries to verify that configuration tables remain unmodified by unverified network nodes.
 
-Application layer protection relies on rapid software update execution to ensure that interactive web deployment frameworks are shielded from automated file modification payloads. #CodeDefence #Adobe #ColdFusion #RCE #AppSec #VulnerabilityManagement
+Financial core resilience depends on prompt version alignment to ensure that underlying transaction processing engines are shielded from unauthenticated remote script exploitation. #CodeDefence #Oracle #EBusinessSuite #AppSec #FinancialSecurity #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Ransomware syndicates target Windows BlueHammer privilege escalation vulnerability CVE-2026-33825</title>
-  <link>https://codedefence.in/blog/2026/07/02/windows-bluehammer-vulnerability-actively-exploited-by-ransomware</link>
-  <pubDate>Thu, 02 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/02/windows-bluehammer-vulnerability-actively-exploited-by-ransomware</guid>
+  <title>New macOS PamStealer information harvesting malware hooks authentication modules via fake updates</title>
+  <link>https://codedefence.in/blog/2026/07/03/macos-pamstealer-malware-harvests-cleartext-credentials</link>
+  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/macos-pamstealer-malware-harvests-cleartext-credentials</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-33825</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Active intrusion networks have scaled up real-world deployment of local privilege escalation exploits targeting workstation protection architectures. Threat actors are utilizing functional public exploit blocks to subvert core identity files and acquire complete system takeover permissions.
+A specialized information gathering implant targeting Unix-based desktop environments has been documented running in the wild. The malware bypasses traditional system boundaries by deploying deceptive installation domains to trick administrative profiles into executing malicious scripts.
 
-The vulnerability, tracked as CVE-2026-33825 and named BlueHammer, impacts Microsoft Windows endpoint configurations. Initially leaked by a researcher as a zero-day vector, the flaw involves a local validation failure within security components. Incident response logs confirm that hands-on-keyboard extortion groups are actively weaponizing this flaw on unpatched machines to access the local Security Account Manager database, copy stored password hashes, and spawn terminal shells with full SYSTEM rights.
+The malware cluster, identified under the designation PamStealer, spreads by spoofing popular utility domains and community software repositories. Once local execution is triggered through social engineering loops, the script integrates an unauthorized library into the local Pluggable Authentication Modules framework. By positioning itself directly inside the core login validation stack, the implant records cleartext employee passwords, extracts localized cryptographic keys, and dumps active cryptocurrency wallet directories.
 
-Bypassing local privilege filters allows threat groups to disable security monitoring tools and execute ransomware loops. Once an attacker elevates their session context to SYSTEM privileges, they completely override endpoint protection rules, deploy malicious encryption drivers, and wipe system event logs to complicate forensic triage steps.
+Inserting an untrusted library into the primary operating system authentication pipeline neutralizes standard localized account restrictions. Because the malicious components intercept identity credentials before standard hashing subroutines apply, threat operators can gather clean administrative keys, letting them access connected cloud environments and corporate networks while masquerading as valid engineers.
 
-- Conduct an immediate cross-reference sweep to verify that all Windows endpoints have applied the April 2026 patch distribution updates.
-- Monitor endpoint protective dashboards for unexpected terminal processes originating from high-privilege service configurations.
-- Enforce rigid credential protection rules to prevent low-privilege sessions from reading local security databases.
-- Align vulnerability remediation schedules with national directories to ensure active privilege bugs are closed across endpoint fleets.
+- Enforce strict application signature checks to block the installation of unverified software components across workstation fleets.
+- Audit localized pluggable authentication module configuration files for unexpected library additions or atypical file changes.
+- Implement short lived token parameters across cloud interfaces to restrict access windows if workstation credentials are leaked.
+- Monitor endpoint protective tracking panels for unusual background network transmissions connecting to unrecognized hosting blocks.
 
-Endpoint infrastructure stability relies on strict resource isolation rules to guarantee that localized credential validation components cannot be subverted for administrative privilege takeovers. #CodeDefence #Microsoft #BlueHammer #PrivilegeEscalation #Ransomware #EndpointSecurity
+Workstation stability relies on keeping internal credential verification modules secure to guarantee that local configuration fields cannot be manipulated into logging cleartext user keys. #CodeDefence #PamStealer #macOS #CredentialTheft #InfoStealer #EndpointSecurity
   ]]></description>
 </item>
 
