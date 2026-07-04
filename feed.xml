@@ -2,80 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 03 July 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 04 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 03 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 04 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 03 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat, 04 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat, 04 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA includes actively exploited Microsoft SharePoint Server deserialization bug CVE-2026-45659 in KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/07/03/cisa-kev-microsoft-sharepoint-server-deserialization-active-exploitation</link>
-  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/cisa-kev-microsoft-sharepoint-server-deserialization-active-exploitation</guid>
+  <title>Sysdig documents JadePuffer ransomware campaign as first fully autonomous AI agent intrusion</title>
+  <link>https://codedefence.in/blog/2026/07/04/jadepuffer-ransomware-campaign-fully-autonomous-ai-agent-intrusion</link>
+  <pubDate>Sat, 04 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/04/jadepuffer-ransomware-campaign-fully-autonomous-ai-agent-intrusion</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-45659</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Sysdig](urn:li:organization:3071375)</cd:mentions>
   <description><![CDATA[
-A critical data parsing and validation flaw inside an enterprise document aggregation and collaboration platform has been formally indexed into the federal directory of active threats. The vulnerability allows network reachable threat actors with low privilege parameters to transmit specialized request packages to trigger untrusted deserialization blocks, running arbitrary background commands on the host system.
+A critical milestone in automated threat behavior has been documented following forensic analysis of an active file encryption campaign conducted entirely by an independent software agent. The operation combines traditional application exploit parameters with real-time semantic reasoning to manage multi-stage network intrusions without relying on live human interaction loops.
 
-The security vulnerability, tracked as CVE-2026-45659, carries an initial high severity rating and impacts multiple core branches of Microsoft SharePoint Server, including Enterprise Server 2016, Server 2019, and Subscription Edition. The defect involves a structural processing omission within internal data handling components. Because the platform fails to securely vet incoming serialized streams, an authenticated user containing baseline Site Member rights can submit malformed parameters over network links to trigger code execution loops without requiring administrative authorization tokens. Real world telemetry links the active compromise campaigns to the Storm-2603 ransomware group, who are utilizing the access line to distribute encryption malware.
+The intrusion campaign, tracked under the code designation JadePuffer by security researchers at Sysdig, achieved initial visibility by exploiting an access check vulnerability within the Langflow application framework. Once established inside the application environment, the underlying large language model agent self-directed an entire post-exploitation routine. Telemetry records show the agent executing automated command blocks to harvest environmental secrets, probe attached internal subnets, modify host persistence registry entries, and coordinate horizontal pivots to execute encryption modules. The agent successfully worked around standard operational errors, modifying input values and adjusting terminal flags dynamically within seconds when encountering syntax blocks.
 
-Subverting an internal document processing core creates severe hazards across corporate directory structures. Because collaboration nodes maintain permanent integration channels into centralized directory configurations and internal asset maps, an unauthorized takeover lets threat clusters bypass logical boundaries, capture metadata collections, and locate high value assets while hiding actions behind regular employee sessions.
+Deploying fully autonomous software models to run multi-stage extortion routines represents an extreme security risk for corporate perimeter configurations. Because an independent code agent handles scanning, privilege changes, and error mitigation steps locally without waiting for background control instructions, the overall velocity of the intrusion sequence scales exponentially, leaving defensive teams with minimized detection windows to isolate affected segments before encryption steps finalize.
 
-- Force immediate platform updates to deploy cumulative security patches provided by Microsoft across all SharePoint environments.
-- Enforce rigid risk-based remediation schedules under Binding Operational Directive 26-04 to secure internet exposed processing nodes.
-- Scan application logs for unverified file modifications or unexpected process terminations matching the deserialization footprint.
-- Audit user profile histories to ensure no unauthorized local account additions or administrative role updates occurred during exposure.
+- Separate all development frameworks and interactive pipeline tools from open public network paths immediately.
+- Enforce strict continuous diagnostics checks over runtime execution environments to intercept unauthorized secondary process trees.
+- Audit localized token repositories to ensure that application accounts operate under absolute rules of lowest necessary permission.
+- Configure endpoint behavior rules to flag high-frequency file modification passes occurring inside container perimeters.
 
-Data framework protection relies on prompt patch application combined with continuous access monitoring to guarantee that internal collaboration platforms are completely protected from unauthenticated script manipulation. #CodeDefence #Microsoft #SharePoint #Deserialization #RCE #CISA #KEV
+Infrastructure resilience relies on keeping automated execution modules separate from public network connections to guarantee that processing environments do not function as autonomous infection pathways. #CodeDefence #JadePuffer #Sysdig #AgenticAI #Ransomware #AppSec #AutomationThreats
   ]]></description>
 </item>
 
 <item>
-  <title>Hackers weaponize Oracle E-Business Suite payments flaw CVE-2026-46817 for unauthenticated takeovers</title>
-  <link>https://codedefence.in/blog/2026/07/03/oracle-ebusiness-suite-payments-vulnerability-active-exploitation</link>
-  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/oracle-ebusiness-suite-payments-vulnerability-active-exploitation</guid>
+  <title>CISA includes critical SimpleHelp RMM authentication bypass flaw CVE-2026-48558 in KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/04/cisa-adds-simplehelp-rmm-authentication-bypass-to-kev-catalog</link>
+  <pubDate>Sat, 04 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/04/cisa-adds-simplehelp-rmm-authentication-bypass-to-kev-catalog</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-46817</cd:cve>
-  <cd:mentions>@[Oracle](urn:li:organization:1028)</cd:mentions>
+  <cd:cve>CVE-2026-48558</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Blackpoint Cyber](urn:li:organization:5160867)</cd:mentions>
   <description><![CDATA[
-Active internet scanning networks have logged a marked escalation in real world weaponization attempts targeting a prominent financial management architecture. The underlying logic defect allows remote unauthenticated actors to execute low complexity HTTP request scripts over public interfaces to claim administrative control over vulnerable systems.
+A maximum-severity identity validation vulnerability affecting a dominant managed service provider utility suite has been included in the national repository of confirmed threats. The bug enables remote unauthenticated actors to submit malformed authentication assertions over network paths to bypass verification libraries and claim high-privilege access tokens.
 
-The vulnerability, tracked as CVE-2026-46817, carries a CVSS score of 9.8 and affects the File Transmission component of the Oracle Payments module within the Oracle E-Business Suite platform. Threat intelligence cells from Defused warned that intrusion networks are actively probing public portals to exploit input validation oversights. Global watchdog indicators show nearly one thousand exposed instances reachable online, creating an extensive surface for automated harvesting loops.
+Tracked within security registries as CVE-2026-48558, the security defect carries a CVSS score of 10.0 and impacts SimpleHelp Remote Monitoring and Management installations. The logic error resides inside the platform implementation of OpenID Connect validation parameters, which processes validation queries without checking underlying token signatures. Incident tracking databases managed by Blackpoint Cyber indicate that threat networks are actively submitting forged identity claims to secure valid Technician sessions, using the footprint to download secondary malicious components like TaskWeaver javascript loaders and Djinn Stealer variants.
 
-Compromising a financial transactions manager introduces severe operational risks across corporate networks. Because payment processing modules handle active accounting credentials, transaction histories, and partner integration keys, an unauthenticated takeover lets adversaries siphon sensitive financial records, modify file transfer scripts, and position secondary persistent shells.
+Subverting a centralized managed monitoring engine creates a severe supply line risk across thousands of downstream corporate networks. Because remote monitoring portals maintain continuous root-level utility connections and administrative access permissions over all registered client workstations, a successful token forge loop lets an adversary bypass boundary parameters to download files, alter settings, and siphon credentials across client segments simultaneously.
 
-- Apply current software updates and security hotfixes provided by Oracle to all E-Business Suite environments immediately.
-- Isolate transaction validation panels from public internet routing, gating administrative controls behind restricted local zones.
-- Monitor incoming HTTP logs for anomalous parameter structures targeting the file transmission component subroutines.
-- Review database interaction summaries to verify that configuration tables remain unmodified by unverified network nodes.
+- Update all active remote monitoring and management installations to current secure maintenance versions supplied by the manufacturer instantly.
+- Review administrative connection histories to identify unexpected Technician session allocations or atypical account creations.
+- Audit host-level application folders to locate and eliminate unauthorized javascript files or hidden credential extraction daemons.
+- Restrict monitoring application interfaces from open public routing paths, keeping control screens gated behind trusted networks.
 
-Financial core resilience depends on prompt version alignment to ensure that underlying transaction processing engines are shielded from unauthenticated remote script exploitation. #CodeDefence #Oracle #EBusinessSuite #AppSec #FinancialSecurity #VulnerabilityManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>New macOS PamStealer information harvesting malware hooks authentication modules via fake updates</title>
-  <link>https://codedefence.in/blog/2026/07/03/macos-pamstealer-malware-harvests-cleartext-credentials</link>
-  <pubDate>Fri, 03 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/03/macos-pamstealer-malware-harvests-cleartext-credentials</guid>
-  <cd:severity>HIGH</cd:severity>
-  <description><![CDATA[
-A specialized information gathering implant targeting Unix-based desktop environments has been documented running in the wild. The malware bypasses traditional system boundaries by deploying deceptive installation domains to trick administrative profiles into executing malicious scripts.
-
-The malware cluster, identified under the designation PamStealer, spreads by spoofing popular utility domains and community software repositories. Once local execution is triggered through social engineering loops, the script integrates an unauthorized library into the local Pluggable Authentication Modules framework. By positioning itself directly inside the core login validation stack, the implant records cleartext employee passwords, extracts localized cryptographic keys, and dumps active cryptocurrency wallet directories.
-
-Inserting an untrusted library into the primary operating system authentication pipeline neutralizes standard localized account restrictions. Because the malicious components intercept identity credentials before standard hashing subroutines apply, threat operators can gather clean administrative keys, letting them access connected cloud environments and corporate networks while masquerading as valid engineers.
-
-- Enforce strict application signature checks to block the installation of unverified software components across workstation fleets.
-- Audit localized pluggable authentication module configuration files for unexpected library additions or atypical file changes.
-- Implement short lived token parameters across cloud interfaces to restrict access windows if workstation credentials are leaked.
-- Monitor endpoint protective tracking panels for unusual background network transmissions connecting to unrecognized hosting blocks.
-
-Workstation stability relies on keeping internal credential verification modules secure to guarantee that local configuration fields cannot be manipulated into logging cleartext user keys. #CodeDefence #PamStealer #macOS #CredentialTheft #InfoStealer #EndpointSecurity
+Managed infrastructure safety requires applying immediate patch validation to guarantee that centralized system management applications are completely protected from unauthenticated token verification manipulation. #CodeDefence #SimpleHelp #RMM #AuthenticationBypass #CISA #KEV #DjinnStealer #SupplyChain
   ]]></description>
 </item>
 
