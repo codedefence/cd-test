@@ -2,57 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 07 July 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 08 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 07 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 08 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 07 July 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 07 July 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 08 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 08 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical authentication bypass vulnerability uncovered in Palo Alto Networks edge infrastructure orchestrators</title>
-  <link>https://codedefence.in/blog/2026/07/07/palo-alto-networks-edge-authentication-bypass-vulnerability</link>
-  <pubDate>Tue, 07 July 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/07/palo-alto-networks-edge-authentication-bypass-vulnerability</guid>
+  <title>Critical Adobe ColdFusion path traversal vulnerability CVE-2026-48282 under active wild exploitation</title>
+  <link>https://codedefence.in/blog/2026/07/08/adobe-coldfusion-path-traversal-vulnerability-exploited-in-wild</link>
+  <pubDate>Wed, 08 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/08/adobe-coldfusion-path-traversal-vulnerability-exploited-in-wild</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:11549)</cd:mentions>
+  <cd:cve>CVE-2026-48282</cd:cve>
+  <cd:mentions>@[Adobe](urn:li:organization:1481)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical authentication bypass vulnerability inside the centralized management pane of a dominant border network infrastructure layer has come under active wild exploitation. The defect enables remote unauthenticated adversaries to submit custom-crafted network packets to spoof administrative validation contexts and claim absolute root control on the appliance.
+A maximum-severity path traversal vulnerability inside a prominent enterprise web application development framework has been targeted in the wild immediately following disclosure. The flaw allows remote unauthenticated network adversaries to execute malformed request sequences to achieve arbitrary code execution within the context of the active system profile.
 
-The vulnerability impacts on-premises and cloud orchestrator configurations managed via Palo Alto Networks software tracks. The error stems from a logical verification failure within integrated web application single sign-on modules. Following validation runs by initial access brokers, automated scanning blocks were logged probing public routing gateways to issue malformed validation claims, bypass multi-factor gates, and instantiate unauthenticated administrative shells.
+Tracked within tracking infrastructure as CVE-2026-48282, the defect carries a perfect CVSS score of 10.0 and impacts Adobe ColdFusion versions 2025.9, 2023.20, and earlier builds. Monitoring setups managed by KEVIntel noted active exploitation loops stemming from international staging addresses within two hours of public patch distribution. Threat actors are utilizing the path handling failure to bypass localized access rules, read forbidden configuration files, and initialize underlying code execution scripts. Due to the high rate of automated capture attempts, CISA integrated the bug into its active exploit index under BOD 26-04 parameters.
 
-Subverting a centralized network orchestration panel presents an immediate, system-wide hazard to the corporate perimeter. Because border security orchestrators manage internal routing parameters, active access rules, and cryptographic key vaults across all connected corporate zones, an unauthorized host takeover permits threat actors to intercept transit information streams, alter perimeter rules, and plant hidden persistent backdoors while avoiding general edge log aggregation layers.
+Compromising a core enterprise application tier allows adversaries to establish an unmonitored command environment. Because ColdFusion architectures routinely integrate directly with localized databases and core network data lanes, an unauthenticated breakout lets threat networks extract transaction databases, capture identity cookies, and organize horizontal expansion routines targeting connected internal infrastructure nodes.
 
-- Apply current software upgrades and emergency hotfixes provided by Palo Alto Networks across all active orchestrator assets instantly.
-- Restrict remote management interaction paths from public internet routing, gating console controls within isolated subnets.
-- Scan network connection records for anomalous validation failure streams or unexpected user profile configurations.
-- Audit border infrastructure change histories to ensure no persistent administrative accounts were created during the exposure window.
+- Apply the emergency cumulative software enhancements and security fixes published by Adobe to all host instances immediately.
+- Enforce strict host-level network filters to isolate ColdFusion administration interfaces from open public internet paths.
+- Analyze server access records for anomalous directory navigation strings or double-encoding characters inside web queries.
+- Validate that the underlying system service accounts operate strictly under parameters of lowest necessary system permission.
 
-Perimeter security models rely on continuous configuration hygiene and prompt version alignment to ensure that centralized routing management panels are completely shielded from automated input validation manipulation scripts. #CodeDefence #PaloAltoNetworks #NetworkSecurity #AuthBypass #EdgeSecurity #VulnerabilityManagement
+Application deployment security depends on rapid software version updates to ensure that public-facing transaction engines are completely protected from unauthenticated path manipulation scripts. #CodeDefence #Adobe #ColdFusion #PathTraversal #RCE #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>CISA includes actively exploited Cisco Catalyst input validation bug CVE-2026-28104 in KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/07/07/cisa-adds-cisco-catalyst-input-validation-vulnerability-to-kev</link>
-  <pubDate>Tue, 07 July 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/07/cisa-adds-cisco-catalyst-input-validation-vulnerability-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-28104</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>Langflow AI agent framework identity bypass CVE-2026-55255 targeted in JadePuffer cloud keys theft campaign</title>
+  <link>https://codedefence.in/blog/2026/07/08/langflow-ai-framework-idor-vulnerability-exploited-in-jadepuffer-campaign</link>
+  <pubDate>Wed, 08 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/08/langflow-ai-framework-idor-vulnerability-exploited-in-jadepuffer-campaign</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-55255</cd:cve>
+  <cd:mentions>@[Sysdig](urn:li:organization:3071375)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-An active unauthenticated validation bypass and command injection campaign targeting enterprise-grade edge routing switches has driven an immediate catalog indexing by federal cybersecurity regulators. The vulnerability allows remote unauthenticated actors to pass specialized string parameters over the network to run background scripts on the host system.
+An active cloud exploitation campaign targeting advanced artificial intelligence orchestration tools has driven an emergency catalog indexing by federal regulators. The vulnerability allows an authenticated threat actor to run an insecure direct object reference technique to access, read, and manipulate data flows belonging to completely different enterprise tenants.
 
-Tracked as CVE-2026-28104, the security vulnerability impacts Cisco Catalyst series architectures running specific web user interface frameworks. The underlying error involves an input parsing omission within administrative telemetry diagnostics endpoints. Following extensive documentation of real-world targeted weaponization by initial access brokers to deploy persistent web shells, CISA added the bug to the known exploited vulnerabilities catalog to enforce compressed mitigation schedules under binding operational directive rules.
+The security flaw, tracked as CVE-2026-55255, affects the Langflow visual framework utilized for constructing independent AI software agents. Incident response tracking telemetry compiled by Sysdig uncovered a sustained campaign under the code name JadePuffer. The threat actor passes maliciously crafted requests to specific application endpoints, substituting target flow identification variables to hijack tenant profiles. Once cross-tenant visibility is obtained, the operator chains additional remote execution vulnerabilities to run internal host reconnaissance commands and harvest high-value cloud infrastructure assets.
 
-Allowing unauthenticated root-level command execution inside an edge network platform introduces severe hazards across corporate enterprise fabrics. Once a threat group completes a malformed payload script upload, they secure an unmonitored foothold to capture network data pools, disable local interface safety boundaries, and orchestrate horizontal pivot loops targeting connected internal data center components.
+Subverting a centralized artificial intelligence pipeline engine presents an immediate threat to modern enterprise credential vaults. Because orchestration tools integrate directly with cloud environments and third-party processing clusters to perform automated text analysis, an unauthorized tenant breakout lets adversaries steal active large language model provider keys, exfiltrate AWS environment secrets, and place persistent secondary downloading scripts across local containers.
 
-- Update affected edge routing switches to the current secure software maintenance release tiers provided by Cisco immediately.
-- Disable public-facing web management interface dashboards across all active switching appliances if not operational mandates.
-- Monitor perimeter event summaries for atypical process activations or unexpected configuration updates originating from administrative endpoints.
-- Execute deep compliance sweeps across internal boundaries to ensure no secondary persistent credentials were inserted during exposure.
+- Upgrade affected Langflow application instances to secure version 1.9.1 or higher instantly to close the object reference flaw.
+- Audit active access logging tables to look for cross-tenant request modifications or unverified flow visualization events.
+- Rotate all third-party large language model developer keys and cloud access tokens managed within the platform workspace.
+- Implement strict multi-tenant access barriers and container network limits to minimize cross-compartment exposure maps.
 
-Core network infrastructure resilience depends on the rapid installation of system updates combined with strict interface containment to guarantee that configuration utilities cannot be subverted into automated entry channels. #CodeDefence #Cisco #Catalyst #RCE #CISA #KEV #VulnerabilityManagement #AppSec
+Orchestration infrastructure resilience depends on continuous validation checks to ensure that interconnected artificial intelligence systems are completely shielded from automated token siphoning campaigns. #CodeDefence #Langflow #Sysdig #JadePuffer #IDOR #AISecurity #CloudSecurity #CISA
+  ]]></description>
+</item>
+
+<item>
+  <title>Automated web shell attacks exploit JoomShaper SP Page Builder vulnerability CVE-2026-48908 for site takeover</title>
+  <link>https://codedefence.in/blog/2026/07/08/joomshaper-sp-page-builder-unrestricted-file-upload-exploited</link>
+  <pubDate>Wed, 08 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/08/joomshaper-sp-page-builder-unrestricted-file-upload-exploited</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-48908</cd:cve>
+  <cd:mentions>@[Joomla](urn:li:organization:10037805)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Automated scanning networks have scale up real-world weaponization attempts targeting a common content management extension framework. The underlying access control failure lets remote unauthenticated adversaries transmit specialized upload payloads to place executable files on the backend host directory.
+
+Tracked within vulnerability indexes as CVE-2026-48908, the flaw affects JoomShaper SP Page Builder installations deployed across Joomla web servers. Threat groups are executing automated HTTP POST requests directly to specific asset upload endpoints, dropping malicious backend script code hidden inside unverified file structures. Following initial file placement, the exploit loop automatically generates an unauthorized high-privilege Super User profile, providing the attacker with full management console access.
+
+Allowing unauthenticated file write privileges on public web infrastructure introduces significant backdoor risks across enterprise perimeters. Armed with persistent web shell code scripts and elevated dashboard profiles, adversaries use the foothold to parse local configuration files, extract corporate credential lists, and deliver secondary malicious droppers targeting local system networks.
+
+- Update the JoomShaper SP Page Builder extension immediately to version 6.6.2 or later to correct the validation loop.
+- Review administrative account databases to locate and remove any newly generated or unauthorized Super User profiles.
+- Audit web directory roots to isolate and eliminate unexpected php configurations or unverified icon assets.
+- Enforce strict write-protection boundaries to prevent application server processes from executing scripts within media storage paths.
+
+Web platform defense requires combining continuous extension updating with rigid file upload signature verification to guarantee that public content portals do not operate as automated initial access vehicles. #CodeDefence #Joomla #JoomShaper #UnrestrictedUpload #Webshell #AppSec #CISA #KEV
   ]]></description>
 </item>
 
