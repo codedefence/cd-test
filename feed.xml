@@ -2,79 +2,77 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 11 July 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 12 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 11 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 12 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 11 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Sat, 11 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sun, 12 July 2026 18:00:00 +0300</pubDate>
+  <lastBuildDate>Sun, 12 July 2026 18:00:00 +0300</lastBuildDate>
 
 <item>
-  <title>Progress Software orders immediate shutdown of ShareFile Storage Zone Controllers citing active threat</title>
-  <link>https://codedefence.in/blog/2026/07/11/progress-software-sharefile-storage-zone-controllers-shutdown-directive</link>
-  <pubDate>Sat, 11 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/11/progress-software-sharefile-storage-zone-controllers-shutdown-directive</guid>
+  <title>Progress Software issues emergency shutdown order for ShareFile Storage Zone Controllers</title>
+  <link>https://codedefence.in/blog/2026/07/12/progress-sharefile-storage-zone-controllers-emergency-shutdown</link>
+  <pubDate>Sun, 12 July 2026 18:00:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/12/progress-sharefile-storage-zone-controllers-emergency-shutdown</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:mentions>@[Progress](urn:li:organization:165584)</cd:mentions>
   <description><![CDATA[
-An emergency remediation directive has been issued for a prominent enterprise file synchronization and storage framework, ordering administrative teams to completely disconnect local host servers. The urgent containment step follows the validation of a credible external security threat targeting localized storage control nodes.
+Progress Software has issued an urgent email directive to ShareFile administrators who operate local, on-premises Storage Zone Controllers, ordering them to shut down their Windows servers immediately. The severe containment mandate follows the verification of a credible external security threat targeting the on-premises file-sharing configurations. Out of an abundance of caution, the vendor has temporarily disabled remote access to the affected customer accounts while working with incident response squads to fully isolate and resolve the threat vector.
 
-The operational notice affects Progress ShareFile Storage Zone Controllers running on Windows Server architectures. To minimize immediate exposure vectors while teams isolate the underlying exploit mechanism, the vendor has temporarily blocked remote access permissions to affected customer accounts. While specific vulnerability identification metrics remain restricted during ongoing incident response phases, the threat involves an unauthenticated remote vector capable of manipulating storage directories.
+Because Storage Zone Controllers allow organizations to keep their sensitive data on their own local network storage arrays while integrating with cloud file-sharing features, a compromise at this layer presents a severe risk to corporate databases. Threat actors successfully penetrating these controllers can bypass normal boundary filters to execute arbitrary commands, read unencrypted customer documents, and manipulate storage directory structures.
 
-Subverting a centralized file storage controller presents a critical threat to corporate intellectual property registries. Because Storage Zone Controllers govern access rules, metadata files, and unencrypted document repositories bridging local data centers with cloud infrastructures, a compromise at this layer permits adversaries to siphon off internal network data, alter configuration mappings, and drop persistent malicious files.
+- Disconnect or power down all Windows servers running ShareFile Storage Zone Controllers immediately.
+- Block all incoming and outgoing connections targeting the local storage zone ports at your perimeter firewall.
+- Monitor endpoint access logs for anomalous execution strings or unexpected outbound file packaging routines.
+- Maintain the offline posture until official system updates and secure deployment guidelines are released.
 
-- Power down or completely disconnect all Windows servers operating ShareFile Storage Zone Controllers from external routing paths instantly.
-- Monitor perimeter firewalls for atypical outbound connection blocks or data packaging routines originating from file servers.
-- Maintain account isolation parameters until official software updates and recovery procedures are distributed by the vendor.
-- Review internal logging registries retroactively to spot unauthorized administrative queries or configuration edits.
-
-Enterprise storage resilience relies on the rapid execution of defensive isolation procedures to ensure that file sharing controllers do not function as open conduits for wide scale data extortion campaigns. #CodeDefence #ProgressSoftware #ShareFile #StorageSecurity #IncidentResponse #ThreatIntel
+Securing local file integration components relies on the prompt execution of emergency containment steps to ensure that backend storage assets do not serve as unmonitored entry pathways for ransomware or data extortion campaigns. #CodeDefence #Progress #ShareFile #ZeroDay #StorageSecurity #IncidentResponse
   ]]></description>
 </item>
 
 <item>
-  <title>International watchdogs warn of massive automated campaign deploying web shells across vulnerable CMS engines</title>
-  <link>https://codedefence.in/blog/2026/07/11/global-exploitation-campaign-targets-cms-platforms-webshells</link>
-  <pubDate>Sat, 11 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/11/global-exploitation-campaign-targets-cms-platforms-webshells</guid>
+  <title>Compromised jscrambler npm release 8.14.0 drops multi platform Rust infostealer during install</title>
+  <link>https://codedefence.in/blog/2026/07/12/compromised-jscrambler-npm-release-drops-rust-infostealer</link>
+  <pubDate>Sun, 12 July 2026 18:00:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/12/compromised-jscrambler-npm-release-drops-rust-infostealer</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[npm](urn:li:organization:13347)</cd:mentions>
+  <description><![CDATA[
+A severe software supply chain attack has compromised the widely used jscrambler utility package on the npm registry, with the malicious 8.14.0 release dropping a native Rust infostealer on developer machines during package installation. Pushed straight to the registry using a compromised publisher credential, the update bypassed the project's public GitHub release flow. The compromised package includes a preinstall hook that extracts and executes compressed binaries tailored for Windows, macOS, and Linux platforms.
+
+The dropped payload is an advanced Rust-based infostealer that aggressively sweeps compromised developer machines for sensitive access parameters. It targets cloud credentials for Amazon Web Services, Microsoft Azure, and Google Cloud, including the metadata endpoints utilized by continuous integration runners. It also harvests browser-stored passwords, multi-factor authentication configurations, and cryptocurrency private keys from MetaMask, Phantom, and Exodus.
+
+Subverting a developer's local environment or build pipeline exposes the entire corporate network to secondary intrusion loops. Since continuous integration nodes and developer systems routinely maintain persistent write tokens to code repositories and cloud registries, a local credentials leak allows attackers to silently inject backdoors into production codebases and bypass automated controls.
+
+- Check local build systems and developer workstations to verify that jscrambler version 8.14.0 was not pulled or executed.
+- Force-downgrade any installations of the package to the secure 8.13.0 release tier immediately.
+- Rotate all cloud access keys, repository access tokens, and passwords used on any system exposed to the compromised version.
+- Enforce strict repository policies that prevent the automated execution of third-party package preinstall scripts.
+
+Software supply chain integrity demands that developers strictly restrict package installation hooks and verify dependency origins to guarantee that development nodes are completely shielded from automated credential harvesting scripts. #CodeDefence #SupplyChain #npm #Jscrambler #InfoStealer #DevSecOps
+  ]]></description>
+</item>
+
+<item>
+  <title>International cybersecurity agencies warn of global campaign deploying backdoors across vulnerable CMS engines</title>
+  <link>https://codedefence.in/blog/2026/07/12/global-campaign-vulnerable-cms-plugins-web-shells</link>
+  <pubDate>Sun, 12 July 2026 18:00:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/12/global-campaign-vulnerable-cms-plugins-web-shells</guid>
   <cd:severity>HIGH</cd:severity>
   <cd:mentions>@[Joomla](urn:li:organization:10037805)</cd:mentions>
   <description><![CDATA[
-A coordinated threat advisory published by national security agencies has exposed a large scale automated exploit campaign actively penetrating public web platforms. The operation uses high velocity scanning scripts to identify input parsing flaws and configuration defects to plant persistent terminal scripts.
+A coordinated international security alert has exposed an ongoing, highly active global exploitation campaign leveraging vulnerabilities in popular content management systems and associated extension plugins to drop persistent web shells. The script-driven scanning operations focus heavily on unpatched WordPress, Craft CMS, and Joomla installations, attempting to locate input parsing and directory traversal defects to execute unauthorized file writes.
 
-The global campaign targets vulnerable content management systems and associated extension plugins, including common installations of WordPress, Craft CMS, and Joomla JCE components. Threat tracking records confirm that initial access clusters are systematically probing web facing directories to deploy backdoor web shells. Small and medium sized corporate portals are experiencing the highest frequency of automated collection attempts, providing threat networks with long term shell terminal access.
+Once an unpatched administrative plugin is identified, the automated scripts route malicious POST requests to execute unauthenticated uploads. Gaining this foothold allows the attackers to plant a silent, persistent PHP-based web shell backdoor within the public web directory, providing a stable web terminal to issue commands remotely.
 
-Allowing unauthorized web shell scripts to populate public web roots destroys perimeter isolation frameworks. Once a web shell is initialized on an application server, threat operators can leverage the localized foothold to read environment credential logs, bypass data tier filters, manipulate active site scripts, and coordinate lateral scanning passes against internal database networks.
+Establishing an unauthorized backdoor on a public-facing application server breaks the logical separation of the perimeter. Armed with active terminal execution rights, threat actors can parse local database configuration files, extract administrative credentials, hijack visitor web sessions, and run internal scanning passes to pivot deeper into the corporate intranet.
 
-- Execute comprehensive code scanning sweeps across all public web directories to identify and eliminate unverified script extensions.
-- Force immediate update applications across all active core content engines and third party interface plugins.
-- Configure web application firewalls to actively block common command strings or double extension file writes targeting media folders.
-- Limit the operating permissions of the web application daemon to prevent the execution of backend shell binaries.
+- Upgrade all content management system installations and third-party extensions to their current secure release tiers instantly.
+- Review public-facing web folders to isolate and eliminate unrecognized script files or anomalous web.config changes.
+- Configure web application firewalls to actively intercept traversal strings and block direct script execution inside media directories.
+- Ensure the underlying web server daemon runs under a profile of lowest possible system privileges to prevent binary execution.
 
-Web server infrastructure defense requires combining aggressive component patch updates with strict file system write locks to guarantee that external configuration modules cannot serve as automated initial access paths. #CodeDefence #Webshell #CMS #AppSec #WordPress #Joomla #VulnerabilityManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>Zimbra urges immediate deployment of security hotfixes for critical Classic Web Client XSS flaw</title>
-  <link>https://codedefence.in/blog/2026/07/11/zimbra-classic-web-client-stored-xss-vulnerability-patched</link>
-  <pubDate>Sat, 11 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/11/zimbra-classic-web-client-stored-xss-vulnerability-patched</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Zimbra](urn:li:organization:21187)</cd:mentions>
-  <description><![CDATA[
-Critical input filtering failures inside a widely deployed enterprise collaboration and messaging interface have driven emergency update mandates to prevent session hijacking. The vulnerability enables remote attackers to transmit specialized email payloads that execute malicious script components whenever a user views the message.
-
-The unassigned flaw impacts the Classic Web Client framework within Zimbra messaging distributions. The core defect manifests as a stored cross site scripting condition, where the mail server component fails to securely neutralize incoming html attribute parameters. If an enterprise user reads a tailored exploit email, the nested script automatically executes inside the active browser context, allowing the external asset to steal session parameters and execute commands with the privileges of the victim.
-
-Subverting an active enterprise email session introduces immediate data exposure and identity spoofing hazards. Because messaging portals consolidate internal communications, directory parameters, and identity tokens, an unauthorized session takeover lets threat networks read sensitive corporate conversations, download attachment archives, and distribute secondary phishing lures masquerading as internal administrative notifications.
-
-- Upgrade affected email hosting environments to the latest secure maintenance builds released by Zimbra immediately.
-- Enforce rigid content security policy headers to restrict the execution of unverified inline scripts within mail rendering panels.
-- Inspect mail transaction logs for anomalous outbound message patterns or unexpected configuration edits across user profiles.
-- Advise administrative groups to transition user configurations toward updated web interface modules that handle data parsing securely.
-
-Messaging perimeter protection relies on the rigorous sanitation of incoming data strings to ensure that complex email payloads cannot be manipulated into executing untrusted application commands. #CodeDefence #Zimbra #XSS #SessionHijacking #EmailSecurity #AppSec
+Web server infrastructure resilience relies on the rapid validation of component updates combined with rigid directory write restrictions to guarantee that external public portals do not function as automated entry pathways. #CodeDefence #CMS #AppSec #WordPress #Joomla #Webshell #ThreatIntel
   ]]></description>
 </item>
 
