@@ -2,23 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 14 July 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 15 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 14 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 15 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 14 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 14 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 15 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 15 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical SAP NetWeaver AS ABAP memory corruption vulnerability CVE-2026-44747 patches on July Patch Day</title>
-  <link>https://codedefence.in/blog/2026/07/14/sap-netweaver-as-abap-critical-memory-corruption-patched</link>
-  <pubDate>Tue, 14 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/14/sap-netweaver-as-abap-critical-memory-corruption-patched</guid>
+  <title>Microsoft patches actively exploited AD FS elevation of privilege zero day CVE-2026-56155</title>
+  <link>https://codedefence.in/blog/2026/07/15/microsoft-patches-actively-exploited-ad-fs-zero-day-cve-2026-56155</link>
+  <pubDate>Wed, 15 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/15/microsoft-patches-actively-exploited-ad-fs-zero-day-cve-2026-56155</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-56155</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+An actively exploited zero-day vulnerability inside a core identity federation platform has been patched, preventing threat groups from escalating privileges to the administrator level. The vulnerability involves an access control flaw that fails to enforce strict authorization checks on local system processes.
+
+Tracked as CVE-2026-56155, the security defect impacts Active Directory Federation Services. Discovered by investigators handling live network breaches, the flaw is caused by insufficient granularity in local access controls. A threat actor with initial, low-privilege access to an AD FS server can execute malicious scripts to bypass security boundaries and claim domain administrator privileges, effectively seizing control of the corporate identity forest.
+
+Subverting a centralized identity federation node compromises authentication boundaries across local and cloud directories. Because federated servers manage single sign-on parameters, user groups, and application access tokens, an administrative takeover lets threat networks forge trusted credentials, bypass multi-factor authentication policies, and gain persistent backdoors into connected cloud resources.
+
+- Apply the July 2026 Patch Tuesday security updates to all Windows Server hosts running Active Directory Federation Services immediately.
+- Enforce rigid local group policy parameters to prevent low-privilege service accounts from interacting with directory services processes.
+- Monitor security event logs for anomalous administrative authentications originating from local system accounts on the AD FS server.
+- Review directory change logs for unverified additions to highly privileged security groups during the exposure window.
+
+Identity perimeter resilience depends on the continuous enforcement of least-privilege administrative access controls over core directory federation pipelines. #CodeDefence #Microsoft #ADFS #PrivilegeEscalation #ZeroDay #PatchTuesday #IdentitySecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>SAP NetWeaver AS ABAP memory corruption vulnerability CVE-2026-44747 resolved in July updates</title>
+  <link>https://codedefence.in/blog/2026/07/15/sap-netweaver-critical-memory-corruption-vulnerability-patched</link>
+  <pubDate>Wed, 15 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/15/sap-netweaver-critical-memory-corruption-vulnerability-patched</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-44747</cd:cve>
   <cd:mentions>@[SAP](urn:li:organization:1120)</cd:mentions>
   <description><![CDATA[
-A critical memory corruption vulnerability located within a dominant enterprise resource planning application platform has been resolved during the scheduled July security release cycles, preventing remote threat networks from subverting core database systems. The vulnerability permits unauthenticated network reachable actors to manipulate memory allocations to execution unauthorized background scripts.
+A critical memory corruption vulnerability inside a dominant enterprise resource planning application platform has been resolved during the scheduled July security release cycles, preventing remote threat networks from subverting core database systems. The vulnerability permits unauthenticated network-reachable actors to manipulate memory allocations to execute unauthorized background scripts.
 
 The vulnerability, tracked as CVE-2026-44747, carries a CVSS score of 9.9 and impacts multiple SAP Kernel releases used inside SAP NetWeaver Application Server ABAP setups. The defect resides within memory management subroutines handling incoming platform transactions. Because the system fails to properly validate input sizes during memory allocation actions, an attacker can route specialized network queries to overwrite core thread variables, bypass standard tenant isolation barriers, and claim complete control over the host backend.
 
@@ -34,49 +58,26 @@ Enterprise database resilience relies on keeping internal memory allocation rule
 </item>
 
 <item>
-  <title>CISA adds legacy Cisco IOS Cross Site Request Forgery vulnerability CVE-2008-4128 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/07/14/cisa-adds-legacy-cisco-ios-csrf-to-kev-catalog</link>
-  <pubDate>Tue, 14 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/14/cisa-adds-legacy-cisco-ios-csrf-to-kev-catalog</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2008-4128</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>CISA adds maximum severity Joomla extension vulnerabilities to KEV catalog following zero day attacks</title>
+  <link>https://codedefence.in/blog/2026/07/15/cisa-adds-joomla-extension-file-upload-vulnerabilities-to-kev-catalog</link>
+  <pubDate>Wed, 15 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/15/cisa-adds-joomla-extension-file-upload-vulnerabilities-to-kev-catalog</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-48939‚ CVE-2026-56291</cd:cve>
+  <cd:mentions>@[Joomla](urn:li:organization:10037805)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-An active wild exploitation campaign targeting legacy edge routing systems has driven the inclusion of a classic validation vulnerability into the federal catalog of verified internet threats. The defect enables remote unauthenticated threat groups to manipulate web browsing sessions to inject rogue configurations directly into exposed edge routing platforms.
+Two maximum-severity vulnerabilities impacting prominent third-party extensions for a major content management platform have been added to the Known Exploited Vulnerabilities catalog. The bugs allow unauthenticated remote attackers to bypass validation filters to upload and execute malicious backend code files.
 
-The vulnerability, tracked as CVE-2008-4128, affects Cisco IOS operating system configurations. The security bug involves an input verification failure within the integrated administrative web configuration dashboard, facilitating cross site request forgery. If an authenticated administrator visits a compromised web page while maintaining an open browser tab to the routing switch, the malicious script automatically transfers commands to modify internal network settings, write file variables, and activate hidden management protocols without requiring further interaction.
+The flaws affect the iCagenda extension (CVE-2026-48939) and the Balbooa Forms extension (CVE-2026-56291) deployed on Joomla-based websites. Both issues involve an unrestricted file upload vulnerability, carrying perfect CVSS scores of 10.0. Threat groups are utilizing automated scanning tools to locate exposed interfaces and execute file upload queries to plant persistent web shells. Due to evidence of active zero-day exploitation, CISA has mandated swift remediation across all affected networks.
 
-Compromising a legacy edge router allows attackers to construct an unmonitored listening post inside corporate networks. Once boundary switch configurations are modified, adversaries can bypass local isolation rules, intercept transit communication packets, clone administrative traffic logs, and prepare lateral penetration runs targeting internal storage blocks.
+Allowing unrestricted file uploads on public web nodes completely undermines boundary controls. Once an adversary successfully uploads a PHP-based web shell, they bypass authentication gates, read database configuration files, siphon user records, and execute background commands to launch secondary attacks against internal subnets.
 
-- Disable the web interface dashboard across all active edge switches if it is not an absolute business mandate.
-- Restrict remote management interaction paths, gating routing console access exclusively inside protected administrative segments.
-- Deploy the latest verified firmware updates provided by the hardware manufacturer to close the verification loophole.
-- Execute systematic compliance reviews to ensure no unexpected administrative profiles were generated during exposure phases.
+- Conduct an inventory review to identify if the iCagenda or Balbooa Forms extensions are installed across your web assets.
+- Apply the latest secure versions and security hotfixes released by the extension developers immediately.
+- Scan public-facing directory structures for unverified or newly added files with executable extensions.
+- Configure web application firewalls to actively detect and block unauthorized file uploads targeting extension endpoints.
 
-Boundary device safety depends on maintaining strict access management controls combined with prompt version upgrades to guarantee that perimeter hardware remains protected from automated request manipulation techniques. #CodeDefence #Cisco #IOS #CSRF #CISA #KEV #EdgeSecurity #RouterHygiene
-  ]]></description>
-</item>
-
-<item>
-  <title>New Jalisco and OmegaLord phishing kits bypass MFA to target Microsoft 365 enterprise accounts</title>
-  <link>https://codedefence.in/blog/2026/07/14/jalisco-and-omegalord-phishing-kits-bypass-mfa</link>
-  <pubDate>Tue, 14 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/14/jalisco-and-omegalord-phishing-kits-bypass-mfa</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-A series of sophisticated credential harvesting campaigns targeting enterprise identity platforms has been uncovered, leveraging newly developed phishing toolkits specifically designed to bypass multi factor authentication. The toolkits manipulate legitimate verification protocols to secure unmonitored command environments directly within corporate clouds.
-
-The threat campaigns utilize the Jalisco and OmegaLord phishing frameworks to target Microsoft 365 environments. Discovered via research tracking records from ReliaQuest, the Jalisco toolkit specifically abuses the OAuth 2.0 Device Authorization Grant flow. By provisioning fresh Microsoft device codes in real-time on malicious landing pages, the toolkit overrides the typical 15-minute validity window. Once a user is tricked into approving the code, the attacker automatically secures active session parameters and cloud token permissions without needing to collect the user password. Concurrently, OmegaLord uses fake PDF applications to collect credentials and intercept push notification codes.
-
-Bypassing multi factor authentication steps removes a core defense boundary from enterprise networks. Once an attacker establishes an authorized token footprint within a cloud directory, they can read internal email communications, modify active document files, download sensitive configuration blueprints, and register persistent backdoor endpoints to maintain access.
-
-- Implement strict conditional access rules to restrict the usage of device code authentication flows across corporate user accounts.
-- Transition access policies toward hardware-bound cryptographic multi factor authentication parameters.
-- Monitor active user directories for anomalous token creations originating from unrecognized hosting providers or unexpected geographic locations.
-- Educate engineering and administrative teams on the mechanics of device code social engineering attempts.
-
-Cloud identity protection relies on the rigorous restriction of unneeded authentication protocols to ensure that public portals do not function as automated initial access channels. #CodeDefence #Microsoft #MFA #Phishing #OAuth #CloudSecurity #IdentityProtection
+Web application security demands rigid file verification controls to ensure that external content additions cannot be manipulated into executing untrusted system commands. #CodeDefence #Joomla #UnrestrictedUpload #Webshell #CISA #KEV #VulnerabilityManagement #AppSec
   ]]></description>
 </item>
 
