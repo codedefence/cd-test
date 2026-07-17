@@ -2,82 +2,58 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 16 July 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 17 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 16 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 17 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 16 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 16 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 17 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Fri, 17 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>SonicWall SMA 1000 Series zero days CVE-2026-15409 and CVE-2026-15410 exploited in active wild attacks</title>
-  <link>https://codedefence.in/blog/2026/07/16/sonicwall-sma-1000-zero-days-exploited-active-wild-attacks</link>
-  <pubDate>Thu, 16 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/16/sonicwall-sma-1000-zero-days-exploited-active-wild-attacks</guid>
+  <title>CISA adds actively exploited Microsoft SharePoint Server zero day RCE vulnerability CVE-2026-58644 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/17/cisa-adds-exploited-sharepoint-rce-zero-day-cve-2026-58644-to-kev</link>
+  <pubDate>Fri, 17 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/17/cisa-adds-exploited-sharepoint-rce-zero-day-cve-2026-58644-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-15409‚ CVE-2026-15410</cd:cve>
-  <cd:mentions>@[SonicWall](urn:li:organization:18280)</cd:mentions>
-  <description><![CDATA[
-Critical vulnerabilities within a major enterprise secure remote access gateway are undergoing active zero day exploitation, forcing emergency patching mandates. The defects permit unauthenticated network adversaries to manipulate server side requests and inject arbitrary operating system command strings to take over edge gateways.
-
-The first vulnerability, tracked as CVE-2026-15409, is a critical server side request forgery flaw in the SMA 1000 Appliance Work Place portal that allows unauthenticated remote actors to force the appliance to route requests to unauthorized network segments. The second flaw, CVE-2026-15410, is a high severity post authentication code injection bug in the Appliance Management Console that lets authenticated administrators run elevated shell routines. SonicWall has verified active case files where threat networks are actively exploiting these flaws, prompting immediate version upgrades.
-
-Compromising a secure gateway appliance compromises the entry point to the corporate network. Because secure mobile access controllers handle VPN connectivity, directory authentications, and traffic routing for remote employees, a gateway level takeover lets adversaries bypass access filters, read internal data streams, harvest credentials, and establish persistent backdoors into adjacent database partitions.
-
-- Upgrade affected appliances to platform hotfix versions 12.4.3-03453 or 12.5.0-02835 and higher immediately.
-- Review extraweb access log entries for unauthorized queries targeting login or logout endpoints with successful http 200 codes.
-- Inspect unit configurations for unexpected hotfix rollback files containing double encoding or traversal strings.
-- Reset all user credentials, administrator passwords, and active time based one time password tokens if indicators of compromise are verified.
-
-Perimeter gateway security depends on prompt version alignment and continuous log monitoring to ensure that remote access bridges are completely protected from unauthenticated request manipulation and injection arrays. #CodeDefence #SonicWall #SMA1000 #ZeroDay #SSRF #CommandInjection #AppSec #EdgeSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds Microsoft AD FS privilege escalation zero day CVE-2026-56155 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/07/16/cisa-adds-microsoft-adfs-privilege-escalation-zero-day-to-kev</link>
-  <pubDate>Thu, 16 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/16/cisa-adds-microsoft-adfs-privilege-escalation-zero-day-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-56155</cd:cve>
+  <cd:cve>CVE-2026-58644</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-An actively exploited zero day privilege escalation vulnerability within a core directory single sign on framework has been formally added to the national registry of active internet threats. The defect enables local authenticated threat actors to bypass authorization checking libraries and claim absolute domain administrator rights.
+A critical deserialization of untrusted data vulnerability residing inside an enterprise content coordination platform has been formally indexed into the federal directory of active threats. The flaw allows authenticated network actors to bypass logical parsing constraints and execute arbitrary system commands over the network.
 
-Tracked within security registries as CVE-2026-56155, the flaw affects Active Directory Federation Services installations. The bug stems from an access control failure that fails to enforce granular privilege checking on local processes executing directory queries. If an attacker gains baseline, low privilege access to an AD FS server, they can execute specialized script strings to bypass the tenant boundaries, corrupt authentication checks, and elevate their credentials to domain administrator level.
+The security bug, tracked as CVE-2026-58644, impacts multiple supported branches of Microsoft SharePoint Server, including Subscription Edition, Server 2019, and Enterprise Server 2016. The underlying error involves a failure to securely parse input strings within application object deserialization routines. In a network-based intrusion scenario, an attacker authenticated with baseline Site Owner permissions can submit tailored data arguments to trigger remote code execution paths on the underlying host. Microsoft updated its initial patch documentation to confirm active targeting prior to the software update deployment, prompting regulators to mandate rapid remediation steps under Binding Operational Directive 26-04 parameters.
 
-Subverting a centralized identity federation controller compromises the trust boundaries of both local and cloud directory environments. Because federated identity servers manage single sign on parameters, user groups, and application access tokens, an administrative takeover lets threat networks forge trusted validation tokens, bypass multi factor authentication policies, and establish persistent backend entries into corporate cloud assets.
+Subverting a centralized file management core exposes internal directory environments to post-exploitation cascades. Because corporate collaboration portals are heavily integrated with internal directory configurations, local server keys, and sensitive business documentation structures, an unauthorized takeover lets threat groups intercept data collections, extract machine keys, and deploy secondary malicious packages while avoiding standard network security detection mechanisms.
 
-- Apply the July 2026 Patch Tuesday cumulative updates to all Active Directory Federation Services hosts immediately.
-- Audit local system logging repositories to identify anomalous administrative creations or unrecognized security group adjustments.
-- Restrict low privilege service profiles from executing shell processes or interacting with the core federation directory database.
-- Enforce rigid risk based patching schedules matching federal operational directives to close exposure windows.
+- Ensure immediate installation of the cumulative security patches released during the July update cycle to all SharePoint Server instances.
+- Apply strict configuration hardening parameters to restrict external network exposure to SharePoint central management dashboards.
+- Audit local application event records for unrecognized file execution paths or unusual machine key harvesting attempts.
+- Scan user directory permissions to verify that only authorized personnel maintain active Site Owner attributes across the farm.
 
-Identity perimeter stability relies on the continuous enforcement of least privilege policies over core authentication platforms to guarantee that centralized identity databases are completely protected from local elevation maneuvers. #CodeDefence #Microsoft #ADFS #PrivilegeEscalation #ZeroDay #PatchTuesday #IdentitySecurity #CISA #KEV
+Content aggregation safety depends on prompt version upgrades combined with rigid boundary access controls to guarantee that core server processing blocks are completely shielded from unauthenticated command manipulation. #CodeDefence #Microsoft #SharePoint #RCE #Deserialization #ZeroDay #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Zoom Desktop Client vulnerability CVE-2026-53412 enables unauthenticated account takeover</title>
-  <link>https://codedefence.in/blog/2026/07/16/critical-zoom-desktop-client-vulnerability-enables-account-takeover</link>
-  <pubDate>Thu, 16 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/16/critical-zoom-desktop-client-vulnerability-enables-account-takeover</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-53412</cd:cve>
-  <cd:mentions>@[Zoom](urn:li:organization:10729)</cd:mentions>
+  <title>Actively exploited Fortinet FortiSandbox OS command injection vulnerabilities fast tracked into CISA KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/17/actively-exploited-fortinet-fortisandbox-vulnerabilities-added-to-kev</link>
+  <pubDate>Fri, 17 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/17/actively-exploited-fortinet-fortisandbox-vulnerabilities-added-to-kev</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-25089‚ CVE-2026-39808</cd:cve>
+  <cd:mentions>@[Fortinet](urn:li:organization:1225)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical input validation vulnerability inside a dominant desktop collaboration and meeting platform has been resolved, preventing unauthenticated network actors from hijacking client installations. The defect permits an attacker to route malformed validation parameters over the network to execute unauthorized account takeovers.
+Two critical operating system command injection vulnerabilities within an enterprise threat detection and file analysis suite have been added to the national registry of confirmed exploits due to real-world target tracking. The flaws enable remote unauthenticated actors to pass malformed network requests to bypass parameter restrictions and run background commands with elevated permissions.
 
-The vulnerability, tracked as CVE-2026-53412, carries a CVSS score of 9.8 and impacts Zoom Desktop Client for Windows, Zoom VDI Client for Windows, and Zoom Meeting SDK for Windows. The flaw involves a logic failure during the parsing of network inputs, allowing an unauthenticated remote actor to submit tailored communication arguments to hijack the active session context of the user.
+The vulnerabilities, tracked as CVE-2026-25089 and CVE-2026-39808, carry severe impact scores and affect Fortinet FortiSandbox, FortiSandbox Cloud, and FortiSandbox PaaS architectures across multiple release variations. The flaws reside within specific API endpoint input validation libraries that handle user configuration queries. By transmitting tailored HTTP requests to vulnerable interfaces, an unauthenticated attacker can force the host environment to process embedded command strings, executing rogue binaries on the appliance shell. CISA has issued an accelerated remediation timeline under federal operational directives due to the high frequency of scanning operations logged by security monitoring units.
 
-Subverting a centralized desktop communication client introduces immediate credential theft and data espionage risks. Because collaboration software runs inside the user workstation session with active microphone, camera, and local folder permissions, an unauthorized account takeover lets adversaries access private communications, download sensitive corporate files, and deploy secondary malware payloads onto the user system.
+Compromising a threat detection engine reverses the protection framework of the corporate network. Because sandbox appliances are deployed to analyze suspicious files and coordinate threat blocks across adjacent firewall clusters, an administrative takeover allows external threat networks to turn off detection rules, gather local configuration keys, and position permanent persistence channels to target internal database partitions.
 
-- Force immediate software updates across all desktop endpoints to install Zoom Workplace for Windows version 7.0.0 or higher.
-- Ensure VDI configurations are updated to version 7.0.10, 6.6.15, or 6.5.18 in their respective branches to resolve the input parsing errors.
-- Monitor endpoint protective tracking panels for anomalous background network transmissions initiating from communication client binaries.
-- Implement strict conditional access boundaries to verify device health and security postures before allowing cloud applications to log in.
+- Upgrade affected appliances to FortiSandbox software maintenance versions 4.4.9 or 5.0.6 and higher immediately to close the input validation gaps.
+- Restrict remote management API interactions from public routing ranges, gating device configurations inside isolated segments.
+- Monitor network communication logs for unexpected HTTP request structures or atypical process terminations on the sandbox appliance.
+- Enforce strict container isolation boundaries to prevent compromised analysis layers from accessing the primary corporate subnet.
 
-Workstation software security depends on the continuous sanitization of incoming communication strings to guarantee that desktop application components cannot operate as remote execution vectors. #CodeDefence #Zoom #AccountTakeover #AppSec #InputValidation #EndpointSecurity #VulnerabilityManagement
+Malware analysis infrastructure safety relies on the continuous sanitization of incoming API parameters to ensure that threat intelligence appliances do not function as automated initial access paths for malicious networks. #CodeDefence #Fortinet #FortiSandbox #CommandInjection #RCE #CISA #KEV #VulnerabilityManagement
   ]]></description>
 </item>
 
