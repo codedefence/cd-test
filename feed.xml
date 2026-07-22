@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 21 July 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 22 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 21 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 22 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 21 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Tue, 21 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Wed, 22 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Wed, 22 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Detailed analysis reveals 7-Zip XZ archive heap buffer overflow vulnerability CVE-2026-14266</title>
-  <link>https://codedefence.in/blog/2026/07/21/7-zip-xz-archive-heap-buffer-overflow-vulnerability</link>
-  <pubDate>Tue, 21 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/21/7-zip-xz-archive-heap-buffer-overflow-vulnerability</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-14266</cd:cve>
-  <description><![CDATA[
-A severe heap-based buffer overflow flaw residing in the processing logic of a widely deployed file decompression utility has been detailed by vulnerability researchers. The flaw allows remote threat actors to execute arbitrary code within the context of the extracting application by tricking a victim into opening a specially crafted compressed file.
-
-The security issue, tracked as CVE-2026-14266, affects 7-Zip versions prior to build 26.02. Technical analysis reveals an out-of-bounds write condition inside the MixCoder_Code function of the XZ decoder module C/XzDec.c. When processing chunked output streams through a filter, the archiver incorrectly calculates available output buffer boundaries, passing full buffer length definitions rather than remaining space after prior write operations. An attacker delivering a malicious archive via email or web downloads can trigger memory corruption, gaining execution rights equivalent to the user session.
-
-Subverting local archiver processes presents a significant endpoint security risk across corporate environments. Because compression tools are routinely utilized for handling internal attachments and system updates, an archive-driven code execution flaw allows adversaries to drop secondary payloads, harvest local credentials, and establish footholds on developer workstations.
-
-- Upgrade 7-Zip installations across all workstation endpoints to version 26.02 or later immediately.
-- Configure email security gateways to inspect and block compressed XZ archives with malformed header structures.
-- Restrict unprivileged execution paths to prevent user-level applications from launching unauthorized secondary processes.
-- Implement strict application control parameters to ensure local file utilities operate under least-privilege configurations.
-
-Endpoint system integrity relies on maintaining strict input validation within utility libraries to ensure localized file handling tools do not serve as execution channels for malicious payloads. #CodeDefence #7Zip #BufferOverflow #AppSec #VulnerabilityManagement #EndpointSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>Microsoft Copilot remote code execution flaw CVE-2026-48561 exploited via browser prompt injections</title>
-  <link>https://codedefence.in/blog/2026/07/21/microsoft-copilot-remote-code-execution-vulnerability</link>
-  <pubDate>Tue, 21 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/21/microsoft-copilot-remote-code-execution-vulnerability</guid>
+  <title>Critical Microsoft SharePoint RCE flaw CVE-2026-50522 exploited in the wild to exfiltrate machine keys</title>
+  <link>https://codedefence.in/blog/2026/07/22/microsoft-sharepoint-rce-cve-2026-50522-exploited-machine-keys</link>
+  <pubDate>Wed, 22 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/22/microsoft-sharepoint-rce-cve-2026-50522-exploited-machine-keys</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-48561</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-A critical remote code execution vulnerability located within an artificial intelligence assistant integration pipeline has been detailed, highlighting risks associated with automated web interaction parameters. The bug permits remote adversaries to execute arbitrary background commands by delivering indirect prompt injection strings via web browser sessions.
-
-The vulnerability, tracked as CVE-2026-48561 and carrying a CVSS score of 9.6, impacts Microsoft Copilot deployments integrated across enterprise Edge environments. The flaw stems from insufficient sanitization of incoming web data streams processed by automated assistant subroutines. By hosting a malicious web page that forces the browser assistant to process embedded prompt parameters, an attacker can manipulate underlying script parameters, execute arbitrary code, and access local system resources.
-
-Exploiting artificial intelligence integration layers removes traditional user validation boundaries from corporate workstations. Because assistant modules interact directly with operating system APIs and local session tokens, an indirect prompt injection attack lets adversaries steal authentication cookies, access local document caches, and pivot into corporate cloud environments.
-
-- Apply current security updates provided by Microsoft for Edge browser and Copilot components across all corporate devices.
-- Enforce rigid web filtering policies to prevent enterprise browsers from navigating to unverified hosting domains.
-- Restrict AI assistant system permissions to limit automated access to local user file directories and system commands.
-- Monitor endpoint security telemetry for unusual process creations originating from browser integration daemons.
-
-Enterprise AI deployment security depends on establishing strict isolation controls around automated language tools to guarantee that web-delivered prompt injections cannot execute host system commands. #CodeDefence #Microsoft #Copilot #AISecurity #PromptInjection #RCE #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA issues updated alert urging Layer 7 proxy isolation for Microsoft SharePoint Server deployments</title>
-  <link>https://codedefence.in/blog/2026/07/21/cisa-updates-sharepoint-server-hardening-alert</link>
-  <pubDate>Tue, 21 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/21/cisa-updates-sharepoint-server-hardening-alert</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-55040‚ CVE-2026-58644</cd:cve>
+  <cd:cve>CVE-2026-50522</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have updated an emergency operational alert following ongoing active wild exploitation targeting enterprise document management platforms. Threat actors are chaining authentication bypass flaws with deserialization vectors to gain full remote control over on-premises collaboration hosts.
+A critical deserialization of untrusted data vulnerability residing within an enterprise document aggregation and collaboration platform is undergoing active wild exploitation. The flaw allows unauthenticated remote network actors to execute arbitrary code streams and extract core application secret keys directly over network connections.
 
-The alert focuses on active exploitation of CVE-2026-55040 and CVE-2026-58644 across Microsoft SharePoint Server 2016, 2019, and Subscription Edition environments. Incident telemetry indicates threat groups are exploiting weak authentication checks to bypass edge filters, execute untrusted object deserialization, steal IIS machine keys, and deploy persistent web shell backdoors. CISA has reinforced directives requiring enterprise administrators to place all internet-facing SharePoint nodes behind authenticated Layer 7 reverse proxies.
+Tracked as CVE-2026-50522 with a CVSS score of 9.8, the defect impacts on-premises Microsoft SharePoint Server installations. Threat monitoring telemetry confirms that adversaries are leveraging public proof of concept code blocks to issue unauthenticated requests against sign-in endpoints. By executing the payload, threat actors capture IIS machine keys, allowing them to forge persistent session tokens and maintain administrative access across the collaboration farm even after binary security patches are installed.
 
-Compromising a central collaboration server provides attackers with an unmonitored command post inside the corporate network. Armed with stolen machine keys and system-level execution rights, threat actors can decrypt application traffic, access internal document vaults, and execute lateral movement routines targeting adjacent directory controllers.
+Exfiltrating IIS machine keys from a centralized collaboration server creates severe long-term security hazards. Because compromised machine keys grant attackers the ability to sign and decrypt viewstate parameters independently, an adversary retains persistent administrative impersonation capabilities across adjacent subnets, neutralizing traditional identity boundary controls.
 
-- Isolate all on-premises SharePoint Server farms behind Layer 7 reverse proxies that require strict pre-authentication.
-- Apply the latest cumulative security patches released by Microsoft across all SharePoint deployment tiers immediately.
-- Inspect web server configuration files and registry hives for signs of machine key harvesting or unauthorized modifications.
-- Conduct comprehensive log reviews to identify unusual deserialization exceptions or unauthorized administrative script calls.
+- Apply the latest security updates provided by Microsoft across all on-premises SharePoint deployments immediately.
+- Execute mandatory key rotation procedures for all IIS machine keys across exposed SharePoint farms to invalidate intercepted tokens.
+- Restrict network access to SharePoint administrative endpoints by placing instances behind pre-authenticated zero trust reverse proxies.
+- Monitor IIS web logs for anomalous single-request GET or POST parameters carrying unauthenticated deserialization headers.
 
-Document repository protection requires enforcing strict network perimeter boundaries to ensure internal collaboration platforms are completely shielded from unauthenticated remote exploitation. #CodeDefence #Microsoft #SharePoint #Deserialization #AuthBypass #CISA #KEV #VulnerabilityManagement
+Enterprise document architecture defense demands immediate patch installation paired with complete cryptographic credential rotation to guarantee that compromised machine keys cannot maintain persistent backdoor channels. #CodeDefence #Microsoft #SharePoint #RCE #MachineKeys #CISA #KEV
+  ]]></description>
+</item>
+
+<item>
+  <title>Hackers actively exploit Windmill path traversal vulnerability CVE-2026-29059 to read superadmin secrets</title>
+  <link>https://codedefence.in/blog/2026/07/22/windmill-path-traversal-vulnerability-cve-2026-29059-exploited</link>
+  <pubDate>Wed, 22 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/22/windmill-path-traversal-vulnerability-cve-2026-29059-exploited</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-29059</cd:cve>
+  <description><![CDATA[
+An active exploitation campaign targeting an open-source developer platform has been uncovered, allowing unauthenticated network actors to read arbitrary system files. The vulnerability stems from an unsanitized file path concatenation flaw within diagnostic API endpoints.
+
+The vulnerability, tracked as CVE-2026-29059, affects the Windmill developer automation suite. Threat monitoring data shows automated scanning loops targeting the get_log_file API endpoint. By submitting directory traversal sequences within the filename parameter, attackers can read sensitive system files including /proc/1/environ. This exposes the SUPERADMIN_SECRET environment variable, which attackers then convert into bearer authentication tokens to execute arbitrary code via job preview endpoints.
+
+Exposing core platform environment variables to unauthenticated internet queries breaks application isolation parameters. Once a threat actor acquires superadministrator secrets from developer orchestration engines, they can modify automated background jobs, access integrated database credentials, and pivot laterally into corporate deployment pipelines.
+
+- Update all active Windmill application instances to version 1.418.0 or later to apply input sanitization fixes.
+- Audit server environment variable access logs to verify if SUPERADMIN_SECRET tokens were queried prior to patching.
+- Rotate all administrative bearer tokens and database connection strings managed within the developer platform workspace.
+- Enforce strict perimeter firewalls to restrict public internet routing access to internal developer tools.
+
+Developer pipeline security relies on strict input parameter sanitization combined with immediate token rotation to ensure internal orchestration platforms do not function as initial access channels. #CodeDefence #Windmill #PathTraversal #AppSec #DevOps #VulnerabilityManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds Langflow AI framework vulnerability CVE-2026-0770 to KEV catalog amid active exploitation</title>
+  <link>https://codedefence.in/blog/2026/07/22/cisa-adds-langflow-vulnerability-cve-2026-0770-to-kev-catalog</link>
+  <pubDate>Wed, 22 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/22/cisa-adds-langflow-vulnerability-cve-2026-0770-to-kev-catalog</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-0770</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Federal cybersecurity regulators have added an actively exploited vulnerability in an artificial intelligence development framework to the Known Exploited Vulnerabilities catalog. The flaw allows unauthenticated remote actors to manipulate component parameters to execute arbitrary code inside hosting environments.
+
+The vulnerability, tracked as CVE-2026-0770, affects the Langflow visual framework used for building autonomous AI agent workflows. Attackers exploit an inclusion of functionality from an untrusted control sphere defect to submit custom request blocks. Attack telemetry shows threat actors executing commands to read system files, collect cloud environment variables, and download second-stage malware payloads onto AI server hosts.
+
+Subverting artificial intelligence orchestration nodes creates severe security exposure across corporate cloud environments. Because AI orchestration tools hold persistent API tokens and direct read access to corporate knowledge bases, an unauthenticated host takeover lets adversaries exfiltrate enterprise intellectual property and compromise connected cloud infrastructure.
+
+- Upgrade Langflow application deployments to the latest patched software releases immediately.
+- Isolate AI development frameworks behind strict network segmentation controls requiring zero trust authentication.
+- Rotate all cloud access tokens and API keys stored or processed within the AI agent orchestration pipeline.
+- Align remediation schedules with federal operational directives under BOD 26-04 requirements.
+
+Artificial intelligence system resilience depends on maintaining rigid control sphere boundaries to guarantee that automated agent frameworks remain fully shielded from untrusted script injection. #CodeDefence #Langflow #AISecurity #CISA #KEV #RCE #CloudSecurity
   ]]></description>
 </item>
 
