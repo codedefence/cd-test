@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 24 July 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 25 July 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 24 July 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 25 July 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 24 July 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Fri, 24 July 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Sat, 25 July 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Sat, 25 July 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Certighost exploit enables low privileged Active Directory users to impersonate Domain Controllers</title>
-  <link>https://codedefence.in/blog/2026/07/24/certighost-exploit-active-directory-certificate-services-cve-2026-54121</link>
-  <pubDate>Fri, 24 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/24/certighost-exploit-active-directory-certificate-services-cve-2026-54121</guid>
+  <title>ServiceNow releases emergency hotfixes for critical MID Server unauthenticated RCE flaw CVE-2026-38910</title>
+  <link>https://codedefence.in/blog/2026/07/25/servicenow-mid-server-unauthenticated-rce-vulnerability-patched</link>
+  <pubDate>Sat, 25 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/25/servicenow-mid-server-unauthenticated-rce-vulnerability-patched</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-38910</cd:cve>
+  <cd:mentions>@[ServiceNow](urn:li:organization:13829)</cd:mentions>
+  <description><![CDATA[
+A critical unauthenticated command injection vulnerability located inside an enterprise IT orchestration bridge component has been resolved, preventing external threat networks from pivoting directly into internal subnets. The defect enables unauthenticated remote actors to transmit malformed SOAP parameters to execute arbitrary shell scripts on hosting servers.
+
+The vulnerability, tracked as CVE-2026-38910 and carrying a CVSS score of 9.8, impacts ServiceNow MID Server installations associated with Washington DC, Xanadu, and Yokohama release tracks. The underlying error stems from insufficient input sanitization within SOAP message parsing subroutines. Because MID Servers are deployed inside internal corporate networks to execute automated commands and fetch data for cloud instances, an attacker exploiting this endpoint can execute arbitrary operating system commands with local system privileges.
+
+Compromising an enterprise MID Server represents a severe breach of internal network boundaries. Because MID Server instances hold cached administrative credentials and maintain direct connections to internal Active Directory, database, and virtualization assets, an unauthorized host takeover permits threat actors to steal internal domain hashes, bypass perimeter firewall filters, and launch horizontal movement loops.
+
+- Apply emergency security patches and cumulative hotfixes distributed by ServiceNow across all active MID Server instances immediately.
+- Restrict inbound network connectivity to MID Server SOAP endpoints, allowing communications exclusively from verified ServiceNow cloud IP ranges.
+- Audit local MID Server host execution logs for anomalous process creations or unexpected PowerShell invocations.
+- Ensure host service profiles operating MID Server daemons run under least-privilege service account configurations rather than local system accounts.
+
+IT orchestration safety relies on strict input parameter sanitization combined with rigid network access controls to guarantee that internal gateway connectors cannot serve as unmonitored entry pathways into corporate subnets. #CodeDefence #ServiceNow #MIDServer #RCE #CommandInjection #AppSec #CloudSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA fast tracks Certighost Active Directory Certificate Services exploit CVE-2026-54121 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/07/25/cisa-adds-certighost-ad-cs-exploit-to-kev-catalog</link>
+  <pubDate>Sat, 25 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/25/cisa-adds-certighost-ad-cs-exploit-to-kev-catalog</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-54121</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical exploit chain targeting Active Directory Certificate Services has been publicly disclosed alongside functional proof of concept code, allowing low privilege domain users to achieve complete domain takeover. The attack mechanism exploits a logic flaw within certificate enrollment chase fallbacks to trick the Certificate Authority into signing machine certificates with Domain Controller identities.
+Federal cybersecurity regulators have added a critical Active Directory Certificate Services domain controller impersonation vulnerability to the Known Exploited Vulnerabilities catalog following widespread public proof of concept availability. The flaw allows unprivileged domain users to manipulate certificate enrollment fallbacks to claim complete domain authority.
 
-The vulnerability, tracked as CVE-2026-54121 and codenamed Certighost, affects Enterprise Certificate Authorities running across Windows Server environments. An authenticated domain user leveraging default machine account creation quotas can deploy a rogue SMB and LDAP listener. When initiating a certificate request, the attacker forces the Certificate Authority to follow an unverified chase target, relaying authentication challenges over Netlogon to return the target Domain Controller object SID. The CA signs the certificate, granting Kerberos credentials that allow the attacker to execute DCSync routines and dump krbtgt password hashes.
+The vulnerability, tracked as CVE-2026-54121 and codenamed Certighost, affects Enterprise Certificate Authorities across Windows Server environments. Attackers utilize default machine account creation quotas to force the Certificate Authority to follow an unverified chase target, relaying authentication challenges over Netlogon to return Domain Controller object identifiers. The CA signs the certificate, returning Kerberos credentials that enable the attacker to execute DCSync routines and dump directory credential vaults.
 
-Subverting domain controller identity boundaries introduces catastrophic exposure across entire Active Directory forests. Because domain controller accounts hold directory replication privileges, an unprivileged attacker can forge Golden Tickets, bypass multi factor authentication gates, and secure permanent administrative persistence across local and cloud environments.
+Subverting domain controller identity boundaries introduces extreme hazards across Active Directory environments. Armed with forged Domain Controller certificates, an unprivileged attacker can generate Golden Tickets, bypass multi-factor authentication check gates, and secure persistent administrative control over both local and cloud directories.
 
-- Ensure immediate deployment of Microsoft July 14 security updates across all Active Directory Certificate Services hosts.
-- Reduce or set the default ms-DS-MachineAccountQuota attribute to zero across active domain controller configurations.
-- Audit Active Directory Certificate Services enrollment logs for anomalous machine certificate requests originating from non-DC accounts.
-- Monitor domain controllers for unexpected DCSync RPC calls or Netlogon authentication relay attempts.
+- Force immediate deployment of Microsoft July cumulative security updates across all Active Directory Certificate Services hosts.
+- Set the default ms-DS-MachineAccountQuota attribute to zero across active domain controller policy configurations.
+- Inspect Certificate Authority enrollment logs for anomalous machine certificate requests issued to non-DC accounts.
+- Monitor domain controller event logs for unauthorized DCSync RPC calls or Netlogon authentication relay attempts.
 
-Active Directory architecture safety relies on strict identity validation during certificate enrollment to guarantee that Certificate Authorities do not sign unverified machine identity claims. #CodeDefence #ActiveDirectory #ADCS #Certighost #DCSync #Kerberos #IdentitySecurity #AppSec
+Identity directory protection depends on strict validation of certificate enrollment requests to ensure that Certificate Authorities do not issue unverified machine credentials. #CodeDefence #ActiveDirectory #ADCS #Certighost #DCSync #IdentitySecurity #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Clop ransomware gang targets internet exposed PTC Windchill and FlexPLM instances in data theft campaign</title>
-  <link>https://codedefence.in/blog/2026/07/24/clop-ransomware-targets-ptc-windchill-flexplm-data-theft</link>
-  <pubDate>Fri, 24 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/24/clop-ransomware-targets-ptc-windchill-flexplm-data-theft</guid>
+  <title>GitLab issues emergency security updates for critical SAML authentication bypass vulnerability CVE-2026-41209</title>
+  <link>https://codedefence.in/blog/2026/07/25/gitlab-patches-critical-saml-authentication-bypass-cve-2026-41209</link>
+  <pubDate>Sat, 25 July 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/25/gitlab-patches-critical-saml-authentication-bypass-cve-2026-41209</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[PTC](urn:li:organization:3172)</cd:mentions>
+  <cd:cve>CVE-2026-41209</cd:cve>
+  <cd:mentions>@[GitLab](urn:li:organization:3522818)</cd:mentions>
   <description><![CDATA[
-A specialized data extortion campaign orchestrating wide scale automated file exfiltration has been identified targeting enterprise product lifecycle management platforms. Threat operators associated with the Clop ransomware cluster are systematically probing internet facing application servers to exploit unpatched input parsing flaws and extract proprietary design files.
+Emergency security releases have been distributed for an enterprise software development platform to patch a critical authentication bypass vulnerability. The defect permits remote unauthenticated network actors to forge SAML assertions and claim administrative access over target code repositories.
 
-The attack activity specifically targets exposed PTC Windchill and FlexPLM software instances deployed across industrial manufacturing and technology enterprises. Threat tracking telemetry reveals that adversaries are deploying custom automated web scripts to scan public web paths, bypass baseline session verification checks, and access backend file repositories. Rather than deploying file encrypting payloads, the operators focus exclusively on staging and exfiltrating intellectual property databases, blueprint schematics, and supply chain records to conduct extortion demands.
+The security issue, tracked as CVE-2026-41209 with a CVSS score of 9.9, affects self-managed GitLab Community Edition and Enterprise Edition installations configured with SAML single sign on authentication. The vulnerability stems from an improper validation of SAML response signatures within underlying Ruby authentication gems. By submitting a modified SAML XML payload containing forged assertion attributes, an unauthenticated attacker can trick the application into logging them in as arbitrary users, including system administrators.
 
-Targeting centralized product lifecycle systems exposes high value intellectual property and trade secrets to public leak repositories. Because PLM platforms consolidate product engineering specifications, vendor contracts, and manufacturing blueprints, an unauthorized breach compromises commercial market advantages and disrupts partner trust boundaries.
+Bypassing authentication on a central code repository platform introduces immediate software supply chain compromise risks. Once an adversary acquires administrative privileges on a code management server, they can view proprietary source code, modify production build pipelines, inject malicious backdoors into software releases, and steal cloud infrastructure tokens.
 
-- Isolate all internet-facing PTC Windchill and FlexPLM management portals behind authenticated zero trust application gateways.
-- Review server access logs for anomalous file archive downloads or unusual query parameters targeting diagnostic endpoints.
-- Apply current security maintenance updates and hotfixes provided by PTC across all product lifecycle servers.
-- Restrict file storage directory permissions to prevent web server daemons from reading unauthorized repository trees.
+- Upgrade self-managed GitLab instances to patched versions 17.11.1, 17.10.4, or 17.9.7 immediately.
+- Inspect SAML authentication logs for anomalous sign-in events or unverified response attribute modifications.
+- Rotate all personal access tokens, deployment keys, and continuous integration variables managed within the platform.
+- Enforce mandatory two-factor authentication requirements across all user accounts to provide secondary access barriers.
 
-Enterprise intellectual property defense requires strict network segmentation combined with rapid patch installation to guarantee that core product management portals do not function as automated exfiltration channels. #CodeDefence #Clop #Ransomware #PTC #Windchill #DataExfiltration #SupplyChain #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds Check Point SmartConsole authentication flaw CVE-2026-16232 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/07/24/cisa-adds-check-point-smartconsole-cve-2026-16232-to-kev</link>
-  <pubDate>Fri, 24 July 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/07/24/cisa-adds-check-point-smartconsole-cve-2026-16232-to-kev</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-16232</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal cybersecurity regulators have updated the Known Exploited Vulnerabilities catalog following confirmed reports of real world zero day exploitation targeting enterprise security management interfaces. The bug permits remote unauthenticated actors to exploit logic flaws within administrative GUI panels to manipulate session parameters.
-
-The security issue, tracked as CVE-2026-16232, impacts Check Point SmartConsole management application environments. Adversaries are actively issuing custom network requests against exposed administration endpoints to bypass authentication controls and claim elevated session tokens. CISA has mandated strict remediation deadlines across federal civilian networks under Binding Operational Directive 26-04 to insulate boundary security infrastructure.
-
-Compromising a central firewall management console gives threat actors control over perimeter security policies across the enterprise. Armed with administrative access, attackers can modify firewall routing rules, disable intrusion prevention systems, extract VPN configuration parameters, and establish persistent backdoors into internal network segments.
-
-- Apply current hotfixes and software security updates distributed by Check Point Software across all SmartConsole instances immediately.
-- Remove SmartConsole administrative interfaces from open public internet routing, restricting access to trusted management subnets.
-- Audit administrator login histories for unauthorized connection sessions or anomalous policy modification events.
-- Enforce mandatory hardware-bound multi-factor authentication across all perimeter security administration portals.
-
-Network management plane resilience depends on maintaining strict interface isolation to ensure that centralized firewall control consoles remain completely protected from unauthenticated access manipulation. #CodeDefence #CheckPoint #SmartConsole #CISA #KEV #FirewallSecurity #NetworkSecurity #VulnerabilityManagement
+Source code management security demands continuous verification of identity assertion signatures to ensure centralized development platforms remain completely protected from unauthenticated access manipulation. #CodeDefence #GitLab #SAML #AuthBypass #DevSecOps #SupplyChain #AppSec
   ]]></description>
 </item>
 
