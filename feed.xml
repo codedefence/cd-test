@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 1 August 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 2 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 1 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 2 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 01 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 01 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 02 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Adobe issues emergency security patches for maximum severity Campaign Classic vulnerability CVE-2026-48449</title>
-  <link>https://codedefence.in/blog/2026/08/01/adobe-campaign-classic-cvss-10-vulnerability-patched</link>
-  <pubDate>Sat, 01 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/01/adobe-campaign-classic-cvss-10-vulnerability-patched</guid>
+  <title>Adobe patches maximum severity Campaign Classic vulnerability CVE-2026-48449 permitting zero click RCE</title>
+  <link>https://codedefence.in/blog/2026/08/02/adobe-campaign-classic-cvss-10-vulnerability-patched</link>
+  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/adobe-campaign-classic-cvss-10-vulnerability-patched</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-48449‚ CVE-2026-48448</cd:cve>
   <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
   <description><![CDATA[
-Emergency security updates have been released for a major enterprise marketing automation suite to address multiple severe security flaws. The primary flaw permits unauthenticated network actors to execute arbitrary operating system commands without requiring user interaction.
+Emergency security updates have been released for an enterprise marketing automation suite to address multiple severe security flaws. The primary flaw permits unauthenticated network actors to execute arbitrary operating system commands without requiring user interaction.
 
 The critical vulnerability, tracked as CVE-2026-48449 with a perfect CVSS score of 10.0, impacts Adobe Campaign Classic v7 versions prior to build 9398 across Windows and Linux server platforms. The flaw stems from an authorization logic error during incoming application parameter checks. An attacker can send unauthenticated network requests to trigger arbitrary code execution inside the active host context. Concurrently, Adobe patched CVE-2026-48448, a high severity SQL injection flaw allowing arbitrary file system reads.
 
@@ -34,10 +34,33 @@ Enterprise application safety relies on continuous authorization validation to g
 </item>
 
 <item>
-  <title>Critical Ruby on Rails Active Storage vulnerability CVE-2026-66066 yields arbitrary file reads and RCE</title>
-  <link>https://codedefence.in/blog/2026/08/01/ruby-on-rails-active-storage-file-read-cve-2026-66066</link>
-  <pubDate>Sat, 01 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/01/ruby-on-rails-active-storage-file-read-cve-2026-66066</guid>
+  <title>JetBrains warns of critical TeamCity On Premises authentication bypass vulnerability leading to RCE</title>
+  <link>https://codedefence.in/blog/2026/08/02/jetbrains-teamcity-authentication-bypass-rce-vulnerability</link>
+  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/jetbrains-teamcity-authentication-bypass-rce-vulnerability</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[JetBrains](urn:li:organization:14227)</cd:mentions>
+  <description><![CDATA[
+A critical authentication bypass vulnerability impacting a leading continuous integration and continuous deployment build server has been disclosed. The security defect allows unauthenticated remote adversaries to bypass login verification screens and claim full administrative privileges on target build platforms.
+
+The security flaw affects JetBrains TeamCity On-Premises installations. The issue resides within an unverified endpoint handler processing incoming web requests. An unauthenticated attacker can format specialized API calls to bypass authentication controllers, create rogue administrator accounts, or generate administrative access tokens. Once administrative control is secured, the adversary can execute arbitrary code on build agents, modify pipeline scripts, and access source code repositories.
+
+Subverting build automation infrastructure poses a severe software supply chain hazard. Because CI/CD platforms hold signing certificates, deployment keys, and direct connections to cloud production environments, an administrative takeover allows attackers to tamper with software releases, inject backdoors, and pivot into corporate cloud infrastructure.
+
+- Apply current security updates and maintenance hotfixes released by JetBrains across all TeamCity On-Premises servers immediately.
+- Restrict web access to TeamCity management portals by placing build servers behind authenticated zero trust access gateways.
+- Inspect administrative user account rosters and audit logs for unauthorized user additions or anomalous API key creations.
+- Rotate all production deployment credentials, signing certificates, and cloud keys stored within build variables.
+
+Continuous integration pipeline protection requires continuous identity verification to ensure build servers remain completely shielded from unauthenticated access manipulation. #CodeDefence #JetBrains #TeamCity #AuthBypass #RCE #DevSecOps #SupplyChain #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Ruby on Rails Active Storage vulnerability CVE-2026-66066 yields arbitrary file reads and master key theft</title>
+  <link>https://codedefence.in/blog/2026/08/02/ruby-on-rails-active-storage-file-read-cve-2026-66066</link>
+  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/ruby-on-rails-active-storage-file-read-cve-2026-66066</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-66066</cd:cve>
   <cd:mentions>@[Ruby on Rails](urn:li:organization:3106511)</cd:mentions>
@@ -54,29 +77,6 @@ Exposing core process environment variables and master cryptographic keys underm
 - Implement web application firewall rules to intercept abnormal image upload payloads containing custom headers.
 
 Application framework protection demands rigid input verification at third party library boundaries to ensure file processing engines do not disclose internal system files. #CodeDefence #RubyOnRails #ActiveStorage #ArbitraryFileRead #AppSec #VulnerabilityManagement #RCE
-  ]]></description>
-</item>
-
-<item>
-  <title>Storm-2945 captive portal DNS hijacking campaign drops CornFlake RAT and ChocoShell stealer</title>
-  <link>https://codedefence.in/blog/2026/08/01/storm-2945-captive-portal-dns-hijacking-cornflake-rat</link>
-  <pubDate>Sat, 01 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/01/storm-2945-captive-portal-dns-hijacking-cornflake-rat</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
-  <description><![CDATA[
-A widespread adversary campaign targeting traveling corporate users has been uncovered, abusing compromised hotel Wi-Fi captive portals to deploy surveillance trojans and identity stealers. The threat actors manipulate gateway DNS settings to force browser update prompts that drop persistent implants.
-
-The operation, designated CaptiveCrunch and linked to Midnight Blizzard sub-cluster Storm-2945, compromises captive portal gateways that act as primary DNS resolvers for connected clients. Armed with administrative gateway control, attackers forge DNS responses to intercept automated device connectivity checks, serving fake browser updates. Victims executing the fake installers download CornFlake, a Go-based RAT that steals browser credentials, captures audio and webcam feeds, and opens remote shells. Concurrently, the attackers deploy ChocoShell, an in-memory PowerShell stealer designed to extract Microsoft 365 and Azure Active Directory access tokens directly from the Windows Token Broker cache.
-
-Compromising network transit DNS resolvers bypasses standard endpoint perimeter filters. Stealing active Web Account Manager tokens allows threat actors to execute session replay attacks into corporate cloud environments, completely bypassing multi-factor authentication requirements without prompting secondary verification alerts.
-
-- Instruct remote employees to connect strictly through encrypted zero trust VPN tunnels when using public or hospitality Wi-Fi.
-- Enforce strict endpoint protection policies that block unverified utility executions initiated from browser temporary directories.
-- Monitor cloud identity access logs for anomalous user session authentications originating from unexpected geographic IP ranges.
-- Transition authentication configurations to enforce hardware-bound conditional access controls for corporate cloud applications.
-
-Remote connectivity safety relies on mandatory transport encryption combined with hardware-bound identity validation to ensure public wireless gateways cannot function as automated credential theft vectors. #CodeDefence #Microsoft #CaptiveCrunch #Storm2945 #DNSHijacking #TokenStealing #IdentitySecurity #EndpointSecurity
   ]]></description>
 </item>
 
