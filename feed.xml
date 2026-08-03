@@ -2,23 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 2 August 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 3 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 2 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 3 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sun, 02 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 03 August 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Mon, 03 August 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>Adobe patches maximum severity Campaign Classic vulnerability CVE-2026-48449 permitting zero click RCE</title>
-  <link>https://codedefence.in/blog/2026/08/02/adobe-campaign-classic-cvss-10-vulnerability-patched</link>
-  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/adobe-campaign-classic-cvss-10-vulnerability-patched</guid>
+  <title>Critical N-able N-central RMM authentication bypass vulnerability CVE-2026-18577 exploited in active attacks</title>
+  <link>https://codedefence.in/blog/2026/08/03/n-able-n-central-authentication-bypass-cve-2026-18577-exploited</link>
+  <pubDate>Mon, 03 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/03/n-able-n-central-authentication-bypass-cve-2026-18577-exploited</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-18577‚ CVE-2026-18556</cd:cve>
+  <cd:mentions>@[N-able](urn:li:organization:663528)</cd:mentions>
+  <description><![CDATA[
+A critical authentication bypass zero-day vulnerability in a widely deployed remote monitoring and management platform is undergoing active wild exploitation. The flaw enables remote unauthenticated threat actors to bypass login verification handlers and acquire administrative console authority over target managed service provider environments.
+
+Tracked as CVE-2026-18577 and stemming from an incomplete patch for CVE-2026-18556, the defect impacts N-able N-central versions through 2026.3.1 across on-premises and cloud-hosted instances. Threat actors pass specialized HTTP requests to force authentication bypass loops, securing full console rights. Forensic telemetry indicates attackers abuse the built-in Take Control feature to execute background tasks on managed customer endpoints and establish persistent Cloudflare outbound tunnels.
+
+Subverting a centralized remote monitoring platform introduces extreme multi-tenant supply chain risks. Because RMM controllers hold elevated agent tokens, active script execution permissions, and direct network connectivity to thousands of client endpoints, an administrative console takeover lets threat networks deploy ransomware payloads and siphon corporate secrets across all managed customer networks.
+
+- Upgrade N-able N-central instances immediately to hotfix build version 2026.3.1.7 or later.
+- Inspect administrative console login registries for unauthorized user session creations or unrecognized API key generation events.
+- Audit managed client endpoints for unauthorized background processes executing Cloudflare tunnel binaries or modified Take Control components.
+- Restrict N-central management console exposure by placing administrative web portals behind pre-authenticated zero trust access gateways.
+
+Remote management plane safety demands rapid emergency hotfix deployment combined with strict zero trust interface controls to ensure centralized MSP platforms cannot be subverted into automated supply chain intrusion vectors. #CodeDefence #Nable #Ncentral #RMM #AuthBypass #SupplyChain #ZeroDay #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Critical Azure Cosmos DB code execution vulnerability CVE-2026-66803 disclosed with maximum CVSS score</title>
+  <link>https://codedefence.in/blog/2026/08/03/azure-cosmos-db-code-execution-vulnerability-cve-2026-66803</link>
+  <pubDate>Mon, 03 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/03/azure-cosmos-db-code-execution-vulnerability-cve-2026-66803</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-66803</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+A maximum-severity code execution vulnerability in a core cloud database integration runtime has been detailed. The flaw allows unauthenticated network actors to pass crafted data payloads to execute untrusted code commands within tenant cloud hosting boundaries.
+
+The vulnerability, tracked as CVE-2026-66803 with a CVSS score of 10.0, impacts applications processing queries via specific Microsoft Azure Cosmos DB software development kits. The flaw resides within untrusted JSON serialization and type mapping subroutines. By submitting specially formatted database query parameters, an attacker triggers a buffer validation failure, forcing the host process to execute embedded shell instructions with the privileges of the underlying cloud microservice.
+
+Subverting cloud database connector modules compromises multi-tenant data confidentiality and operational integrity. Once an adversary secures arbitrary code execution on a cloud application host, they can siphon backend database tables, capture access tokens, and pivot horizontally into adjacent tenant storage containers.
+
+- Deploy updated SDK packages provided by Microsoft across all enterprise application build pipelines immediately.
+- Enforce strict input validation filters at API gateway tiers to intercept anomalous JSON type parameters.
+- Audit cloud database access logs for unexpected process spawns or unauthorized query executions.
+- Rotate all database master keys and connection strings associated with exposed application microservices.
+
+Cloud database infrastructure resilience relies on continuous input sanitization and rapid SDK dependency updates to ensure processing frameworks remain fully insulated from unauthenticated code execution payloads. #CodeDefence #Microsoft #Azure #CosmosDB #RCE #CloudSecurity #AppSec #DevSecOps
+  ]]></description>
+</item>
+
+<item>
+  <title>Adobe issues emergency security patches for maximum severity Campaign Classic vulnerability CVE-2026-48449</title>
+  <link>https://codedefence.in/blog/2026/08/03/adobe-campaign-classic-cvss-10-vulnerability-patched</link>
+  <pubDate>Mon, 03 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/03/adobe-campaign-classic-cvss-10-vulnerability-patched</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-48449‚ CVE-2026-48448</cd:cve>
   <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
   <description><![CDATA[
-Emergency security updates have been released for an enterprise marketing automation suite to address multiple severe security flaws. The primary flaw permits unauthenticated network actors to execute arbitrary operating system commands without requiring user interaction.
+Emergency security updates have been released for a major enterprise marketing automation suite to address multiple severe security flaws. The primary flaw permits unauthenticated network actors to execute arbitrary operating system commands without requiring user interaction.
 
 The critical vulnerability, tracked as CVE-2026-48449 with a perfect CVSS score of 10.0, impacts Adobe Campaign Classic v7 versions prior to build 9398 across Windows and Linux server platforms. The flaw stems from an authorization logic error during incoming application parameter checks. An attacker can send unauthenticated network requests to trigger arbitrary code execution inside the active host context. Concurrently, Adobe patched CVE-2026-48448, a high severity SQL injection flaw allowing arbitrary file system reads.
 
@@ -30,53 +78,6 @@ Subverting a centralized marketing engine introduces immense corporate data expo
 - Audit host file systems to confirm that web daemon accounts operate under strict least privilege boundaries.
 
 Enterprise application safety relies on continuous authorization validation to guarantee that marketing automation platforms are completely protected from unauthenticated remote code execution. #CodeDefence #Adobe #CampaignClassic #RCE #SQLi #AppSec #PatchManagement #VulnerabilityManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>JetBrains warns of critical TeamCity On Premises authentication bypass vulnerability leading to RCE</title>
-  <link>https://codedefence.in/blog/2026/08/02/jetbrains-teamcity-authentication-bypass-rce-vulnerability</link>
-  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/jetbrains-teamcity-authentication-bypass-rce-vulnerability</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[JetBrains](urn:li:organization:14227)</cd:mentions>
-  <description><![CDATA[
-A critical authentication bypass vulnerability impacting a leading continuous integration and continuous deployment build server has been disclosed. The security defect allows unauthenticated remote adversaries to bypass login verification screens and claim full administrative privileges on target build platforms.
-
-The security flaw affects JetBrains TeamCity On-Premises installations. The issue resides within an unverified endpoint handler processing incoming web requests. An unauthenticated attacker can format specialized API calls to bypass authentication controllers, create rogue administrator accounts, or generate administrative access tokens. Once administrative control is secured, the adversary can execute arbitrary code on build agents, modify pipeline scripts, and access source code repositories.
-
-Subverting build automation infrastructure poses a severe software supply chain hazard. Because CI/CD platforms hold signing certificates, deployment keys, and direct connections to cloud production environments, an administrative takeover allows attackers to tamper with software releases, inject backdoors, and pivot into corporate cloud infrastructure.
-
-- Apply current security updates and maintenance hotfixes released by JetBrains across all TeamCity On-Premises servers immediately.
-- Restrict web access to TeamCity management portals by placing build servers behind authenticated zero trust access gateways.
-- Inspect administrative user account rosters and audit logs for unauthorized user additions or anomalous API key creations.
-- Rotate all production deployment credentials, signing certificates, and cloud keys stored within build variables.
-
-Continuous integration pipeline protection requires continuous identity verification to ensure build servers remain completely shielded from unauthenticated access manipulation. #CodeDefence #JetBrains #TeamCity #AuthBypass #RCE #DevSecOps #SupplyChain #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>Ruby on Rails Active Storage vulnerability CVE-2026-66066 yields arbitrary file reads and master key theft</title>
-  <link>https://codedefence.in/blog/2026/08/02/ruby-on-rails-active-storage-file-read-cve-2026-66066</link>
-  <pubDate>Sun, 02 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/02/ruby-on-rails-active-storage-file-read-cve-2026-66066</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-66066</cd:cve>
-  <cd:mentions>@[Ruby on Rails](urn:li:organization:3106511)</cd:mentions>
-  <description><![CDATA[
-A critical security flaw in the Active Storage component of the Ruby on Rails web application framework has been resolved. The defect allows unauthenticated remote network actors to read arbitrary system files from application servers, facilitating master secret key exfiltration and remote code execution.
-
-The vulnerability, tracked as CVE-2026-66066 carrying a CVSS score of 9.5, affects Rails setups integrated with the libvips image processing engine. The flaw exists at the boundary where Active Storage hands untrusted file attachments to processing subroutines. By submitting a malformed image payload, an attacker forces the server worker to read local environment variables, disclosing SECRET_KEY_BASE credentials, database connections, and cloud API tokens. Possessing master keys allows adversaries to sign malicious serialized objects to gain complete remote execution.
-
-Exposing core process environment variables and master cryptographic keys undermines the security framework of web applications. Once an attacker extracts application secret keys, they can bypass session verification controls, forge administrative login cookies, and execute background commands on host nodes.
-
-- Upgrade web applications immediately to patched Ruby on Rails maintenance releases 7.2.3.2 or 8.1.3.1.
-- Audit Active Storage configurations to ensure untrusted image uploads do not invoke unverified libvips processing options.
-- Rotate all application secrets, database credentials, and cloud storage API tokens if exposure occurred.
-- Implement web application firewall rules to intercept abnormal image upload payloads containing custom headers.
-
-Application framework protection demands rigid input verification at third party library boundaries to ensure file processing engines do not disclose internal system files. #CodeDefence #RubyOnRails #ActiveStorage #ArbitraryFileRead #AppSec #VulnerabilityManagement #RCE
   ]]></description>
 </item>
 
