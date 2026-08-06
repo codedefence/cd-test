@@ -2,82 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 5 August 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 6 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 5 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 6 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 05 August 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Wed, 05 August 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
+  <lastBuildDate>Thu, 06 August 2026 19:15:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds IBM Langflow unauthenticated code injection vulnerability CVE-2026-9198 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/05/cisa-adds-ibm-langflow-code-injection-cve-2026-9198-to-kev</link>
-  <pubDate>Wed, 05 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/05/cisa-adds-ibm-langflow-code-injection-cve-2026-9198-to-kev</guid>
+  <title>CISA adds JetBrains TeamCity deserialization RCE vulnerability CVE-2026-63077 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/08/06/cisa-adds-jetbrains-teamcity-deserialization-cve-2026-63077-to-kev</link>
+  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/cisa-adds-jetbrains-teamcity-deserialization-cve-2026-63077-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-9198</cd:cve>
-  <cd:mentions>@[IBM](urn:li:organization:1009)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-63077</cd:cve>
+  <cd:mentions>@[JetBrains](urn:li:organization:14227)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A maximum-severity code injection vulnerability residing within a dominant artificial intelligence development and workflow orchestration framework has been formally added to the national registry of active internet threats. The defect enables unauthenticated network adversaries to execute raw code strings and claim full control over underlying server hosts.
+A maximum severity unauthenticated remote code execution vulnerability residing inside an enterprise continuous integration build platform has been added to the federal directory of confirmed active internet threats. The defect enables unauthenticated network actors to bypass login authorization checks and execute arbitrary system commands on underlying build servers.
 
-Tracked as CVE-2026-9198 with a CVSS score of 9.8, the vulnerability impacts default installations of IBM Langflow prior to version 1.10.1. The flaw stems from insufficient sanitization of incoming JSON payload arguments when building dynamic agent graph components. Threat actors transmit malformed query parameters to force the backend environment to execute embedded operating system commands without presenting valid credentials. Due to active target scanning across public cloud deployments, federal regulators have mandated accelerated remediation schedules under Binding Operational Directive 26-04.
+Tracked as CVE-2026-63077 with a CVSS score of 9.8, the vulnerability impacts all TeamCity On-Premises release builds prior to versions 2025.11.7 and 2026.1.3. The security defect stems from an untrusted data deserialization flaw in the agent polling protocol handler. An attacker can craft specialized HTTP or HTTPS requests to bypass authentication controllers, deserializing malicious objects that execute background shell commands under the context of the TeamCity process user. Due to active wild target probes, CISA has added the vulnerability to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 mandates.
 
-Subverting a centralized artificial intelligence orchestrator compromises connected cloud resources and dataset pipelines. Because AI agent frameworks maintain active API tokens, vector database access strings, and internal model parameters, an unauthenticated host takeover lets threat networks harvest proprietary enterprise data, forge system credentials, and pivot laterally into core corporate cloud environments.
+Subverting build automation infrastructure introduces extreme software supply chain risk across the enterprise. Because CI/CD platforms hold code signing keys, cloud deployment credentials, and internal repository access tokens, an administrative takeover allows attackers to inject malicious code into production software builds, steal intellectual property, and pivot into corporate cloud environments.
 
-- Force immediate software maintenance upgrades across all Langflow deployments to version 1.10.1 or higher.
-- Restrict web access to AI orchestration dashboards, gating administrative interfaces behind pre-authenticated zero trust reverse proxies.
-- Inspect host system logs for unexpected process creations originating from Python application workers.
-- Rotate all API access keys, database connection strings, and cloud tokens processed within Langflow agent pipelines.
+- Upgrade TeamCity On-Premises installations to patched versions 2025.11.7 or 2026.1.3 immediately, or apply the official security patch plugin for legacy versions.
+- Restrict web access to TeamCity management interfaces by placing build servers behind authenticated zero trust access gateways.
+- Inspect build agent execution logs and audit records for anomalous API queries or unverified administrative user account additions.
+- Rotate all production deployment credentials, repository tokens, and code signing certificates stored within build environment variables.
 
-Artificial intelligence pipeline security relies on rigid input validation combined with strict perimeter isolation to ensure automated agent frameworks cannot serve as initial access vectors for enterprise cloud intrusions. #CodeDefence #IBM #Langflow #AISecurity #RCE #CISA #KEV #CloudSecurity
+Continuous integration build server protection demands immediate patch deployment combined with strict network interface controls to ensure automated development infrastructure remains shielded from unauthenticated exploitation. #CodeDefence #JetBrains #TeamCity #RCE #Deserialization #DevSecOps #SupplyChain #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>CISA fast-tracks N-able N-central authentication bypass CVE-2026-18556 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/08/05/cisa-fast-tracks-n-able-n-central-auth-bypass-cve-2026-18556-to-kev</link>
-  <pubDate>Wed, 05 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/05/cisa-fast-tracks-n-able-n-central-auth-bypass-cve-2026-18556-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-18556‚ CVE-2026-18577</cd:cve>
-  <cd:mentions>@[N-able](urn:li:organization:663528)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal cybersecurity regulators have updated the Known Exploited Vulnerabilities catalog following confirmed reports of real-world exploitation targeting enterprise remote management servers. The flaw allows unauthenticated remote actors to bypass login controllers and acquire full administrative command over managed customer networks.
-
-The vulnerability, tracked as CVE-2026-18556 alongside patch bypass variant CVE-2026-18577, impacts N-able N-central remote monitoring and management appliances. Adversaries submit specialized HTTP request parameters to bypass authentication checks and claim full console authority. Forensic telemetry confirms that threat actors abuse the built-in Take Control feature to execute background tasks on client endpoints and register persistent Cloudflare outbound tunnels, maintaining access even after primary management console access is revoked.
-
-Subverting a centralized remote management engine introduces extreme multi-tenant supply chain risks. Because remote management servers hold elevated administrative tokens and continuous script execution rights across thousands of managed endpoints, an administrative takeover allows attackers to deploy secondary malware payloads and exfiltrate credentials across managed customer subnets.
-
-- Upgrade on-premises N-able N-central instances to hotfix build version 2026.3.1.7 immediately.
-- Inspect administrative console login registries for unauthorized user session creations or unrecognized API key generations.
-- Audit client endpoint service registries for anomalous background processes executing Cloudflare tunnel binaries or modified Take Control daemons.
-- Restrict management portal visibility to trusted administrative IP ranges using zero trust conditional access rules.
-
-Remote management plane resilience depends on emergency hotfix deployment paired with continuous endpoint service auditing to ensure central management platforms cannot be subverted for persistent supply chain intrusions. #CodeDefence #Nable #Ncentral #RMM #AuthBypass #SupplyChain #CISA #KEV #Persistence
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds Apache Tomcat missing encryption vulnerability CVE-2026-34486 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/05/cisa-adds-apache-tomcat-missing-encryption-cve-2026-34486-to-kev</link>
-  <pubDate>Wed, 05 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/05/cisa-adds-apache-tomcat-missing-encryption-cve-2026-34486-to-kev</guid>
+  <title>Threat actors exploit SQL injection to deploy in-database khunt post-exploitation toolkit inside Oracle servers</title>
+  <link>https://codedefence.in/blog/2026/08/06/hackers-deploy-khunt-post-exploitation-toolkit-inside-oracle-database</link>
+  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/hackers-deploy-khunt-post-exploitation-toolkit-inside-oracle-database</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-34486</cd:cve>
-  <cd:mentions>@[Apache Software Foundation](urn:li:organization:3522770)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Oracle](urn:li:organization:1028)‚ @[Apache Software Foundation](urn:li:organization:3522770)</cd:mentions>
   <description><![CDATA[
-A missing encryption of sensitive data vulnerability in a widely deployed Java application server cluster component has been added to the federal directory of actively exploited flaws. The bug permits network-adjacent threat actors to bypass pre-shared key encryption routines and intercept sensitive cluster communication streams.
+Forensic incident reports have exposed a stealthy post-exploitation technique where threat actors utilize an unauthenticated web application flaw to compile custom attack toolkits directly inside relational database memory structures. The approach allows adversaries to achieve command execution without dropping traditional executable files on server disks.
 
-The vulnerability, tracked as CVE-2026-34486 with a CVSS score of 7.5, affects Apache Tomcat versions 11.0.0 through 11.0.20, 10.1.0 through 10.1.53, and 9.0.0 through 9.0.116. The issue involves a flaw inside EncryptInterceptor, a cluster component designed to enforce pre-shared key encryption on messages transmitted between Tomcat cluster nodes. By exploiting the logic error, an attacker positioning themselves on the cluster subnet can bypass encryption checks, read cleartext inter-node messages, and extract session state tokens.
+The attack chain begins by exploiting an unauthenticated SQL injection vulnerability in a public-facing web application running on Apache Tomcat. Attackers pass malformed autocomplete search queries to execute raw SQL statements against a backend Oracle Database server. The actors leverage embedded Java Virtual Machine functionality via CREATE JAVA SOURCE statements to compile and store a specialized Java toolkit dubbed khunt inside database schema objects. The stored Java components include command execution modules like KhuntCmd, which launch system shells and execute operating system commands via standard SQL queries.
 
-Subverting cluster inter-node encryption undermines multi-server application boundaries. Armed with cleartext session tokens and cluster communication states, threat actors can hijack active user sessions, steal authorization tokens, and execute secondary impersonation attacks against connected enterprise web applications.
+Executing malicious payloads directly inside database engine memory bypasses endpoint detection and response tools reliant on disk file monitoring. Because database engines run with high system privileges, storing execution routines as database schema objects allows threat actors to maintain persistent hidden access, steal host credentials, and manipulate backend data records without generating file creation alerts.
 
-- Upgrade Apache Tomcat installations to secure versions 11.0.21, 10.1.54, or 9.0.117 and higher immediately.
-- Enforce network-level transport layer security across all Tomcat cluster communication channels using dedicated VLANs.
-- Monitor cluster network traffic for unencrypted packet transfers or unauthorized inter-node connection attempts.
-- Rotate all session keys and pre-shared cluster secret tokens across active server pools.
+- Perform comprehensive code audits on public-facing web application search endpoints to enforce parameterized SQL queries and eliminate SQL injection entry paths.
+- Restrict Oracle Database user schema privileges to prevent non-administrative accounts from executing CREATE JAVA SOURCE or running external procedures.
+- Inspect database schema objects for unrecognized Java sources, stored procedures, or unusual PL/SQL wrapper packages.
+- Monitor database network traffic and query logs for anomalous administrative command strings or unexpected Java execution calls.
 
-Application server cluster security relies on mandatory transport encryption and continuous protocol verification to ensure inter-node messaging pathways remain completely protected from unauthorized network interception. #CodeDefence #Apache #Tomcat #ClusterSecurity #Encryption #SessionHijacking #CISA #KEV #AppSec
+Database architecture security relies on strict input sanitization at application tiers combined with least-privilege schema controls to ensure database virtual machines cannot be subverted into fileless command execution hosts. #CodeDefence #Oracle #Tomcat #SQLi #Khunt #FilelessMalware #AppSec #DatabaseSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>TP-Link patches 15 Omada zero-touch provisioning flaws enabling enterprise network breaches</title>
+  <link>https://codedefence.in/blog/2026/08/06/tp-link-patches-15-omada-ztp-vulnerabilities-enabling-rce</link>
+  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/tp-link-patches-15-omada-ztp-vulnerabilities-enabling-rce</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[TP-Link](urn:li:organization:235767)</cd:mentions>
+  <description><![CDATA[
+Security updates have been distributed for an enterprise networking management ecosystem to patch 15 security vulnerabilities within zero-touch provisioning routines. When chained together, the flaws allow unauthenticated remote network actors to achieve remote code execution on edge controllers and breach internal networks.
+
+The security issues affect TP-Link Omada zero-touch provisioning mechanisms used across enterprise wireless access points, routers, and switch controllers. The flaws stem from improper input validation, weak cryptographic defaults, and unauthenticated API endpoints handling initial device enrollment communications. Threat actors capable of sending malformed provisioning requests can bypass device verification steps, execute arbitrary code on the management controller, and push malicious configuration files to connected edge hardware.
+
+Subverting enterprise network provisioning controllers destroys perimeter boundary isolation. Because zero-touch controllers automate the deployment of access rules, VLAN definitions, and device credentials, a controller-level compromise allows threat actors to intercept internal transit traffic, modify firewall routing policies, and establish unmonitored backdoors across corporate wireless and wired subnets.
+
+- Upgrade TP-Link Omada network controllers and edge device firmware to the latest security releases provided by TP-Link immediately.
+- Isolate zero-touch provisioning management interfaces on dedicated, non-routable management VLANs.
+- Inspect controller audit logs for unexpected device enrollment attempts or unrecognized configuration update pushes.
+- Disable automated zero-touch provisioning features on production network segments if not required for active deployment workflows.
+
+Enterprise network management plane resilience depends on continuous verification of device provisioning protocols to ensure centralized hardware controllers remain completely protected from unauthenticated access manipulation. #CodeDefence #TPLink #Omada #ZTP #NetworkSecurity #PatchManagement #RCE #VulnerabilityManagement
   ]]></description>
 </item>
 
