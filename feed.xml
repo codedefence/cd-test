@@ -2,80 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 6 August 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 7 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 6 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 7 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
-  <lastBuildDate>Thu, 06 August 2026 19:15:00 +0300</lastBuildDate>
+  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 07 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds JetBrains TeamCity deserialization RCE vulnerability CVE-2026-63077 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/06/cisa-adds-jetbrains-teamcity-deserialization-cve-2026-63077-to-kev</link>
-  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/cisa-adds-jetbrains-teamcity-deserialization-cve-2026-63077-to-kev</guid>
+  <title>North Carolina Ports Authority confirms major cyberattack disrupting port gate and terminal operations</title>
+  <link>https://codedefence.in/blog/2026/08/07/north-carolina-ports-authority-cyberattack-disruption</link>
+  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/north-carolina-ports-authority-cyberattack-disruption</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[North Carolina Ports Authority](urn:li:organization:3571295)</cd:mentions>
+  <description><![CDATA[
+A critical infrastructure cyberattack has impacted core operational logistics systems across major commercial maritime facilities. The security incident has caused system outages and operational delays across terminal gate processing networks and container movement facilities.
+
+The cyber disruption impacts infrastructure managed by the North Carolina Ports Authority, including the Port of Wilmington, the Port of Morehead City, and the Charlotte Inland Port. IT response teams were forced to take affected processing systems offline to contain lateral movement, resulting in manual processing workarounds and gate delays for commercial transport fleets. While vessel scheduling continues under backup protocols, forensic containment teams are auditing network logs to identify initial access vectors and restore central operational databases.
+
+Compromising maritime port logistics management systems presents severe supply chain exposure across regional commercial ecosystems. Because port management infrastructure coordinates container tracking, customs clearances, and automated gate access rules, an unmonitored breach forces manual operations, delays freight distribution networks, and creates cascading logistical backlogs.
+
+- Isolate all industrial control systems and logistics management networks from general corporate IT segments.
+- Implement strict multi-factor authentication controls across all remote maintenance portals utilized by port contractors.
+- Conduct thorough network threat hunting across active directory domain controllers to verify no unauthorized credentials were created.
+- Review perimeter firewall logs for unusual outbound data transfers originating from maritime operational networks.
+
+Critical infrastructure resilience relies on strict network segmentation between operational technology and corporate IT environments to ensure cyber incidents cannot disrupt essential supply chain facilities. #CodeDefence #CriticalInfrastructure #LogisticsSecurity #PortSecurity #IncidentResponse #ICS #MaritimeSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>Critical Paperclip AI agent import flaw CVE-2026-41679 permits unauthenticated host command execution</title>
+  <link>https://codedefence.in/blog/2026/08/07/paperclip-ai-agent-import-command-execution-cve-2026-41679</link>
+  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/paperclip-ai-agent-import-command-execution-cve-2026-41679</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-41679</cd:cve>
+  <cd:mentions>@[Rapid7](urn:li:organization:42323)</cd:mentions>
+  <description><![CDATA[
+A maximum severity unauthenticated command execution flaw residing within an artificial intelligence orchestration framework has been detailed, enabling remote network actors to force host servers to execute arbitrary shell commands.
+
+The security defect, tracked as CVE-2026-41679 with a CVSS score of 10.0, impacts Paperclip AI installations prior to version 2026.416.0. The vulnerability stems from an authorization bypass within default open signup configurations. An unauthenticated remote attacker can register a new account without email verification, access command line authorization routes, and submit malformed agent configuration import files. The server process adapter executes imported configuration strings directly as child processes, granting the attacker host shell execution rights under the context of the server user.
+
+Subverting artificial intelligence agent management software presents significant enterprise cloud risks. Because AI orchestration platforms manage API credentials, model pipelines, and internal database connections, an unauthenticated host takeover allows threat actors to harvest cloud credentials, access proprietary models, and launch secondary lateral movement sweeps.
+
+- Upgrade Paperclip AI platform instances immediately to version 2026.416.0 or higher to enforce instance-administrator checks.
+- Disable unverified open signup configurations on internet-accessible AI orchestration deployments.
+- Inspect application host logs for anomalous child process creations originating from AI server worker daemons.
+- Rotate all API keys, database connection strings, and cloud secrets managed within the AI platform workspace.
+
+Artificial intelligence framework protection depends on rigid authorization checks and restricted process execution rules to guarantee that automated agent configurations cannot serve as unmonitored host execution channels. #CodeDefence #PaperclipAI #AISecurity #RCE #CommandInjection #AppSec #CloudSecurity #Rapid7
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA enforces BOD 26-04 compliance timeline for JetBrains TeamCity deserialization RCE CVE-2026-63077</title>
+  <link>https://codedefence.in/blog/2026/08/07/cisa-enforces-bod-26-04-jetbrains-teamcity-cve-2026-63077</link>
+  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/cisa-enforces-bod-26-04-jetbrains-teamcity-cve-2026-63077</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-63077</cd:cve>
   <cd:mentions>@[JetBrains](urn:li:organization:14227)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A maximum severity unauthenticated remote code execution vulnerability residing inside an enterprise continuous integration build platform has been added to the federal directory of confirmed active internet threats. The defect enables unauthenticated network actors to bypass login authorization checks and execute arbitrary system commands on underlying build servers.
+Federal cybersecurity regulators are actively tracking compliance remediation windows following the addition of a critical continuous integration server vulnerability to the Known Exploited Vulnerabilities catalog. The flaw permits remote unauthenticated network actors to execute arbitrary operating system commands across build infrastructure.
 
-Tracked as CVE-2026-63077 with a CVSS score of 9.8, the vulnerability impacts all TeamCity On-Premises release builds prior to versions 2025.11.7 and 2026.1.3. The security defect stems from an untrusted data deserialization flaw in the agent polling protocol handler. An attacker can craft specialized HTTP or HTTPS requests to bypass authentication controllers, deserializing malicious objects that execute background shell commands under the context of the TeamCity process user. Due to active wild target probes, CISA has added the vulnerability to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 mandates.
+The vulnerability, tracked as CVE-2026-63077 with a CVSS score of 9.8, impacts JetBrains TeamCity On-Premises builds prior to versions 2025.11.7 and 2026.1.3. The defect involves an untrusted data deserialization bug within the agent polling protocol handler over HTTP and HTTPS. Attackers transmit malformed polling requests to bypass authentication handlers and execute shell commands with build server privileges. CISA has mandated accelerated remediation across federal networks under Binding Operational Directive 26-04 requirements.
 
-Subverting build automation infrastructure introduces extreme software supply chain risk across the enterprise. Because CI/CD platforms hold code signing keys, cloud deployment credentials, and internal repository access tokens, an administrative takeover allows attackers to inject malicious code into production software builds, steal intellectual property, and pivot into corporate cloud environments.
+Compromising build automation servers creates severe software supply chain exposure across enterprise development pipelines. Armed with administrative control over build nodes, threat actors can alter application source code, inject covert backdoors into production software updates, and steal cloud infrastructure deployment keys.
 
-- Upgrade TeamCity On-Premises installations to patched versions 2025.11.7 or 2026.1.3 immediately, or apply the official security patch plugin for legacy versions.
-- Restrict web access to TeamCity management interfaces by placing build servers behind authenticated zero trust access gateways.
-- Inspect build agent execution logs and audit records for anomalous API queries or unverified administrative user account additions.
-- Rotate all production deployment credentials, repository tokens, and code signing certificates stored within build environment variables.
+- Upgrade TeamCity On-Premises instances to patched versions 2025.11.7 or 2026.1.3 immediately, or install the security patch plugin.
+- Isolate build management portals behind authenticated zero trust access gateways that restrict public internet exposure.
+- Review build agent execution telemetry for unexpected process spawns or unauthorized user account creations.
+- Rotate all production deployment credentials, repository access tokens, and signing certificates stored in build variables.
 
-Continuous integration build server protection demands immediate patch deployment combined with strict network interface controls to ensure automated development infrastructure remains shielded from unauthenticated exploitation. #CodeDefence #JetBrains #TeamCity #RCE #Deserialization #DevSecOps #SupplyChain #CISA #KEV
-  ]]></description>
-</item>
-
-<item>
-  <title>Threat actors exploit SQL injection to deploy in-database khunt post-exploitation toolkit inside Oracle servers</title>
-  <link>https://codedefence.in/blog/2026/08/06/hackers-deploy-khunt-post-exploitation-toolkit-inside-oracle-database</link>
-  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/hackers-deploy-khunt-post-exploitation-toolkit-inside-oracle-database</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Oracle](urn:li:organization:1028)‚ @[Apache Software Foundation](urn:li:organization:3522770)</cd:mentions>
-  <description><![CDATA[
-Forensic incident reports have exposed a stealthy post-exploitation technique where threat actors utilize an unauthenticated web application flaw to compile custom attack toolkits directly inside relational database memory structures. The approach allows adversaries to achieve command execution without dropping traditional executable files on server disks.
-
-The attack chain begins by exploiting an unauthenticated SQL injection vulnerability in a public-facing web application running on Apache Tomcat. Attackers pass malformed autocomplete search queries to execute raw SQL statements against a backend Oracle Database server. The actors leverage embedded Java Virtual Machine functionality via CREATE JAVA SOURCE statements to compile and store a specialized Java toolkit dubbed khunt inside database schema objects. The stored Java components include command execution modules like KhuntCmd, which launch system shells and execute operating system commands via standard SQL queries.
-
-Executing malicious payloads directly inside database engine memory bypasses endpoint detection and response tools reliant on disk file monitoring. Because database engines run with high system privileges, storing execution routines as database schema objects allows threat actors to maintain persistent hidden access, steal host credentials, and manipulate backend data records without generating file creation alerts.
-
-- Perform comprehensive code audits on public-facing web application search endpoints to enforce parameterized SQL queries and eliminate SQL injection entry paths.
-- Restrict Oracle Database user schema privileges to prevent non-administrative accounts from executing CREATE JAVA SOURCE or running external procedures.
-- Inspect database schema objects for unrecognized Java sources, stored procedures, or unusual PL/SQL wrapper packages.
-- Monitor database network traffic and query logs for anomalous administrative command strings or unexpected Java execution calls.
-
-Database architecture security relies on strict input sanitization at application tiers combined with least-privilege schema controls to ensure database virtual machines cannot be subverted into fileless command execution hosts. #CodeDefence #Oracle #Tomcat #SQLi #Khunt #FilelessMalware #AppSec #DatabaseSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>TP-Link patches 15 Omada zero-touch provisioning flaws enabling enterprise network breaches</title>
-  <link>https://codedefence.in/blog/2026/08/06/tp-link-patches-15-omada-ztp-vulnerabilities-enabling-rce</link>
-  <pubDate>Thu, 06 August 2026 19:15:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/06/tp-link-patches-15-omada-ztp-vulnerabilities-enabling-rce</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[TP-Link](urn:li:organization:235767)</cd:mentions>
-  <description><![CDATA[
-Security updates have been distributed for an enterprise networking management ecosystem to patch 15 security vulnerabilities within zero-touch provisioning routines. When chained together, the flaws allow unauthenticated remote network actors to achieve remote code execution on edge controllers and breach internal networks.
-
-The security issues affect TP-Link Omada zero-touch provisioning mechanisms used across enterprise wireless access points, routers, and switch controllers. The flaws stem from improper input validation, weak cryptographic defaults, and unauthenticated API endpoints handling initial device enrollment communications. Threat actors capable of sending malformed provisioning requests can bypass device verification steps, execute arbitrary code on the management controller, and push malicious configuration files to connected edge hardware.
-
-Subverting enterprise network provisioning controllers destroys perimeter boundary isolation. Because zero-touch controllers automate the deployment of access rules, VLAN definitions, and device credentials, a controller-level compromise allows threat actors to intercept internal transit traffic, modify firewall routing policies, and establish unmonitored backdoors across corporate wireless and wired subnets.
-
-- Upgrade TP-Link Omada network controllers and edge device firmware to the latest security releases provided by TP-Link immediately.
-- Isolate zero-touch provisioning management interfaces on dedicated, non-routable management VLANs.
-- Inspect controller audit logs for unexpected device enrollment attempts or unrecognized configuration update pushes.
-- Disable automated zero-touch provisioning features on production network segments if not required for active deployment workflows.
-
-Enterprise network management plane resilience depends on continuous verification of device provisioning protocols to ensure centralized hardware controllers remain completely protected from unauthenticated access manipulation. #CodeDefence #TPLink #Omada #ZTP #NetworkSecurity #PatchManagement #RCE #VulnerabilityManagement
+Continuous integration build plane resilience depends on immediate patch deployment and rigid interface isolation to ensure central development servers remain completely protected from unauthenticated exploitation. #CodeDefence #JetBrains #TeamCity #RCE #Deserialization #DevSecOps #SupplyChain #CISA #KEV
   ]]></description>
 </item>
 
