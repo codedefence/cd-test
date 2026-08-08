@@ -2,81 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 7 August 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 8 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 7 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 8 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 07 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 08 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>North Carolina Ports Authority confirms major cyberattack disrupting port gate and terminal operations</title>
-  <link>https://codedefence.in/blog/2026/08/07/north-carolina-ports-authority-cyberattack-disruption</link>
-  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/north-carolina-ports-authority-cyberattack-disruption</guid>
+  <title>CISA adds Progress LoadMaster command injection vulnerability CVE-2026-8037 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/08/08/cisa-adds-progress-loadmaster-cve-2026-8037-to-kev</link>
+  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/cisa-adds-progress-loadmaster-cve-2026-8037-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[North Carolina Ports Authority](urn:li:organization:3571295)</cd:mentions>
+  <cd:cve>CVE-2026-8037</cd:cve>
+  <cd:mentions>@[Progress](urn:li:organization:15949)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical infrastructure cyberattack has impacted core operational logistics systems across major commercial maritime facilities. The security incident has caused system outages and operational delays across terminal gate processing networks and container movement facilities.
+A critical unauthenticated command injection vulnerability in an enterprise application delivery controller has been formally added to the federal Known Exploited Vulnerabilities catalog. The flaw allows unauthenticated remote actors to submit malformed network requests to execute arbitrary operating system commands with full root privileges.
 
-The cyber disruption impacts infrastructure managed by the North Carolina Ports Authority, including the Port of Wilmington, the Port of Morehead City, and the Charlotte Inland Port. IT response teams were forced to take affected processing systems offline to contain lateral movement, resulting in manual processing workarounds and gate delays for commercial transport fleets. While vessel scheduling continues under backup protocols, forensic containment teams are auditing network logs to identify initial access vectors and restore central operational databases.
+The vulnerability, tracked as CVE-2026-8037, impacts Progress LoadMaster appliances across multiple firmware release tracks. The flaw resides within the management interface handling administrative HTTP queries. Threat actors pass specialized parameters to bypass input validation filters and inject raw shell instructions into underlying operating system daemons. Due to confirmed target exploitation in the wild, CISA has added the vulnerability to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 mandates, requiring immediate federal mitigation.
 
-Compromising maritime port logistics management systems presents severe supply chain exposure across regional commercial ecosystems. Because port management infrastructure coordinates container tracking, customs clearances, and automated gate access rules, an unmonitored breach forces manual operations, delays freight distribution networks, and creates cascading logistical backlogs.
+Subverting an application delivery controller destroys perimeter traffic control boundaries. Because load balancers manage TLS termination keys, route internal application requests, and govern load distribution, an unauthenticated host compromise permits threat actors to mirror sensitive corporate traffic, harvest employee credentials, and launch lateral movement sweeps against connected internal subnets.
 
-- Isolate all industrial control systems and logistics management networks from general corporate IT segments.
-- Implement strict multi-factor authentication controls across all remote maintenance portals utilized by port contractors.
-- Conduct thorough network threat hunting across active directory domain controllers to verify no unauthorized credentials were created.
-- Review perimeter firewall logs for unusual outbound data transfers originating from maritime operational networks.
+- Apply emergency software maintenance patches distributed by Progress Software across all LoadMaster instances immediately.
+- Restrict management interface accessibility by placing administrative web panels on isolated, non-routable management VLANs.
+- Inspect web server access logs for anomalous GET and POST requests targeting administrative diagnostic endpoints.
+- Audit active TLS certificates and application API keys managed on exposed load balancing hardware.
 
-Critical infrastructure resilience relies on strict network segmentation between operational technology and corporate IT environments to ensure cyber incidents cannot disrupt essential supply chain facilities. #CodeDefence #CriticalInfrastructure #LogisticsSecurity #PortSecurity #IncidentResponse #ICS #MaritimeSecurity
+Load balancer architecture security depends on strict interface isolation and prompt patch deployment to ensure perimeter traffic controllers remain completely protected from unauthenticated command injection. #CodeDefence #Progress #LoadMaster #CommandInjection #CISA #KEV #NetworkSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Paperclip AI agent import flaw CVE-2026-41679 permits unauthenticated host command execution</title>
-  <link>https://codedefence.in/blog/2026/08/07/paperclip-ai-agent-import-command-execution-cve-2026-41679</link>
-  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/paperclip-ai-agent-import-command-execution-cve-2026-41679</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-41679</cd:cve>
-  <cd:mentions>@[Rapid7](urn:li:organization:42323)</cd:mentions>
+  <title>Hackers breach TrueConf video conferencing servers to trojanize client installers with backdoors</title>
+  <link>https://codedefence.in/blog/2026/08/08/hackers-breach-trueconf-trojanize-client-installers</link>
+  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/hackers-breach-trueconf-trojanize-client-installers</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Kaspersky](urn:li:organization:14774)</cd:mentions>
   <description><![CDATA[
-A maximum severity unauthenticated command execution flaw residing within an artificial intelligence orchestration framework has been detailed, enabling remote network actors to force host servers to execute arbitrary shell commands.
+Active software supply chain intrusions targeting on-premises video conferencing infrastructure have been detailed, where hacktivist groups exploited unauthenticated server flaws to replace legitimate client installers with malicious payloads.
 
-The security defect, tracked as CVE-2026-41679 with a CVSS score of 10.0, impacts Paperclip AI installations prior to version 2026.416.0. The vulnerability stems from an authorization bypass within default open signup configurations. An unauthenticated remote attacker can register a new account without email verification, access command line authorization routes, and submit malformed agent configuration import files. The server process adapter executes imported configuration strings directly as child processes, granting the attacker host shell execution rights under the context of the server user.
+The attack campaign targets on-premises TrueConf video conferencing servers via default open TCP port 4307. Threat actors associated with the Head Mare group leveraged an unauthenticated code execution vulnerability paired with a sandbox escape flaw to gain system administrative privileges on target host servers. Once elevated access was secured, the actors modified internal web scripts to replace legitimate client installation binaries with trojanized versions that deploy PhantomCore and PhantomGraph backdoors onto connecting user endpoints.
 
-Subverting artificial intelligence agent management software presents significant enterprise cloud risks. Because AI orchestration platforms manage API credentials, model pipelines, and internal database connections, an unauthenticated host takeover allows threat actors to harvest cloud credentials, access proprietary models, and launch secondary lateral movement sweeps.
+Subverting an internal communication server to distribute trojanized installers creates severe supply chain exposure across enterprise networks. Because employees trust internal software distribution channels, downloading trojanized updates grants threat actors unmonitored persistence across internal workstations, enabling credential theft, audio interception, and lateral network pivoting.
 
-- Upgrade Paperclip AI platform instances immediately to version 2026.416.0 or higher to enforce instance-administrator checks.
-- Disable unverified open signup configurations on internet-accessible AI orchestration deployments.
-- Inspect application host logs for anomalous child process creations originating from AI server worker daemons.
-- Rotate all API keys, database connection strings, and cloud secrets managed within the AI platform workspace.
+- Apply current security hotfixes published by TrueConf to close unauthenticated port 4307 access vectors.
+- Inspect video conferencing web server paths for modified PHP scripts or unverified web shell deployments.
+- Verify binary hashes of client installers hosted on internal portals against official vendor reference signatures.
+- Monitor host endpoints for unexpected background process creations originating from video conferencing software updates.
 
-Artificial intelligence framework protection depends on rigid authorization checks and restricted process execution rules to guarantee that automated agent configurations cannot serve as unmonitored host execution channels. #CodeDefence #PaperclipAI #AISecurity #RCE #CommandInjection #AppSec #CloudSecurity #Rapid7
+Enterprise collaboration platform resilience relies on continuous installer file integrity monitoring combined with strict service isolation to ensure internal distribution servers cannot be subverted into malware deployment channels. #CodeDefence #TrueConf #SupplyChain #Backdoor #Kaspersky #EndpointSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>CISA enforces BOD 26-04 compliance timeline for JetBrains TeamCity deserialization RCE CVE-2026-63077</title>
-  <link>https://codedefence.in/blog/2026/08/07/cisa-enforces-bod-26-04-jetbrains-teamcity-cve-2026-63077</link>
-  <pubDate>Fri, 07 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/07/cisa-enforces-bod-26-04-jetbrains-teamcity-cve-2026-63077</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-63077</cd:cve>
-  <cd:mentions>@[JetBrains](urn:li:organization:14227)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>18-year-old Linux SCTP kernel vulnerability SCTPhantom CVE-2026-64564 permits root container escapes</title>
+  <link>https://codedefence.in/blog/2026/08/08/sctphantom-linux-sctp-kernel-vulnerability-cve-2026-64564</link>
+  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/sctphantom-linux-sctp-kernel-vulnerability-cve-2026-64564</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-64564</cd:cve>
   <description><![CDATA[
-Federal cybersecurity regulators are actively tracking compliance remediation windows following the addition of a critical continuous integration server vulnerability to the Known Exploited Vulnerabilities catalog. The flaw permits remote unauthenticated network actors to execute arbitrary operating system commands across build infrastructure.
+A critical use-after-free vulnerability residing inside the Stream Control Transmission Protocol implementation of the Linux kernel has been disclosed. The flaw, present in kernel builds since 2008, allows local unprivileged users to execute arbitrary code with root privileges and escape container sandboxes.
 
-The vulnerability, tracked as CVE-2026-63077 with a CVSS score of 9.8, impacts JetBrains TeamCity On-Premises builds prior to versions 2025.11.7 and 2026.1.3. The defect involves an untrusted data deserialization bug within the agent polling protocol handler over HTTP and HTTPS. Attackers transmit malformed polling requests to bypass authentication handlers and execute shell commands with build server privileges. CISA has mandated accelerated remediation across federal networks under Binding Operational Directive 26-04 requirements.
+The vulnerability, tracked as CVE-2026-64564 and dubbed SCTPhantom, affects Linux kernel versions 2.6.25 through modern release tracks prior to stable updates 7.1.6, 6.18.42, and 6.12.101. The flaw stems from an identity confusion error during dynamic address reconfiguration handling in SCTP networking code. An attacker sending specific address deletion sequences induces a dangling pointer state, allowing memory reuse that escalates local process rights to full root control without requiring special container capabilities.
 
-Compromising build automation servers creates severe software supply chain exposure across enterprise development pipelines. Armed with administrative control over build nodes, threat actors can alter application source code, inject covert backdoors into production software updates, and steal cloud infrastructure deployment keys.
+Bypassing container isolation boundaries undermines multi-tenant cloud hosting architectures. If a local unprivileged attacker or compromised container workload triggers the use-after-free flaw, they can escape container namespaces, access host memory structures, and claim host-level administrative authority.
 
-- Upgrade TeamCity On-Premises instances to patched versions 2025.11.7 or 2026.1.3 immediately, or install the security patch plugin.
-- Isolate build management portals behind authenticated zero trust access gateways that restrict public internet exposure.
-- Review build agent execution telemetry for unexpected process spawns or unauthorized user account creations.
-- Rotate all production deployment credentials, repository access tokens, and signing certificates stored in build variables.
+- Upgrade Linux host kernels immediately to stable builds 7.1.6, 6.18.42, 6.12.101, or distribution-patched variants.
+- Blacklist or disable the sctp kernel module on systems where Stream Control Transmission Protocol support is not strictly required.
+- Enforce strict container isolation policies and seccomp filters to restrict unverified socket creation routines.
+- Monitor host system calls for anomalous network socket options targeting SCTP address reconfigurations.
 
-Continuous integration build plane resilience depends on immediate patch deployment and rigid interface isolation to ensure central development servers remain completely protected from unauthenticated exploitation. #CodeDefence #JetBrains #TeamCity #RCE #Deserialization #DevSecOps #SupplyChain #CISA #KEV
+Kernel networking security relies on prompt kernel maintenance updates combined with surface reduction controls to guarantee that legacy transport subroutines cannot be exploited for local privilege escalation. #CodeDefence #LinuxKernel #SCTPhantom #PrivilegeEscalation #ContainerEscape #KernelSecurity #AppSec
   ]]></description>
 </item>
 
