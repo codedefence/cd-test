@@ -2,80 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 8 August 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 9 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 8 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 9 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 08 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 09 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Progress LoadMaster command injection vulnerability CVE-2026-8037 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/08/cisa-adds-progress-loadmaster-cve-2026-8037-to-kev</link>
-  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/cisa-adds-progress-loadmaster-cve-2026-8037-to-kev</guid>
+  <title>Critical Metabase SQL injection zero day exploited in corporate data theft attacks</title>
+  <link>https://codedefence.in/blog/2026/08/09/metabase-sql-injection-zero-day-exploited-data-theft</link>
+  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/metabase-sql-injection-zero-day-exploited-data-theft</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-8037</cd:cve>
-  <cd:mentions>@[Progress](urn:li:organization:15949)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Metabase](urn:li:organization:18074983)</cd:mentions>
   <description><![CDATA[
-A critical unauthenticated command injection vulnerability in an enterprise application delivery controller has been formally added to the federal Known Exploited Vulnerabilities catalog. The flaw allows unauthenticated remote actors to submit malformed network requests to execute arbitrary operating system commands with full root privileges.
+Active zero day exploitation targeting a leading open source business intelligence and analytics platform has been uncovered, with threat actors extracting sensitive database content from cloud and self-hosted deployments. The vulnerability allows unauthenticated remote actors to submit malformed API requests to gain full administrative rights over the reporting platform.
 
-The vulnerability, tracked as CVE-2026-8037, impacts Progress LoadMaster appliances across multiple firmware release tracks. The flaw resides within the management interface handling administrative HTTP queries. Threat actors pass specialized parameters to bypass input validation filters and inject raw shell instructions into underlying operating system daemons. Due to confirmed target exploitation in the wild, CISA has added the vulnerability to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 mandates, requiring immediate federal mitigation.
+The security issue impacts Metabase installations running version 1.58 and later builds. Threat telemetry confirms that external actors utilized unauthenticated SQL injection vectors to bypass session verification gates, gain administrative session tokens, and access connected database schemas. Once administrative access is established, the attackers execute custom database export queries to exfiltrate proprietary financial reports, customer metrics, and internal analytics repositories.
 
-Subverting an application delivery controller destroys perimeter traffic control boundaries. Because load balancers manage TLS termination keys, route internal application requests, and govern load distribution, an unauthenticated host compromise permits threat actors to mirror sensitive corporate traffic, harvest employee credentials, and launch lateral movement sweeps against connected internal subnets.
+Subverting central business intelligence platforms presents immediate enterprise privacy and compliance risks. Because analytics dashboards consolidate database credentials, API connection strings, and sensitive business intelligence datasets, an unauthenticated administrative compromise grants adversaries access to core database infrastructure and corporate intellectual property.
 
-- Apply emergency software maintenance patches distributed by Progress Software across all LoadMaster instances immediately.
-- Restrict management interface accessibility by placing administrative web panels on isolated, non-routable management VLANs.
-- Inspect web server access logs for anomalous GET and POST requests targeting administrative diagnostic endpoints.
-- Audit active TLS certificates and application API keys managed on exposed load balancing hardware.
+- Upgrade self-hosted Metabase instances immediately to patched version builds published by Metabase.
+- Inspect application web server access logs for anomalous SQL injection strings or unauthorized administrative API calls.
+- Audit database access logs for large, unexpected bulk exports originating from business intelligence service accounts.
+- Rotate all database credentials and API tokens stored within Metabase application settings.
 
-Load balancer architecture security depends on strict interface isolation and prompt patch deployment to ensure perimeter traffic controllers remain completely protected from unauthenticated command injection. #CodeDefence #Progress #LoadMaster #CommandInjection #CISA #KEV #NetworkSecurity #AppSec
+Business intelligence software security relies on strict database parameterization and prompt zero day patch deployment to ensure corporate reporting tools remain completely insulated from unauthenticated SQL injection. #CodeDefence #Metabase #SQLi #ZeroDay #DataTheft #AppSec #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Hackers breach TrueConf video conferencing servers to trojanize client installers with backdoors</title>
-  <link>https://codedefence.in/blog/2026/08/08/hackers-breach-trueconf-trojanize-client-installers</link>
-  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/hackers-breach-trueconf-trojanize-client-installers</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Kaspersky](urn:li:organization:14774)</cd:mentions>
+  <title>WordPress issues emergency patch 7.0.3 for XSS2Shell pre auth vulnerability chain CVE-2026-64638</title>
+  <link>https://codedefence.in/blog/2026/08/09/wordpress-patches-xss2shell-pre-auth-vulnerability-cve-2026-64638</link>
+  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/wordpress-patches-xss2shell-pre-auth-vulnerability-cve-2026-64638</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-64638</cd:cve>
+  <cd:mentions>@[WordPress](urn:li:organization:2825424)</cd:mentions>
   <description><![CDATA[
-Active software supply chain intrusions targeting on-premises video conferencing infrastructure have been detailed, where hacktivist groups exploited unauthenticated server flaws to replace legitimate client installers with malicious payloads.
+Emergency maintenance updates have been deployed across a global content management ecosystem to resolve a pre-authentication script injection flaw capable of escalating to full remote code execution. The bug allows anonymous web actors to transmit malformed authentication parameters that trigger active script execution inside administrative client sessions.
 
-The attack campaign targets on-premises TrueConf video conferencing servers via default open TCP port 4307. Threat actors associated with the Head Mare group leveraged an unauthenticated code execution vulnerability paired with a sandbox escape flaw to gain system administrative privileges on target host servers. Once elevated access was secured, the actors modified internal web scripts to replace legitimate client installation binaries with trojanized versions that deploy PhantomCore and PhantomGraph backdoors onto connecting user endpoints.
+The vulnerability, tracked as CVE-2026-64638 and codenamed XSS2Shell, affects WordPress core versions back to branch 4.7. The issue resides in how failed-login input string processing handles error message rendering. A crafted username string bypasses baseline sanitization and renders as active script markup on login error pages. When an authenticated administrator visits the page or clicks a malicious link, the script executes with administrative privileges, editing template files to achieve full PHP remote code execution on the hosting web server.
 
-Subverting an internal communication server to distribute trojanized installers creates severe supply chain exposure across enterprise networks. Because employees trust internal software distribution channels, downloading trojanized updates grants threat actors unmonitored persistence across internal workstations, enabling credential theft, audio interception, and lateral network pivoting.
+Compromising primary content management web servers provides threat groups with immediate initial access to host infrastructure. Because public web servers regularly share database connections, internal configuration parameters, and local file storage with corporate networks, an unauthenticated takeover allows attackers to deploy web shells, steal user hashes, and pivot laterally into adjacent subnets.
 
-- Apply current security hotfixes published by TrueConf to close unauthenticated port 4307 access vectors.
-- Inspect video conferencing web server paths for modified PHP scripts or unverified web shell deployments.
-- Verify binary hashes of client installers hosted on internal portals against official vendor reference signatures.
-- Monitor host endpoints for unexpected background process creations originating from video conferencing software updates.
+- Upgrade WordPress core installations immediately to maintenance release 7.0.3 or equivalent backported branch patches.
+- Deploy web application firewall rules to intercept and block malformed login payload parameters targeting wp-login.php endpoints.
+- Inspect active administrator accounts and plugin file trees for unauthorized script modifications or unrecognized PHP files.
+- Enforce strict database isolation between public web host environments and internal corporate active directory subnets.
 
-Enterprise collaboration platform resilience relies on continuous installer file integrity monitoring combined with strict service isolation to ensure internal distribution servers cannot be subverted into malware deployment channels. #CodeDefence #TrueConf #SupplyChain #Backdoor #Kaspersky #EndpointSecurity #AppSec
+Web application perimeter defense depends on robust input sanitization and rapid security patch deployment to guarantee foundational publishing platforms do not serve as initial access vectors for automated web shell campaigns. #CodeDefence #WordPress #XSS2Shell #RCE #AppSec #PatchManagement #WebSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>18-year-old Linux SCTP kernel vulnerability SCTPhantom CVE-2026-64564 permits root container escapes</title>
-  <link>https://codedefence.in/blog/2026/08/08/sctphantom-linux-sctp-kernel-vulnerability-cve-2026-64564</link>
-  <pubDate>Sat, 08 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/08/sctphantom-linux-sctp-kernel-vulnerability-cve-2026-64564</guid>
+  <title>NatJack network state manipulation attacks target Windows NAT and Linux Netfilter conntrack CVE-2026-56181</title>
+  <link>https://codedefence.in/blog/2026/08/09/natjack-network-state-manipulation-windows-nat-linux-netfilter</link>
+  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/natjack-network-state-manipulation-windows-nat-linux-netfilter</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-64564</cd:cve>
+  <cd:cve>CVE-2026-56181‚ CVE-2026-63913</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-A critical use-after-free vulnerability residing inside the Stream Control Transmission Protocol implementation of the Linux kernel has been disclosed. The flaw, present in kernel builds since 2008, allows local unprivileged users to execute arbitrary code with root privileges and escape container sandboxes.
+Technical disclosures published during Black Hat 2026 have exposed a novel attack class that manipulates network address translation connection states across major operating system kernels. The technique permits an attacker controlling a system behind a shared network address translation boundary to hijack active TCP connections and spoof DNS responses.
 
-The vulnerability, tracked as CVE-2026-64564 and dubbed SCTPhantom, affects Linux kernel versions 2.6.25 through modern release tracks prior to stable updates 7.1.6, 6.18.42, and 6.12.101. The flaw stems from an identity confusion error during dynamic address reconfiguration handling in SCTP networking code. An attacker sending specific address deletion sequences induces a dangling pointer state, allowing memory reuse that escalates local process rights to full root control without requiring special container capabilities.
+The research details NatJack vulnerabilities CVE-2026-56181 in Windows Hyper-V NAT and CVE-2026-63913 in Linux Netfilter conntrack. By sending specialized SYN and RESET packet sequences with invalid sequence numbers, an attacker forces connection tracking modules to prematurely close active state table entries. This enables the adversary to replace translation mappings, redirect active TCP data streams, and intercept DNS resolution requests to return forged IP responses without generating standard perimeter alert logs.
 
-Bypassing container isolation boundaries undermines multi-tenant cloud hosting architectures. If a local unprivileged attacker or compromised container workload triggers the use-after-free flaw, they can escape container namespaces, access host memory structures, and claim host-level administrative authority.
+Manipulating shared network address translation tables undermines isolation assumptions within container hosts and enterprise networks. If an adversary gains access to a low-privileged system or virtual machine sharing a network gateway, they can intercept sensitive internal transit traffic, manipulate domain name resolution, and exhaust gateway connection tables.
 
-- Upgrade Linux host kernels immediately to stable builds 7.1.6, 6.18.42, 6.12.101, or distribution-patched variants.
-- Blacklist or disable the sctp kernel module on systems where Stream Control Transmission Protocol support is not strictly required.
-- Enforce strict container isolation policies and seccomp filters to restrict unverified socket creation routines.
-- Monitor host system calls for anomalous network socket options targeting SCTP address reconfigurations.
+- Apply security updates released by Microsoft and Linux kernel maintainers across container hosts and hypervisors immediately.
+- Segment untrusted workloads and guest virtual machines onto isolated network segments with dedicated network gateway mappings.
+- Enforce IP Source Guard and strict anti-spoofing policies across internal network switch tiers.
+- Enforce transport layer encryption for internal application traffic to protect data integrity against transport spoofing.
 
-Kernel networking security relies on prompt kernel maintenance updates combined with surface reduction controls to guarantee that legacy transport subroutines cannot be exploited for local privilege escalation. #CodeDefence #LinuxKernel #SCTPhantom #PrivilegeEscalation #ContainerEscape #KernelSecurity #AppSec
+Network layer security relies on strict state validation within transport tracking modules combined with mandatory network microsegmentation to ensure shared translation gateways cannot be subverted for traffic interception. #CodeDefence #NatJack #NetworkSecurity #DNSHijacking #HyperV #LinuxKernel #AppSec #InfraSec
   ]]></description>
 </item>
 
