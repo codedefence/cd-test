@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 9 August 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 10 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 9 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 10 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sun, 09 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 10 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Critical Metabase SQL injection zero day exploited in corporate data theft attacks</title>
-  <link>https://codedefence.in/blog/2026/08/09/metabase-sql-injection-zero-day-exploited-data-theft</link>
-  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/metabase-sql-injection-zero-day-exploited-data-theft</guid>
+  <title>CISA confirms active ransomware exploitation targeting SonicWall SMA 1000 flaws CVE-2026-15409 and CVE-2026-15410</title>
+  <link>https://codedefence.in/blog/2026/08/10/cisa-confirms-sonicwall-sma1000-flaws-exploited-by-ransomware</link>
+  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisa-confirms-sonicwall-sma1000-flaws-exploited-by-ransomware</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Metabase](urn:li:organization:18074983)</cd:mentions>
+  <cd:cve>CVE-2026-15409‚ CVE-2026-15410</cd:cve>
+  <cd:mentions>@[SonicWall](urn:li:organization:18280)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Active zero day exploitation targeting a leading open source business intelligence and analytics platform has been uncovered, with threat actors extracting sensitive database content from cloud and self-hosted deployments. The vulnerability allows unauthenticated remote actors to submit malformed API requests to gain full administrative rights over the reporting platform.
+Federal cybersecurity regulators and threat monitoring networks have confirmed that ransomware groups have begun active wild exploitation targeting enterprise secure remote access appliances. Threat actors are chaining server-side request forgery with post-authentication command execution to gain root-level authority over perimeter controllers.
 
-The security issue impacts Metabase installations running version 1.58 and later builds. Threat telemetry confirms that external actors utilized unauthenticated SQL injection vectors to bypass session verification gates, gain administrative session tokens, and access connected database schemas. Once administrative access is established, the attackers execute custom database export queries to exfiltrate proprietary financial reports, customer metrics, and internal analytics repositories.
+The attack activity targets exposed SonicWall Secure Mobile Access 1000 series appliances via vulnerabilities CVE-2026-15409 and CVE-2026-15410. Threat intelligence indicates extortion operators are leveraging the flaws to bypass perimeter security controls, capture administrative session tokens, and deploy internal file archiving tools. Armed with root access on the gateway appliance, threat groups exfiltrate sensitive enterprise files before launching secondary ransomware encryption scripts across connected subnets.
 
-Subverting central business intelligence platforms presents immediate enterprise privacy and compliance risks. Because analytics dashboards consolidate database credentials, API connection strings, and sensitive business intelligence datasets, an unauthenticated administrative compromise grants adversaries access to core database infrastructure and corporate intellectual property.
+Subverting a central virtual private network gateway destroys enterprise perimeter isolation. Because remote access appliances manage active user authentication, corporate session cookies, and network routing policies, a gateway compromise allows extortion actors to bypass multi-factor authentication requirements and move laterally across internal networks.
 
-- Upgrade self-hosted Metabase instances immediately to patched version builds published by Metabase.
-- Inspect application web server access logs for anomalous SQL injection strings or unauthorized administrative API calls.
-- Audit database access logs for large, unexpected bulk exports originating from business intelligence service accounts.
-- Rotate all database credentials and API tokens stored within Metabase application settings.
+- Upgrade affected SonicWall SMA 1000 appliances immediately to patched firmware releases 12.4.3-03453 or 12.5.0-02835 and higher.
+- Review appliance extraweb logs for anomalous HTTP requests targeting diagnostic and login endpoints.
+- Inspect network gateway traffic for large, unauthorized outbound file transfers originating from perimeter interfaces.
+- Invalidate active SSL-VPN session tokens and reset administrative credentials across exposed appliance configurations.
 
-Business intelligence software security relies on strict database parameterization and prompt zero day patch deployment to ensure corporate reporting tools remain completely insulated from unauthenticated SQL injection. #CodeDefence #Metabase #SQLi #ZeroDay #DataTheft #AppSec #VulnerabilityManagement
+Perimeter remote access security depends on prompt firmware updates and continuous traffic monitoring to ensure edge access controllers are completely protected against unauthenticated command execution. #CodeDefence #SonicWall #Ransomware #VPN #ZeroDay #EdgeSecurity #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>WordPress issues emergency patch 7.0.3 for XSS2Shell pre auth vulnerability chain CVE-2026-64638</title>
-  <link>https://codedefence.in/blog/2026/08/09/wordpress-patches-xss2shell-pre-auth-vulnerability-cve-2026-64638</link>
-  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/wordpress-patches-xss2shell-pre-auth-vulnerability-cve-2026-64638</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-64638</cd:cve>
-  <cd:mentions>@[WordPress](urn:li:organization:2825424)</cd:mentions>
-  <description><![CDATA[
-Emergency maintenance updates have been deployed across a global content management ecosystem to resolve a pre-authentication script injection flaw capable of escalating to full remote code execution. The bug allows anonymous web actors to transmit malformed authentication parameters that trigger active script execution inside administrative client sessions.
-
-The vulnerability, tracked as CVE-2026-64638 and codenamed XSS2Shell, affects WordPress core versions back to branch 4.7. The issue resides in how failed-login input string processing handles error message rendering. A crafted username string bypasses baseline sanitization and renders as active script markup on login error pages. When an authenticated administrator visits the page or clicks a malicious link, the script executes with administrative privileges, editing template files to achieve full PHP remote code execution on the hosting web server.
-
-Compromising primary content management web servers provides threat groups with immediate initial access to host infrastructure. Because public web servers regularly share database connections, internal configuration parameters, and local file storage with corporate networks, an unauthenticated takeover allows attackers to deploy web shells, steal user hashes, and pivot laterally into adjacent subnets.
-
-- Upgrade WordPress core installations immediately to maintenance release 7.0.3 or equivalent backported branch patches.
-- Deploy web application firewall rules to intercept and block malformed login payload parameters targeting wp-login.php endpoints.
-- Inspect active administrator accounts and plugin file trees for unauthorized script modifications or unrecognized PHP files.
-- Enforce strict database isolation between public web host environments and internal corporate active directory subnets.
-
-Web application perimeter defense depends on robust input sanitization and rapid security patch deployment to guarantee foundational publishing platforms do not serve as initial access vectors for automated web shell campaigns. #CodeDefence #WordPress #XSS2Shell #RCE #AppSec #PatchManagement #WebSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>NatJack network state manipulation attacks target Windows NAT and Linux Netfilter conntrack CVE-2026-56181</title>
-  <link>https://codedefence.in/blog/2026/08/09/natjack-network-state-manipulation-windows-nat-linux-netfilter</link>
-  <pubDate>Sun, 09 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/09/natjack-network-state-manipulation-windows-nat-linux-netfilter</guid>
+  <title>Cisco warns of high-severity ClamAV parser vulnerabilities with public proof of concept exploit code</title>
+  <link>https://codedefence.in/blog/2026/08/10/cisco-warns-of-high-severity-clamav-vulnerabilities-with-poc</link>
+  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisco-warns-of-high-severity-clamav-vulnerabilities-with-poc</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-56181‚ CVE-2026-63913</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:cve>CVE-2026-20337‚ CVE-2026-20338</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
   <description><![CDATA[
-Technical disclosures published during Black Hat 2026 have exposed a novel attack class that manipulates network address translation connection states across major operating system kernels. The technique permits an attacker controlling a system behind a shared network address translation boundary to hijack active TCP connections and spoof DNS responses.
+Security advisories published by enterprise security maintainers warn that widely deployed antimalware scanning engines contain multiple high-severity file parsing vulnerabilities. Threat research confirms public proof of concept exploit code is actively circulating for defects that allow unauthenticated remote actors to cause denial-of-service conditions or execute path traversal operations.
 
-The research details NatJack vulnerabilities CVE-2026-56181 in Windows Hyper-V NAT and CVE-2026-63913 in Linux Netfilter conntrack. By sending specialized SYN and RESET packet sequences with invalid sequence numbers, an attacker forces connection tracking modules to prematurely close active state table entries. This enables the adversary to replace translation mappings, redirect active TCP data streams, and intercept DNS resolution requests to return forged IP responses without generating standard perimeter alert logs.
+The security issues impact Cisco Secure Endpoint Connector products across Windows, macOS, and Linux platforms that integrate the open-source ClamAV malware scanning engine. Tracked under CVE-2026-20337 through CVE-2026-20348, the defects stem from improper bounds checking and path verification within parsers handling ZIP, GPT, PESpin, PDF, Mach-O, and XAR archive formats. An attacker delivering malformed archive files via email or automated file gateways can trigger infinite loops, crashing the endpoint security daemon or writing files into unauthorized system directories.
 
-Manipulating shared network address translation tables undermines isolation assumptions within container hosts and enterprise networks. If an adversary gains access to a low-privileged system or virtual machine sharing a network gateway, they can intercept sensitive internal transit traffic, manipulate domain name resolution, and exhaust gateway connection tables.
+Subverting local antimalware engines compromises host detection capabilities across enterprise endpoints. When scanning subroutines are forced into crash loops or denial-of-service states, malicious files can traverse security gateways without inspection, increasing host vulnerability to secondary execution vectors.
 
-- Apply security updates released by Microsoft and Linux kernel maintainers across container hosts and hypervisors immediately.
-- Segment untrusted workloads and guest virtual machines onto isolated network segments with dedicated network gateway mappings.
-- Enforce IP Source Guard and strict anti-spoofing policies across internal network switch tiers.
-- Enforce transport layer encryption for internal application traffic to protect data integrity against transport spoofing.
+- Upgrade ClamAV scanning engine modules to version 1.5.4 or later immediately across all endpoint deployments.
+- Apply current security maintenance updates provided by Cisco for Secure Endpoint Connector products.
+- Configure email security gateways to quarantine compressed archives with malformed header structures.
+- Restrict unprivileged write permissions on temporary scanning directories to prevent path traversal exploitation.
 
-Network layer security relies on strict state validation within transport tracking modules combined with mandatory network microsegmentation to ensure shared translation gateways cannot be subverted for traffic interception. #CodeDefence #NatJack #NetworkSecurity #DNSHijacking #HyperV #LinuxKernel #AppSec #InfraSec
+Endpoint security scanning resilience relies on continuous parser input validation to guarantee that malware inspection engines remain operational and insulated from malicious archive payloads. #CodeDefence #Cisco #ClamAV #Antivirus #AppSec #PathTraversal #EndpointSecurity #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA reaches BOD 26-04 compliance deadline for Progress LoadMaster command injection flaw CVE-2026-8037</title>
+  <link>https://codedefence.in/blog/2026/08/10/cisa-bod-26-04-compliance-deadline-progress-loadmaster-cve-2026-8037</link>
+  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisa-bod-26-04-compliance-deadline-progress-loadmaster-cve-2026-8037</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-8037</cd:cve>
+  <cd:mentions>@[Progress](urn:li:organization:15949)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Federal cybersecurity regulators have reached the mandatory compliance deadline under Binding Operational Directive 26-04 for an actively exploited load balancing command injection vulnerability. The flaw permits remote unauthenticated actors to submit malformed HTTP requests to execute operating system commands with full root privileges.
+
+The vulnerability, tracked as CVE-2026-8037, impacts Progress LoadMaster application delivery controllers. Threat actors are actively probing internet-accessible management interfaces to bypass operating system neutralization filters, injecting shell commands directly into backend daemons. CISA mandated that federal civilian agencies apply vendor mitigations or remove exposed management interfaces from public routing by August 10, 2026.
+
+Compromising an application delivery controller gives threat actors complete control over perimeter application traffic. Armed with administrative root access, adversaries can intercept encrypted HTTPS streams, modify routing policies, harvest administrative session keys, and pivot into internal enterprise network segments.
+
+- Apply emergency software maintenance updates released by Progress Software across all LoadMaster instances immediately.
+- Remove LoadMaster administrative management interfaces from public internet exposure, gating visibility behind isolated management VLANs.
+- Review web access logs for anomalous GET or POST requests targeting administrative diagnostic subroutines.
+- Audit active TLS certificates and application secret tokens processed on exposed load balancing appliances.
+
+Load balancer architecture protection depends on strict management interface isolation combined with prompt software patching to ensure perimeter application controllers remain completely shielded from unauthenticated command injection. #CodeDefence #Progress #LoadMaster #CommandInjection #CISA #KEV #NetworkSecurity #AppSec
   ]]></description>
 </item>
 
