@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 10 August 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 11 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 10 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 11 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 10 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 11 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA confirms active ransomware exploitation targeting SonicWall SMA 1000 flaws CVE-2026-15409 and CVE-2026-15410</title>
-  <link>https://codedefence.in/blog/2026/08/10/cisa-confirms-sonicwall-sma1000-flaws-exploited-by-ransomware</link>
-  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisa-confirms-sonicwall-sma1000-flaws-exploited-by-ransomware</guid>
+  <title>CISA confirms Microsoft SharePoint RCE vulnerability CVE-2026-50522 exploited in ransomware attacks</title>
+  <link>https://codedefence.in/blog/2026/08/11/cisa-confirms-microsoft-sharepoint-rce-cve-2026-50522-exploited-by-ransomware</link>
+  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/cisa-confirms-microsoft-sharepoint-rce-cve-2026-50522-exploited-by-ransomware</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-15409‚ CVE-2026-15410</cd:cve>
-  <cd:mentions>@[SonicWall](urn:li:organization:18280)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-50522</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators and threat monitoring networks have confirmed that ransomware groups have begun active wild exploitation targeting enterprise secure remote access appliances. Threat actors are chaining server-side request forgery with post-authentication command execution to gain root-level authority over perimeter controllers.
+Federal cybersecurity regulators have issued updated threat advisories confirming that active ransomware operators are exploiting a critical remote code execution vulnerability in on-premises collaboration servers. Threat actors leverage unauthenticated network requests to hijack application session parameters and deploy network wide extortion payloads.
 
-The attack activity targets exposed SonicWall Secure Mobile Access 1000 series appliances via vulnerabilities CVE-2026-15409 and CVE-2026-15410. Threat intelligence indicates extortion operators are leveraging the flaws to bypass perimeter security controls, capture administrative session tokens, and deploy internal file archiving tools. Armed with root access on the gateway appliance, threat groups exfiltrate sensitive enterprise files before launching secondary ransomware encryption scripts across connected subnets.
+The vulnerability, tracked as CVE-2026-50522 with a CVSS score of 9.8, affects Microsoft SharePoint Server installations. Threat monitoring telemetry confirms that extortion groups issue unauthenticated requests against sign-in endpoints to trigger untrusted deserialization subroutines. By extracting IIS machine keys, attackers generate persistent authentication cookies that survive binary patching, allowing them to impersonate system administrators and deploy ransomware across connected subnets.
 
-Subverting a central virtual private network gateway destroys enterprise perimeter isolation. Because remote access appliances manage active user authentication, corporate session cookies, and network routing policies, a gateway compromise allows extortion actors to bypass multi-factor authentication requirements and move laterally across internal networks.
+Subverting a centralized document collaboration server compromises core identity boundaries across enterprise environments. Because compromised IIS machine keys enable threat actors to sign and decrypt viewstate parameters independently, an adversary retains administrative session access, neutralizing perimeter access controls.
 
-- Upgrade affected SonicWall SMA 1000 appliances immediately to patched firmware releases 12.4.3-03453 or 12.5.0-02835 and higher.
-- Review appliance extraweb logs for anomalous HTTP requests targeting diagnostic and login endpoints.
-- Inspect network gateway traffic for large, unauthorized outbound file transfers originating from perimeter interfaces.
-- Invalidate active SSL-VPN session tokens and reset administrative credentials across exposed appliance configurations.
+- Apply cumulative security updates provided by Microsoft across all on-premises SharePoint Server farms immediately.
+- Execute mandatory key rotation procedures for all IIS machine keys across exposed SharePoint farms to invalidate captured session tokens.
+- Restrict network visibility to SharePoint administrative endpoints by placing instances behind pre-authenticated zero trust reverse proxies.
+- Inspect web server ingress logs for single-request POST queries targeting deserialization endpoints.
 
-Perimeter remote access security depends on prompt firmware updates and continuous traffic monitoring to ensure edge access controllers are completely protected against unauthenticated command execution. #CodeDefence #SonicWall #Ransomware #VPN #ZeroDay #EdgeSecurity #CISA #KEV
+Enterprise collaboration platform protection demands immediate patch installation combined with cryptographic credential rotation to ensure intercepted machine keys cannot maintain persistent backdoor channels. #CodeDefence #Microsoft #SharePoint #RCE #Ransomware #MachineKeys #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Cisco warns of high-severity ClamAV parser vulnerabilities with public proof of concept exploit code</title>
-  <link>https://codedefence.in/blog/2026/08/10/cisco-warns-of-high-severity-clamav-vulnerabilities-with-poc</link>
-  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisco-warns-of-high-severity-clamav-vulnerabilities-with-poc</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-20337‚ CVE-2026-20338</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)</cd:mentions>
+  <title>Metabase releases urgent patches for zero day SQL injection vulnerability CVE-2026-72898 exploited in wild</title>
+  <link>https://codedefence.in/blog/2026/08/11/metabase-patches-zero-day-sql-injection-cve-2026-72898</link>
+  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/metabase-patches-zero-day-sql-injection-cve-2026-72898</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-72898</cd:cve>
+  <cd:mentions>@[Metabase](urn:li:organization:18074983)</cd:mentions>
   <description><![CDATA[
-Security advisories published by enterprise security maintainers warn that widely deployed antimalware scanning engines contain multiple high-severity file parsing vulnerabilities. Threat research confirms public proof of concept exploit code is actively circulating for defects that allow unauthenticated remote actors to cause denial-of-service conditions or execute path traversal operations.
+Emergency software updates and reverse-engineered technical analyses have been published for a critical business intelligence platform following confirmed zero day data theft attacks. The flaw permits remote unauthenticated network actors to inject raw SQL directives into application database queries.
 
-The security issues impact Cisco Secure Endpoint Connector products across Windows, macOS, and Linux platforms that integrate the open-source ClamAV malware scanning engine. Tracked under CVE-2026-20337 through CVE-2026-20348, the defects stem from improper bounds checking and path verification within parsers handling ZIP, GPT, PESpin, PDF, Mach-O, and XAR archive formats. An attacker delivering malformed archive files via email or automated file gateways can trigger infinite loops, crashing the endpoint security daemon or writing files into unauthorized system directories.
+The vulnerability, tracked as CVE-2026-72898, impacts Metabase releases from version 1.58 through 1.63. The issue resides within the reset_password API handler where incoming JSON parameters undergo Clojure map merging. By supplying an extra user-id key carrying raw HoneySQL directive structures, an unauthenticated attacker bypasses input parameterization. The server compiles the unparameterized payload directly into database queries, yielding blind SQL injection to harvest administrative access tokens and exfiltrate connected database contents.
 
-Subverting local antimalware engines compromises host detection capabilities across enterprise endpoints. When scanning subroutines are forced into crash loops or denial-of-service states, malicious files can traverse security gateways without inspection, increasing host vulnerability to secondary execution vectors.
+Compromising a enterprise analytics platform exposes underlying database infrastructure to total exfiltration. Because business intelligence tools hold stored credentials for connected data warehouses and production databases, an unauthenticated compromise grants threat actors direct access to corporate intellectual property and customer records.
 
-- Upgrade ClamAV scanning engine modules to version 1.5.4 or later immediately across all endpoint deployments.
-- Apply current security maintenance updates provided by Cisco for Secure Endpoint Connector products.
-- Configure email security gateways to quarantine compressed archives with malformed header structures.
-- Restrict unprivileged write permissions on temporary scanning directories to prevent path traversal exploitation.
+- Upgrade self-hosted Metabase instances immediately to patched maintenance builds 63.5, 62.9, 61.11, 60.17, 59.21, or 58.24.
+- Apply temporary workarounds by blocking public access to the reset_password API endpoint if immediate patching is delayed.
+- Inspect application ingress logs for POST requests targeting reset_password endpoints returning HTTP 400 status codes followed by administrative user queries.
+- Rotate all database connection credentials and API tokens stored within Metabase application settings.
 
-Endpoint security scanning resilience relies on continuous parser input validation to guarantee that malware inspection engines remain operational and insulated from malicious archive payloads. #CodeDefence #Cisco #ClamAV #Antivirus #AppSec #PathTraversal #EndpointSecurity #PatchManagement
+Business intelligence software security relies on strict query parameterization and prompt zero day patch deployment to ensure corporate reporting tools remain completely insulated from unauthenticated SQL injection. #CodeDefence #Metabase #SQLi #ZeroDay #DataTheft #AppSec #CloudSecurity #VulnerabilityManagement
   ]]></description>
 </item>
 
 <item>
-  <title>CISA reaches BOD 26-04 compliance deadline for Progress LoadMaster command injection flaw CVE-2026-8037</title>
-  <link>https://codedefence.in/blog/2026/08/10/cisa-bod-26-04-compliance-deadline-progress-loadmaster-cve-2026-8037</link>
-  <pubDate>Mon, 10 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/10/cisa-bod-26-04-compliance-deadline-progress-loadmaster-cve-2026-8037</guid>
+  <title>China linked Storm-1175 group weaponizes N-able N-central auth bypass CVE-2026-18577 to deploy StormEncryptor</title>
+  <link>https://codedefence.in/blog/2026/08/11/storm-1175-weaponizes-n-able-n-central-cve-2026-18577-stormencryptor</link>
+  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/storm-1175-weaponizes-n-able-n-central-cve-2026-18577-stormencryptor</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-8037</cd:cve>
-  <cd:mentions>@[Progress](urn:li:organization:15949)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-18577</cd:cve>
+  <cd:mentions>@[N-able](urn:li:organization:663528)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have reached the mandatory compliance deadline under Binding Operational Directive 26-04 for an actively exploited load balancing command injection vulnerability. The flaw permits remote unauthenticated actors to submit malformed HTTP requests to execute operating system commands with full root privileges.
+Threat intelligence advisories warn that a financially motivated threat cluster has begun weaponizing a recently disclosed remote management console vulnerability in supply chain extortion attacks. The campaign leverages an unauthenticated login bypass to gain full console control and deploy custom ransomware across downstream managed client endpoints.
 
-The vulnerability, tracked as CVE-2026-8037, impacts Progress LoadMaster application delivery controllers. Threat actors are actively probing internet-accessible management interfaces to bypass operating system neutralization filters, injecting shell commands directly into backend daemons. CISA mandated that federal civilian agencies apply vendor mitigations or remove exposed management interfaces from public routing by August 10, 2026.
+The operation, attributed to Storm-1175, targets N-able N-central remote monitoring and management servers via CVE-2026-18577. The vulnerability provides unauthenticated actors with full administrative rights over the management platform. Attackers execute automated scripts across connected client endpoints to deploy a new ransomware variant called StormEncryptor, locking client systems and exfiltrating corporate file directories.
 
-Compromising an application delivery controller gives threat actors complete control over perimeter application traffic. Armed with administrative root access, adversaries can intercept encrypted HTTPS streams, modify routing policies, harvest administrative session keys, and pivot into internal enterprise network segments.
+Subverting a managed service provider console creates cascading supply chain compromises across hundreds of client networks. Because remote management servers maintain elevated system agent access on client machines, a single compromised management console allows threat actors to execute ransomware commands simultaneously across all managed client environments.
 
-- Apply emergency software maintenance updates released by Progress Software across all LoadMaster instances immediately.
-- Remove LoadMaster administrative management interfaces from public internet exposure, gating visibility behind isolated management VLANs.
-- Review web access logs for anomalous GET or POST requests targeting administrative diagnostic subroutines.
-- Audit active TLS certificates and application secret tokens processed on exposed load balancing appliances.
+- Force immediate installation of cumulative hotfix build 2026.3.1.7 across all N-able N-central server installations.
+- Isolate N-central administrative web portals behind zero trust conditional access boundaries to restrict public internet routing.
+- Audit downstream client endpoints for unrecognized background processes executing StormEncryptor binaries or modified remote management daemons.
+- Review administrative account rosters and API key registries on management servers for unauthorized credential additions.
 
-Load balancer architecture protection depends on strict management interface isolation combined with prompt software patching to ensure perimeter application controllers remain completely shielded from unauthenticated command injection. #CodeDefence #Progress #LoadMaster #CommandInjection #CISA #KEV #NetworkSecurity #AppSec
+Remote management plane resilience demands emergency hotfix deployment combined with strict zero trust interface controls to ensure central MSP platforms cannot be subverted into automated supply chain intrusion vectors. #CodeDefence #Nable #Ncentral #RMM #AuthBypass #StormEncryptor #Ransomware #SupplyChain #AppSec
   ]]></description>
 </item>
 
