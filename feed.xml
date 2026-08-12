@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 11 August 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 12 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 11 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 12 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 11 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 12 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 12 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA confirms Microsoft SharePoint RCE vulnerability CVE-2026-50522 exploited in ransomware attacks</title>
-  <link>https://codedefence.in/blog/2026/08/11/cisa-confirms-microsoft-sharepoint-rce-cve-2026-50522-exploited-by-ransomware</link>
-  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/cisa-confirms-microsoft-sharepoint-rce-cve-2026-50522-exploited-by-ransomware</guid>
+  <title>CISA adds actively exploited Windows WinSock zero day CVE-2026-68820 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/08/12/cisa-adds-windows-winsock-zero-day-cve-2026-68820-to-kev</link>
+  <pubDate>Wed, 12 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/12/cisa-adds-windows-winsock-zero-day-cve-2026-68820-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-50522</cd:cve>
+  <cd:cve>CVE-2026-68820</cd:cve>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have issued updated threat advisories confirming that active ransomware operators are exploiting a critical remote code execution vulnerability in on-premises collaboration servers. Threat actors leverage unauthenticated network requests to hijack application session parameters and deploy network wide extortion payloads.
+A critical privilege escalation vulnerability in a core Windows networking driver is undergoing active wild exploitation by state-sponsored threat groups. The defect allows low-privileged local attackers to execute race conditions that grant full SYSTEM privileges on target endpoints.
 
-The vulnerability, tracked as CVE-2026-50522 with a CVSS score of 9.8, affects Microsoft SharePoint Server installations. Threat monitoring telemetry confirms that extortion groups issue unauthenticated requests against sign-in endpoints to trigger untrusted deserialization subroutines. By extracting IIS machine keys, attackers generate persistent authentication cookies that survive binary patching, allowing them to impersonate system administrators and deploy ransomware across connected subnets.
+The vulnerability, tracked as CVE-2026-68820, impacts the Windows Ancillary Function Driver for WinSock afd.sys across supported Windows client and server platforms. Threat telemetry indicates North Korean state-sponsored clusters are exploiting the use-after-free flaw to elevate execution privileges and deploy kernel-mode rootkits during targeted campaigns. CISA fast-tracked the vulnerability into the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, requiring immediate federal patch deployment.
 
-Subverting a centralized document collaboration server compromises core identity boundaries across enterprise environments. Because compromised IIS machine keys enable threat actors to sign and decrypt viewstate parameters independently, an adversary retains administrative session access, neutralizing perimeter access controls.
+Elevating local process authority to kernel-level SYSTEM privileges destroys host security boundaries. Once an adversary secures rootkit execution via afd.sys, they can disable endpoint detection agents, extract credential stores, and establish unmonitored persistence across internal subnets.
 
-- Apply cumulative security updates provided by Microsoft across all on-premises SharePoint Server farms immediately.
-- Execute mandatory key rotation procedures for all IIS machine keys across exposed SharePoint farms to invalidate captured session tokens.
-- Restrict network visibility to SharePoint administrative endpoints by placing instances behind pre-authenticated zero trust reverse proxies.
-- Inspect web server ingress logs for single-request POST queries targeting deserialization endpoints.
+- Force immediate installation of Microsoft August 2026 Patch Tuesday updates across all Windows endpoints and Server instances.
+- Inspect endpoint process logs for abnormal race condition triggers or driver execution calls originating from unprivileged user accounts.
+- Audit host systems for unauthorized kernel-mode driver loads or suspicious registry modifications.
+- Enforce strict endpoint detection policies to intercept unexpected privilege escalation routines.
 
-Enterprise collaboration platform protection demands immediate patch installation combined with cryptographic credential rotation to ensure intercepted machine keys cannot maintain persistent backdoor channels. #CodeDefence #Microsoft #SharePoint #RCE #Ransomware #MachineKeys #CISA #KEV
+Host operating system safety relies on prompt kernel driver patching to guarantee core networking components remain completely protected against privilege escalation exploitation. #CodeDefence #Microsoft #WinSock #PrivilegeEscalation #ZeroDay #CISA #KEV #EndpointSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Metabase releases urgent patches for zero day SQL injection vulnerability CVE-2026-72898 exploited in wild</title>
-  <link>https://codedefence.in/blog/2026/08/11/metabase-patches-zero-day-sql-injection-cve-2026-72898</link>
-  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/metabase-patches-zero-day-sql-injection-cve-2026-72898</guid>
+  <title>Threat actors weaponize public Rapid7 proof of concept exploit for Microsoft SharePoint CVE-2026-55040</title>
+  <link>https://codedefence.in/blog/2026/08/12/threat-actors-weaponize-rapid7-microsoft-sharepoint-poc-cve-2026-55040</link>
+  <pubDate>Wed, 12 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/12/threat-actors-weaponize-rapid7-microsoft-sharepoint-poc-cve-2026-55040</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-72898</cd:cve>
-  <cd:mentions>@[Metabase](urn:li:organization:18074983)</cd:mentions>
+  <cd:cve>CVE-2026-55040‚ CVE-2026-63520</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[Rapid7](urn:li:organization:42323)</cd:mentions>
   <description><![CDATA[
-Emergency software updates and reverse-engineered technical analyses have been published for a critical business intelligence platform following confirmed zero day data theft attacks. The flaw permits remote unauthenticated network actors to inject raw SQL directives into application database queries.
+Active wild exploitation targeting on-premises document management servers has accelerated following the public release of a functional proof of concept exploit script. Threat actors are utilizing the public exploit code to bypass authentication handlers and execute arbitrary remote code on vulnerable servers.
 
-The vulnerability, tracked as CVE-2026-72898, impacts Metabase releases from version 1.58 through 1.63. The issue resides within the reset_password API handler where incoming JSON parameters undergo Clojure map merging. By supplying an extra user-id key carrying raw HoneySQL directive structures, an unauthenticated attacker bypasses input parameterization. The server compiles the unparameterized payload directly into database queries, yielding blind SQL injection to harvest administrative access tokens and exfiltrate connected database contents.
+The attack activity targets Microsoft SharePoint Server installations by chaining authentication bypass flaw CVE-2026-55040 with remote code execution vulnerability CVE-2026-63520. By forging JWT tokens, an unauthenticated remote attacker impersonates administrative site accounts and triggers backend code execution modules. Threat intelligence sensors confirm active exploitation attempts targeting public-facing SharePoint farms.
 
-Compromising a enterprise analytics platform exposes underlying database infrastructure to total exfiltration. Because business intelligence tools hold stored credentials for connected data warehouses and production databases, an unauthenticated compromise grants threat actors direct access to corporate intellectual property and customer records.
+Subverting central document repositories compromises corporate identity and file security boundaries. Armed with administrative access over SharePoint farms, threat actors can exfiltrate proprietary document stores, modify site data, and move horizontally into adjacent active directory networks.
 
-- Upgrade self-hosted Metabase instances immediately to patched maintenance builds 63.5, 62.9, 61.11, 60.17, 59.21, or 58.24.
-- Apply temporary workarounds by blocking public access to the reset_password API endpoint if immediate patching is delayed.
-- Inspect application ingress logs for POST requests targeting reset_password endpoints returning HTTP 400 status codes followed by administrative user queries.
-- Rotate all database connection credentials and API tokens stored within Metabase application settings.
+- Apply Microsoft July and August 2026 cumulative security patches across all on-premises SharePoint Server farms immediately.
+- Inspect web server ingress logs for anomalous HTTP requests targeting JWT token validation endpoints.
+- Rotate all administrative session keys and certificate parameters associated with SharePoint site collections.
+- Isolate SharePoint web portals behind pre-authenticated zero trust gateways to restrict direct public internet access.
 
-Business intelligence software security relies on strict query parameterization and prompt zero day patch deployment to ensure corporate reporting tools remain completely insulated from unauthenticated SQL injection. #CodeDefence #Metabase #SQLi #ZeroDay #DataTheft #AppSec #CloudSecurity #VulnerabilityManagement
+Enterprise document portal defense requires rapid patch deployment combined with perimeter access controls to ensure collaboration servers are protected from public exploit chains. #CodeDefence #Microsoft #SharePoint #RCE #AuthBypass #Rapid7 #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>China linked Storm-1175 group weaponizes N-able N-central auth bypass CVE-2026-18577 to deploy StormEncryptor</title>
-  <link>https://codedefence.in/blog/2026/08/11/storm-1175-weaponizes-n-able-n-central-cve-2026-18577-stormencryptor</link>
-  <pubDate>Tue, 11 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/11/storm-1175-weaponizes-n-able-n-central-cve-2026-18577-stormencryptor</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-18577</cd:cve>
-  <cd:mentions>@[N-able](urn:li:organization:663528)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <title>CISA adds Cisco Secure Firewall ASA and FTD heap inspection flaw CVE-2026-20349 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/08/12/cisa-adds-cisco-asa-ftd-heap-inspection-cve-2026-20349-to-kev</link>
+  <pubDate>Wed, 12 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/12/cisa-adds-cisco-asa-ftd-heap-inspection-cve-2026-20349-to-kev</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-20349</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Threat intelligence advisories warn that a financially motivated threat cluster has begun weaponizing a recently disclosed remote management console vulnerability in supply chain extortion attacks. The campaign leverages an unauthenticated login bypass to gain full console control and deploy custom ransomware across downstream managed client endpoints.
+Federal cybersecurity regulators have updated the Known Exploited Vulnerabilities catalog to mandate rapid patching for a heap inspection flaw in perimeter firewall appliances. The vulnerability allows remote unauthenticated actors to send malformed network packets to trigger memory corruption and cause system reboots or code execution.
 
-The operation, attributed to Storm-1175, targets N-able N-central remote monitoring and management servers via CVE-2026-18577. The vulnerability provides unauthenticated actors with full administrative rights over the management platform. Attackers execute automated scripts across connected client endpoints to deploy a new ransomware variant called StormEncryptor, locking client systems and exfiltrating corporate file directories.
+The vulnerability, tracked as CVE-2026-20349, impacts Cisco Adaptive Security Appliance ASA and Firewall Threat Defense FTD software. The issue stems from improper memory handling in packet inspection subroutines. Threat actors actively scanning internet-exposed gateways transmit crafted packet sequences to force memory leaks or appliance crashes, disrupting perimeter filtering and remote access services.
 
-Subverting a managed service provider console creates cascading supply chain compromises across hundreds of client networks. Because remote management servers maintain elevated system agent access on client machines, a single compromised management console allows threat actors to execute ransomware commands simultaneously across all managed client environments.
+Subverting boundary firewall engines compromises perimeter availability and traffic inspection integrity. When security appliances experience forced crashes or memory corruption, perimeter network routing and encrypted VPN tunnels are disrupted across corporate environments.
 
-- Force immediate installation of cumulative hotfix build 2026.3.1.7 across all N-able N-central server installations.
-- Isolate N-central administrative web portals behind zero trust conditional access boundaries to restrict public internet routing.
-- Audit downstream client endpoints for unrecognized background processes executing StormEncryptor binaries or modified remote management daemons.
-- Review administrative account rosters and API key registries on management servers for unauthorized credential additions.
+- Install software maintenance updates distributed by Cisco across all ASA and FTD firewall deployments immediately.
+- Inspect interface diagnostic logs for high-frequency connection drops or unverified memory access errors.
+- Restrict management interface visibility exclusively to isolated, non-routable administration VLANs.
+- Monitor perimeter traffic for anomalous packet streams targeting deep packet inspection endpoints.
 
-Remote management plane resilience demands emergency hotfix deployment combined with strict zero trust interface controls to ensure central MSP platforms cannot be subverted into automated supply chain intrusion vectors. #CodeDefence #Nable #Ncentral #RMM #AuthBypass #StormEncryptor #Ransomware #SupplyChain #AppSec
+Perimeter gateway security depends on continuous memory management validation and prompt firmware updates to ensure core firewall appliances remain operational and insulated from malicious packet manipulation. #CodeDefence #Cisco #ASA #FTD #Firewall #CISA #KEV #NetworkSecurity
   ]]></description>
 </item>
 
