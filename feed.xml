@@ -2,79 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 14 August 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 15 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 14 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 15 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 14 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 14 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 15 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 15 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Unpatched GeoServer SQL injection zero day exploited in wild to achieve remote code execution</title>
-  <link>https://codedefence.in/blog/2026/08/14/geoserver-unpatched-sql-injection-zero-day-exploited-rce</link>
-  <pubDate>Fri, 14 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/14/geoserver-unpatched-sql-injection-zero-day-exploited-rce</guid>
+  <title>ExfilSquad extortion group leaks millions of records from misconfigured Microsoft Power Pages portals</title>
+  <link>https://codedefence.in/blog/2026/08/15/exfilsquad-extortion-misconfigured-microsoft-power-pages</link>
+  <pubDate>Sat, 15 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/15/exfilsquad-extortion-misconfigured-microsoft-power-pages</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[GeoServer](urn:li:organization:15161044)</cd:mentions>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Active wild exploitation targeting an unpatched zero day vulnerability in a widely deployed open source geospatial data platform has been confirmed by security researchers. The defect permits unauthenticated remote network actors to execute arbitrary system code commands on underlying host database servers.
+Forensic incident reports have corroborated data extortion claims following widespread exfiltration targeting low-code enterprise web portals. Threat actors systematically target misconfigured permissions across public web instances to extract millions of sensitive customer and organizational records from connected cloud databases.
 
-The vulnerability resides within the jsonArrayContains function in GeoServer implementations handling dynamic spatial query filtering. An unauthenticated attacker transmitting malformed request parameters bypasses query sanitization logic to achieve unauthorized SQL injection. When GeoServer runs against administrative database schemas, the injection vector allows the execution of operating system commands, granting full host shell privileges to the remote adversary. Because official patches are pending, security teams must deploy strict web application firewall filters or isolate public instances.
+The activity, conducted by extortion cluster ExfilSquad, focuses on exposed Microsoft Power Pages portals connected to Microsoft Dynamics 365 environments. Misconfigured default table permissions enabled anonymous web visitors to execute unauthorized OData API queries against backend tables. Exfiltrated datasets include over 36 gigabytes of municipal data containing 3 million records and over 15 gigabytes of insurance policy records. Because no binary exploit or malware payload was required, security monitoring tools failed to trigger initial access alerts.
 
-Subverting a centralized geospatial web server destroys enterprise perimeter boundaries. Because geospatial platforms consolidate spatial asset mappings, boundary definitions, and database credentials, an unauthenticated host takeover allows threat actors to harvest sensitive location data, alter spatial records, and pivot horizontally into internal network subnets.
+Exposing public access controls on cloud portal frameworks introduces severe corporate data confidentiality risks. When low-code public web portals share direct database queries with core enterprise resource planning platforms, administrative misconfigurations grant public threat actors unmonitored access to sensitive customer databases.
 
-- Deploy web application firewall inspection rules immediately to intercept anomalous HTTP queries carrying malformed jsonArrayContains parameters.
-- Restrict public internet visibility of GeoServer endpoints, gating access behind pre-authenticated zero trust access proxies.
-- Ensure host database service profiles operate under strict least privilege boundaries to prevent OS command execution.
-- Audit host application logs for unexpected shell process spawns originating from web server worker daemons.
+- Perform immediate access control audits across all public-facing Microsoft Power Pages portals to verify anonymous read permissions on custom tables.
+- Restrict Dynamics 365 entity permissions to enforce strict user-authenticated row-level security controls.
+- Inspect portal API gateway logs for high-volume OData queries originating from unrecognized public IP ranges.
+- Implement web application firewall inspection rules to throttle bulk database query requests targeting public endpoints.
 
-Geospatial platform security depends on rigid query parameterization and perimeter access controls to ensure open source reporting servers remain completely protected from unauthenticated SQL injection. #CodeDefence #GeoServer #SQLi #ZeroDay #RCE #AppSec #GISSecurity #VulnerabilityManagement
+Cloud web application security relies on continuous permission auditing and strict zero-trust data access models to ensure low-code public web portals do not expose internal enterprise databases. #CodeDefence #Microsoft #PowerPages #Dynamics365 #DataExfiltration #AppSec #CloudSecurity #Extortion
   ]]></description>
 </item>
 
 <item>
-  <title>Cl0p extortion group claims mass data theft targeting PTC Windchill and FlexPLM vulnerabilities</title>
-  <link>https://codedefence.in/blog/2026/08/14/cl0p-extortion-group-claims-mass-data-theft-ptc-windchill</link>
-  <pubDate>Fri, 14 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/14/cl0p-extortion-group-claims-mass-data-theft-ptc-windchill</guid>
+  <title>ShieldBreak zero day exploit bypasses Microsoft Defender fixes to grant local SYSTEM privileges</title>
+  <link>https://codedefence.in/blog/2026/08/15/shieldbreak-zero-day-bypasses-microsoft-defender-fixes</link>
+  <pubDate>Sat, 15 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/15/shieldbreak-zero-day-bypasses-microsoft-defender-fixes</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[PTC](urn:li:organization:3178)‚ @[Royal Dutch Shell](urn:li:organization:1271)‚ @[Philips](urn:li:organization:1082)</cd:mentions>
+  <cd:cve>CVE-2026-50656</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-A prolific extortion group known for weaponizing zero day software vulnerabilities has claimed responsibility for a large scale data theft campaign impacting nearly 50 global enterprise organizations. The actors target proprietary product lifecycle management platforms to exfiltrate strategic engineering files.
+Public technical writeups and verified proof of concept exploit code have been published for a new zero day vulnerability targeting endpoint protective software. The exploit permits local unprivileged process threads to bypass recent security fixes and claim root SYSTEM administrative control over Windows hosts.
 
-The attack activity centers on zero day vulnerabilities in PTC Windchill and FlexPLM software utilized across global manufacturing and energy sectors. Telemetry indicates threat actors exploited unpatched input parsing flaws to gain initial server access, bypass local access limits, and deploy automated data extraction tools. Affected organizations including Shell and Philips have initiated cyber incident protocols to assess the scope of internal data exposure.
+The zero day flaw, dubbed ShieldBreak, operates as a complete patch bypass for the RoguePlanet privilege escalation vulnerability CVE-2026-50656 patched in July. ShieldBreak targets Microsoft Defender components across Windows 10, Windows 11, and Windows Server systems. By establishing user-mode callback hooks during cloud-hydration file scanning routines, a local authenticated process manipulates file contents in memory while the scan executes, forcing the protective daemon to write data into protected system binaries and grant SYSTEM privileges.
 
-Compromising enterprise product lifecycle software presents severe intellectual property exposure across industrial sectors. Because PLM platforms consolidate proprietary engineering blueprints, manufacturing schemas, and corporate design assets, an unmonitored breach allows extortion groups to demand substantial ransom payments under threat of public disclosure.
+Subverting local endpoint protection daemons destroys host security boundaries. Armed with SYSTEM privileges obtained via security engine callback manipulation, local attackers can unhook kernel sensors, disable endpoint detection agents, and execute secondary malware payloads without generating alert telemetry.
 
-- Force immediate installation of vendor security hotfixes released by PTC across all Windchill and FlexPLM deployment servers.
-- Inspect product lifecycle management web server access logs for anomalous file export routines or unverified session tokens.
-- Restrict external internet access to engineering management consoles by isolating instances on non-routable management VLANs.
-- Rotate administrative service account credentials and database access keys associated with product design repositories.
+- Implement host detection queries to monitor Cloud Filter API user-mode callback hook registrations during file hydration scans.
+- Restrict local unprivileged account rights and enforce application execution limits across enterprise workstations.
+- Audit local privilege escalation events and file system modification logs associated with antimalware service executables.
+- Deploy host-based isolation policies to restrict unverified process executions operating under temporary directory paths.
 
-Industrial software defense requires rapid patch application paired with strict network segmentation to guarantee strategic engineering data vaults remain completely shielded from external extortion networks. #CodeDefence #PTC #Windchill #Cl0p #Extortion #DataTheft #IndustrialSecurity #AppSec
+Endpoint protective software resilience demands continuous validation of scan callback routines to guarantee that security daemons cannot be exploited for local privilege escalation. #CodeDefence #Microsoft #Defender #ShieldBreak #PrivilegeEscalation #ZeroDay #EndpointSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Mustang Panda deploys signed Windows kernel rootkit with updated CoolClient backdoor</title>
-  <link>https://codedefence.in/blog/2026/08/14/mustang-panda-deploys-signed-kernel-rootkit-coolclient-backdoor</link>
-  <pubDate>Fri, 14 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/14/mustang-panda-deploys-signed-kernel-rootkit-coolclient-backdoor</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Kaspersky](urn:li:organization:14774)</cd:mentions>
+  <title>Lazarus Group weaponizes Windows WinSock driver zero day CVE-2026-68820 in Operation Dream Job</title>
+  <link>https://codedefence.in/blog/2026/08/15/lazarus-group-exploits-windows-winsock-zero-day-cve-2026-68820</link>
+  <pubDate>Sat, 015 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/15/lazarus-group-exploits-windows-winsock-zero-day-cve-2026-68820</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-68820</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cyber espionage tracking reports reveal that a state-sponsored threat cluster has updated its malware toolkit with a signed kernel-mode driver rootkit. The stealth mechanism allows adversaries to conceal persistent implants and bypass host endpoint protective software on targeted government networks.
+Cyber threat intelligence reports confirm that state-sponsored actors have actively weaponized a zero day kernel driver flaw to breach defense, aerospace, and aviation sector networks. Attackers leverage spear-phishing lures to execute local race condition payloads that grant full SYSTEM privileges on target endpoints.
 
-The campaign, attributed to HoneyMyte also known as Mustang Panda, deploys an updated CoolClient backdoor alongside a signed Windows kernel rootkit across government entities in Asia and Eastern Europe. Incident response telemetry from Kaspersky confirms the rootkit leverages stolen digital signing certificates to load into kernel space, hooking OS table functions to hide malicious processes, file directories, registry entries, and outbound C2 network connections from endpoint detection sensors.
+The vulnerability, tracked as CVE-2026-68820, impacts the Windows Ancillary Function Driver for WinSock afd.sys across supported Windows platforms. Threat telemetry reveals North Korea-linked cluster Lazarus has been exploiting the use-after-free flaw since early July during Operation Dream Job campaigns. Attackers deliver malicious application files under the guise of job recruitment offers, triggering a race condition in afd.sys to elevate execution privileges and deploy kernel-mode rootkits.
 
-Deploying kernel-level stealth mechanisms neutralizes standard security agent monitoring on host endpoints. Once an adversary loads a signed kernel rootkit, they secure persistent administrative authority, enabling long-term espionage, credential harvesting, and unmonitored lateral pivoting across government subnets.
+Elevating local process authority to kernel-level SYSTEM privileges neutralizes host security controls. Once an adversary secures rootkit execution via afd.sys, they can disable endpoint security agents, harvest local credential vaults, and execute lateral movement sweeps across connected internal subnets.
 
-- Implement driver signature enforcement policies and block unverified kernel driver loads via Windows Defender Application Control.
-- Audit host systems for unauthorized kernel driver registrations or suspicious driver file modifications in system directories.
-- Monitor perimeter network traffic for anomalous C2 communications originating from masked system processes.
-- Enforce strict endpoint detection rules to intercept initial backdoor execution chains before kernel driver loading occurs.
+- Force immediate installation of Microsoft August 2026 Patch Tuesday security updates across all Windows endpoints and Server instances.
+- Inspect endpoint process logs for abnormal race condition triggers or driver execution calls originating from unprivileged user accounts.
+- Audit host systems for unauthorized kernel-mode driver loads or suspicious registry modifications.
+- Enforce strict endpoint protection policies to intercept unexpected privilege escalation routines.
 
-Host endpoint security relies on rigid driver signature verification and kernel-level integrity monitoring to ensure protective sensors remain operational and insulated from kernel-mode evasion techniques. #CodeDefence #Mustangpanda #CoolClient #KernelRootkit #Kaspersky #CyberEspionage #EndpointSecurity #AppSec
+Host operating system safety relies on prompt kernel driver patching to guarantee core networking components remain completely protected against privilege escalation exploitation. #CodeDefence #Microsoft #Lazarus #WinSock #OperationDreamJob #PrivilegeEscalation #ZeroDay #CISA #KEV
   ]]></description>
 </item>
 
