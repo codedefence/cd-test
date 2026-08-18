@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 17 August 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 18 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 17 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 18 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 17 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 17 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 18 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 18 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Ray AI framework code injection vulnerability CVE-2025-62593 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/17/cisa-adds-ray-framework-code-injection-cve-2025-62593-to-kev</link>
-  <pubDate>Mon, 17 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/17/cisa-adds-ray-framework-code-injection-cve-2025-62593-to-kev</guid>
+  <title>CISA warns ransomware gangs are actively exploiting Windows Task Host privilege escalation CVE-2025-60710</title>
+  <link>https://codedefence.in/blog/2026/08/18/cisa-warns-windows-task-host-cve-2025-60710-exploited-by-ransomware</link>
+  <pubDate>Tue, 18 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/18/cisa-warns-windows-task-host-cve-2025-60710-exploited-by-ransomware</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-62593</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-60710</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-A critical code injection vulnerability residing within a dominant open source distributed artificial intelligence compute framework has been officially added to the federal directory of active cyber threats. The defect permits unauthenticated remote actors to submit malformed compute jobs to execute arbitrary system commands across underlying GPU cluster nodes.
+Federal cybersecurity regulators have updated the Known Exploited Vulnerabilities catalog to confirm that active ransomware groups are weaponizing a local privilege escalation flaw in core Windows operating system subroutines. Local attackers possessing unprivileged user credentials leverage the defect to gain full root administrative authority.
 
-Tracked as CVE-2025-62593, the vulnerability impacts default installations of the Ray AI framework where cluster management ports are exposed without authentication controls. Threat actors transmit malformed job submission payloads to force worker nodes to execute shell commands, granting full host authority over cluster instances. Due to sustained wild target scanning across public cloud infrastructures, CISA added the flaw to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 mandates.
+The vulnerability, tracked as CVE-2025-60710 with a CVSS score of 7.8, impacts the Windows Task Host process handling background scheduled tasks across Windows client and server platforms. Extortion groups exploit the flaw during post-exploitation phases to bypass local access controls, elevate permissions to SYSTEM, and unhook protective security agents before deploying automated encryption binaries across internal subnets.
 
-Subverting a centralized artificial intelligence cluster manager introduces severe supply chain and cloud hosting risks. Because AI training nodes hold database access credentials, proprietary model weights, and cloud service integration keys, an unauthenticated host takeover allows threat networks to steal proprietary model intellectual property, access customer datasets, and pivot into corporate cloud environments.
+Elevating local process authority to kernel-level SYSTEM privileges destroys host security boundaries. Once an adversary secures root execution via Windows Task Host, they can unhook endpoint detection agents, extract local credential stores, and execute wide-scale ransomware commands across connected enterprise networks.
 
-- Restrict network visibility of Ray dashboard and job submission ports, gating management endpoints behind zero trust proxies.
-- Apply security updates and authentication enforcement patches distributed by the Ray-Project development team.
-- Inspect cluster execution logs for anomalous shell command executions originating from Ray worker worker processes.
-- Rotate all cloud infrastructure credentials and API keys stored within AI cluster environment variables.
+- Force immediate installation of Microsoft cumulative security updates across all Windows endpoints and Server instances.
+- Inspect host event logs for anomalous process creations originating from Task Host execution paths under low-privileged accounts.
+- Enforce strict endpoint protection rules to intercept unverified privilege escalation routines.
+- Audit local administrative account registries to identify unauthorized user account creations following privilege elevation attempts.
 
-Artificial intelligence compute plane protection demands strict interface isolation and continuous job submission auditing to ensure distributed execution clusters remain completely protected from unauthenticated code injection payloads. #CodeDefence #RayProject #AISecurity #RCE #CodeInjection #CISA #KEV #CloudSecurity
+Host operating system safety relies on prompt security patch deployment combined with continuous process monitoring to ensure core system hosts remain completely protected against privilege escalation exploitation. #CodeDefence #Microsoft #Windows #TaskHost #PrivilegeEscalation #Ransomware #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Critical SAP Commerce Cloud vulnerability CVE-2026-58231 actively exploited 3 days after disclosure</title>
-  <link>https://codedefence.in/blog/2026/08/17/sap-commerce-cloud-vulnerability-cve-2026-58231-actively-exploited</link>
-  <pubDate>Mon, 17 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/17/sap-commerce-cloud-vulnerability-cve-2026-58231-actively-exploited</guid>
+  <title>GitLab issues emergency out of band patch for critical code injection vulnerability CVE-2026-19478</title>
+  <link>https://codedefence.in/blog/2026/08/18/gitlab-issues-emergency-patch-code-injection-cve-2026-19478</link>
+  <pubDate>Tue, 18 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/18/gitlab-issues-emergency-patch-code-injection-cve-2026-19478</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-58231</cd:cve>
-  <cd:mentions>@[SAP](urn:li:organization:1036)</cd:mentions>
+  <cd:cve>CVE-2026-19478</cd:cve>
+  <cd:mentions>@[GitLab](urn:li:organization:3794358)</cd:mentions>
   <description><![CDATA[
-Threat monitoring arrays report rapid wild exploitation targeting a maximum severity authorization defect in a widely deployed enterprise e-commerce platform. Threat actors began launching automated attack sweeps just 72 hours after public security advisories were published.
+Emergency out-of-band security updates have been distributed for an enterprise DevOps and source code management platform to address a critical code injection defect. The vulnerability permits unauthenticated remote network actors to modify or delete public repository projects and manipulate underlying commit states.
 
-The vulnerability, tracked as CVE-2026-58231 with a maximum CVSS score of 10.0, affects SAP Commerce Cloud installations. The flaw involves improper authorization validation combined with unverified input parsing handlers. Following the release of public proof of concept exploit code, unauthenticated remote attackers are submitting malformed API requests to bypass access control gates, execute arbitrary system code, and compromise internal e-commerce platform components.
+The flaw, tracked as CVE-2026-19478 with a CVSS score of 9.4, impacts GitLab Community Edition and Enterprise Edition. The security issue stems from improper input validation inside GraphQL directive processing handlers. An unauthenticated attacker can format malformed GraphQL requests to bypass authorization controllers, deleting public project repositories and altering project metadata without valid credentials. Security researchers confirmed functional reproduction of the exploit within minutes of initial public disclosure.
 
-Compromising an enterprise e-commerce backend platform introduces immediate financial and data privacy risks. Because commerce application servers process customer transaction records, payment gateway integration keys, and user authentication tables, an unauthenticated takeover allows adversaries to exfiltrate customer databases and manipulate active checkout workflows.
+Subverting central source code repositories introduces severe software supply chain risks. Armed with project modification access over public code repositories, threat actors can alter application source code, introduce malicious dependencies, and corrupt release artifacts before distribution to production environments.
 
-- Force immediate installation of security hotfixes released by SAP across all SAP Commerce Cloud environments.
-- Implement web application firewall rules to inspect incoming API queries for malformed authorization parameter strings.
-- Inspect application access logs for anomalous POST queries targeting backend administration endpoints.
-- Rotate all payment gateway integration tokens and database access credentials stored within e-commerce configurations.
+- Upgrade GitLab installations to emergency patch releases 17.11.1, 17.10.5, or 17.9.8 immediately across self-hosted environments.
+- Restrict public internet access to GraphQL endpoints on self-hosted GitLab instances, gating access behind zero trust proxies.
+- Inspect application audit logs for anomalous GraphQL query executions targeting project deletion or state modification handlers.
+- Verify repository commit histories and project integrity signatures across all public project trees.
 
-Enterprise e-commerce platform defense requires rapid security patch application and strict API access verification to ensure transaction processing engines remain protected from public exploit chains. #CodeDefence #SAP #CommerceCloud #RCE #AuthBypass #PatchManagement #AppSec #ECommerceSecurity
+DevOps platform protection demands rapid emergency security patching and strict API input validation to ensure central source code repositories remain protected from unauthenticated code injection payloads. #CodeDefence #GitLab #CodeInjection #SupplyChain #AppSec #PatchManagement #DevSecOps
   ]]></description>
 </item>
 
 <item>
-  <title>Microsoft confirms active patch development for Defender ShieldBreak zero day vulnerability</title>
-  <link>https://codedefence.in/blog/2026/08/17/microsoft-confirms-patch-development-defender-shieldbreak-zero-day</link>
-  <pubDate>Mon, 17 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/17/microsoft-confirms-patch-development-defender-shieldbreak-zero-day</guid>
+  <title>City Forum campaign uncovers single threat actor scraping Salesforce and ServiceNow portals since 2025</title>
+  <link>https://codedefence.in/blog/2026/08/18/city-forum-campaign-scraping-salesforce-servicenow-portals</link>
+  <pubDate>Tue, 18 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/18/city-forum-campaign-scraping-salesforce-servicenow-portals</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:mentions>@[Salesforce](urn:li:organization:3185)‚ @[ServiceNow](urn:li:organization:8901)</cd:mentions>
   <description><![CDATA[
-Platform maintainers have formally confirmed active security patch engineering following public disclosures detailing an endpoint protection privilege escalation flaw. The zero day exploit method enables local unprivileged process threads to bypass recent security fixes and achieve root administrative control over host operating systems.
+Cyber threat research disclosures have exposed a persistent data scraping campaign operating from a single infrastructure node to extract customer records from enterprise cloud portals. The operation relies on compiled automated tooling to systematically query misconfigured public access endpoints.
 
-The flaw, dubbed ShieldBreak, targets Microsoft Defender components across Windows 10, Windows 11, and Windows Server platforms. ShieldBreak functions as a complete patch bypass for the RoguePlanet privilege escalation flaw CVE-2026-50656. By registering user-mode callback hooks via the Cloud Filter API during file hydration scans, a local process manipulates file memory structures, forcing the antimalware daemon to overwrite system binaries and grant root SYSTEM privileges with a 100 percent success rate.
+The threat activity, dubbed the City Forum campaign, originates from a single VPS server address operating under domain infrastructure established in March 2025. Threat actors utilize a custom Go binary transmitting default user-agent strings to query public-facing Salesforce and ServiceNow customer portals across multiple industry verticals. By targeting unauthenticated API endpoints and permissive public access settings, the adversary systematically scrapes customer profile records, internal ticket details, and business contact lists without triggering standard web application firewall filters.
 
-Subverting local endpoint protection daemons destroys host security boundaries. Armed with SYSTEM privileges obtained via security engine callback manipulation, local attackers can unhook kernel sensors, disable endpoint detection agents, and execute secondary malware payloads without generating alert telemetry.
+Exposing public access parameters on enterprise SaaS portals presents ongoing corporate data confidentiality risks. When public customer portals permit unmonitored API querying, administrative misconfigurations allow malicious scraping campaigns to harvest sensitive customer databases over extended operational timelines.
 
-- Monitor host endpoints for unusual Cloud Filter API user-mode callback hook registrations during file hydration scans.
-- Enforce application whitelisting and restrict unprivileged local account execution rights across enterprise assets.
-- Audit local privilege escalation events and file modification logs associated with antimalware service executables.
-- Deploy host-based isolation rules to contain unverified process executions operating under temporary directory paths.
+- Perform comprehensive permission audits across public Salesforce and ServiceNow customer portals to restrict public read access.
+- Enforce strict API query rate limiting and IP reputation controls across public web gateway tiers.
+- Inspect web server ingress logs for high-volume automated traffic originating from IP address 158.220.87.79 or default Go user agents.
+- Configure Web Application Firewall inspection rules to block unverified automated data extraction queries targeting portal APIs.
 
-Endpoint protective software resilience demands continuous validation of scan callback routines to guarantee that security daemons cannot be subverted for local privilege escalation. #CodeDefence #Microsoft #Defender #ShieldBreak #PrivilegeEscalation #ZeroDay #EndpointSecurity #AppSec
+Enterprise SaaS platform defense depends on continuous permission auditing and strict API access verification to ensure public web portals do not expose internal customer records to automated scraping operations. #CodeDefence #Salesforce #ServiceNow #DataScraping #CityForum #AppSec #CloudSecurity
   ]]></description>
 </item>
 
