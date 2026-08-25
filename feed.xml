@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 24 August 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 25 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 24 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 25 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 24 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 24 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 25 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA reaches 3 day mandatory patch deadline for actively exploited Zimbra RCE flaw CVE-2026-73570</title>
-  <link>https://codedefence.in/blog/2026/08/24/cisa-mandatory-patch-deadline-zimbra-rce-cve-2026-73570</link>
-  <pubDate>Mon, 24 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/24/cisa-mandatory-patch-deadline-zimbra-rce-cve-2026-73570</guid>
+  <title>CISA adds Ivanti EPMM unauthenticated authentication bypass CVE-2026-35051 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/08/25/cisa-adds-ivanti-epmm-auth-bypass-cve-2026-35051-to-kev</link>
+  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/cisa-adds-ivanti-epmm-auth-bypass-cve-2026-35051-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-73570</cd:cve>
-  <cd:mentions>@[Zimbra](urn:li:organization:15961)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-35051</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3059)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have reached the mandatory compliance deadline for an actively exploited remote code execution vulnerability in a primary enterprise collaboration platform. The defect allows unauthenticated remote network actors to execute arbitrary operating system commands with application user privileges.
+Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating immediate patching for an enterprise mobile management platform. The vulnerability permits remote unauthenticated network actors to bypass access controls and execute operating system commands on underlying server appliances.
 
-The vulnerability, tracked as CVE-2026-73570 with a CVSS score of 8.9, impacts Zimbra Collaboration Suite installations prior to release 10.1.20. The flaw resides within the SNMP notification processing daemon where untrusted inputs passed to the swatchdog service bypass sanitization filters. Internet threat telemetry confirms over 270 compromised instances actively executing shell commands to drop web shells into application web directories. CISA mandated federal agency remediation by August 24 under Binding Operational Directive 22-01.
+The security flaw, tracked as CVE-2026-35051 with a CVSS score of 9.8, impacts Ivanti Endpoint Manager Mobile EPMM installations. The defect resides in an exposed API routing service that fails to validate incoming user tokens. Unauthenticated adversaries issue crafted HTTP requests to bypass authentication layers, spawning root shell processes and establishing persistent backdoors. Due to verified wild exploitation targeting government and commercial networks, CISA added the flaw to the KEV database under Binding Operational Directive 26-04.
 
-Subverting a central email collaboration server introduces severe enterprise credential and data theft risks. Because mail servers manage active directory credentials, single sign-on tokens, and internal communications, an unauthenticated command execution compromise allows threat actors to capture sensitive communications, harvest user accounts, and pivot into corporate network segments.
+Subverting a centralized mobile device management platform compromises enterprise mobile fleets. Because MDM appliances hold device management certificates, corporate network profiles, and mobile access tokens, an unauthenticated takeover allows threat actors to push malicious software profiles to enrolled mobile devices and pivot into internal corporate networks.
 
-- Force immediate software maintenance upgrades across all Zimbra server installations to release version 10.1.20 or higher.
-- Disable SNMP trap notification services by setting snmp_notify parameter to false if binary patching is delayed.
-- Inspect web server application paths for unauthorized web shell files created in temporary or jetty application directories.
-- Audit host process logs for unexpected service restarts or child processes executing under the Zimbra user context.
+- Force immediate installation of security hotfix build 12.2.0.3 across all Ivanti EPMM deployment servers.
+- Restrict public internet exposure of EPMM administrative web portals, gating visibility behind zero trust access gateways.
+- Inspect server application logs for anomalous HTTP requests targeting internal API routing handlers.
+- Audit enrolled mobile device configurations for unauthorized profile installations or unverified certificate additions.
 
-Enterprise email server security relies on strict input sanitization across background monitoring daemons to ensure communication infrastructure remains completely insulated from unauthenticated command execution. #CodeDefence #Zimbra #CISA #KEV #RCE #CommandInjection #EmailSecurity #AppSec
+Enterprise mobile infrastructure defense demands rapid security patching paired with strict perimeter interface controls to ensure centralized management platforms remain shielded from unauthenticated access manipulation. #CodeDefence #Ivanti #EPMM #AuthBypass #MDM #CISA #KEV #MobileSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Cl0p extortion group names over 40 targets following PTC Windchill zero day vulnerability exploitation</title>
-  <link>https://codedefence.in/blog/2026/08/24/cl0p-names-targets-ptc-windchill-vulnerability-cve-2026-12569</link>
-  <pubDate>Mon, 24 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/24/cl0p-names-targets-ptc-windchill-vulnerability-cve-2026-12569</guid>
+  <title>Mass exploitation targets SolarWinds Serv-U MFT directory traversal vulnerability CVE-2026-28914</title>
+  <link>https://codedefence.in/blog/2026/08/25/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</link>
+  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-12569</cd:cve>
-  <cd:mentions>@[PTC](urn:li:organization:3178)</cd:mentions>
+  <cd:cve>CVE-2026-28914</cd:cve>
+  <cd:mentions>@[SolarWinds](urn:li:organization:42436)</cd:mentions>
   <description><![CDATA[
-Threat intelligence writeups have detailed a systematic extortion campaign targeting enterprise product lifecycle management software. Adversaries exploited unpatched input parsing flaws to deploy specialized implants capable of extracting proprietary engineering databases and decrypting database credentials.
+Threat monitoring arrays report widespread automated scanning and exploitation targeting a directory traversal vulnerability in a widely deployed managed file transfer server. Adversaries leverage public proof of concept scripts to extract configuration files and harvest cleartext credentials.
 
-The attack activity centers on vulnerability CVE-2026-12569 affecting PTC Windchill and FlexPLM platforms. Forensic analyses reveal that the Cl0p extortion syndicate deployed custom binaries that hook backend database connections, decrypt stored platform credentials, and execute automated bulk SQL queries to exfiltrate proprietary industrial schematics. Over 40 global manufacturing, aerospace, and technology entities have been listed on extortion disclosure portals following the zero-day breach window.
+The vulnerability, tracked as CVE-2026-28914, affects SolarWinds Serv-U File Server and Serv-U MFT versions prior to 15.5.2. The bug stems from improper URI path normalization within web client interface handlers. An unauthenticated remote attacker can construct path traversal sequences to read arbitrary files outside the web root, including server configuration files containing encrypted admin credentials and local system secret keys. Threat actors exploit the retrieved keys to forge administrative sessions and gain arbitrary code execution rights.
 
-Compromising product lifecycle management platforms creates severe intellectual property exposure across industrial sectors. Because PLM engines manage confidential product designs, trade secrets, and operational blueprints, an unmonitored breach allows extortion networks to demand substantial ransom payments under threat of public disclosure.
+Subverting managed file transfer infrastructure exposes sensitive corporate data vaults. Because MFT servers handle automated file exchanges containing financial records, intellectual property, and customer data, an administrative takeover permits threat actors to exfiltrate critical datasets and deploy secondary extortion payloads.
 
-- Force immediate installation of vendor maintenance hotfixes released by PTC across all Windchill and FlexPLM deployment servers.
-- Restrict external network access to product lifecycle management portals by placing instances on isolated administration VLANs.
-- Inspect database access logs for high-volume data export queries originating from application service accounts.
-- Rotate administrative service credentials and database connection strings across engineering management workspaces.
+- Upgrade SolarWinds Serv-U installations immediately to patched version 15.5.2 or higher.
+- Inspect web server access logs for anomalous GET requests containing path traversal character sequences.
+- Rotate all administrative passwords and service account keys configured within Serv-U deployment settings.
+- Restrict public web access to file transfer management interfaces using network access control lists.
 
-Industrial software protection demands prompt patch application and strict database query controls to guarantee proprietary design repositories remain completely insulated from external extortion networks. #CodeDefence #PTC #Windchill #Cl0p #Extortion #DataTheft #IndustrialSecurity #AppSec
+Managed file transfer security relies on rigid path normalization and prompt patch deployment to ensure corporate file gateways remain protected from unauthenticated directory traversal exploits. #CodeDefence #SolarWinds #ServU #DirectoryTraversal #MFT #AppSec #PatchManagement #DataTheft
   ]]></description>
 </item>
 
 <item>
-  <title>MoYu Group infects Android car head units to build proxy botnet via update daemon manipulation</title>
-  <link>https://codedefence.in/blog/2026/08/24/moyu-group-infects-android-car-head-units-proxy-botnet</link>
-  <pubDate>Mon, 24 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/24/moyu-group-infects-android-car-head-units-proxy-botnet</guid>
+  <title>Palo Alto Networks releases security updates for PAN-OS management interface RCE CVE-2026-40112</title>
+  <link>https://codedefence.in/blog/2026/08/25/palo-alto-networks-patches-pan-os-management-interface-rce-cve-2026-40112</link>
+  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/palo-alto-networks-patches-pan-os-management-interface-rce-cve-2026-40112</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Kaspersky](urn:li:organization:14774)</cd:mentions>
+  <cd:cve>CVE-2026-40112</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:11608)</cd:mentions>
   <description><![CDATA[
-Cyber threat research disclosures have exposed a novel malware campaign weaponizing built-in software update pathways on Android-based vehicle infotainment systems. The operation bypasses standard application store lures to quietly turn connected automotive screens into reverse proxy nodes.
+Emergency security updates have been released for an enterprise firewall operating system to address a critical remote code execution vulnerability in management web panels. The flaw permits unauthenticated remote actors with management access to execute commands with root privileges.
 
-The attack chain targets automotive head units running analytics software package TWCore. Threat actors associated with the MoYu Group transmitted manipulated update instructions over MQTT infrastructure, abusing an installNotExists setting to force TWCore to download and install a silent background package named JarService. Once deployed, JarService fetches a secondary reverse-proxy module called zhima, routing external internet traffic through the vehicle cellular or Wi-Fi connection without user interaction or visual display indicators.
+The vulnerability, tracked as CVE-2026-40112 with a CVSS score of 9.6, impacts Palo Alto Networks PAN-OS software across specific maintenance releases. The issue involves an input validation bypass in the web management interface processing diagnostic requests. Threat actors capable of reaching the management port can send malformed HTTP POST requests to bypass authentication subroutines and execute arbitrary system shell commands.
 
-Subverting automotive infotainment hardware introduces novel network proxy and privacy risks. While the campaign has not been observed interfering with safety-critical driving controllers, converting connected vehicle head units into proxy nodes allows threat networks to mask malicious cybercrime traffic behind legitimate consumer connection origins.
+Subverting perimeter firewall management interfaces compromises enterprise network traffic boundaries. Possessing root control over firewall appliances allows threat actors to disable security inspection rules, extract VPN session keys, and route malicious transit traffic directly into internal corporate subnets.
 
-- Apply firmware updates provided by automotive hardware vendors to restrict background software installation paths.
-- Enforce strict digital signature verification on all remote package updates distributed by internal telemetry daemons.
-- Monitor cellular and Wi-Fi transit traffic originating from connected vehicle hardware for anomalous proxy communication streams.
-- Restrict administrative permissions on internal update caches to prevent unauthorized binary dropping.
+- Apply PAN-OS maintenance patches released by Palo Alto Networks across all firewall management interfaces immediately.
+- Ensure firewall management interfaces are isolated on dedicated, non-routable management VLANs with no public internet access.
+- Restrict management interface access strictly to authorized administrative IP addresses using access control lists.
+- Audit system logs for unverified administrative logins or anomalous command execution entries.
 
-Automotive edge security relies on cryptographically signed update channels and strict component isolation to guarantee connected vehicle dashboards cannot be subverted into unmonitored proxy infrastructure. #CodeDefence #AutomotiveSecurity #AndroidMalware #ProxyBotnet #Kaspersky #MoYuGroup #IoTSecurity #AppSec
+Perimeter firewall resilience depends on strict management control plane isolation and continuous patch management to guarantee security gateways remain insulated from unauthenticated command execution. #CodeDefence #PaloAltoNetworks #PANOS #Firewall #RCE #NetworkSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
