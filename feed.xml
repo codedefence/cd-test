@@ -2,82 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 25 August 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 26 August 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 25 August 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 26 August 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 25 August 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 26 August 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 26 August 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Ivanti EPMM unauthenticated authentication bypass CVE-2026-35051 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/08/25/cisa-adds-ivanti-epmm-auth-bypass-cve-2026-35051-to-kev</link>
-  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/cisa-adds-ivanti-epmm-auth-bypass-cve-2026-35051-to-kev</guid>
+  <title>CISA adds Gitea code injection vulnerability CVE-2026-60004 to KEV catalog amid active wild exploitation</title>
+  <link>https://codedefence.in/blog/2026/08/26/cisa-adds-gitea-code-injection-cve-2026-60004-to-kev</link>
+  <pubDate>Wed, 26 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/26/cisa-adds-gitea-code-injection-cve-2026-60004-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-35051</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3059)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-60004</cd:cve>
+  <cd:mentions>@[Gitea](urn:li:organization:10015502)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating immediate patching for an enterprise mobile management platform. The vulnerability permits remote unauthenticated network actors to bypass access controls and execute operating system commands on underlying server appliances.
+Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating rapid patching for a self-hosted Git developer platform. The vulnerability permits remote actors to transmit crafted diffpatch requests to plant malicious executable Git hooks, achieving arbitrary shell command execution on underlying host servers.
 
-The security flaw, tracked as CVE-2026-35051 with a CVSS score of 9.8, impacts Ivanti Endpoint Manager Mobile EPMM installations. The defect resides in an exposed API routing service that fails to validate incoming user tokens. Unauthenticated adversaries issue crafted HTTP requests to bypass authentication layers, spawning root shell processes and establishing persistent backdoors. Due to verified wild exploitation targeting government and commercial networks, CISA added the flaw to the KEV database under Binding Operational Directive 26-04.
+The vulnerability, tracked as CVE-2026-60004, impacts Gitea releases prior to version 1.27.1. The issue resides within the diffpatch API endpoint handling patch-format changes submitted to repository trees. An attacker with repository write access, or an anonymous user on instances featuring open registration, can submit crafted patch data to install custom Git execution hooks. When triggered, the planted hooks execute system commands under the Gitea service account. Active wild exploitation telemetry confirms attackers leveraging the bug to deploy persistent cryptomining droppers. CISA has set an August 28 mitigation deadline under Binding Operational Directive 26-04.
 
-Subverting a centralized mobile device management platform compromises enterprise mobile fleets. Because MDM appliances hold device management certificates, corporate network profiles, and mobile access tokens, an unauthenticated takeover allows threat actors to push malicious software profiles to enrolled mobile devices and pivot into internal corporate networks.
+Subverting developer source control platforms introduces extreme software supply chain risk across the enterprise. Because self-hosted Git repositories manage sensitive source code, deployment tokens, and build configurations, an administrative takeover allows threat actors to inject malicious code into software builds, steal intellectual property, and pivot into corporate continuous integration subnets.
 
-- Force immediate installation of security hotfix build 12.2.0.3 across all Ivanti EPMM deployment servers.
-- Restrict public internet exposure of EPMM administrative web portals, gating visibility behind zero trust access gateways.
-- Inspect server application logs for anomalous HTTP requests targeting internal API routing handlers.
-- Audit enrolled mobile device configurations for unauthorized profile installations or unverified certificate additions.
+- Force immediate software maintenance upgrades across all Gitea instances to release version 1.27.1 or higher.
+- Restrict Gitea registration parameters by enforcing administrator approval or invite-only user signup models.
+- Inspect host process telemetry for anomalous shell command executions or cryptomining processes originating from Gitea daemon users.
+- Audit self-hosted repository hook directories for unrecognized executable files or suspicious diffpatch modification entries.
 
-Enterprise mobile infrastructure defense demands rapid security patching paired with strict perimeter interface controls to ensure centralized management platforms remain shielded from unauthenticated access manipulation. #CodeDefence #Ivanti #EPMM #AuthBypass #MDM #CISA #KEV #MobileSecurity
+Developer forge security depends on strict API input sanitization and prompt patch deployment to ensure centralized source code platforms remain completely protected from unauthenticated code injection payloads. #CodeDefence #Gitea #SupplyChain #CodeInjection #RCE #DevSecOps #CISA #KEV
   ]]></description>
 </item>
 
 <item>
-  <title>Mass exploitation targets SolarWinds Serv-U MFT directory traversal vulnerability CVE-2026-28914</title>
-  <link>https://codedefence.in/blog/2026/08/25/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</link>
-  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-28914</cd:cve>
-  <cd:mentions>@[SolarWinds](urn:li:organization:42436)</cd:mentions>
-  <description><![CDATA[
-Threat monitoring arrays report widespread automated scanning and exploitation targeting a directory traversal vulnerability in a widely deployed managed file transfer server. Adversaries leverage public proof of concept scripts to extract configuration files and harvest cleartext credentials.
-
-The vulnerability, tracked as CVE-2026-28914, affects SolarWinds Serv-U File Server and Serv-U MFT versions prior to 15.5.2. The bug stems from improper URI path normalization within web client interface handlers. An unauthenticated remote attacker can construct path traversal sequences to read arbitrary files outside the web root, including server configuration files containing encrypted admin credentials and local system secret keys. Threat actors exploit the retrieved keys to forge administrative sessions and gain arbitrary code execution rights.
-
-Subverting managed file transfer infrastructure exposes sensitive corporate data vaults. Because MFT servers handle automated file exchanges containing financial records, intellectual property, and customer data, an administrative takeover permits threat actors to exfiltrate critical datasets and deploy secondary extortion payloads.
-
-- Upgrade SolarWinds Serv-U installations immediately to patched version 15.5.2 or higher.
-- Inspect web server access logs for anomalous GET requests containing path traversal character sequences.
-- Rotate all administrative passwords and service account keys configured within Serv-U deployment settings.
-- Restrict public web access to file transfer management interfaces using network access control lists.
-
-Managed file transfer security relies on rigid path normalization and prompt patch deployment to ensure corporate file gateways remain protected from unauthenticated directory traversal exploits. #CodeDefence #SolarWinds #ServU #DirectoryTraversal #MFT #AppSec #PatchManagement #DataTheft
-  ]]></description>
-</item>
-
-<item>
-  <title>Palo Alto Networks releases security updates for PAN-OS management interface RCE CVE-2026-40112</title>
-  <link>https://codedefence.in/blog/2026/08/25/palo-alto-networks-patches-pan-os-management-interface-rce-cve-2026-40112</link>
-  <pubDate>Tue, 25 August 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/25/palo-alto-networks-patches-pan-os-management-interface-rce-cve-2026-40112</guid>
+  <title>DNS rebinding flaw in NVIDIA NemoClaw allows malicious webpages to hijack and poison local AI models</title>
+  <link>https://codedefence.in/blog/2026/08/26/dns-rebinding-flaw-nvidia-nemoclaw-poison-local-ai-models</link>
+  <pubDate>Wed, 26 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/26/dns-rebinding-flaw-nvidia-nemoclaw-poison-local-ai-models</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-40112</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:11608)</cd:mentions>
+  <cd:mentions>@[NVIDIA](urn:li:organization:3608)</cd:mentions>
   <description><![CDATA[
-Emergency security updates have been released for an enterprise firewall operating system to address a critical remote code execution vulnerability in management web panels. The flaw permits unauthenticated remote actors with management access to execute commands with root privileges.
+Vulnerability research disclosures have exposed a novel cross-origin attack chain targeting local artificial intelligence agent deployments. The attack enables malicious web pages to bypass browser isolation boundaries, take control of local model execution engines, and plant persistent hidden system prompts inside AI chat templates.
 
-The vulnerability, tracked as CVE-2026-40112 with a CVSS score of 9.6, impacts Palo Alto Networks PAN-OS software across specific maintenance releases. The issue involves an input validation bypass in the web management interface processing diagnostic requests. Threat actors capable of reaching the management port can send malformed HTTP POST requests to bypass authentication subroutines and execute arbitrary system shell commands.
+The weakness impacts NVIDIA NemoClaw framework setups configuring backend Ollama service bindings. By launching model daemons configured to listen across all network interfaces, the framework exposes management APIs on port 11434. An adversary serving a malicious website can execute a DNS rebinding chain to trick client browsers into treating requests to loopback addresses as same-origin traffic. Once API access is established, the payload modifies model chat templates via API endpoints, injecting hidden system instructions that persist across future user conversations and survive agent system prompt refreshes.
 
-Subverting perimeter firewall management interfaces compromises enterprise network traffic boundaries. Possessing root control over firewall appliances allows threat actors to disable security inspection rules, extract VPN session keys, and route malicious transit traffic directly into internal corporate subnets.
+Subverting local artificial intelligence execution agents introduces severe enterprise privacy and data integrity risks. Because local AI agents are granted access to local file systems, browser cookies, and corporate API tokens, hijacking model template rendering logic allows threat actors to redirect model execution, harvest sensitive context, and execute unauthorized secondary tool calls.
 
-- Apply PAN-OS maintenance patches released by Palo Alto Networks across all firewall management interfaces immediately.
-- Ensure firewall management interfaces are isolated on dedicated, non-routable management VLANs with no public internet access.
-- Restrict management interface access strictly to authorized administrative IP addresses using access control lists.
-- Audit system logs for unverified administrative logins or anomalous command execution entries.
+- Upgrade NVIDIA NemoClaw to version 0.0.106 or higher to enforce strict loopback-only binding verification daemons.
+- Ensure local LLM backend services like Ollama bind exclusively to loopback interfaces 127.0.0.1 rather than global network interfaces.
+- Implement strict local firewall rules to block inbound TCP port 11434 traffic originating from untrusted network interfaces.
+- Audit local AI model configuration templates for unrecognized system prompt additions or modified message wrapper directives.
 
-Perimeter firewall resilience depends on strict management control plane isolation and continuous patch management to guarantee security gateways remain insulated from unauthenticated command execution. #CodeDefence #PaloAltoNetworks #PANOS #Firewall #RCE #NetworkSecurity #AppSec #PatchManagement
+Artificial intelligence endpoint defense requires rigid interface binding controls and cross-origin request isolation to ensure local model execution daemons remain insulated from browser-based DNS rebinding attacks. #CodeDefence #NVIDIA #NemoClaw #AISecurity #DNSRebinding #AppSec #ModelPoisoning #LLMSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA Red Team report details domain and cloud tenant compromises across critical infrastructure targets</title>
+  <link>https://codedefence.in/blog/2026/08/26/cisa-red-team-report-details-critical-infrastructure-compromises</link>
+  <pubDate>Wed, 26 August 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/26/cisa-red-team-report-details-critical-infrastructure-compromises</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Federal cybersecurity authorities have published findings from simultaneous red team assessments conducted against critical infrastructure sectors. The advisory highlights how common Active Directory misconfigurations, unexpiring cloud access keys, and default application credentials led to total domain and cloud tenant takeovers.
+
+Tracked under advisory AA26-237A, the assessment evaluated defensive responses across government and water sector entities. The red team achieved initial access by exploiting public web applications running default administrative credentials. Attackers escalated local domain rights by abusing default Machine Account Quotas alongside misconfigured Active Directory Certificate Services AD CS templates via the Certighost technique. In cloud environments, the team extracted cleartext database configuration files and static AWS access keys configured never to expire, leveraging Primary Refresh Tokens and over-permissioned Entra ID applications to monitor defender email communications undetected.
+
+Failing to remediate legacy Active Directory settings and static cloud keys exposes enterprise environments to total compromise. When defensive security operation centers lack unified cross-platform visibility, false-positive alert volume obscures legitimate intrusion telemetry, granting adversaries unmonitored lateral access to sensitive business systems.
+
+- Reduce the default Active Directory Machine Account Quota ms-DS-MachineAccountQuota parameter to zero across all domain controllers.
+- Audit Active Directory Certificate Services templates to eliminate vulnerable ESC1 configurations permitting arbitrary user SAN requests.
+- Eliminate static, unexpiring cloud access keys in favor of short-lived temporary credentials managed via IAM Identity Center.
+- Enforce strict least-privilege permissions for all Entra ID applications and service principals integrated into cloud tenants.
+
+Enterprise identity architecture security demands continuous Active Directory template auditing and strict non-human identity lifecycle governance to eliminate persistent domain takeover vectors. #CodeDefence #ActiveDirectory #ADCS #Certighost #CloudSecurity #EntraID #CISA #RedTeam #IdentitySecurity
   ]]></description>
 </item>
 
