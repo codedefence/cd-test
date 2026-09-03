@@ -2,80 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 2 September 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 3 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 2 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 3 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 02 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 02 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 03 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Thu, 03 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>SonicWall warns of two actively exploited zero day vulnerabilities in SMA 1000 series SSL VPN appliances</title>
-  <link>https://codedefence.in/blog/2026/09/02/sonicwall-warns-actively-exploited-sma1000-zero-day-flaws</link>
-  <pubDate>Wed, 02 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/02/sonicwall-warns-actively-exploited-sma1000-zero-day-flaws</guid>
+  <title>CISA adds JFrog Artifactory auth bypass CVE-2026-82329 and SonicWall SMA1000 flaws to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/03/cisa-adds-jfrog-artifactory-sonicwall-flaws-to-kev</link>
+  <pubDate>Thu, 03 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/03/cisa-adds-jfrog-artifactory-sonicwall-flaws-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[SonicWall](urn:li:organization:14774)</cd:mentions>
+  <cd:cve>CVE-2026-82329‚ CVE-2026-83548‚ CVE-2026-83549</cd:cve>
+  <cd:mentions>@[JFrog](urn:li:organization:15975)‚ @[SonicWall](urn:li:organization:14774)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Emergency security advisories published today warn of active wild exploitation targeting enterprise secure remote access appliances. Threat actors are chaining two previously unknown zero day vulnerabilities to bypass access control barriers and execute arbitrary system code on edge gateway controllers.
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to include seven newly confirmed exploitation targets across enterprise platforms. The catalog additions mandate rapid patching and mandatory forensic triage across federal civilian agencies under Binding Operational Directive 26-04.
 
-The vulnerabilities affect SonicWall SMA 1000 series SSL-VPN appliances, including SMA 6200, 7200, and 8200v models. Threat monitoring telemetry confirms that adversaries are actively chaining an access control bypass with an unauthenticated memory corruption flaw. By transmitting malformed request chains to public-facing gateway interfaces, attackers achieve elevated code execution rights, allowing them to extract local credential vaults and deploy persistent backdoor implants across host operating systems.
+The additions feature maximum-severity authentication bypass vulnerability CVE-2026-82329 affecting self-hosted JFrog Artifactory repository servers, alongside server-side request forgery vulnerability CVE-2026-83548 and command injection vulnerability CVE-2026-83549 impacting SonicWall SMA 1000 series appliances. Internet threat telemetry confirms adversaries actively forging administrative API tokens across Artifactory build servers and leveraging SonicWall gateway flaws to establish persistent perimeter backdoors. CISA mandates federal civilian agency compliance by September 5.
 
-Subverting secure remote access gateways destroys perimeter network boundaries. Because SMA 1000 appliances manage active employee single sign-on sessions, multi-factor authentication assertions, and internal network routing tunnels, an unauthenticated takeover permits threat actors to capture corporate user credentials, hijack active VPN sessions, and move laterally across internal subnets.
+Subverting central artifact repositories and secure remote gateways destroys enterprise perimeter boundaries. Because Artifactory stores compiled software binaries consumed by continuous deployment pipelines, an administrative token forgery permits threat actors to tamper with release packages, inject malicious code dependencies, and compromise downstream enterprise networks.
 
-- Apply emergency firmware maintenance hotfixes released by SonicWall across all SMA 1000 series appliances immediately.
-- Restrict management interface accessibility by placing administrative portals on isolated, non-routable management VLANs.
-- Inspect appliance access logs and process telemetry for anomalous request sequences targeting gateway authentication handlers.
-- Invalidate active user session cookies and reset administrative account credentials across exposed appliance installations.
+- Upgrade self-hosted JFrog Artifactory instances immediately to maintenance builds 7.161.20, 7.146.38, or 7.133.29.
+- Apply emergency firmware security hotfixes released by SonicWall across all SMA 1000 series appliances.
+- Inspect Artifactory access registries and audit logs for unauthorized administrative API token generation entries.
+- Restrict public web routing to repository management panels and VPN control interfaces by enforcing zero trust gateways.
 
-Edge gateway defense demands immediate security patch deployment and strict interface isolation to ensure secure remote access controllers remain completely protected from unauthenticated zero-day exploit chains. #CodeDefence #SonicWall #SSLVPN #ZeroDay #RCE #EdgeSecurity #NetworkSecurity #AppSec
+Enterprise platform protection requires rapid security patch deployment and strict identity token verification to ensure software distribution platforms remain insulated from unauthenticated forgery attacks. #CodeDefence #JFrog #Artifactory #SonicWall #AuthBypass #CISA #KEV #DevSecOps
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Sangoma Switchvox VoIP SQL injection vulnerability CVE-2026-9586 exploited to drop reverse shells</title>
-  <link>https://codedefence.in/blog/2026/09/02/sangoma-switchvox-voip-sqli-cve-2026-9586-exploited-reverse-shells</link>
-  <pubDate>Wed, 02 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/02/sangoma-switchvox-voip-sqli-cve-2026-9586-exploited-reverse-shells</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-9586</cd:cve>
-  <cd:mentions>@[Sangoma](urn:li:organization:2825424)</cd:mentions>
-  <description><![CDATA[
-Active wild exploitation targeting an enterprise voice over IP management platform has been confirmed across global honeypot arrays. Threat actors transmit malformed XML parameters to execute arbitrary SQL commands, gain database administrator authority, and invoke reverse shell connections.
-
-The vulnerability, tracked as CVE-2026-9586 with a CVSS score of 9.3, impacts Sangoma Switchvox SMB Edition 8.3. The bug resides in the /pa endpoint where user-controlled PhoneIP parameter values are concatenated directly into PostgreSQL database queries without sanitization. Unauthenticated remote attackers submit single crafted HTTP POST requests to execute arbitrary SQL statements as the PostgreSQL superuser, extracting cookie signing keys to forge web session tokens and deploying Base64-encoded command payloads to establish interactive reverse shells.
-
-Compromising central telecommunications servers creates severe internal voice eavesdropping and host security risks. Because Switchvox servers process call routing tables, voicemail archives, and active directory integration keys, an unauthenticated superuser takeover allows adversaries to intercept corporate communications, forge administrative sessions, and pivot into corporate subnets.
-
-- Force immediate maintenance upgrades across all Sangoma Switchvox server installations to patched version 8.4.0.2 or higher.
-- Inspect web server logs and database log paths at /var/log/switchvox/db-quirks.log for evidence of malformed SQL injection payloads.
-- Restrict public internet visibility of Switchvox management interfaces using pre-authenticated zero trust access proxies.
-- Rotate database access credentials, web cookie signing keys, and administrative user account passwords across affected appliances.
-
-Enterprise telecommunications security depends on rigid query parameterization and prompt patch installation to ensure VoIP management platforms remain protected from unauthenticated SQL injection. #CodeDefence #Sangoma #Switchvox #SQLi #VoIPSecurity #RCE #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA vulnerability report reveals 41 percent of active KEV exploits stem from basic unforgivable software flaws</title>
-  <link>https://codedefence.in/blog/2026/09/02/cisa-vulnerability-report-41-percent-kev-exploits-unforgivable-flaws</link>
-  <pubDate>Wed, 02 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/02/cisa-vulnerability-report-41-percent-kev-exploits-unforgivable-flaws</guid>
+  <title>FalconFlank zero day proof of concept exploit targets CrowdStrike Falcon Sensor for local privilege escalation</title>
+  <link>https://codedefence.in/blog/2026/09/03/falconflank-zero-day-poc-targets-crowdstrike-falcon-sensor</link>
+  <pubDate>Thu, 03 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/08/03/falconflank-zero-day-poc-targets-crowdstrike-falcon-sensor</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[CrowdStrike](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-A landmark vulnerability review report published by federal cybersecurity authorities reveals that over 41 percent of actively exploited vulnerabilities in enterprise software stem from basic design and implementation weaknesses known for decades. Threat actors continue to achieve code execution using predictable implementation errors.
+Public security disclosures and functional proof of concept code have been published for a local privilege escalation flaw targeting endpoint detection software. The exploit permits local unprivileged process threads to manipulate antimalware remediation subroutines and achieve root administrative control over host operating systems.
 
-The study analyzed two years of data from the Known Exploited Vulnerabilities catalog, which has now crossed 1,484 total entries. The findings indicate that 41.5 percent of actively exploited bugs map to weakness categories considered unforgivable and easily detectable during software development, led by OS command injection, code injection, untrusted data deserialization, and path traversal. Furthermore, approximately one in five listed catalog vulnerabilities is directly tied to active ransomware extortion campaigns.
+The zero day vulnerability, codenamed FalconFlank, impacts CrowdStrike Falcon Sensor agents running on Windows. The flaw resides within the remediation routine handling malicious Office macro quarantine actions. An unprivileged local process can redirect sensor file write operations to drop an arbitrary library file into System32 directories, triggering SYSTEM execution via Windows Error Reporting tasks. The release follows recent disclosures of similar privilege escalation bypasses targeting endpoint security agents.
 
-Failing to eliminate well-understood software weaknesses exposes enterprise infrastructure to automated exploitation pipelines. Because threat actors prioritize weakness categories that yield direct code execution or full system takeover, relying solely on CVSS scores without real-world threat context leaves critical assets exposed to active attack vectors.
+Subverting endpoint security agents destroys host isolation boundaries. Possessing root SYSTEM privileges obtained via security daemon manipulation allows local attackers to disable endpoint detection sensors, unhook kernel monitoring filters, and execute secondary payloads without generating alert telemetry.
 
-- Prioritize vulnerability remediation workflows based on active exploitation threat intelligence and KEV catalog listings rather than raw CVSS scores alone.
-- Implement automated static and dynamic application security testing tools within CI/CD pipelines to catch injection weaknesses prior to production.
-- Maintain accurate, automated software bill of materials and asset inventories to rapidly identify affected systems when new KEV entries are listed.
-- Enforce strict secure-by-design development standards to eliminate OS command injection and untrusted deserialization paths in custom software.
+- Monitor host endpoints for unexpected file creation events in System32 directories originating from antimalware service executables.
+- Restrict unprivileged local process execution rights and enforce application execution policies across enterprise workstations.
+- Audit local privilege escalation logs and process creation trees associated with endpoint detection sensor daemons.
+- Verify endpoint sensor software updates and ensure sensor update channels operate under automatic distribution policies.
 
-Enterprise vulnerability management requires shift-left secure coding practices combined with real-world threat intelligence to ensure software builds remain insulated from well-known exploitation vectors. #CodeDefence #CISA #KEV #VulnerabilityManagement #SecureByDesign #CommandInjection #AppSec #DevSecOps
+Endpoint protection software resilience depends on strict file write validation during macro remediation routines to guarantee local security sensors cannot be subverted for privilege escalation. #CodeDefence #CrowdStrike #FalconSensor #FalconFlank #PrivilegeEscalation #ZeroDay #EndpointSecurity #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Hackers actively forge administrative tokens in self-hosted JFrog Artifactory servers via CVE-2026-82329</title>
+  <link>https://codedefence.in/blog/2026/09/03/hackers-forge-admin-tokens-jfrog-artifactory-cve-2026-82329</link>
+  <pubDate>Thu, 03 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/03/hackers-forge-admin-tokens-jfrog-artifactory-cve-2026-82329</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-82329</cd:cve>
+  <cd:mentions>@[JFrog](urn:li:organization:15975)</cd:mentions>
+  <description><![CDATA[
+Threat intelligence writeups have confirmed active wild exploitation targeting default deployment configurations of a dominant binary artifact repository manager. Unauthenticated remote adversaries transmit crafted HTTP queries to forge administrative identity tokens and gain full system control.
+
+The vulnerability, tracked as CVE-2026-82329 with a CVSS score of 9.8, impacts self-hosted JFrog Artifactory instances. The defect stems from an authentication handling flaw present in default installations. Attackers exploit the missing verification layer to mint administrative access tokens, allowing them to enumerate internal user registries, alter repository security settings, and modify stored binary artifacts consumed by automated enterprise build systems.
+
+Compromising software artifact repositories introduces extreme software supply chain exposure across enterprise build toolchains. When adversaries mint administrative tokens on Artifactory servers, they obtain capabilities to replace trusted build binaries, poison production container registries, and execute downstream code injection attacks.
+
+- Force immediate maintenance upgrades across all self-hosted Artifactory servers to patched release 7.161.20 or higher.
+- Review Artifactory token generation registries to identify and revoke unauthorized administrative access keys.
+- Isolate binary repository management portals on non-routable administration VLANs protected by zero trust access controls.
+- Audit the digital signatures of released software artifacts and container images stored within Artifactory repositories.
+
+Binary repository protection demands rigid identity token verification and strict deployment configuration audits to ensure software release pipelines remain protected from unauthenticated token forgery. #CodeDefence #JFrog #Artifactory #SupplyChain #AuthBypass #DevSecOps #AppSec #CloudSecurity
   ]]></description>
 </item>
 
