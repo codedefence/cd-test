@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 07 September 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 08 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 07 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 08 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 07 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 07 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 08 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 08 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Adobe Commerce zero day StyleSmuggler actively exploited to deploy Rust backdoors on online stores</title>
-  <link>https://codedefence.in/blog/2026/09/07/adobe-commerce-zero-day-stylesmuggler-exploited-rust-backdoor</link>
-  <pubDate>Mon, 07 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/07/adobe-commerce-zero-day-stylesmuggler-exploited-rust-backdoor</guid>
+  <title>Adobe fixes critical Magento StyleSmuggler zero day CVE-2026-75650 exploited to deploy Linux backdoors</title>
+  <link>https://codedefence.in/blog/2026/09/08/adobe-fixes-magento-stylesmuggler-zero-day-cve-2026-75650</link>
+  <pubDate>Tue, 08 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/08/adobe-fixes-magento-stylesmuggler-zero-day-cve-2026-75650</guid>
   <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-75650</cd:cve>
   <cd:mentions>@[Adobe](urn:li:organization:1480)</cd:mentions>
   <description><![CDATA[
-Active wild zero day exploitation targeting e-commerce web publishing portals has been confirmed across global threat monitoring arrays. Threat actors exploit unpatched email delivery rendering handlers to execute arbitrary system code and plant compiled Rust backdoors on target web servers without requiring user interaction.
+Emergency web publishing security updates have been distributed to address an actively exploited zero day vulnerability affecting enterprise e-commerce portals. Threat actors leverage malformed email rendering requests to execute arbitrary code and plant compiled Linux backdoor implants on target web hosting servers.
 
-The vulnerability chain, designated StyleSmuggler, impacts Adobe Commerce and Magento platform versions 2.4.7, 2.4.8, and 2.4.9 running recent patch releases. Attackers exploit unsanitized style attribute parsing inside automated email resend routines to evaluate arbitrary code payloads. Threat telemetry confirms successful intrusions dropping persistent Rust-based backdoor binaries disguised as system processes kworker and fc-cache. The implants establish encrypted outbound command and control connections to execute secondary host discovery and payment card skimming modules.
+The vulnerability, tracked as CVE-2026-75650 with a CVSS score of 9.8 and dubbed StyleSmuggler, impacts Adobe Commerce and Magento platform versions 2.4.7, 2.4.8, and 2.4.9. The defect involves unsanitized style attribute parsing inside automated email resend subroutines. Unauthenticated remote actors transmit crafted HTTP payloads to force the web server to execute arbitrary system code, dropping compiled Rust backdoor binaries disguised as kworker and fc-cache processes to establish encrypted command and control connections.
 
-Subverting e-commerce web portals presents severe payment security and customer data privacy risks. Because Magento installations handle customer credit card numbers, billing addresses, and database connection strings, an unauthenticated server compromise allows adversaries to harvest payment credentials and compromise connected payment gateways.
+Subverting e-commerce web portals presents severe payment card security and customer data privacy risks. Because Magento installations handle customer billing records, credit card processing scripts, and database connection strings, an unauthenticated host compromise permits threat actors to deploy payment skimmers and exfiltrate customer databases.
 
-- Deploy web application firewall inspection rules to intercept incoming HTTP requests targeting Magento email resend endpoints.
-- Inspect host process registries and file systems for unauthorized Rust binaries executing under kworker or fc-cache process names.
-- Enforce strict database user permission scoping to prevent web server process threads from altering underlying database tables.
-- Isolate e-commerce web hosting instances behind pre-authenticated zero trust web application firewalls pending official vendor patches.
+- Force immediate installation of emergency security patches published by Adobe across all Adobe Commerce and Magento instances.
+- Inspect host process registries and file systems for unauthorized binary files executing under kworker or fc-cache process names.
+- Deploy web application firewall inspection rules to intercept malformed HTTP requests targeting Magento email resend endpoints.
+- Enforce strict database user permission scoping to prevent web server process threads from modifying underlying database schemas.
 
-E-commerce platform defense requires continuous file integrity monitoring and rigid input parsing controls to ensure online publishing environments remain completely insulated from unauthenticated zero-day backdoor delivery. #CodeDefence #Adobe #Commerce #Magento #ZeroDay #StyleSmuggler #Rust #RCE #AppSec
+E-commerce platform defense requires continuous file integrity monitoring and rigid input parsing controls to ensure online publishing environments remain completely protected from unauthenticated zero-day backdoor delivery. #CodeDefence #Adobe #Commerce #Magento #StyleSmuggler #ZeroDay #Linux #RCE #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>N-able issues emergency hotfix for maximum severity N-central RCE vulnerability CVE-2026-86218</title>
-  <link>https://codedefence.in/blog/2026/09/07/n-able-patches-max-severity-n-central-rce-cve-2026-86218</link>
-  <pubDate>Mon, 07 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/07/n-able-patches-max-severity-n-central-rce-cve-2026-86218</guid>
+  <title>SAP releases emergency patches for maximum severity OVERPASS kernel vulnerability in September update</title>
+  <link>https://codedefence.in/blog/2026/09/08/sap-patches-maximum-severity-overpass-kernel-vulnerability</link>
+  <pubDate>Tue, 08 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/08/sap-patches-maximum-severity-overpass-kernel-vulnerability</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-86218</cd:cve>
-  <cd:mentions>@[N-able](urn:li:organization:15161044)</cd:mentions>
+  <cd:mentions>@[SAP](urn:li:organization:1028)</cd:mentions>
   <description><![CDATA[
-Emergency platform security updates have been released for a remote monitoring and management platform to resolve a maximum severity remote code execution vulnerability. Threat monitoring organizations have identified active breach investigations targeting internet-exposed management servers.
+Enterprise software maintainers have distributed 20 security notes as part of their monthly maintenance release, headlined by a maximum-severity memory corruption flaw in central application kernel code. Unauthenticated remote network actors can execute arbitrary system code on underlying application host servers.
 
-The vulnerability, tracked as CVE-2026-86218 with a CVSS score of 10.0, affects N-able N-central RMM platform installations. The security defect allows unauthenticated remote actors transmitting malformed network packets to bypass administrative authentication controls and execute operating system commands with root privileges. Shadowserver telemetry confirms nearly 1,500 N-central server instances remain exposed to public internet routes worldwide.
+The vulnerability impacts the SAP Kernel layer across multiple supported release trains. The security defect stems from improper memory boundary checks within request handling routines, allowing an unauthenticated remote attacker to transmit malformed network packets that trigger heap buffer overwrites. Successful exploitation grants root-level execution rights, permitting adversaries to manipulate underlying database layers and bypass application security controls completely.
 
-Subverting central remote monitoring and management tools creates catastrophic supply chain exposure across managed service provider customer networks. Because RMM platforms hold administrative agent connections to thousands of client endpoints, an unauthenticated platform takeover allows threat actors to push ransomware payloads and execute lateral movement sweeps across client networks simultaneously.
+Subverting central enterprise resource planning kernel platforms destroys enterprise data integrity and operational boundaries. Because SAP Kernel daemons govern core business logic, financial accounting databases, and supply chain management routines, an unauthenticated kernel compromise enables threat actors to exfiltrate enterprise databases, forge transaction logs, and disrupt operations.
 
-- Force immediate installation of N-central 2026.3 Hotfix 4 across all self-hosted and cloud-managed N-central instances.
-- Restrict public internet visibility of N-central administration panels by placing server interfaces on isolated, non-routable management subnets.
-- Inspect application audit logs and process telemetry for unverified administrative session creations or anomalous command executions.
-- Rotate administrative service account keys and client agent communication tokens across managed enterprise environments.
+- Apply official September 2026 Security Notes released by SAP across all production and non-production application servers immediately.
+- Restrict public network visibility of SAP application servers by placing kernel management ports behind zero trust access proxies.
+- Inspect network traffic for malformed request sequences targeting SAP dispatcher and application server ports.
+- Audit administrative user roles and verify system integrity hashes across core SAP application directories.
 
-Managed service provider platform security relies on rapid patch deployment and strict interface isolation to ensure central remote management platforms remain protected against unauthenticated remote code execution. #CodeDefence #Nable #Ncentral #RMM #RCE #SupplyChainRisk #AppSec #PatchManagement
+Enterprise resource planning security relies on rapid security patch deployment and strict network interface controls to ensure core application kernels remain insulated from unauthenticated memory corruption exploits. #CodeDefence #SAP #Kernel #ERP #OVERPASS #RCE #PatchManagement #AppSec #CloudSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>ConnectWise warns of unpatched ScreenConnect remote access vulnerability and shares temporary mitigations</title>
-  <link>https://codedefence.in/blog/2026/09/07/connectwise-warns-unpatched-screenconnect-vulnerability-mitigations</link>
-  <pubDate>Mon, 07 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/07/connectwise-warns-unpatched-screenconnect-vulnerability-mitigations</guid>
+  <title>CERT Polska issues urgent alert on active MikroTrick exploit chain targeting MikroTik RouterOS SSH ports</title>
+  <link>https://codedefence.in/blog/2026/09/08/cert-polska-alert-mikrotrick-exploit-chain-mikrotik-routeros</link>
+  <pubDate>Tue, 08 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/08/cert-polska-alert-mikrotrick-exploit-chain-mikrotik-routeros</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[ConnectWise](urn:li:organization:3178)</cd:mentions>
+  <cd:mentions>@[MikroTik](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Remote management vendor advisories published today urge enterprise administrators to enforce immediate temporary network controls following the discovery of a new vulnerability in a widely deployed remote support software platform. Vendor engineering teams are finalizing security patches for distribution later this week.
+National computer emergency response teams have published urgent threat warnings detailing active wild exploitation of edge routing hardware. Adversaries chain multiple unauthenticated security flaws to obtain administrator privileges, rewrite network configurations, and drop persistent backdoor user accounts.
 
-The flaw impacts self-hosted ConnectWise ScreenConnect instances. While full technical disclosures remain withheld pending patch release, security advisories indicate the defect involves improper session validation in web management interfaces, allowing unauthenticated remote actors to trigger unauthorized administrative operations. Threat monitoring networks report modified ScreenConnect client binaries being weaponized in worm-like reconnaissance campaigns targeting corporate endpoints.
+The attack activity, designated MikroTrick, targets MikroTik RouterOS hardware configured with public-facing SSH management services. Threat actors exploit vulnerabilities within remote management daemons to bypass credential checks, injecting persistent rogue user entries formatted as ssh:-2@ and setting system device-mode status flags to Flagged. Technical disclosures confirm compromised gateways allow threat actors to modify DNS settings, redirect transit traffic, and establish covert access tunnels into internal subnets.
 
-Subverting enterprise remote access tools undermines boundary access controls across corporate environments. Because ScreenConnect servers hold active remote desktop connections and administrative credentials for client endpoints, an unauthenticated server compromise allows adversaries to hijack remote sessions, bypass multi-factor authentication, and deploy secondary malware.
+Subverting edge routing hardware destroys perimeter isolation across corporate subnets. Because MikroTik gateways manage edge traffic routing, local firewall rules, and VPN tunnel terminations, an unauthenticated takeover enables adversaries to capture unencrypted network transit data and pivot into adjacent enterprise networks.
 
-- Apply temporary network access control rules to restrict public web access to self-hosted ScreenConnect management ports.
-- Enforce pre-authentication zero trust web proxies in front of exposed ScreenConnect server web portals.
-- Inspect server session logs for anomalous incoming connection requests or unverified administrative user registrations.
-- Prepare administrative workflows to apply vendor security patches immediately upon official public release later this week.
+- Force immediate installation of current RouterOS software updates across all internet-exposed MikroTik routing hardware.
+- Restrict public internet routing to RouterOS SSH, WinBox, and web administration ports using strict firewall access lists.
+- Check device status using the /system/device-mode/print command to verify whether the appliance has been set to Flagged.
+- Perform complete system resets and configuration rebuilds from verified clean backups if rogue account entries are detected.
 
-Remote support infrastructure defense depends on proactive network access gating and continuous session auditing to ensure remote desktop gateways remain insulated from unauthenticated access manipulation. #CodeDefence #ConnectWise #ScreenConnect #RemoteAccess #ZeroDay #NetworkSecurity #AppSec #PatchManagement
+Perimeter edge protection demands strict management interface isolation and immediate firmware update application to ensure enterprise gateways remain protected from unauthenticated remote access manipulation. #CodeDefence #MikroTik #RouterOS #MikroTrick #EdgeSecurity #NetworkSecurity #AuthBypass #AppSec
   ]]></description>
 </item>
 
