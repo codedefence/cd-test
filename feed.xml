@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 11 September 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 12 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 11 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 12 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 11 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 11 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 12 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds actively exploited MikroTik RouterOS vulnerabilities CVE-2026-67277 and CVE-2026-86060 to KEV</title>
-  <link>https://codedefence.in/blog/2026/09/11/cisa-adds-mikrotik-routeros-vulnerabilities-to-kev-catalog</link>
-  <pubDate>Fri, 11 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/11/cisa-adds-mikrotik-routeros-vulnerabilities-to-kev-catalog</guid>
+  <title>CISA reaches September 12 patch deadline for Cisco, Citrix, and Fortinet edge vulnerabilities</title>
+  <link>https://codedefence.in/blog/2026/09/12/cisa-reaches-sept-12-patch-deadline-cisco-citrix-fortinet</link>
+  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/cisa-reaches-sept-12-patch-deadline-cisco-citrix-fortinet</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-67277‚ CVE-2026-86060</cd:cve>
-  <cd:mentions>@[MikroTik](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-20079‚ CVE-2026-19490‚ CVE-2025-25249</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[Citrix](urn:li:organization:1290)‚ @[Fortinet](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have issued an emergency addition to the Known Exploited Vulnerabilities catalog, ordering mandatory remediation for two edge routing vulnerabilities actively exploited in wild network attacks. Threat actors leverage missing authentication handlers and command delimiter injection bugs to hijack internet-exposed routers.
+Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to apply security patches for three critical perimeter edge vulnerabilities. Public threat monitoring confirms active wild scanning and exploit activity targeting exposed interfaces.
 
-The catalog additions cover missing authentication vulnerability CVE-2026-67277 and command argument delimiter vulnerability CVE-2026-86060 affecting MikroTik RouterOS installations. Unauthenticated remote actors transmit malformed network sequences to public SSH and management interfaces to bypass login verification, execute root system commands, and plant rogue user accounts formatted as ssh:-2@. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory September 25 compliance deadline to apply vendor software updates and conduct forensic triage.
+The mandatory remediation mandate applies to Cisco Secure Firewall Management Center authentication bypass CVE-2026-20079, Citrix NetScaler Gateway authentication bypass CVE-2026-19490, and Fortinet FortiOS heap-based buffer overflow CVE-2025-25249. Threat telemetry confirms adversaries actively leveraging the Cisco FMC vulnerability to deploy Qilin ransomware payloads and establish web shell footholds, while Citrix NetScaler honeytaps recorded over 56 distinct exploitation sweeps over recent days. BOD 26-04 requires agencies to conduct forensic triage for compromise indicators prior to applying software patches.
 
-Subverting perimeter routing appliances destroys network access boundaries across corporate subnets. Because RouterOS devices manage edge traffic routing, local firewall rules, and VPN tunnel terminations, an unauthenticated takeover permits adversaries to intercept unencrypted transit traffic, modify DNS routing records, and pivot into internal enterprise networks.
+Subverting perimeter edge devices grants threat actors unmonitored persistence across internal subnets. Because firewall controllers and VPN gateways manage active single sign-on sessions and internal network routing policies, an unauthenticated perimeter takeover permits adversaries to disable security inspection rules, exfiltrate credentials, and execute lateral movement sweeps.
 
-- Force immediate installation of RouterOS software updates published by MikroTik across all edge routing appliances.
-- Restrict public internet access to RouterOS management services including SSH, WinBox, and WebFig using strict firewall access lists.
-- Check appliance status using the system device-mode print command to verify whether the device has been set to Flagged.
-- Perform complete system resets and configuration rebuilds from verified clean backups if rogue account entries are identified.
+- Force immediate software updates across all Cisco FMC, Citrix NetScaler ADC, and Fortinet FortiOS appliances.
+- Isolate perimeter management interfaces on dedicated out-of-band administrative VLANs with no public internet routing.
+- Inspect appliance system logs for unauthorized script execution, unexpected web shell creations, or unverified admin logins.
+- Invalidate active SSL-VPN user session cookies and execute mandatory administrative account password resets across exposed gateways.
 
-Perimeter network protection demands strict management interface isolation and immediate firmware maintenance updates to ensure edge gateways remain protected from unauthenticated remote administrative takeover. #CodeDefence #MikroTik #RouterOS #CISA #KEV #EdgeSecurity #NetworkSecurity #AppSec
+Perimeter security resilience depends on immediate software maintenance updates and strict control plane isolation to ensure central access controllers remain completely insulated from unauthenticated access manipulation. #CodeDefence #Cisco #Citrix #Fortinet #CISA #KEV #EdgeSecurity #NetworkSecurity #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Anthropic report exposes state sponsored cyber espionage groups misusing Claude for automated intrusions</title>
-  <link>https://codedefence.in/blog/2026/09/11/anthropic-report-exposes-state-sponsored-misuse-claude-ai</link>
-  <pubDate>Fri, 11 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/11/anthropic-report-exposes-state-sponsored-misuse-claude-ai</guid>
+  <title>Fortinet heap overflow CVE-2025-25249 actively exploited in wild campaign deploying PivotC2 Node.js RAT</title>
+  <link>https://codedefence.in/blog/2026/09/12/fortinet-heap-overflow-cve-2025-25249-exploited-pivotc2-rat</link>
+  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/fortinet-heap-overflow-cve-2025-25249-exploited-pivotc2-rat</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2025-25249</cd:cve>
+  <cd:mentions>@[Fortinet](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Threat intelligence disclosures have detailed a major ongoing intrusion campaign actively weaponizing a heap-based buffer overflow flaw in network security operating systems. Threat actors transmit malformed network packets to drop shell scripts, executing Node.js payloads to establish interactive reverse command shells.
+
+The attack campaign targets Fortinet FortiOS, FortiSwitchManager, and FortiSASE product builds via vulnerability CVE-2025-25249. Adversaries send crafted network requests to vulnerable appliances, executing single-line JavaScript commands via Node.js to download and execute a second-stage decrypted payload known as PivotC2. The post-exploitation framework supports interactive shell access, network scanning routines, and local configuration harvesting. Threat telemetry estimates over 3,000 IP addresses have been targeted, resulting in verified infections across 178 enterprise edge devices globally.
+
+Subverting perimeter security operating systems exposes internal enterprise subnets to automated compromise pipelines. Possessing remote code execution authority over security gateways allows adversaries to intercept encrypted transit data, harvest VPN service credentials, and route malicious traffic into corporate subnets.
+
+- Upgrade FortiOS, FortiSwitchManager, and FortiSASE software builds immediately to current vendor maintenance releases.
+- Restrict public internet access to appliance management interfaces by enforcing zero-trust pre-authentication controls.
+- Inspect system process trees for anomalous shell script executions or unauthorized Node.js daemon spawns.
+- Monitor outbound network traffic for unverified C2 beacon connections originating from security gateway IP addresses.
+
+Perimeter gateway protection demands rigid memory boundary checks and rapid patch execution to ensure enterprise security platforms remain insulated from unauthenticated remote code execution. #CodeDefence #Fortinet #FortiOS #PivotC2 #NodeJS #BufferOverflow #RCE #AppSec #NetworkSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>HPE issues emergency security patches for critical ArubaOS CX network operating system RCE vulnerability</title>
+  <link>https://codedefence.in/blog/2026/09/12/hpe-patches-critical-arubaos-cx-network-os-rce-vulnerability</link>
+  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/hpe-patches-critical-arubaos-cx-network-os-rce-vulnerability</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Anthropic](urn:li:organization:15161044)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <cd:mentions>@[HPE](urn:li:organization:1028)</cd:mentions>
   <description><![CDATA[
-Artificial intelligence safety threat reports published today detail sophisticated misuse campaigns where state-sponsored espionage actors leveraged commercial language models to accelerate software reverse engineering, evade endpoint security detection, and automate cloud token theft.
+Enterprise networking vendor advisories published today detail emergency security maintenance updates for a critical remote code execution vulnerability in enterprise switch operating systems. Unauthenticated remote actors can transmit malformed CLI management packets to execute arbitrary commands with root administrative privileges.
 
-The investigations, published by Anthropic, detail activity by Russia-linked APT29 Midnight Blizzard alongside Chinese university-affiliated threat clusters. Attackers used Claude AI workflows to reverse-engineer proprietary military drone vision software development kits stolen from defense manufacturers. Additionally, adversaries deployed multi-agent AI frameworks to automate cloud platform exploitation, executing cross-site scripting attacks that extracted over 2,100 Azure AD token sets across 40 corporate tenants within 34 hours. Adversaries also used AI models to systematically modify detection artifacts when security agents flagged custom implants.
+The vulnerability impacts HPE ArubaOS-CX switch software across multiple enterprise routing and switching series. The defect involves improper input validation within command-line management interface parsing routines. Remote unauthenticated adversaries with access to management interfaces can send malformed network packets to bypass authentication handlers, forcing the switch operating system to execute arbitrary system commands under the root account context.
 
-Subverting artificial intelligence capabilities to automate exploitation speeds up attack lifecycles across enterprise environments. When threat actors combine autonomous AI agent workflows with credential theft techniques, traditional SOC detection windows shrink dramatically, granting adversaries unmonitored lateral access to cloud tenant boundaries.
+Subverting enterprise switching infrastructure undermines network microsegmentation boundaries. Possessing root authority over network switches allows threat actors to disable VLAN isolation rules, capture unencrypted network transit traffic, and launch lateral movement sweeps across enterprise subnets.
 
-- Enforce strict continuous session monitoring and short expiration windows for Azure AD and OAuth access tokens across cloud tenants.
-- Deploy real-time identity threat detection controls to flag high-volume token theft routines originating from single IP blocks.
-- Audit public-facing SaaS applications for cross-site scripting and privilege escalation vulnerabilities that feed automated agent workflows.
-- Monitor endpoint process telemetry for rapid payload modification patterns indicative of AI-assisted evasion loops.
+- Upgrade HPE ArubaOS-CX switch software installations immediately to emergency patched release builds published by HPE.
+- Restrict CLI and web management access to switches by placing management interfaces on dedicated, non-routable management VLANs.
+- Enforce strict access control lists to permit switch management connections exclusively from authorized administrative jump hosts.
+- Inspect switch audit logs for anomalous CLI command executions or unauthorized administrative session attempts.
 
-Enterprise cloud security relies on robust non-human identity governance and real-time behavioral monitoring to ensure cloud tenant boundaries remain protected from autonomous AI-driven exploitation workflows. #CodeDefence #Anthropic #AISecurity #MidnightBlizzard #APT29 #CloudSecurity #AzureAD #IdentitySecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA BOD 26-04 compliance deadline arrives for N-able N-central maximum severity RCE CVE-2026-86218</title>
-  <link>https://codedefence.in/blog/2026/09/11/cisa-bod-26-04-compliance-deadline-arrives-n-able-n-central</link>
-  <pubDate>Fri, 11 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/11/cisa-bod-26-04-compliance-deadline-arrives-n-able-n-central</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-86218</cd:cve>
-  <cd:mentions>@[N-able](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to remediate a maximum-severity remote code execution flaw in an enterprise remote management platform. Systems remaining unpatched face mandatory network disconnection.
-
-The vulnerability, tracked as CVE-2026-86218 with a CVSS score of 10.0, affects N-able N-central remote monitoring and management servers. Unauthenticated remote network actors transmit malformed network packets to bypass administrative authentication, executing operating system commands with full root privileges. CISA mandated federal agency patching or product removal by September 11, requiring forensic triage on any instance exposed to public internet routes prior to patch execution.
-
-Compromising managed service provider platforms creates severe supply chain exposure across downstream enterprise customer networks. Because RMM servers maintain persistent administrative connections to client endpoints, an unauthenticated server takeover grants adversaries unmonitored authority to push ransomware payloads and execute lateral movement sweeps.
-
-- Upgrade on-premises N-able N-central instances immediately to patched release build 2026.3.1.14 or higher.
-- Perform forensic triage across application server access logs for signs of unauthorized administrative session creation dating back to early September.
-- Restrict public internet routing to N-central web management portals by placing interfaces on isolated management subnets.
-- Rotate administrative service credentials and agent communication tokens across all managed client environments.
-
-Remote management platform security demands strict adherence to threat-informed remediation deadlines and proactive forensic auditing to ensure central management hosts remain protected from unauthenticated code execution. #CodeDefence #Nable #Ncentral #RMM #RCE #SupplyChainRisk #CISA #KEV #AppSec
+Enterprise switching security relies on strict management control plane isolation and prompt security patch deployment to guarantee core network infrastructure remains protected from unauthenticated remote code execution. #CodeDefence #HPE #ArubaOS #NetworkSecurity #Switching #RCE #AppSec #PatchManagement
   ]]></description>
 </item>
 
