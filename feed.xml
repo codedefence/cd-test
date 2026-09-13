@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 12 September 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 13 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 12 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 13 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 12 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 13 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA reaches September 12 patch deadline for Cisco, Citrix, and Fortinet edge vulnerabilities</title>
-  <link>https://codedefence.in/blog/2026/09/12/cisa-reaches-sept-12-patch-deadline-cisco-citrix-fortinet</link>
-  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/cisa-reaches-sept-12-patch-deadline-cisco-citrix-fortinet</guid>
+  <title>CISA adds Ivanti EPMM unauthenticated remote code execution vulnerability CVE-2026-38291 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/13/cisa-adds-ivanti-epmm-rce-cve-2026-38291-to-kev</link>
+  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/cisa-adds-ivanti-epmm-rce-cve-2026-38291-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20079‚ CVE-2026-19490‚ CVE-2025-25249</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[Citrix](urn:li:organization:1290)‚ @[Fortinet](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-38291</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3059)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to apply security patches for three critical perimeter edge vulnerabilities. Public threat monitoring confirms active wild scanning and exploit activity targeting exposed interfaces.
+Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating immediate patching for a critical enterprise mobile management platform flaw. The vulnerability permits remote unauthenticated network actors to bypass access controls and execute arbitrary system commands on underlying server appliances.
 
-The mandatory remediation mandate applies to Cisco Secure Firewall Management Center authentication bypass CVE-2026-20079, Citrix NetScaler Gateway authentication bypass CVE-2026-19490, and Fortinet FortiOS heap-based buffer overflow CVE-2025-25249. Threat telemetry confirms adversaries actively leveraging the Cisco FMC vulnerability to deploy Qilin ransomware payloads and establish web shell footholds, while Citrix NetScaler honeytaps recorded over 56 distinct exploitation sweeps over recent days. BOD 26-04 requires agencies to conduct forensic triage for compromise indicators prior to applying software patches.
+The security flaw, tracked as CVE-2026-38291 with a CVSS score of 9.8, impacts Ivanti Endpoint Manager Mobile EPMM installations. The defect resides in an exposed API routing service that fails to validate incoming payload parameters. Unauthenticated adversaries issue crafted HTTP requests to bypass authentication layers, spawning root shell processes and establishing persistent backdoors. Due to verified wild exploitation targeting government and commercial networks, CISA added the flaw to the KEV database under Binding Operational Directive 26-04.
 
-Subverting perimeter edge devices grants threat actors unmonitored persistence across internal subnets. Because firewall controllers and VPN gateways manage active single sign-on sessions and internal network routing policies, an unauthenticated perimeter takeover permits adversaries to disable security inspection rules, exfiltrate credentials, and execute lateral movement sweeps.
+Subverting a centralized mobile device management platform compromises enterprise mobile fleets. Because MDM appliances hold device management certificates, corporate network profiles, and mobile access tokens, an unauthenticated takeover allows threat actors to push malicious software profiles to enrolled mobile devices and pivot into internal corporate networks.
 
-- Force immediate software updates across all Cisco FMC, Citrix NetScaler ADC, and Fortinet FortiOS appliances.
-- Isolate perimeter management interfaces on dedicated out-of-band administrative VLANs with no public internet routing.
-- Inspect appliance system logs for unauthorized script execution, unexpected web shell creations, or unverified admin logins.
-- Invalidate active SSL-VPN user session cookies and execute mandatory administrative account password resets across exposed gateways.
+- Force immediate installation of security maintenance updates across all Ivanti EPMM deployment servers.
+- Restrict public internet exposure of EPMM administrative web portals, gating visibility behind zero trust access gateways.
+- Inspect server application logs for anomalous HTTP requests targeting internal API routing handlers.
+- Audit enrolled mobile device configurations for unauthorized profile installations or unverified certificate additions.
 
-Perimeter security resilience depends on immediate software maintenance updates and strict control plane isolation to ensure central access controllers remain completely insulated from unauthenticated access manipulation. #CodeDefence #Cisco #Citrix #Fortinet #CISA #KEV #EdgeSecurity #NetworkSecurity #PatchManagement
+Enterprise mobile infrastructure defense demands rapid security patching paired with strict perimeter interface controls to ensure centralized management platforms remain shielded from unauthenticated access manipulation. #CodeDefence #Ivanti #EPMM #AuthBypass #MDM #CISA #KEV #MobileSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Fortinet heap overflow CVE-2025-25249 actively exploited in wild campaign deploying PivotC2 Node.js RAT</title>
-  <link>https://codedefence.in/blog/2026/09/12/fortinet-heap-overflow-cve-2025-25249-exploited-pivotc2-rat</link>
-  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/fortinet-heap-overflow-cve-2025-25249-exploited-pivotc2-rat</guid>
+  <title>Mass exploitation targets Veeam Backup and Replication zero day vulnerability CVE-2026-20934</title>
+  <link>https://codedefence.in/blog/2026/09/13/mass-exploitation-veeam-backup-replication-zero-day-cve-2026-20934</link>
+  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/mass-exploitation-veeam-backup-replication-zero-day-cve-2026-20934</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-25249</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-20934</cd:cve>
+  <cd:mentions>@[Veeam](urn:li:organization:3059)</cd:mentions>
   <description><![CDATA[
-Threat intelligence disclosures have detailed a major ongoing intrusion campaign actively weaponizing a heap-based buffer overflow flaw in network security operating systems. Threat actors transmit malformed network packets to drop shell scripts, executing Node.js payloads to establish interactive reverse command shells.
+Threat monitoring arrays report widespread automated scanning and exploitation targeting an unauthenticated remote code execution vulnerability in a widely deployed enterprise backup management platform. Adversaries leverage untrusted data deserialization to execute arbitrary system commands and destroy recovery catalogs.
 
-The attack campaign targets Fortinet FortiOS, FortiSwitchManager, and FortiSASE product builds via vulnerability CVE-2025-25249. Adversaries send crafted network requests to vulnerable appliances, executing single-line JavaScript commands via Node.js to download and execute a second-stage decrypted payload known as PivotC2. The post-exploitation framework supports interactive shell access, network scanning routines, and local configuration harvesting. Threat telemetry estimates over 3,000 IP addresses have been targeted, resulting in verified infections across 178 enterprise edge devices globally.
+The vulnerability, tracked as CVE-2026-20934 with a CVSS score of 9.8, affects Veeam Backup & Replication software instances. The bug stems from improper handling of serialized objects within the Veeam Distribution Service protocol. An unauthenticated remote attacker can transmit malformed TCP packets to port 9392, forcing the backup server to execute arbitrary operating system commands under high-privilege service account contexts. Threat actors exploit the access to delete backup snapshots and deploy ransomware payloads.
 
-Subverting perimeter security operating systems exposes internal enterprise subnets to automated compromise pipelines. Possessing remote code execution authority over security gateways allows adversaries to intercept encrypted transit data, harvest VPN service credentials, and route malicious traffic into corporate subnets.
+Subverting enterprise backup infrastructure eliminates an organization's primary recovery safeguard. Because backup servers hold administrative credentials for hypervisors and storage repositories, an administrative takeover permits threat actors to wipe disaster recovery archives and force ransom compliance.
 
-- Upgrade FortiOS, FortiSwitchManager, and FortiSASE software builds immediately to current vendor maintenance releases.
-- Restrict public internet access to appliance management interfaces by enforcing zero-trust pre-authentication controls.
-- Inspect system process trees for anomalous shell script executions or unauthorized Node.js daemon spawns.
-- Monitor outbound network traffic for unverified C2 beacon connections originating from security gateway IP addresses.
+- Upgrade Veeam Backup & Replication installations immediately to patched maintenance releases published by Veeam.
+- Inspect server process logs for anomalous command execution calls originating from Veeam distribution daemons.
+- Restrict network access to TCP port 9392 and Veeam management ports using strict firewall access control lists.
+- Maintain immutable, air-gapped backup storage repositories isolated from primary Active Directory domain controllers.
 
-Perimeter gateway protection demands rigid memory boundary checks and rapid patch execution to ensure enterprise security platforms remain insulated from unauthenticated remote code execution. #CodeDefence #Fortinet #FortiOS #PivotC2 #NodeJS #BufferOverflow #RCE #AppSec #NetworkSecurity
+Backup infrastructure security relies on rigid network microsegmentation and prompt patch deployment to ensure corporate disaster recovery gateways remain protected from unauthenticated deserialization exploits. #CodeDefence #Veeam #BackupSecurity #RCE #Deserialization #Ransomware #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>HPE issues emergency security patches for critical ArubaOS CX network operating system RCE vulnerability</title>
-  <link>https://codedefence.in/blog/2026/09/12/hpe-patches-critical-arubaos-cx-network-os-rce-vulnerability</link>
-  <pubDate>Sat, 12 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/12/hpe-patches-critical-arubaos-cx-network-os-rce-vulnerability</guid>
+  <title>WordPress LiteSpeed Cache plugin vulnerability CVE-2026-40112 exploited to create admin accounts</title>
+  <link>https://codedefence.in/blog/2026/09/13/wordpress-litespeed-cache-vulnerability-cve-2026-40112-exploited</link>
+  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/wordpress-litespeed-cache-vulnerability-cve-2026-40112-exploited</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[HPE](urn:li:organization:1028)</cd:mentions>
+  <cd:cve>CVE-2026-40112</cd:cve>
+  <cd:mentions>@[WordPress](urn:li:organization:2825424)</cd:mentions>
   <description><![CDATA[
-Enterprise networking vendor advisories published today detail emergency security maintenance updates for a critical remote code execution vulnerability in enterprise switch operating systems. Unauthenticated remote actors can transmit malformed CLI management packets to execute arbitrary commands with root administrative privileges.
+Web security research writeups have disclosed active wild exploitation targeting a critical unauthenticated privilege escalation vulnerability in a popular web acceleration plugin. The flaw permits remote unauthenticated actors to forge administrative user accounts and plant persistent web shell implants.
 
-The vulnerability impacts HPE ArubaOS-CX switch software across multiple enterprise routing and switching series. The defect involves improper input validation within command-line management interface parsing routines. Remote unauthenticated adversaries with access to management interfaces can send malformed network packets to bypass authentication handlers, forcing the switch operating system to execute arbitrary system commands under the root account context.
+The vulnerability, tracked as CVE-2026-40112 with a CVSS score of 9.8, impacts LiteSpeed Cache for WordPress installations prior to version 6.5.1. The flaw involves weak hash generation logic during user impersonation and cookie verification routines. Unauthenticated remote adversaries transmit crafted HTTP requests to guess administrative hash values, creating unauthorized administrative accounts and uploading malicious PHP files to execute operating system commands on target web hosting servers.
 
-Subverting enterprise switching infrastructure undermines network microsegmentation boundaries. Possessing root authority over network switches allows threat actors to disable VLAN isolation rules, capture unencrypted network transit traffic, and launch lateral movement sweeps across enterprise subnets.
+Compromising primary publishing web servers provides adversaries with immediate initial access to enterprise web hosting environments. Because web servers host database connection strings, local storage vaults, and internal API tokens, an unauthenticated takeover permits threat actors to deploy web shells, siphon customer data, and pivot into adjacent internal subnets.
 
-- Upgrade HPE ArubaOS-CX switch software installations immediately to emergency patched release builds published by HPE.
-- Restrict CLI and web management access to switches by placing management interfaces on dedicated, non-routable management VLANs.
-- Enforce strict access control lists to permit switch management connections exclusively from authorized administrative jump hosts.
-- Inspect switch audit logs for anomalous CLI command executions or unauthorized administrative session attempts.
+- Upgrade LiteSpeed Cache plugin installations immediately to patched version 6.5.1 or higher.
+- Inspect WordPress user registries for unauthorized administrative accounts created recently without approval.
+- Deploy web application firewall inspection rules to block malformed HTTP requests targeting LiteSpeed Cache endpoints.
+- Enforce strict database user permission scoping to prevent web server processes from modifying underlying user tables.
 
-Enterprise switching security relies on strict management control plane isolation and prompt security patch deployment to guarantee core network infrastructure remains protected from unauthenticated remote code execution. #CodeDefence #HPE #ArubaOS #NetworkSecurity #Switching #RCE #AppSec #PatchManagement
+Web application perimeter protection relies on robust hash verification and rapid patch deployment to guarantee core publishing platforms cannot be exploited for unauthenticated privilege escalation. #CodeDefence #WordPress #LiteSpeedCache #PrivilegeEscalation #AppSec #PatchManagement #WebSecurity #VulnerabilityManagement
   ]]></description>
 </item>
 
