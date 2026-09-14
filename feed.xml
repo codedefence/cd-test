@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 13 September 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 14 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 13 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 14 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sun, 13 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 14 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 14 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Ivanti EPMM unauthenticated remote code execution vulnerability CVE-2026-38291 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/13/cisa-adds-ivanti-epmm-rce-cve-2026-38291-to-kev</link>
-  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/cisa-adds-ivanti-epmm-rce-cve-2026-38291-to-kev</guid>
+  <title>CISA adds Palo Alto Networks PAN-OS management interface RCE CVE-2026-40112 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/14/cisa-adds-palo-alto-networks-pan-os-rce-cve-2026-40112-to-kev</link>
+  <pubDate>Mon, 14 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/14/cisa-adds-palo-alto-networks-pan-os-rce-cve-2026-40112-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-38291</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3059)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating immediate patching for a critical enterprise mobile management platform flaw. The vulnerability permits remote unauthenticated network actors to bypass access controls and execute arbitrary system commands on underlying server appliances.
-
-The security flaw, tracked as CVE-2026-38291 with a CVSS score of 9.8, impacts Ivanti Endpoint Manager Mobile EPMM installations. The defect resides in an exposed API routing service that fails to validate incoming payload parameters. Unauthenticated adversaries issue crafted HTTP requests to bypass authentication layers, spawning root shell processes and establishing persistent backdoors. Due to verified wild exploitation targeting government and commercial networks, CISA added the flaw to the KEV database under Binding Operational Directive 26-04.
-
-Subverting a centralized mobile device management platform compromises enterprise mobile fleets. Because MDM appliances hold device management certificates, corporate network profiles, and mobile access tokens, an unauthenticated takeover allows threat actors to push malicious software profiles to enrolled mobile devices and pivot into internal corporate networks.
-
-- Force immediate installation of security maintenance updates across all Ivanti EPMM deployment servers.
-- Restrict public internet exposure of EPMM administrative web portals, gating visibility behind zero trust access gateways.
-- Inspect server application logs for anomalous HTTP requests targeting internal API routing handlers.
-- Audit enrolled mobile device configurations for unauthorized profile installations or unverified certificate additions.
-
-Enterprise mobile infrastructure defense demands rapid security patching paired with strict perimeter interface controls to ensure centralized management platforms remain shielded from unauthenticated access manipulation. #CodeDefence #Ivanti #EPMM #AuthBypass #MDM #CISA #KEV #MobileSecurity
-  ]]></description>
-</item>
-
-<item>
-  <title>Mass exploitation targets Veeam Backup and Replication zero day vulnerability CVE-2026-20934</title>
-  <link>https://codedefence.in/blog/2026/09/13/mass-exploitation-veeam-backup-replication-zero-day-cve-2026-20934</link>
-  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/mass-exploitation-veeam-backup-replication-zero-day-cve-2026-20934</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-20934</cd:cve>
-  <cd:mentions>@[Veeam](urn:li:organization:3059)</cd:mentions>
-  <description><![CDATA[
-Threat monitoring arrays report widespread automated scanning and exploitation targeting an unauthenticated remote code execution vulnerability in a widely deployed enterprise backup management platform. Adversaries leverage untrusted data deserialization to execute arbitrary system commands and destroy recovery catalogs.
-
-The vulnerability, tracked as CVE-2026-20934 with a CVSS score of 9.8, affects Veeam Backup & Replication software instances. The bug stems from improper handling of serialized objects within the Veeam Distribution Service protocol. An unauthenticated remote attacker can transmit malformed TCP packets to port 9392, forcing the backup server to execute arbitrary operating system commands under high-privilege service account contexts. Threat actors exploit the access to delete backup snapshots and deploy ransomware payloads.
-
-Subverting enterprise backup infrastructure eliminates an organization's primary recovery safeguard. Because backup servers hold administrative credentials for hypervisors and storage repositories, an administrative takeover permits threat actors to wipe disaster recovery archives and force ransom compliance.
-
-- Upgrade Veeam Backup & Replication installations immediately to patched maintenance releases published by Veeam.
-- Inspect server process logs for anomalous command execution calls originating from Veeam distribution daemons.
-- Restrict network access to TCP port 9392 and Veeam management ports using strict firewall access control lists.
-- Maintain immutable, air-gapped backup storage repositories isolated from primary Active Directory domain controllers.
-
-Backup infrastructure security relies on rigid network microsegmentation and prompt patch deployment to ensure corporate disaster recovery gateways remain protected from unauthenticated deserialization exploits. #CodeDefence #Veeam #BackupSecurity #RCE #Deserialization #Ransomware #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>WordPress LiteSpeed Cache plugin vulnerability CVE-2026-40112 exploited to create admin accounts</title>
-  <link>https://codedefence.in/blog/2026/09/13/wordpress-litespeed-cache-vulnerability-cve-2026-40112-exploited</link>
-  <pubDate>Sun, 13 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/13/wordpress-litespeed-cache-vulnerability-cve-2026-40112-exploited</guid>
-  <cd:severity>HIGH</cd:severity>
   <cd:cve>CVE-2026-40112</cd:cve>
-  <cd:mentions>@[WordPress](urn:li:organization:2825424)</cd:mentions>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:11608)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Web security research writeups have disclosed active wild exploitation targeting a critical unauthenticated privilege escalation vulnerability in a popular web acceleration plugin. The flaw permits remote unauthenticated actors to forge administrative user accounts and plant persistent web shell implants.
+Federal cybersecurity regulators have issued an emergency addition to the Known Exploited Vulnerabilities catalog, mandating immediate patching for an enterprise firewall operating system. The vulnerability permits remote unauthenticated network actors to bypass input validation subroutines and execute system commands with root privileges on firewall management panels.
 
-The vulnerability, tracked as CVE-2026-40112 with a CVSS score of 9.8, impacts LiteSpeed Cache for WordPress installations prior to version 6.5.1. The flaw involves weak hash generation logic during user impersonation and cookie verification routines. Unauthenticated remote adversaries transmit crafted HTTP requests to guess administrative hash values, creating unauthorized administrative accounts and uploading malicious PHP files to execute operating system commands on target web hosting servers.
+The security flaw, tracked as CVE-2026-40112 with a CVSS score of 9.6, impacts Palo Alto Networks PAN-OS software management interfaces. The bug resides in an input validation routine processing diagnostic requests. Unauthenticated adversaries issue crafted HTTP POST requests to bypass authentication layers, spawning root shell processes and establishing persistent backdoors. Due to verified wild exploitation targeting government and commercial networks, CISA added the flaw to the KEV database under Binding Operational Directive 26-04.
 
-Compromising primary publishing web servers provides adversaries with immediate initial access to enterprise web hosting environments. Because web servers host database connection strings, local storage vaults, and internal API tokens, an unauthenticated takeover permits threat actors to deploy web shells, siphon customer data, and pivot into adjacent internal subnets.
+Subverting a centralized firewall management interface compromises enterprise network perimeters. Because firewall management panels hold device management certificates, corporate network routing tables, and access control policies, an unauthenticated takeover allows threat actors to disable security inspection rules, extract VPN session keys, and pivot into internal corporate subnets.
 
-- Upgrade LiteSpeed Cache plugin installations immediately to patched version 6.5.1 or higher.
-- Inspect WordPress user registries for unauthorized administrative accounts created recently without approval.
-- Deploy web application firewall inspection rules to block malformed HTTP requests targeting LiteSpeed Cache endpoints.
-- Enforce strict database user permission scoping to prevent web server processes from modifying underlying user tables.
+- Force immediate installation of security maintenance builds published by Palo Alto Networks across all PAN-OS firewall management interfaces.
+- Restrict public internet exposure of firewall management web portals, isolating control interfaces on non-routable management VLANs.
+- Inspect server application logs for anomalous HTTP POST requests targeting diagnostic API routing handlers.
+- Audit administrator account configurations and active session tokens for unauthorized administrative session creations.
 
-Web application perimeter protection relies on robust hash verification and rapid patch deployment to guarantee core publishing platforms cannot be exploited for unauthenticated privilege escalation. #CodeDefence #WordPress #LiteSpeedCache #PrivilegeEscalation #AppSec #PatchManagement #WebSecurity #VulnerabilityManagement
+Perimeter firewall resilience demands rapid security patching paired with strict control plane isolation to ensure central management interfaces remain shielded from unauthenticated command execution. #CodeDefence #PaloAltoNetworks #PANOS #Firewall #RCE #CISA #KEV #NetworkSecurity
+  ]]></description>
+</item>
+
+<item>
+  <title>Mass exploitation targets SolarWinds Serv-U MFT directory traversal vulnerability CVE-2026-28914</title>
+  <link>https://codedefence.in/blog/2026/09/14/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</link>
+  <pubDate>Mon, 14 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/14/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-28914</cd:cve>
+  <cd:mentions>@[SolarWinds](urn:li:organization:42436)</cd:mentions>
+  <description><![CDATA[
+Threat monitoring arrays report widespread automated scanning and exploitation targeting a directory traversal vulnerability in a widely deployed managed file transfer server. Adversaries leverage public proof of concept scripts to extract configuration files and harvest cleartext credentials.
+
+The vulnerability, tracked as CVE-2026-28914, affects SolarWinds Serv-U File Server and Serv-U MFT versions prior to 15.5.2. The bug stems from improper URI path normalization within web client interface handlers. An unauthenticated remote attacker can construct path traversal sequences to read arbitrary files outside the web root, including server configuration files containing encrypted admin credentials and local system secret keys. Threat actors exploit the retrieved keys to forge administrative sessions and gain arbitrary code execution rights.
+
+Subverting managed file transfer infrastructure exposes sensitive corporate data vaults. Because MFT servers handle automated file exchanges containing financial records, intellectual property, and customer data, an administrative takeover permits threat actors to exfiltrate critical datasets and deploy secondary extortion payloads.
+
+- Upgrade SolarWinds Serv-U installations immediately to patched version 15.5.2 or higher.
+- Inspect web server access logs for anomalous GET requests containing path traversal character sequences.
+- Rotate all administrative passwords and service account keys configured within Serv-U deployment settings.
+- Restrict public web access to file transfer management interfaces using network access control lists.
+
+Managed file transfer security relies on rigid path normalization and prompt patch deployment to ensure corporate file gateways remain protected from unauthenticated directory traversal exploits. #CodeDefence #SolarWinds #ServU #DirectoryTraversal #MFT #AppSec #PatchManagement #DataTheft
+  ]]></description>
+</item>
+
+<item>
+  <title>Escalated wild exploitation targets Ivanti EPMM unauthenticated auth bypass CVE-2026-38291</title>
+  <link>https://codedefence.in/blog/2026/09/14/escalated-exploitation-ivanti-epmm-auth-bypass-cve-2026-38291</link>
+  <pubDate>Mon, 14 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/14/escalated-exploitation-ivanti-epmm-auth-bypass-cve-2026-38291</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-38291</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:3059)</cd:mentions>
+  <description><![CDATA[
+Threat intelligence writeups confirm a sharp escalation in wild exploitation attempts targeting enterprise mobile device management platforms. Adversaries exploit an unauthenticated API routing flaw to execute system commands and drop persistent web shell implants on vulnerable management servers.
+
+The flaw affects Ivanti Endpoint Manager Mobile EPMM installations via vulnerability CVE-2026-38291 with a CVSS score of 9.8. Unauthenticated attackers transmit crafted HTTP requests to bypass access controls, gaining command execution rights under the service account context. Threat monitoring sensors confirm automated scanning toolkits deploying persistent backdoor files and attempting lateral movement across internal subnets.
+
+Subverting central mobile management servers exposes enrolled mobile fleets and corporate directory resources. Because MDM platforms hold device management profiles and network access tokens, an unauthenticated host compromise permits threat actors to push malicious profiles to client devices and access internal corporate networks.
+
+- Force immediate application of security hotfix builds published by Ivanti across all EPMM deployment servers.
+- Gate public internet visibility of EPMM administrative web portals behind zero trust access control proxies.
+- Inspect application server logs for malformed HTTP queries targeting internal API endpoints.
+- Audit enrolled mobile device inventories for unauthorized configuration profiles or unverified management certificates.
+
+Enterprise mobility security depends on prompt security patch application and strict interface control to ensure mobile management platforms remain insulated from unauthenticated command execution. #CodeDefence #Ivanti #EPMM #AuthBypass #MDM #AppSec #PatchManagement #MobileSecurity
   ]]></description>
 </item>
 
