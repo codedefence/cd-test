@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 16 September 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 17 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 16 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 17 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 16 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 16 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Thu, 17 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds actively exploited Ivanti EPMM remote code execution flaw CVE-2026-38291 and Palo Alto PAN-OS RCE CVE-2026-40112 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/16/cisa-adds-ivanti-epmm-palo-alto-pan-os-flaws-to-kev</link>
-  <pubDate>Wed, 16 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/16/cisa-adds-ivanti-epmm-palo-alto-pan-os-flaws-to-kev</guid>
+  <title>Cisco issues emergency update for maximum severity Identity Services Engine API zero day CVE-2026-76460</title>
+  <link>https://codedefence.in/blog/2026/09/17/cisco-issues-emergency-update-ise-zero-day-cve-2026-76460</link>
+  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/cisco-issues-emergency-update-ise-zero-day-cve-2026-76460</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-38291‚ CVE-2026-40112</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:3059)‚ @[Palo Alto Networks](urn:li:organization:11608)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-76460</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to mandate urgent remediation across federal civilian agencies for two critical enterprise perimeter flaws. Unauthenticated threat actors are actively weaponizing both vulnerabilities to execute operating system commands and deploy persistent web backdoors across commercial and government networks.
+Emergency security updates have been distributed by enterprise networking maintainers to resolve a maximum severity zero-day vulnerability in central network access control nodes. Threat actors actively exploit missing authentication controls on API endpoints to gain full administrative authority over network policy engines.
 
-The catalog additions feature Ivanti Endpoint Manager Mobile EPMM API routing vulnerability CVE-2026-38291 alongside Palo Alto Networks PAN-OS management interface input validation vulnerability CVE-2026-40112. Threat telemetry confirms adversaries transmitting malformed HTTP POST queries to bypass authentication handlers, spawning root shell processes on target firewall management panels and mobile device management appliances. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory September 30 compliance deadline to apply official vendor maintenance builds and conduct forensic assessments.
+The vulnerability, tracked as CVE-2026-76460 with a CVSS score of 10.0, affects Cisco Identity Services Engine software installations. The flaw stems from insufficient access control validation handling privileged API calls. Unauthenticated remote adversaries transmit crafted HTTP requests to exposed API endpoints, bypassing authentication checks to execute administrative actions, extract network access logs, and modify policy rules. CISA added the flaw to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 with a mandatory compliance deadline.
 
-Subverting central firewall management interfaces and mobile device management platforms destroys perimeter access security boundaries. Because these management controllers govern network routing rules, SSL VPN tunnel terminations, and mobile device security profiles, an unauthenticated takeover permits threat actors to disable security inspection rules, extract employee credentials, and pivot into internal subnets.
+Subverting central network access control nodes destroys network segmentation and zero trust isolation models. Because Cisco ISE governs network authentication, dynamic VLAN assignments, and endpoint posture checks across corporate networks, an unauthenticated administrative compromise permits threat actors to grant untrusted devices full network access and move laterally across enterprise subnets.
 
-- Apply official security maintenance updates released by Ivanti across all EPMM server deployments immediately.
-- Force immediate installation of PAN-OS maintenance builds across all Palo Alto Networks firewall management panels.
-- Restrict public internet visibility of firewall management interfaces and MDM web portals by placing panels on isolated management VLANs.
-- Inspect application access logs for malformed HTTP requests targeting internal diagnostic and API routing endpoints.
+- Force immediate installation of official security updates published by Cisco across all Identity Services Engine deployment nodes.
+- Restrict public internet routing to Cisco ISE administrative and API interfaces using isolated management VLANs.
+- Inspect ISE API gateway logs for unverified HTTP requests targeting privileged administrative API endpoints.
+- Audit network access control policies and active user session registries for unauthorized policy modifications.
 
-Perimeter security infrastructure protection demands rapid security patch deployment and strict interface isolation to ensure central management controllers remain protected from unauthenticated remote command execution. #CodeDefence #Ivanti #EPMM #PaloAltoNetworks #PANOS #CISA #KEV #RCE #NetworkSecurity
+Network access control defense demands strict API gateway authorization and rapid patch execution to ensure central identity gateways remain protected from unauthenticated access bypass. #CodeDefence #Cisco #ISE #ZeroDay #AuthBypass #CISA #KEV #NetworkSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Mass automated exploitation targets SolarWinds Serv-U Managed File Transfer directory traversal flaw CVE-2026-28914</title>
-  <link>https://codedefence.in/blog/2026/09/16/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</link>
-  <pubDate>Wed, 16 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/16/mass-exploitation-solarwinds-serv-u-directory-traversal-cve-2026-28914</guid>
+  <title>Active wild exploitation targets critical GitLab repository commits API file read vulnerability CVE-2026-85706</title>
+  <link>https://codedefence.in/blog/2026/09/17/active-wild-exploitation-gitlab-file-read-vulnerability-cve-2026-85706</link>
+  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/active-wild-exploitation-gitlab-file-read-vulnerability-cve-2026-85706</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-28914</cd:cve>
-  <cd:mentions>@[SolarWinds](urn:li:organization:42436)</cd:mentions>
+  <cd:cve>CVE-2026-85706</cd:cve>
+  <cd:mentions>@[GitLab](urn:li:organization:10015502)</cd:mentions>
   <description><![CDATA[
-Internet threat monitoring arrays report widespread automated scanning and exploitation targeting a directory traversal weakness in a widely deployed managed file transfer solution. Adversaries leverage public proof of concept scripts to read configuration files and extract administrative service credentials.
+Web application security monitoring arrays report active wild exploitation targeting a critical vulnerability in self-hosted source code management platforms. Unauthenticated remote actors transmit malformed API requests to read arbitrary system files and harvest deployment secrets from repository servers.
 
-The vulnerability, tracked as CVE-2026-28914, impacts SolarWinds Serv-U File Server and Serv-U MFT releases prior to version 15.5.2. The security defect resides within URI path normalization subroutines handling web client requests. Unauthenticated remote actors transmit crafted path traversal sequences to bypass root directory restrictions, reading arbitrary system files including configuration catalogs containing encrypted administrative account credentials and internal secret keys. Threat actors leverage extracted keys to forge administrative sessions and execute secondary payloads.
+The vulnerability, tracked as CVE-2026-85706 with a CVSS score of 10.0, affects GitLab Community and Enterprise Edition releases prior to patched builds 18.7.8, 19.1.8, 19.2.6, and 19.3.2. The flaw is caused by missing authentication checks combined with improper path confinement in repository commits API endpoints. Remote unauthenticated adversaries exploit the flaw to retrieve arbitrary system files, including database configuration files containing cleartext database credentials and CI/CD secret keys.
 
-Compromising managed file transfer infrastructure creates severe enterprise data privacy and credential theft risks. Because MFT servers process automated data transfers containing sensitive corporate files, financial records, and user credentials, an unauthenticated administrative compromise enables threat actors to exfiltrate critical datasets and deploy ransomware.
+Subverting continuous integration and repository infrastructure creates severe software supply chain exposure across enterprise build toolchains. When adversaries extract database secrets and deployment keys from source control servers, they gain unmonitored capabilities to tamper with production code repositories and access cloud production environments.
 
-- Force immediate software maintenance upgrades across all SolarWinds Serv-U installations to release version 15.5.2 or higher.
-- Inspect web server access logs for anomalous GET request URIs containing path traversal sequences or unverified file access calls.
-- Rotate administrative passwords, service account credentials, and encryption keys stored within Serv-U configuration settings.
-- Restrict public internet visibility of managed file transfer web portals using network access control lists.
+- Upgrade self-hosted GitLab installations immediately to patched maintenance releases 18.7.8, 19.1.8, 19.2.6, or 19.3.2.
+- Restrict public web routing to self-hosted GitLab web and API interfaces by placing instances behind zero trust pre-authentication proxies.
+- Inspect application access logs for anomalous GET requests targeting repository commit API endpoints.
+- Rotate all database credentials, personal access tokens, and cloud service account keys stored within GitLab configuration files.
 
-Managed file transfer defense depends on rigid URI path normalization and prompt security patch deployment to ensure enterprise file exchange gateways remain completely protected from unauthenticated path traversal exploits. #CodeDefence #SolarWinds #ServU #MFT #DirectoryTraversal #AppSec #PatchManagement #CredentialTheft #DataSecurity
+DevOps platform security relies on rigid path confinement and strict API access enforcement to ensure source code management servers remain insulated from unauthenticated file read exploits. #CodeDefence #GitLab #DevSecOps #SupplyChain #AppSec #PatchManagement #DataTheft #CloudSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Critical LiteSpeed Enterprise Web Server vulnerability permits shared hosting accounts to achieve root privilege escalation</title>
-  <link>https://codedefence.in/blog/2026/09/16/litespeed-enterprise-web-server-vulnerability-root-privilege-escalation</link>
-  <pubDate>Wed, 16 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/16/litespeed-enterprise-web-server-vulnerability-root-privilege-escalation</guid>
+  <title>CISA adds Acronis Cyber Protect Backup default permissions flaw CVE-2026-87886 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/17/cisa-adds-acronis-backup-flaw-cve-2026-87886-to-kev</link>
+  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/cisa-adds-acronis-backup-flaw-cve-2026-87886-to-kev</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[LiteSpeed Technologies](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-87886</cd:cve>
+  <cd:mentions>@[Acronis](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Web hosting control panel maintainers have issued urgent security advisories detailing a critical privilege escalation flaw in commercial web server software. Low-privilege user accounts on shared hosting servers can bypass containerization barriers to obtain full root administrative authority over host operating systems.
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to mandate remediation for a security flaw in enterprise backup and recovery software. Local unprivileged users exploit incorrect default file permissions to elevate privileges and manipulate local backup archives.
 
-The security defect affects LiteSpeed Web Server Enterprise software installations prior to version 6.3.7. The flaw allows an attacker possessing a low-privilege website account to escape virtual filesystem containment and bypass CloudLinux CageFS isolation rules. Successful exploitation grants root access, allowing adversaries to view, modify, or delete files belonging to other co-hosted accounts and alter web server configuration profiles across shared infrastructure.
+The vulnerability, tracked as CVE-2026-87886, impacts Acronis Cyber Protect Backup installations. The security defect stems from overly permissive default file system access controls assigned to local service directories during installation. A local unprivileged attacker can modify application execution binaries or configuration scripts, achieving local privilege escalation to SYSTEM or root privileges and tampering with stored disaster recovery archives. CISA mandated federal civilian agency patching under Binding Operational Directive 26-04.
 
-Subverting web server process boundaries destroys tenant isolation models across multi-tenant web hosting environments. When low-privilege web accounts obtain root privileges over shared web servers, adversaries can harvest database connection keys, modify site source code, and plant persistent web shell backdoors across co-hosted sites.
+Compromising local disaster recovery agents undermines system recovery capabilities across corporate endpoints. When local attackers obtain SYSTEM privileges via backup daemon subversion, adversaries can disable endpoint security monitoring, erase local shadow copies, and execute secondary extortion payloads.
 
-- Force immediate web server software maintenance upgrades to LiteSpeed Enterprise version 6.3.7 across all shared web hosting servers.
-- Verify containerization status and inspect CageFS mount points for evidence of unauthorized filesystem traversal.
-- Monitor system process telemetry for anomalous privilege escalation calls originating from web server worker processes.
-- Restrict local execution privileges for non-administrative web user accounts across shared hosting operating systems.
+- Apply official software maintenance updates published by Acronis across all enterprise backup agent deployments immediately.
+- Inspect local file system permissions assigned to Acronis installation directories to ensure restricted access for non-admin users.
+- Review local privilege escalation logs and process creation trees associated with backup daemon executables.
+- Maintain immutable, air-gapped backup storage repositories isolated from local endpoint administrative accounts.
 
-Shared hosting platform resilience relies on rigid container process isolation and rapid security patch deployment to guarantee multi-tenant web servers remain protected from unprivileged root escalation vectors. #CodeDefence #LiteSpeed #cPanel #WebSecurity #PrivilegeEscalation #RootAccess #AppSec #PatchManagement #CloudSecurity
+Backup agent security depends on strict local permission scoping and continuous endpoint monitoring to ensure disaster recovery services remain protected from unprivileged privilege escalation vectors. #CodeDefence #Acronis #BackupSecurity #PrivilegeEscalation #CISA #KEV #EndpointSecurity #AppSec
   ]]></description>
 </item>
 
