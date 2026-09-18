@@ -2,82 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 17 September 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 18 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 17 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 18 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 17 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 18 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Cisco issues emergency update for maximum severity Identity Services Engine API zero day CVE-2026-76460</title>
-  <link>https://codedefence.in/blog/2026/09/17/cisco-issues-emergency-update-ise-zero-day-cve-2026-76460</link>
-  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/cisco-issues-emergency-update-ise-zero-day-cve-2026-76460</guid>
+  <title>CISA adds Linux kernel race condition CVE-2025-39964 and out of bounds write CVE-2026-53266 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/18/cisa-adds-linux-kernel-flaws-to-kev-catalog</link>
+  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/cisa-adds-linux-kernel-flaws-to-kev-catalog</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-76460</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2025-39964‚ CVE-2026-53266</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Emergency security updates have been distributed by enterprise networking maintainers to resolve a maximum severity zero-day vulnerability in central network access control nodes. Threat actors actively exploit missing authentication controls on API endpoints to gain full administrative authority over network policy engines.
+Federal cybersecurity regulators have issued an emergency update to the Known Exploited Vulnerabilities catalog, mandating priority remediation for two Linux kernel vulnerabilities actively exploited in wild attack chains. Adversaries leverage kernel-level memory corruption to break container isolation boundaries and obtain root administrative control.
 
-The vulnerability, tracked as CVE-2026-76460 with a CVSS score of 10.0, affects Cisco Identity Services Engine software installations. The flaw stems from insufficient access control validation handling privileged API calls. Unauthenticated remote adversaries transmit crafted HTTP requests to exposed API endpoints, bypassing authentication checks to execute administrative actions, extract network access logs, and modify policy rules. CISA added the flaw to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 with a mandatory compliance deadline.
+The catalog additions cover Linux kernel race condition vulnerability CVE-2025-39964 and out-of-bounds write vulnerability CVE-2026-53266. Local unprivileged users or compromised container processes transmit malformed system calls to corrupt kernel memory structures, escalating local permissions to root SYSTEM level. CISA mandated federal civilian executive branch compliance under Binding Operational Directive 26-04 with a mandatory October 2 remediation deadline.
 
-Subverting central network access control nodes destroys network segmentation and zero trust isolation models. Because Cisco ISE governs network authentication, dynamic VLAN assignments, and endpoint posture checks across corporate networks, an unauthenticated administrative compromise permits threat actors to grant untrusted devices full network access and move laterally across enterprise subnets.
+Subverting Linux kernel memory management undermines host security boundaries across enterprise cloud infrastructure. Because Linux kernel drivers underlie container runtime engines and virtualized host environments, an unmonitored kernel exploit permits threat actors to break container sandboxes, disable local audit logging, and pivot into adjacent cloud tenant subnets.
 
-- Force immediate installation of official security updates published by Cisco across all Identity Services Engine deployment nodes.
-- Restrict public internet routing to Cisco ISE administrative and API interfaces using isolated management VLANs.
-- Inspect ISE API gateway logs for unverified HTTP requests targeting privileged administrative API endpoints.
-- Audit network access control policies and active user session registries for unauthorized policy modifications.
+- Upgrade Linux operating system kernels across enterprise host fleets and container nodes to current maintenance builds immediately.
+- Enforce strict kernel runtime protection rules and eBPF-based security monitoring to catch unauthorized system call routines.
+- Inspect system process trees and privilege escalation logs for anomalous root process executions originating from unprivileged containers.
+- Restrict unprivileged user access to local kernel execution namespaces and debugging interfaces across Linux deployment environments.
 
-Network access control defense demands strict API gateway authorization and rapid patch execution to ensure central identity gateways remain protected from unauthenticated access bypass. #CodeDefence #Cisco #ISE #ZeroDay #AuthBypass #CISA #KEV #NetworkSecurity #AppSec
+Operating system kernel defense demands continuous kernel patch deployment and strict container isolation controls to ensure enterprise cloud hosts remain protected from unprivileged memory corruption exploits. #CodeDefence #Linux #Kernel #PrivilegeEscalation #CISA #KEV #CloudSecurity #ContainerSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Active wild exploitation targets critical GitLab repository commits API file read vulnerability CVE-2026-85706</title>
-  <link>https://codedefence.in/blog/2026/09/17/active-wild-exploitation-gitlab-file-read-vulnerability-cve-2026-85706</link>
-  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/active-wild-exploitation-gitlab-file-read-vulnerability-cve-2026-85706</guid>
+  <title>Check Point fixes critical root remote code execution flaw CVE-2026-91843 in Security Management and Log Servers</title>
+  <link>https://codedefence.in/blog/2026/09/18/check-point-fixes-critical-root-rce-cve-2026-91843-management-servers</link>
+  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/check-point-fixes-critical-root-rce-cve-2026-91843-management-servers</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-85706</cd:cve>
-  <cd:mentions>@[GitLab](urn:li:organization:10015502)</cd:mentions>
+  <cd:cve>CVE-2026-91843</cd:cve>
+  <cd:mentions>@[Check Point Software Technologies](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Web application security monitoring arrays report active wild exploitation targeting a critical vulnerability in self-hosted source code management platforms. Unauthenticated remote actors transmit malformed API requests to read arbitrary system files and harvest deployment secrets from repository servers.
+Enterprise cybersecurity vendors have distributed emergency hotfixes for a critical remote code execution vulnerability impacting central security management infrastructure. Unauthenticated remote actors can transmit malformed login authentication parameters to execute arbitrary commands with root privileges.
 
-The vulnerability, tracked as CVE-2026-85706 with a CVSS score of 10.0, affects GitLab Community and Enterprise Edition releases prior to patched builds 18.7.8, 19.1.8, 19.2.6, and 19.3.2. The flaw is caused by missing authentication checks combined with improper path confinement in repository commits API endpoints. Remote unauthenticated adversaries exploit the flaw to retrieve arbitrary system files, including database configuration files containing cleartext database credentials and CI/CD secret keys.
+The vulnerability, tracked as CVE-2026-91843, impacts Check Point Security Management and Log Server appliances across supported release lines. The defect resides within authentication processing subroutines handling administrative login routines. An unauthenticated remote attacker can issue specially crafted network payloads during authentication to trigger input evaluation errors, forcing the underlying operating system to execute arbitrary command strings under root privileges.
 
-Subverting continuous integration and repository infrastructure creates severe software supply chain exposure across enterprise build toolchains. When adversaries extract database secrets and deployment keys from source control servers, they gain unmonitored capabilities to tamper with production code repositories and access cloud production environments.
+Subverting central security management controllers destroys perimeter firewall governance across enterprise subnets. Because Check Point Security Management servers govern policy definitions, logging streams, and access control rules across connected gateway fleets, an unauthenticated root takeover allows threat actors to disable security inspection and alter network routing policies.
 
-- Upgrade self-hosted GitLab installations immediately to patched maintenance releases 18.7.8, 19.1.8, 19.2.6, or 19.3.2.
-- Restrict public web routing to self-hosted GitLab web and API interfaces by placing instances behind zero trust pre-authentication proxies.
-- Inspect application access logs for anomalous GET requests targeting repository commit API endpoints.
-- Rotate all database credentials, personal access tokens, and cloud service account keys stored within GitLab configuration files.
+- Force immediate installation of official security hotfixes published by Check Point across all Security Management and Log Servers.
+- Restrict public network exposure of security management interfaces by placing admin panels on dedicated out-of-band management VLANs.
+- Inspect security management server authentication logs for malformed request sequences or anomalous login failure patterns.
+- Audit active firewall policy rules and administrative account registries across managed gateway fleets for unverified modifications.
 
-DevOps platform security relies on rigid path confinement and strict API access enforcement to ensure source code management servers remain insulated from unauthenticated file read exploits. #CodeDefence #GitLab #DevSecOps #SupplyChain #AppSec #PatchManagement #DataTheft #CloudSecurity
+Security management platform resilience relies on strict control plane isolation and rapid patch execution to ensure enterprise security controllers remain protected from unauthenticated remote code execution. #CodeDefence #CheckPoint #SecurityManagement #RCE #NetworkSecurity #AppSec #PatchManagement #InfoSec
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Acronis Cyber Protect Backup default permissions flaw CVE-2026-87886 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/17/cisa-adds-acronis-backup-flaw-cve-2026-87886-to-kev</link>
-  <pubDate>Thu, 17 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/17/cisa-adds-acronis-backup-flaw-cve-2026-87886-to-kev</guid>
+  <title>Active mass scanning targets Vite development server file read vulnerability CVE-2026-39364</title>
+  <link>https://codedefence.in/blog/2026/09/18/active-mass-scanning-vite-development-server-file-read-cve-2026-39364</link>
+  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/active-mass-scanning-vite-development-server-file-read-cve-2026-39364</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-87886</cd:cve>
-  <cd:mentions>@[Acronis](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-39364</cd:cve>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to mandate remediation for a security flaw in enterprise backup and recovery software. Local unprivileged users exploit incorrect default file permissions to elevate privileges and manipulate local backup archives.
+National cyber security agencies and threat research labs have issued alerts confirming active wild exploitation targeting a high-severity access control bypass in a popular web application build tool and development server. Unauthenticated remote actors extract restricted system files and configuration parameters.
 
-The vulnerability, tracked as CVE-2026-87886, impacts Acronis Cyber Protect Backup installations. The security defect stems from overly permissive default file system access controls assigned to local service directories during installation. A local unprivileged attacker can modify application execution binaries or configuration scripts, achieving local privilege escalation to SYSTEM or root privileges and tampering with stored disaster recovery archives. CISA mandated federal civilian agency patching under Binding Operational Directive 26-04.
+The vulnerability, tracked as CVE-2026-39364 with a CVSS score of 7.5, affects Vite development server versions 7.1.0 to 7.3.1, versions 8.0.0 to 8.0.4, and Vite-plus versions 0.1.15 and earlier. The defect involves an access-list bypass in file system serving handlers. Unauthenticated remote actors issue crafted HTTP GET requests to bypass server.fs.deny restrictions, retrieving sensitive configuration files, source code, and environment secret files from developer workstations and build hosts exposed to local network segments.
 
-Compromising local disaster recovery agents undermines system recovery capabilities across corporate endpoints. When local attackers obtain SYSTEM privileges via backup daemon subversion, adversaries can disable endpoint security monitoring, erase local shadow copies, and execute secondary extortion payloads.
+Compromising web development servers introduces severe intellectual property and credential exposure across development toolchains. When exposed development servers process unauthenticated file read requests, adversaries extract API integration keys, database credentials, and proprietary application source code.
 
-- Apply official software maintenance updates published by Acronis across all enterprise backup agent deployments immediately.
-- Inspect local file system permissions assigned to Acronis installation directories to ensure restricted access for non-admin users.
-- Review local privilege escalation logs and process creation trees associated with backup daemon executables.
-- Maintain immutable, air-gapped backup storage repositories isolated from local endpoint administrative accounts.
+- Force immediate maintenance upgrades across all projects using Vite to release builds 7.3.2, 8.0.5, or Vite-plus 0.1.16 or higher.
+- Ensure development servers are configured to bind exclusively to local loopbacks 127.0.0.1 rather than public 0.0.0.0 interfaces.
+- Inspect development build host access logs for anomalous HTTP GET requests attempting filesystem traversal or server config reads.
+- Rotate all API tokens, cloud keys, and database passwords stored within environment configuration files on exposed developer hosts.
 
-Backup agent security depends on strict local permission scoping and continuous endpoint monitoring to ensure disaster recovery services remain protected from unprivileged privilege escalation vectors. #CodeDefence #Acronis #BackupSecurity #PrivilegeEscalation #CISA #KEV #EndpointSecurity #AppSec
+Development toolchain security depends on strict interface binding and rapid patch application to ensure web build environments remain protected from unauthenticated file read exploitation. #CodeDefence #Vite #DevSecOps #AppSec #FileRead #PatchManagement #WebSecurity #SupplyChain
   ]]></description>
 </item>
 
