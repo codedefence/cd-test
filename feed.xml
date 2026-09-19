@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 18 September 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 19 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 18 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 19 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 18 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 19 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 19 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Linux kernel race condition CVE-2025-39964 and out of bounds write CVE-2026-53266 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/18/cisa-adds-linux-kernel-flaws-to-kev-catalog</link>
-  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/cisa-adds-linux-kernel-flaws-to-kev-catalog</guid>
+  <title>CISA flags three Linux kernel vulnerabilities CVE-2025-39682 CVE-2026-53266 CVE-2025-39964 exploited in the wild</title>
+  <link>https://codedefence.in/blog/2026/09/19/cisa-flags-three-linux-kernel-vulnerabilities-exploited-in-wild</link>
+  <pubDate>Sat, 19 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/19/cisa-flags-three-linux-kernel-vulnerabilities-exploited-in-wild</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-39964‚ CVE-2026-53266</cd:cve>
+  <cd:cve>CVE-2025-39682‚ CVE-2026-53266‚ CVE-2025-39964</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity regulators have issued an emergency update to the Known Exploited Vulnerabilities catalog, mandating priority remediation for two Linux kernel vulnerabilities actively exploited in wild attack chains. Adversaries leverage kernel-level memory corruption to break container isolation boundaries and obtain root administrative control.
+Federal cybersecurity regulators have issued an emergency update to the Known Exploited Vulnerabilities catalog, mandating priority remediation for three Linux kernel vulnerabilities actively exploited across enterprise cloud infrastructure. Adversaries leverage kernel-level memory corruption and TLS receive handling flaws to execute arbitrary system code and escalate local privileges.
 
-The catalog additions cover Linux kernel race condition vulnerability CVE-2025-39964 and out-of-bounds write vulnerability CVE-2026-53266. Local unprivileged users or compromised container processes transmit malformed system calls to corrupt kernel memory structures, escalating local permissions to root SYSTEM level. CISA mandated federal civilian executive branch compliance under Binding Operational Directive 26-04 with a mandatory October 2 remediation deadline.
+The catalog additions cover TLS receive path memory corruption flaw CVE-2025-39682, ARP rewrite path out-of-bounds write flaw CVE-2026-53266, and AF_ALG socket race condition flaw CVE-2025-39964. Threat monitoring sensors confirm active wild exploitation targeting exposed Linux nodes to escape container isolation layers and gain root-level host access. Red Hat updated advisories acknowledging active public exploit availability, prompting CISA to set a mandatory September 21 compliance deadline under Binding Operational Directive 26-04.
 
-Subverting Linux kernel memory management undermines host security boundaries across enterprise cloud infrastructure. Because Linux kernel drivers underlie container runtime engines and virtualized host environments, an unmonitored kernel exploit permits threat actors to break container sandboxes, disable local audit logging, and pivot into adjacent cloud tenant subnets.
+Subverting Linux kernel execution boundaries undermines container isolation and cloud host security. Because kernel drivers manage memory layout and system calls across virtualized nodes, a kernel-level compromise permits threat actors to bypass security monitoring daemons, capture unencrypted network transit data, and pivot across adjacent cloud tenant boundaries.
 
-- Upgrade Linux operating system kernels across enterprise host fleets and container nodes to current maintenance builds immediately.
-- Enforce strict kernel runtime protection rules and eBPF-based security monitoring to catch unauthorized system call routines.
-- Inspect system process trees and privilege escalation logs for anomalous root process executions originating from unprivileged containers.
-- Restrict unprivileged user access to local kernel execution namespaces and debugging interfaces across Linux deployment environments.
+- Force immediate kernel upgrades across enterprise Linux host fleets and container node clusters.
+- Enforce eBPF-based runtime security monitoring to detect unauthorized system call sequences targeting socket daemons.
+- Inspect system process trees and privilege escalation logs for anomalous root executions originating from unprivileged containers.
+- Restrict local execution privileges and debugging interfaces across Linux deployment environments.
 
-Operating system kernel defense demands continuous kernel patch deployment and strict container isolation controls to ensure enterprise cloud hosts remain protected from unprivileged memory corruption exploits. #CodeDefence #Linux #Kernel #PrivilegeEscalation #CISA #KEV #CloudSecurity #ContainerSecurity
+Linux host protection demands continuous kernel patch deployment and strict container isolation controls to ensure enterprise cloud environments remain protected from unprivileged memory corruption exploits. #CodeDefence #Linux #Kernel #PrivilegeEscalation #CISA #KEV #CloudSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Check Point fixes critical root remote code execution flaw CVE-2026-91843 in Security Management and Log Servers</title>
-  <link>https://codedefence.in/blog/2026/09/18/check-point-fixes-critical-root-rce-cve-2026-91843-management-servers</link>
-  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/check-point-fixes-critical-root-rce-cve-2026-91843-management-servers</guid>
+  <title>Critical pre-authentication remote code execution vulnerability CVE-2026-58138 in Orkes Conductor actively exploited</title>
+  <link>https://codedefence.in/blog/2026/09/19/critical-pre-auth-rce-orkes-conductor-cve-2026-58138-exploited</link>
+  <pubDate>Sat, 19 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/19/critical-pre-auth-rce-orkes-conductor-cve-2026-58138-exploited</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-91843</cd:cve>
-  <cd:mentions>@[Check Point Software Technologies](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-58138</cd:cve>
   <description><![CDATA[
-Enterprise cybersecurity vendors have distributed emergency hotfixes for a critical remote code execution vulnerability impacting central security management infrastructure. Unauthenticated remote actors can transmit malformed login authentication parameters to execute arbitrary commands with root privileges.
+Threat intelligence writeups and network sensor telemetry confirm active wild exploitation targeting a critical pre-authentication remote code execution flaw in an enterprise workflow orchestration platform. Unauthenticated remote actors transmit malformed API requests to execute system commands and take control of workflow clusters.
 
-The vulnerability, tracked as CVE-2026-91843, impacts Check Point Security Management and Log Server appliances across supported release lines. The defect resides within authentication processing subroutines handling administrative login routines. An unauthenticated remote attacker can issue specially crafted network payloads during authentication to trigger input evaluation errors, forcing the underlying operating system to execute arbitrary command strings under root privileges.
+The vulnerability, tracked as CVE-2026-58138 with a CVSS score of 9.8, impacts Orkes Conductor enterprise orchestration deployments. The defect resides in unauthenticated REST API endpoints processing JSON workflow definitions. Attackers transmit specially crafted API payloads containing command injection parameters to force the orchestration daemon to execute arbitrary system code with the privileges of the underlying service account. Threat monitoring feeds report active botnet scanning and automated backdoor installation targeting public-facing Conductor instances.
 
-Subverting central security management controllers destroys perimeter firewall governance across enterprise subnets. Because Check Point Security Management servers govern policy definitions, logging streams, and access control rules across connected gateway fleets, an unauthenticated root takeover allows threat actors to disable security inspection and alter network routing policies.
+Subverting enterprise workflow platforms exposes automated business processes and connected cloud integrations. Because Orkes Conductor orchestrates microservice pipelines, cloud API calls, and automated data processing flows, an unauthenticated platform takeover allows threat actors to hijack workflow logic, steal cloud API credentials, and pivot into corporate backend subnets.
 
-- Force immediate installation of official security hotfixes published by Check Point across all Security Management and Log Servers.
-- Restrict public network exposure of security management interfaces by placing admin panels on dedicated out-of-band management VLANs.
-- Inspect security management server authentication logs for malformed request sequences or anomalous login failure patterns.
-- Audit active firewall policy rules and administrative account registries across managed gateway fleets for unverified modifications.
+- Upgrade Orkes Conductor platform deployments immediately to current patched maintenance releases.
+- Restrict public internet access to Orkes Conductor web dashboards and REST API ports using zero-trust access proxies.
+- Inspect orchestration process logs for anomalous command executions or unverified workflow registration events.
+- Rotate all cloud API keys, integration tokens, and database passwords stored within Conductor workflow configuration parameters.
 
-Security management platform resilience relies on strict control plane isolation and rapid patch execution to ensure enterprise security controllers remain protected from unauthenticated remote code execution. #CodeDefence #CheckPoint #SecurityManagement #RCE #NetworkSecurity #AppSec #PatchManagement #InfoSec
+Enterprise workflow security relies on strict API endpoint authentication and rapid security patch deployment to ensure orchestration engines remain protected from unauthenticated remote code execution. #CodeDefence #Orkes #Conductor #RCE #API #AppSec #DevSecOps #PatchManagement #CloudSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Active mass scanning targets Vite development server file read vulnerability CVE-2026-39364</title>
-  <link>https://codedefence.in/blog/2026/09/18/active-mass-scanning-vite-development-server-file-read-cve-2026-39364</link>
-  <pubDate>Fri, 18 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/18/active-mass-scanning-vite-development-server-file-read-cve-2026-39364</guid>
+  <title>SolarWinds patches Access Rights Manager static key vulnerability CVE-2026-28326 enabling unauthenticated RCE</title>
+  <link>https://codedefence.in/blog/2026/09/19/solarwinds-patches-access-rights-manager-static-key-rce-cve-2026-28326</link>
+  <pubDate>Sat, 19 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/19/solarwinds-patches-access-rights-manager-static-key-rce-cve-2026-28326</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-39364</cd:cve>
+  <cd:cve>CVE-2026-28326</cd:cve>
+  <cd:mentions>@[SolarWinds](urn:li:organization:42436)</cd:mentions>
   <description><![CDATA[
-National cyber security agencies and threat research labs have issued alerts confirming active wild exploitation targeting a high-severity access control bypass in a popular web application build tool and development server. Unauthenticated remote actors extract restricted system files and configuration parameters.
+Enterprise identity software maintainers have distributed security updates for an identity governance platform to resolve a high-severity security flaw. The vulnerability allows unauthenticated remote network actors to leverage a hard-coded static key to execute arbitrary system commands on management servers.
 
-The vulnerability, tracked as CVE-2026-39364 with a CVSS score of 7.5, affects Vite development server versions 7.1.0 to 7.3.1, versions 8.0.0 to 8.0.4, and Vite-plus versions 0.1.15 and earlier. The defect involves an access-list bypass in file system serving handlers. Unauthenticated remote actors issue crafted HTTP GET requests to bypass server.fs.deny restrictions, retrieving sensitive configuration files, source code, and environment secret files from developer workstations and build hosts exposed to local network segments.
+The vulnerability, tracked as CVE-2026-28326 with a CVSS score of 8.8, impacts SolarWinds Access Rights Manager versions 2026.2 and earlier. The issue stems from the use of a static cryptographic key within communication authentication modules. An unauthenticated remote attacker can construct encrypted network payloads using the known static key to bypass access controls, executing arbitrary code with high privileges under the ARM service account context.
 
-Compromising web development servers introduces severe intellectual property and credential exposure across development toolchains. When exposed development servers process unauthenticated file read requests, adversaries extract API integration keys, database credentials, and proprietary application source code.
+Subverting identity governance and access management tools undermines enterprise Active Directory security boundaries. Because Access Rights Manager processes user provisioning, active directory permission changes, and compliance auditing, an unauthenticated server compromise allows adversaries to create rogue domain administrator accounts and alter user permission structures across the enterprise.
 
-- Force immediate maintenance upgrades across all projects using Vite to release builds 7.3.2, 8.0.5, or Vite-plus 0.1.16 or higher.
-- Ensure development servers are configured to bind exclusively to local loopbacks 127.0.0.1 rather than public 0.0.0.0 interfaces.
-- Inspect development build host access logs for anomalous HTTP GET requests attempting filesystem traversal or server config reads.
-- Rotate all API tokens, cloud keys, and database passwords stored within environment configuration files on exposed developer hosts.
+- Force immediate maintenance upgrades across all SolarWinds Access Rights Manager installations to release version 2026.2.1.
+- Restrict network access to ARM server ports, permitting connections exclusively from trusted administrative IP pools.
+- Inspect ARM service logs and active directory audit trails for unauthorized permission alterations or rogue account creations.
+- Rotate service account credentials and encryption certificates associated with Access Rights Manager infrastructure.
 
-Development toolchain security depends on strict interface binding and rapid patch application to ensure web build environments remain protected from unauthenticated file read exploitation. #CodeDefence #Vite #DevSecOps #AppSec #FileRead #PatchManagement #WebSecurity #SupplyChain
+Identity governance platform defense demands robust cryptographic key management and prompt patch execution to ensure access control servers remain insulated from unauthenticated remote code execution. #CodeDefence #SolarWinds #AccessRightsManager #RCE #StaticKey #IdentitySecurity #ActiveDirectory #AppSec
   ]]></description>
 </item>
 
