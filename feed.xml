@@ -2,79 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 21 September 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 22 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 21 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 22 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 21 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 21 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 22 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA reaches September 21 compliance deadline for three actively exploited Linux kernel vulnerabilities</title>
-  <link>https://codedefence.in/blog/2026/09/21/cisa-reaches-september-21-deadline-three-linux-kernel-flaws</link>
-  <pubDate>Mon, 21 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/21/cisa-reaches-september-21-deadline-three-linux-kernel-flaws</guid>
+  <title>Arista warns of actively exploited CVSS 10.0 VeloCloud Orchestrator zero day vulnerability CVE-2026-93952</title>
+  <link>https://codedefence.in/blog/2026/09/22/arista-warns-actively-exploited-velocloud-orchestrator-zero-day-cve-2026-93952</link>
+  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/arista-warns-actively-exploited-velocloud-orchestrator-zero-day-cve-2026-93952</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2025-39682‚ CVE-2025-39964‚ CVE-2026-53266</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to remediate three actively exploited Linux kernel vulnerabilities. Public threat monitoring confirms active wild scanning and container breakout campaigns targeting exposed Linux host fleets.
+  <cd:cve>CVE-2026-93952</cd:cve>
+  <cd:description><![CDATA[
+Emergency advisories published by SD-WAN platform maintainers warn of active wild exploitation targeting central network orchestrators. Remote unauthenticated adversaries leverage broken authorization validation routines to escalate internal privileges and control software-defined WAN Edge devices.
 
-The mandatory remediation order covers TLS zero copy memory corruption flaw CVE-2025-39682, AF ALG socket race condition flaw CVE-2025-39964, and Netfilter ebtables SNAT out of bounds write flaw CVE-2026-53266. Threat actors actively exploit these memory corruption flaws to escape container isolation layers and gain root administrative authority over host operating systems. BOD 26-04 mandates that agencies perform forensic compromise checks across exposed hosts prior to applying kernel updates.
+The zero day vulnerability, tracked as CVE-2026-93952 with a maximum CVSS score of 10.0, affects on-premises VeloCloud Orchestrator VCO servers configured to authenticate Edge devices using certificates. An unauthenticated remote attacker can transmit malformed API calls to bypass internal access controls, executing privileged management functions on the orchestrator host. Compromising the central VCO server grants adversaries remote management access over all connected SD-WAN Edge appliances across enterprise subnets.
 
-Failing to remediate actively weaponized kernel vulnerabilities exposes cloud infrastructure to automated container breakout pipelines. When adversaries achieve root execution on cloud host nodes, unmonitored kernel exploits permit threat networks to capture unencrypted network transit data and move laterally across cloud tenant boundaries.
+Subverting central SD-WAN management orchestrators destroys WAN perimeter boundaries across multi-site enterprises. Because VeloCloud Orchestrators govern site-to-site VPN tunnels, routing policies, and traffic inspection rules, an unauthenticated orchestrator compromise permits threat actors to capture cross-site transit traffic and pivot directly into remote branch networks.
 
-- Force immediate kernel maintenance updates across enterprise Linux host fleets and container node clusters.
-- Perform forensic compromise triage across exposed Linux nodes to verify system integrity prior to applying kernel patches.
-- Enforce eBPF runtime security agents to intercept unauthorized system call routines targeting socket daemons.
-- Restrict local execution privileges and debugging interfaces across Linux cloud deployment environments.
+- Apply emergency patched release builds published by Arista across all on-premises VeloCloud Orchestrator servers immediately.
+- Restrict public network exposure of VeloCloud Orchestrator management web interfaces by placing servers on isolated management VLANs.
+- Inspect VCO system audit logs for unverified API administrative actions or anomalous certificate authentication requests.
+- Rotate administrative service credentials and device authentication certificates across managed SD-WAN environments.
 
-Cloud host resilience demands strict adherence to threat-informed remediation mandates and proactive forensic auditing to ensure Linux kernel layers remain insulated from active container breakout campaigns. #CodeDefence #CISA #KEV #Linux #Kernel #ContainerSecurity #CloudSecurity #AppSec
+Software-defined WAN platform security demands strict control plane isolation and rapid zero-day patch execution to ensure central network orchestrators remain insulated from unauthenticated remote takeover. #CodeDefence #Arista #VeloCloud #SDWAN #ZeroDay #RCE #NetworkSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>North Korean threat actors weaponize Terraform lock files to infect DevOps engineers with macOS backdoors</title>
-  <link>https://codedefence.in/blog/2026/09/21/north-korean-threat-actors-weaponize-terraform-lock-files</link>
-  <pubDate>Mon, 21 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/21/north-korean-threat-actors-weaponize-terraform-lock-files</guid>
+  <title>CISA adds ZyXEL GS1900 switch buffer overflow CVE-2026-7273 to KEV catalog following Chinese state hacker attacks</title>
+  <link>https://codedefence.in/blog/2026/09/22/cisa-adds-zyxel-switch-buffer-overflow-cve-2026-7273-to-kev</link>
+  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/cisa-adds-zyxel-switch-buffer-overflow-cve-2026-7273-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[HashiCorp](urn:li:organization:15161044)‚ @[Amazon Web Services](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-7273</cd:cve>
+  <cd:mentions>@[Zyxel](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cyber threat research disclosures published today reveal a novel supply chain attack vector targeting DevOps engineers and cloud system administrators. Threat actors subvert infrastructure as code initialization routines to deploy persistent backdoors on developer workstations.
+Federal cybersecurity authorities have issued an emergency update to the Known Exploited Vulnerabilities catalog, ordering priority remediation for an unauthenticated switch vulnerability actively weaponized in global espionage campaigns. Chinese state-linked threat actors leverage stack-based buffer overflows to siphon network topologies and hashed root credentials.
 
-The attack campaign, attributed to North Korea linked group TraderTraitor, abuses HashiCorp Terraform initialization workflows by embedding custom provider references within dot-terraform-lock-dot-hcl dependency files in fake GitHub coding exercise repositories. When engineers execute terraform init, the tool retrieves malicious modules from typosquatted registries hosted on attacker infrastructure, executing code that drops FLATROOF and ROOFDECK backdoors on macOS endpoints. Compromised developer machines grant adversaries direct access to cloud management keys and AWS infrastructure.
+The vulnerability, tracked as CVE-2026-7273, affects ZyXEL GS1900 Smart Managed Switches running firmware 2.90 and earlier. Unauthenticated remote actors transmit malformed HTTP requests to trigger buffer overflows, executing operating system commands with root privileges. Threat intelligence reports confirm a Chinese-speaking threat actor compromised nearly 1,000 devices across 48 countries, using obfuscated Python scripts to exfiltrate hashed credentials and network configurations. CISA mandated federal agency compliance under Binding Operational Directive 26-04 with a September 24 remediation deadline.
 
-Subverting infrastructure as code toolchains creates severe cloud security exposure across enterprise development environments. Because DevOps workstations maintain active credentials for cloud management portals, container registries, and production clusters, an initial endpoint compromise allows adversaries to hijack cloud infrastructure without triggering network perimeter alerts.
+Subverting managed network switches compromises hardware switching fabric across corporate branch offices. Because managed switches control local VLAN routing, port security, and network transit streams, an unauthenticated root takeover allows adversaries to intercept local traffic and establish persistent footholds on local network segments.
 
-- Audit infrastructure as code dependency lock files for unverified external registry URLs or non-standard provider sources.
-- Enforce strict private provider registry mirrors within CI CD pipelines and developer workstations to block public typosquatted registries.
-- Restrict developer workstation execution permissions using endpoint protection policies that monitor child processes spawned by build tools.
-- Rotate cloud access keys, SSH keypairs, and service tokens accessible from developer workstations participating in external code evaluations.
+- Force immediate firmware upgrades across all ZyXEL GS1900 series switches to current patched maintenance releases.
+- Change default administrative credentials immediately across all deployed network switches and management interfaces.
+- Restrict web management HTTP routing to switches by enforcing dedicated, non-routable management VLANs.
+- Perform forensic compromise audits across network switch configurations and inspect for unauthorized configuration changes.
 
-DevOps supply chain protection demands strict dependency verification and secure build environment sandboxing to ensure infrastructure management tools remain insulated from malicious provider injection. #CodeDefence #Terraform #HashiCorp #AWS #DevSecOps #SupplyChain #macOS #CloudSecurity
+Network switching fabric security relies on strict management plane microsegmentation and immediate firmware patch deployment to ensure hardware switches remain protected from unauthenticated remote command execution. #CodeDefence #ZyXEL #Switching #BufferOverflow #CISA #KEV #NetworkSecurity #HardwareSecurity #Espionage
   ]]></description>
 </item>
 
 <item>
-  <title>TASK STOMP PowerShell framework automates document theft and C2 operations via native Windows components</title>
-  <link>https://codedefence.in/blog/2026/09/21/task-stomp-powershell-framework-automates-document-theft</link>
-  <pubDate>Mon, 21 September 2021 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/21/task-stomp-powershell-framework-automates-document-theft</guid>
+  <title>Active wild exploitation targets Veeam Agent for Microsoft Windows local privilege escalation flaw CVE-2026-32996</title>
+  <link>https://codedefence.in/blog/2026/09/22/active-wild-exploitation-veeam-agent-windows-privilege-escalation-cve-2026-32996</link>
+  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/active-wild-exploitation-veeam-agent-windows-privilege-escalation-cve-2026-32996</guid>
   <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-32996</cd:cve>
+  <cd:mentions>@[Veeam](urn:li:organization:3059)</cd:mentions>
   <description><![CDATA[
-Security research writeups published today detail a newly identified persistent malware framework designed to harvest sensitive corporate records and system credentials. The framework leverages living off the land execution methods to evade security monitoring tools.
+Cyber threat response labs have issued alerts confirming active wild exploitation targeting a local privilege escalation vulnerability in widely deployed backup agent software. Local unprivileged users exploit memory validation errors to obtain root SYSTEM privileges on Windows endpoints.
 
-The intrusion framework, dubbed TASK STOMP, utilizes VBScript wrappers, masqueraded Scheduled Tasks, and dynamically compiled PowerShell code to establish persistence on host endpoints. The framework deploys modular payloads that monitor host file systems in real time to collect business documents, capture clipboard contents, extract saved Wi Fi passwords, and take screenshots. Payload modules communicate with dual redundant command and control servers while employing deliberate file modification timestamping techniques to evade forensic detection.
+The vulnerability, tracked as CVE-2026-32996, impacts Veeam Agent for Microsoft Windows installations. The flaw stems from improper memory validation within local backup service RPC subroutines. An unprivileged local attacker or compromised endpoint process can issue malformed service requests to escalate local execution privileges to SYSTEM level, gaining complete administrative control over host operating systems and local disaster recovery repositories. Threat reports urge immediate prioritization across shared workstations and admin endpoints.
 
-Subverting native administrative utilities poses significant endpoint security challenges across enterprise networks. When threat actors leverage trusted Windows built-in tools like Task Scheduler and PowerShell, malicious activity blends into routine administrative traffic, granting adversaries long-term persistence and continuous data exfiltration capabilities.
+Subverting local backup agents undermines host security isolation and disaster recovery resilience. Possessing SYSTEM privileges obtained via backup daemon subversion permits threat actors to unhook endpoint detection drivers, disable local security logging, and wipe local volume shadow copies prior to deploying secondary ransomware payloads.
 
-- Enforce PowerShell constrained language mode and script block logging across all Windows enterprise workstations.
-- Monitor Scheduled Task creation events and audit task definitions masquerading under benign system service names.
-- Restrict unprivileged user execution of VBScript and Windows Script Host handlers using application execution policies.
-- Implement network egress filtering to detect and block unauthorized outbound communication traffic to unverified cloud domains.
+- Upgrade Veeam Agent for Microsoft Windows installations to release version 13.0.2.29 or higher immediately.
+- Restrict unprivileged local interactive user rights on shared workstations and server endpoints.
+- Inspect local system process creation trees and Windows Event Logs for anomalous privilege escalation calls from Veeam services.
+- Ensure disaster recovery backups are stored in air-gapped, immutable repositories isolated from local endpoint administrative accounts.
 
-Endpoint threat defense relies on robust behavioral monitoring and strict script execution governance to ensure native operating system tools cannot be subverted for silent data exfiltration. #CodeDefence #Malware #PowerShell #LivingOfTheLand #EndpointSecurity #ThreatIntelligence #AppSec #IncidentResponse
+Endpoint backup agent defense depends on strict local RPC validation and rapid patch deployment to guarantee disaster recovery services remain insulated from unprivileged local privilege escalation. #CodeDefence #Veeam #BackupSecurity #PrivilegeEscalation #SYSTEM #EndpointSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
