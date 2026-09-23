@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 22 September 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 23 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 22 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 23 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 22 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 23 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Arista warns of actively exploited CVSS 10.0 VeloCloud Orchestrator zero day vulnerability CVE-2026-93952</title>
-  <link>https://codedefence.in/blog/2026/09/22/arista-warns-actively-exploited-velocloud-orchestrator-zero-day-cve-2026-93952</link>
-  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/arista-warns-actively-exploited-velocloud-orchestrator-zero-day-cve-2026-93952</guid>
+  <title>F5 issues emergency hotfixes for actively exploited BIG IP APM OAuth zero day vulnerability CVE-2026-94127</title>
+  <link>https://codedefence.in/blog/2026/09/23/f5-issues-emergency-hotfix-big-ip-apm-oauth-zero-day-cve-2026-94127</link>
+  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/f5-issues-emergency-hotfix-big-ip-apm-oauth-zero-day-cve-2026-94127</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-93952</cd:cve>
-  <cd:description><![CDATA[
-Emergency advisories published by SD-WAN platform maintainers warn of active wild exploitation targeting central network orchestrators. Remote unauthenticated adversaries leverage broken authorization validation routines to escalate internal privileges and control software-defined WAN Edge devices.
-
-The zero day vulnerability, tracked as CVE-2026-93952 with a maximum CVSS score of 10.0, affects on-premises VeloCloud Orchestrator VCO servers configured to authenticate Edge devices using certificates. An unauthenticated remote attacker can transmit malformed API calls to bypass internal access controls, executing privileged management functions on the orchestrator host. Compromising the central VCO server grants adversaries remote management access over all connected SD-WAN Edge appliances across enterprise subnets.
-
-Subverting central SD-WAN management orchestrators destroys WAN perimeter boundaries across multi-site enterprises. Because VeloCloud Orchestrators govern site-to-site VPN tunnels, routing policies, and traffic inspection rules, an unauthenticated orchestrator compromise permits threat actors to capture cross-site transit traffic and pivot directly into remote branch networks.
-
-- Apply emergency patched release builds published by Arista across all on-premises VeloCloud Orchestrator servers immediately.
-- Restrict public network exposure of VeloCloud Orchestrator management web interfaces by placing servers on isolated management VLANs.
-- Inspect VCO system audit logs for unverified API administrative actions or anomalous certificate authentication requests.
-- Rotate administrative service credentials and device authentication certificates across managed SD-WAN environments.
-
-Software-defined WAN platform security demands strict control plane isolation and rapid zero-day patch execution to ensure central network orchestrators remain insulated from unauthenticated remote takeover. #CodeDefence #Arista #VeloCloud #SDWAN #ZeroDay #RCE #NetworkSecurity #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds ZyXEL GS1900 switch buffer overflow CVE-2026-7273 to KEV catalog following Chinese state hacker attacks</title>
-  <link>https://codedefence.in/blog/2026/09/22/cisa-adds-zyxel-switch-buffer-overflow-cve-2026-7273-to-kev</link>
-  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/cisa-adds-zyxel-switch-buffer-overflow-cve-2026-7273-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-7273</cd:cve>
-  <cd:mentions>@[Zyxel](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-94127</cd:cve>
+  <cd:mentions>@[F5](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have issued an emergency update to the Known Exploited Vulnerabilities catalog, ordering priority remediation for an unauthenticated switch vulnerability actively weaponized in global espionage campaigns. Chinese state-linked threat actors leverage stack-based buffer overflows to siphon network topologies and hashed root credentials.
+Emergency application delivery security updates have been distributed to address an actively exploited zero day vulnerability in enterprise access management controllers. Unauthenticated remote actors transmit malformed OAuth authorization requests to trigger heap memory corruption and execute arbitrary code on target appliances.
 
-The vulnerability, tracked as CVE-2026-7273, affects ZyXEL GS1900 Smart Managed Switches running firmware 2.90 and earlier. Unauthenticated remote actors transmit malformed HTTP requests to trigger buffer overflows, executing operating system commands with root privileges. Threat intelligence reports confirm a Chinese-speaking threat actor compromised nearly 1,000 devices across 48 countries, using obfuscated Python scripts to exfiltrate hashed credentials and network configurations. CISA mandated federal agency compliance under Binding Operational Directive 26-04 with a September 24 remediation deadline.
+The vulnerability, tracked as CVE-2026-94127 with a CVSS score of 9.8, impacts F5 BIG-IP Access Policy Manager installations configured as OAuth authorization servers. The defect involves a heap-based buffer overflow in Traffic Management Microkernel processes handling authorization requests. Unauthenticated remote adversaries transmit crafted HTTP payloads to vulnerable virtual servers, achieving remote code execution with full administrative privileges. CISA added the flaw to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 with a mandatory September 25 compliance deadline.
 
-Subverting managed network switches compromises hardware switching fabric across corporate branch offices. Because managed switches control local VLAN routing, port security, and network transit streams, an unauthenticated root takeover allows adversaries to intercept local traffic and establish persistent footholds on local network segments.
+Subverting central access management controllers destroys single sign-on boundaries and application perimeter security. Because BIG-IP APM handles user authentication, identity federation, and remote access policies for enterprise applications, an unauthenticated host compromise permits threat actors to hijack active user sessions, harvest corporate credentials, and pivot directly into backend subnets.
 
-- Force immediate firmware upgrades across all ZyXEL GS1900 series switches to current patched maintenance releases.
-- Change default administrative credentials immediately across all deployed network switches and management interfaces.
-- Restrict web management HTTP routing to switches by enforcing dedicated, non-routable management VLANs.
-- Perform forensic compromise audits across network switch configurations and inspect for unauthorized configuration changes.
+- Apply emergency engineering hotfixes published by F5 across all affected BIG-IP Access Policy Manager instances immediately.
+- Deploy temporary mitigation iRules to intercept malformed OAuth authorization payloads where immediate patching cannot be completed.
+- Inspect APM application logs in /var/log/apm for repeated failed UserInfo requests and unverified access token errors.
+- Audit active single sign-on sessions and rotate OAuth client secret keys across exposed enterprise application environments.
 
-Network switching fabric security relies on strict management plane microsegmentation and immediate firmware patch deployment to ensure hardware switches remain protected from unauthenticated remote command execution. #CodeDefence #ZyXEL #Switching #BufferOverflow #CISA #KEV #NetworkSecurity #HardwareSecurity #Espionage
+Access control gateway defense demands immediate patch deployment and strict traffic inspection to ensure enterprise identity brokers remain completely protected from unauthenticated buffer overflow exploitation. #CodeDefence #F5 #BIGIP #APM #ZeroDay #OAuth #RCE #CISA #KEV #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Active wild exploitation targets Veeam Agent for Microsoft Windows local privilege escalation flaw CVE-2026-32996</title>
-  <link>https://codedefence.in/blog/2026/09/22/active-wild-exploitation-veeam-agent-windows-privilege-escalation-cve-2026-32996</link>
-  <pubDate>Tue, 22 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/22/active-wild-exploitation-veeam-agent-windows-privilege-escalation-cve-2026-32996</guid>
+  <title>Critical Next.js ImageResponse vulnerability CVE-2026-94545 permits server code execution via crafted SVG content</title>
+  <link>https://codedefence.in/blog/2026/09/23/critical-nextjs-imageresponse-vulnerability-cve-2026-94545-server-rce</link>
+  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/critical-nextjs-imageresponse-vulnerability-cve-2026-94545-server-rce</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-94545</cd:cve>
+  <cd:mentions>@[Vercel](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Web application framework maintainers have released security updates to resolve a critical remote code execution vulnerability in modern web development tools. Unauthenticated remote actors can manipulate input parameters passed to dynamic social preview image generators to execute arbitrary server code.
+
+The vulnerability, tracked as CVE-2026-94545 with a CVSS score of 9.5, affects Next.js framework versions 16.2.0 through 16.3.5 executing on Node.js runtimes. The issue stems from insufficient input escaping in Satori layout conversion subroutines rendering dynamic Open Graph social preview images via ImageResponse handlers. Unauthenticated remote adversaries transmit malformed HTTP parameters that escape SVG title tags, forcing underlying web servers to evaluate arbitrary system commands.
+
+Subverting modern web application rendering engines introduces severe remote code execution exposure across web hosting environments. When web applications render unverified user input into dynamic image generation pipelines, unauthenticated attackers can execute code, extract environment secret variables, and access production application databases.
+
+- Upgrade Next.js application dependencies immediately to patched version 16.3.6 or higher across all web application projects.
+- Sanitize and strip user-controlled request parameters before passing string values into ImageResponse SVG template components.
+- Inspect web application execution logs for anomalous request URIs targeting social preview and dynamic image endpoints.
+- Rotate database connection strings, API integration keys, and cloud credentials accessible within application environment contexts.
+
+Web framework security relies on strict output encoding and rapid dependency patch execution to ensure server-side rendering engines remain protected from unauthenticated code execution vectors. #CodeDefence #Nextjs #Vercel #WebSecurity #RCE #AppSec #DevSecOps #NodeJS #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA adds Check Point Security Gateway vulnerabilities CVE-2026-85102 and CVE-2026-93616 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/23/cisa-adds-check-point-vulnerabilities-cve-2026-85102-cve-2026-93616-to-kev</link>
+  <pubDate>Wed, 3 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/cisa-adds-check-point-vulnerabilities-cve-2026-85102-cve-2026-93616-to-kev</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-32996</cd:cve>
-  <cd:mentions>@[Veeam](urn:li:organization:3059)</cd:mentions>
+  <cd:cve>CVE-2026-85102‚ CVE-2026-93616</cd:cve>
+  <cd:mentions>@[Check Point Software Technologies](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cyber threat response labs have issued alerts confirming active wild exploitation targeting a local privilege escalation vulnerability in widely deployed backup agent software. Local unprivileged users exploit memory validation errors to obtain root SYSTEM privileges on Windows endpoints.
+Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog to mandate remediation for two security flaws in perimeter firewall appliances. Unauthenticated remote actors actively exploit certificate validation flaws and path traversal errors to compromise security gateways.
 
-The vulnerability, tracked as CVE-2026-32996, impacts Veeam Agent for Microsoft Windows installations. The flaw stems from improper memory validation within local backup service RPC subroutines. An unprivileged local attacker or compromised endpoint process can issue malformed service requests to escalate local execution privileges to SYSTEM level, gaining complete administrative control over host operating systems and local disaster recovery repositories. Threat reports urge immediate prioritization across shared workstations and admin endpoints.
+The catalog additions cover improper certificate validation vulnerability CVE-2026-85102 and path traversal vulnerability CVE-2026-93616 affecting Check Point Security Gateway and Spark Firewall product lines. Unauthenticated remote adversaries transmit malformed network packets over site-to-site VPN connections or web portals to bypass authentication controls, read arbitrary configuration files, and execute operating system commands. CISA mandated federal civilian agency patching under Binding Operational Directive 26-04 with a September 25 compliance deadline.
 
-Subverting local backup agents undermines host security isolation and disaster recovery resilience. Possessing SYSTEM privileges obtained via backup daemon subversion permits threat actors to unhook endpoint detection drivers, disable local security logging, and wipe local volume shadow copies prior to deploying secondary ransomware payloads.
+Subverting perimeter security gateways undermines corporate network access controls. Possessing unauthenticated command execution or arbitrary file access rights over perimeter firewall appliances allows threat actors to capture unencrypted network traffic, extract VPN credential stores, and pivot into internal enterprise subnets.
 
-- Upgrade Veeam Agent for Microsoft Windows installations to release version 13.0.2.29 or higher immediately.
-- Restrict unprivileged local interactive user rights on shared workstations and server endpoints.
-- Inspect local system process creation trees and Windows Event Logs for anomalous privilege escalation calls from Veeam services.
-- Ensure disaster recovery backups are stored in air-gapped, immutable repositories isolated from local endpoint administrative accounts.
+- Apply official security hotfixes published by Check Point across all Security Gateway and Spark Firewall appliances immediately.
+- Restrict public internet visibility of firewall management interfaces and web portals using strict access control policies.
+- Inspect firewall system access logs for anomalous path traversal sequences or unverified certificate validation events.
+- Invalidate active remote access VPN session tokens and rotate administrative certificates across managed gateway fleets.
 
-Endpoint backup agent defense depends on strict local RPC validation and rapid patch deployment to guarantee disaster recovery services remain insulated from unprivileged local privilege escalation. #CodeDefence #Veeam #BackupSecurity #PrivilegeEscalation #SYSTEM #EndpointSecurity #AppSec #PatchManagement
+Perimeter firewall security depends on rigid input validation and prompt security hotfix deployment to guarantee security gateways remain protected from active wild exploitation pipelines. #CodeDefence #CheckPoint #Firewall #CISA #KEV #NetworkSecurity #AuthBypass #PatchManagement
   ]]></description>
 </item>
 
