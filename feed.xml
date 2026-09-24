@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 23 September 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 24 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 23 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 24 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 23 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 24 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Thu, 24 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>F5 issues emergency hotfixes for actively exploited BIG IP APM OAuth zero day vulnerability CVE-2026-94127</title>
-  <link>https://codedefence.in/blog/2026/09/23/f5-issues-emergency-hotfix-big-ip-apm-oauth-zero-day-cve-2026-94127</link>
-  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/f5-issues-emergency-hotfix-big-ip-apm-oauth-zero-day-cve-2026-94127</guid>
+  <title>Critical WordPress page template resolution vulnerability CVE-2026-87902 actively exploited in the wild</title>
+  <link>https://codedefence.in/blog/2026/09/24/critical-wordpress-page-template-vulnerability-cve-2026-87902-exploited</link>
+  <pubDate>Thu, 24 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/24/critical-wordpress-page-template-vulnerability-cve-2026-87902-exploited</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-94127</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-87902</cd:cve>
+  <cd:mentions>@[WordPress](urn:li:organization:2825424)</cd:mentions>
   <description><![CDATA[
-Emergency application delivery security updates have been distributed to address an actively exploited zero day vulnerability in enterprise access management controllers. Unauthenticated remote actors transmit malformed OAuth authorization requests to trigger heap memory corruption and execute arbitrary code on target appliances.
+Active wild exploitation targeting core web publishing platform routines has been detected across global web application firewall networks within hours of public disclosure. Unauthenticated remote actors manipulate query parameters to force local file inclusion and execute arbitrary PHP code.
 
-The vulnerability, tracked as CVE-2026-94127 with a CVSS score of 9.8, impacts F5 BIG-IP Access Policy Manager installations configured as OAuth authorization servers. The defect involves a heap-based buffer overflow in Traffic Management Microkernel processes handling authorization requests. Unauthenticated remote adversaries transmit crafted HTTP payloads to vulnerable virtual servers, achieving remote code execution with full administrative privileges. CISA added the flaw to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 with a mandatory September 25 compliance deadline.
+The vulnerability, tracked as CVE-2026-87902 with a CVSS score of 9.2, impacts core WordPress installations prior to maintenance update releases. The flaw stems from insufficient input sanitization within the get_page_template() function during template file resolution. Unauthenticated remote adversaries transmit crafted HTTP requests to manipulate resolution paths, forcing the web server process to load user-controlled local files containing PHP code, dropping persistent web shells directly into web hosting paths. Threat monitoring sensors recorded automated scanning sweeps targeting exposed public sites.
 
-Subverting central access management controllers destroys single sign-on boundaries and application perimeter security. Because BIG-IP APM handles user authentication, identity federation, and remote access policies for enterprise applications, an unauthenticated host compromise permits threat actors to hijack active user sessions, harvest corporate credentials, and pivot directly into backend subnets.
+Subverting central web publishing platforms provides adversaries with immediate initial access and remote code execution over web hosting infrastructure. Armed with web shell footholds, threat actors can extract database configuration keys, harvest user session tokens, and deploy secondary malware droppers across hosted environments.
 
-- Apply emergency engineering hotfixes published by F5 across all affected BIG-IP Access Policy Manager instances immediately.
-- Deploy temporary mitigation iRules to intercept malformed OAuth authorization payloads where immediate patching cannot be completed.
-- Inspect APM application logs in /var/log/apm for repeated failed UserInfo requests and unverified access token errors.
-- Audit active single sign-on sessions and rotate OAuth client secret keys across exposed enterprise application environments.
+- Deploy core WordPress maintenance updates immediately across all self-hosted and managed site deployments.
+- Configure web application firewall rules to intercept HTTP GET and POST requests containing path traversal payloads targeting template resolution endpoints.
+- Restrict PHP script execution rights within wp-content/uploads and temporary media storage directories across web server configurations.
+- Inspect web hosting directories for unauthorized PHP files created during recent automated exploitation sweeps.
 
-Access control gateway defense demands immediate patch deployment and strict traffic inspection to ensure enterprise identity brokers remain completely protected from unauthenticated buffer overflow exploitation. #CodeDefence #F5 #BIGIP #APM #ZeroDay #OAuth #RCE #CISA #KEV #AppSec
+Web application perimeter defense demands rigid path sanitization and continuous upload directory auditing to ensure public web publishing platforms remain protected from unauthenticated local file inclusion exploits. #CodeDefence #WordPress #RCE #LocalFileInclusion #WebSecurity #AppSec #PatchManagement #ZeroDay
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Next.js ImageResponse vulnerability CVE-2026-94545 permits server code execution via crafted SVG content</title>
-  <link>https://codedefence.in/blog/2026/09/23/critical-nextjs-imageresponse-vulnerability-cve-2026-94545-server-rce</link>
-  <pubDate>Wed, 23 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/critical-nextjs-imageresponse-vulnerability-cve-2026-94545-server-rce</guid>
+  <title>Chinese threat actor UTA0565 exploits Chrome and Windows zero day chain to deploy CLEANGULP malware</title>
+  <link>https://codedefence.in/blog/2026/09/24/chinese-threat-actor-uta0565-exploits-chrome-windows-zero-day-chain</link>
+  <pubDate>Thu, 24 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/24/chinese-threat-actor-uta0565-exploits-chrome-windows-zero-day-chain</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-94545</cd:cve>
-  <cd:mentions>@[Vercel](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-85046‚ CVE-2026-87491‚ CVE-2026-85880</cd:cve>
+  <cd:mentions>@[Google](urn:li:organization:1441)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Web application framework maintainers have released security updates to resolve a critical remote code execution vulnerability in modern web development tools. Unauthenticated remote actors can manipulate input parameters passed to dynamic social preview image generators to execute arbitrary server code.
+Threat intelligence disclosures have detailed a sophisticated cyber espionage campaign leveraging a full browser sandbox escape and privilege escalation zero day chain. Chinese espionage actors masqueraded as non-governmental organizations to deliver stealthy backdoors to target enterprise endpoints.
 
-The vulnerability, tracked as CVE-2026-94545 with a CVSS score of 9.5, affects Next.js framework versions 16.2.0 through 16.3.5 executing on Node.js runtimes. The issue stems from insufficient input escaping in Satori layout conversion subroutines rendering dynamic Open Graph social preview images via ImageResponse handlers. Unauthenticated remote adversaries transmit malformed HTTP parameters that escape SVG title tags, forcing underlying web servers to evaluate arbitrary system commands.
+The exploit chain combines Google Chrome V8 engine type confusion flaws CVE-2026-85046 and CVE-2026-87491 with Windows Advanced Local Procedure Call ALPC heap buffer overflow CVE-2026-85880. Unauthenticated users visiting compromised websites trigger the browser exploit to escape renderer sandboxes, subsequently exploiting the Windows ALPC flaw to elevate execution privileges to SYSTEM level. Threat actors use the elevated access to drop CLEANGULP, a modular backdoor capable of exfiltrating browser session cookies, harvesting local system credentials, and establishing persistent reverse proxy tunnels.
 
-Subverting modern web application rendering engines introduces severe remote code execution exposure across web hosting environments. When web applications render unverified user input into dynamic image generation pipelines, unauthenticated attackers can execute code, extract environment secret variables, and access production application databases.
+Chaining browser zero-days with local operating system kernel flaws completely defeats client workstation defenses. When threat actors achieve SYSTEM privilege via web drive-by attacks, adversaries bypass endpoint detection and response drivers, leaving enterprise networks exposed to unmonitored lateral movement.
 
-- Upgrade Next.js application dependencies immediately to patched version 16.3.6 or higher across all web application projects.
-- Sanitize and strip user-controlled request parameters before passing string values into ImageResponse SVG template components.
-- Inspect web application execution logs for anomalous request URIs targeting social preview and dynamic image endpoints.
-- Rotate database connection strings, API integration keys, and cloud credentials accessible within application environment contexts.
+- Ensure Google Chrome and Chromium-based browsers are updated to release 152.0.7977.82 or higher across all corporate workstations.
+- Force immediate installation of Microsoft September 2026 Patch Tuesday security updates addressing Windows ALPC vulnerability CVE-2026-85880.
+- Deploy browser isolation solutions and strict web filtering policies to isolate untrusted external web navigation.
+- Monitor endpoint process telemetry for anomalous child processes spawned by browser renderer processes.
 
-Web framework security relies on strict output encoding and rapid dependency patch execution to ensure server-side rendering engines remain protected from unauthenticated code execution vectors. #CodeDefence #Nextjs #Vercel #WebSecurity #RCE #AppSec #DevSecOps #NodeJS #PatchManagement
+Endpoint security resilience relies on rapid multi-tier patch deployment and strict browser process isolation to ensure enterprise workstations remain protected against sophisticated zero-day drive-by exploit chains. #CodeDefence #Google #Chrome #Microsoft #Windows #ZeroDay #V8 #ALPC #CLEANGULP #EndpointSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Check Point Security Gateway vulnerabilities CVE-2026-85102 and CVE-2026-93616 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/23/cisa-adds-check-point-vulnerabilities-cve-2026-85102-cve-2026-93616-to-kev</link>
-  <pubDate>Wed, 3 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/23/cisa-adds-check-point-vulnerabilities-cve-2026-85102-cve-2026-93616-to-kev</guid>
+  <title>CERT Polska details MikroTrick exploit chain allowing unauthenticated root takeover of MikroTik RouterOS devices</title>
+  <link>https://codedefence.in/blog/2026/09/24/cert-polska-details-mikrotrick-exploit-chain-mikrotik-routeros</link>
+  <pubDate>Thu, 24 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/24/cert-polska-details-mikrotrick-exploit-chain-mikrotik-routeros</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-85102‚ CVE-2026-93616</cd:cve>
-  <cd:mentions>@[Check Point Software Technologies](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-67279‚ CVE-2026-86060</cd:cve>
+  <cd:mentions>@[MikroTik](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog to mandate remediation for two security flaws in perimeter firewall appliances. Unauthenticated remote actors actively exploit certificate validation flaws and path traversal errors to compromise security gateways.
+National computer emergency response teams have published technical breakdowns of an active edge router compromise chain. Adversaries chain an SSH state-machine vulnerability with a login argument injection bug to obtain root administrative access on edge gateways without passwords or SSH keys.
 
-The catalog additions cover improper certificate validation vulnerability CVE-2026-85102 and path traversal vulnerability CVE-2026-93616 affecting Check Point Security Gateway and Spark Firewall product lines. Unauthenticated remote adversaries transmit malformed network packets over site-to-site VPN connections or web portals to bypass authentication controls, read arbitrary configuration files, and execute operating system commands. CISA mandated federal civilian agency patching under Binding Operational Directive 26-04 with a September 25 compliance deadline.
+The attack chain, dubbed MikroTrick, combines SSH state-machine flaw CVE-2026-67279 and argument injection flaw CVE-2026-86060 affecting MikroTik RouterOS releases. Unauthenticated remote actors transmit malformed SSH parameter sequences during connection setup to bypass authentication handlers, injecting rogue system user entries formatted as ssh:-2@ and setting system device-mode status flags to Flagged. Technical reports confirm compromised routers are weaponized to redirect DNS queries, inspect transit traffic, and establish covert access tunnels into internal subnets.
 
-Subverting perimeter security gateways undermines corporate network access controls. Possessing unauthenticated command execution or arbitrary file access rights over perimeter firewall appliances allows threat actors to capture unencrypted network traffic, extract VPN credential stores, and pivot into internal enterprise subnets.
+Subverting edge routing hardware destroys network perimeter boundaries. Because MikroTik gateways manage edge traffic routing, local firewall rules, and VPN tunnel terminations, an unauthenticated takeover permits adversaries to capture unencrypted network transit data and pivot into adjacent enterprise subnets.
 
-- Apply official security hotfixes published by Check Point across all Security Gateway and Spark Firewall appliances immediately.
-- Restrict public internet visibility of firewall management interfaces and web portals using strict access control policies.
-- Inspect firewall system access logs for anomalous path traversal sequences or unverified certificate validation events.
-- Invalidate active remote access VPN session tokens and rotate administrative certificates across managed gateway fleets.
+- Upgrade RouterOS software installations immediately to maintenance builds 6.49.21, 7.23.4, or 7.24.2 published by MikroTik.
+- Restrict public internet routing to RouterOS SSH, WinBox, and web administration ports using strict firewall access control lists.
+- Execute the /system/device-mode/print command to check whether router device-mode status has been altered to Flagged.
+- Perform complete system resets and configuration rebuilds from verified clean backups if rogue account entries are detected.
 
-Perimeter firewall security depends on rigid input validation and prompt security hotfix deployment to guarantee security gateways remain protected from active wild exploitation pipelines. #CodeDefence #CheckPoint #Firewall #CISA #KEV #NetworkSecurity #AuthBypass #PatchManagement
+Perimeter edge protection demands strict management interface isolation and immediate firmware update application to ensure enterprise gateways remain protected from unauthenticated remote access manipulation. #CodeDefence #MikroTik #RouterOS #MikroTrick #EdgeSecurity #NetworkSecurity #AuthBypass #AppSec
   ]]></description>
 </item>
 
