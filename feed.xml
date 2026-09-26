@@ -2,80 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 25 September 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 26 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 25 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 26 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 25 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 25 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 26 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds WSO2 API Manager RCE CVE-2026-5430 and Adobe Commerce flaw CVE-2026-71362 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/25/cisa-adds-wso2-rce-and-adobe-commerce-flaws-to-kev</link>
-  <pubDate>Fri, 25 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/25/cisa-adds-wso2-rce-and-adobe-commerce-flaws-to-kev</guid>
+  <title>CISA adds Microsoft SharePoint RCE CVE-2026-65660 and MikroTik RouterOS flaw CVE-2026-67279 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/26/cisa-adds-microsoft-sharepoint-rce-and-mikrotik-flaws-to-kev</link>
+  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/cisa-adds-microsoft-sharepoint-rce-and-mikrotik-flaws-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-5430‚ CVE-2026-71362</cd:cve>
-  <cd:mentions>@[WSO2](urn:li:organization:15161044)‚ @[Adobe](urn:li:organization:1480)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-65660‚ CVE-2026-67279</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[MikroTik](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to mandate priority remediation for two critical enterprise web application flaws. Threat actors are actively weaponizing path traversal and improper authorization logic to achieve unauthenticated remote code execution and privileged resource access.
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to order immediate remediation for two critical enterprise vulnerabilities actively weaponized in wild intrusion campaigns. Threat actors leverage network code injection and state-machine bypass errors to execute arbitrary operating system commands and hijack edge gateways.
 
-The KEV additions cover WSO2 API Control Plane and Traffic Manager vulnerability CVE-2026-5430 alongside Adobe Commerce and Magento authorization bypass vulnerability CVE-2026-71362. Threat monitoring sensors confirm adversaries issuing forged JSON Web Tokens and malformed file upload requests against exposed WSO2 gateways, deploying web shells to execute operating system commands. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory October 9 compliance deadline to apply official vendor maintenance releases.
+The additions cover Microsoft Office SharePoint network code injection flaw CVE-2026-65660 alongside MikroTik RouterOS behavioral workflow flaw CVE-2026-67279. Confirmed threat telemetry shows adversaries actively exploiting SharePoint to obtain unauthenticated remote code execution across enterprise intranet servers. On edge routing hardware, adversaries chain CVE-2026-67279 with argument injection bug CVE-2026-86060 under the MikroTrick exploit vector, obtaining full administrative console access without valid credentials. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory September 28 compliance deadline.
 
-Subverting central API management gateways and e-commerce platforms destroys enterprise data boundaries. Because API Control Planes route internal microservice traffic and hold database connection credentials, an unauthenticated gateway compromise enables threat actors to exfiltrate API secrets and pivot into core enterprise backend subnets.
+Subverting central collaboration servers and edge routing hardware undermines enterprise document isolation and network boundary controls. Because SharePoint servers manage sensitive corporate document repositories and Active Directory credentials, an unmonitored code execution exploit permits threat actors to exfiltrate enterprise files and execute lateral movement sweeps.
 
-- Force immediate software maintenance upgrades across all WSO2 API Manager and Traffic Manager installations to current patched builds.
-- Apply emergency security updates published by Adobe across all Adobe Commerce and Magento store deployments.
-- Restrict public internet visibility of WSO2 management portals using zero trust access proxies and strict IP access control lists.
-- Inspect API gateway server directories for unauthorized webshell creations or malformed JWT token assertion attempts.
+- Apply official security maintenance updates released by Microsoft across all SharePoint Server installations immediately.
+- Force immediate RouterOS software upgrades to patched maintenance builds published by MikroTik across edge routing hardware.
+- Inspect SharePoint application logs for anomalous process creation trees or unverified remote execution requests.
+- Execute system device-mode verification commands on RouterOS appliances to detect unauthorized device status changes.
 
-Enterprise API gateway security demands strict token validation and rapid patch deployment to guarantee core microservice orchestration hubs remain protected from unauthenticated path traversal exploits. #CodeDefence #WSO2 #APIManager #Adobe #Magento #CISA #KEV #RCE #AppSec
+Enterprise collaboration and edge network defense demand rapid security patch execution and continuous interface auditing to ensure core servers remain insulated from active wild exploitation. #CodeDefence #Microsoft #SharePoint #MikroTik #RouterOS #CISA #KEV #RCE #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Roundcube Webmail pre-auth SQL injection vulnerability CVE-2026-48842 actively exploited in the wild</title>
-  <link>https://codedefence.in/blog/2026/09/25/roundcube-webmail-pre-auth-sqli-cve-2026-48842-exploited</link>
-  <pubDate>Fri, 25 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/25/roundcube-webmail-pre-auth-sqli-cve-2026-48842-exploited</guid>
+  <title>ShinyHunters linked threat actor UNC6240 bypasses WAFs to mass exploit Oracle PeopleSoft RCE CVE-2026-35273</title>
+  <link>https://codedefence.in/blog/2026/09/26/shinyhunters-linked-actor-bypasses-wafs-oracle-peoplesoft-rce-cve-2026-35273</link>
+  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/shinyhunters-linked-actor-bypasses-wafs-oracle-peoplesoft-rce-cve-2026-35273</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-35273</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Cyber threat intelligence advisories published today warn of widespread wild attack campaigns targeting enterprise resource planning portals. Threat actors modify public exploit scripts to bypass web application firewall rules, deploying tunneling tools and remote management agents for mass data extortion.
+
+The attack campaign targets Oracle PeopleSoft installations via vulnerability CVE-2026-35273 with a CVSS score of 9.8. Adversaries associated with threat group UNC6240 bypass string-matching WAF rules by URL-encoding path characters, submitting requests to slash percent-50-SEMHUB slash to reach vulnerable Environment Management Hub endpoints. Upon gaining unauthenticated remote code execution, threat actors deploy Neo-reGeorg tunneling toolkits, MeshAgent remote management software, and persistent web shells, escalating execution rights to root and NT AUTHORITY SYSTEM.
+
+Subverting enterprise resource planning applications exposes central database archives and sensitive corporate records. Because PeopleSoft installations govern human resources data, financial accounting tables, and executive records, an unauthenticated host compromise permits threat actors to exfiltrate gigabytes of corporate records for extortion campaigns.
+
+- Force immediate security patch installation published by Oracle across all PeopleSoft application server deployments.
+- Disable the Environment Management Hub service in multi-server setups or remove the PSEMHUB application in single-server environments.
+- Update web application firewall inspection engines to perform full URL-decoding prior to evaluating path-matching rules.
+- Inspect application hosting directories for unauthorized web shells, Neo-reGeorg scripts, or unverified MeshAgent binary executions.
+
+Enterprise resource planning defense relies on strict WAF path decoding and rapid vendor patch execution to ensure central business portals remain protected from unauthenticated remote code execution. #CodeDefence #Oracle #PeopleSoft #ShinyHunters #WAFBypass #RCE #DataExtortion #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>Kiteworks issues emergency advisory urging 9 hour server shutdown following federal cyber attack warnings</title>
+  <link>https://codedefence.in/blog/2026/09/26/kiteworks-issues-emergency-advisory-9-hour-server-shutdown-law-enforcement-warning</link>
+  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/kiteworks-issues-emergency-advisory-9-hour-server-shutdown-law-enforcement-warning</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-48842</cd:cve>
+  <cd:mentions>@[Kiteworks](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-National cyber security advisories have issued alerts confirming active wild exploitation targeting a high-severity SQL injection vulnerability in a widely used open-source webmail portal. Unauthenticated remote actors transmit malformed database queries to extract sensitive user authentication hashes and active session cookies.
+Secure file transfer software maintainers have issued emergency customer advisories recommending a temporary nine-hour system shutdown window over the weekend. The preventative recommendation follows credible threat intelligence received from federal law enforcement authorities regarding an imminent cyber attack targeting file sharing platforms.
 
-The vulnerability, tracked as CVE-2026-48842 with a CVSS score of 8.1, impacts Roundcube Webmail releases 1.6.x prior to 1.6.16 and 1.7.x prior to 1.7.1. The defect resides within the virtuser_query plugin processing user lookup routines. Unauthenticated remote adversaries transmit crafted HTTP requests containing SQL injection vectors to force the underlying database engine to dump account password hashes, session tokens, and cleartext email records.
+The advisory impacts enterprise deployments of Kiteworks file transfer systems. While vendor engineering teams emphasize that no evidence of active customer system compromise has been identified, federal intelligence alerts indicate sophisticated threat groups are preparing targeted intrusion attempts. Kiteworks released software update 9.5.1, urging all enterprise administrators to apply the maintenance build immediately during the recommended shutdown window to ensure platform defenses remain fully updated.
 
-Subverting webmail portals grants threat actors unmonitored access to corporate communications and identity verification channels. Possessing webmail session tokens or account credentials allows adversaries to conduct internal phishing, bypass multi-factor authentication resets, and harvest sensitive corporate data files.
+Subverting managed file transfer platforms introduces severe operational and data privacy risks across enterprise ecosystems. Because Kiteworks infrastructure handles sensitive file exchanges containing intellectual property, legal records, and customer data, proactive platform isolation prevents threat actors from executing zero-day intrusion routines.
 
-- Upgrade Roundcube Webmail installations immediately to security maintenance release builds 1.6.16 or 1.7.1 or higher.
-- Disable the virtuser_query plugin temporarily if immediate software upgrade workflows cannot be executed.
-- Inspect webmail server database query logs for anomalous SQL syntax or unauthorized session table dump attempts.
-- Enforce mandatory password resets and invalidate active webmail session cookies for accounts accessed during intrusion windows.
+- Execute a controlled temporary shutdown of public-facing Kiteworks file transfer appliances during recommended weekend maintenance windows.
+- Apply official software update 9.5.1 across all Kiteworks system nodes prior to restoring public network connectivity.
+- Inspect system access logs and audit trails for unverified connection attempts or anomalous administrative authentication requests.
+- Restrict public internet access to secure file transfer management web interfaces using zero trust conditional access rules.
 
-Webmail portal resilience relies on rigid SQL query parameterization and prompt security patch deployment to ensure messaging infrastructure remains insulated from unauthenticated database manipulation. #CodeDefence #Roundcube #Webmail #SQLi #EmailSecurity #AppSec #PatchManagement #ThreatIntelligence
-  ]]></description>
-</item>
-
-<item>
-  <title>Suspected North Korean threat actors steal 351M in Bitget exchange backend systems compromise</title>
-  <link>https://codedefence.in/blog/2026/09/25/north-korean-threat-actors-steal-351m-bitget-exchange-hack</link>
-  <pubDate>Fri, 25 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/25/north-korean-threat-actors-steal-351m-bitget-exchange-hack</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Mandiant](urn:li:organization:15161044)</cd:mentions>
-  <description><![CDATA[
-Cryptocurrency exchange security disclosures detail a major financial intrusion where state-sponsored threat actors breached internal wallet management infrastructure to authorize fraudulent high-value asset transfers. Incident response investigations link on-chain behavior and IP telemetry to North Korean cybercrime syndicates.
-
-The incident resulted in the theft of 351.6 million dollars in digital assets across Ethereum, Binance Smart Chain, Arbitrum, and Avalanche networks. Threat actors compromised a critical backend transaction validation service within the exchange hot wallet architecture, leveraging administrative access to spoof internal transaction payloads and trick automated authorization gateways into approving outbound transfers. Mandiant and SlowMist have been engaged to conduct forensic triage and track exfiltrated funds across decentralized mixers.
-
-Subverting core backend authorization microservices undermines internal control boundaries across financial platforms. When threat actors compromise internal validation daemons, adversaries can bypass cryptographic signing rules and execute unauthorized high-value transactions without raising perimeter network alarms.
-
-- Audit internal microservice communication pathways and enforce mutual TLS authentication across automated transaction services.
-- Implement multi-party computation MPC controls requiring out-of-band human authorization for high-volume asset movements.
-- Inspect application server logs for unverified administrative session creations or anomalous RPC call invocations.
-- Enforce continuous non-human identity auditing across internal cloud API endpoints and backend database services.
-
-Financial platform infrastructure defense requires multi-tiered authorization controls and continuous zero-trust identity verification to ensure critical transaction services remain protected against state-sponsored backend subversion. #CodeDefence #Bitget #Mandiant #Cybercrime #NorthKorea #TraderTraitor #FinTech #CloudSecurity #IncidentResponse
+Managed file transfer infrastructure protection demands proactive threat response and rapid security patch deployment to guarantee sensitive enterprise file exchange channels remain completely protected against targeted cyber attacks. #CodeDefence #Kiteworks #MFT #CyberSecurity #ThreatIntelligence #DataProtection #IncidentResponse #AppSec
   ]]></description>
 </item>
 
