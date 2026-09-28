@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 26 September 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 28 September 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 26 September 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 28 September 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 26 September 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 28 September 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 28 September 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Microsoft SharePoint RCE CVE-2026-65660 and MikroTik RouterOS flaw CVE-2026-67279 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/09/26/cisa-adds-microsoft-sharepoint-rce-and-mikrotik-flaws-to-kev</link>
-  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/cisa-adds-microsoft-sharepoint-rce-and-mikrotik-flaws-to-kev</guid>
+  <title>CISA adds actively exploited Citrix NetScaler ADC and Gateway flaws CVE-2026-88771 and CVE-2026-88772 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/09/28/cisa-adds-citrix-netscaler-flaws-cve-2026-88771-cve-2026-88772-to-kev</link>
+  <pubDate>Mon, 28 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/28/cisa-adds-citrix-netscaler-flaws-cve-2026-88771-cve-2026-88772-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-65660‚ CVE-2026-67279</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[MikroTik](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-88771‚ CVE-2026-88772</cd:cve>
+  <cd:mentions>@[Citrix](urn:li:organization:1290)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to order immediate remediation for two critical enterprise vulnerabilities actively weaponized in wild intrusion campaigns. Threat actors leverage network code injection and state-machine bypass errors to execute arbitrary operating system commands and hijack edge gateways.
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to mandate emergency remediation across federal civilian agencies for two critical perimeter access flaws. Threat actors are actively weaponizing input validation and DTLS memory buffer flaws to achieve unauthenticated remote code execution on edge appliances globally.
 
-The additions cover Microsoft Office SharePoint network code injection flaw CVE-2026-65660 alongside MikroTik RouterOS behavioral workflow flaw CVE-2026-67279. Confirmed threat telemetry shows adversaries actively exploiting SharePoint to obtain unauthenticated remote code execution across enterprise intranet servers. On edge routing hardware, adversaries chain CVE-2026-67279 with argument injection bug CVE-2026-86060 under the MikroTrick exploit vector, obtaining full administrative console access without valid credentials. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory September 28 compliance deadline.
+The catalog additions feature NetScaler ADC and NetScaler Gateway improper input validation flaw CVE-2026-88771 and DTLS buffer overflow flaw CVE-2026-88772, both carrying CVSS scores of 9.5. Confirmed threat intelligence indicates adversaries transmitting malformed network payloads to bypass security checks and execute arbitrary commands under root privileges. Under Binding Operational Directive 22-01, federal civilian executive branch agencies face an aggressive September 30 compliance deadline to apply vendor security updates and run compromise indicators.
 
-Subverting central collaboration servers and edge routing hardware undermines enterprise document isolation and network boundary controls. Because SharePoint servers manage sensitive corporate document repositories and Active Directory credentials, an unmonitored code execution exploit permits threat actors to exfiltrate enterprise files and execute lateral movement sweeps.
+Subverting perimeter access controllers destroys single sign-on boundaries and network access controls across enterprise subnets. Because NetScaler appliances manage active SSL VPN tunnels, user session states, and load balancing rules, an unauthenticated takeover permits threat actors to hijack user sessions, extract local credentials, and pivot into internal enterprise subnets.
 
-- Apply official security maintenance updates released by Microsoft across all SharePoint Server installations immediately.
-- Force immediate RouterOS software upgrades to patched maintenance builds published by MikroTik across edge routing hardware.
-- Inspect SharePoint application logs for anomalous process creation trees or unverified remote execution requests.
-- Execute system device-mode verification commands on RouterOS appliances to detect unauthorized device status changes.
+- Force immediate software maintenance updates published by Citrix across all NetScaler ADC and Gateway appliances.
+- Rotate all local account passwords, Key Encryption Keys KEK, and replace restored SSL certificates across managed deployments.
+- Inspect NetScaler Console indicators of compromise and system logs for unverified remote binary executions.
+- Restrict public internet access to NetScaler management interfaces by placing administrative panels on dedicated VLANs.
 
-Enterprise collaboration and edge network defense demand rapid security patch execution and continuous interface auditing to ensure core servers remain insulated from active wild exploitation. #CodeDefence #Microsoft #SharePoint #MikroTik #RouterOS #CISA #KEV #RCE #AppSec
+Perimeter security gateway protection demands rapid patch execution and strict control plane isolation to ensure central access controllers remain completely insulated from unauthenticated remote code execution. #CodeDefence #Citrix #NetScaler #KEV #CISA #RCE #ZeroDay #NetworkSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>ShinyHunters linked threat actor UNC6240 bypasses WAFs to mass exploit Oracle PeopleSoft RCE CVE-2026-35273</title>
-  <link>https://codedefence.in/blog/2026/09/26/shinyhunters-linked-actor-bypasses-wafs-oracle-peoplesoft-rce-cve-2026-35273</link>
-  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/shinyhunters-linked-actor-bypasses-wafs-oracle-peoplesoft-rce-cve-2026-35273</guid>
+  <title>ShinyHunters UNC6240 breaches government cloud via Oracle PeopleSoft WAF bypass flaw CVE-2026-35273</title>
+  <link>https://codedefence.in/blog/2026/09/28/shinyhunters-unc6240-breaches-government-cloud-oracle-peoplesoft-waf-bypass</link>
+  <pubDate>Mon, 28 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/28/shinyhunters-unc6240-breaches-government-cloud-oracle-peoplesoft-waf-bypass</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-35273</cd:cve>
   <cd:mentions>@[Oracle](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Cyber threat intelligence advisories published today warn of widespread wild attack campaigns targeting enterprise resource planning portals. Threat actors modify public exploit scripts to bypass web application firewall rules, deploying tunneling tools and remote management agents for mass data extortion.
+Cyber threat intelligence reports confirm that extortion group ShinyHunters, tracked as UNC6240, successfully breached government cloud storage repositories by bypassing firewall rules protecting enterprise software deployments. The group leveraged character encoding tricks to reach vulnerable web endpoints without triggering security signatures.
 
-The attack campaign targets Oracle PeopleSoft installations via vulnerability CVE-2026-35273 with a CVSS score of 9.8. Adversaries associated with threat group UNC6240 bypass string-matching WAF rules by URL-encoding path characters, submitting requests to slash percent-50-SEMHUB slash to reach vulnerable Environment Management Hub endpoints. Upon gaining unauthenticated remote code execution, threat actors deploy Neo-reGeorg tunneling toolkits, MeshAgent remote management software, and persistent web shells, escalating execution rights to root and NT AUTHORITY SYSTEM.
+The attack campaign abused Oracle PeopleSoft vulnerability CVE-2026-35273 with a CVSS score of 9.8. Threat actors modified URI request parameters using URL-encoded character substitutions slash percent-50-SEMHUB slash to evade string-matching web application firewall rules. After achieving unauthenticated remote code execution on the PeopleSoft server, the group pivoted into adjacent AWS government cloud storage repositories, exfiltrating terabytes of sensitive administrative records and issuing formal extortion demands.
 
-Subverting enterprise resource planning applications exposes central database archives and sensitive corporate records. Because PeopleSoft installations govern human resources data, financial accounting tables, and executive records, an unauthenticated host compromise permits threat actors to exfiltrate gigabytes of corporate records for extortion campaigns.
+Relying on signature-based firewall rules without underlying vendor patches introduces severe enterprise cloud security risks. When threat actors bypass perimeter firewall filters to compromise web applications, unmonitored server access enables adversaries to harvest integration tokens and pivot directly into cloud production storage.
 
-- Force immediate security patch installation published by Oracle across all PeopleSoft application server deployments.
-- Disable the Environment Management Hub service in multi-server setups or remove the PSEMHUB application in single-server environments.
-- Update web application firewall inspection engines to perform full URL-decoding prior to evaluating path-matching rules.
-- Inspect application hosting directories for unauthorized web shells, Neo-reGeorg scripts, or unverified MeshAgent binary executions.
+- Apply official security patches published by Oracle across all PeopleSoft application server installations immediately.
+- Reconfigure web application firewalls to perform full URI path decoding before evaluating pattern-matching security rules.
+- Inspect cloud storage access logs and identity session tokens for unverified file access calls originating from application hosts.
+- Disable the Environment Management Hub service in multi-server setups or remove the PSEMHUB application in single-server setups.
 
-Enterprise resource planning defense relies on strict WAF path decoding and rapid vendor patch execution to ensure central business portals remain protected from unauthenticated remote code execution. #CodeDefence #Oracle #PeopleSoft #ShinyHunters #WAFBypass #RCE #DataExtortion #AppSec #PatchManagement
+Enterprise cloud application security requires complete vendor patch deployment and thorough path decoding to ensure business portals remain insulated from unauthenticated remote code execution. #CodeDefence #Oracle #PeopleSoft #ShinyHunters #UNC6240 #WAFBypass #CloudSecurity #RCE #DataExfiltration
   ]]></description>
 </item>
 
 <item>
-  <title>Kiteworks issues emergency advisory urging 9 hour server shutdown following federal cyber attack warnings</title>
-  <link>https://codedefence.in/blog/2026/09/26/kiteworks-issues-emergency-advisory-9-hour-server-shutdown-law-enforcement-warning</link>
-  <pubDate>Sat, 26 September 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/26/kiteworks-issues-emergency-advisory-9-hour-server-shutdown-law-enforcement-warning</guid>
+  <title>CISA September 28 federal patch deadline arrives for Microsoft SharePoint and MikroTik RouterOS vulnerabilities</title>
+  <link>https://codedefence.in/blog/2026/09/28/cisa-september-28-patch-deadline-arrives-sharepoint-mikrotik</link>
+  <pubDate>Mon, 28 September 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/09/28/cisa-september-28-patch-deadline-arrives-sharepoint-mikrotik</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Kiteworks](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-65660‚ CVE-2026-67279</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[MikroTik](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Secure file transfer software maintainers have issued emergency customer advisories recommending a temporary nine-hour system shutdown window over the weekend. The preventative recommendation follows credible threat intelligence received from federal law enforcement authorities regarding an imminent cyber attack targeting file sharing platforms.
+Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 22-01 to remediate two actively exploited enterprise vulnerabilities. Systems remaining unpatched face mandatory network disconnection orders across federal enterprises.
 
-The advisory impacts enterprise deployments of Kiteworks file transfer systems. While vendor engineering teams emphasize that no evidence of active customer system compromise has been identified, federal intelligence alerts indicate sophisticated threat groups are preparing targeted intrusion attempts. Kiteworks released software update 9.5.1, urging all enterprise administrators to apply the maintenance build immediately during the recommended shutdown window to ensure platform defenses remain fully updated.
+The mandatory remediation mandate applies to Microsoft SharePoint Server code injection vulnerability CVE-2026-65660 and MikroTik RouterOS SSH state-machine vulnerability CVE-2026-67279. Threat telemetry confirms adversaries actively exploiting SharePoint to execute arbitrary code on internal servers, while edge routing appliances face active exploitation under the MikroTrick attack chain to obtain unauthenticated administrative control.
 
-Subverting managed file transfer platforms introduces severe operational and data privacy risks across enterprise ecosystems. Because Kiteworks infrastructure handles sensitive file exchanges containing intellectual property, legal records, and customer data, proactive platform isolation prevents threat actors from executing zero-day intrusion routines.
+Failing to remediate cataloged edge routing and collaboration server vulnerabilities leaves internal enterprise networks vulnerable to persistent footholds. When adversaries compromise internal collaboration servers or edge routers, unmonitored access permits threat networks to extract sensitive files and execute lateral movement sweeps across enterprise subnets.
 
-- Execute a controlled temporary shutdown of public-facing Kiteworks file transfer appliances during recommended weekend maintenance windows.
-- Apply official software update 9.5.1 across all Kiteworks system nodes prior to restoring public network connectivity.
-- Inspect system access logs and audit trails for unverified connection attempts or anomalous administrative authentication requests.
-- Restrict public internet access to secure file transfer management web interfaces using zero trust conditional access rules.
+- Upgrade on-premises Microsoft SharePoint Server installations immediately to current patched maintenance builds.
+- Force immediate RouterOS software upgrades across all edge routing hardware to maintenance releases published by MikroTik.
+- Inspect SharePoint application execution logs for anomalous child processes or unauthorized code injection artifacts.
+- Verify RouterOS device-mode status using administrative console commands to ensure system flags have not been modified.
 
-Managed file transfer infrastructure protection demands proactive threat response and rapid security patch deployment to guarantee sensitive enterprise file exchange channels remain completely protected against targeted cyber attacks. #CodeDefence #Kiteworks #MFT #CyberSecurity #ThreatIntelligence #DataProtection #IncidentResponse #AppSec
+Collaboration server and edge network defense demands strict adherence to threat-informed remediation deadlines and proactive log auditing to guarantee enterprise hosts remain protected from active exploitation. #CodeDefence #Microsoft #SharePoint #MikroTik #RouterOS #CISA #KEV #PatchManagement #AppSec
   ]]></description>
 </item>
 
