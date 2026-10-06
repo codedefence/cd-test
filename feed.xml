@@ -2,82 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Mon, 05 October 2026</title>
+  <title>Code Defence Intelligence Brief — Tue, 06 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Mon, 05 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Tue, 06 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Mon, 05 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Mon, 05 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Tue, 06 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Tue, 06 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds actively exploited Citrix NetScaler SAML memory overflow vulnerability CVE-2026-88779 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/05/cisa-adds-citrix-netscaler-saml-vulnerability-cve-2026-88779-to-kev</link>
-  <pubDate>Mon, 05 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/05/cisa-adds-citrix-netscaler-saml-vulnerability-cve-2026-88779-to-kev</guid>
+  <title>Dell warns of critical root privilege escalation vulnerability CVE-2026-86360 in Dell System Update CLI</title>
+  <link>https://codedefence.in/blog/2026/10/06/dell-warns-critical-root-privilege-escalation-cve-2026-86360</link>
+  <pubDate>Tue, 06 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/06/dell-warns-critical-root-privilege-escalation-cve-2026-86360</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-88779</cd:cve>
-  <cd:mentions>@[Citrix](urn:li:organization:1290)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-86360</cd:cve>
+  <cd:mentions>@[Dell](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog to order emergency remediation across federal civilian agencies for a new memory overflow vulnerability in perimeter access controllers. Unauthenticated threat actors are actively weaponizing SAML authentication subroutines to crash authentication services and execute targeted denial of service attacks.
+Enterprise hardware management advisories published today detail emergency security updates for a critical privilege escalation flaw in server deployment toolkits. Local unprivileged users can exploit temporary file creation routines to execute arbitrary operating system commands under root administrative privileges.
 
-The catalog addition features Citrix NetScaler ADC and Gateway memory buffer restriction flaw CVE-2026-88779 carrying a CVSS score of 8.7. The vulnerability impacts customer-managed appliances configured as SAML Service Providers or Identity Providers. Threat telemetry confirms adversaries issuing malformed SAML assertions to trigger memory overflow conditions, causing repeated appliance crashes and disabling remote access portals. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory October 7 compliance deadline.
+The vulnerability, tracked as CVE-2026-86360, affects Dell System Update DSU command-line interface tools managing PowerEdge server deployments. The security flaw stems from insecure temporary file permission handling during firmware package extraction. Local unprivileged attackers manipulate symbolic links in temporary execution directories, forcing the privileged installation daemon to execute malicious binaries with elevated root rights. Official advisories urge server administrators to update command-line deployment utilities across Linux and Windows server hosts immediately.
 
-Subverting central SAML identity federation controllers disrupts enterprise single sign-on boundaries and user access workflows. Because NetScaler appliances manage active user session states and federated authentication pipelines, repeated memory overflow exploitation forces continuous service outages and leaves perimeter access portals unavailable.
+Subverting hardware management deployment tools undermines operating system security boundaries across enterprise server fleets. When local threat actors escalate privileges to root via hardware utilities, adversaries gain capabilities to unhook endpoint protection agents, modify system kernel modules, and establish persistent footholds across datacenter infrastructure.
 
-- Apply official security maintenance updates released by Citrix across all affected NetScaler ADC and Gateway appliances immediately.
-- Verify SAML configuration states across NetScaler deployments to identify active Service Provider or Identity Provider roles.
-- Restrict public internet visibility of NetScaler management interfaces by placing administrative panels on dedicated VLANs.
-- Monitor system process stability and inspect authentication logs for malformed SAML assertion payload spikes.
+- Upgrade Dell System Update DSU installations immediately to official fixed release builds published by vendor engineering.
+- Restrict unprivileged local interactive user rights and execution permissions on Linux and Windows server hosts.
+- Inspect system temporary execution directories for anomalous symbolic link creations or unverified binary drops.
+- Enforce strict file system integrity monitoring across server deployment scripts and management utilities.
 
-Perimeter identity gateway protection demands rapid patch execution and continuous SAML traffic monitoring to ensure enterprise access controllers remain shielded from unauthenticated memory overflow attacks. #CodeDefence #Citrix #NetScaler #SAML #CISA #KEV #DenialOfService #NetworkSecurity #AppSec
+Server hardware toolchain defense demands rapid utility patch deployment and strict file system access controls to ensure enterprise management software remains insulated from local root privilege escalation. #CodeDefence #Dell #PowerEdge #PrivilegeEscalation #Root #EndpointSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Microsoft releases out of band security update for Exchange Server mailbox access bug CVE-2026-96940</title>
-  <link>https://codedefence.in/blog/2026/10/05/microsoft-releases-out-of-band-update-exchange-bug-cve-2026-96940</link>
-  <pubDate>Mon, 05 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/05/microsoft-releases-out-of-band-update-exchange-bug-cve-2026-96940</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-96940</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <title>Active mass scanning targets Rejetto HTTP File Server weak key RCE vulnerability CVE-2026-61500</title>
+  <link>https://codedefence.in/blog/2026/10/06/active-mass-scanning-targets-rejetto-hfs-rce-cve-2026-61500</link>
+  <pubDate>Tue, 06 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/06/active-mass-scanning-targets-rejetto-hfs-rce-cve-2026-61500</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-61500</cd:cve>
   <description><![CDATA[
-Enterprise messaging software maintainers have distributed out-of-band security updates to address a high-severity authorization bypass vulnerability in on-premises mail servers. Unauthenticated remote actors can manipulate session authentication tokens to access corporate user mailboxes.
+Network threat monitoring arrays confirm active global scanning sweeps targeting a high-severity session handling vulnerability in lightweight web file server software. Unauthenticated remote adversaries exploit weak cryptographic signing keys to forge administrative cookies and execute remote code.
 
-The vulnerability, tracked as CVE-2026-96940, impacts Microsoft Exchange Server on-premises installations. The flaw stems from improper token validation logic in Outlook Web Access endpoints processing HTTP authentication headers. Unauthenticated remote adversaries transmit malformed authorization requests to bypass access controls, reading user mailbox contents, harvesting sensitive email attachments, and sending unauthorized messages. Official security bulletins urge immediate deployment of out-of-band cumulative updates.
+The vulnerability, tracked as CVE-2026-61500, affects Rejetto HTTP File Server HFS releases. The defect arises from the use of static or predictable session signing keys within session token generation modules. Unauthenticated remote adversaries transmit forged HTTP authorization headers to bypass authentication logic, obtaining administrative access over target servers and executing arbitrary system commands. Threat telemetry indicates automated botnets actively scanning internet-facing HFS instances to drop crypto-miners and reverse proxies.
 
-Subverting corporate messaging infrastructure exposes sensitive organizational communications and identity verification channels. When unauthenticated actors gain unauthorized mailbox read permissions, adversaries can harvest corporate secrets, intercept password reset links, and execute internal spear-phishing campaigns.
+Subverting web file server daemons exposes stored enterprise files and host network boundaries. When unauthenticated actors achieve remote code execution on file server hosts, adversaries can exfiltrate sensitive corporate files, deploy secondary malware payloads, and pivot into internal network segments.
 
-- Force immediate installation of out-of-band security updates published by Microsoft across all on-premises Exchange Server hosts.
-- Inspect Outlook Web Access access logs for anomalous HTTP authorization header structures or unverified mailbox access calls.
-- Enforce strict multi-factor authentication requirements across all external webmail access portals.
-- Audit active Exchange service account permissions and rotate administrative credential stores.
+- Apply official maintenance security updates across all Rejetto HTTP File Server deployments immediately.
+- Restrict public internet access to file management web interfaces by placing hosts behind zero-trust access proxies.
+- Inspect HTTP server access logs for unverified administrative session requests or anomalous cookie structures.
+- Isolate file server hosting roots on dedicated subnets and restrict outbound network connectivity to untrusted domains.
 
-Enterprise messaging security relies on prompt out-of-band patch deployment and continuous session validation to ensure email repositories remain insulated from unauthorized access exploits. #CodeDefence #Microsoft #Exchange #EmailSecurity #AuthBypass #PatchManagement #AppSec #InfoSec
+Web file server security relies on robust cryptographic session signing and strict access control isolation to ensure lightweight file management daemons remain protected from unauthenticated remote takeover. #CodeDefence #Rejetto #HFS #RCE #SessionForgery #WebSecurity #AppSec #ThreatIntelligence
   ]]></description>
 </item>
 
 <item>
-  <title>Apple warns of active wild exploitation targeting mobile out of bounds write zero day CVE-2026-86950</title>
-  <link>https://codedefence.in/blog/2026/10/05/apple-warns-active-wild-exploitation-out-of-bounds-write-cve-2026-86950</link>
-  <pubDate>Mon, 05 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/05/apple-warns-active-wild-exploitation-out-of-bounds-write-cve-2026-86950</guid>
+  <title>FBI removes contractor following ShinyHunters breach of Oracle PeopleSoft job portal via WAF bypass CVE-2026-35273</title>
+  <link>https://codedefence.in/blog/2026/10/06/fbi-removes-contractor-shinyhunters-breach-oracle-peoplesoft-cve-2026-35273</link>
+  <pubDate>Tue, 06 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/06/fbi-removes-contractor-shinyhunters-breach-oracle-peoplesoft-cve-2026-35273</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-86950</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
+  <cd:cve>CVE-2026-35273</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Mobile operating system advisories updated today confirm active wild exploitation targeting a high-severity memory corruption flaw in mobile devices. Unauthenticated remote adversaries leverage out-of-bounds memory write errors to execute arbitrary code with elevated system privileges.
+Incident response investigations published today detail law enforcement actions following a major breach of federal job applicant databases. The intrusion was enabled by third-party patch management failures that left enterprise software endpoints vulnerable to web application firewall bypass techniques.
 
-The vulnerability, tracked as CVE-2026-86950, impacts Apple iOS, iPadOS, and macOS platforms. The defect resides within low-level system memory handling subroutines processing media streams. Threat actors transmit malformed web or media content to corrupt system memory boundaries, escaping sandbox restrictions to achieve arbitrary kernel code execution. Security bulletins confirm targeted wild exploitation against enterprise mobile endpoints.
+The security incident involved federal portal infrastructure built on Oracle PeopleSoft. Threat actors belonging to the ShinyHunters group exploited vulnerability CVE-2026-35273 targeting Environment Management Hub PSEMHUB endpoints. The attackers utilized URL-encoding manipulation to evade web application firewall rules, accessing backend databases and exfiltrating personal information belonging to thousands of agency employees and applicants. Federal authorities confirmed the removal of the responsible maintenance contractor alongside ongoing law enforcement investigations.
 
-Subverting mobile operating system kernel memory undermines endpoint isolation and data protection boundaries. Because mobile devices store multi-factor authentication tokens, corporate messaging apps, and enterprise credentials, an unmonitored kernel exploit permits threat actors to capture sensitive communications and compromise corporate assets.
+Failing to apply vendor security patches while relying exclusively on perimeter firewall rules creates catastrophic supply chain exposure. When threat actors bypass firewall pattern-matching rules, unpatched backend enterprise applications remain fully exposed to unauthenticated data exfiltration.
 
-- Deploy latest Apple security updates across corporate iOS, iPadOS, and macOS endpoint fleets immediately.
-- Enforce mobile device management policies requiring minimum operating system patch levels for enterprise network access.
-- Restrict unverified attachment processing across corporate messaging applications using mobile threat defense agents.
-- Monitor endpoint process telemetry for unexpected kernel panics or anomalous daemon executions.
+- Force immediate patch application published by Oracle across all PeopleSoft application server deployments.
+- Reconfigure web application firewall inspection engines to perform complete URI path decoding prior to evaluating security rules.
+- Conduct continuous third-party vendor patch compliance audits across managed government and corporate application infrastructure.
+- Restrict network routing to administrative endpoints like PSEMHUB, placing management interfaces on isolated internal VLANs.
 
-Mobile endpoint defense demands rapid zero-day patch application and continuous device compliance enforcement to ensure enterprise assets remain protected from unauthenticated remote kernel exploits. #CodeDefence #Apple #iOS #macOS #ZeroDay #PrivilegeEscalation #MobileSecurity #AppSec
+Enterprise supply chain risk governance requires strict patch execution verification and multi-layered access controls to ensure critical application portals remain insulated from perimeter firewall bypass techniques. #CodeDefence #Oracle #PeopleSoft #ShinyHunters #WAFBypass #SupplyChain #DataExfiltration #IncidentResponse #AppSec
   ]]></description>
 </item>
 
