@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 14 October 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 15 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 14 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 15 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 14 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 14 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Thu, 15 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Microsoft October 2026 Patch Tuesday fixes record 1413 flaws including exploited Windows Shell zero day CVE-2026-96951</title>
-  <link>https://codedefence.in/blog/2026/10/14/microsoft-october-2026-patch-tuesday-record-flaws-exploited-zero-day</link>
-  <pubDate>Wed, 14 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/14/microsoft-october-2026-patch-tuesday-record-flaws-exploited-zero-day</guid>
+  <title>CISA adds Ivanti EPMM unauthenticated remote code execution zero day CVE-2026-105192 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/10/15/cisa-adds-ivanti-epmm-rce-zero-day-cve-2026-105192-to-kev</link>
+  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/cisa-adds-ivanti-epmm-rce-zero-day-cve-2026-105192-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-96951‚ CVE-2026-108398</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Enterprise operating system maintainers have released an unprecedented volume of monthly security updates resolving over fourteen hundred vulnerabilities across Windows and Azure platforms. The release is anchored by an actively weaponized security feature bypass flaw allowing remote network attackers to execute arbitrary system code.
-
-The zero-day vulnerability, tracked as CVE-2026-96951 with a CVSS score of 8.8, affects Windows Shell processing across client and server editions. The flaw arises from improper URI parameter validation within Windows Shell handlers. Unauthenticated remote adversaries transmit crafted files via email attachments or malicious web links, bypassing security execution prompts to execute injected shell commands with the privileges of the active user session. Threat telemetry confirms active wild exploitation targeting enterprise workstations.
-
-Subverting core Windows desktop execution controls provides threat actors with immediate initial access to corporate endpoints. When adversaries bypass user execution prompts via malicious file processing, threat actors drop secondary payloads, harvest local user credentials, and initiate lateral movement across Active Directory domains.
-
-- Force immediate installation of October 2026 Patch Tuesday updates across all Windows workstation and server host fleets.
-- Enforce strict email attachment filtering to block malformed URI shortcuts and unverified script extensions.
-- Restrict unprivileged user execution rights using application control policies and Windows Defender Application Control WDAC.
-- Monitor endpoint process execution trees for anomalous command prompt or PowerShell invocations originating from Windows Shell routines.
-
-Endpoint operating system defense relies on rapid monthly patch execution and strict execution control policies to ensure enterprise hosts remain protected from unauthenticated zero-day command injection exploits. #CodeDefence #Microsoft #PatchTuesday #ZeroDay #Windows #CISA #KEV #EndpointSecurity #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>CISA adds actively exploited Ivanti Connect Secure zero day authentication bypass CVE-2026-104935 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/14/cisa-adds-actively-exploited-ivanti-connect-secure-zero-day-cve-2026-104935-to-kev</link>
-  <pubDate>Wed, 14 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/14/cisa-adds-actively-exploited-ivanti-connect-secure-zero-day-cve-2026-104935-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-104935</cd:cve>
+  <cd:cve>CVE-2026-105192</cd:cve>
   <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, issuing an emergency patch mandate for a newly identified remote access gateway zero-day. Threat actors actively exploit header spoofing errors to bypass authentication logic and gain root access to internal networks.
+Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 to mandate emergency mitigation for an actively weaponized enterprise mobility management flaw. Unauthenticated remote adversaries transmit malformed API parameters to execute arbitrary operating system commands with root privileges across mobile device management servers.
 
-The vulnerability, tracked as CVE-2026-104935, affects Ivanti Connect Secure ICS gateways. The defect stems from improper validation of HTTP header parameters during remote session negotiation. Unauthenticated remote adversaries transmit malformed HTTP connection requests to bypass gateway authentication handlers, obtaining administrative root access without valid credentials. Threat reports confirm nation-state actors actively weaponized the flaw as a zero-day since early October to deploy web shells and intercept encrypted VPN traffic.
+The catalog update features Ivanti Endpoint Manager Mobile EPMM unauthenticated command injection flaw CVE-2026-105192 carrying a CVSS score of 9.8. Threat telemetry confirms state-backed threat actors actively weaponizing the defect to achieve initial access, extract device registration databases, and push rogue configuration profiles to managed enterprise mobile endpoints. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face an emergency October 17 compliance deadline to apply vendor security updates.
 
-Subverting secure remote access gateways destroys perimeter boundary protections across enterprise networks. Because Ivanti Connect Secure appliances manage single sign-on user sessions and SSL VPN tunnel terminations, an unauthenticated gateway takeover permits adversaries to harvest active user session tokens, inspect unencrypted transit traffic, and pivot directly into backend corporate networks.
+Subverting central enterprise mobility management platforms compromises whole-fleet device boundaries. Because EPMM servers issue device certificates, push mobile application payloads, and manage corporate network access credentials, an unauthenticated server takeover permits threat actors to compromise enrolled mobile endpoints, intercept internal communications, and pivot into corporate networks.
 
-- Upgrade Ivanti Connect Secure appliances immediately to official vendor-supplied emergency fixed release builds.
-- Run the official Ivanti Integrity Checking Tool ICT across gateway appliances to inspect for unauthorized web shell implants.
-- Restrict public internet visibility of Ivanti management interfaces by placing control panels on dedicated VLANs.
-- Invalidate active VPN user session tokens and execute mandatory administrative credential resets across managed appliances.
+- Apply official maintenance security updates published by Ivanti across all Endpoint Manager Mobile appliances immediately.
+- Isolate EPMM web management interfaces behind zero trust access control proxies and enforce strict IP access control lists.
+- Inspect EPMM system execution logs for anomalous shell processes spawned by web server daemons or unverified API calls.
+- Audit enrolled mobile device inventories for unauthorized profile deployments or unverified administrative account additions.
 
-Perimeter access controller defense demands emergency patch execution and continuous integrity checking to ensure secure access gateways remain completely protected from unauthenticated zero-day takeover. #CodeDefence #Ivanti #ConnectSecure #CISA #KEV #ZeroDay #AuthBypass #NetworkSecurity #AppSec
+Enterprise mobility management defense demands rapid patch execution and strict API control plane isolation to ensure mobile management infrastructure remains protected from unauthenticated command injection zero-days. #CodeDefence #Ivanti #EPMM #MobileSecurity #CISA #KEV #ZeroDay #RCE #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Docker Hub flaw CVE-2026-105445 allowed attackers to impersonate users and tamper with container repositories</title>
-  <link>https://codedefence.in/blog/2026/10/14/docker-hub-flaw-cve-2026-105445-allowed-user-impersonation-container-tampering</link>
-  <pubDate>Wed, 14 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/14/docker-hub-flaw-cve-2026-105445-allowed-user-impersonation-container-tampering</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-105445</cd:cve>
-  <cd:mentions>@[Docker](urn:li:organization:15161044)</cd:mentions>
+  <title>Sophos issues urgent advisories for max severity Firewall auth bypass flaw CVE-2026-106110 exploited in the wild</title>
+  <link>https://codedefence.in/blog/2026/10/15/sophos-issues-urgent-advisories-max-severity-firewall-auth-bypass-cve-2026-106110</link>
+  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/sophos-issues-urgent-advisories-max-severity-firewall-auth-bypass-cve-2026-106110</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-106110</cd:cve>
+  <cd:mentions>@[Sophos](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Container registry maintainers have issued security disclosures detailing a high-severity authentication bypass vulnerability in cloud repository management infrastructure. Threat actors could manipulate personal access token scopes to obtain unauthorized access to third-party container repositories.
+Network security appliance maintainers have distributed hotfixes following active wild exploitation targeting edge firewall management interfaces. Remote adversaries manipulate session handling subroutines to bypass authentication controls and execute arbitrary code on firewall appliances.
 
-The vulnerability, tracked as CVE-2026-105445, affected Docker Hub registry API authorization handlers. The flaw involved improper scope validation when processing Personal Access Tokens PATs. An attacker with a valid Docker Hub account could transmit malformed API calls incorporating forged token parameters, allowing them to impersonate other platform users, access private container repositories, and push malicious container image builds to public registry namespaces. Docker engineering teams deployed server-side hotfixes to resolve token scope evaluation.
+The security advisory addresses authentication bypass vulnerability CVE-2026-106110 carrying a CVSS score of 9.8 in Sophos Firewall User Portal and Webadmin interfaces. Unauthenticated remote actors transmit malformed JSON Web Tokens containing manipulated key ID parameters to force the authentication engine into validating forged administrative sessions. Threat research disclosures confirm automated exploitation toolkits actively scanning exposed firewall portals to deploy persistent reverse shell implants.
 
-Subverting central container registries introduces severe software supply chain contamination across cloud-native environments. If threat actors push malicious container layers to production registries, automated deployment pipelines pull and deploy compromised container images directly into production Kubernetes clusters.
+Subverting edge firewall appliances destroys network perimeter boundary controls across enterprise subnets. Because Sophos Firewall appliances manage routing policies, intrusion prevention inspection rules, and site-to-site VPN tunnels, an unauthenticated administrative compromise allows threat actors to disable security filters, harvest network credentials, and execute lateral movement sweeps.
 
-- Audit active Docker Hub Personal Access Tokens PATs across organization accounts and enforce least-privilege scoping.
-- Implement cryptographic container image signing using Cosign to verify build provenance before executing images in cluster environments.
-- Inspect container registry push logs for unauthorized image version tags or unverified user access calls.
-- Enforce automated vulnerability scanning across container images stored within cloud registry accounts.
+- Deploy hotfixes automatically or apply manual firmware updates published by Sophos across all managed Firewall appliances.
+- Disable public WAN access to User Portal and Webadmin interfaces, restricting administrative access to internal management VLANs.
+- Inspect firewall system access logs for anomalous JWT authentication assertions or unverified admin login events.
+- Reset administrative account credentials and invalidate active user session tokens across managed firewall fleets.
 
-Cloud container registry security depends on rigid API authorization checks and continuous image provenance verification to ensure production software supply chains remain protected from container tampering. #CodeDefence #Docker #DockerHub #ContainerSecurity #DevSecOps #SupplyChain #CloudSecurity #AppSec
+Perimeter firewall controller defense relies on strict management interface isolation and rapid hotfix deployment to ensure edge access gateways remain shielded from unauthenticated session forgery attacks. #CodeDefence #Sophos #Firewall #AuthBypass #PerimeterSecurity #NetworkSecurity #ZeroDay #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>SolarWinds patches critical Access Rights Manager remote code execution flaw CVE-2026-107220</title>
+  <link>https://codedefence.in/blog/2026/10/15/solarwinds-patches-critical-access-rights-manager-rce-cve-2026-107220</link>
+  <pubDate>Thu, 05 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/solarwinds-patches-critical-access-rights-manager-rce-cve-2026-107220</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-107220</cd:cve>
+  <cd:mentions>@[SolarWinds](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Enterprise identity auditing software maintainers have released security maintenance updates to address a high severity remote code execution vulnerability in access governance tools. Unauthenticated remote actors can exploit deserialization errors to execute commands under SYSTEM privileges.
+
+The security update fixes deserialization vulnerability CVE-2026-107220 affecting SolarWinds Access Rights Manager ARM software installations. The defect resides within background RPC processing daemons handling administrative configuration requests. Unauthenticated remote adversaries transmit malformed serialized objects over port 55555 to trigger untrusted object deserialization, executing arbitrary operating system commands with SYSTEM privileges on the host server. Official security bulletins urge enterprise IT administrators to apply current fixed release builds.
+
+Subverting access rights management servers exposes Active Directory authorization structures and enterprise identity records. Because ARM tools manage user provisioning, group policy audits, and Active Directory permissions, a host-level compromise permits threat actors to extract directory credentials and manipulate access control lists.
+
+- Upgrade SolarWinds Access Rights Manager ARM installations immediately to official fixed release build 2026.4 or higher.
+- Restrict inbound network connectivity to ARM RPC management ports using internal host firewalls and network segmentation rules.
+- Inspect ARM server process trees for unauthorized shell invocations originating from the SolarWinds service daemon process.
+- Audit Active Directory administrative group memberships and access rights changes processed during recent management windows.
+
+Identity auditing platform defense demands rigid input deserialization sanitization and strict RPC interface isolation to ensure access governance servers remain protected from unauthenticated remote command execution. #CodeDefence #SolarWinds #ARM #ActiveDirectory #IdentitySecurity #RCE #Deserialization #AppSec #PatchManagement
   ]]></description>
 </item>
 
