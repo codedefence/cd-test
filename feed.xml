@@ -2,82 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 15 October 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 16 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 15 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 16 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 15 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 16 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Ivanti EPMM unauthenticated remote code execution zero day CVE-2026-105192 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/15/cisa-adds-ivanti-epmm-rce-zero-day-cve-2026-105192-to-kev</link>
-  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/cisa-adds-ivanti-epmm-rce-zero-day-cve-2026-105192-to-kev</guid>
+  <title>Chinese state hackers exploit BeyondTrust Remote Support zero day CVE-2026-102764 and erase security logs</title>
+  <link>https://codedefence.in/blog/2026/10/16/chinese-state-hackers-exploit-beyondtrust-zero-day-cve-2026-102764</link>
+  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/chinese-state-hackers-exploit-beyondtrust-zero-day-cve-2026-102764</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-105192</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-102764</cd:cve>
   <description><![CDATA[
-Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 to mandate emergency mitigation for an actively weaponized enterprise mobility management flaw. Unauthenticated remote adversaries transmit malformed API parameters to execute arbitrary operating system commands with root privileges across mobile device management servers.
+Cyber threat investigation advisories published today confirm active state-sponsored zero-day exploitation targeting remote support platforms. Threat actors leveraged unauthenticated command execution logic to gain administrative access across corporate appliances and deleted forensic event logs to cover post-compromise activity.
 
-The catalog update features Ivanti Endpoint Manager Mobile EPMM unauthenticated command injection flaw CVE-2026-105192 carrying a CVSS score of 9.8. Threat telemetry confirms state-backed threat actors actively weaponizing the defect to achieve initial access, extract device registration databases, and push rogue configuration profiles to managed enterprise mobile endpoints. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face an emergency October 17 compliance deadline to apply vendor security updates.
+The vulnerability, tracked as CVE-2026-102764, impacts BeyondTrust Remote Support and Privileged Remote Access self-hosted appliances. Suspected Chinese espionage group Armory Castle weaponized the zero-day to deploy custom web shell backdoors, execute memory-resident proxy tools, and extract stored credentials. Forensic analyses confirm the group executed automated cleanup scripts upon completion, wiping web server access logs and system audit trails to prevent detection. Security updates have been distributed under advisory BT26-05.
 
-Subverting central enterprise mobility management platforms compromises whole-fleet device boundaries. Because EPMM servers issue device certificates, push mobile application payloads, and manage corporate network access credentials, an unauthenticated server takeover permits threat actors to compromise enrolled mobile endpoints, intercept internal communications, and pivot into corporate networks.
+Subverting privileged remote access appliances gives threat actors unmonitored access to internal network infrastructure. Because remote support platforms hold elevated administrative access to client endpoints, an unauthenticated host compromise permits state-backed actors to move laterally across enterprise networks while deleting event logs to blind security operations centers.
 
-- Apply official maintenance security updates published by Ivanti across all Endpoint Manager Mobile appliances immediately.
-- Isolate EPMM web management interfaces behind zero trust access control proxies and enforce strict IP access control lists.
-- Inspect EPMM system execution logs for anomalous shell processes spawned by web server daemons or unverified API calls.
-- Audit enrolled mobile device inventories for unauthorized profile deployments or unverified administrative account additions.
+- Force immediate security update installation published under advisory BT26-05 across self-hosted BeyondTrust appliances.
+- Centralize event log forwarding to off-box SIEM repositories to ensure log deletion routines cannot destroy forensic evidence.
+- Inspect network perimeter traffic for unauthorized outgoing connections originating from remote support server subnets.
+- Audit privileged user account credentials managed within remote access vaults and execute mandatory credential rotations.
 
-Enterprise mobility management defense demands rapid patch execution and strict API control plane isolation to ensure mobile management infrastructure remains protected from unauthenticated command injection zero-days. #CodeDefence #Ivanti #EPMM #MobileSecurity #CISA #KEV #ZeroDay #RCE #AppSec
+Privileged remote access security relies on off-box audit logging and rapid patch execution to ensure administrative gateways remain protected against state-sponsored zero-day exploitation chains. #CodeDefence #BeyondTrust #ZeroDay #CyberEspionage #AppSec #IncidentResponse #Logging #ThreatIntelligence
   ]]></description>
 </item>
 
 <item>
-  <title>Sophos issues urgent advisories for max severity Firewall auth bypass flaw CVE-2026-106110 exploited in the wild</title>
-  <link>https://codedefence.in/blog/2026/10/15/sophos-issues-urgent-advisories-max-severity-firewall-auth-bypass-cve-2026-106110</link>
-  <pubDate>Thu, 15 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/sophos-issues-urgent-advisories-max-severity-firewall-auth-bypass-cve-2026-106110</guid>
+  <title>Palo Alto Networks issues emergency security updates for actively exploited PAN OS RCE flaw CVE-2026-0322</title>
+  <link>https://codedefence.in/blog/2026/10/16/palo-alto-networks-issues-emergency-updates-pan-os-rce-cve-2026-0322</link>
+  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/palo-alto-networks-issues-emergency-updates-pan-os-rce-cve-2026-0322</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-106110</cd:cve>
-  <cd:mentions>@[Sophos](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-0322</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Network security appliance maintainers have distributed hotfixes following active wild exploitation targeting edge firewall management interfaces. Remote adversaries manipulate session handling subroutines to bypass authentication controls and execute arbitrary code on firewall appliances.
+Emergency perimeter security advisories published today warn of widespread wild exploitation targeting firewall management interfaces. Unauthenticated remote adversaries transmit malformed HTTP queries to execute arbitrary operating system commands with root privileges across exposed appliances.
 
-The security advisory addresses authentication bypass vulnerability CVE-2026-106110 carrying a CVSS score of 9.8 in Sophos Firewall User Portal and Webadmin interfaces. Unauthenticated remote actors transmit malformed JSON Web Tokens containing manipulated key ID parameters to force the authentication engine into validating forged administrative sessions. Threat research disclosures confirm automated exploitation toolkits actively scanning exposed firewall portals to deploy persistent reverse shell implants.
+The high-severity vulnerability, tracked as CVE-2026-0322 with a CVSS score of 9.8, impacts Palo Alto Networks PAN-OS software management web interfaces. The defect stems from improper input validation subroutines handling administrative web requests. Unauthenticated remote attackers submit malformed parameter payloads to bypass boundary checks, achieving arbitrary command execution under root privileges. Threat telemetry confirms active scanning and exploitation probes attempting to drop reverse shells on internet-facing management portals.
 
-Subverting edge firewall appliances destroys network perimeter boundary controls across enterprise subnets. Because Sophos Firewall appliances manage routing policies, intrusion prevention inspection rules, and site-to-site VPN tunnels, an unauthenticated administrative compromise allows threat actors to disable security filters, harvest network credentials, and execute lateral movement sweeps.
+Subverting firewall management interfaces destroys perimeter security controls and single sign-on boundaries. Because PAN-OS firewalls manage site-to-site VPN tunnels, routing policies, and security inspection rules, an unauthenticated administrative compromise allows threat actors to disable security profiles, harvest local credentials, and pivot into backend subnets.
 
-- Deploy hotfixes automatically or apply manual firmware updates published by Sophos across all managed Firewall appliances.
-- Disable public WAN access to User Portal and Webadmin interfaces, restricting administrative access to internal management VLANs.
-- Inspect firewall system access logs for anomalous JWT authentication assertions or unverified admin login events.
-- Reset administrative account credentials and invalidate active user session tokens across managed firewall fleets.
+- Upgrade Palo Alto Networks PAN-OS software installations immediately to official vendor-supplied fixed release builds.
+- Restrict public internet visibility of PAN-OS management interfaces by placing management ports on isolated out-of-band VLANs.
+- Inspect web server access logs for anomalous HTTP POST requests targeting administrative management subroutines.
+- Invalidate active administrative session cookies and execute mandatory account credential rotations across managed firewalls.
 
-Perimeter firewall controller defense relies on strict management interface isolation and rapid hotfix deployment to ensure edge access gateways remain shielded from unauthenticated session forgery attacks. #CodeDefence #Sophos #Firewall #AuthBypass #PerimeterSecurity #NetworkSecurity #ZeroDay #AppSec #PatchManagement
+Perimeter firewall controller defense demands immediate patch execution and strict out-of-band management isolation to ensure edge security controllers remain shielded from unauthenticated remote code execution. #CodeDefence #PaloAltoNetworks #PANOS #Firewall #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>SolarWinds patches critical Access Rights Manager remote code execution flaw CVE-2026-107220</title>
-  <link>https://codedefence.in/blog/2026/10/15/solarwinds-patches-critical-access-rights-manager-rce-cve-2026-107220</link>
-  <pubDate>Thu, 05 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/15/solarwinds-patches-critical-access-rights-manager-rce-cve-2026-107220</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-107220</cd:cve>
-  <cd:mentions>@[SolarWinds](urn:li:organization:15161044)</cd:mentions>
+  <title>CISA adds Atlassian Data Center file access vulnerability CVE-2026-21589 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/10/16/cisa-adds-atlassian-data-center-file-access-vulnerability-cve-2026-21589-to-kev</link>
+  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/cisa-adds-atlassian-data-center-file-access-vulnerability-cve-2026-21589-to-kev</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-21589</cd:cve>
+  <cd:mentions>@[Atlassian](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Enterprise identity auditing software maintainers have released security maintenance updates to address a high severity remote code execution vulnerability in access governance tools. Unauthenticated remote actors can exploit deserialization errors to execute commands under SYSTEM privileges.
+Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, issuing a priority remediation mandate for a collaboration platform flaw actively weaponized in wild intrusion campaigns. Threat actors exploit path handling errors to access arbitrary system files containing database credentials and encryption keys.
 
-The security update fixes deserialization vulnerability CVE-2026-107220 affecting SolarWinds Access Rights Manager ARM software installations. The defect resides within background RPC processing daemons handling administrative configuration requests. Unauthenticated remote adversaries transmit malformed serialized objects over port 55555 to trigger untrusted object deserialization, executing arbitrary operating system commands with SYSTEM privileges on the host server. Official security bulletins urge enterprise IT administrators to apply current fixed release builds.
+The catalog addition covers Atlassian Data Center path traversal flaw CVE-2026-21589 carrying a CVSS score of 9.8. The vulnerability affects self-hosted Confluence, Jira, Bitbucket, and Crowd Data Center platforms. Unauthenticated remote adversaries transmit crafted HTTP requests to bypass directory restrictions, reading cleartext database connection credentials and system configuration files. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory October 18 compliance deadline.
 
-Subverting access rights management servers exposes Active Directory authorization structures and enterprise identity records. Because ARM tools manage user provisioning, group policy audits, and Active Directory permissions, a host-level compromise permits threat actors to extract directory credentials and manipulate access control lists.
+Subverting central enterprise collaboration suites introduces severe software development and credential exposure risks. Because Atlassian Data Center platforms hold proprietary source code repositories, project roadmaps, and central database connection strings, unauthenticated file access allows threat actors to harvest deployment secrets and pivot into enterprise cloud infrastructure.
 
-- Upgrade SolarWinds Access Rights Manager ARM installations immediately to official fixed release build 2026.4 or higher.
-- Restrict inbound network connectivity to ARM RPC management ports using internal host firewalls and network segmentation rules.
-- Inspect ARM server process trees for unauthorized shell invocations originating from the SolarWinds service daemon process.
-- Audit Active Directory administrative group memberships and access rights changes processed during recent management windows.
+- Upgrade self-hosted Atlassian Confluence, Jira, Bitbucket, and Crowd Data Center platforms to current patched release builds immediately.
+- Gate public network exposure of Atlassian administrative web portals using zero trust access control proxies.
+- Inspect application access logs for anomalous URI requests attempting directory traversal or configuration file reads.
+- Rotate database connection credentials, administrative passwords, and integration secrets stored within server configuration files.
 
-Identity auditing platform defense demands rigid input deserialization sanitization and strict RPC interface isolation to ensure access governance servers remain protected from unauthenticated remote command execution. #CodeDefence #SolarWinds #ARM #ActiveDirectory #IdentitySecurity #RCE #Deserialization #AppSec #PatchManagement
+Enterprise application suite defense demands strict path sanitization and prompt patch deployment to ensure central collaboration servers remain protected against unauthenticated file access exploits. #CodeDefence #Atlassian #Jira #Confluence #Bitbucket #CISA #KEV #FileAccess #AppSec #PatchManagement
   ]]></description>
 </item>
 
