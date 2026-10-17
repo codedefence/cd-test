@@ -2,81 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 16 October 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 17 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 16 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 17 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 16 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 17 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 17 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Chinese state hackers exploit BeyondTrust Remote Support zero day CVE-2026-102764 and erase security logs</title>
-  <link>https://codedefence.in/blog/2026/10/16/chinese-state-hackers-exploit-beyondtrust-zero-day-cve-2026-102764</link>
-  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/chinese-state-hackers-exploit-beyondtrust-zero-day-cve-2026-102764</guid>
+  <title>CISA adds BeyondTrust Remote Support zero day CVE-2026-102764 and Fortinet flaw CVE-2025-61624 to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/10/17/cisa-adds-beyondtrust-zero-day-cve-2026-102764-and-fortinet-to-kev</link>
+  <pubDate>Sat, 17 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/17/cisa-adds-beyondtrust-zero-day-cve-2026-102764-and-fortinet-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-102764</cd:cve>
+  <cd:cve>CVE-2026-102764‚ CVE-2025-61624</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cyber threat investigation advisories published today confirm active state-sponsored zero-day exploitation targeting remote support platforms. Threat actors leveraged unauthenticated command execution logic to gain administrative access across corporate appliances and deleted forensic event logs to cover post-compromise activity.
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04 to mandate emergency remediation for two actively weaponized perimeter access flaws. Unauthenticated remote adversaries exploit origin validation and path traversal bugs to achieve root privileges across enterprise remote support servers and security appliances.
 
-The vulnerability, tracked as CVE-2026-102764, impacts BeyondTrust Remote Support and Privileged Remote Access self-hosted appliances. Suspected Chinese espionage group Armory Castle weaponized the zero-day to deploy custom web shell backdoors, execute memory-resident proxy tools, and extract stored credentials. Forensic analyses confirm the group executed automated cleanup scripts upon completion, wiping web server access logs and system audit trails to prevent detection. Security updates have been distributed under advisory BT26-05.
+The catalog additions feature BeyondTrust Remote Support and Privileged Remote Access authentication bypass vulnerability CVE-2026-102764 carrying a CVSS score of 9.3 alongside Fortinet path traversal flaw CVE-2025-61624. Confirmed threat telemetry indicates Chinese state-nexus group Armory Castle actively exploited the BeyondTrust zero-day for nearly seven weeks prior to disclosure, deploying custom web shells and wiping local system logs. Federal civilian executive branch agencies face a mandatory November 7 compliance deadline.
 
-Subverting privileged remote access appliances gives threat actors unmonitored access to internal network infrastructure. Because remote support platforms hold elevated administrative access to client endpoints, an unauthenticated host compromise permits state-backed actors to move laterally across enterprise networks while deleting event logs to blind security operations centers.
+Subverting privileged remote access gateways exposes internal enterprise subnets and managed endpoints. Because BeyondTrust appliances maintain elevated administrative connections to remote endpoints, an unauthenticated gateway takeover permits threat actors to extract stored vault credentials, execute arbitrary commands, and move laterally across corporate networks.
 
-- Force immediate security update installation published under advisory BT26-05 across self-hosted BeyondTrust appliances.
-- Centralize event log forwarding to off-box SIEM repositories to ensure log deletion routines cannot destroy forensic evidence.
-- Inspect network perimeter traffic for unauthorized outgoing connections originating from remote support server subnets.
-- Audit privileged user account credentials managed within remote access vaults and execute mandatory credential rotations.
+- Apply official maintenance updates published in advisory BT26-05 across all self-hosted BeyondTrust appliances immediately.
+- Centralize event log forwarding to off-box SIEM systems to prevent local log deletion routines from destroying forensic evidence.
+- Restrict public network exposure of BeyondTrust and Fortinet management portals using zero trust access proxies.
+- Rotate administrative credentials managed within privileged remote access vaults and inspect active user session logs.
 
-Privileged remote access security relies on off-box audit logging and rapid patch execution to ensure administrative gateways remain protected against state-sponsored zero-day exploitation chains. #CodeDefence #BeyondTrust #ZeroDay #CyberEspionage #AppSec #IncidentResponse #Logging #ThreatIntelligence
+Privileged remote access security relies on off-box audit logging and rapid patch execution to ensure administrative gateways remain protected against state-sponsored zero-day exploitation chains. #CodeDefence #BeyondTrust #Fortinet #CISA #KEV #ZeroDay #AuthBypass #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Palo Alto Networks issues emergency security updates for actively exploited PAN OS RCE flaw CVE-2026-0322</title>
-  <link>https://codedefence.in/blog/2026/10/16/palo-alto-networks-issues-emergency-updates-pan-os-rce-cve-2026-0322</link>
-  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/palo-alto-networks-issues-emergency-updates-pan-os-rce-cve-2026-0322</guid>
+  <title>Hackers use compromised ConnectWise credentials to sign in to 173 Microsoft 365 tenant environments</title>
+  <link>https://codedefence.in/blog/2026/10/17/hackers-use-compromised-connectwise-credentials-to-access-microsoft-365-tenants</link>
+  <pubDate>Sat, 17 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/17/hackers-use-compromised-connectwise-credentials-to-access-microsoft-365-tenants</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-0322</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[ConnectWise](urn:li:organization:15161044)‚ @[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Emergency perimeter security advisories published today warn of widespread wild exploitation targeting firewall management interfaces. Unauthenticated remote adversaries transmit malformed HTTP queries to execute arbitrary operating system commands with root privileges across exposed appliances.
+Cloud security incident response writeups published today detail an ongoing supply chain intrusion campaign targeting managed service provider integration accounts. Threat actors compromised administrative application credentials to bypass multi-factor authentication controls across client cloud tenants.
 
-The high-severity vulnerability, tracked as CVE-2026-0322 with a CVSS score of 9.8, impacts Palo Alto Networks PAN-OS software management web interfaces. The defect stems from improper input validation subroutines handling administrative web requests. Unauthenticated remote attackers submit malformed parameter payloads to bypass boundary checks, achieving arbitrary command execution under root privileges. Threat telemetry confirms active scanning and exploitation probes attempting to drop reverse shells on internet-facing management portals.
+The attack campaign involved the compromise of service credentials associated with ConnectWise Cloud Backup formerly SkyKick. Unauthenticated remote threat actors leveraged the stolen administrative credentials to gain unauthorized access across 173 Microsoft 365 tenant environments globally. Adversaries exploited the elevated service permissions to query user directories, export mailbox contents, and create rogue administrative OAuth application registrations. ConnectWise disabled affected application access tokens while conducting incident remediation.
 
-Subverting firewall management interfaces destroys perimeter security controls and single sign-on boundaries. Because PAN-OS firewalls manage site-to-site VPN tunnels, routing policies, and security inspection rules, an unauthenticated administrative compromise allows threat actors to disable security profiles, harvest local credentials, and pivot into backend subnets.
+Subverting managed service provider cloud backup accounts destroys tenant isolation and cloud identity boundaries. Because MSP backup integrations hold elevated delegation permissions across customer cloud environments, stolen application credentials allow threat actors to access client data without triggering account password reset alerts.
 
-- Upgrade Palo Alto Networks PAN-OS software installations immediately to official vendor-supplied fixed release builds.
-- Restrict public internet visibility of PAN-OS management interfaces by placing management ports on isolated out-of-band VLANs.
-- Inspect web server access logs for anomalous HTTP POST requests targeting administrative management subroutines.
-- Invalidate active administrative session cookies and execute mandatory account credential rotations across managed firewalls.
+- Revoke and rotate all ConnectWise Cloud Backup service principal integration tokens and delegated administrative permissions.
+- Audit Microsoft Entra ID audit logs across managed tenants for unverified administrative logins or OAuth consent grants.
+- Enforce strict conditional access policies restricting administrative API calls to trusted IP ranges and compliant devices.
+- Review service provider partner access relationships and restrict global admin rights across delegated tenant integrations.
 
-Perimeter firewall controller defense demands immediate patch execution and strict out-of-band management isolation to ensure edge security controllers remain shielded from unauthenticated remote code execution. #CodeDefence #PaloAltoNetworks #PANOS #Firewall #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
+Cloud supply chain security requires rigorous partner permission auditing and continuous service principal monitoring to ensure corporate cloud tenants remain protected against supply chain account hijacking. #CodeDefence #ConnectWise #Microsoft365 #EntraID #SupplyChain #IdentitySecurity #CloudSecurity #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Atlassian Data Center file access vulnerability CVE-2026-21589 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/16/cisa-adds-atlassian-data-center-file-access-vulnerability-cve-2026-21589-to-kev</link>
-  <pubDate>Fri, 16 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/16/cisa-adds-atlassian-data-center-file-access-vulnerability-cve-2026-21589-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-21589</cd:cve>
-  <cd:mentions>@[Atlassian](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>OpenBSD kernel root exploit chains 37 year old shared memory integer overflow bug</title>
+  <link>https://codedefence.in/blog/2026/10/17/openbsd-kernel-root-exploit-chains-37-year-old-shared-memory-bug</link>
+  <pubDate>Sat, 17 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/17/openbsd-kernel-root-exploit-chains-37-year-old-shared-memory-bug</guid>
+  <cd:severity>HIGH</cd:severity>
   <description><![CDATA[
-Federal cybersecurity authorities have expanded the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, issuing a priority remediation mandate for a collaboration platform flaw actively weaponized in wild intrusion campaigns. Threat actors exploit path handling errors to access arbitrary system files containing database credentials and encryption keys.
+Operating system vulnerability research writeups published today detail a local privilege escalation exploit chain bypassing advanced kernel security protections. Security analysts demonstrated full root execution on hardened operating system kernels by combining legacy integer overflow logic with kernel memory bugs.
 
-The catalog addition covers Atlassian Data Center path traversal flaw CVE-2026-21589 carrying a CVSS score of 9.8. The vulnerability affects self-hosted Confluence, Jira, Bitbucket, and Crowd Data Center platforms. Unauthenticated remote adversaries transmit crafted HTTP requests to bypass directory restrictions, reading cleartext database connection credentials and system configuration files. Under Binding Operational Directive 26-04, federal civilian executive branch agencies face a mandatory October 18 compliance deadline.
+The privilege escalation exploit targets OpenBSD 7.9 kernel architecture. Security researchers chained a 37-year-old integer overflow in shared-memory handling subroutines with a separate kernel memory corruption flaw. The exploit chain successfully bypassed OpenBSD KARL kernel-address randomization, alongside hardware-enforced SMAP Supervisor Mode Access Prevention and SMEP Supervisor Mode Execution Protection, allowing local unprivileged users to execute arbitrary commands under root privileges. Official kernel errata patches have been released by OpenBSD maintainers.
 
-Subverting central enterprise collaboration suites introduces severe software development and credential exposure risks. Because Atlassian Data Center platforms hold proprietary source code repositories, project roadmaps, and central database connection strings, unauthenticated file access allows threat actors to harvest deployment secrets and pivot into enterprise cloud infrastructure.
+Subverting secure operating system kernels highlights persistent risks associated with legacy codebases. When local threat actors achieve privilege escalation on secure server hosts, adversaries gain capabilities to disable system logging, unhook security agents, and access protected memory spaces.
 
-- Upgrade self-hosted Atlassian Confluence, Jira, Bitbucket, and Crowd Data Center platforms to current patched release builds immediately.
-- Gate public network exposure of Atlassian administrative web portals using zero trust access control proxies.
-- Inspect application access logs for anomalous URI requests attempting directory traversal or configuration file reads.
-- Rotate database connection credentials, administrative passwords, and integration secrets stored within server configuration files.
+- Apply official kernel errata patches published by OpenBSD maintainers across all deployed 7.9 server instances.
+- Restrict local unprivileged user shell access on critical server hosts to minimize local execution vectors.
+- Monitor host system audit logs for anomalous shared-memory allocation requests or kernel crash dumps.
+- Enforce strict file system permissions across system binaries to prevent unauthorized local privilege escalation.
 
-Enterprise application suite defense demands strict path sanitization and prompt patch deployment to ensure central collaboration servers remain protected against unauthenticated file access exploits. #CodeDefence #Atlassian #Jira #Confluence #Bitbucket #CISA #KEV #FileAccess #AppSec #PatchManagement
+Operating system kernel defense demands continuous legacy code auditing and rapid errata patch application to ensure hardened server platforms remain protected against local privilege escalation exploit chains. #CodeDefence #OpenBSD #Kernel #PrivilegeEscalation #Root #SystemSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
