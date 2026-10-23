@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
+                    xmlns:cd="https://codedefence.in/rss/extensions">
+<channel>
+  <title>Code Defence Intelligence Brief — Fri, 23 October 2026</title>
+  <link>https://codedefence.in/executive-briefing</link>
+  <description>Daily cybersecurity intelligence for Fri, 23 October 2026.</description>
+  <language>en-us</language>
+  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 23 October 2026 18:30:00 +0300</lastBuildDate>
+
+<item>
+  <title>Mirai botnets launch global exploitation sweeps targeting PHP2Shell core memory corruption flaws CVE-2026-109618 and CVE-2026-109619</title>
+  <link>https://codedefence.in/blog/2026/10/23/mirai-botnets-launch-global-sweeps-targeting-php2shell-core-flaws</link>
+  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/mirai-botnets-launch-global-sweeps-targeting-php2shell-core-flaws</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-109618‚ CVE-2026-109619</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Global threat intelligence telemetry confirms automated botnet infrastructure launching mass exploitation waves targeting web server runtimes. Threat actors leverage uninitialized memory allocation bugs in core request processing to execute remote code and enlist web hosts into Mirai botnet clusters.
+
+The critical vulnerabilities, tracked as CVE-2026-109618 and CVE-2026-109619 with CVSS v4.0 scores of 9.2, affect PHP engine releases 5.4 through 8.5. The security flaws reside within array hash table allocation subroutines handling multipart HTTP POST requests. Unauthenticated remote adversaries transmit malformed payload requests to corrupt internal memory structures, achieving remote command execution under the web daemon context before web application code executes. Threat telemetry tracks rotating proxy arrays dropping Mirai cryptominers and web shells.
+
+Subverting central web engine runtimes compromises core internet hosting infrastructure. Because PHP processes requests for a major share of global web applications, an unauthenticated core remote code execution flaw allows threat actors to establish persistent web shell backdoors, hijack host compute resources, and pivot into backend database subnets.
+
+- Upgrade production PHP environments immediately to patched maintenance releases 8.5.12, 8.4.27, 8.3.36, or 8.2.35.
+- Restrict multipart/form-data POST requests at reverse proxies or web application firewalls for non-upload endpoints.
+- Inspect web server hosting roots for unauthorized shell scripts or newly modified executable files.
+- Monitor host process trees for anomalous command prompt or shell invocations originating from PHP worker processes.
+
+Web application engine defense requires immediate dependency patch application and strict edge request filtering to ensure hosting infrastructure remains protected against automated botnet exploitation. #CodeDefence #PHP #PHP2Shell #Mirai #Botnet #RCE #AppSec #WebSecurity #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>CISA reaches October 23 federal patch deadline for Plex2Shell media server vulnerability chain</title>
+  <link>https://codedefence.in/blog/2026/10/23/cisa-reaches-october-23-deadline-plex2shell-vulnerability-chain</link>
+  <pubDate>Fri, 23 October 2023 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/cisa-reaches-october-23-deadline-plex2shell-vulnerability-chain</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-96652‚ CVE-2026-96656</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Federal civilian executive branch agencies face today's mandatory compliance deadline under Known Exploited Vulnerabilities catalog directives to remediate or disconnect edge media server software. Threat actors actively chain multiple API flaws to execute arbitrary commands across exposed host systems.
+
+The mandatory remediation mandate covers Plex Media Server vulnerabilities CVE-2026-96652 through CVE-2026-96656. Threat intelligence confirms adversaries actively weaponized the exploit chain, dubbed Plex2Shell, to bypass API access controls, execute directory traversal writes, and install cryptomining malware across exposed edge nodes. CISA ordered federal agencies to enforce official maintenance updates or remove exposed instances from public routing.
+
+Subverting edge application servers installed across remote work infrastructure provides threat actors with initial network footholds. When unmonitored edge applications contain unauthenticated exploit chains, adversaries can compromise host operating systems, steal cached credentials, and pivot into corporate VPN networks.
+
+- Apply official vendor security updates across all deployed Plex Media Server instances immediately.
+- Restrict public internet visibility of media server management interfaces using zero trust access control proxies.
+- Inspect host system process trees for unauthorized shell daemons spawned by media server background processes.
+- Segment home-office and remote worker edge devices onto dedicated subnets isolated from corporate VPN tunnels.
+
+Edge software security relies on strict API endpoint sanitization and rapid patch execution to ensure remote worker infrastructure remains protected against automated exploit chains. #CodeDefence #Plex2Shell #Plex #RCE #CISA #KEV #EdgeSecurity #RemoteWork #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Signal addresses hot mic logic vulnerability in call tear down state machine</title>
+  <link>https://codedefence.in/blog/2026/10/23/signal-addresses-hot-mic-logic-vulnerability-call-tear-down</link>
+  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/signal-addresses-hot-mic-logic-vulnerability-call-tear-down</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Signal](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Encrypted messaging platform maintainers have distributed emergency client updates to fix a logic flaw in voice call state machines. The vulnerability allowed audio capture streams to remain active and transmitting for up to 30 seconds after a user disconnected a call.
+
+The security issue affected Signal desktop and mobile messaging applications. A race condition within WebRTC session termination subroutines failed to immediately signal local audio capture drivers upon user disconnect initiation. As a result, when a user hung up a call, the local microphone stream continued capturing ambient audio and transmitting encrypted packets to the remote endpoint until session cleanup timers expired. Signal developers deployed out-of-band client updates to force instant driver teardown.
+
+Subverting secure voice session state machines exposes sensitive verbal communications to unintentional eavesdropping. Because enterprise executives and security personnel rely on encrypted messaging tools for confidential conversations, lingering audio streams introduce significant eavesdropping and privacy risks.
+
+- Update Signal desktop and mobile applications immediately to the latest patched client releases across all enterprise devices.
+- Enforce automated application patch management policies via Mobile Device Management MDM solutions.
+- Inspect application permission controls on mobile endpoints to restrict background microphone execution rights.
+- Brief corporate personnel on verifying call termination states when conducting sensitive verbal communications.
+
+Secure communication application defense demands rigid state machine validation and rapid client patch deployment to ensure encrypted messaging channels remain completely protected from audio leaks. #CodeDefence #Signal #Eavesdropping #MobileSecurity #Encryption #AppSec #Privacy #PatchManagement
+  ]]></description>
+</item>
+
+</channel>
+</rss>
