@@ -2,81 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 23 October 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 24 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 23 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 24 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 23 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 24 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Mirai botnets launch global exploitation sweeps targeting PHP2Shell core memory corruption flaws CVE-2026-109618 and CVE-2026-109619</title>
-  <link>https://codedefence.in/blog/2026/10/23/mirai-botnets-launch-global-sweeps-targeting-php2shell-core-flaws</link>
-  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/mirai-botnets-launch-global-sweeps-targeting-php2shell-core-flaws</guid>
+  <title>CISA adds actively exploited Collabora Online document leak CVE-2026-10521 and Arista VeloCloud SD WAN flaws to KEV catalog</title>
+  <link>https://codedefence.in/blog/2026/10/24/cisa-adds-collabora-online-and-arista-velocloud-flaws-to-kev</link>
+  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/cisa-adds-collabora-online-and-arista-velocloud-flaws-to-kev</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-10521</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 22-01, issuing emergency patch mandates for two actively weaponized enterprise software vulnerabilities. Unauthenticated remote adversaries exploit document rendering handlers and SD-WAN management portals to exfiltrate corporate files and execute arbitrary code across perimeter subnets.
+
+The emergency additions feature Collabora Online unauthenticated document leakage vulnerability CVE-2026-10521 alongside remote command execution flaws impacting Arista VeloCloud SD-WAN edge appliances. Threat telemetry confirms adversaries actively weaponizing Collabora rendering endpoints embedded in Nextcloud and cloud storage servers to leak unencrypted document buffers and session tokens. Federal civilian executive branch agencies face a mandatory October 26 compliance deadline to apply official vendor security updates.
+
+Subverting cloud document servers and SD-WAN perimeter routers destroys data confidentiality and network boundary controls. Because Collabora servers process sensitive enterprise files in memory and VeloCloud gateways manage corporate site-to-site traffic routing, unauthenticated exploitation permits threat actors to extract confidential records and pivot into core production subnets.
+
+- Force immediate installation of official maintenance updates across all self-hosted Collabora Online document server instances.
+- Apply emergency security patches published for Arista VeloCloud SD-WAN edge routers and restrict WAN management access.
+- Restrict public internet visibility of Collabora rendering endpoints by placing document servers behind zero trust access proxies.
+- Inspect network perimeter logs for anomalous data exfiltration volumes or unverified administrative calls targeting SD-WAN gateways.
+
+Enterprise cloud suite defense demands rapid patch execution and strict microsegmentation to ensure document collaboration infrastructure and SD-WAN perimeters remain protected against active wild exploitation. #CodeDefence #Collabora #Arista #VeloCloud #CISA #KEV #CloudSecurity #SDWAN #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>Global WAF telemetry tracks Black October automated scanning wave targeting PHP2Shell core vulnerabilities</title>
+  <link>https://codedefence.in/blog/2026/10/24/global-waf-telemetry-tracks-black-october-automated-scanning-php2shell</link>
+  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/global-waf-telemetry-tracks-black-october-automated-scanning-php2shell</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-109618‚ CVE-2026-109619</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Global threat intelligence telemetry confirms automated botnet infrastructure launching mass exploitation waves targeting web server runtimes. Threat actors leverage uninitialized memory allocation bugs in core request processing to execute remote code and enlist web hosts into Mirai botnet clusters.
+Cyber threat research writeups published today warn of unprecedented automated scanning volumes hitting global web application firewalls. Security analysts dubbed the ongoing campaign Black October as automated botnets attempt mass exploitation of memory allocation defects in core web runtimes.
 
-The critical vulnerabilities, tracked as CVE-2026-109618 and CVE-2026-109619 with CVSS v4.0 scores of 9.2, affect PHP engine releases 5.4 through 8.5. The security flaws reside within array hash table allocation subroutines handling multipart HTTP POST requests. Unauthenticated remote adversaries transmit malformed payload requests to corrupt internal memory structures, achieving remote command execution under the web daemon context before web application code executes. Threat telemetry tracks rotating proxy arrays dropping Mirai cryptominers and web shells.
+The ongoing attack wave targets PHP core vulnerabilities CVE-2026-109618 and CVE-2026-109619. Unauthenticated remote adversaries transmit malformed multipart HTTP request headers designed to trigger uninitialized array hash table allocation bugs, executing remote system commands under the web server context before application logic processes incoming traffic. Security telemetry indicates threat groups utilizing automated script arrays to scan millions of IP addresses per hour, attempting to plant persistent web shells and cryptominers.
 
-Subverting central web engine runtimes compromises core internet hosting infrastructure. Because PHP processes requests for a major share of global web applications, an unauthenticated core remote code execution flaw allows threat actors to establish persistent web shell backdoors, hijack host compute resources, and pivot into backend database subnets.
+Subverting core web application engines exposes hosting infrastructure and backend database servers. Because PHP processes web traffic for enterprise web portals, digital storefronts, and cloud APIs, an unauthenticated core remote code execution flaw allows threat actors to establish covert footholds and exfiltrate database credentials.
 
-- Upgrade production PHP environments immediately to patched maintenance releases 8.5.12, 8.4.27, 8.3.36, or 8.2.35.
-- Restrict multipart/form-data POST requests at reverse proxies or web application firewalls for non-upload endpoints.
-- Inspect web server hosting roots for unauthorized shell scripts or newly modified executable files.
-- Monitor host process trees for anomalous command prompt or shell invocations originating from PHP worker processes.
+- Upgrade production PHP web application runtimes immediately to fixed maintenance releases 8.5.12, 8.4.27, 8.3.36, or 8.2.35.
+- Configure web application firewall WAF rules to inspect and strip malformed multipart POST requests on non-upload endpoints.
+- Inspect web server hosting directories for unauthorized shell scripts or newly modified executable files.
+- Monitor host process execution trees for anomalous command prompt or shell invocations originating from web worker daemons.
 
-Web application engine defense requires immediate dependency patch application and strict edge request filtering to ensure hosting infrastructure remains protected against automated botnet exploitation. #CodeDefence #PHP #PHP2Shell #Mirai #Botnet #RCE #AppSec #WebSecurity #PatchManagement
+Web application runtime defense requires rapid dependency patch execution and strict edge request filtering to ensure central web hosting infrastructure remains protected against automated botnet exploitation. #CodeDefence #PHP #PHP2Shell #RCE #AppSec #WebSecurity #ZeroDay #PatchManagement #ThreatIntelligence #DevSecOps
   ]]></description>
 </item>
 
 <item>
-  <title>CISA reaches October 23 federal patch deadline for Plex2Shell media server vulnerability chain</title>
-  <link>https://codedefence.in/blog/2026/10/23/cisa-reaches-october-23-deadline-plex2shell-vulnerability-chain</link>
-  <pubDate>Fri, 23 October 2023 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/cisa-reaches-october-23-deadline-plex2shell-vulnerability-chain</guid>
+  <title>CERT In issues mandatory security advisory governing autonomous AI agent deployments across enterprise networks</title>
+  <link>https://codedefence.in/blog/2026/10/24/cert-in-issues-mandatory-security-advisory-governing-ai-agent-deployments</link>
+  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/cert-in-issues-mandatory-security-advisory-governing-ai-agent-deployments</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-96652‚ CVE-2026-96656</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal civilian executive branch agencies face today's mandatory compliance deadline under Known Exploited Vulnerabilities catalog directives to remediate or disconnect edge media server software. Threat actors actively chain multiple API flaws to execute arbitrary commands across exposed host systems.
+National cybersecurity regulators have issued formal security guidance establishing mandatory risk controls for organizations deploying autonomous artificial intelligence agents. The advisory highlights emerging attack vectors where automated agent reasoning chains are manipulated to execute unauthorized system commands or exfiltrate corporate data.
 
-The mandatory remediation mandate covers Plex Media Server vulnerabilities CVE-2026-96652 through CVE-2026-96656. Threat intelligence confirms adversaries actively weaponized the exploit chain, dubbed Plex2Shell, to bypass API access controls, execute directory traversal writes, and install cryptomining malware across exposed edge nodes. CISA ordered federal agencies to enforce official maintenance updates or remove exposed instances from public routing.
+The regulatory directive released by CERT-In outlines key security requirements for agent-based AI integrations. The framework flags risks associated with indirect prompt injection, goal hijacking, and unmonitored non-human identity API privileges. Mandated controls include enforcing least-privilege role-based access limits on AI agents, implementing mandatory human-in-the-loop checkpoints for high-stakes financial transactions or database modifications, and maintaining immutable audit logs of agent decision pathways.
 
-Subverting edge application servers installed across remote work infrastructure provides threat actors with initial network footholds. When unmonitored edge applications contain unauthenticated exploit chains, adversaries can compromise host operating systems, steal cached credentials, and pivot into corporate VPN networks.
+Granting excessive system execution permissions to autonomous AI agents introduces severe software supply chain and data governance risks. When AI agents process untrusted external context or email bodies without input sanitization, malicious payloads can hijack agent reasoning loops, forcing agents to exfiltrate database records or execute unauthorized API calls.
 
-- Apply official vendor security updates across all deployed Plex Media Server instances immediately.
-- Restrict public internet visibility of media server management interfaces using zero trust access control proxies.
-- Inspect host system process trees for unauthorized shell daemons spawned by media server background processes.
-- Segment home-office and remote worker edge devices onto dedicated subnets isolated from corporate VPN tunnels.
+- Enforce least-privilege scoping across non-human service principal tokens and API integration keys assigned to AI agents.
+- Implement human-in-the-loop authorization gates for autonomous AI agent actions involving database writes or financial transactions.
+- Deploy input sanitization layers to strip indirect prompt injection payloads from external web pages, emails, and document strings.
+- Maintain centralized, immutable logging of AI agent reasoning steps, API calls, and decision outputs for forensic auditing.
 
-Edge software security relies on strict API endpoint sanitization and rapid patch execution to ensure remote worker infrastructure remains protected against automated exploit chains. #CodeDefence #Plex2Shell #Plex #RCE #CISA #KEV #EdgeSecurity #RemoteWork #AppSec
-  ]]></description>
-</item>
-
-<item>
-  <title>Signal addresses hot mic logic vulnerability in call tear down state machine</title>
-  <link>https://codedefence.in/blog/2026/10/23/signal-addresses-hot-mic-logic-vulnerability-call-tear-down</link>
-  <pubDate>Fri, 23 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/23/signal-addresses-hot-mic-logic-vulnerability-call-tear-down</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Signal](urn:li:organization:15161044)</cd:mentions>
-  <description><![CDATA[
-Encrypted messaging platform maintainers have distributed emergency client updates to fix a logic flaw in voice call state machines. The vulnerability allowed audio capture streams to remain active and transmitting for up to 30 seconds after a user disconnected a call.
-
-The security issue affected Signal desktop and mobile messaging applications. A race condition within WebRTC session termination subroutines failed to immediately signal local audio capture drivers upon user disconnect initiation. As a result, when a user hung up a call, the local microphone stream continued capturing ambient audio and transmitting encrypted packets to the remote endpoint until session cleanup timers expired. Signal developers deployed out-of-band client updates to force instant driver teardown.
-
-Subverting secure voice session state machines exposes sensitive verbal communications to unintentional eavesdropping. Because enterprise executives and security personnel rely on encrypted messaging tools for confidential conversations, lingering audio streams introduce significant eavesdropping and privacy risks.
-
-- Update Signal desktop and mobile applications immediately to the latest patched client releases across all enterprise devices.
-- Enforce automated application patch management policies via Mobile Device Management MDM solutions.
-- Inspect application permission controls on mobile endpoints to restrict background microphone execution rights.
-- Brief corporate personnel on verifying call termination states when conducting sensitive verbal communications.
-
-Secure communication application defense demands rigid state machine validation and rapid client patch deployment to ensure encrypted messaging channels remain completely protected from audio leaks. #CodeDefence #Signal #Eavesdropping #MobileSecurity #Encryption #AppSec #Privacy #PatchManagement
+Artificial intelligence governance demands rigid permission boundaries and continuous decision auditing to ensure autonomous agent workflows remain protected against indirect prompt injection and goal hijacking exploitation. #CodeDefence #AISecurity #CERT_In #AIGovernance #PromptInjection #IdentitySecurity #APISecurity #DevSecOps #AppSec
   ]]></description>
 </item>
 
