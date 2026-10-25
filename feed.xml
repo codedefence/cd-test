@@ -2,80 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 24 October 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 25 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 24 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 25 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 24 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 25 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 25 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds actively exploited Collabora Online document leak CVE-2026-10521 and Arista VeloCloud SD WAN flaws to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/24/cisa-adds-collabora-online-and-arista-velocloud-flaws-to-kev</link>
-  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/cisa-adds-collabora-online-and-arista-velocloud-flaws-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-10521</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 22-01, issuing emergency patch mandates for two actively weaponized enterprise software vulnerabilities. Unauthenticated remote adversaries exploit document rendering handlers and SD-WAN management portals to exfiltrate corporate files and execute arbitrary code across perimeter subnets.
-
-The emergency additions feature Collabora Online unauthenticated document leakage vulnerability CVE-2026-10521 alongside remote command execution flaws impacting Arista VeloCloud SD-WAN edge appliances. Threat telemetry confirms adversaries actively weaponizing Collabora rendering endpoints embedded in Nextcloud and cloud storage servers to leak unencrypted document buffers and session tokens. Federal civilian executive branch agencies face a mandatory October 26 compliance deadline to apply official vendor security updates.
-
-Subverting cloud document servers and SD-WAN perimeter routers destroys data confidentiality and network boundary controls. Because Collabora servers process sensitive enterprise files in memory and VeloCloud gateways manage corporate site-to-site traffic routing, unauthenticated exploitation permits threat actors to extract confidential records and pivot into core production subnets.
-
-- Force immediate installation of official maintenance updates across all self-hosted Collabora Online document server instances.
-- Apply emergency security patches published for Arista VeloCloud SD-WAN edge routers and restrict WAN management access.
-- Restrict public internet visibility of Collabora rendering endpoints by placing document servers behind zero trust access proxies.
-- Inspect network perimeter logs for anomalous data exfiltration volumes or unverified administrative calls targeting SD-WAN gateways.
-
-Enterprise cloud suite defense demands rapid patch execution and strict microsegmentation to ensure document collaboration infrastructure and SD-WAN perimeters remain protected against active wild exploitation. #CodeDefence #Collabora #Arista #VeloCloud #CISA #KEV #CloudSecurity #SDWAN #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>Global WAF telemetry tracks Black October automated scanning wave targeting PHP2Shell core vulnerabilities</title>
-  <link>https://codedefence.in/blog/2026/10/24/global-waf-telemetry-tracks-black-october-automated-scanning-php2shell</link>
-  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/global-waf-telemetry-tracks-black-october-automated-scanning-php2shell</guid>
+  <title>Palo Alto Networks confirms PAN OS management interfaces affected by PHP2Shell RCE vulnerabilities</title>
+  <link>https://codedefence.in/blog/2026/10/25/palo-alto-networks-confirms-pan-os-affected-by-php2shell</link>
+  <pubDate>Sun, 25 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/25/palo-alto-networks-confirms-pan-os-affected-by-php2shell</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-109618‚ CVE-2026-109619</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cyber threat research writeups published today warn of unprecedented automated scanning volumes hitting global web application firewalls. Security analysts dubbed the ongoing campaign Black October as automated botnets attempt mass exploitation of memory allocation defects in core web runtimes.
+Enterprise firewall vendor advisories updated today confirm perimeter management interfaces are affected by recent core web engine vulnerabilities. Unauthenticated remote adversaries transmit malformed HTTP request headers to corrupt memory structures within management web daemons.
 
-The ongoing attack wave targets PHP core vulnerabilities CVE-2026-109618 and CVE-2026-109619. Unauthenticated remote adversaries transmit malformed multipart HTTP request headers designed to trigger uninitialized array hash table allocation bugs, executing remote system commands under the web server context before application logic processes incoming traffic. Security telemetry indicates threat groups utilizing automated script arrays to scan millions of IP addresses per hour, attempting to plant persistent web shells and cryptominers.
+The security advisory impacts Palo Alto Networks PAN-OS software managing Next-Generation Firewalls. The underlying vulnerabilities, tracked as CVE-2026-109618 and CVE-2026-109619, stem from uninitialized memory allocation defects in PHP request processing handlers. Unauthenticated remote actors transmit malformed POST requests to trigger use-after-free memory corruption, executing arbitrary system commands under administrative privileges before application logic processes incoming traffic. Vendor bulletins detail scheduled emergency hotfixes rolling out between October 26 and October 28.
 
-Subverting core web application engines exposes hosting infrastructure and backend database servers. Because PHP processes web traffic for enterprise web portals, digital storefronts, and cloud APIs, an unauthenticated core remote code execution flaw allows threat actors to establish covert footholds and exfiltrate database credentials.
+Subverting firewall management portals undermines perimeter network controls and access boundaries. Because PAN-OS appliances terminate VPN connections and manage access control lists, an unauthenticated administrative compromise allows threat actors to disable security inspection engines, harvest local credentials, and move laterally across internal subnets.
 
-- Upgrade production PHP web application runtimes immediately to fixed maintenance releases 8.5.12, 8.4.27, 8.3.36, or 8.2.35.
-- Configure web application firewall WAF rules to inspect and strip malformed multipart POST requests on non-upload endpoints.
-- Inspect web server hosting directories for unauthorized shell scripts or newly modified executable files.
-- Monitor host process execution trees for anomalous command prompt or shell invocations originating from web worker daemons.
+- Restrict public internet access to PAN-OS management interfaces immediately, placing management ports on isolated out-of-band VLANs.
+- Apply official PAN-OS maintenance hotfixes 10.2.18-h13, 11.1.16-h4, and 11.2.10-h16 as vendor release builds become available.
+- Inspect web server access logs for malformed multipart HTTP POST requests targeting administrative management endpoints.
+- Invalidate active administrative session cookies and execute mandatory account password resets across managed firewalls.
 
-Web application runtime defense requires rapid dependency patch execution and strict edge request filtering to ensure central web hosting infrastructure remains protected against automated botnet exploitation. #CodeDefence #PHP #PHP2Shell #RCE #AppSec #WebSecurity #ZeroDay #PatchManagement #ThreatIntelligence #DevSecOps
+Perimeter firewall defense requires immediate out-of-band management isolation and rapid hotfix deployment to ensure edge security controllers remain protected against unauthenticated remote code execution. #CodeDefence #PaloAltoNetworks #PANOS #PHP2Shell #RCE #Firewall #PerimeterSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>CERT In issues mandatory security advisory governing autonomous AI agent deployments across enterprise networks</title>
-  <link>https://codedefence.in/blog/2026/10/24/cert-in-issues-mandatory-security-advisory-governing-ai-agent-deployments</link>
-  <pubDate>Sat, 24 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/24/cert-in-issues-mandatory-security-advisory-governing-ai-agent-deployments</guid>
-  <cd:severity>HIGH</cd:severity>
+  <title>Developer platforms revoke thousands of stolen AI model API keys after Railway and OpenRouter breaches</title>
+  <link>https://codedefence.in/blog/2026/10/25/developer-platforms-revoke-stolen-ai-api-keys-after-railway-openrouter-breaches</link>
+  <pubDate>Sun, 25 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/25/developer-platforms-revoke-stolen-ai-api-keys-after-railway-openrouter-breaches</guid>
+  <cd:severity>CRITICAL</cd:severity>
   <description><![CDATA[
-National cybersecurity regulators have issued formal security guidance establishing mandatory risk controls for organizations deploying autonomous artificial intelligence agents. The advisory highlights emerging attack vectors where automated agent reasoning chains are manipulated to execute unauthorized system commands or exfiltrate corporate data.
+Cloud platform incident disclosures published today confirm coordinated credential exfiltration targeting non-human identities. Threat actors breached developer infrastructure vaults to extract active third-party API integration tokens used for artificial intelligence services.
 
-The regulatory directive released by CERT-In outlines key security requirements for agent-based AI integrations. The framework flags risks associated with indirect prompt injection, goal hijacking, and unmonitored non-human identity API privileges. Mandated controls include enforcing least-privilege role-based access limits on AI agents, implementing mandatory human-in-the-loop checkpoints for high-stakes financial transactions or database modifications, and maintaining immutable audit logs of agent decision pathways.
+The security breaches impacted developer platforms Railway and OpenRouter. Unauthenticated remote adversaries exploited stolen platform credentials to access environment variable vaults, exfiltrating active API access keys for OpenAI, Anthropic, and Google Gemini model environments. Threat telemetry indicates adversaries harvested the stolen keys to run high-tier model inference workloads on victim billing accounts and query historical prompt contexts. Platform engineering teams forced global token revocations and reset environment secret stores.
 
-Granting excessive system execution permissions to autonomous AI agents introduces severe software supply chain and data governance risks. When AI agents process untrusted external context or email bodies without input sanitization, malicious payloads can hijack agent reasoning loops, forcing agents to exfiltrate database records or execute unauthorized API calls.
+Subverting non-human identity stores exposes enterprise cloud billing controls and confidential data pipelines. When third-party platform databases are compromised, exposed integration keys allow threat actors to bypass tenant authentication, access confidential prompt context, and execute high-velocity resource billing calls.
 
-- Enforce least-privilege scoping across non-human service principal tokens and API integration keys assigned to AI agents.
-- Implement human-in-the-loop authorization gates for autonomous AI agent actions involving database writes or financial transactions.
-- Deploy input sanitization layers to strip indirect prompt injection payloads from external web pages, emails, and document strings.
-- Maintain centralized, immutable logging of AI agent reasoning steps, API calls, and decision outputs for forensic auditing.
+- Rotate all artificial intelligence model API integration keys across production cloud environments and developer vaults immediately.
+- Enforce strict usage caps, rate-limiting rules, and IP whitelisting across model provider administration portals.
+- Inspect provider billing dashboards for anomalous token usage spikes or unverified API originations.
+- Store integration secrets exclusively within dedicated enterprise secret managers featuring automated rotation policies.
 
-Artificial intelligence governance demands rigid permission boundaries and continuous decision auditing to ensure autonomous agent workflows remain protected against indirect prompt injection and goal hijacking exploitation. #CodeDefence #AISecurity #CERT_In #AIGovernance #PromptInjection #IdentitySecurity #APISecurity #DevSecOps #AppSec
+Non-human identity governance demands continuous secret rotation and zero-trust API credential management to ensure cloud platform breaches do not lead to downstream artificial intelligence infrastructure exposure. #CodeDefence #Railway #OpenRouter #AISecurity #IdentitySecurity #APISecurity #CloudSecurity #DevSecOps #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Storm 0940 state actors abused ConnectWise credentials to infiltrate over 2250 Microsoft 365 tenants</title>
+  <link>https://codedefence.in/blog/2026/10/25/storm-0940-abused-connectwise-credentials-to-infiltrate-2250-microsoft-365-tenants</link>
+  <pubDate>Sun, 25 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/25/storm-0940-abused-connectwise-credentials-to-infiltrate-2250-microsoft-365-tenants</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
+  <description><![CDATA[
+Threat intelligence writeups published today expand the scope of an ongoing supply chain compromise targeting delegated cloud identity relationships. State-sponsored threat actors leveraged stolen vendor application credentials to bypass tenant multi-factor authentication controls globally.
+
+Post-incident telemetry linked the supply chain intrusion campaign to threat actor cluster Storm-0940. Adversaries utilized compromised service credentials associated with ConnectWise Cloud Backup to authenticate to Microsoft Entra ID endpoints. Because client tenants granted standing delegated administrative permissions to the integration, adversaries executed administrative API calls across more than 2,250 enterprise Microsoft 365 cloud environments, exfiltrating mailboxes and SharePoint repositories without deploying malware binaries.
+
+Relying on persistent delegated administrative permissions creates severe cloud identity exposure across managed service provider ecosystems. When a third-party vendor application credential is stolen, adversaries ride existing trust relationships directly into customer tenant environments without triggering password reset barriers.
+
+- Revoke all delegated administrative privileges and active OAuth integration tokens associated with ConnectWise Cloud Backup immediately.
+- Enforce granular, time-bound Partner Admin relationships GDAP across all managed Microsoft Entra ID tenants.
+- Audit cloud sign-in logs for high-volume service principal API calls originating from unverified external IP addresses.
+- Restrict OAuth application consent policies to require explicit administrator approval for all multi-tenant application integrations.
+
+Cloud identity governance requires continuous partner permission auditing and strict non-human identity monitoring to ensure enterprise cloud tenants remain protected against supply chain credential abuse. #CodeDefence #ConnectWise #Microsoft365 #Storm0940 #EntraID #SupplyChain #IdentitySecurity #CloudSecurity #AppSec
   ]]></description>
 </item>
 
