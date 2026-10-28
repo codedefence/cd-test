@@ -2,82 +2,79 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 27 October 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 28 October 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 27 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 28 October 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 27 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 27 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 28 October 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 28 October 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds PHP2Shell core memory corruption flaws CVE-2026-109618 and CVE-2026-109619 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/10/27/cisa-adds-php2shell-flaws-cve-2026-109618-cve-2026-109619-to-kev</link>
-  <pubDate>Tue, 27 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/27/cisa-adds-php2shell-flaws-cve-2026-109618-cve-2026-109619-to-kev</guid>
+  <title>Threat actors launch active wild probes targeting Oracle E Business Suite SQL injection RCE flaw CVE-2026-101767</title>
+  <link>https://codedefence.in/blog/2026/10/28/threat-actors-launch-probes-oracle-e-business-suite-cve-2026-101767</link>
+  <pubDate>Wed, 28 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/28/threat-actors-launch-probes-oracle-e-business-suite-cve-2026-101767</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-109618‚ CVE-2026-109619</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-101767</cd:cve>
+  <cd:mentions>@[Oracle](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have formally updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 22-01, issuing an emergency patch mandate for two core web engine flaws. Unauthenticated remote adversaries actively weaponize uninitialized memory allocation routines across web application runtimes to execute arbitrary system commands under the web server daemon context.
+Enterprise software security sensors confirm active wild exploitation probes targeting central enterprise resource planning deployments. Unauthenticated remote adversaries transmit malformed database queries to execute arbitrary commands under system administrator privileges.
 
-The catalog additions cover PHP core vulnerabilities CVE-2026-109618 and CVE-2026-109619, carrying CVSS scores of 9.8. The security defects reside in internal array hash table memory allocation subroutines when handling multipart HTTP POST request streams. Threat telemetry confirms global botnet scanning arrays broadcasting automated exploit payloads to drop web shell backdoors and cryptominers across unpatched web hosting infrastructure. Federal civilian executive branch agencies face a mandatory compliance patch deadline to update affected host systems.
+The maximum severity vulnerability, tracked as CVE-2026-101767 carrying a CVSS score of 9.8, impacts Oracle E-Business Suite EBS installations. The defect resides in Application Object Library subroutines processing unauthenticated web requests. Unauthenticated remote adversaries transmit crafted HTTP requests incorporating malicious SQL statements to achieve full database takeover and execute operating system commands on underlying enterprise application nodes. Threat intelligence decoys detected automated exploratory scanning hitting exposed ERP portals within days of vendor patch availability.
 
-Subverting central web engine runtimes presents severe systemic risks to corporate web portals, e-commerce platforms, and cloud microservices. Because PHP parses request payloads before application code executes, an unauthenticated core remote code execution flaw allows threat actors to establish persistent host backdoors and exfiltrate backend database credentials.
+Subverting central enterprise resource planning portals presents catastrophic operational and data confidentiality risks. Because Oracle EBS manages core business logic, financial ledgers, and supply chain records, an unauthenticated host takeover allows threat actors to manipulate financial transactions, exfiltrate sensitive enterprise data, and compromise production environments.
 
-- Upgrade production PHP environments immediately to patched maintenance releases 8.5.12, 8.4.27, 8.3.36, or 8.2.35.
-- Enforce web application firewall WAF rules to inspect and strip malformed multipart POST request bodies on non-upload endpoints.
-- Inspect web server process execution trees for unauthorized shell invocations originating from PHP worker daemons.
-- Isolate legacy unsupported PHP environments running version 8.1 or earlier behind strict zero trust access control proxies.
+- Force immediate installation of official Oracle October 2026 Critical Patch Update CPU fixes across all E-Business Suite hosts.
+- Restrict public internet access to Oracle EBS web interfaces, placing management endpoints on isolated internal subnets.
+- Configure web application firewall WAF inspection rules to detect and intercept malformed SQL syntax targeting EBS endpoints.
+- Inspect database access logs and operating system process trees for unverified administrative queries or anomalous shell spawns.
 
-Web runtime security demands immediate patch deployment and rigid edge request filtering to ensure central web hosting infrastructure remains protected against active wild exploitation. #CodeDefence #PHP #PHP2Shell #RCE #CISA #KEV #AppSec #WebSecurity #PatchManagement #DevSecOps
+Enterprise application defense demands rapid CPU patch execution and rigid interface boundary controls to ensure core ERP systems remain protected against unauthenticated SQL injection remote code execution. #CodeDefence #Oracle #EBS #SQLi #RCE #ERP #AppSec #PatchManagement #ThreatIntelligence
   ]]></description>
 </item>
 
 <item>
-  <title>Emergency out of band patches released for critical HTTP2Shell Brotli flaw CVE-2026-9721</title>
-  <link>https://codedefence.in/blog/2026/10/27/emergency-patches-released-for-critical-http2shell-brotli-flaw-cve-2026-9721</link>
-  <pubDate>Tue, 27 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/27/emergency-patches-released-for-critical-http2shell-brotli-flaw-cve-2026-9721</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-9721</cd:cve>
+  <title>Microsoft releases out of band Windows security updates to revoke trust in compromised eMudhra root certificates</title>
+  <link>https://codedefence.in/blog/2026/10/28/microsoft-releases-out-of-band-updates-revoking-emudhra-root-certificates</link>
+  <pubDate>Wed, 28 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/28/microsoft-releases-out-of-band-updates-revoking-emudhra-root-certificates</guid>
+  <cd:severity>HIGH</cd:severity>
   <cd:mentions>@[Microsoft](urn:li:organization:1035)</cd:mentions>
   <description><![CDATA[
-Software runtime maintainers have released emergency out-of-band security updates resolving a maximum severity memory corruption vulnerability in core decompression libraries. Unauthenticated remote actors can transmit malformed compressed HTTP data streams to trigger heap corruption and execute arbitrary system code.
+Operating system maintainers have distributed out-of-band security updates to modify central public key infrastructure trust anchors across enterprise host fleets. The security release revokes digital certificate trust following key compromise disclosures at a global Certificate Authority.
 
-The vulnerability, tracked as CVE-2026-9721 and dubbed HTTP2Shell (also Node2Shell and Broccoli2Shell) carrying a CVSS score of 9.8, affects the C-based Brotli decompression library integrated across Node.js, Microsoft .NET, and Rust runtime environments. The defect involves an integer overflow within decompression buffer allocation handlers. Unauthenticated remote adversaries transmit malformed Brotli-compressed HTTP response payloads to corrupt process heap memory, achieving arbitrary code execution on client applications and microservices parsing compressed network streams.
+The out-of-band Windows updates strip system trust from digital root certificates and intermediate keys issued by eMudhra Certificate Authority. Following disclosures confirming administrative key compromise, untrusted actors possessed capabilities to generate valid, signed SSL TLS certificates and code-signing binaries. Microsoft deployed emergency updates across client and server Windows releases to immediately invalidate eMudhra trust across Untrusted Certificates stores for hosts isolated from automatic online CTL updates.
 
-Subverting core compression runtimes introduces widespread supply chain risk across enterprise microservices and web crawlers. Because Brotli decompression runs automatically within application runtimes handling HTTP/2 and HTTP/3 traffic, unauthenticated memory corruption allows remote threat actors to execute arbitrary code without user interaction.
+Subverting trusted root certificate authorities undermines public key infrastructure trust boundaries across corporate networks. If threat actors possess compromised Certificate Authority keys, adversaries can execute man-in-the-middle traffic decryption and sign malicious executable files to bypass operating system security filters undetected.
 
-- Apply emergency out-of-band updates released for Node.js, Microsoft .NET framework, and Rust Brotli crate dependencies immediately.
-- Inspect cloud application container images for vulnerable Brotli library binaries and rebuild deployment artifacts.
-- Enforce egress web application proxy filtering to inspect incoming HTTP compressed responses for anomalous stream headers.
-- Restrict process execution privileges across microservice containers using fine-grained sandboxing policies.
+- Deploy out-of-band Windows security updates immediately across enterprise client and server host fleets.
+- Enforce automated Certificate Trust List CTL update enforcement across disconnected or air-gapped Active Directory domains.
+- Audit internal public key infrastructure stores and web gateway trust stores for unauthorized eMudhra root entries.
+- Inspect corporate web proxy logs for unverified SSL TLS certificates issued under revoked Certificate Authority hierarchies.
 
-Application runtime defense requires rapid dependency patch execution and strict container isolation to ensure microservice infrastructure remains insulated from unauthenticated decompression memory corruption exploits. #CodeDefence #HTTP2Shell #Brotli #NodeJS #DotNet #Microsoft #SupplyChain #RCE #AppSec #PatchManagement
+Public key infrastructure defense demands prompt trust anchor updating and continuous certificate revocation monitoring to ensure corporate endpoints remain protected against Certificate Authority key compromises. #CodeDefence #Microsoft #Windows #PKI #Certificates #Encryption #SecurityUpdate #AppSec #EndpointSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Apple backports CoreGraphics zero day patches to older iOS devices following wild targeted exploitation</title>
-  <link>https://codedefence.in/blog/2026/10/27/apple-backports-coregraphics-zero-day-patches-to-older-ios-devices</link>
-  <pubDate>Tue, 27 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/27/apple-backports-coregraphics-zero-day-patches-to-older-ios-devices</guid>
+  <title>Warp terminal discloses infrastructure breach exposing AI agent decision logs and user telemetry streams</title>
+  <link>https://codedefence.in/blog/2026/10/28/warp-terminal-discloses-breach-exposing-ai-agent-logs-telemetry</link>
+  <pubDate>Wed, 28 October 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/28/warp-terminal-discloses-breach-exposing-ai-agent-logs-telemetry</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-40938</cd:cve>
-  <cd:mentions>@[Apple](urn:li:organization:162479)</cd:mentions>
   <description><![CDATA[
-Mobile operating system vendor advisories published today detail out-of-band security releases extending critical zero-day protections to legacy mobile hardware. Malicious actors actively weaponized image processing memory corruption errors to execute targeted zero-click spyware intrusions against mobile endpoints.
+Developer platform maintainers have published security incident notifications detailing an infrastructure compromise impacting AI-enabled developer tools. Unauthenticated threat actors accessed cloud analytics storage, exfiltrating automated developer decision logs and execution context.
 
-The security release backports patches for CoreGraphics zero-day flaw CVE-2026-40938 to older iOS 16, iOS 17, and iPadOS builds. The vulnerability involves improper memory validation when processing malformed image files. Remote threat actors transmit crafted image payloads via messaging protocols, triggering buffer corruption to execute arbitrary system code with elevated privileges without requiring user interaction. Threat intelligence confirms targeted wild exploitation against high-value corporate endpoints.
+The infrastructure breach impacted vendor cloud hosting supporting the Warp agentic terminal environment. Unauthenticated remote threat actors exploited a vendor configuration error to access cloud telemetry repositories, exfiltrating non-human AI agent reasoning logs, terminal session telemetry, and prompt context histories belonging to enterprise developers. Engineering teams contained the storage endpoint, invalidated exposed session tokens, and initiated direct notifications to impacted customer accounts.
 
-Subverting core mobile image rendering frameworks allows adversaries to compromise mobile devices silently. Because CoreGraphics processes images across messaging applications and web browsers automatically, zero-click memory corruption vulnerabilities permit covert spyware deployment and credential harvesting across enterprise mobile fleets.
+Exposing agentic development telemetry and prompt execution logs introduces significant corporate data leakage and intellectual property exposure. Because AI terminal workflows parse local source code, environment variables, and shell commands, unencrypted log exposure allows threat actors to harvest sensitive internal repository context and infrastructure credentials.
 
-- Deploy out-of-band iOS and iPadOS security updates immediately across managed mobile device fleets via Mobile Device Management MDM.
-- Enforce Lockdown Mode on mobile endpoints assigned to high-risk personnel to restrict automated image parsing subroutines.
-- Inspect Mobile Device Management audit logs for unverified profile installations or anomalous device configuration changes.
-- Educate enterprise personnel on maintaining automatic operating system update enforcement across personal and corporate mobile devices.
+- Audit developer workstation configurations and rotate API tokens and credentials used within terminal environments.
+- Enforce strict telemetry masking policies across AI developer tools to scrub sensitive code strings and secrets before transmission.
+- Restrict non-human AI agent execution permissions and mandate isolated container environments for AI-assisted shell tasks.
+- Review developer access logs for anomalous credential activity or unauthorized repository cloning following recent windows.
 
-Mobile platform defense relies on prompt operating system patch deployment and rigid device management enforcement to ensure mobile endpoints remain protected against zero-click image processing exploits. #CodeDefence #Apple #iOS #ZeroDay #CoreGraphics #MobileSecurity #Spyware #AppSec #PatchManagement
+Developer platform governance demands rigid telemetry data sanitization and continuous credential rotation to ensure AI-enabled development tools do not expose sensitive internal codebase context. #CodeDefence #Warp #AISecurity #DevSecOps #Telemetry #DataProtection #AppSec #CloudSecurity #IdentitySecurity
   ]]></description>
 </item>
 
