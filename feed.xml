@@ -2,63 +2,84 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 31 October 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 01 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 31 October 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 01 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 31 October 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 31 October 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 01 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Ivanti Connect Secure flaws CVE-2026-111357 and CVE-2026-118527 to KEV after active exploit chaining</title>
-  <link>https://codedefence.in/blog/2026/10/31/cisa-adds-ivanti-connect-secure-flaws-cve-2026-111357-cve-2026-118527-to-kev</link>
-  <pubDate>Sat, 31 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/31/cisa-adds-ivanti-connect-secure-flaws-cve-2026-111357-cve-2026-118527-to-kev</guid>
+  <title>CISA reaches November 1 federal patch deadline for actively exploited GitLab integer overflow flaw CVE-2026-97229</title>
+  <link>https://codedefence.in/blog/2026/11/01/cisa-reaches-november-1-deadline-gitlab-integer-overflow-cve-2026-97229</link>
+  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/cisa-reaches-november-1-deadline-gitlab-integer-overflow-cve-2026-97229</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-111357‚ CVE-2026-118527‚ CVE-2026-104935</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-97229</cd:cve>
+  <cd:mentions>@[GitLab](urn:li:organization:10015502)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, issuing emergency patch mandates for two Ivanti Connect Secure flaws actively chained in wild attack campaigns. Remote threat actors chain authentication missing handlers with predictable disk file upload bugs to execute arbitrary code with root privileges.
+Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to patch or disconnect self-hosted DevOps platform servers. Unauthenticated remote adversaries actively weaponize integer wraparound logic errors to achieve arbitrary remote code execution across build runner nodes.
 
-The KEV catalog additions feature Ivanti Connect Secure flaws CVE-2026-111357 and CVE-2026-118527. Cyber threat intelligence reports confirm threat actors actively chain these flaws alongside previously disclosed authentication bypass zero day CVE-2026-104935. Unauthenticated remote adversaries transmit crafted HTTP requests to write malicious payloads to known disk locations, elevating local user permissions to full root control on target gateways. Affected software builds include versions prior to 25.1.1.3 and 22.8R2.6.
+The compliance mandate applies to GitLab Community Edition and Enterprise Edition vulnerability CVE-2026-97229 carrying a CVSS score of 10.0. The security defect resides within internal request buffer size allocation handlers during continuous integration pipeline compilation. Threat intelligence feeds confirm active wild exploitation attempts where adversaries transmit malformed request parameters to trigger integer wraparound conditions, crashing worker processes and executing arbitrary commands with elevated process privileges. Non-compliant federal endpoints face mandatory network disconnection.
 
-Subverting secure remote access gateways exposes single sign-on user sessions and internal enterprise networks. Because Ivanti Connect Secure appliances manage remote SSL VPN access, an unauthenticated root takeover permits threat actors to deploy web shell backdoors, capture user credentials, and move laterally across production subnets.
+Subverting central software development pipelines introduces severe software supply chain exposure across enterprise cloud environments. Because GitLab instances manage proprietary source repositories, build artifacts, and cloud secrets, unauthenticated host takeover permits threat actors to extract deployment credentials and compromise production software builds.
 
-- Upgrade Ivanti Connect Secure appliances immediately to fixed release builds 25.1.1.3 or 22.8R2.6.
-- Execute the official Ivanti Integrity Checking Tool ICT to inspect local appliance filesystems for unauthorized web shells or implants.
-- Restrict public internet routing to Ivanti management portals, placing management controls on isolated VLANs.
-- Invalidate active SSL VPN user session tokens and enforce mandatory credential rotations across administrative accounts.
+- Force immediate installation of official security release builds across all self-hosted GitLab CE and EE server instances.
+- Isolate self-hosted GitLab build runner nodes behind strict zero trust conditional access gateways.
+- Inspect CI CD build runner process logs for unauthorized shell invocations or unverified binary downloads.
+- Rotate repository deployment keys, API integration tokens, and production cloud secrets processed within build environments.
 
-Perimeter access controller defense requires rapid patch deployment and mandatory integrity checking to ensure remote access gateways remain completely protected from unauthenticated root exploit chains. #CodeDefence #Ivanti #ConnectSecure #AuthBypass #RCE #CISA #KEV #NetworkSecurity #AppSec #PatchManagement
+DevOps platform defense demands rapid patch execution and strict boundary isolation to ensure continuous integration build runners remain protected against unauthenticated command execution exploits. #CodeDefence #GitLab #DevSecOps #SupplyChain #RCE #CISA #KEV #BOD2604 #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Chainalysis discloses internal system breach resulting from offensive AI agentic techniques</title>
-  <link>https://codedefence.in/blog/2026/10/31/chainalysis-discloses-internal-system-breach-offensive-ai-agentic-techniques</link>
-  <pubDate>Sat, 31 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/31/chainalysis-discloses-internal-system-breach-offensive-ai-agentic-techniques</guid>
+  <title>Cisco Secure Email Gateway targeted in wild relative path traversal attacks CVE-2026-62104</title>
+  <link>https://codedefence.in/blog/2026/11/01/cisco-secure-email-gateway-targeted-in-wild-path-traversal-attacks</link>
+  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/cisco-secure-email-gateway-targeted-in-wild-path-traversal-attacks</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-62104</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Perimeter email security advisories published today warn of active wild exploitation targeting email security appliances. Remote unauthenticated threat actors exploit relative path traversal logic to write arbitrary files onto the underlying operating system and execute commands with root privileges.
+
+The vulnerability impacts Cisco AsyncOS software for Cisco Secure Email Gateway SEG appliances. The flaw involves improper validation of user-supplied input paths during HTTP request handling. Unauthenticated remote adversaries transmit malformed URI parameters containing path traversal sequences, writing arbitrary executable files to system directories and achieving remote command execution under operating system root context. Threat telemetry indicates threat actors actively probing internet-facing gateway appliances to establish persistent web shell backdoors.
+
+Subverting perimeter email gateways undermines organizational communication security and perimeter boundaries. Because Cisco Secure Email Gateway appliances process incoming corporate email streams, inspect attachments, and enforce anti-phishing rules, an unauthenticated root compromise allows threat actors to intercept message traffic, alter security policies, and pivot into internal subnets.
+
+- Apply official software maintenance releases published by Cisco across all managed Secure Email Gateway appliances immediately.
+- Restrict public internet visibility of gateway administrative management web portals using isolated out-of-band VLANs.
+- Inspect appliance file system logs for unauthorized script writes or unverified administrative file modifications.
+- Rotate administrative credentials and TLS certificates configured on managed email gateway appliances.
+
+Perimeter gateway defense requires immediate patch application and rigid management interface isolation to ensure email security appliances remain protected against unauthenticated file write zero-days. #CodeDefence #Cisco #SecureEmailGateway #PathTraversal #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>F5 BIG IP APM heap buffer overflow vulnerability CVE-2026-8812 exploited for unauthenticated remote code execution</title>
+  <link>https://codedefence.in/blog/2026/11/01/f5-big-ip-apm-heap-buffer-overflow-cve-2026-8812-exploited-rce</link>
+  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/f5-big-ip-apm-heap-buffer-overflow-cve-2026-8812-exploited-rce</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Chainalysis](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-8812</cd:cve>
+  <cd:mentions>@[F5](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Blockchain analytics platform maintainers have published security incident notifications detailing an intrusion into internal infrastructure. External adversaries utilized automated agentic artificial intelligence frameworks to gain unauthorized access to internal systems and exfiltrate user identity records.
+Application delivery controller threat updates detail active exploitation targeting identity and access policy management gateways. Unauthenticated remote adversaries exploit memory boundary errors to cause heap memory corruption and execute arbitrary code on exposed virtual servers.
 
-The security incident impacted internal customer identity tools at Chainalysis. Forensic investigations confirmed external adversaries deployed offensive agentic AI capabilities to scan, locate, and access internal database stores without authorization. Exfiltrated records contain platform user IDs, full names, corporate email addresses, and organizational role tags. Company disclosures confirm that core investigation content, session tokens, and authentication credentials remained unaffected.
+The vulnerability, tracked as CVE-2026-8812, affects F5 BIG-IP Access Policy Manager APM systems configured with an access policy and an OAuth profile on a virtual server. The defect stems from improper memory boundary checks during OAuth token parsing. Unauthenticated remote attackers transmit malformed HTTP connection requests to trigger a heap-based buffer overflow, overwriting process memory structures to achieve remote code execution under the context of the underlying service daemon process.
 
-Subverting cloud identity stores via offensive AI agentic techniques highlights the accelerating speed of automated intrusion toolkits. As adversaries leverage autonomous AI agents to automate reconnaissance and exploit execution, security teams face compressed containment windows and heightened phishing exposure across impacted enterprise personnel.
+Subverting access policy gateways compromises perimeter single sign-on boundaries and application authentication. Because BIG-IP APM virtual servers enforce access control policies across corporate web applications, an unauthenticated gateway takeover permits threat actors to bypass authentication controls and access protected backend systems.
 
-- Enforce mandatory two-factor authentication 2FA using hardware security keys across all platform user accounts.
-- Inspect enterprise identity monitoring systems for unverified password reset requests or suspicious login prompts.
-- Implement strict egress filtering and behavioral rate-limiting across cloud API endpoints handling customer identity data.
-- Educate organization personnel to recognize social engineering and recruitment scams impersonating analytics platform staff.
+- Upgrade BIG-IP APM software installations immediately to official vendor-supplied fixed release builds.
+- Disable vulnerable OAuth profile configurations on public virtual servers where emergency patches cannot be immediately applied.
+- Inspect BIG-IP system access logs for malformed HTTP requests containing unexpected OAuth token payload lengths.
+- Enforce strict web application firewall WAF rules to inspect and drop malformed HTTP headers targeting APM endpoints.
 
-Cloud platform governance demands rigid access boundaries and continuous behavioral monitoring to ensure corporate identity repositories remain insulated from autonomous AI agent exploitation campaigns. #CodeDefence #Chainalysis #AISecurity #AgenticAI #DataBreach #IdentitySecurity #CloudSecurity #AppSec
+Access gateway defense depends on continuous memory safety validation and rapid hotfix deployment to ensure application delivery controllers remain protected against unauthenticated heap overflow exploits. #CodeDefence #F5 #BIGIP #APM #HeapOverflow #RCE #PerimeterSecurity #IdentitySecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
-<item>
-  <title>OpenAI patches critical ChatGPT shared link vulnerability permitting session hijacking and code execution</title>
-  <link>https://codedefence.in/blog/2026/10/31/openai-patches-critical-chatgpt-shared-link-session-hijacking-vulnerability</link>
-  <pubDate>Sat, 31 October 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/10/31/openai-patches-critical-chatgpt-shared-link-session-hijacking-vulnerability</guid>
-  <cd:severity>HIGH
+</channel>
+</rss>
