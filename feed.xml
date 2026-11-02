@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 01 November 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 02 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 01 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 02 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sun, 01 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 02 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 02 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA reaches November 1 federal patch deadline for actively exploited GitLab integer overflow flaw CVE-2026-97229</title>
-  <link>https://codedefence.in/blog/2026/11/01/cisa-reaches-november-1-deadline-gitlab-integer-overflow-cve-2026-97229</link>
-  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/cisa-reaches-november-1-deadline-gitlab-integer-overflow-cve-2026-97229</guid>
+  <title>Canonical LXD and MicroCloud max severity flaw CVE-2026-112816 allows client impersonation and root host access</title>
+  <link>https://codedefence.in/blog/2026/11/02/canonical-lxd-microcloud-max-severity-flaw-cve-2026-112816</link>
+  <pubDate>Mon, 02 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/02/canonical-lxd-microcloud-max-severity-flaw-cve-2026-112816</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-112816</cd:cve>
+  <cd:mentions>@[Canonical](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Cloud container and hypervisor infrastructure maintainers have issued out-of-band security updates to resolve a maximum-severity authentication vulnerability in cloud management interfaces. Remote unauthenticated threat actors can bypass cryptographic client authentication controls to hijack cluster resources and obtain full root control on underlying host servers.
+
+The vulnerability, tracked as CVE-2026-112816 with a CVSS v4.0 score of 10.0, affects Canonical LXD container hypervisors and MicroCloud system deployments. The defect stems from improper validation of TLS client certificates during remote API authentication handshakes. An unauthenticated remote adversary with network access to the HTTPS management API and possession of a trusted client's public certificate can authenticate as that client without presenting the corresponding private key. Impersonating an administrative client grants full remote control over cluster virtual machines, storage pools, and host operating system root privileges.
+
+Subverting cloud container hypervisors and cluster orchestration interfaces destroys tenant isolation and host security perimeters. Because LXD and MicroCloud manage production enterprise workloads and containerized microservices, unauthenticated administrative impersonation permits threat actors to deploy rogue virtual machines, access tenant memory spaces, and compromise core cloud infrastructure.
+
+- Upgrade Canonical LXD and MicroCloud installations immediately to official vendor-supplied fixed software releases.
+- Restrict public network routing to LXD and MicroCloud HTTPS API interfaces, limiting access to isolated management VLANs.
+- Audit active TLS client certificate trust stores and revoke unverified client authentication entries.
+- Inspect cluster access logs and API call streams for anomalous administrative requests originating from unverified IP addresses.
+
+Cloud container platform defense demands strict cryptographic authentication enforcement and rigid API control plane microsegmentation to ensure container hypervisors remain protected against unauthenticated client impersonation exploits. #CodeDefence #Canonical #LXD #MicroCloud #ContainerSecurity #CloudSecurity #RCE #AppSec #PatchManagement #DevSecOps
+  ]]></description>
+</item>
+
+<item>
+  <title>Ivanti patches two more Connect Secure zero days CVE-2026-111357 and CVE-2026-118527 chained in wild attacks</title>
+  <link>https://codedefence.in/blog/2026/11/02/ivanti-patches-two-more-connect-secure-zero-days-chained-in-wild-attacks</link>
+  <pubDate>Mon, 02 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/02/ivanti-patches-two-more-connect-secure-zero-days-chained-in-wild-attacks</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-111357‚ CVE-2026-118527‚ CVE-2026-104935</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Perimeter remote access gateway maintainers have distributed security updates resolving two newly identified zero-day vulnerabilities actively weaponized in wild compromise campaigns. Unauthenticated remote adversaries chain authentication missing logic and predictable file path errors to execute arbitrary operating system commands under root privileges.
+
+The security updates resolve Ivanti Connect Secure ICS vulnerabilities CVE-2026-111357 and CVE-2026-118527, which CISA added to the Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04. Threat intelligence disclosures from Volexity confirm threat group UTA0576 actively chained these flaws alongside authentication bypass zero-day CVE-2026-104935. By combining the three zero-days, adversaries bypassed security controls on fully patched appliances to deploy web shell backdoors, steal user credentials, exfiltrate internal configuration data, and alter event logs.
+
+Subverting secure remote access gateways destroys perimeter boundary protections across corporate networks. Because Ivanti Connect Secure appliances manage single sign-on user sessions and SSL VPN tunnel terminations, an unauthenticated root takeover allows threat actors to intercept corporate network traffic, exfiltrate active session tokens, and move laterally across internal subnets.
+
+- Upgrade Ivanti Connect Secure appliances immediately to official maintenance release builds 25.1.1.3 or 22.8R2.6.
+- Run the official Ivanti Integrity Checking Tool ICT to inspect local appliance filesystems for unauthorized web shell implants or modified binaries.
+- Isolate Ivanti management web interfaces behind zero trust access control proxies and enforce strict IP access control lists.
+- Invalidate active remote access user session tokens and execute mandatory administrative account password resets across managed appliances.
+
+Perimeter gateway defense requires immediate patch application and continuous integrity validation to ensure secure remote access controllers remain shielded from unauthenticated root takeover chains. #CodeDefence #Ivanti #ConnectSecure #AuthBypass #CISA #KEV #ZeroDay #UTA0576 #NetworkSecurity #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Over 1000 Internet exposed GitLab instances remain unpatched against actively exploited RCE flaw CVE-2026-97229</title>
+  <link>https://codedefence.in/blog/2026/11/02/over-1000-gitlab-instances-unpatched-actively-exploited-rce-cve-2026-97229</link>
+  <pubDate>Mon, 02 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/02/over-1000-gitlab-instances-unpatched-actively-exploited-rce-cve-2026-97229</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-97229</cd:cve>
   <cd:mentions>@[GitLab](urn:li:organization:10015502)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal civilian executive branch agencies face today's mandatory compliance deadline under Binding Operational Directive 26-04 to patch or disconnect self-hosted DevOps platform servers. Unauthenticated remote adversaries actively weaponize integer wraparound logic errors to achieve arbitrary remote code execution across build runner nodes.
+DevOps threat monitoring networks report significant global exposure following the passing of federal compliance patch deadlines. Security scans reveal over one thousand internet-exposed developer platform servers remaining unpatched against an actively exploited maximum-severity remote code execution vulnerability.
 
-The compliance mandate applies to GitLab Community Edition and Enterprise Edition vulnerability CVE-2026-97229 carrying a CVSS score of 10.0. The security defect resides within internal request buffer size allocation handlers during continuous integration pipeline compilation. Threat intelligence feeds confirm active wild exploitation attempts where adversaries transmit malformed request parameters to trigger integer wraparound conditions, crashing worker processes and executing arbitrary commands with elevated process privileges. Non-compliant federal endpoints face mandatory network disconnection.
+The ongoing threat activity targets self-hosted GitLab Community Edition and Enterprise Edition instances vulnerable to integer overflow flaw CVE-2026-97229 carrying a CVSS score of 10.0. Unauthenticated remote adversaries transmit malformed HTTP request parameters during pipeline execution handling to trigger integer wraparound memory corruption, achieving remote system command execution with elevated privileges on build runner nodes. Threat telemetry confirms automated botnet scanning arrays targeting exposed servers, including an incident where hackers attempted to compromise Alpine Linux development infrastructure.
 
-Subverting central software development pipelines introduces severe software supply chain exposure across enterprise cloud environments. Because GitLab instances manage proprietary source repositories, build artifacts, and cloud secrets, unauthenticated host takeover permits threat actors to extract deployment credentials and compromise production software builds.
+Subverting central continuous integration build servers exposes enterprise software supply chains to malicious code injection and repository theft. Because self-hosted GitLab instances manage proprietary source code, container registry credentials, and deployment secrets, unauthenticated host exploitation allows threat actors to compromise software release artifacts and pivot into cloud environments.
 
-- Force immediate installation of official security release builds across all self-hosted GitLab CE and EE server instances.
-- Isolate self-hosted GitLab build runner nodes behind strict zero trust conditional access gateways.
-- Inspect CI CD build runner process logs for unauthorized shell invocations or unverified binary downloads.
-- Rotate repository deployment keys, API integration tokens, and production cloud secrets processed within build environments.
+- Apply official security updates released for GitLab CE and EE instances immediately across all self-hosted server deployments.
+- Restrict public internet routing to GitLab management interfaces and CI CD build runners using zero trust conditional access proxies.
+- Inspect CI CD build runner process execution logs for anomalous shell commands, unauthorized package installations, or unverified script invocations.
+- Rotate repository deployment keys, API integration tokens, and production cloud secrets configured within build runner environments.
 
-DevOps platform defense demands rapid patch execution and strict boundary isolation to ensure continuous integration build runners remain protected against unauthenticated command execution exploits. #CodeDefence #GitLab #DevSecOps #SupplyChain #RCE #CISA #KEV #BOD2604 #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>Cisco Secure Email Gateway targeted in wild relative path traversal attacks CVE-2026-62104</title>
-  <link>https://codedefence.in/blog/2026/11/01/cisco-secure-email-gateway-targeted-in-wild-path-traversal-attacks</link>
-  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/cisco-secure-email-gateway-targeted-in-wild-path-traversal-attacks</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-62104</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Perimeter email security advisories published today warn of active wild exploitation targeting email security appliances. Remote unauthenticated threat actors exploit relative path traversal logic to write arbitrary files onto the underlying operating system and execute commands with root privileges.
-
-The vulnerability impacts Cisco AsyncOS software for Cisco Secure Email Gateway SEG appliances. The flaw involves improper validation of user-supplied input paths during HTTP request handling. Unauthenticated remote adversaries transmit malformed URI parameters containing path traversal sequences, writing arbitrary executable files to system directories and achieving remote command execution under operating system root context. Threat telemetry indicates threat actors actively probing internet-facing gateway appliances to establish persistent web shell backdoors.
-
-Subverting perimeter email gateways undermines organizational communication security and perimeter boundaries. Because Cisco Secure Email Gateway appliances process incoming corporate email streams, inspect attachments, and enforce anti-phishing rules, an unauthenticated root compromise allows threat actors to intercept message traffic, alter security policies, and pivot into internal subnets.
-
-- Apply official software maintenance releases published by Cisco across all managed Secure Email Gateway appliances immediately.
-- Restrict public internet visibility of gateway administrative management web portals using isolated out-of-band VLANs.
-- Inspect appliance file system logs for unauthorized script writes or unverified administrative file modifications.
-- Rotate administrative credentials and TLS certificates configured on managed email gateway appliances.
-
-Perimeter gateway defense requires immediate patch application and rigid management interface isolation to ensure email security appliances remain protected against unauthenticated file write zero-days. #CodeDefence #Cisco #SecureEmailGateway #PathTraversal #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>F5 BIG IP APM heap buffer overflow vulnerability CVE-2026-8812 exploited for unauthenticated remote code execution</title>
-  <link>https://codedefence.in/blog/2026/11/01/f5-big-ip-apm-heap-buffer-overflow-cve-2026-8812-exploited-rce</link>
-  <pubDate>Sun, 01 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/01/f5-big-ip-apm-heap-buffer-overflow-cve-2026-8812-exploited-rce</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:cve>CVE-2026-8812</cd:cve>
-  <cd:mentions>@[F5](urn:li:organization:15161044)</cd:mentions>
-  <description><![CDATA[
-Application delivery controller threat updates detail active exploitation targeting identity and access policy management gateways. Unauthenticated remote adversaries exploit memory boundary errors to cause heap memory corruption and execute arbitrary code on exposed virtual servers.
-
-The vulnerability, tracked as CVE-2026-8812, affects F5 BIG-IP Access Policy Manager APM systems configured with an access policy and an OAuth profile on a virtual server. The defect stems from improper memory boundary checks during OAuth token parsing. Unauthenticated remote attackers transmit malformed HTTP connection requests to trigger a heap-based buffer overflow, overwriting process memory structures to achieve remote code execution under the context of the underlying service daemon process.
-
-Subverting access policy gateways compromises perimeter single sign-on boundaries and application authentication. Because BIG-IP APM virtual servers enforce access control policies across corporate web applications, an unauthenticated gateway takeover permits threat actors to bypass authentication controls and access protected backend systems.
-
-- Upgrade BIG-IP APM software installations immediately to official vendor-supplied fixed release builds.
-- Disable vulnerable OAuth profile configurations on public virtual servers where emergency patches cannot be immediately applied.
-- Inspect BIG-IP system access logs for malformed HTTP requests containing unexpected OAuth token payload lengths.
-- Enforce strict web application firewall WAF rules to inspect and drop malformed HTTP headers targeting APM endpoints.
-
-Access gateway defense depends on continuous memory safety validation and rapid hotfix deployment to ensure application delivery controllers remain protected against unauthenticated heap overflow exploits. #CodeDefence #F5 #BIGIP #APM #HeapOverflow #RCE #PerimeterSecurity #IdentitySecurity #AppSec #PatchManagement
+Software development infrastructure security demands prompt dependency patch execution and strict build environment isolation to ensure continuous integration pipelines remain protected against unauthenticated command execution exploits. #CodeDefence #GitLab #DevSecOps #SupplyChain #RCE #CISA #KEV #AlpineLinux #AppSec #PatchManagement
   ]]></description>
 </item>
 
