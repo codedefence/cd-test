@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 03 November 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 04 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 03 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 04 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 03 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 03 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 04 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Google releases November 2026 Android security update patching over 200 flaws including zero click Framework RCE</title>
-  <link>https://codedefence.in/blog/2026/11/03/google-releases-november-2026-android-security-update-200-flaws</link>
-  <pubDate>Tue, 03 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/03/google-releases-november-2026-android-security-update-200-flaws</guid>
+  <title>WAVLINK router perfect CVSS 10 zero day CVE-2026-120345 exploited in wild DNS command injection attacks</title>
+  <link>https://codedefence.in/blog/2026/11/04/wavlink-router-perfect-cvss-10-zero-day-cve-2026-120345-exploited</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/wavlink-router-perfect-cvss-10-zero-day-cve-2026-120345-exploited</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <cd:cve>CVE-2026-120345</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Mobile operating system maintainers have published the November 2026 security bulletin resolving over two hundred security vulnerabilities across mobile device architectures. Unauthenticated remote adversaries can exploit core framework memory corruption errors to execute arbitrary code without user interaction.
+Network perimeter threat intelligence advisories issued today warn of active wild exploitation targeting wireless routing hardware. Unauthenticated remote adversaries transmit malformed DNS resolution requests over the public internet to execute arbitrary operating system commands under root administrative privileges.
 
-The monthly security update addresses over two hundred vulnerabilities affecting Android operating system components, led by critical zero-click remote code execution flaws in the Framework and System modules. Unauthenticated remote attackers transmit malformed wireless or network payloads to trigger memory corruption, achieving remote command execution under elevated system privileges. The updates also resolve two dozen critical-severity elevation of privilege and denial of service vulnerabilities across kernel and vendor driver components.
+The vulnerability, tracked as CVE-2026-120345 with a maximum CVSS score of 10.0, affects WAVLINK WN551X3-A routers running firmware build M51X3_V251020-WO-182e965. The defect resides within the DNS resolution handler function sub_41a430 inside the binary /bin/ioos. Unauthenticated remote threat actors submit crafted data arguments within DNS resolution requests to inject operating system commands directly into system execution subroutines. Threat telemetry confirms public exploit code is actively weaponized by automated scanning botnets targeting exposed SMB edge routers.
 
-Subverting core mobile operating system frameworks presents severe endpoint security risks across enterprise mobility fleets. Because Android devices process corporate emails, manage multi-factor authentication tokens, and connect to corporate Wi-Fi networks, unauthenticated zero-click remote code execution allows threat actors to install stealth spyware and exfiltrate corporate credentials.
+Subverting perimeter wireless routing devices undermines network boundary controls across small business and branch office networks. Because edge routers manage local IP routing, DNS resolution, and gateway access control lists, an unauthenticated remote command execution compromise permits adversaries to capture transit traffic, rewrite internal DNS records, and pivot into corporate subnets.
 
-- Deploy the November 2026 Android security update across enterprise mobile device fleets via Mobile Device Management MDM solutions immediately.
-- Enforce strict application control policies on corporate mobile endpoints to restrict unauthorized background execution.
-- Monitor mobile device management telemetry for unverified system modification attempts or anomalous process spawns.
-- Isolate unpatched legacy mobile hardware from internal enterprise Wi-Fi subnets and sensitive corporate data repositories.
+- Isolate WAVLINK WN551X3-A routing hardware from untrusted external interfaces immediately and verify vendor firmware updates.
+- Restrict remote WAN management and DNS query resolution interfaces to isolated, trusted IP ranges.
+- Inspect network gateway traffic for anomalous outbound connections or unverified DNS resolution payloads.
+- Replace unpatchable or end-of-life edge routing hardware with enterprise-grade access control gateways.
 
-Mobile platform security demands rapid operating system patch distribution and rigid device management enforcement to ensure corporate mobile endpoints remain protected against zero-click remote code execution exploits. #CodeDefence #Google #Android #RCE #ZeroClick #MobileSecurity #AppSec #PatchManagement #MDM
+Edge network hardware defense demands rigid parameter sanitization and immediate firmware updates to ensure gateway devices remain protected against unauthenticated remote command injection exploits. #CodeDefence #WAVLINK #RouterSecurity #CommandInjection #RCE #ZeroDay #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>CISA enforces KEV deadlines for Ivanti Connect Secure zero day attack chain CVE-2026-111357 and CVE-2026-118527</title>
-  <link>https://codedefence.in/blog/2026/11/03/cisa-enforces-kev-deadlines-ivanti-connect-secure-zero-day-attack-chain</link>
-  <pubDate>Tue, 03 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/03/cisa-enforces-kev-deadlines-ivanti-connect-secure-zero-day-attack-chain</guid>
+  <title>Google and law enforcement dismantle massive 1.3 million device XCPE Android TV botnet infrastructure</title>
+  <link>https://codedefence.in/blog/2026/11/04/google-dismantles-1.3-million-device-xcpe-android-tv-botnet</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/google-dismantles-1.3-million-device-xcpe-android-tv-botnet</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-111357‚ CVE-2026-118527‚ CVE-2026-104935</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives, mandating priority remediation for two Ivanti Connect Secure flaws weaponized in wild intrusion campaigns. Threat actors chain missing-authentication logic and predictable file path errors to execute arbitrary operating system commands under root privileges.
+Cyber threat infrastructure disclosures published today detail a major international law enforcement action targeting malicious botnet operations. Security teams severed command-and-control channels driving a global network of over one million compromised consumer devices.
 
-The security directives cover Ivanti Connect Secure vulnerabilities CVE-2026-111357 and CVE-2026-118527. Threat intelligence disclosures from Volexity confirm threat cluster UTA0576 actively chained these vulnerabilities alongside authentication bypass zero-day CVE-2026-104935. By combining the three zero-days, adversaries bypassed security controls on fully patched appliances to deploy web shell backdoors, extract user credentials, exfiltrate internal configuration data, and alter audit logs.
+The coordinated operation, led by Google Threat Intelligence alongside federal law enforcement agencies, disrupted the XCPE botnet. Threat actors infected over 1.3 million unmanaged Android TV streaming devices globally by exploiting unpatched firmware vulnerabilities and trojanized third-party media applications. The botnet operators weaponized compromised endpoints to conduct high-volume distributed denial-of-service attacks, proxy residential web traffic for fraud campaigns, and deliver secondary malware payloads. Command-and-control domain infrastructures were seized and sinkholed.
 
-Subverting secure remote access gateways destroys perimeter boundary protections across corporate networks. Because Ivanti Connect Secure appliances manage single sign-on user sessions and SSL VPN tunnel terminations, an unauthenticated root takeover allows threat actors to intercept corporate network traffic, exfiltrate active session tokens, and move laterally across internal subnets.
+Subverting edge internet-of-things devices introduces significant distributed network risk and residential proxy abuse across enterprise networks. When unmanaged streaming devices and smart hardware operate on corporate branch subnets, infected endpoints allow threat actors to anonymize malicious traffic and launch internal reconnaissance sweeps.
 
-- Force immediate installation of official Ivanti maintenance release builds 25.1.1.3 or 22.8R2.6 across all exposed appliances.
-- Run the official Ivanti Integrity Checking Tool ICT to inspect local appliance filesystems for unauthorized web shell implants or modified binaries.
-- Isolate Ivanti management web interfaces behind zero trust access control proxies and enforce strict IP access control lists.
-- Invalidate active remote access user session tokens and execute mandatory administrative account password resets across managed appliances.
+- Segment internet-of-things and smart TV streaming hardware onto dedicated, isolated guest network subnets.
+- Enforce strict egress network filtering to block unauthorized outbound connections originating from unmanaged endpoints.
+- Deploy automated endpoint detection tools to identify unverified proxy traffic traversing corporate network perimeters.
+- Audit enterprise network perimeters for unmanaged consumer IoT devices connected to internal production VLANs.
 
-Perimeter gateway defense requires immediate patch application and continuous integrity validation to ensure secure remote access controllers remain shielded from unauthenticated root takeover chains. #CodeDefence #Ivanti #ConnectSecure #AuthBypass #CISA #KEV #ZeroDay #UTA0576 #NetworkSecurity #AppSec
+Network infrastructure governance requires strict device isolation and continuous egress traffic monitoring to ensure unmanaged endpoint infections cannot compromise corporate enterprise operations. #CodeDefence #Google #XCPE #Botnet #AndroidTV #IoTSecurity #DDoS #NetworkSecurity #ThreatIntelligence #AppSec
   ]]></description>
 </item>
 
 <item>
-  <title>Investigative disclosures reveal North Korean hackers used fake job interviews in historic Binance asset heist</title>
-  <link>https://codedefence.in/blog/2026/11/03/investigative-disclosures-reveal-north-korean-hackers-used-fake-job-interviews</link>
-  <pubDate>Tue, 03 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/03/investigative-disclosures-reveal-north-korean-hackers-used-fake-job-interviews</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
+  <title>Trojanized Claude Code VS Code extension on Cursor marketplace exposes developer SSH keys and source code</title>
+  <link>https://codedefence.in/blog/2026/11/04/trojanized-claude-code-vs-code-extension-cursor-marketplace-exposes-developer-keys</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/trojanized-claude-code-vs-code-extension-cursor-marketplace-exposes-developer-keys</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Anthropic](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Cyber incident response writeups published today detail the primary infection vectors behind the historic multi-billion-dollar cryptocurrency breach. Threat actors utilized sophisticated social engineering campaigns impersonating corporate recruiters to deliver malicious developer tools and breach administrative workstations.
+Developer environment security alerts published today detail a supply-chain intrusion vector targeting software engineering workstations. Malicious actors distributed a fake artificial intelligence coding extension to install persistent backdoor access across developer endpoints.
 
-New forensic disclosures confirm North Korean state-sponsored threat group TraderTraitor executed a multi-month social engineering campaign targeting DevOps engineers. Adversaries created fake recruiting personas on professional networking platforms, inviting engineers to complete technical coding assessments. The assessment archives contained malicious Python dependencies designed to compromise local developer endpoints. Threat actors leveraged local developer session tokens to access internal service container clusters and submit unauthorized API withdrawal requests.
+The supply chain incident involved a trojanized extension impersonating Anthropic Claude Code distributed through the Cursor extension marketplace. Threat actors published the malicious extension under a typo-squatted developer identity, remaining active for 11 hours and infecting up to 5,000 developer environments. The embedded malicious payload executed post-install scripts to exfiltrate SSH private keys, cloud infrastructure API tokens, and local environment variables while installing persistent remote shell backdoors.
 
-Subverting administrative developer endpoints undermines containerized service architectures and cloud identity perimeters. When privileged developer machines lack strict hardware-backed access boundaries, local malware infections allow remote threat actors to hijack active administrative sessions and manipulate backend API containers.
+Subverting integrated development environment extension marketplaces presents severe software supply chain and credential theft risks. Because developer workstations hold elevated access to source code repositories, cloud hosting accounts, and continuous integration pipelines, unmonitored IDE extensions allow threat actors to compromise production software builds and pivot into enterprise cloud infrastructure.
 
-- Enforce hardware-backed security key authentication and strict device health verification for all developer endpoints.
-- Implement multi-signature and multi-party computation MPC approval gates for high-value container API actions.
-- Restrict developer endpoint access to internal production service containers using fine-grained ephemeral access tokens.
-- Monitor service container networks for anomalous high-velocity transaction submissions originating from developer subnets.
+- Audit developer workstation extensions immediately and remove unverified third-party tools installed from external marketplaces.
+- Force immediate rotation of all SSH private keys, cloud access tokens, and API credentials stored on compromised developer endpoints.
+- Enforce enterprise-managed extension whitelisting policies within developer IDE environments to block unverified installations.
+- Monitor developer endpoint process execution trees for unauthorized SSH session spawns or anomalous network connections.
 
-Enterprise cloud platform governance demands strict developer endpoint hardening and multi-factor transaction gating to ensure infrastructure containers remain insulated from social engineering workstation compromises. #CodeDefence #DevOps #ContainerSecurity #TraderTraitor #IdentitySecurity #SocialEngineering #AppSec #CloudSecurity
+Developer workstation defense demands strict marketplace extension governance and automated secret rotation to ensure software development environments remain protected against supply-chain extension compromises. #CodeDefence #Anthropic #ClaudeCode #Cursor #SupplyChain #DevSecOps #AppSec #EndpointSecurity #IdentitySecurity
   ]]></description>
 </item>
 
