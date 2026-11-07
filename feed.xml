@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 05 November 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 07 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 05 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 07 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 05 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 05 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 07 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds WordPress Core TOCTOU race condition vulnerability CVE-2026-119977 to KEV catalog</title>
-  <link>https://codedefence.in/blog/2026/11/05/cisa-adds-wordpress-core-toctou-race-condition-cve-2026-119977-to-kev</link>
-  <pubDate>Thu, 05 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/05/cisa-adds-wordpress-core-toctou-race-condition-cve-2026-119977-to-kev</guid>
+  <title>SonicWall patches actively exploited SonicOS VPN MFA bypass vulnerability CVE-2026-19868 added to CISA KEV</title>
+  <link>https://codedefence.in/blog/2026/11/07/sonicwall-patches-exploited-sonicos-vpn-mfa-bypass-cve-2026-19868</link>
+  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/07/sonicwall-patches-exploited-sonicos-vpn-mfa-bypass-cve-2026-19868</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-119977</cd:cve>
+  <cd:cve>CVE-2026-19868</cd:cve>
+  <cd:mentions>@[SonicWall](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Perimeter network security advisories published today confirm active wild exploitation targeting enterprise firewall SSL VPN gateways. Unauthenticated remote adversaries exploit single sign-on logic flaws to bypass SAML multi-factor authentication controls and establish persistent network footholds.
+
+The vulnerability, tracked as CVE-2026-19868 and added to the CISA Known Exploited Vulnerabilities catalog under Binding Operational Directive 26-04, impacts SonicOS running on SonicWall Gen7 and Gen8 firewall appliances. Remote threat actors holding credentials for alternate login methods send malformed SAML authentication assertions to bypass enforced multi-factor authentication checks, obtaining unauthorized remote access to corporate network perimeters. SonicWall released emergency firmware updates for versions 7.3.4-7013 and 8.2.3-8015, stating no administrative workarounds are available.
+
+Subverting secure remote access controllers destroys perimeter network boundaries across enterprise environments. Because SonicWall firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect internal network transit traffic, and move laterally across production subnets.
+
+- Upgrade SonicOS firmware installations immediately across Gen7 and Gen8 firewalls to maintenance builds 7.3.4-7013 or 8.2.3-8015.
+- Audit SAML identity provider configuration logs for anomalous single sign-on authentication assertions originating from unverified IP ranges.
+- Restrict public internet access to firewall management interfaces, placing administrative portals on isolated out-of-band VLANs.
+- Invalidate active remote access user session tokens and execute mandatory credential rotations across VPN user accounts.
+
+Perimeter firewall controller defense demands immediate firmware patch application and rigid identity provider verification to ensure corporate remote access gateways remain insulated from authentication bypass exploits. #CodeDefence #SonicWall #SonicOS #MFA #SAML #AuthBypass #CISA #KEV #NetworkSecurity #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>OpenSSH SSHole flaw CVE-2026-123158 targeted in wild honeypot root exploitation attempts</title>
+  <link>https://codedefence.in/blog/2026/11/07/openssh-sshole-flaw-cve-2026-123158-targeted-in-wild-honeypot-attacks</link>
+  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/07/openssh-sshole-flaw-cve-2026-123158-targeted-in-wild-honeypot-attacks</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-123158</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have formally updated the Known Exploited Vulnerabilities catalog under Binding Operational Directive 22-01, issuing an emergency patch mandate for a widespread content management system flaw. Unauthenticated remote adversaries actively weaponize a race condition timing window during automated core background updates to achieve remote code execution on target web host servers.
+Enterprise server infrastructure alerts issued today report automated scanning arrays targeting remote access authentication handlers within hours of public disclosure. Threat actors exploit authentication parsing logic errors to log into passwordless system accounts without presenting credentials.
 
-The catalog addition features WordPress Core vulnerability CVE-2026-119977. The defect involves a time-of-check time-of-use TOCTOU race condition in core file updating handlers. Unauthenticated remote adversaries transmit crafted concurrent HTTP requests during the exact execution window of a core software upgrade, overwriting temporary system files and executing arbitrary PHP code under the web daemon context. Security telemetry confirms threat actors using automated scanning toolkits to monitor exposed sites and trigger race execution payloads during update routines.
+The vulnerability, tracked as CVE-2026-123158 carrying a CVSS score of 8.1 and codenamed SSHole, impacts Linux environments running OpenSSH compiled against the musl C library with Pluggable Authentication Modules PAM disabled. Unauthenticated remote adversaries transmit crafted SSH authentication packets to bypass empty password verification subroutines, achieving instant remote shell access under root privileges on exposed hosts. Threat intelligence sensors detected automated exploitation attempts hitting public honeypots within hours of technical details circulating online.
 
-Subverting central content management systems exposes web hosting infrastructure, customer databases, and corporate public web portals. Because WordPress powers significant portions of public enterprise web infrastructure, an unauthenticated update race condition compromise permits threat actors to deploy web shell backdoors, dump database records, and pivot into internal subnets.
+Subverting secure shell authentication daemons presents immediate systemic risks to Linux server fleets, cloud container nodes, and embedded infrastructure. Because OpenSSH provides primary administrative access to Linux servers, an unauthenticated SSH authentication bypass allows threat actors to establish persistent root backdoors, harvest system secrets, and exfiltrate host data.
 
-- Enforce immediate update deployment across all self-hosted WordPress installations to ensure current maintenance builds are applied.
-- Restrict file system write permissions across public web hosting directories during core software update cycles.
-- Monitor web server HTTP access logs for high-frequency concurrent requests targeting background update endpoints.
-- Isolate web application hosting nodes behind web application firewalls configured to inspect malformed PHP upload streams.
+- Force immediate patch installation for OpenSSH packages across all Linux distributions and cloud container images.
+- Re-enable Pluggable Authentication Modules PAM or migrate OpenSSH installations to glibc-backed release builds.
+- Enforce public-key authentication exclusively, disabling password authentication and root login across sshd_config files.
+- Restrict inbound SSH port 22 access using strict firewall rules, zero trust access proxies, or bastions.
 
-Web platform defense requires rapid core update deployment and strict directory write isolation to ensure web hosting infrastructure remains protected against update-window race condition exploits. #CodeDefence #WordPress #RCE #TOCTOU #RaceCondition #CISA #KEV #AppSec #PatchManagement #WebSecurity
+Secure shell infrastructure security demands immediate package updating and zero trust network isolation to ensure enterprise Linux hosts remain protected against unauthenticated authentication bypass exploits. #CodeDefence #OpenSSH #SSHole #Linux #AuthBypass #RCE #ServerSecurity #AppSec #PatchManagement #ThreatIntelligence
   ]]></description>
 </item>
 
 <item>
-  <title>Zyxel fixes GS1900 series switch zero day CVE-2026-8819 exploited to compromise nearly 1000 devices</title>
-  <link>https://codedefence.in/blog/2026/11/05/zyxel-fixes-gs1900-switch-zero-day-cve-2026-8819-exploited-1000-devices</link>
-  <pubDate>Thu, 05 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/05/zyxel-fixes-gs1900-switch-zero-day-cve-2026-8819-exploited-1000-devices</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-8819</cd:cve>
-  <cd:mentions>@[Zyxel](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Networking hardware vendor advisories published today detail emergency firmware security updates addressing an actively weaponized zero-day vulnerability. Unauthenticated remote threat actors exploited a configuration export vulnerability across managed network switches to steal administrative credentials and compromise network control planes globally.
-
-The zero-day vulnerability, tracked as CVE-2026-8819, impacts Zyxel GS1900 series smart managed switches. Unauthenticated remote adversaries transmit malformed HTTP queries to public management interfaces, bypassing access controls to dump unencrypted system configuration files. Threat telemetry indicates threat actors exploited the flaw to compromise nearly 1,000 network switches worldwide, exfiltrating administrative passwords, SNMP community strings, and VLAN layout mappings.
-
-Subverting core network switching infrastructure undermines physical and logical network segmentation boundaries. Because GS1900 switches manage internal VLAN routing and endpoint connectivity, an unauthenticated management compromise permits threat actors to hijack network traffic, map internal subnets, and execute man-in-the-middle attacks across local networks.
-
-- Apply emergency firmware security updates released for Zyxel GS1900 series switches across all deployed hardware nodes immediately.
-- Restrict WAN-facing access to switch management web portals, limiting management interfaces to isolated out-of-band VLANs.
-- Rotate administrative account credentials, SNMP community strings, and access tokens across all managed switching hardware.
-- Audit switch configuration files and system event logs for unauthorized configuration modifications or anomalous admin logins.
-
-Network infrastructure security relies on strict management plane microsegmentation and immediate firmware patch execution to ensure layer-2 switching hardware remains protected against zero-day credential extraction attacks. #CodeDefence #Zyxel #SwitchSecurity #ZeroDay #CredentialTheft #NetworkSecurity #PerimeterSecurity #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>OpenAI agentic cyber pipeline generates 948 working Linux kernel root exploits in 30 hour test run</title>
-  <link>https://codedefence.in/blog/2026/11/05/openai-agentic-cyber-pipeline-generates-948-linux-kernel-root-exploits</link>
-  <pubDate>Thu, 05 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/05/openai-agentic-cyber-pipeline-generates-948-linux-kernel-root-exploits</guid>
+  <title>Claude Code persistent settings file exposes developer passwords and API keys across 1122 public GitHub repositories</title>
+  <link>https://codedefence.in/blog/2026/11/07/claude-code-settings-file-exposes-passwords-and-keys-across-public-github-repos</link>
+  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/07/claude-code-settings-file-exposes-passwords-and-keys-across-public-github-repos</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[OpenAI](urn:li:organization:15161044)</cd:mentions>
+  <cd:mentions>@[Anthropic](urn:li:organization:15161044)‚ @[GitHub](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Artificial intelligence vulnerability research disclosures published today detail unprecedented capabilities in automated exploit generation. Security researchers demonstrated an agentic AI framework discovering and proving hundreds of local privilege escalation bugs across operating system kernel source code in a single automated run.
+Developer security research writeups published today reveal widespread credential exposure stemming from automated AI coding assistant configuration files. Plaintext passwords, API tokens, and secret keys typed by developers into terminal commands were committed to public code repositories.
 
-The research pipeline developed by OpenAI utilized autonomous AI agents to audit Linux kernel source code. Over a 30-hour execution run, the multi-stage agentic workflow analyzed 2.8 million lines of code, identified candidate memory errors, and generated 948 unique, fully working local privilege escalation proof-of-concept exploits. The AI agents successfully bypassed active kernel hardening protections, including SMEP, SMAP, and KASLR, to acquire full local root execution privileges on isolated test virtual machines.
+The security finding involves Anthropic Claude Code command persistence mechanisms. When developers execute terminal commands through Claude Code and select the Don't Ask Again prompt confirmation, the AI assistant saves the full executed command string, including plaintext passwords, database connection credentials, and API access keys, into local project settings files. Developers subsequently committing project folders to public GitHub repositories accidentally exposed 1,122 public configuration files containing live infrastructure credentials.
 
-Demonstrating automated, large-scale generation of kernel root exploits highlights a fundamental shift in vulnerability discovery dynamics. As offensive AI capabilities accelerate exploit development timelines, defensive security teams can no longer rely on delayed patch cycles, requiring rapid kernel update enforcement and robust behavioral endpoint monitoring.
+Exposing corporate credentials and infrastructure secrets within public code repositories introduces severe software supply chain and cloud environment exposure. When secret tokens land on public code repositories, automated credential harvesting bots extract keys within seconds, allowing threat actors to hijack cloud hosting accounts, access private databases, and compromise software release pipelines.
 
-- Maintain strict, automated kernel patch management policies across all enterprise Linux server fleets and container hosts.
-- Deploy endpoint detection and response EDR agents capable of monitoring process execution behavior and memory corruption indicators.
-- Restrict local shell execution rights and unprivileged user capabilities across multi-tenant cloud container nodes.
-- Enforce strict container isolation boundaries to prevent local kernel privilege escalation bugs from compromising host OS nodes.
+- Add Claude Code local configuration settings files to global .gitignore files across all developer workstations immediately.
+- Scan corporate GitHub repositories and organization commits for exposed project configuration files containing plaintext secrets.
+- Execute immediate credential revocations and token rotations for all passwords, API keys, and access tokens committed to repositories.
+- Enforce automated pre-commit secret scanning hooks across developer workstations to block commits containing sensitive strings.
 
-Operating system kernel defense demands continuous patch validation and rigorous endpoint behavioral monitoring to ensure enterprise server fleets remain resilient against AI-accelerated privilege escalation exploit chains. #CodeDefence #OpenAI #AISecurity #Linux #Kernel #PrivilegeEscalation #RCE #DevSecOps #AppSec #EndpointSecurity
+Developer environment governance requires rigid secret scanning and continuous credential rotation to ensure AI coding tools do not inadvertently leak corporate infrastructure credentials into public code repositories. #CodeDefence #Anthropic #ClaudeCode #GitHub #SecretLeak #CredentialTheft #DevSecOps #AppSec #SupplyChain #IdentitySecurity
   ]]></description>
 </item>
 
