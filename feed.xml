@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 12 November 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 13 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 12 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 13 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 12 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 12 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 13 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Apache releases emergency patch for critical mod_http2 remote code execution flaw CVE-2026-119618</title>
-  <link>https://codedefence.in/blog/2026/11/12/apache-releases-emergency-patch-critical-mod-http2-rce-cve-2026-119618</link>
-  <pubDate>Thu, 12 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/12/apache-releases-emergency-patch-critical-mod-http2-rce-cve-2026-119618</guid>
+  <title>Unpatched Windows CLFS zero day exploit SignDrop enables SYSTEM privilege escalation</title>
+  <link>https://codedefence.in/blog/2026/11/13/unpatched-windows-clfs-zero-day-signdrop-enables-system-privilege-escalation</link>
+  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/unpatched-windows-clfs-zero-day-signdrop-enables-system-privilege-escalation</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-119618</cd:cve>
-  <cd:mentions>@[Apache Software Foundation](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Web server engine maintainers have distributed out-of-band security updates addressing a maximum-severity memory safety vulnerability in central web infrastructure. Unauthenticated remote adversaries can transmit malformed HTTP/2 stream headers to corrupt process heap memory and execute arbitrary commands under web server daemon privileges.
+Operating system security researchers have published a zero-day exploit targeting core Windows system log drivers and antimalware components. Local unprivileged users can exploit authentication driver subroutines to execute arbitrary file creation routines and gain full SYSTEM execution privileges on target hosts.
 
-The vulnerability, tracked as CVE-2026-119618 affecting Apache HTTP Server versions 2.4.55 through 2.4.70, resides within the assign_headers function of the mod_http2 module. Unauthenticated remote threat actors send malformed HTTP/2 request streams to trigger a race condition during header table cloning, causing heap corruption that permits arbitrary remote code execution. The flaw was independently discovered by Anthropic AI OSS Scanner and Google Cloud Vulnerability Research. Apache released version 2.4.71 to resolve the issue, noting that servers without HTTP/2 enabled are not vulnerable.
+The zero-day exploit, codenamed SignDrop and released by security researcher Nightmare Eclipse, targets the Windows Common Log File System CLFS driver alongside Windows Defender file handling routines. The exploit manipulates CLFS driver authentication modes to force arbitrary file creation under the security context of the antimalware process. Local threat actors exploit the flaw to elevate unprivileged local access to SYSTEM privileges, bypassing endpoint detection barriers and disabling active host defenses. Vendor advisories detail registry mitigation checks while formal security patches remain pending.
 
-Subverting core web server daemons presents immediate systemic risks to public web portals, cloud application gateways, and enterprise web hosting platforms. Because Apache HTTP Server processes incoming web traffic for millions of global host systems, an unauthenticated heap corruption RCE allows remote threat actors to compromise host operating systems and pivot into backend subnets.
+Subverting core operating system log drivers and endpoint security daemons destroys local privilege boundaries across corporate host fleets. Because CLFS handles low-level transaction logging across Windows environments, local privilege escalation exploits permit threat actors holding low-privilege initial access to compromise domain endpoints, dump system credentials, and deploy ransomware binaries.
 
-- Upgrade Apache HTTP Server immediately to official fixed release build 2.4.71 across all Linux server fleets and container base images.
-- Temporarily disable HTTP/2 by removing h2 and h2c entries from the web server Protocols directive if immediate patching cannot be completed.
-- Inspect web server process execution trees and worker daemon memory spaces for anomalous shell spawns or crash reports.
-- Enforce edge web application firewall rules to detect and drop malformed HTTP/2 control frame headers targeting web endpoints.
+- Inspect Windows registry CLFS authentication mode configuration keys to verify authentication mode settings are enforced.
+- Restrict unprivileged local account execution privileges and mandate strict application control policies on Windows endpoints.
+- Monitor endpoint security telemetry for unauthorized file creation calls originating from Windows Defender service daemons.
+- Enforce strict Endpoint Detection and Response EDR behavioral monitoring around CLFS log file generation subroutines.
 
-Web infrastructure security demands rapid core engine patch application and strict protocol inspection to ensure web hosting servers remain protected against unauthenticated memory corruption exploits. #CodeDefence #Apache #mod_http2 #RCE #HeapCorruption #ZeroDay #WebSecurity #AppSec #PatchManagement #CloudSecurity
+Operating system defense demands rigid process integrity validation and continuous local privilege auditing to ensure Windows host fleets remain protected against zero-day driver privilege escalation exploits. #CodeDefence #SignDrop #Windows #ZeroDay #CLFS #PrivilegeEscalation #SYSTEM #EndpointSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Mass SCKit malware campaign targets ConnectWise ScreenConnect instances via hijacked third-party extensions</title>
-  <link>https://codedefence.in/blog/2026/11/12/mass-sckit-malware-campaign-targets-connectwise-screenconnect-instances</link>
-  <pubDate>Thu, 12 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/12/mass-sckit-malware-campaign-targets-connectwise-screenconnect-instances</guid>
+  <title>Red Hat patches maximum severity CVSS 98 authentication bypass in Quay container registries CVE-2026-123710</title>
+  <link>https://codedefence.in/blog/2026/11/13/red-hat-patches-max-severity-quay-authentication-bypass-cve-2026-123710</link>
+  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/red-hat-patches-max-severity-quay-authentication-bypass-cve-2026-123710</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[ConnectWise](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-123710</cd:cve>
+  <cd:mentions>@[Red Hat](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Managed service provider threat monitoring networks warn of an ongoing high-velocity intrusion campaign targeting remote support infrastructure. Threat actors abused unauthenticated extension endpoints to execute remote commands, deploying persistent backdoors across hundreds of managed endpoints in under ninety minutes.
+Container registry infrastructure maintainers have distributed security updates resolving a maximum-severity authentication vulnerability in cloud container storage platforms. Unauthenticated remote adversaries can forge valid access tokens to push and pull container images across any hosted repository.
 
-The ongoing intrusion wave targets cloud-hosted ConnectWise ScreenConnect instances integrating third-party management extensions, specifically RMM+ versions 1.0.31 and 1.0.32. Threat actors exploited unauthenticated extension access to execute arbitrary commands, deploying a custom post-compromise toolkit dubbed SCKit. Telemetry confirms attackers compromised at least 288 endpoints across 48 organizations, installing secondary attacker-controlled ScreenConnect clients, stealing browser session cookies, altering security software rules, and attempting to infect technician workstations connecting to compromised endpoints. ConnectWise disabled five affected extensions across partner environments as a precaution.
+The vulnerability, tracked as CVE-2026-123710 with a CVSS v3.1 score of 9.8, impacts Red Hat Quay container registry deployments. The defect involves improper access token signing key validation during repository authentication handshakes. Unauthenticated remote threat actors add arbitrary public keys to Quay's trusted key store without expiration limits, signing unauthorized access tokens that Quay accepts for any repository. Red Hat released fixed builds across eight Quay 3 branches to resolve the defect.
 
-Subverting remote monitoring and management control panels undermines organizational remote access boundaries and managed service provider trust relationships. When remote management tools are compromised, threat actors gain direct administrative access across client endpoints, allowing unmonitored lateral movement and automated credential theft across multiple client networks.
+Subverting enterprise container registries exposes software supply chains to malicious container image tampering and proprietary code theft. Because Quay hosts production container images for cloud-native microservices, unauthenticated image push access allows threat actors to inject backdoors into production deployment images and exfiltrate proprietary code artifacts.
 
-- Terminate active ScreenConnect web sessions and force mandatory administrative password resets across managed instance portals.
-- Audit installed ScreenConnect extensions, removing unverified third-party modules including legacy RMM+ integration tools.
-- Inspect client endpoints for unauthorized ScreenConnect client installations, scheduled tasks named TrapWatch, or newly created local accounts.
-- Instruct technical support personnel to avoid connecting to suspected compromised endpoints via active remote management sessions.
+- Apply fixed build updates released across Red Hat Quay 3 branches immediately across all container registry nodes.
+- Disable anonymous access configurations across public Quay container registry instances if immediate patching cannot be performed.
+- Audit Quay trusted signing key stores for unauthorized public key entries created during recent operation windows.
+- Enforce container image signing and image verification pipelines prior to deploying container workloads to production clusters.
 
-Remote management platform governance requires continuous extension auditing and strict session isolation to ensure IT management infrastructure remains protected against supply-chain endpoint compromises. #CodeDefence #ConnectWise #ScreenConnect #SCKit #RMM #SupplyChain #Malware #MSP #AppSec #EndpointSecurity #IdentitySecurity
+Container platform security requires immediate software patch execution and strict repository token verification to ensure cloud deployment pipelines remain protected against unauthenticated image tampering. #CodeDefence #RedHat #Quay #ContainerSecurity #AuthBypass #SupplyChain #CloudSecurity #AppSec #PatchManagement #DevSecOps
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds six actively exploited vulnerabilities to KEV catalog including Microsoft Outlook and Chromium flaws</title>
-  <link>https://codedefence.in/blog/2026/11/12/cisa-adds-six-actively-exploited-vulnerabilities-to-kev-catalog</link>
-  <pubDate>Thu, 12 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/12/cisa-adds-six-actively-exploited-vulnerabilities-to-kev-catalog</guid>
+  <title>CISA reaches November 13 federal compliance deadline for Barracuda ESG vulnerabilities CVE-2026-116606 and CVE-2026-111560</title>
+  <link>https://codedefence.in/blog/2026/11/13/cisa-reaches-november-13-deadline-barracuda-esg-flaws</link>
+  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/cisa-reaches-november-13-deadline-barracuda-esg-flaws</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-124194‚ CVE-2026-125350‚ CVE-2026-116606‚ CVE-2026-20320</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-116606‚ CVE-2026-111560</cd:cve>
+  <cd:mentions>@[Barracuda Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing emergency patch mandates for six actively weaponized enterprise flaws. Federal civilian agencies face mandatory remediation deadlines to update exposed desktop applications, perimeter security gateways, and cloud communication infrastructure.
+Federal civilian executive branch agencies reach today's mandatory compliance deadline under Binding Operational Directive 26-04 to patch or disconnect perimeter email security appliances. Threat actors actively chain authentication bypass logic and command injection errors to obtain unauthenticated root access on target gateways.
 
-The catalog additions feature Microsoft Outlook authentication spoofing flaw CVE-2026-124194, Google Chromium use-after-free vulnerability CVE-2026-125350, Barracuda Email Security Gateway authentication bypass CVE-2026-116606, and Cisco BroadWorks XML external entity flaw CVE-2026-20320. Threat intelligence feeds confirm active wild exploitation where threat actors send malformed email items to exfiltrate Windows NTLM authentication hashes, weaponize browser heap corruption, and bypass gateway access controls to establish persistent administrative footholds. Federal civilian agencies must complete remediation by late November 2026.
+The mandatory remediation mandate applies to Barracuda Email Security Gateway ESG vulnerabilities CVE-2026-116606 and CVE-2026-111560. Threat telemetry confirms threat actors actively weaponize alternate path authentication bypass flaw CVE-2026-116606 alongside timezone parsing command injection bug CVE-2026-111560. By combining both vulnerabilities, remote adversaries achieve unauthenticated root command execution on exposed appliances, deploying persistent web shells and inspecting corporate mail streams. Non-compliant federal endpoints face mandatory network disconnection orders.
 
-Failing to remediate actively exploited enterprise vulnerabilities exposes corporate networks to automated credential harvesting, endpoint takeover, and perimeter boundary collapse. Because email clients, web browsers, and perimeter security appliances form core enterprise workflows, unpatched flaws permit adversaries to gain initial access and pivot into internal environments.
+Subverting perimeter email inspection appliances undermines organizational communication security and network boundary defense. Because Barracuda ESG appliances inspect incoming enterprise mail streams, enforce anti-phishing controls, and manage transport layer encryption, an unauthenticated root takeover allows threat actors to intercept sensitive emails and pivot into internal subnets.
 
-- Enforce immediate update deployment for Microsoft 365 Apps, Google Chrome, and edge security gateways across managed fleets.
-- Implement SMB signing and Extended Protection for Authentication EPA to block outbound NTLM relay attacks.
-- Audit perimeter security appliances for unauthorized administrative account creation or modified system configuration files.
-- Restrict public internet exposure of enterprise voice and communication management interfaces using zero-trust access controls.
+- Verify mandatory security update deployment across all exposed Barracuda Email Security Gateway appliances immediately.
+- Execute mandatory forensic triage checks across appliance file systems to inspect for unauthorized web shells or backdoor scripts.
+- Restrict public internet access to administrative management web interfaces, placing management ports on isolated out-of-band VLANs.
+- Rotate administrative account credentials and digital certificates configured on managed email inspection appliances.
 
-Enterprise vulnerability management demands rapid patch execution and rigid perimeter microsegmentation to ensure corporate endpoints and security gateways remain protected against active wild exploitation. #CodeDefence #CISA #KEV #Microsoft #Outlook #Google #Chrome #Barracuda #Cisco #AppSec #PatchManagement
+Perimeter gateway defense requires immediate patch validation and thorough forensic triage auditing to ensure email security appliances remain protected against unauthenticated root takeover chains. #CodeDefence #Barracuda #ESG #CISA #KEV #BOD2604 #AuthBypass #CommandInjection #PerimeterSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
