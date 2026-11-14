@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Fri, 13 November 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 14 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Fri, 13 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 14 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Fri, 13 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 14 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Unpatched Windows CLFS zero day exploit SignDrop enables SYSTEM privilege escalation</title>
-  <link>https://codedefence.in/blog/2026/11/13/unpatched-windows-clfs-zero-day-signdrop-enables-system-privilege-escalation</link>
-  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/unpatched-windows-clfs-zero-day-signdrop-enables-system-privilege-escalation</guid>
+  <title>Active zero day exploitation targets Palo Alto Networks EXPEL engine flaw CVE-2026-118820 for unauthenticated RCE</title>
+  <link>https://codedefence.in/blog/2026/11/14/active-zero-day-exploitation-targets-palo-alto-networks-expel-engine-cve-2026-118820</link>
+  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/active-zero-day-exploitation-targets-palo-alto-networks-expel-engine-cve-2026-118820</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-118820</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Operating system security researchers have published a zero-day exploit targeting core Windows system log drivers and antimalware components. Local unprivileged users can exploit authentication driver subroutines to execute arbitrary file creation routines and gain full SYSTEM execution privileges on target hosts.
+Perimeter threat telemetry advisories published today warn of active zero-day attacks targeting firewalls and secure edge gateways. Remote unauthenticated threat actors exploit input validation subroutines to execute arbitrary system commands under elevated root privileges.
 
-The zero-day exploit, codenamed SignDrop and released by security researcher Nightmare Eclipse, targets the Windows Common Log File System CLFS driver alongside Windows Defender file handling routines. The exploit manipulates CLFS driver authentication modes to force arbitrary file creation under the security context of the antimalware process. Local threat actors exploit the flaw to elevate unprivileged local access to SYSTEM privileges, bypassing endpoint detection barriers and disabling active host defenses. Vendor advisories detail registry mitigation checks while formal security patches remain pending.
+The emergency security bulletin covers Palo Alto Networks PAN-OS software managing Next-Generation Firewalls and Panorama appliances. The vulnerability, tracked as CVE-2026-118820 with a CVSS score of 9.8, resides within the EXPEL log parsing engine when handling external syslog telemetry streams. Unauthenticated remote adversaries transmit malformed syslog packets containing embedded shell command characters, triggering uninitialized memory parsing that executes arbitrary operating system commands with root privileges. Palo Alto Networks released emergency maintenance hotfix builds 11.2.4-h3, 11.1.2-h9, and 10.2.8-h12, confirming active wild probing targeting internet-exposed management ports.
 
-Subverting core operating system log drivers and endpoint security daemons destroys local privilege boundaries across corporate host fleets. Because CLFS handles low-level transaction logging across Windows environments, local privilege escalation exploits permit threat actors holding low-privilege initial access to compromise domain endpoints, dump system credentials, and deploy ransomware binaries.
+Subverting perimeter firewall controllers and management nodes destroys network boundary protections across enterprise deployments. Because PAN-OS firewalls terminate site-to-site IPsec tunnels, manage multi-factor user authentications, and enforce core routing rules, an unauthenticated root compromise allows threat actors to disable security inspection engines, steal active session tokens, and move laterally across production subnets.
 
-- Inspect Windows registry CLFS authentication mode configuration keys to verify authentication mode settings are enforced.
-- Restrict unprivileged local account execution privileges and mandate strict application control policies on Windows endpoints.
-- Monitor endpoint security telemetry for unauthorized file creation calls originating from Windows Defender service daemons.
-- Enforce strict Endpoint Detection and Response EDR behavioral monitoring around CLFS log file generation subroutines.
+- Upgrade PAN-OS software installations immediately to emergency hotfix releases 11.2.4-h3, 11.1.2-h9, or 10.2.8-h12.
+- Restrict incoming syslog parsing and management web access to isolated out-of-band VLANs away from public routing.
+- Inspect PAN-OS system logs and process trees for unauthorized shell spawns originating from log parsing daemons.
+- Enable strict threat prevention profiles on management interfaces and invalidate active administrative session cookies.
 
-Operating system defense demands rigid process integrity validation and continuous local privilege auditing to ensure Windows host fleets remain protected against zero-day driver privilege escalation exploits. #CodeDefence #SignDrop #Windows #ZeroDay #CLFS #PrivilegeEscalation #SYSTEM #EndpointSecurity #AppSec #PatchManagement
+Perimeter firewall controller defense relies on immediate out-of-band management isolation and rapid hotfix deployment to ensure edge security gateways remain protected from unauthenticated remote code execution exploit chains. #CodeDefence #PaloAltoNetworks #PANOS #EXPEL #ZeroDay #RCE #Firewall #PerimeterSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Red Hat patches maximum severity CVSS 98 authentication bypass in Quay container registries CVE-2026-123710</title>
-  <link>https://codedefence.in/blog/2026/11/13/red-hat-patches-max-severity-quay-authentication-bypass-cve-2026-123710</link>
-  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/red-hat-patches-max-severity-quay-authentication-bypass-cve-2026-123710</guid>
+  <title>PoC exploit published for VMware Cloud Foundation unauthenticated deserialization flaw CVE-2026-128901</title>
+  <link>https://codedefence.in/blog/2026/11/14/poc-exploit-published-for-vmware-cloud-foundation-cve-2026-128901</link>
+  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/poc-exploit-published-for-vmware-cloud-foundation-cve-2026-128901</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-123710</cd:cve>
-  <cd:mentions>@[Red Hat](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-128901</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Container registry infrastructure maintainers have distributed security updates resolving a maximum-severity authentication vulnerability in cloud container storage platforms. Unauthenticated remote adversaries can forge valid access tokens to push and pull container images across any hosted repository.
+Cloud virtualization infrastructure alerts published today urge immediate security updates following public exploit code release. Remote unauthenticated adversaries can exploit Java object deserialization subroutines to execute arbitrary system code on core cloud orchestration servers.
 
-The vulnerability, tracked as CVE-2026-123710 with a CVSS v3.1 score of 9.8, impacts Red Hat Quay container registry deployments. The defect involves improper access token signing key validation during repository authentication handshakes. Unauthenticated remote threat actors add arbitrary public keys to Quay's trusted key store without expiration limits, signing unauthorized access tokens that Quay accepts for any repository. Red Hat released fixed builds across eight Quay 3 branches to resolve the defect.
+The vulnerability, tracked as CVE-2026-128901 carrying a CVSS score of 9.8, impacts Broadcom VMware Cloud Foundation VCF and SDDC Manager deployments. The security defect resides in Java RMI object deserialization handlers processing unauthenticated remote API calls. Public proof-of-concept exploit code published today demonstrates unauthenticated remote command execution under root context by transmitting malformed serialized Java payloads over port 7080. Threat intelligence sensors report automated scanning arrays hitting exposed management consoles within hours of code availability.
 
-Subverting enterprise container registries exposes software supply chains to malicious container image tampering and proprietary code theft. Because Quay hosts production container images for cloud-native microservices, unauthenticated image push access allows threat actors to inject backdoors into production deployment images and exfiltrate proprietary code artifacts.
+Subverting central cloud virtualization orchestrators impairs private cloud security boundaries across enterprise facilities. Because VMware Cloud Foundation manages core virtual machine provisioning, hypervisor clusters, and cloud storage pools, an unauthenticated root takeover allows threat actors to manipulate virtual infrastructure, access tenant memory spaces, and compromise corporate workloads.
 
-- Apply fixed build updates released across Red Hat Quay 3 branches immediately across all container registry nodes.
-- Disable anonymous access configurations across public Quay container registry instances if immediate patching cannot be performed.
-- Audit Quay trusted signing key stores for unauthorized public key entries created during recent operation windows.
-- Enforce container image signing and image verification pipelines prior to deploying container workloads to production clusters.
+- Apply Broadcom security advisory VMSA-2026-0012 maintenance updates across all VMware Cloud Foundation hosts immediately.
+- Restrict network access to SDDC Manager and VCF API endpoints, isolating management interfaces on dedicated VLANs.
+- Inspect Java service process trees across Cloud Foundation nodes for unauthorized shell execution or unverified network connections.
+- Enforce network microsegmentation to block unauthenticated transit traffic targeting internal virtualization management ports.
 
-Container platform security requires immediate software patch execution and strict repository token verification to ensure cloud deployment pipelines remain protected against unauthenticated image tampering. #CodeDefence #RedHat #Quay #ContainerSecurity #AuthBypass #SupplyChain #CloudSecurity #AppSec #PatchManagement #DevSecOps
+Virtualization platform security demands emergency patch deployment and rigid API control plane microsegmentation to ensure private cloud hypervisors remain protected against unauthenticated deserialization exploits. #CodeDefence #VMware #CloudFoundation #SDDC #Deserialization #RCE #PoC #CloudSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>CISA reaches November 13 federal compliance deadline for Barracuda ESG vulnerabilities CVE-2026-116606 and CVE-2026-111560</title>
-  <link>https://codedefence.in/blog/2026/11/13/cisa-reaches-november-13-deadline-barracuda-esg-flaws</link>
-  <pubDate>Fri, 13 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/13/cisa-reaches-november-13-deadline-barracuda-esg-flaws</guid>
+  <title>CISA adds Ivanti EPMM remote code execution vulnerability CVE-2026-121045 to Known Exploited Vulnerabilities catalog</title>
+  <link>https://codedefence.in/blog/2026/11/14/cisa-adds-ivanti-epmm-remote-code-execution-cve-2026-121045-to-kev</link>
+  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/cisa-adds-ivanti-epmm-remote-code-execution-cve-2026-121045-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-116606‚ CVE-2026-111560</cd:cve>
-  <cd:mentions>@[Barracuda Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-121045</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal civilian executive branch agencies reach today's mandatory compliance deadline under Binding Operational Directive 26-04 to patch or disconnect perimeter email security appliances. Threat actors actively chain authentication bypass logic and command injection errors to obtain unauthenticated root access on target gateways.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing emergency patch mandates for an endpoint management platform flaw. Remote threat actors actively weaponize improper input validation routines to execute arbitrary commands across mobile management servers.
 
-The mandatory remediation mandate applies to Barracuda Email Security Gateway ESG vulnerabilities CVE-2026-116606 and CVE-2026-111560. Threat telemetry confirms threat actors actively weaponize alternate path authentication bypass flaw CVE-2026-116606 alongside timezone parsing command injection bug CVE-2026-111560. By combining both vulnerabilities, remote adversaries achieve unauthenticated root command execution on exposed appliances, deploying persistent web shells and inspecting corporate mail streams. Non-compliant federal endpoints face mandatory network disconnection orders.
+The KEV catalog addition features Ivanti Endpoint Manager Mobile EPMM vulnerability CVE-2026-121045. Unauthenticated remote adversaries transmit crafted HTTP requests to public administration interfaces, triggering command injection subroutines within backend API daemons. Cyber threat research disclosures confirm threat actors actively exploit the vulnerability to gain root execution privileges, drop web shell backdoors, and extract managed mobile device tokens and configuration records. Federal civilian agencies must complete remediation patches by early December 2026.
 
-Subverting perimeter email inspection appliances undermines organizational communication security and network boundary defense. Because Barracuda ESG appliances inspect incoming enterprise mail streams, enforce anti-phishing controls, and manage transport layer encryption, an unauthenticated root takeover allows threat actors to intercept sensitive emails and pivot into internal subnets.
+Subverting enterprise endpoint management servers exposes corporate mobile fleets and internal access boundaries. Because Ivanti EPMM controls mobile device enrolment, security configurations, and enterprise access credentials, an unauthenticated root compromise allows threat actors to issue malicious device policies and pivot into internal corporate networks.
 
-- Verify mandatory security update deployment across all exposed Barracuda Email Security Gateway appliances immediately.
-- Execute mandatory forensic triage checks across appliance file systems to inspect for unauthorized web shells or backdoor scripts.
-- Restrict public internet access to administrative management web interfaces, placing management ports on isolated out-of-band VLANs.
-- Rotate administrative account credentials and digital certificates configured on managed email inspection appliances.
+- Force immediate installation of official security release builds across all self-hosted Ivanti EPMM server nodes.
+- Restrict public internet visibility of EPMM administration portals, placing management web interfaces on isolated out-of-band VLANs.
+- Inspect EPMM server file systems and API logs for unauthorized web shell scripts or anomalous process spawns.
+- Invalidate active administrative user session tokens and execute mandatory credential rotations across managed mobile accounts.
 
-Perimeter gateway defense requires immediate patch validation and thorough forensic triage auditing to ensure email security appliances remain protected against unauthenticated root takeover chains. #CodeDefence #Barracuda #ESG #CISA #KEV #BOD2604 #AuthBypass #CommandInjection #PerimeterSecurity #AppSec #PatchManagement
+Enterprise mobile management defense demands immediate dependency patch execution and strict boundary isolation to ensure mobile management controllers remain protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #EPMM #MobileSecurity #RCE #CommandInjection #CISA #KEV #EndpointSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
