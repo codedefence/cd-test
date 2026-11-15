@@ -2,82 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 14 November 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 04 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 14 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 04 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 14 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 04 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>Active zero day exploitation targets Palo Alto Networks EXPEL engine flaw CVE-2026-118820 for unauthenticated RCE</title>
-  <link>https://codedefence.in/blog/2026/11/14/active-zero-day-exploitation-targets-palo-alto-networks-expel-engine-cve-2026-118820</link>
-  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/active-zero-day-exploitation-targets-palo-alto-networks-expel-engine-cve-2026-118820</guid>
+  <title>WAVLINK router perfect CVSS 10 zero day CVE-2026-120345 exploited in wild DNS command injection attacks</title>
+  <link>https://codedefence.in/blog/2026/11/04/wavlink-router-perfect-cvss-10-zero-day-cve-2026-120345-exploited</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/wavlink-router-perfect-cvss-10-zero-day-cve-2026-120345-exploited</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-118820</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Perimeter threat telemetry advisories published today warn of active zero-day attacks targeting firewalls and secure edge gateways. Remote unauthenticated threat actors exploit input validation subroutines to execute arbitrary system commands under elevated root privileges.
-
-The emergency security bulletin covers Palo Alto Networks PAN-OS software managing Next-Generation Firewalls and Panorama appliances. The vulnerability, tracked as CVE-2026-118820 with a CVSS score of 9.8, resides within the EXPEL log parsing engine when handling external syslog telemetry streams. Unauthenticated remote adversaries transmit malformed syslog packets containing embedded shell command characters, triggering uninitialized memory parsing that executes arbitrary operating system commands with root privileges. Palo Alto Networks released emergency maintenance hotfix builds 11.2.4-h3, 11.1.2-h9, and 10.2.8-h12, confirming active wild probing targeting internet-exposed management ports.
-
-Subverting perimeter firewall controllers and management nodes destroys network boundary protections across enterprise deployments. Because PAN-OS firewalls terminate site-to-site IPsec tunnels, manage multi-factor user authentications, and enforce core routing rules, an unauthenticated root compromise allows threat actors to disable security inspection engines, steal active session tokens, and move laterally across production subnets.
-
-- Upgrade PAN-OS software installations immediately to emergency hotfix releases 11.2.4-h3, 11.1.2-h9, or 10.2.8-h12.
-- Restrict incoming syslog parsing and management web access to isolated out-of-band VLANs away from public routing.
-- Inspect PAN-OS system logs and process trees for unauthorized shell spawns originating from log parsing daemons.
-- Enable strict threat prevention profiles on management interfaces and invalidate active administrative session cookies.
-
-Perimeter firewall controller defense relies on immediate out-of-band management isolation and rapid hotfix deployment to ensure edge security gateways remain protected from unauthenticated remote code execution exploit chains. #CodeDefence #PaloAltoNetworks #PANOS #EXPEL #ZeroDay #RCE #Firewall #PerimeterSecurity #AppSec #PatchManagement #CISA
-  ]]></description>
-</item>
-
-<item>
-  <title>PoC exploit published for VMware Cloud Foundation unauthenticated deserialization flaw CVE-2026-128901</title>
-  <link>https://codedefence.in/blog/2026/11/14/poc-exploit-published-for-vmware-cloud-foundation-cve-2026-128901</link>
-  <pubDate>Sat, 14 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/poc-exploit-published-for-vmware-cloud-foundation-cve-2026-128901</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-128901</cd:cve>
+  <cd:cve>CVE-2026-120345</cd:cve>
   <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cloud virtualization infrastructure alerts published today urge immediate security updates following public exploit code release. Remote unauthenticated adversaries can exploit Java object deserialization subroutines to execute arbitrary system code on core cloud orchestration servers.
+Network perimeter threat intelligence advisories issued today warn of active wild exploitation targeting wireless routing hardware. Unauthenticated remote adversaries transmit malformed DNS resolution requests over the public internet to execute arbitrary operating system commands under root administrative privileges.
 
-The vulnerability, tracked as CVE-2026-128901 carrying a CVSS score of 9.8, impacts Broadcom VMware Cloud Foundation VCF and SDDC Manager deployments. The security defect resides in Java RMI object deserialization handlers processing unauthenticated remote API calls. Public proof-of-concept exploit code published today demonstrates unauthenticated remote command execution under root context by transmitting malformed serialized Java payloads over port 7080. Threat intelligence sensors report automated scanning arrays hitting exposed management consoles within hours of code availability.
+The vulnerability, tracked as CVE-2026-120345 with a maximum CVSS score of 10.0, affects WAVLINK WN551X3-A routers running firmware build M51X3_V251020-WO-182e965. The defect resides within the DNS resolution handler function sub_41a430 inside the binary /bin/ioos. Unauthenticated remote threat actors submit crafted data arguments within DNS resolution requests to inject operating system commands directly into system execution subroutines. Threat telemetry confirms public exploit code is actively weaponized by automated scanning botnets targeting exposed SMB edge routers.
 
-Subverting central cloud virtualization orchestrators impairs private cloud security boundaries across enterprise facilities. Because VMware Cloud Foundation manages core virtual machine provisioning, hypervisor clusters, and cloud storage pools, an unauthenticated root takeover allows threat actors to manipulate virtual infrastructure, access tenant memory spaces, and compromise corporate workloads.
+Subverting perimeter wireless routing devices undermines network boundary controls across small business and branch office networks. Because edge routers manage local IP routing, DNS resolution, and gateway access control lists, an unauthenticated remote command execution compromise permits adversaries to capture transit traffic, rewrite internal DNS records, and pivot into corporate subnets.
 
-- Apply Broadcom security advisory VMSA-2026-0012 maintenance updates across all VMware Cloud Foundation hosts immediately.
-- Restrict network access to SDDC Manager and VCF API endpoints, isolating management interfaces on dedicated VLANs.
-- Inspect Java service process trees across Cloud Foundation nodes for unauthorized shell execution or unverified network connections.
-- Enforce network microsegmentation to block unauthenticated transit traffic targeting internal virtualization management ports.
+- Isolate WAVLINK WN551X3-A routing hardware from untrusted external interfaces immediately and verify vendor firmware updates.
+- Restrict remote WAN management and DNS query resolution interfaces to isolated, trusted IP ranges.
+- Inspect network gateway traffic for anomalous outbound connections or unverified DNS resolution payloads.
+- Replace unpatchable or end-of-life edge routing hardware with enterprise-grade access control gateways.
 
-Virtualization platform security demands emergency patch deployment and rigid API control plane microsegmentation to ensure private cloud hypervisors remain protected against unauthenticated deserialization exploits. #CodeDefence #VMware #CloudFoundation #SDDC #Deserialization #RCE #PoC #CloudSecurity #AppSec #PatchManagement #CISA
+Edge network hardware defense demands rigid parameter sanitization and immediate firmware updates to ensure gateway devices remain protected against unauthenticated remote command injection exploits. #CodeDefence #WAVLINK #RouterSecurity #CommandInjection #RCE #ZeroDay #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>CISA adds Ivanti EPMM remote code execution vulnerability CVE-2026-121045 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/11/14/cisa-adds-ivanti-epmm-remote-code-execution-cve-2026-121045-to-kev</link>
-  <pubDate>Sat, 07 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/14/cisa-adds-ivanti-epmm-remote-code-execution-cve-2026-121045-to-kev</guid>
+  <title>Google and law enforcement dismantle massive 1.3 million device XCPE Android TV botnet infrastructure</title>
+  <link>https://codedefence.in/blog/2026/11/04/google-dismantles-1.3-million-device-xcpe-android-tv-botnet</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/google-dismantles-1.3-million-device-xcpe-android-tv-botnet</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-121045</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Google](urn:li:organization:1441)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing emergency patch mandates for an endpoint management platform flaw. Remote threat actors actively weaponize improper input validation routines to execute arbitrary commands across mobile management servers.
+Cyber threat infrastructure disclosures published today detail a major international law enforcement action targeting malicious botnet operations. Security teams severed command-and-control channels driving a global network of over one million compromised consumer devices.
 
-The KEV catalog addition features Ivanti Endpoint Manager Mobile EPMM vulnerability CVE-2026-121045. Unauthenticated remote adversaries transmit crafted HTTP requests to public administration interfaces, triggering command injection subroutines within backend API daemons. Cyber threat research disclosures confirm threat actors actively exploit the vulnerability to gain root execution privileges, drop web shell backdoors, and extract managed mobile device tokens and configuration records. Federal civilian agencies must complete remediation patches by early December 2026.
+The coordinated operation, led by Google Threat Intelligence alongside federal law enforcement agencies, disrupted the XCPE botnet. Threat actors infected over 1.3 million unmanaged Android TV streaming devices globally by exploiting unpatched firmware vulnerabilities and trojanized third-party media applications. The botnet operators weaponized compromised endpoints to conduct high-volume distributed denial-of-service attacks, proxy residential web traffic for fraud campaigns, and deliver secondary malware payloads. Command-and-control domain infrastructures were seized and sinkholed.
 
-Subverting enterprise endpoint management servers exposes corporate mobile fleets and internal access boundaries. Because Ivanti EPMM controls mobile device enrolment, security configurations, and enterprise access credentials, an unauthenticated root compromise allows threat actors to issue malicious device policies and pivot into internal corporate networks.
+Subverting edge internet-of-things devices introduces significant distributed network risk and residential proxy abuse across enterprise networks. When unmanaged streaming devices and smart hardware operate on corporate branch subnets, infected endpoints allow threat actors to anonymize malicious traffic and launch internal reconnaissance sweeps.
 
-- Force immediate installation of official security release builds across all self-hosted Ivanti EPMM server nodes.
-- Restrict public internet visibility of EPMM administration portals, placing management web interfaces on isolated out-of-band VLANs.
-- Inspect EPMM server file systems and API logs for unauthorized web shell scripts or anomalous process spawns.
-- Invalidate active administrative user session tokens and execute mandatory credential rotations across managed mobile accounts.
+- Segment internet-of-things and smart TV streaming hardware onto dedicated, isolated guest network subnets.
+- Enforce strict egress network filtering to block unauthorized outbound connections originating from unmanaged endpoints.
+- Deploy automated endpoint detection tools to identify unverified proxy traffic traversing corporate network perimeters.
+- Audit enterprise network perimeters for unmanaged consumer IoT devices connected to internal production VLANs.
 
-Enterprise mobile management defense demands immediate dependency patch execution and strict boundary isolation to ensure mobile management controllers remain protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #EPMM #MobileSecurity #RCE #CommandInjection #CISA #KEV #EndpointSecurity #AppSec #PatchManagement
+Network infrastructure governance requires strict device isolation and continuous egress traffic monitoring to ensure unmanaged endpoint infections cannot compromise corporate enterprise operations. #CodeDefence #Google #XCPE #Botnet #AndroidTV #IoTSecurity #DDoS #NetworkSecurity #ThreatIntelligence #AppSec
+  ]]></description>
+</item>
+
+<item>
+  <title>Trojanized Claude Code VS Code extension on Cursor marketplace exposes developer SSH keys and source code</title>
+  <link>https://codedefence.in/blog/2026/11/04/trojanized-claude-code-vs-code-extension-cursor-marketplace-exposes-developer-keys</link>
+  <pubDate>Wed, 04 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/04/trojanized-claude-code-vs-code-extension-cursor-marketplace-exposes-developer-keys</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:mentions>@[Anthropic](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Developer environment security alerts published today detail a supply-chain intrusion vector targeting software engineering workstations. Malicious actors distributed a fake artificial intelligence coding extension to install persistent backdoor access across developer endpoints.
+
+The supply chain incident involved a trojanized extension impersonating Anthropic Claude Code distributed through the Cursor extension marketplace. Threat actors published the malicious extension under a typo-squatted developer identity, remaining active for 11 hours and infecting up to 5,000 developer environments. The embedded malicious payload executed post-install scripts to exfiltrate SSH private keys, cloud infrastructure API tokens, and local environment variables while installing persistent remote shell backdoors.
+
+Subverting integrated development environment extension marketplaces presents severe software supply chain and credential theft risks. Because developer workstations hold elevated access to source code repositories, cloud hosting accounts, and continuous integration pipelines, unmonitored IDE extensions allow threat actors to compromise production software builds and pivot into enterprise cloud infrastructure.
+
+- Audit developer workstation extensions immediately and remove unverified third-party tools installed from external marketplaces.
+- Force immediate rotation of all SSH private keys, cloud access tokens, and API credentials stored on compromised developer endpoints.
+- Enforce enterprise-managed extension whitelisting policies within developer IDE environments to block unverified installations.
+- Monitor developer endpoint process execution trees for unauthorized SSH session spawns or anomalous network connections.
+
+Developer workstation defense demands strict marketplace extension governance and automated secret rotation to ensure software development environments remain protected against supply-chain extension compromises. #CodeDefence #Anthropic #ClaudeCode #Cursor #SupplyChain #DevSecOps #AppSec #EndpointSecurity #IdentitySecurity
   ]]></description>
 </item>
 
