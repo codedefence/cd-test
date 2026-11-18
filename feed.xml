@@ -2,81 +2,81 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Tue, 17 November 2026</title>
+  <title>Code Defence Intelligence Brief — Wed, 18 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Tue, 17 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Wed, 18 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Tue, 17 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Tue, 17 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Wed, 18 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA issues emergency directive following wild exploitation of Brotli library remote code execution flaw CVE-2026-111497</title>
-  <link>https://codedefence.in/blog/2026/11/17/cisa-issues-emergency-directive-brotli-library-rce-cve-2026-111497</link>
-  <pubDate>Tue, 17 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/17/cisa-issues-emergency-directive-brotli-library-rce-cve-2026-111497</guid>
+  <title>CISA issues mandatory directive following active wild exploitation of PHP2Shell zero day flaw CVE-2026-121102</title>
+  <link>https://codedefence.in/blog/2026/11/18/cisa-issues-directive-php2shell-zero-day-cve-2026-121102</link>
+  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/cisa-issues-directive-php2shell-zero-day-cve-2026-121102</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-111497</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Siemens](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-121102</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[WordPress](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives, issuing an urgent remediation order for an actively weaponized open-source compression library. Threat actors exploit buffer overflow subroutines to crash target hosts or execute arbitrary code across industrial and enterprise servers.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, ordering federal agencies to remediate an actively weaponized web application runtime flaw. Remote threat actors exploit multi-part form boundary parsing errors to achieve unauthenticated remote code execution across web servers.
 
-The emergency security directive covers Brotli compression library vulnerability CVE-2026-111497 carrying a CVSS score of 9.8 and codenamed Node2Shell. Remote unauthenticated threat actors transmit malformed compressed stream headers to trigger out-of-bounds heap memory corruption within application runtime environments. Threat telemetry confirms active wild attacks targeting enterprise web portals and industrial edge management platforms, including Siemens Industrial Edge systems. CISA set a mandatory December 8 compliance deadline for Federal Civilian Executive Branch agencies to deploy patched library dependencies across exposed infrastructure.
+The emergency directive addresses PHP core runtime vulnerability CVE-2026-121102 carrying a CVSS score of 9.8 and codenamed PHP2Shell. Unauthenticated remote adversaries transmit crafted HTTP POST requests containing malformed boundary parameters to trigger heap buffer overflows within internal string parsing subroutines. Threat intelligence feeds confirm active wild exploitation targeting self-hosted web applications, WordPress installations, and enterprise e-commerce portals. CISA established a mandatory December 9 compliance deadline for Federal Civilian Executive Branch agencies to deploy emergency runtime maintenance updates.
 
-Subverting core data compression libraries poses severe systemic risks to enterprise application servers and industrial control environments. Because Brotli handles web content compression across web servers, reverse proxies, and edge gateways, an unauthenticated heap corruption RCE allows remote threat actors to compromise host operating systems and execute lateral movement across internal subnets.
+Subverting core web application runtimes introduces systemic risks across public web portals and e-commerce platforms. Because PHP powers millions of enterprise web applications and content management systems globally, an unauthenticated heap corruption RCE permits threat actors to hijack web server processes, exfiltrate database credentials, and establish persistent web shell access.
 
-- Update Brotli library dependencies immediately across web server runtimes, container base images, and industrial management software.
-- Inspect application crash dumps and heap allocation logs for unverified buffer overflow exceptions originating from decompression subroutines.
-- Enforce strict edge Web Application Firewall WAF rules to inspect and drop malformed Brotli compressed payloads before reaching backend applications.
-- Restrict public network exposure of industrial edge management portals, placing control systems behind isolated out-of-band VLANs.
+- Upgrade PHP core runtime installations immediately across web host fleets and container base images to patched maintenance builds.
+- Enforce Web Application Firewall WAF rules to inspect HTTP POST request body boundaries and drop malformed multipart form submissions.
+- Inspect web server error logs and execution stacks for unverified memory segmentation faults originating from PHP worker processes.
+- Restrict file system write permissions across web root directories, disabling direct script execution within uploaded content paths.
 
-Data compression library security demands immediate software dependency updating and strict perimeter payload inspection to ensure enterprise and industrial systems remain insulated from unauthenticated memory corruption exploits. #CodeDefence #Brotli #Node2Shell #CISA #KEV #Siemens #RCE #HeapCorruption #AppSec #PatchManagement #ICS
+Enterprise web application defense requires immediate runtime security updates and rigid perimeter request inspection to ensure web hosting infrastructure remains insulated from unauthenticated remote code execution. #CodeDefence #PHP #PHP2Shell #CISA #KEV #RCE #WebSecurity #AppSec #PatchManagement #WordPress #CloudSecurity
   ]]></description>
 </item>
 
 <item>
-  <title>Barracuda links cloud environment breach to stolen credentials and ARTEX AI penetration testing tool</title>
-  <link>https://codedefence.in/blog/2026/11/17/barracuda-links-cloud-breach-to-stolen-credentials-and-artex-ai-tool</link>
-  <pubDate>Tue, 17 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/17/barracuda-links-cloud-breach-to-stolen-credentials-and-artex-ai-tool</guid>
+  <title>SonicWall issues urgent patch for critical SonicOS SAML MFA bypass flaw CVE-2026-120050 exploited in wild</title>
+  <link>https://codedefence.in/blog/2026/11/18/sonicwall-issues-urgent-patch-sonicos-saml-mfa-bypass-cve-2026-120050</link>
+  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/sonicwall-issues-urgent-patch-sonicos-saml-mfa-bypass-cve-2026-120050</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-120050</cd:cve>
+  <cd:mentions>@[SonicWall](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <description><![CDATA[
+Perimeter security advisories published today warn of accelerated threat activity targeting remote access firewall appliances. Remote unauthenticated threat actors exploit single sign-on logic errors to bypass multi-factor authentication controls and establish persistent network footholds.
+
+The security bulletin covers SonicOS firmware vulnerability CVE-2026-120050 affecting SonicWall Gen6 and Gen7 firewall appliances. Threat actors holding secondary single sign-on authentication credentials send malformed SAML assertions to bypass enforced multi-factor authentication checks, gaining unauthenticated remote SSL VPN access to internal subnets. Threat telemetry indicates threat actors actively weaponize exposed management interfaces worldwide. Vendor updates mandate immediate deployment of firmware release builds 7.1.3-7020 and 6.5.4.15-116n.
+
+Subverting perimeter firewall controllers destroys corporate remote access boundaries and internal subnet isolation. Because SonicWall firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect internal network transit traffic, and move laterally across production subnets.
+
+- Upgrade SonicOS firmware installations immediately across Gen6 and Gen7 firewalls to maintenance builds 7.1.3-7020 or 6.5.4.15-116n.
+- Audit SAML identity provider configuration logs for anomalous single sign-on authentication assertions originating from unverified IP ranges.
+- Restrict public internet access to firewall management interfaces, placing administrative portals on isolated out-of-band VLANs.
+- Invalidate active remote access user session tokens and execute mandatory credential rotations across VPN user accounts.
+
+Perimeter firewall controller defense demands immediate firmware patch application and rigid identity provider verification to ensure corporate remote access gateways remain insulated from authentication bypass exploits. #CodeDefence #SonicWall #SonicOS #MFA #SAML #AuthBypass #CISA #KEV #NetworkSecurity #AppSec #PatchManagement
+  ]]></description>
+</item>
+
+<item>
+  <title>Claude Code settings file secret leaks trigger automated cloud key harvesting campaigns</title>
+  <link>https://codedefence.in/blog/2026/11/18/claude-code-settings-file-secret-leaks-trigger-cloud-key-harvesting</link>
+  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/claude-code-settings-file-secret-leaks-trigger-cloud-key-harvesting</guid>
   <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Barracuda Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:mentions>@[Anthropic](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Perimeter security vendor advisories published today detail post-incident findings following a cloud infrastructure compromise. Remote threat actors leveraged stolen cloud administrative keys alongside automated artificial intelligence offensive frameworks to map internal cloud assets and exfiltrate tenant metrics.
+Cloud security intelligence disclosures published today warn of widespread automated credential harvesting campaigns targeting developer repositories. Adversaries exploit insecure configuration storage defaults in developer command-line tools to extract plain-text API credentials and cloud access keys.
 
-The incident response writeup from Barracuda Networks confirms that threat actors acquired a stolen cloud service access key to gain initial entry into cloud staging environments. Once inside, adversaries deployed the ARTEX AI-powered penetration testing framework to execute automated reconnaissance, bypass internal access controls, and query cloud configuration databases. Security operations teams revoked exposed service keys, isolated affected staging accounts, and deployed strict non-human identity governance controls across all cloud environments.
+The security vulnerability affects developer workstations running early iterations of Anthropic's Claude Code command-line tool. Technical writeups confirm that local configuration settings files stored user access tokens and cloud API keys in unencrypted plain-text files within working directories. Automated GitHub scraping scripts scanning public code commits identified hundreds of exposed secrets, leading to unauthorized cloud infrastructure access and secondary supply-chain intrusion attempts. Anthropic released patched CLI tooling enforcing encrypted credential storage subroutines.
 
-Subverting non-human service identities and cloud API keys exposes enterprise infrastructure to automated AI-driven attack campaigns. When threat actors combine stolen cloud credentials with autonomous AI frameworks, automated tooling can rapidly discover hidden database endpoints, execute privilege escalation scripts, and exfiltrate cloud environment telemetry at machine speed.
+Exposing API authentication tokens and cloud infrastructure secrets compromises enterprise identity security and developer workstation integrity. When developer tools write plain-text credentials to local project subdirectories, accidental code repository commits allow threat actors to harvest secrets and launch automated cloud account takeover operations.
 
-- Audit cloud service access keys and enforce short-lived temporal credential scoping across all cloud environments.
-- Enforce multi-factor authentication MFA and strict IP whitelisting for administrative access to cloud management consoles.
-- Monitor cloud API gateway logs for high-frequency queries and automated reconnaissance patterns characteristic of AI testing tools.
-- Rotate administrative service account secrets and invalidate active cloud infrastructure session tokens immediately.
+- Upgrade Claude Code CLI tools immediately to patched releases enforcing encrypted secret storage handlers.
+- Execute automated secret scanning across corporate Git repositories to identify exposed API tokens or credential strings.
+- Rotate all exposed developer API keys, cloud service credentials, and personal access tokens immediately.
+- Enforce strict pre-commit hooks and repository scanning rules to block plain-text secret uploads to version control servers.
 
-Cloud identity governance demands rigorous non-human identity management and real-time API monitoring to ensure enterprise cloud infrastructure remains protected against automated AI framework exploitation. #CodeDefence #Barracuda #ARTEX #AISecurity #CloudSecurity #APISecurity #IdentitySecurity #DataExfiltration #AppSec #DevSecOps
-  ]]></description>
-</item>
-
-<item>
-  <title>N-able restricts N-central RMM platform features following public disclosure of 4EverAble2Shell and Agent2Shell zero days</title>
-  <link>https://codedefence.in/blog/2026/11/17/n-able-restricts-n-central-features-following-4everable2shell-disclosures</link>
-  <pubDate>Tue, 17 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/17/n-able-restricts-n-central-features-following-4everable2shell-disclosures</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-125882‚ CVE-2026-125878</cd:cve>
-  <cd:mentions>@[N-able](urn:li:organization:15161044)</cd:mentions>
-  <description><![CDATA[
-Managed service provider security alerts published today detail ongoing emergency containment actions targeting remote monitoring software platforms. Platform maintainers restricted core server integrations and cloud features while deploying emergency hotfixes across global management clusters.
-
-The operational restriction impacts N-able N-central Remote Monitoring and Management RMM platforms following public disclosures of critical zero-day exploit chains codenamed 4EverAble2Shell and Agent2Shell. Unauthenticated remote adversaries exploit path traversal vulnerability CVE-2026-125882 and OGNL injection bug CVE-2026-125878 to gain unauthenticated remote code execution under system privileges. Threat intelligence monitoring confirms at least 21 self-hosted N-central management servers compromised across North America, Europe, and Africa. N-able restricted vulnerable integrations and released mandatory hotfix updates for self-hosted instances.
-
-Subverting central RMM control platforms introduces critical supply-chain risks across thousands of client enterprise networks. Because RMM agents maintain elevated system privileges on client endpoints, an unauthenticated takeover of an RMM management server allows threat actors to push malicious scripts and ransomware payloads globally.
-
-- Apply mandatory N-able N-central emergency hotfix updates immediately across all self-hosted server deployments.
-- Isolate self-hosted N-central web management interfaces behind strict zero trust access proxies and IP whitelists.
-- Audit RMM agent execution logs on managed endpoints for unauthorized script executions, scheduled tasks, or new user creations.
-- Invalidate active RMM administrative user session tokens and force credential resets across all managed MSP accounts.
-
-Managed service provider platform security requires rapid containment patch application and strict control plane isolation to ensure remote management infrastructure remains protected against supply-chain remote code execution. #CodeDefence #Nable #Ncentral #4EverAble2Shell #Agent2Shell #RMM #SupplyChain #RCE #MSP #AppSec #PatchManagement #CloudSecurity
+Developer environment security demands strict credential store encryption and continuous code commit scanning to ensure software development workflows remain protected against automated secret exfiltration. #CodeDefence #ClaudeCode #Anthropic #DevSecOps #SecretScanning #APISecurity #CloudSecurity #IdentitySecurity #AppSec #SupplyChain
   ]]></description>
 </item>
 
