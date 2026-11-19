@@ -2,81 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Wed, 18 November 2026</title>
+  <title>Code Defence Intelligence Brief — Thu, 19 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Wed, 18 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Thu, 19 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Wed, 18 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Thu, 19 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA issues mandatory directive following active wild exploitation of PHP2Shell zero day flaw CVE-2026-121102</title>
-  <link>https://codedefence.in/blog/2026/11/18/cisa-issues-directive-php2shell-zero-day-cve-2026-121102</link>
-  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/cisa-issues-directive-php2shell-zero-day-cve-2026-121102</guid>
+  <title>CISA adds Puppet Enterprise and Core vulnerability CVE-2026-115731 to Known Exploited Vulnerabilities catalog</title>
+  <link>https://codedefence.in/blog/2026/11/19/cisa-adds-puppet-enterprise-vulnerability-cve-2026-115731-to-kev</link>
+  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/cisa-adds-puppet-enterprise-vulnerability-cve-2026-115731-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-121102</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[WordPress](urn:li:organization:15161044)</cd:mentions>
+  <cd:cve>CVE-2026-115731</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, ordering federal agencies to remediate an actively weaponized web application runtime flaw. Remote threat actors exploit multi-part form boundary parsing errors to achieve unauthenticated remote code execution across web servers.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, enforcing emergency remediation mandates for an actively exploited endpoint configuration server flaw. Remote unauthenticated threat actors exploit memory handling logic errors to manipulate server data and push unauthorized code across managed endpoint fleets.
 
-The emergency directive addresses PHP core runtime vulnerability CVE-2026-121102 carrying a CVSS score of 9.8 and codenamed PHP2Shell. Unauthenticated remote adversaries transmit crafted HTTP POST requests containing malformed boundary parameters to trigger heap buffer overflows within internal string parsing subroutines. Threat intelligence feeds confirm active wild exploitation targeting self-hosted web applications, WordPress installations, and enterprise e-commerce portals. CISA established a mandatory December 9 compliance deadline for Federal Civilian Executive Branch agencies to deploy emergency runtime maintenance updates.
+The emergency security directive covers Puppet Enterprise and Puppet Core vulnerability CVE-2026-115731 carrying a CVSS score of 9.8. The vulnerability affects Puppet Enterprise versions 2023.8.0 through 2023.8.12, 2025.0.0 through 2025.12.0, and 2026.0.0, as well as Puppet Core 8.x and 9.x releases. Unauthenticated remote threat actors transmit crafted requests to Puppet central servers, bypassing confidentiality controls, altering node configuration files, and executing arbitrary code. CISA mandated a December 1 compliance deadline for federal civilian agencies to deploy updated maintenance builds.
 
-Subverting core web application runtimes introduces systemic risks across public web portals and e-commerce platforms. Because PHP powers millions of enterprise web applications and content management systems globally, an unauthenticated heap corruption RCE permits threat actors to hijack web server processes, exfiltrate database credentials, and establish persistent web shell access.
+Subverting central infrastructure configuration servers introduces catastrophic supply-chain risks across corporate IT environments. Because Puppet servers automate policy enforcement, software distribution, and access management for thousands of endpoints, an unauthenticated compromise of the central Puppet master permits threat actors to deploy malicious scripts and gain full control over connected enterprise hosts.
 
-- Upgrade PHP core runtime installations immediately across web host fleets and container base images to patched maintenance builds.
-- Enforce Web Application Firewall WAF rules to inspect HTTP POST request body boundaries and drop malformed multipart form submissions.
-- Inspect web server error logs and execution stacks for unverified memory segmentation faults originating from PHP worker processes.
-- Restrict file system write permissions across web root directories, disabling direct script execution within uploaded content paths.
+- Upgrade Puppet Enterprise installations immediately to fixed release versions 2023.8.13, 2025.12.1, or 2026.0.1.
+- Update Puppet Core agent and server packages to builds 8.22.2 or 9.1.3 across all managed Linux and Windows hosts.
+- Restrict network access to Puppet master administrative ports, isolating configuration servers behind out-of-band VLANs.
+- Audit Puppet manifest run logs for unauthorized policy modifications, unscheduled script deployments, or anomalous agent registrations.
 
-Enterprise web application defense requires immediate runtime security updates and rigid perimeter request inspection to ensure web hosting infrastructure remains insulated from unauthenticated remote code execution. #CodeDefence #PHP #PHP2Shell #CISA #KEV #RCE #WebSecurity #AppSec #PatchManagement #WordPress #CloudSecurity
+Infrastructure automation defense demands immediate patch deployment and rigid network access controls to ensure central configuration management servers remain protected against remote code execution exploits. #CodeDefence #Puppet #CVE2026115731 #CISA #KEV #DevOps #SysAdmin #AppSec #PatchManagement #SupplyChain
   ]]></description>
 </item>
 
 <item>
-  <title>SonicWall issues urgent patch for critical SonicOS SAML MFA bypass flaw CVE-2026-120050 exploited in wild</title>
-  <link>https://codedefence.in/blog/2026/11/18/sonicwall-issues-urgent-patch-sonicos-saml-mfa-bypass-cve-2026-120050</link>
-  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/sonicwall-issues-urgent-patch-sonicos-saml-mfa-bypass-cve-2026-120050</guid>
+  <title>Active exploitation targets Cisco Expressway vulnerability CVE-2026-76466 following public PoC release</title>
+  <link>https://codedefence.in/blog/2026/11/19/active-exploitation-targets-cisco-expressway-cve-2026-76466</link>
+  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/active-exploitation-targets-cisco-expressway-cve-2026-76466</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-120050</cd:cve>
-  <cd:mentions>@[SonicWall](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-76466</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Perimeter security advisories published today warn of accelerated threat activity targeting remote access firewall appliances. Remote unauthenticated threat actors exploit single sign-on logic errors to bypass multi-factor authentication controls and establish persistent network footholds.
+Perimeter security advisories published today warn of active cyberattacks targeting enterprise collaboration gateways. Remote threat actors actively weaponize improper input handling routines to compromise clustered gateway appliances and prepare tooling for internal lateral movement.
 
-The security bulletin covers SonicOS firmware vulnerability CVE-2026-120050 affecting SonicWall Gen6 and Gen7 firewall appliances. Threat actors holding secondary single sign-on authentication credentials send malformed SAML assertions to bypass enforced multi-factor authentication checks, gaining unauthenticated remote SSL VPN access to internal subnets. Threat telemetry indicates threat actors actively weaponize exposed management interfaces worldwide. Vendor updates mandate immediate deployment of firmware release builds 7.1.3-7020 and 6.5.4.15-116n.
+The security bulletin covers Cisco Expressway Series devices affected by vulnerability CVE-2026-76466 carrying a CVSS score of 9.6. Following the public availability of a proof-of-concept exploit script, threat telemetry confirms adversaries are actively targeting exposed Cisco Expressway gateway clusters. Unauthenticated remote adversaries transmit crafted API calls to web management endpoints, bypassing authentication handlers to execute arbitrary commands under system privileges. Cisco issued software update release X15.5.20, confirming that legacy software streams including X14 or earlier must be migrated immediately.
 
-Subverting perimeter firewall controllers destroys corporate remote access boundaries and internal subnet isolation. Because SonicWall firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect internal network transit traffic, and move laterally across production subnets.
+Subverting edge collaboration appliances compromises perimeter network boundaries and enterprise communication security. Because Cisco Expressway manages secure external SIP calling, remote workforce connectivity, and video conferencing traversal, an unauthenticated gateway takeover permits threat actors to intercept internal communications, drop persistent remote access implants, and pivot into corporate subnets.
 
-- Upgrade SonicOS firmware installations immediately across Gen6 and Gen7 firewalls to maintenance builds 7.1.3-7020 or 6.5.4.15-116n.
-- Audit SAML identity provider configuration logs for anomalous single sign-on authentication assertions originating from unverified IP ranges.
-- Restrict public internet access to firewall management interfaces, placing administrative portals on isolated out-of-band VLANs.
-- Invalidate active remote access user session tokens and execute mandatory credential rotations across VPN user accounts.
+- Upgrade Cisco Expressway Series appliances immediately to fixed software release version X15.5.20.
+- Restrict public internet exposure of Expressway administrative web interfaces, enforcing access through dedicated management VLANs.
+- Inspect system process trees and network connections on Expressway nodes for unauthorized shell execution or unexpected egress channels.
+- Invalidate active administrative session cookies and force credential rotations across all managed collaboration appliances.
 
-Perimeter firewall controller defense demands immediate firmware patch application and rigid identity provider verification to ensure corporate remote access gateways remain insulated from authentication bypass exploits. #CodeDefence #SonicWall #SonicOS #MFA #SAML #AuthBypass #CISA #KEV #NetworkSecurity #AppSec #PatchManagement
+Edge collaboration security requires rapid software patch deployment and out-of-band management isolation to ensure perimeter communication gateways remain insulated from unauthenticated remote code execution. #CodeDefence #Cisco #Expressway #CVE202676466 #ZeroDay #RCE #PerimeterSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Claude Code settings file secret leaks trigger automated cloud key harvesting campaigns</title>
-  <link>https://codedefence.in/blog/2026/11/18/claude-code-settings-file-secret-leaks-trigger-cloud-key-harvesting</link>
-  <pubDate>Wed, 18 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/18/claude-code-settings-file-secret-leaks-trigger-cloud-key-harvesting</guid>
-  <cd:severity>HIGH</cd:severity>
-  <cd:mentions>@[Anthropic](urn:li:organization:15161044)</cd:mentions>
+  <title>Critical NGINX2Root vulnerabilities CVE-2026-123007 and CVE-2026-123633 allow unauthenticated server takeover</title>
+  <link>https://codedefence.in/blog/2026/11/19/critical-nginx2root-vulnerabilities-allow-unauthenticated-server-takeover</link>
+  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/critical-nginx2root-vulnerabilities-allow-unauthenticated-server-takeover</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-123007‚ CVE-2026-123633</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Cloud security intelligence disclosures published today warn of widespread automated credential harvesting campaigns targeting developer repositories. Adversaries exploit insecure configuration storage defaults in developer command-line tools to extract plain-text API credentials and cloud access keys.
+Web server threat intelligence reports published today warn of dual critical vulnerabilities affecting high-performance web proxy infrastructure. Remote unauthenticated threat actors exploit HTTP/2 request frame parsing bugs to trigger memory corruption and achieve full root control over vulnerable web servers.
 
-The security vulnerability affects developer workstations running early iterations of Anthropic's Claude Code command-line tool. Technical writeups confirm that local configuration settings files stored user access tokens and cloud API keys in unencrypted plain-text files within working directories. Automated GitHub scraping scripts scanning public code commits identified hundreds of exposed secrets, leading to unauthorized cloud infrastructure access and secondary supply-chain intrusion attempts. Anthropic released patched CLI tooling enforcing encrypted credential storage subroutines.
+The vulnerability disclosures, dubbed NGINX2Root and tracked as CVE-2026-123007 and CVE-2026-123633, carry CVSS scores up to 9.8 and impact NGINX open-source and NGINX Plus web servers running active HTTP/2 modules. Unauthenticated remote adversaries send malformed HTTP/2 stream frames to trigger heap buffer overflows in worker process memory. Technical proof-of-concept writeups demonstrate chaining these NGINX memory bugs with local Linux kernel privilege escalation flaws to escalate initial web daemon access to full root execution. Censys exposure telemetry indicates over 8.8 million exposed services globally.
 
-Exposing API authentication tokens and cloud infrastructure secrets compromises enterprise identity security and developer workstation integrity. When developer tools write plain-text credentials to local project subdirectories, accidental code repository commits allow threat actors to harvest secrets and launch automated cloud account takeover operations.
+Subverting central web servers and reverse proxies poses severe systemic risks to enterprise application hosting environments. Because NGINX acts as the primary ingress controller and SSL TLS termination endpoint for millions of web applications, an unauthenticated remote root takeover allows threat actors to hijack traffic, steal session tokens, and compromise backend database networks.
 
-- Upgrade Claude Code CLI tools immediately to patched releases enforcing encrypted secret storage handlers.
-- Execute automated secret scanning across corporate Git repositories to identify exposed API tokens or credential strings.
-- Rotate all exposed developer API keys, cloud service credentials, and personal access tokens immediately.
-- Enforce strict pre-commit hooks and repository scanning rules to block plain-text secret uploads to version control servers.
+- Apply official NGINX security patches immediately across all web server fleets and container ingress controllers.
+- Disable HTTP/2 protocol support temporarily on exposed listeners if immediate patching cannot be executed across legacy hosts.
+- Enforce strict Web Application Firewall WAF rules to inspect and drop malformed HTTP/2 framing requests at the edge.
+- Audit Linux host kernel versions and execute immediate privilege escalation hardening to block local root escalation chains.
 
-Developer environment security demands strict credential store encryption and continuous code commit scanning to ensure software development workflows remain protected against automated secret exfiltration. #CodeDefence #ClaudeCode #Anthropic #DevSecOps #SecretScanning #APISecurity #CloudSecurity #IdentitySecurity #AppSec #SupplyChain
+Web ingress defense demands immediate software patch application and strict protocol inspection to ensure enterprise reverse proxies remain protected against unauthenticated memory corruption exploits. #CodeDefence #NGINX #NGINX2Root #CVE2026123007 #CVE2026123633 #HTTP2 #RCE #WebSecurity #AppSec #PatchManagement #CloudSecurity
   ]]></description>
 </item>
 
