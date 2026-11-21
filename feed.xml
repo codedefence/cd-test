@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 19 November 2026</title>
+  <title>Code Defence Intelligence Brief — Sat, 21 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 19 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Sat, 21 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 19 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sat, 21 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Puppet Enterprise and Core vulnerability CVE-2026-115731 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/11/19/cisa-adds-puppet-enterprise-vulnerability-cve-2026-115731-to-kev</link>
-  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/cisa-adds-puppet-enterprise-vulnerability-cve-2026-115731-to-kev</guid>
+  <title>CISA issues emergency directive following active wild exploitation of Fortinet FortiOS authentication bypass flaw CVE-2026-126001</title>
+  <link>https://codedefence.in/blog/2026/11/21/cisa-issues-directive-fortinet-fortios-auth-bypass-cve-2026-126001</link>
+  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/cisa-issues-directive-fortinet-fortios-auth-bypass-cve-2026-126001</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-115731</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-126001</cd:cve>
+  <cd:mentions>@[Fortinet](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, enforcing emergency remediation mandates for an actively exploited endpoint configuration server flaw. Remote unauthenticated threat actors exploit memory handling logic errors to manipulate server data and push unauthorized code across managed endpoint fleets.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation mandate for an actively weaponized perimeter firewall flaw. Remote unauthenticated threat actors exploit single sign-on assertion parsing logic to gain administrative access across SSL VPN edge gateways.
 
-The emergency security directive covers Puppet Enterprise and Puppet Core vulnerability CVE-2026-115731 carrying a CVSS score of 9.8. The vulnerability affects Puppet Enterprise versions 2023.8.0 through 2023.8.12, 2025.0.0 through 2025.12.0, and 2026.0.0, as well as Puppet Core 8.x and 9.x releases. Unauthenticated remote threat actors transmit crafted requests to Puppet central servers, bypassing confidentiality controls, altering node configuration files, and executing arbitrary code. CISA mandated a December 1 compliance deadline for federal civilian agencies to deploy updated maintenance builds.
+The emergency security directive covers Fortinet FortiOS and FortiProxy software vulnerability CVE-2026-126001 carrying a CVSS score of 9.8. Remote unauthenticated threat actors transmit malformed SAML authentication tokens containing forged identity assertions to bypass multi-factor authentication controls. Successful exploitation grants unauthenticated remote adversaries administrative access to firewall management portals and SSL VPN gateways without valid user credentials. Threat telemetry confirms automated scanning arrays actively weaponizing exposed management ports globally. CISA set a mandatory December 12 compliance deadline for Federal Civilian Executive Branch agencies to deploy updated firmware releases.
 
-Subverting central infrastructure configuration servers introduces catastrophic supply-chain risks across corporate IT environments. Because Puppet servers automate policy enforcement, software distribution, and access management for thousands of endpoints, an unauthenticated compromise of the central Puppet master permits threat actors to deploy malicious scripts and gain full control over connected enterprise hosts.
+Subverting perimeter firewall controllers and secure remote access gateways destroys network perimeter boundaries and internal subnet isolation. Because FortiOS firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect encrypted traffic streams, and move laterally across production subnets.
 
-- Upgrade Puppet Enterprise installations immediately to fixed release versions 2023.8.13, 2025.12.1, or 2026.0.1.
-- Update Puppet Core agent and server packages to builds 8.22.2 or 9.1.3 across all managed Linux and Windows hosts.
-- Restrict network access to Puppet master administrative ports, isolating configuration servers behind out-of-band VLANs.
-- Audit Puppet manifest run logs for unauthorized policy modifications, unscheduled script deployments, or anomalous agent registrations.
+- Upgrade FortiOS software installations immediately across FortiGate firewalls to patched maintenance releases 7.4.5, 7.2.9, or 7.0.15.
+- Restrict public internet access to administrative web management portals, placing management interfaces on isolated out-of-band VLANs.
+- Audit SAML identity provider configuration logs for anomalous authentication assertions originating from unverified IP address ranges.
+- Invalidate active remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
 
-Infrastructure automation defense demands immediate patch deployment and rigid network access controls to ensure central configuration management servers remain protected against remote code execution exploits. #CodeDefence #Puppet #CVE2026115731 #CISA #KEV #DevOps #SysAdmin #AppSec #PatchManagement #SupplyChain
+Perimeter gateway security demands rapid software update deployment and strict out-of-band management isolation to ensure corporate firewall infrastructure remains protected against unauthenticated authentication bypass exploits. #CodeDefence #Fortinet #FortiOS #SAML #AuthBypass #SSLVPN #PerimeterSecurity #CISA #KEV #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Active exploitation targets Cisco Expressway vulnerability CVE-2026-76466 following public PoC release</title>
-  <link>https://codedefence.in/blog/2026/11/19/active-exploitation-targets-cisco-expressway-cve-2026-76466</link>
-  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/active-exploitation-targets-cisco-expressway-cve-2026-76466</guid>
+  <title>Active zero day exploitation targets Microsoft Exchange Server remote code execution flaw CVE-2026-124010</title>
+  <link>https://codedefence.in/blog/2026/11/21/active-zero-day-exploitation-targets-microsoft-exchange-rce-cve-2026-124010</link>
+  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/active-zero-day-exploitation-targets-microsoft-exchange-rce-cve-2026-124010</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-76466</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-124010</cd:cve>
+  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Perimeter security advisories published today warn of active cyberattacks targeting enterprise collaboration gateways. Remote threat actors actively weaponize improper input handling routines to compromise clustered gateway appliances and prepare tooling for internal lateral movement.
+Enterprise messaging security advisories published today warn of active wild attacks targeting self-hosted email infrastructure. Unauthenticated remote threat actors exploit deserialization vulnerabilities within backend PowerShell remoting daemons to execute arbitrary system commands under SYSTEM privileges.
 
-The security bulletin covers Cisco Expressway Series devices affected by vulnerability CVE-2026-76466 carrying a CVSS score of 9.6. Following the public availability of a proof-of-concept exploit script, threat telemetry confirms adversaries are actively targeting exposed Cisco Expressway gateway clusters. Unauthenticated remote adversaries transmit crafted API calls to web management endpoints, bypassing authentication handlers to execute arbitrary commands under system privileges. Cisco issued software update release X15.5.20, confirming that legacy software streams including X14 or earlier must be migrated immediately.
+The security bulletin covers Microsoft Exchange Server 2019 and 2016 vulnerability CVE-2026-124010 carrying a CVSS score of 9.8. Unauthenticated remote adversaries transmit malformed serialized objects to Exchange management endpoints over TCP port 443, bypassing authentication checks within the Exchange PowerShell remoting module. Threat research writeups confirm nation-state threat actors actively weaponize the zero-day to drop web shell backdoors, dump Active Directory domain credentials, and exfiltrate mailbox databases. Microsoft issued emergency out-of-band Cumulative Update security patches to mitigate active intrusion campaigns.
 
-Subverting edge collaboration appliances compromises perimeter network boundaries and enterprise communication security. Because Cisco Expressway manages secure external SIP calling, remote workforce connectivity, and video conferencing traversal, an unauthenticated gateway takeover permits threat actors to intercept internal communications, drop persistent remote access implants, and pivot into corporate subnets.
+Subverting central enterprise mail servers compromises corporate communications and Active Directory security boundaries. Because Microsoft Exchange processes internal corporate emails and authenticates against Active Directory domain controllers, an unauthenticated SYSTEM takeover permits threat actors to extract confidential mail records, harvest administrative credentials, and compromise domain controllers.
 
-- Upgrade Cisco Expressway Series appliances immediately to fixed software release version X15.5.20.
-- Restrict public internet exposure of Expressway administrative web interfaces, enforcing access through dedicated management VLANs.
-- Inspect system process trees and network connections on Expressway nodes for unauthorized shell execution or unexpected egress channels.
-- Invalidate active administrative session cookies and force credential rotations across all managed collaboration appliances.
+- Apply Microsoft Exchange Server out-of-band security updates immediately across all self-hosted Client Access and Mailbox server roles.
+- Enable Extended Protection for Authentication EPA across Exchange virtual directories to block authentication relay attempts.
+- Inspect Exchange server IIS logs and PowerShell execution logs for anomalous web shell creation or unverified process spawns.
+- Restrict external internet access to Exchange PowerShell remoting endpoints, routing management interfaces through out-of-band VLANs.
 
-Edge collaboration security requires rapid software patch deployment and out-of-band management isolation to ensure perimeter communication gateways remain insulated from unauthenticated remote code execution. #CodeDefence #Cisco #Expressway #CVE202676466 #ZeroDay #RCE #PerimeterSecurity #AppSec #PatchManagement #CISA
+Enterprise messaging platform defense requires emergency patch application and rigorous IIS log monitoring to ensure email infrastructure remains insulated from unauthenticated remote code execution exploits. #CodeDefence #Microsoft #ExchangeServer #ZeroDay #RCE #Deserialization #EmailSecurity #ActiveDirectory #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Critical NGINX2Root vulnerabilities CVE-2026-123007 and CVE-2026-123633 allow unauthenticated server takeover</title>
-  <link>https://codedefence.in/blog/2026/11/19/critical-nginx2root-vulnerabilities-allow-unauthenticated-server-takeover</link>
-  <pubDate>Thu, 19 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/19/critical-nginx2root-vulnerabilities-allow-unauthenticated-server-takeover</guid>
+  <title>Apache HTTP Server team releases emergency patch for HTTP2 stream heap corruption flaw CVE-2026-123405</title>
+  <link>https://codedefence.in/blog/2026/11/21/apache-http-server-releases-emergency-patch-http2-heap-corruption-cve-2026-123405</link>
+  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/apache-http-server-releases-emergency-patch-http2-heap-corruption-cve-2026-123405</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-123007‚ CVE-2026-123633</cd:cve>
-  <cd:mentions>@[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-123405</cd:cve>
+  <cd:mentions>@[Apache Software Foundation](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Web server threat intelligence reports published today warn of dual critical vulnerabilities affecting high-performance web proxy infrastructure. Remote unauthenticated threat actors exploit HTTP/2 request frame parsing bugs to trigger memory corruption and achieve full root control over vulnerable web servers.
+Web server infrastructure maintainers have distributed security updates resolving a critical memory corruption flaw in high-throughput HTTP parsing modules. Remote unauthenticated threat actors exploit stream multiplexing handling logic to trigger out-of-bounds heap writes and execute arbitrary system code.
 
-The vulnerability disclosures, dubbed NGINX2Root and tracked as CVE-2026-123007 and CVE-2026-123633, carry CVSS scores up to 9.8 and impact NGINX open-source and NGINX Plus web servers running active HTTP/2 modules. Unauthenticated remote adversaries send malformed HTTP/2 stream frames to trigger heap buffer overflows in worker process memory. Technical proof-of-concept writeups demonstrate chaining these NGINX memory bugs with local Linux kernel privilege escalation flaws to escalate initial web daemon access to full root execution. Censys exposure telemetry indicates over 8.8 million exposed services globally.
+The emergency security patch resolves Apache HTTP Server mod_http2 module vulnerability CVE-2026-123405 carrying a CVSS score of 9.8. Unauthenticated remote adversaries transmit malformed HTTP/2 frame sequences with manipulated stream dependency headers to trigger heap buffer overflows in worker process memory. Threat intelligence reports indicate proof-of-concept exploit code has surfaced publicly, prompting automated scanning arrays to target exposed web servers globally. The Apache Software Foundation released HTTP Server maintenance build 2.4.63 to fix the memory allocation error.
 
-Subverting central web servers and reverse proxies poses severe systemic risks to enterprise application hosting environments. Because NGINX acts as the primary ingress controller and SSL TLS termination endpoint for millions of web applications, an unauthenticated remote root takeover allows threat actors to hijack traffic, steal session tokens, and compromise backend database networks.
+Subverting core web server software poses systemic risks across corporate application hosting environments and reverse proxy gateways. Because Apache HTTP Server handles HTTP/2 traffic termination and reverse proxy routing for millions of enterprise web applications, an unauthenticated heap corruption RCE allows remote threat actors to compromise host web servers and pivot into internal application networks.
 
-- Apply official NGINX security patches immediately across all web server fleets and container ingress controllers.
-- Disable HTTP/2 protocol support temporarily on exposed listeners if immediate patching cannot be executed across legacy hosts.
-- Enforce strict Web Application Firewall WAF rules to inspect and drop malformed HTTP/2 framing requests at the edge.
-- Audit Linux host kernel versions and execute immediate privilege escalation hardening to block local root escalation chains.
+- Upgrade Apache HTTP Server installations immediately to maintenance release build 2.4.63 or later.
+- Disable mod_http2 protocol module temporarily on exposed web listeners if immediate patching cannot be executed across legacy hosts.
+- Enforce Web Application Firewall WAF rules to inspect HTTP/2 stream headers and drop malformed framing requests at the edge.
+- Monitor web server error logs for segmentation faults or unverified memory allocation failures originating from HTTP worker processes.
 
-Web ingress defense demands immediate software patch application and strict protocol inspection to ensure enterprise reverse proxies remain protected against unauthenticated memory corruption exploits. #CodeDefence #NGINX #NGINX2Root #CVE2026123007 #CVE2026123633 #HTTP2 #RCE #WebSecurity #AppSec #PatchManagement #CloudSecurity
+Web application server defense requires immediate software package updates and strict protocol frame validation to ensure HTTP/2 reverse proxies remain protected against unauthenticated memory corruption exploits. #CodeDefence #Apache #HTTPServer #mod_http2 #HTTP2 #RCE #HeapCorruption #WebSecurity #AppSec #PatchManagement #CloudSecurity
   ]]></description>
 </item>
 
