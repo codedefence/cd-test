@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sat, 21 November 2026</title>
+  <title>Code Defence Intelligence Brief — Sun, 22 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sat, 21 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Sun, 22 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sat, 21 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Sun, 22 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA issues emergency directive following active wild exploitation of Fortinet FortiOS authentication bypass flaw CVE-2026-126001</title>
-  <link>https://codedefence.in/blog/2026/11/21/cisa-issues-directive-fortinet-fortios-auth-bypass-cve-2026-126001</link>
-  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/cisa-issues-directive-fortinet-fortios-auth-bypass-cve-2026-126001</guid>
+  <title>CISA adds Palo Alto Networks PAN-OS SAML authentication bypass CVE-2026-129004 to Known Exploited Vulnerabilities catalog</title>
+  <link>https://codedefence.in/blog/2026/11/22/cisa-adds-palo-alto-networks-pan-os-saml-auth-bypass-cve-2026-129004-to-kev</link>
+  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/cisa-adds-palo-alto-networks-pan-os-saml-auth-bypass-cve-2026-129004-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-126001</cd:cve>
-  <cd:mentions>@[Fortinet](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-129004</cd:cve>
+  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation mandate for an actively weaponized perimeter firewall flaw. Remote unauthenticated threat actors exploit single sign-on assertion parsing logic to gain administrative access across SSL VPN edge gateways.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation mandate for an actively weaponized perimeter firewall flaw. Remote unauthenticated threat actors exploit single sign-on assertion parsing logic to gain administrative access across GlobalProtect edge gateways.
 
-The emergency security directive covers Fortinet FortiOS and FortiProxy software vulnerability CVE-2026-126001 carrying a CVSS score of 9.8. Remote unauthenticated threat actors transmit malformed SAML authentication tokens containing forged identity assertions to bypass multi-factor authentication controls. Successful exploitation grants unauthenticated remote adversaries administrative access to firewall management portals and SSL VPN gateways without valid user credentials. Threat telemetry confirms automated scanning arrays actively weaponizing exposed management ports globally. CISA set a mandatory December 12 compliance deadline for Federal Civilian Executive Branch agencies to deploy updated firmware releases.
+The emergency security directive covers Palo Alto Networks PAN-OS software vulnerability CVE-2026-129004 carrying a CVSS score of 9.8. Remote unauthenticated threat actors send malformed SAML authentication tokens containing forged identity signatures to bypass multi-factor authentication handlers on PAN-OS 11.2, 11.1, and 10.2 releases. Successful exploitation grants unauthenticated remote adversaries administrative access to firewall management portals and GlobalProtect SSL VPN gateways without valid user credentials. CISA set a mandatory December 13 compliance deadline for Federal Civilian Executive Branch agencies to deploy updated firmware releases.
 
-Subverting perimeter firewall controllers and secure remote access gateways destroys network perimeter boundaries and internal subnet isolation. Because FortiOS firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect encrypted traffic streams, and move laterally across production subnets.
+Subverting perimeter firewall controllers and secure remote access gateways destroys network perimeter boundaries and internal subnet isolation. Because PAN-OS firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect encrypted traffic streams, and move laterally across production subnets.
 
-- Upgrade FortiOS software installations immediately across FortiGate firewalls to patched maintenance releases 7.4.5, 7.2.9, or 7.0.15.
+- Upgrade PAN-OS software installations immediately across firewalls and Panorama appliances to emergency maintenance releases.
 - Restrict public internet access to administrative web management portals, placing management interfaces on isolated out-of-band VLANs.
 - Audit SAML identity provider configuration logs for anomalous authentication assertions originating from unverified IP address ranges.
-- Invalidate active remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
+- Invalidate active GlobalProtect remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
 
-Perimeter gateway security demands rapid software update deployment and strict out-of-band management isolation to ensure corporate firewall infrastructure remains protected against unauthenticated authentication bypass exploits. #CodeDefence #Fortinet #FortiOS #SAML #AuthBypass #SSLVPN #PerimeterSecurity #CISA #KEV #AppSec #PatchManagement
+Perimeter gateway security demands rapid software update deployment and strict out-of-band management isolation to ensure corporate firewall infrastructure remains protected against unauthenticated authentication bypass exploits. #CodeDefence #PaloAltoNetworks #PANOS #GlobalProtect #SAML #AuthBypass #SSLVPN #PerimeterSecurity #CISA #KEV #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Active zero day exploitation targets Microsoft Exchange Server remote code execution flaw CVE-2026-124010</title>
-  <link>https://codedefence.in/blog/2026/11/21/active-zero-day-exploitation-targets-microsoft-exchange-rce-cve-2026-124010</link>
-  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/active-zero-day-exploitation-targets-microsoft-exchange-rce-cve-2026-124010</guid>
+  <title>Active zero day exploitation targets Ivanti Connect Secure SAML single sign on bypass flaw CVE-2026-128501</title>
+  <link>https://codedefence.in/blog/2026/11/22/active-zero-day-exploitation-targets-ivanti-connect-secure-saml-bypass-cve-2026-128501</link>
+  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/active-zero-day-exploitation-targets-ivanti-connect-secure-saml-bypass-cve-2026-128501</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-124010</cd:cve>
-  <cd:mentions>@[Microsoft](urn:li:organization:1035)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-128501</cd:cve>
+  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Enterprise messaging security advisories published today warn of active wild attacks targeting self-hosted email infrastructure. Unauthenticated remote threat actors exploit deserialization vulnerabilities within backend PowerShell remoting daemons to execute arbitrary system commands under SYSTEM privileges.
+Enterprise secure remote access advisories published today warn of accelerated wild attack campaigns targeting perimeter gateway appliances. Unauthenticated remote threat actors exploit single sign-on logic flaws within SAML parsing subroutines to obtain administrative remote execution on edge access gateways.
 
-The security bulletin covers Microsoft Exchange Server 2019 and 2016 vulnerability CVE-2026-124010 carrying a CVSS score of 9.8. Unauthenticated remote adversaries transmit malformed serialized objects to Exchange management endpoints over TCP port 443, bypassing authentication checks within the Exchange PowerShell remoting module. Threat research writeups confirm nation-state threat actors actively weaponize the zero-day to drop web shell backdoors, dump Active Directory domain credentials, and exfiltrate mailbox databases. Microsoft issued emergency out-of-band Cumulative Update security patches to mitigate active intrusion campaigns.
+The emergency security bulletin addresses Ivanti Connect Secure ICS and Policy Secure IPS vulnerability CVE-2026-128501 carrying a CVSS score of 9.9. Unauthenticated remote threat actors transmit malformed SAML authentication requests to public web endpoints, bypassing authentication checks and triggering downstream command injection routines under root privileges. Threat research writeups confirm nation-state threat actors actively weaponize the zero-day to drop persistent web shell backdoors and harvest corporate SSL VPN session tokens. Ivanti distributed emergency out-of-band patches to mitigate active intrusion campaigns.
 
-Subverting central enterprise mail servers compromises corporate communications and Active Directory security boundaries. Because Microsoft Exchange processes internal corporate emails and authenticates against Active Directory domain controllers, an unauthenticated SYSTEM takeover permits threat actors to extract confidential mail records, harvest administrative credentials, and compromise domain controllers.
+Subverting central remote access controllers undermines perimeter security boundaries and corporate identity governance. Because Ivanti Connect Secure manages corporate VPN connections and zero-trust edge access, an unauthenticated root compromise permits threat actors to intercept internal network transit traffic, extract user credentials, and pivot across internal subnets.
 
-- Apply Microsoft Exchange Server out-of-band security updates immediately across all self-hosted Client Access and Mailbox server roles.
-- Enable Extended Protection for Authentication EPA across Exchange virtual directories to block authentication relay attempts.
-- Inspect Exchange server IIS logs and PowerShell execution logs for anomalous web shell creation or unverified process spawns.
-- Restrict external internet access to Exchange PowerShell remoting endpoints, routing management interfaces through out-of-band VLANs.
+- Apply official Ivanti out-of-band security updates immediately across all deployed Connect Secure and Policy Secure gateway appliances.
+- Run the official Integrity Checker Tool ICT to inspect system file structures for unauthorized web shell modifications or backdoor scripts.
+- Restrict public internet access to administrative web portals, routing management interfaces through out-of-band VLANs.
+- Invalidate active remote access user session tokens and reset corporate user authentication credentials across managed gateway nodes.
 
-Enterprise messaging platform defense requires emergency patch application and rigorous IIS log monitoring to ensure email infrastructure remains insulated from unauthenticated remote code execution exploits. #CodeDefence #Microsoft #ExchangeServer #ZeroDay #RCE #Deserialization #EmailSecurity #ActiveDirectory #AppSec #PatchManagement #CISA
+Secure access gateway defense requires emergency patch application and rigorous file integrity monitoring to ensure perimeter remote connections remain protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #ConnectSecure #PolicySecure #ZeroDay #RCE #SAML #CommandInjection #PerimeterSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Apache HTTP Server team releases emergency patch for HTTP2 stream heap corruption flaw CVE-2026-123405</title>
-  <link>https://codedefence.in/blog/2026/11/21/apache-http-server-releases-emergency-patch-http2-heap-corruption-cve-2026-123405</link>
-  <pubDate>Sat, 21 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/21/apache-http-server-releases-emergency-patch-http2-heap-corruption-cve-2026-123405</guid>
+  <title>Cisco releases security updates for Expressway Series unauthenticated command execution vulnerability CVE-2026-76466</title>
+  <link>https://codedefence.in/blog/2026/11/22/cisco-releases-security-updates-expressway-command-execution-cve-2026-76466</link>
+  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/cisco-releases-security-updates-expressway-command-execution-cve-2026-76466</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-123405</cd:cve>
-  <cd:mentions>@[Apache Software Foundation](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-76466</cd:cve>
+  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Web server infrastructure maintainers have distributed security updates resolving a critical memory corruption flaw in high-throughput HTTP parsing modules. Remote unauthenticated threat actors exploit stream multiplexing handling logic to trigger out-of-bounds heap writes and execute arbitrary system code.
+Perimeter collaboration security alerts published today detail out-of-band security maintenance releases targeting edge gateway systems. Platform maintainers fixed input sanitization errors across management API endpoints to block unauthenticated remote code execution.
 
-The emergency security patch resolves Apache HTTP Server mod_http2 module vulnerability CVE-2026-123405 carrying a CVSS score of 9.8. Unauthenticated remote adversaries transmit malformed HTTP/2 frame sequences with manipulated stream dependency headers to trigger heap buffer overflows in worker process memory. Threat intelligence reports indicate proof-of-concept exploit code has surfaced publicly, prompting automated scanning arrays to target exposed web servers globally. The Apache Software Foundation released HTTP Server maintenance build 2.4.63 to fix the memory allocation error.
+The security patch resolves Cisco Expressway Series vulnerability CVE-2026-76466 carrying a CVSS score of 9.6. Unauthenticated remote adversaries transmit crafted HTTP POST requests to web management portals, exploiting improper input validation logic to execute system commands under elevated privileges. Threat telemetry tracks automated scanning scripts actively targeting exposed Expressway gateway clusters globally. Cisco mandated immediate upgrading to maintenance software build X15.5.20 to protect enterprise collaboration networks.
 
-Subverting core web server software poses systemic risks across corporate application hosting environments and reverse proxy gateways. Because Apache HTTP Server handles HTTP/2 traffic termination and reverse proxy routing for millions of enterprise web applications, an unauthenticated heap corruption RCE allows remote threat actors to compromise host web servers and pivot into internal application networks.
+Subverting edge collaboration gateways compromises enterprise communication privacy and perimeter access controls. Because Cisco Expressway manages external SIP call signaling, video conference traversal, and mobile access, an unauthenticated gateway takeover allows threat actors to eavesdrop on corporate calls, deploy persistent implants, and pivot into internal network segments.
 
-- Upgrade Apache HTTP Server installations immediately to maintenance release build 2.4.63 or later.
-- Disable mod_http2 protocol module temporarily on exposed web listeners if immediate patching cannot be executed across legacy hosts.
-- Enforce Web Application Firewall WAF rules to inspect HTTP/2 stream headers and drop malformed framing requests at the edge.
-- Monitor web server error logs for segmentation faults or unverified memory allocation failures originating from HTTP worker processes.
+- Upgrade Cisco Expressway Series gateway appliances immediately to patched software build X15.5.20.
+- Restrict public internet exposure of administrative web management portals, placing management portals behind out-of-band VLANs.
+- Inspect system process trees and network egress logs on Expressway nodes for unverified shell spawns or unexpected connections.
+- Invalidate active administrative session tokens and enforce credential rotations across managed collaboration gateway nodes.
 
-Web application server defense requires immediate software package updates and strict protocol frame validation to ensure HTTP/2 reverse proxies remain protected against unauthenticated memory corruption exploits. #CodeDefence #Apache #HTTPServer #mod_http2 #HTTP2 #RCE #HeapCorruption #WebSecurity #AppSec #PatchManagement #CloudSecurity
+Edge collaboration security demands immediate software updates and strict out-of-band management proxying to ensure collaboration gateways remain insulated from unauthenticated remote code execution. #CodeDefence #Cisco #Expressway #CVE202676466 #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
