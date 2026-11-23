@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Sun, 22 November 2026</title>
+  <title>Code Defence Intelligence Brief — Mon, 23 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Sun, 22 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Mon, 23 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Sun, 22 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Mon, 23 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Mon, 23 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA adds Palo Alto Networks PAN-OS SAML authentication bypass CVE-2026-129004 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/11/22/cisa-adds-palo-alto-networks-pan-os-saml-auth-bypass-cve-2026-129004-to-kev</link>
-  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/cisa-adds-palo-alto-networks-pan-os-saml-auth-bypass-cve-2026-129004-to-kev</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-129004</cd:cve>
-  <cd:mentions>@[Palo Alto Networks](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
-  <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation mandate for an actively weaponized perimeter firewall flaw. Remote unauthenticated threat actors exploit single sign-on assertion parsing logic to gain administrative access across GlobalProtect edge gateways.
-
-The emergency security directive covers Palo Alto Networks PAN-OS software vulnerability CVE-2026-129004 carrying a CVSS score of 9.8. Remote unauthenticated threat actors send malformed SAML authentication tokens containing forged identity signatures to bypass multi-factor authentication handlers on PAN-OS 11.2, 11.1, and 10.2 releases. Successful exploitation grants unauthenticated remote adversaries administrative access to firewall management portals and GlobalProtect SSL VPN gateways without valid user credentials. CISA set a mandatory December 13 compliance deadline for Federal Civilian Executive Branch agencies to deploy updated firmware releases.
-
-Subverting perimeter firewall controllers and secure remote access gateways destroys network perimeter boundaries and internal subnet isolation. Because PAN-OS firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect encrypted traffic streams, and move laterally across production subnets.
-
-- Upgrade PAN-OS software installations immediately across firewalls and Panorama appliances to emergency maintenance releases.
-- Restrict public internet access to administrative web management portals, placing management interfaces on isolated out-of-band VLANs.
-- Audit SAML identity provider configuration logs for anomalous authentication assertions originating from unverified IP address ranges.
-- Invalidate active GlobalProtect remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
-
-Perimeter gateway security demands rapid software update deployment and strict out-of-band management isolation to ensure corporate firewall infrastructure remains protected against unauthenticated authentication bypass exploits. #CodeDefence #PaloAltoNetworks #PANOS #GlobalProtect #SAML #AuthBypass #SSLVPN #PerimeterSecurity #CISA #KEV #AppSec #PatchManagement
-  ]]></description>
-</item>
-
-<item>
-  <title>Active zero day exploitation targets Ivanti Connect Secure SAML single sign on bypass flaw CVE-2026-128501</title>
-  <link>https://codedefence.in/blog/2026/11/22/active-zero-day-exploitation-targets-ivanti-connect-secure-saml-bypass-cve-2026-128501</link>
-  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/active-zero-day-exploitation-targets-ivanti-connect-secure-saml-bypass-cve-2026-128501</guid>
+  <title>CISA adds Ivanti Connect Secure SAML single sign on bypass CVE-2026-128501 to Known Exploited Vulnerabilities catalog</title>
+  <link>https://codedefence.in/blog/2026/11/23/cisa-adds-ivanti-connect-secure-saml-bypass-cve-2026-128501-to-kev</link>
+  <pubDate>Mon, 23 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/23/cisa-adds-ivanti-connect-secure-saml-bypass-cve-2026-128501-to-kev</guid>
   <cd:severity>CRITICAL</cd:severity>
   <cd:cve>CVE-2026-128501</cd:cve>
   <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Enterprise secure remote access advisories published today warn of accelerated wild attack campaigns targeting perimeter gateway appliances. Unauthenticated remote threat actors exploit single sign-on logic flaws within SAML parsing subroutines to obtain administrative remote execution on edge access gateways.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation order for an actively weaponized remote access gateway flaw. Remote unauthenticated threat actors exploit single sign-on logic flaws within SAML assertion parsing subroutines to obtain administrative execution across edge gateways.
 
-The emergency security bulletin addresses Ivanti Connect Secure ICS and Policy Secure IPS vulnerability CVE-2026-128501 carrying a CVSS score of 9.9. Unauthenticated remote threat actors transmit malformed SAML authentication requests to public web endpoints, bypassing authentication checks and triggering downstream command injection routines under root privileges. Threat research writeups confirm nation-state threat actors actively weaponize the zero-day to drop persistent web shell backdoors and harvest corporate SSL VPN session tokens. Ivanti distributed emergency out-of-band patches to mitigate active intrusion campaigns.
+The emergency security directive addresses Ivanti Connect Secure ICS and Policy Secure IPS vulnerability CVE-2026-128501 carrying a CVSS score of 9.9. Unauthenticated remote adversaries send crafted SAML authentication requests to exposed web portals, bypassing authentication handlers and triggering command injection routines with root privileges. Threat telemetry confirms nation-state threat actors actively weaponize the flaw to plant persistent web shells and extract SSL VPN session tokens. CISA established a mandatory December 14 compliance deadline for Federal Civilian Executive Branch agencies to deploy emergency patches.
 
-Subverting central remote access controllers undermines perimeter security boundaries and corporate identity governance. Because Ivanti Connect Secure manages corporate VPN connections and zero-trust edge access, an unauthenticated root compromise permits threat actors to intercept internal network transit traffic, extract user credentials, and pivot across internal subnets.
+Subverting central remote access controllers undermines network perimeter boundaries and enterprise identity governance. Because Ivanti Connect Secure manages corporate VPN connections and zero-trust remote access, an unauthenticated root compromise allows threat actors to intercept internal transit traffic, harvest user credentials, and move laterally across internal subnets.
 
-- Apply official Ivanti out-of-band security updates immediately across all deployed Connect Secure and Policy Secure gateway appliances.
-- Run the official Integrity Checker Tool ICT to inspect system file structures for unauthorized web shell modifications or backdoor scripts.
-- Restrict public internet access to administrative web portals, routing management interfaces through out-of-band VLANs.
-- Invalidate active remote access user session tokens and reset corporate user authentication credentials across managed gateway nodes.
+- Apply official Ivanti security release updates immediately across all deployed Connect Secure and Policy Secure gateway appliances.
+- Run the official Integrity Checker Tool ICT to inspect system file trees for unauthorized web shell scripts or backdoor modifications.
+- Restrict public internet exposure of administrative web management portals, routing management interfaces behind out-of-band VLANs.
+- Invalidate active remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
 
-Secure access gateway defense requires emergency patch application and rigorous file integrity monitoring to ensure perimeter remote connections remain protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #ConnectSecure #PolicySecure #ZeroDay #RCE #SAML #CommandInjection #PerimeterSecurity #AppSec #PatchManagement #CISA
+Secure access gateway defense requires immediate software patch application and rigorous file integrity monitoring to ensure perimeter remote connections remain protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #ConnectSecure #PolicySecure #ZeroDay #RCE #SAML #CommandInjection #CISA #KEV #PerimeterSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Cisco releases security updates for Expressway Series unauthenticated command execution vulnerability CVE-2026-76466</title>
-  <link>https://codedefence.in/blog/2026/11/22/cisco-releases-security-updates-expressway-command-execution-cve-2026-76466</link>
-  <pubDate>Sun, 22 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/22/cisco-releases-security-updates-expressway-command-execution-cve-2026-76466</guid>
+  <title>Active zero day exploitation targets GitLab GraphQL API integer overflow vulnerability CVE-2026-127110</title>
+  <link>https://codedefence.in/blog/2026/11/23/active-zero-day-exploitation-targets-gitlab-graphql-api-cve-2026-127110</link>
+  <pubDate>Mon, 23 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/23/active-zero-day-exploitation-targets-gitlab-graphql-api-cve-2026-127110</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-76466</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-127110</cd:cve>
+  <cd:mentions>@[GitLab](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Perimeter collaboration security alerts published today detail out-of-band security maintenance releases targeting edge gateway systems. Platform maintainers fixed input sanitization errors across management API endpoints to block unauthenticated remote code execution.
+DevSecOps platform maintainers have published security advisories warning of active wild exploitation targeting self-hosted code repositories. Remote unauthenticated threat actors exploit integer overflow vulnerabilities in API query subroutines to bypass access controls and trigger remote code execution.
 
-The security patch resolves Cisco Expressway Series vulnerability CVE-2026-76466 carrying a CVSS score of 9.6. Unauthenticated remote adversaries transmit crafted HTTP POST requests to web management portals, exploiting improper input validation logic to execute system commands under elevated privileges. Threat telemetry tracks automated scanning scripts actively targeting exposed Expressway gateway clusters globally. Cisco mandated immediate upgrading to maintenance software build X15.5.20 to protect enterprise collaboration networks.
+The security advisory addresses GitLab Community Edition CE and Enterprise Edition EE vulnerability CVE-2026-127110 carrying a CVSS score of 9.9. Remote unauthenticated threat actors transmit malformed GraphQL API requests containing nested integer arrays to trigger heap buffer overflows in backend parser subroutines. Exploitation allows adversaries to execute arbitrary commands under the git user context, extract proprietary repository source code, and compromise CI CD pipeline environment variables. GitLab issued emergency security release versions 17.5.2, 17.4.4, and 17.3.7 to remediate exposed deployments.
 
-Subverting edge collaboration gateways compromises enterprise communication privacy and perimeter access controls. Because Cisco Expressway manages external SIP call signaling, video conference traversal, and mobile access, an unauthenticated gateway takeover allows threat actors to eavesdrop on corporate calls, deploy persistent implants, and pivot into internal network segments.
+Subverting central DevOps code repositories introduces severe supply-chain risks across software development pipelines. Because GitLab hosts enterprise source code repositories and manages automated CI CD deployment runners, an unauthenticated RCE permits threat actors to inject malicious backdoors into production builds and harvest deployment API secrets.
 
-- Upgrade Cisco Expressway Series gateway appliances immediately to patched software build X15.5.20.
-- Restrict public internet exposure of administrative web management portals, placing management portals behind out-of-band VLANs.
-- Inspect system process trees and network egress logs on Expressway nodes for unverified shell spawns or unexpected connections.
-- Invalidate active administrative session tokens and enforce credential rotations across managed collaboration gateway nodes.
+- Upgrade self-hosted GitLab CE EE instances immediately to emergency patch releases 17.5.2, 17.4.4, or 17.3.7.
+- Restrict public network access to GraphQL API endpoints, placing self-hosted GitLab servers behind zero-trust access proxies.
+- Rotate all CI CD pipeline variables, production deployment keys, and personal access tokens stored within affected GitLab projects.
+- Inspect GitLab runner execution logs and web server access records for anomalous GraphQL POST requests originating from untrusted IP ranges.
 
-Edge collaboration security demands immediate software updates and strict out-of-band management proxying to ensure collaboration gateways remain insulated from unauthenticated remote code execution. #CodeDefence #Cisco #Expressway #CVE202676466 #RCE #PerimeterSecurity #NetworkSecurity #AppSec #PatchManagement #CISA
+DevOps platform security requires rapid patch deployment and strict API exposure management to ensure central source code repositories and CI CD pipelines remain protected against unauthenticated remote code execution. #CodeDefence #GitLab #GraphQL #IntegerOverflow #ZeroDay #RCE #SupplyChain #DevSecOps #AppSec #PatchManagement #CISA
+  ]]></description>
+</item>
+
+<item>
+  <title>Critical Brotli Node2Shell library vulnerability CVE-2026-111497 exploited in wild automated server scanning campaigns</title>
+  <link>https://codedefence.in/blog/2026/11/23/critical-brotli-node2shell-vulnerability-cve-2026-111497-exploited-in-wild-scans</link>
+  <pubDate>Mon, 23 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/23/critical-brotli-node2shell-vulnerability-cve-2026-111497-exploited-in-wild-scans</guid>
+  <cd:severity>CRITICAL</cd:severity>
+  <cd:cve>CVE-2026-111497</cd:cve>
+  <cd:mentions>@[CISA](urn:li:organization:13010360)‚ @[Node.js](urn:li:organization:15161044)</cd:mentions>
+  <description><![CDATA[
+Threat intelligence feeds published today report massive automated scanning campaigns targeting exposed web runtimes and reverse proxies. Remote unauthenticated threat actors exploit buffer overflow flaws in open-source data compression libraries to execute remote code across web server clusters.
+
+The threat warning details accelerated wild exploitation targeting Brotli compression library vulnerability CVE-2026-111497, codenamed Node2Shell, carrying a CVSS score of 9.8. Unauthenticated remote adversaries send crafted compressed stream headers to trigger out-of-bounds heap memory corruption within Node.js runtimes, web application servers, and reverse proxy gateways. Threat research confirms automated botnets are scanning public IPv4 subnets to deploy cryptocurrency miners and persistent web shell backdoors. CISA previously mandated federal agency compliance under BOD 22-01.
+
+Subverting core data compression libraries poses widespread systemic risks across public cloud hosting environments and web application runtimes. Because Brotli handles web content compression across web servers, API gateways, and microservices, an unauthenticated heap corruption RCE allows remote threat actors to compromise host web servers and pivot laterally into internal microservice networks.
+
+- Update Brotli library dependencies immediately across Node.js web application runtimes, container base images, and reverse proxy web servers.
+- Configure Web Application Firewalls WAF to inspect HTTP compression headers and drop malformed Brotli stream payloads at the edge.
+- Inspect application runtime memory logs for unverified segmentation faults or process crashes originating from decompression subroutines.
+- Enforce strict egress network filtering on application server hosts to block unauthorized outbound connections to command and control servers.
+
+Application runtime defense demands immediate software dependency updates and rigid edge payload inspection to ensure enterprise web services remain insulated from unauthenticated memory corruption exploits. #CodeDefence #Brotli #Node2Shell #Nodejs #RCE #HeapCorruption #WebSecurity #AppSec #PatchManagement #CISA #CloudSecurity
   ]]></description>
 </item>
 
