@@ -2,82 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"
                     xmlns:cd="https://codedefence.in/rss/extensions">
 <channel>
-  <title>Code Defence Intelligence Brief — Thu, 26 November 2026</title>
+  <title>Code Defence Intelligence Brief — Fri, 27 November 2026</title>
   <link>https://codedefence.in/executive-briefing</link>
-  <description>Daily cybersecurity intelligence for Thu, 26 November 2026.</description>
+  <description>Daily cybersecurity intelligence for Fri, 27 November 2026.</description>
   <language>en-us</language>
-  <pubDate>Thu, 26 November 2026 18:30:00 +0300</pubDate>
-  <lastBuildDate>Thu, 26 November 2026 18:30:00 +0300</lastBuildDate>
+  <pubDate>Fri, 27 November 2026 18:30:00 +0300</pubDate>
+  <lastBuildDate>Fri, 27 November 2026 18:30:00 +0300</lastBuildDate>
 
 <item>
-  <title>CISA fast tracks SonicWall SonicOS SAML authentication bypass CVE-2026-98001 to Known Exploited Vulnerabilities catalog</title>
-  <link>https://codedefence.in/blog/2026/11/26/cisa-adds-sonicwall-sonicos-saml-bypass-cve-2026-98001-to-kev</link>
-  <pubDate>Thu, 26 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/26/cisa-adds-sonicwall-sonicos-saml-bypass-cve-2026-98001-to-kev</guid>
+  <title>CISA issues emergency KEV directive for Drupal Fail2Install unauthenticated RCE flaw CVE-2026-132165</title>
+  <link>https://codedefence.in/blog/2026/11/27/cisa-issues-kev-directive-drupal-fail2install-rce-cve-2026-132165</link>
+  <pubDate>Fri, 27 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/27/cisa-issues-kev-directive-drupal-fail2install-rce-cve-2026-132165</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-98001</cd:cve>
-  <cd:mentions>@[SonicWall](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-132165</cd:cve>
+  <cd:mentions>@[Drupal](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, issuing an emergency remediation mandate for an actively weaponized perimeter firewall flaw. Remote unauthenticated threat actors exploit single sign-on assertion parsing logic to gain administrative access across SSL VPN edge gateways.
+Federal cybersecurity authorities have updated Known Exploited Vulnerabilities catalog directives under Binding Operational Directive 22-01, enforcing emergency remediation mandates for an actively weaponized web application content management system flaw. Remote unauthenticated threat actors exploit installer logic handlers to force reinstallation subroutines and achieve complete server takeover.
 
-The emergency security directive covers SonicWall SonicOS software vulnerability CVE-2026-98001 carrying a CVSS score of 9.8 and impacting Gen 6, Gen 7, and NSv virtual firewalls. Remote unauthenticated threat actors send malformed SAML authentication tokens containing forged identity assertions to bypass multi-factor authentication controls. Successful exploitation grants unauthenticated remote adversaries administrative access to firewall management portals and NetExtender SSL VPN gateways without valid user credentials. Threat telemetry confirms automated scanning arrays actively weaponizing exposed management ports globally. CISA set a mandatory December 17 compliance deadline for Federal Civilian Executive Branch agencies to deploy updated firmware releases.
+The emergency directive covers Drupal Core vulnerability CVE-2026-132165, codenamed Fail2Install, carrying a CVSS score of 9.8. Unauthenticated remote adversaries send high-frequency HTTP requests to exhaust server resources, forcing the application into a fail-open state during install script execution. Attackers subsequently inject malformed database paths, bypass web server path rewrite rules, and plant persistent PHP web shell backdoors on the target host. CISA established an immediate mandatory compliance deadline of November 27 for federal civilian agencies to patch exposed sites or remove vulnerable install endpoints.
 
-Subverting perimeter firewall controllers and secure remote access gateways destroys network perimeter boundaries and internal subnet isolation. Because SonicOS firewalls manage corporate SSL VPN access and site-to-site IPsec tunnels, an unauthenticated SAML authentication bypass permits threat actors to hijack user sessions, inspect encrypted traffic streams, and move laterally across production subnets.
+Subverting central web management frameworks compromises enterprise digital presence, database integrity, and customer data privacy. Because Drupal hosts public portals, internal knowledge bases, and web services, an unauthenticated remote code execution exploit permits threat actors to hijack web traffic, extract backend database credentials, and pivot laterally into internal subnets.
 
-- Upgrade SonicOS firmware installations immediately across physical firewalls and NSv virtual appliances to emergency maintenance releases.
-- Restrict public internet access to administrative web management portals, placing management interfaces on isolated out-of-band VLANs.
-- Audit SAML identity provider configuration logs for anomalous authentication assertions originating from unverified IP address ranges.
-- Invalidate active NetExtender and SMA remote access user session tokens and execute mandatory credential rotations across corporate VPN user accounts.
+- Upgrade Drupal Core web server deployments immediately to emergency security release builds.
+- Remove or restrict public access to the install.php file across all production web root directories.
+- Inspect web server access logs for anomalous HTTP requests targeting installation routes or unexpected file creations.
+- Enforce Web Application Firewall WAF rules to drop unverified installation requests and inspect incoming query parameters.
 
-Perimeter gateway security demands rapid software update deployment and strict out-of-band management isolation to ensure corporate firewall infrastructure remains protected against unauthenticated authentication bypass exploits. #CodeDefence #SonicWall #SonicOS #SAML #AuthBypass #SSLVPN #PerimeterSecurity #CISA #KEV #AppSec #PatchManagement
+Web content management defense demands immediate security patch execution and strict web root file access restrictions to ensure public-facing application servers remain protected against unauthenticated installation exploits. #CodeDefence #Drupal #Fail2Install #CVE2026132165 #ZeroDay #RCE #CISA #KEV #WebSecurity #AppSec #PatchManagement
   ]]></description>
 </item>
 
 <item>
-  <title>Active zero day exploitation targets Ivanti EPMM and MobileIron Core API command injection flaw CVE-2026-127988</title>
-  <link>https://codedefence.in/blog/2026/11/26/active-zero-day-exploitation-targets-ivanti-epmm-cve-2026-127988</link>
-  <pubDate>Thu, 26 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/26/active-zero-day-exploitation-targets-ivanti-epmm-cve-2026-127988</guid>
+  <title>Critical 12 year old NFS2ROOT Linux kernel vulnerability CVE-2026-99362 exploited for remote root takeover</title>
+  <link>https://codedefence.in/blog/2026/11/27/critical-12-year-old-nfs2root-linux-kernel-vulnerability-cve-2026-99362-exploited</link>
+  <pubDate>Fri, 27 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/27/critical-12-year-old-nfs2root-linux-kernel-vulnerability-cve-2026-99362-exploited</guid>
   <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-127988</cd:cve>
-  <cd:mentions>@[Ivanti](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <cd:cve>CVE-2026-99362</cd:cve>
+  <cd:mentions>@[Red Hat](urn:li:organization:15161044)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
   <description><![CDATA[
-Enterprise mobile security advisories published today warn of active wild attacks targeting mobile device management infrastructure. Unauthenticated remote threat actors exploit input validation errors within REST API routing subroutines to obtain root remote execution on enterprise MDM servers.
+Linux kernel security advisories published today report active wild exploitation targeting a legacy network file sharing service vulnerability. Remote threat actors exploit boundary checking bugs within kernel-space RPC daemon implementations to achieve unauthenticated root privilege escalation across enterprise storage servers.
 
-The security bulletin covers Ivanti Endpoint Manager Mobile EPMM vulnerability CVE-2026-127988 carrying a CVSS score of 9.8. Remote unauthenticated threat actors send crafted HTTP requests containing shell command injection vectors to unauthenticated API endpoints managing device enrollment. Exploitation permits adversaries to execute OS commands under root privileges, deploy persistent web shell backdoors, and exfiltrate corporate mobile enrolment identity certificates. Threat telemetry confirms nation-state threat groups actively targeting exposed EPMM portals worldwide. Ivanti released emergency RPM hotfix packages to mitigate active intrusions.
+The security warning details Linux kernel Network File System NFS server vulnerability CVE-2026-99362, codenamed NFS2ROOT, carrying a CVSS score of 9.8. Unauthenticated remote adversaries transmit malformed RPC request frames to nfsd kernel daemons, triggering out-of-bounds heap memory write errors. Threat research confirms automated exploit frameworks actively target exposed NFS v3 and v4 exports, overwriting kernel memory structures to grant unauthenticated remote root shell access over network file shares. Major enterprise Linux vendors have released kernel security updates.
 
-Subverting central mobile device management controllers undermines fleet-wide mobile security policy enforcement and enterprise access governance. Because Ivanti EPMM manages enterprise mobile enrollment, container encryption keys, and internal app distribution, an unauthenticated root compromise allows threat actors to push malicious mobile payloads, steal corporate credentials, and pivot into corporate subnets.
+Subverting kernel-level file sharing daemons destroys host isolation boundaries and enterprise data confidentiality. Because NFS daemons operate directly within Linux kernel memory to manage network storage volumes, an unauthenticated kernel-level code execution allows threat actors to compromise host OS integrity, access stored enterprise backups, and intercept storage traffic.
 
-- Apply official Ivanti RPM security hotfixes immediately across all deployed EPMM server nodes.
-- Restrict public internet exposure of EPMM administrative and web enrollment portals, enforcing out-of-band access proxies.
-- Inspect EPMM server file systems and API logs for unverified web shell deployment or anomalous shell command execution.
-- Invalidate active administrative user session tokens and execute mandatory credential rotations across mobile management accounts.
+- Update Linux host kernel packages immediately across all NFS server nodes and enterprise storage clusters.
+- Restrict public network reachability of NFS RPC ports TCP UDP 2049, limiting access to trusted internal IP ranges.
+- Enforce strict export subnet filtering and utilize kerberized RPCSEC_GSS authentication for remote file system mounts.
+- Monitor system kernel ring buffers and system logs for unexpected segmentation faults or memory allocation panics.
 
-Mobile management platform defense requires emergency patch application and rigorous file integrity monitoring to ensure enterprise mobile infrastructure remains protected against unauthenticated command execution exploits. #CodeDefence #Ivanti #EPMM #MobileIron #ZeroDay #RCE #CommandInjection #EndpointSecurity #AppSec #PatchManagement #CISA
+Enterprise Linux storage defense demands rapid kernel patch deployment and strict network RPC port isolation to ensure storage hosts remain protected against unauthenticated kernel heap corruption exploits. #CodeDefence #Linux #Kernel #NFS2ROOT #CVE202699362 #RCE #PrivilegeEscalation #StorageSecurity #AppSec #PatchManagement #CISA
   ]]></description>
 </item>
 
 <item>
-  <title>Critical Cisco ASA and Firepower SSL VPN memory leak flaw CVE-2026-76501 exploited in active credential harvesting scans</title>
-  <link>https://codedefence.in/blog/2026/11/26/critical-cisco-asa-firepower-ssl-vpn-memory-leak-cve-2026-76501-exploited</link>
-  <pubDate>Thu, 26 November 2026 18:30:00 +0300</pubDate>
-  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/26/critical-cisco-asa-firepower-ssl-vpn-memory-leak-cve-2026-76501-exploited</guid>
-  <cd:severity>CRITICAL</cd:severity>
-  <cd:cve>CVE-2026-76501</cd:cve>
-  <cd:mentions>@[Cisco](urn:li:organization:1063)‚ @[CISA](urn:li:organization:13010360)</cd:mentions>
+  <title>SAP confirms GitHub breach and source code tampering incident stemming from stolen employee developer tokens</title>
+  <link>https://codedefence.in/blog/2026/11/27/sap-confirms-github-breach-source-code-tampering-stolen-developer-tokens</link>
+  <pubDate>Fri, 27 November 2026 18:30:00 +0300</pubDate>
+  <guid isPermaLink="true">https://codedefence.in/blog/2026/11/27/sap-confirms-github-breach-source-code-tampering-stolen-developer-tokens</guid>
+  <cd:severity>HIGH</cd:severity>
+  <cd:cve>CVE-2026-139901</cd:cve>
+  <cd:mentions>@[SAP](urn:li:organization:15161044)‚ @[GitHub](urn:li:organization:15161044)</cd:mentions>
   <description><![CDATA[
-Perimeter network security advisories published today report widespread automated scanning campaigns targeting remote access gateways. Remote unauthenticated threat actors exploit memory management errors within WebVPN portal parsing subroutines to leak sensitive heap memory contents.
+Enterprise software security bulletins released today confirm a critical supply chain incident impacting central developer code repositories. Threat actors weaponized compromised developer authentication tokens to access internal source repositories and modify application source code components.
 
-The threat advisory details Cisco Adaptive Security Appliance ASA and Firepower Threat Defense FTD software vulnerability CVE-2026-76501 carrying a CVSS score of 9.1. Unauthenticated remote adversaries send crafted HTTP GET requests to WebVPN authentication interfaces to trigger out-of-bounds heap memory reads. Threat research confirms automated threat arrays are harvesting unencrypted administrative session cookies, user credentials, and active SSL VPN state data from heap memory dumps. Cisco released maintenance updates for ASA and FTD software streams to eliminate the memory leak error.
+The incident report details an unauthorized access breach targeting public and private repositories hosted on GitHub, linked to tracking reference CVE-2026-139901. Threat actors leveraged stolen employee credentials and personal access tokens to clone proprietary repositories, read developer tools, and introduce unauthorized code alterations into open-source sample applications. Emergency incident response protocols forced the revocation of developer tokens, locking down external code commit access across multiple software engineering teams to prevent downstream supply-chain compromise.
 
-Subverting perimeter firewall memory structures undermines session confidentiality and secure remote access boundaries. Because Cisco ASA and FTD devices process external SSL VPN user authentications and manage IPsec tunnels, an unauthenticated heap memory leak allows threat actors to harvest valid user session tokens and bypass multi-factor authentication without triggering login alert thresholds.
+Subverting enterprise source code repositories introduces catastrophic software supply-chain risks across downstream corporate customers. When threat actors manipulate application source code or inject hidden backdoors into software builds, downstream enterprise deployments running affected ERP and business application components face silent compromise.
 
-- Upgrade Cisco ASA and FTD software installations immediately to fixed maintenance releases.
-- Disable WebVPN and AnyConnect SSL VPN features temporarily if immediate patching cannot be completed across legacy devices.
-- Monitor WebVPN portal traffic for high-frequency HTTP requests targeting specific internal memory paths.
-- Force mandatory session logouts and credential resets across all active AnyConnect SSL VPN user accounts.
+- Revoke and reissue all developer Personal Access Tokens PATs, SSH keys, and OAuth integrations connected to enterprise code repositories.
+- Perform cryptographic code integrity audits and commit signing verification across all recent software release builds.
+- Enforce mandatory hardware key multi-factor authentication for developer repository access and CI CD pipeline triggers.
+- Audit developer workstations for credential stealing infostealer malware and credential harvesting artifacts.
 
-Perimeter security infrastructure defense demands immediate software update deployment and continuous memory access monitoring to ensure edge VPN gateways remain protected against unauthenticated memory disclosure exploits. #CodeDefence #Cisco #ASA #FTD #SSLVPN #MemoryLeak #WebVPN #PerimeterSecurity #AppSec #PatchManagement #CISA
+Software supply-chain security requires continuous developer access monitoring and rigid code integrity verification to ensure central software repositories remain insulated from unauthorized code tampering. #CodeDefence #SAP #GitHub #SupplyChain #DevSecOps #IdentitySecurity #CredentialTheft #SourceCode #AppSec #PatchManagement
   ]]></description>
 </item>
 
